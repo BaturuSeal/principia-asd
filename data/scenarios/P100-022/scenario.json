@@ -1,0 +1,84 @@
+{
+  "description": "Initial positive forming-sweep current",
+  "domain": "electronic devices",
+  "independent_unit": "Complete device, both compositions; all duplicate device traces linked. No future current or state permitted.",
+  "input_units": {
+    "bromine_rich": "indicator",
+    "voltage_V": "V"
+  },
+  "limitations": [
+    "A fixed SHA-256 allocation reserved ten complete devices per composition. Development used five hash-assigned device folds. Exact duplicate native traces were linked and deduplicated. The task predicts the initial positive forming branch from voltage and composition alone; no current calibration or later sweep is a predictor.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "microampere",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1425,
+    "test": 1900,
+    "train": 6080
+  },
+  "scenario_id": "P100-022",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1022932,
+    "limit_bytes": 10000000,
+    "public_bytes": 243313
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/17278410",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/22_electronics_perovskite_memristors/context/zenodo_record.json",
+        "source_sha256": "2d233abf64411a020cc3f8e44c02c201bb15968b10c1bbf37bb055e6c57eca41"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17278410",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/17278410",
+        "source": "scenarios/22_electronics_perovskite_memristors/raw/dataset.zip",
+        "source_sha256": "4bf7369123a570fd55138a0faec86829bce0bec643532d702591828036260939"
+      }
+    ],
+    "historical_case": "P100-022",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/17278410",
+    "version": "v1"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "49f0d64c9c44d3097cd1ed5d1b2a3815343601dd3517e2ab6a95f20ba60b8a88",
+        "groups": 15,
+        "rows": 1425,
+        "sample_ids_sha256": "725d1c958c99e00461151c33ee581747e036c94f8aa0adf375d7c7cc649ca0b9"
+      },
+      "test": {
+        "group_ids_sha256": "dc1434cc5f01cab4cf45bf4993adc249485294726cb813218c9914e11dcc7288",
+        "groups": 20,
+        "rows": 1900,
+        "sample_ids_sha256": "a34e07e483514224f198c549b35981db296741888f993cace8966b0fbacff1c3"
+      },
+      "train": {
+        "group_ids_sha256": "0b7cd0883a4eed1e55c7b41b19866a19114a5cfab9d7dcad39398c48331045e5",
+        "groups": 64,
+        "rows": 6080,
+        "sample_ids_sha256": "223d6dc6ba276f3aeb2276b5a6690a71948bbe90a6334912d9a6bb80ce2618d7"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Lead-free perovskite memristors",
+  "version": "1.0.0rc2"
+}

@@ -1,0 +1,50 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0036900369003689537,
+    "mae": null,
+    "primary": "log_mae",
+    "primary_error": null,
+    "rmse": null
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.759087840276369,
+  "by_group": [],
+  "coverage": {
+    "eligible": 271,
+    "fraction": 0.996309963099631,
+    "predicted": 270
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tool_agent",
+  "rule_id": "interface-repair-pilot-v4--P100-017--tool_agent-rule-1",
+  "rule_sha256": "1d167c95b2024b4a51ce0c86d0559fa8434a6c3565781ad6e643cf3dcca33fa3",
+  "run_id": "interface-repair-pilot-v4--P100-017--tool_agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.23786628228096665 + 1.7144834789476382 * rms_s + -0.009133918113174523 * phases + 0.007048225176327258 * stations + 0.006437086820968922 * gap_deg + 8.943210158620733e-06 * dmin_km + 0.020596155942552555 * depth_km",
+    "expression_bytes": 91,
+    "free_parameters": 7,
+    "learned_state_bytes": 195,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.028936225967544513,
+    "perturbation_labels_available": false,
+    "population_rows": 271,
+    "ranking": false,
+    "samples": 271,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "invalid",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

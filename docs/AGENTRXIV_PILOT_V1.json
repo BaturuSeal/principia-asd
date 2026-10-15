@@ -1,0 +1,48 @@
+{
+  "preregistered_at": "2026-10-11T19:51:23.202981+00:00",
+  "campaign_id": "agentrxiv-archive-pilot-v1",
+  "track": "engineering",
+  "adaptation_version": "agentrxiv-adaptation-v1",
+  "source_revision": "arXiv:2503.18102v1",
+  "laboratory_source_revision": "d9017d90e329112d2a80b7712f37ee9094d2cd27",
+  "cases": [
+    "P100-002",
+    "P100-017",
+    "P100-043",
+    "P100-051",
+    "P100-054",
+    "P100-068",
+    "P100-087",
+    "P100-090"
+  ],
+  "assigned_attempts": 8,
+  "exposure": "Previously engineering-exposed; no independent performance claim",
+  "configuration": {
+    "laboratories": 2,
+    "initial_cycles_per_lab": 1,
+    "cross_lab_followups": 1,
+    "requests_per_complete_attempt": 18,
+    "maximum_program_checks": 6,
+    "archive": "Empty per attempt; completed peer reports only; lexical cosine top-1; exact source binding and expanded formula reuse"
+  },
+  "model_roles": {
+    "planner": "zai-org/GLM-5.3",
+    "coder": "deepseek-ai/DeepSeek-V4-Flash",
+    "critic": "Qwen/Qwen3.8-27B",
+    "reporter": "Pro/moonshotai/Kimi-K2.6"
+  },
+  "generation": "Existing probed SiliconFlow capability and dated price profiles; temperature 0.25, 1800 output tokens; no substitution",
+  "acceptance": "Retain every assignment; verify two completed labs, foreign report retrieval, two actual expanded follow-up computations, structural revision, correct source and experiment references, exact cohort reporting and shared budgets. No success quota or automatic rerun.",
+  "synthetic_tests_passed": 102,
+  "ruff": "passed",
+  "javascript_syntax": "passed",
+  "maximum_concurrency": 4,
+  "numerical_threads_per_worker": 1,
+  "global_cap_cny": 3000,
+  "attempt_cap_cny": 12,
+  "maximum_new_cohort_reservations_cny": 96,
+  "accounted_before_cny": 47.100838,
+  "unknown_before_cny": 24.0,
+  "evaluation_custody": "Freeze all eight submissions before zero-API assessment; development decisions use train/dev only; preserve canonical 520-attempt primary export",
+  "scientific_review": "not_assessed"
+}

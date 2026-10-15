@@ -1,0 +1,96 @@
+{
+  "dev_error": 0.3417896907202355,
+  "execution_status": "complete",
+  "expression": "p0 + p05*p1 + p10*p2 + p20*p3 + p30*p4 + p40*p5 + p50*p6 + di0*p7",
+  "inputs": [
+    "p0",
+    "p05",
+    "p10",
+    "p20",
+    "p30",
+    "p40",
+    "p50",
+    "di0",
+    "de0",
+    "di20",
+    "de20",
+    "trial_BH",
+    "trial_FEM"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p1": 0.595298317990295,
+    "p2": -0.36875176517218805,
+    "p3": -0.23817468039531176,
+    "p4": 0.13565225373398695,
+    "p5": -0.12581585658165875,
+    "p6": -0.051317223495949194,
+    "p7": 0.27358082565213365
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "de0": 0.045975121182805126,
+      "de20": 0.05256417619568245,
+      "di0": -0.03214793893711911,
+      "di20": -0.08905463926372194,
+      "p0": 0.05570590363595887,
+      "p05": 0.09732523874542764,
+      "p10": 0.10239589867278232,
+      "p20": 0.10518482211028243,
+      "p30": 0.1052037336866756,
+      "p40": 0.0903559944817672,
+      "p50": 0.08734336672331988,
+      "trial_BH": -0.0018544159307816797,
+      "trial_FEM": 0.036344187152255264
+    },
+    "mean": -0.017871988615881775,
+    "p90_abs": 0.8775631307799091,
+    "std": 0.6689123422109026
+  },
+  "rule_id": "full-comparison-v5--P100-032--direct_glm-rule-1",
+  "rule_sha256": "bee8170de857953c8c9a927a19df35888b45ab9b84a930d98a663294cc68af27",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "p0 + p05 * 0.595298317990295 + p10 * -0.36875176517218805 + p20 * -0.23817468039531176 + p30 * 0.13565225373398695 + p40 * -0.12581585658165875 + p50 * -0.051317223495949194 + di0 * 0.27358082565213365",
+    "expression_bytes": 65,
+    "free_parameters": 7,
+    "learned_state_bytes": 192,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-032.compact.v2",
+  "train_error": 0.3107139192013338,
+  "units": {
+    "inputs": {
+      "de0": "cmH2O",
+      "de20": "cmH2O",
+      "di0": "cmH2O",
+      "di20": "cmH2O",
+      "p0": "cmH2O",
+      "p05": "cmH2O",
+      "p10": "cmH2O",
+      "p20": "cmH2O",
+      "p30": "cmH2O",
+      "p40": "cmH2O",
+      "p50": "cmH2O",
+      "trial_BH": "binary",
+      "trial_FEM": "binary"
+    },
+    "output": "cmH2O",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

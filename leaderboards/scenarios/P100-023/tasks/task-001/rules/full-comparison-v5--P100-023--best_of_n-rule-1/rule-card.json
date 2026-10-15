@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.13582597766598203,
+  "execution_status": "complete",
+  "expression": "p0 + p1*H + p2*viscosity + p3*speed + p4*load + p5*hydration + p6*area + p7*H*viscosity*speed/(load*area)",
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.17626399890324124,
+    "p1": 0.2701516283796222,
+    "p2": 0.008541798350965364,
+    "p3": -1.2766671753497003,
+    "p4": -0.1355414108454046,
+    "p5": 0.0037150565438456673,
+    "p6": 0.02257498269420845,
+    "p7": 0.1270530955357215
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "H": 0.19106950539684636,
+      "area": 0.4227387091610379,
+      "hydration": 0.42273870916103784,
+      "load": -0.11379138758546611,
+      "speed": -0.2868159424379575,
+      "viscosity": 0.12009548946895703
+    },
+    "mean": 0.05125333765750847,
+    "p90_abs": 0.2981924039703146,
+    "std": 0.1792201380133547
+  },
+  "rule_id": "full-comparison-v5--P100-023--best_of_n-rule-1",
+  "rule_sha256": "d5ef04c4088830087e7f551be1b67502a9db80eb9c8d09607d014115db2200b5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.17626399890324124 + 0.2701516283796222 * H + 0.008541798350965364 * viscosity + -1.2766671753497003 * speed + -0.1355414108454046 * load + 0.0037150565438456673 * hydration + 0.02257498269420845 * area + 0.1270530955357215 * H * viscosity * speed / (load * area)",
+    "expression_bytes": 105,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 0,
+    "nodes": 75,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 18
+  },
+  "task_id": "P100-023.compact.v2",
+  "train_error": 0.12263696652401011,
+  "units": {
+    "inputs": {
+      "H": "dimensionless; author Hersey calibration",
+      "area": "cm^2",
+      "hydration": "corneometer instrument units",
+      "load": "N",
+      "speed": "m/s",
+      "viscosity": "Pa s at 500 s^-1; author rheology fit"
+    },
+    "output": "1",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

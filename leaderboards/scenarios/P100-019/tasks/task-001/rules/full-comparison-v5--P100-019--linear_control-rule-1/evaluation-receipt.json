@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 3.5987175723985083,
+    "primary": "mae",
+    "primary_error": 3.5987175723985083,
+    "rmse": 6.66519769161808
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 15.538183899990797,
+  "by_group": [
+    {
+      "error": 3.579641679483897,
+      "group": "group-6e4835776c7ab299698a9a4c",
+      "rows": 434
+    },
+    {
+      "error": 3.3881046068555576,
+      "group": "group-8e12b76b1ae8dcf50ff46f4f",
+      "rows": 434
+    },
+    {
+      "error": 3.82840643085607,
+      "group": "group-bc4edc2291761e8927fc1736",
+      "rows": 434
+    }
+  ],
+  "coverage": {
+    "eligible": 1302,
+    "fraction": 1.0,
+    "predicted": 1302
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "full-comparison-v5--P100-019--linear_control-rule-1",
+  "rule_sha256": "20f9e091feac00826206bcb429117552fa45c98cba8f147fb32919ece6f08f9a",
+  "run_id": "full-comparison-v5--P100-019--linear_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.7258228607947659 + 0.6172112059447168 * lag1 + 0.08679275529780606 * lag3 + 0.2526706802549056 * lag6 + -0.14141313400536087 * month",
+    "expression_bytes": 43,
+    "free_parameters": 5,
+    "learned_state_bytes": 133,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.06063332474108234,
+    "perturbation_labels_available": false,
+    "population_rows": 1302,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

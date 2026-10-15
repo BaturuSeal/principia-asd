@@ -1,0 +1,66 @@
+{
+  "dev_error": 6396.499095279735,
+  "execution_status": "complete",
+  "expression": "I0 * (q0/q)**p0 * exp(-p1*q) * (p2 + p3*outer)",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -25.889813208241247,
+    "p1": 226.29405497643668,
+    "p2": 39076.2112232291,
+    "p3": -4303.277141563035
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": 0.10512763267474719,
+      "outer": -0.018053859567661902,
+      "q": -0.2500959187415371,
+      "q0": -8.47443105429445e-18
+    },
+    "mean": 1173.704782226564,
+    "p90_abs": 15580.232044745106,
+    "std": 12706.224048593042
+  },
+  "rule_id": "full-comparison-v5--P100-012--direct_glm-rule-1",
+  "rule_sha256": "3ef65e9cda14fb1311b4280c0be3cf7bebc0607c039d66a5f1df27fdc9e1665b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "I0 * (q0 / q) ** -25.889813208241247 * exp(-226.29405497643668 * q) * (39076.2112232291 + -4303.277141563035 * outer)",
+    "expression_bytes": 46,
+    "free_parameters": 4,
+    "learned_state_bytes": 103,
+    "literal_state_bytes": 0,
+    "nodes": 40,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 8184.390246725571,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

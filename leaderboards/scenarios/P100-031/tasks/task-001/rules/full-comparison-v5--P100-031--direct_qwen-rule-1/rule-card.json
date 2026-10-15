@@ -1,0 +1,78 @@
+{
+  "dev_error": 1.4326720168593983,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * pilot_seconds + p2 * (pilot_gates / maximum(pilot_depth, 1.0)) + p3 * qubits + p4 * load_seconds + p5 * is_tket + p6 * is_bqskit",
+  "inputs": [
+    "pilot_seconds",
+    "qubits",
+    "pilot_gates",
+    "pilot_depth",
+    "load_seconds",
+    "is_tket",
+    "is_bqskit"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.00590547010185616,
+    "p1": 0.2208322411557514,
+    "p2": -5.282326884846286e-05,
+    "p3": -0.0010630913024897012,
+    "p4": 0.2537323126097792,
+    "p5": 0.2548362612402751,
+    "p6": 3.0665377512102316
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "is_bqskit": 0.032168489359468366,
+      "is_tket": -0.256832678240808,
+      "load_seconds": -0.5029118552881234,
+      "pilot_depth": -0.5758565398233831,
+      "pilot_gates": -0.6080630482804374,
+      "pilot_seconds": -0.6061912006948891,
+      "qubits": -0.5153994965032993
+    },
+    "mean": -1.27754882719629,
+    "p90_abs": 3.5873910659564006,
+    "std": 4.282345676519508
+  },
+  "rule_id": "full-comparison-v5--P100-031--direct_qwen-rule-1",
+  "rule_sha256": "44e9fb61f8f10a53d6fe734ccbcff7f9e2e4b7c10d1d8a417c9be8b4a1ca930e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.00590547010185616 + 0.2208322411557514 * pilot_seconds + -5.282326884846286e-05 * (pilot_gates / maximum(pilot_depth, 1.0)) + -0.0010630913024897012 * qubits + 0.2537323126097792 * load_seconds + 0.2548362612402751 * is_tket + 3.0665377512102316 * is_bqskit",
+    "expression_bytes": 138,
+    "free_parameters": 7,
+    "learned_state_bytes": 191,
+    "literal_state_bytes": 3,
+    "nodes": 59,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-031.compact.v2",
+  "train_error": 1.006072192259532,
+  "units": {
+    "inputs": {
+      "is_bqskit": "SDK indicator,elseStaq",
+      "is_tket": "SDK indicator",
+      "load_seconds": "Qiskit QASM loading seconds",
+      "pilot_depth": "Qiskit output two-qubit depth",
+      "pilot_gates": "Qiskit output two-qubit gate count",
+      "pilot_seconds": "seconds Qiskit calibration cost",
+      "qubits": "input qubit count"
+    },
+    "output": "seconds",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

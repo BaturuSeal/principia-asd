@@ -1,0 +1,77 @@
+{
+  "dev_error": 2.5387294682347875e-06,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hy)+p2*(hx)+p3*(dg)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.501576664248228e-07,
+    "p1": 0.5564418249786239,
+    "p2": 0.5687102118781228,
+    "p3": -0.011695291352671666
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.00815722814221644,
+      "gx": 0.01971392807515446,
+      "gy": 0.03463223882720935,
+      "hi": 0.016424570740767,
+      "hx": 0.009722127969981183,
+      "hy": -0.006471115817664161,
+      "lo": 0.08095684822333978,
+      "ox": 0.024474392191943396,
+      "oy": 0.1172733156969714
+    },
+    "mean": -3.511691695002586e-07,
+    "p90_abs": 5.495243390259306e-06,
+    "std": 7.264898497450984e-06
+  },
+  "rule_id": "controls-v2--P100-070--symbolic_control-rule-3",
+  "rule_sha256": "6df2ba4c21544cd835269c6fee428b92314e985aea3a3bcab92367f519f35a40",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.501576664248228e-07 + 0.5564418249786239 * hy + 0.5687102118781228 * hx + -0.011695291352671666 * dg",
+    "expression_bytes": 26,
+    "free_parameters": 4,
+    "learned_state_bytes": 111,
+    "nodes": 27,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 3.383387127611999e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

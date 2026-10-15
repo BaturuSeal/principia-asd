@@ -1,0 +1,67 @@
+{
+  "dev_error": 5.089851802149503,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((length_km-6.451771421711607)/7.5511207919229815))+p2*(tanh((width_km-0.20275774818288392)/0.273178517613633))+p3*(length_km)+p4*(length_km*latitude)+p5*(tanh((month-4.9472450175849945)/2.018271179276093))",
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 5.765479530906771,
+    "p1": 0.69687199454819,
+    "p2": 2.1144826077857615,
+    "p3": 0.018931866413797217,
+    "p4": 0.00035317590320920313,
+    "p5": -1.970761242044996
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "duration_min": 0.08689025833775044,
+      "latitude": -0.3551834305971224,
+      "length_km": -0.015591506129610806,
+      "month": -0.19863589757242345,
+      "width_km": 0.2920550399921172
+    },
+    "mean": 0.3804298377747811,
+    "p90_abs": 9.08138204936025,
+    "std": 6.073836120734489
+  },
+  "rule_id": "controls-v2--P100-018--symbolic_control-rule-3",
+  "rule_sha256": "963035cb85d477b10bb4f74913d269f53bbc52b5f3a9aaee6269a5eb7508e141",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "5.765479530906771 + 0.69687199454819 * tanh((length_km - 6.451771421711607) / 7.5511207919229815) + 2.1144826077857615 * tanh((width_km - 0.20275774818288392) / 0.273178517613633) + 0.018931866413797217 * length_km + 0.00035317590320920313 * (length_km * latitude) + -1.970761242044996 * tanh((month - 4.9472450175849945) / 2.018271179276093)",
+    "expression_bytes": 217,
+    "free_parameters": 6,
+    "learned_state_bytes": 159,
+    "nodes": 74,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-018.compact.v2",
+  "train_error": 4.735543182606796,
+  "units": {
+    "inputs": {
+      "duration_min": "minutes event duration",
+      "latitude": "degrees north",
+      "length_km": "km path length",
+      "month": "calendar1–12",
+      "width_km": "km maximum path width"
+    },
+    "output": "ln(1+property damage in USD)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

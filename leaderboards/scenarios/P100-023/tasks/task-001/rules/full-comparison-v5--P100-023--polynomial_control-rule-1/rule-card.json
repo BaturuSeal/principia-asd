@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.14420409238753767,
+  "execution_status": "complete",
+  "expression": "p0+p1*(H)+p2*(viscosity)+p3*(speed)+p4*(load)+p5*(hydration)+p6*(area)",
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.17734914819161257,
+    "p1": 0.41875117708457954,
+    "p2": 0.006158762874269336,
+    "p3": -1.294672207303249,
+    "p4": -0.12490198725299624,
+    "p5": 0.0036086345361670447,
+    "p6": 0.019462772072271973
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "H": 0.3136393116200975,
+      "area": 0.42626093278791594,
+      "hydration": 0.42626093278791594,
+      "load": -0.07755479988932021,
+      "speed": -0.3172886245722252,
+      "viscosity": 0.21470606114490354
+    },
+    "mean": 0.06334844993451516,
+    "p90_abs": 0.32177995458937236,
+    "std": 0.1849795181488012
+  },
+  "rule_id": "full-comparison-v5--P100-023--polynomial_control-rule-1",
+  "rule_sha256": "e524f9c73078c149a233674398fe17cf94f34774879e7a5a3fd47699ffcadada",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.17734914819161257 + 0.41875117708457954 * H + 0.006158762874269336 * viscosity + -1.294672207303249 * speed + -0.12490198725299624 * load + 0.0036086345361670447 * hydration + 0.019462772072271973 * area",
+    "expression_bytes": 70,
+    "free_parameters": 7,
+    "learned_state_bytes": 193,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-023.compact.v2",
+  "train_error": 0.1209467901133405,
+  "units": {
+    "inputs": {
+      "H": "dimensionless; author Hersey calibration",
+      "area": "cm^2",
+      "hydration": "corneometer instrument units",
+      "load": "N",
+      "speed": "m/s",
+      "viscosity": "Pa s at 500 s^-1; author rheology fit"
+    },
+    "output": "1",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

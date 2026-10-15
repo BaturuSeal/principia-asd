@@ -1,0 +1,161 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.02877977262283695,
+    "primary": "mae",
+    "primary_error": 0.02877977262283695,
+    "rmse": 0.031673806772658984
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.03538194708276798,
+  "by_group": [
+    {
+      "error": 0.017415978615623356,
+      "group": "group-09d00e4a4a217412226ae6c4",
+      "rows": 1
+    },
+    {
+      "error": 0.038183021797705635,
+      "group": "group-1ab1d64f61932c971cc5ba3f",
+      "rows": 1
+    },
+    {
+      "error": 0.042855164966273396,
+      "group": "group-21868b5cecc3a28bc4dbcc2a",
+      "rows": 1
+    },
+    {
+      "error": 0.0181334691543953,
+      "group": "group-411e41195bb1cc1c78adc7a0",
+      "rows": 1
+    },
+    {
+      "error": 0.011204443353523691,
+      "group": "group-41350b2afe2201898a75ad40",
+      "rows": 1
+    },
+    {
+      "error": 0.018158886607310548,
+      "group": "group-4d26a33cbd0c41288ddc10b1",
+      "rows": 1
+    },
+    {
+      "error": 0.03913386619435644,
+      "group": "group-503c02c2ba37acdd16d3de3b",
+      "rows": 1
+    },
+    {
+      "error": 0.0380673023818647,
+      "group": "group-5400bf6688dd0d7ee3a56f8a",
+      "rows": 1
+    },
+    {
+      "error": 0.04243741850445002,
+      "group": "group-5bbab497384562689490aefa",
+      "rows": 1
+    },
+    {
+      "error": 0.0229324653674374,
+      "group": "group-64c5ad5794f52cef6c3b9067",
+      "rows": 2
+    },
+    {
+      "error": 0.0516787889458305,
+      "group": "group-66e500c32fb9b9d620d40925",
+      "rows": 1
+    },
+    {
+      "error": 0.03985346828800744,
+      "group": "group-6d4b691ed0431d803f195d47",
+      "rows": 1
+    },
+    {
+      "error": 0.027280132331157808,
+      "group": "group-7d55561ca6aa71d4ea76f742",
+      "rows": 1
+    },
+    {
+      "error": 0.002330947663326449,
+      "group": "group-a0553cc62ab0e68a19bfb4f2",
+      "rows": 1
+    },
+    {
+      "error": 0.035387410643604206,
+      "group": "group-a1b040f2657db72fafa2140d",
+      "rows": 1
+    },
+    {
+      "error": 0.02217307873640531,
+      "group": "group-a2894abfd90dd87bb764842b",
+      "rows": 1
+    },
+    {
+      "error": 0.03863279249846377,
+      "group": "group-aacfb7e48b74f1d3c2fb52ce",
+      "rows": 1
+    },
+    {
+      "error": 0.032474453406251685,
+      "group": "group-b9e58665056484ca8a6fdbe6",
+      "rows": 1
+    },
+    {
+      "error": 0.019787999007432902,
+      "group": "group-dbb96af41941a49895b3a068",
+      "rows": 1
+    },
+    {
+      "error": 0.029304745434030277,
+      "group": "group-e7cecdd416615729cbc38d8e",
+      "rows": 1
+    },
+    {
+      "error": 0.010684430692191077,
+      "group": "group-e8d1c6f3a27e683111a084be",
+      "rows": 1
+    },
+    {
+      "error": 0.03504473311277116,
+      "group": "group-f7a9a002b15403438eb2d4f4",
+      "rows": 1
+    }
+  ],
+  "coverage": {
+    "eligible": 23,
+    "fraction": 1.0,
+    "predicted": 23
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "live-pilot-v3--P100-054--best_of_n-rule-2",
+  "rule_sha256": "cd43d603c69040a1c4858d124d548abdef5e0894a665cd478999c5d03dd71290",
+  "run_id": "live-pilot-v3--P100-054--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.03722216699877021 * (thickness_um - notch_depth_um) * width_um * (1 - 0.19404911767753089 * notch_depth_um / thickness_um) * (1 + -0.0527434046723295 * (length_um - 10.0))",
+    "expression_bytes": 122,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "literal_state_bytes": 6,
+    "nodes": 44,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.020941541693730397,
+    "perturbation_labels_available": false,
+    "population_rows": 23,
+    "ranking": false,
+    "samples": 23,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

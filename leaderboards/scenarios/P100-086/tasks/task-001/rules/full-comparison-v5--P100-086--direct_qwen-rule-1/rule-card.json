@@ -1,0 +1,58 @@
+{
+  "dev_error": 38.71611467047478,
+  "execution_status": "complete",
+  "expression": "current + slope6 * 6.0",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.1250565977903718,
+      "slope6": 0.3299177383048324,
+      "time_h": 0.0996685819195587
+    },
+    "mean": 4.7149394744611755,
+    "p90_abs": 91.0,
+    "std": 71.24000460620752
+  },
+  "rule_id": "full-comparison-v5--P100-086--direct_qwen-rule-1",
+  "rule_sha256": "52cacf507a09eba3f932b544f0be8b049ae57e4b6dfb57afdbc624c8bab6f5a7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "current + slope6 * 6.0",
+    "expression_bytes": 22,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 3,
+    "nodes": 10,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 38.167912274219745,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

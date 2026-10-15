@@ -1,0 +1,81 @@
+{
+  "dev_error": 0.006388006566097625,
+  "execution_status": "complete",
+  "expression": "p0+p1*(median6)+p2*(lag1*lag2)",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "lag6",
+    "lag12",
+    "lag24",
+    "median6",
+    "median24",
+    "mad6"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.35045776396286604,
+    "p1": 0.5712361988101164,
+    "p2": 0.07827017694722777
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.24129902059167369,
+      "lag12": -0.21669782079894126,
+      "lag2": -0.22605492706823888,
+      "lag24": 0.03597148471245841,
+      "lag3": -0.23567777572531926,
+      "lag4": -0.14365778289148984,
+      "lag6": -0.18596916559763885,
+      "mad6": 0.07741571766354899,
+      "median24": -0.1909308991218632,
+      "median6": -0.22843378306055942
+    },
+    "mean": 0.00048473478949304544,
+    "p90_abs": 0.017088066288697832,
+    "std": 0.009511018255048105
+  },
+  "rule_id": "full-comparison-v5--P100-002--symbolic_control-rule-1",
+  "rule_sha256": "d2234ff012a014c896dedf811237922c5336d02a994e2ee9c0392cdec19ada07",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.35045776396286604 + 0.5712361988101164 * median6 + 0.07827017694722777 * (lag1 * lag2)",
+    "expression_bytes": 30,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "literal_state_bytes": 0,
+    "nodes": 23,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-002.compact.v2",
+  "train_error": 0.0011951073721340963,
+  "units": {
+    "inputs": {
+      "lag1": "author-normalized relative flux",
+      "lag12": "author-normalized relative flux",
+      "lag2": "author-normalized relative flux",
+      "lag24": "author-normalized relative flux",
+      "lag3": "author-normalized relative flux",
+      "lag4": "author-normalized relative flux",
+      "lag6": "author-normalized relative flux",
+      "mad6": "author-normalized relative flux",
+      "median24": "author-normalized relative flux",
+      "median6": "author-normalized relative flux"
+    },
+    "output": "relative flux (native normalization)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

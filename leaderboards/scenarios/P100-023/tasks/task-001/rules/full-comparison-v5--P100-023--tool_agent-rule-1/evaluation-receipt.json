@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.18450499489784233,
+    "primary": "mae",
+    "primary_error": 0.18450499489784233,
+    "rmse": 0.22490726943614212
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.1681089803766428,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.2009010094190419,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tool_agent",
+  "rule_id": "full-comparison-v5--P100-023--tool_agent-rule-1",
+  "rule_sha256": "05d99371246581491682523f3188129177f787877381d637e27c94021caec4ec",
+  "run_id": "full-comparison-v5--P100-023--tool_agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.17734914388965572 + 0.41875117556677893 * H + 0.0061587629631549975 * viscosity + -1.2946720709911599 * speed + -0.12490198528930911 * load + 0.0036086345161456717 * hydration + 0.019462771169737145 * area",
+    "expression_bytes": 70,
+    "free_parameters": 7,
+    "learned_state_bytes": 195,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.09585526968623241,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

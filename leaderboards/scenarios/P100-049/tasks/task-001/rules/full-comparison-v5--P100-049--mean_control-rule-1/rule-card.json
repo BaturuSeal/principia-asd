@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.04120051852178912,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "t",
+    "t60",
+    "t120",
+    "u60",
+    "u120",
+    "u10",
+    "pulse_s",
+    "current"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.11860823711728005
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.27967281439914315,
+      "pulse_s": -0.034747147914423855,
+      "t": -0.00043591544712578593,
+      "t120": 0.22331141549578443,
+      "t60": -0.016275358688467915,
+      "u10": -0.9985061564558431,
+      "u120": -0.9997577484979683,
+      "u60": -0.999504116787622
+    },
+    "mean": -0.0016406992610588395,
+    "p90_abs": 0.07746788743278324,
+    "std": 0.07513074511894909
+  },
+  "rule_id": "full-comparison-v5--P100-049--mean_control-rule-1",
+  "rule_sha256": "c81569d9e3aca90c946cd4ec402f69a1e0ada32405a1e6292815324609dcfd88",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.11860823711728005",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-049.compact.v2",
+  "train_error": 0.03824958804317123,
+  "units": {
+    "inputs": {
+      "current": "A",
+      "pulse_s": "s",
+      "t": "s",
+      "t120": "s",
+      "t60": "s",
+      "u10": "V",
+      "u120": "V",
+      "u60": "V"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

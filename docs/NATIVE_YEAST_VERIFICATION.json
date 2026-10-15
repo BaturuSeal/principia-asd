@@ -1,0 +1,186 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T21:14:35.197390+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 275411,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Scientific contract, rights and notices require new edition review",
+        "Only eight strain groups and two test strains; early qPCR calibration required",
+        "qPCR percentages are derived estimates; no competition mechanism, viability or causal fitness claim",
+        "Unresolved nitrogen description and stale percentage headers; unused or explicitly disclosed",
+        "Native calibration/extraction complexity and uncertainty are outside frozen rule complexity; perturbations remain diagnostic"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-072/reconstruction.json",
+      "candidate_receipt_sha256": "0d3a843cd80eac537d1b3c6b4959eaadfe050c8fea661b80bfbc00abc159539a",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 43
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 18
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 18,
+            "reconstructed_rows": 18,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 18,
+            "reconstructed_rows": 18,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 25,
+            "reconstructed_rows": 25,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_compiler_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_microwave_validation": null,
+      "native_screw_validation": null,
+      "native_slag_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_xas_validation": null,
+      "native_yeast_validation": {
+        "acquisition_chronology": "Native qPCR exports 2020; workbook analyses 2021/2022; public deposit 2026",
+        "cached_percentage_max_absolute_error": 1.4210854715202004e-14,
+        "calibrated_replicates": 21,
+        "eligible_rows": 61,
+        "excluded_ambiguous_time": [
+          {
+            "chart_time_h": 500.0,
+            "replicate": 1,
+            "row": 14,
+            "sample_time_h": 504,
+            "strain": "Ec1118"
+          },
+          {
+            "chart_time_h": 500.0,
+            "replicate": 2,
+            "row": 15,
+            "sample_time_h": 504,
+            "strain": "Ec1118"
+          },
+          {
+            "chart_time_h": 500.0,
+            "replicate": 3,
+            "row": 16,
+            "sample_time_h": 504,
+            "strain": "Ec1118"
+          }
+        ],
+        "exposure": "Retrospective, historically audit-exposed including later percentages; not independent confirmation",
+        "external_references_not_followed": 1,
+        "fit_count": 0,
+        "group_counts": {
+          "dev": 2,
+          "test": 2,
+          "train": 4
+        },
+        "learned_transformations": [],
+        "missing_prefix": [
+          {
+            "excluded_later_rows": 3,
+            "missing_hours": [
+              72
+            ],
+            "replicate": 2,
+            "strain": "Chr96,2"
+          },
+          {
+            "excluded_later_rows": 3,
+            "missing_hours": [
+              22
+            ],
+            "replicate": 1,
+            "strain": "Clos"
+          },
+          {
+            "excluded_later_rows": 2,
+            "missing_hours": [
+              22
+            ],
+            "replicate": 2,
+            "strain": "Ec1118"
+          }
+        ],
+        "native_sample_rows": 117,
+        "response_scope": "Author cached same-row qPCR ratio percentage, not viable count or fitness"
+      },
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "e4995dd5a326473b5960780673739c94d03e00b58f5a75c8607407192d9cb360",
+      "recipe_sha256": "ec2bae97c18b0d3af5f74bc2b533c1384fb63b8cd2c99060f41b9ca95478dd80",
+      "rows": {
+        "dev": 18,
+        "test": 18,
+        "train": 25
+      },
+      "runtime_binding_sha256": "383a94e03888a11ec653eba9d32be9bd61d149a50b569720bee7a614301a53bf",
+      "scenario_id": "P100-072",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "GRE",
+            "QA23"
+          ],
+          "test": [
+            "D245",
+            "T73"
+          ],
+          "train": [
+            "Chr96,2",
+            "Clos",
+            "Ec1118",
+            "NCAIM"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

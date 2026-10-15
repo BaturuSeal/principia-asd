@@ -1,0 +1,5524 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.013809629948809743
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.019228794961236417
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.0401211780263111
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.4479856650577858
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 103,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 103,
+        "wall_seconds": 0.7352382170502096
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-070--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 6.257504286011681
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-070--direct_deepseek",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 36,
+        "structures": 1,
+        "wall_seconds": 19.07701345300302
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 18,
+        "structures": 1,
+        "wall_seconds": 20.52429657697212
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 21,
+        "structures": 1,
+        "wall_seconds": 8.699319798965007
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 54,
+        "structures": 2,
+        "wall_seconds": 8.91365797095932
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 38,
+        "structures": 2,
+        "wall_seconds": 13.752299985964783
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 2,
+        "optimizer_evaluations": 27,
+        "structures": 1,
+        "wall_seconds": 11.391954640042968
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-070--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 267,
+        "model_calls": 4,
+        "optimizer_evaluations": 110,
+        "structures": 114,
+        "wall_seconds": 55.83274721400812
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-070--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-070--principia_engine-rule-3",
+    "full-comparison-v5--P100-070--symbolic_control-rule-2",
+    "full-comparison-v5--P100-070--principia_engine-rule-2",
+    "full-comparison-v5--P100-070--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.112849250887525e-06,
+        "primary": "mae",
+        "primary_error": 2.112849250887525e-06,
+        "rmse": 9.719673688523415e-06
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 1.781518742020882e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.10579243913659e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3640589171632416e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.380875566782691e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.39031948536875e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 9.195445056468451e-07,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.695305757755315e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 5.829241736704783e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 5.022063803859407e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.5490324269719217e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.1562981455126963e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 2.882640416172973e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.973347460569599e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.001141598939577e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 2.532328456219877e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.251710855728138e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 4.956567389034518e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.0539738677637384e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.917149162397653e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 4.171725843954865e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.3561838172371765e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.926767591654556e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.710670712824969e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 2.6035483299723977e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.888026371509527e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0215533178753635e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 3.875190082776865e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 6.261390380408999e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.717283693010807e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.792616053987058e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.940828203989216e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.8438504683981274e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 5.556157937464045e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.199935322645997e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 2.952703591152961e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.3417181816173807e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.2865956556450917e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*((hx+hy)/2)+p2*((ox+oy)/2)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -2.3287940210850853e-07,
+          "p1": 1.3222624977752484,
+          "p2": -0.3228608954266203
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.08630385530331264,
+            "gx": 0.017031052943830213,
+            "gy": 0.02928179546243696,
+            "hi": -0.04801076389703604,
+            "hx": -0.012918433107814908,
+            "hy": -0.03690252408882205,
+            "lo": -0.003470648397368664,
+            "ox": -0.13230515321284014,
+            "oy": -0.047618209363402914
+          },
+          "mean": -3.1079610283190436e-07,
+          "p90_abs": 4.458729662163883e-06,
+          "std": 7.258580952401155e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-3",
+        "rule_sha256": "a03f6cd7a058877b7a35f199431a6f5d6944378fdd78f06253442ae0c5bc8449",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-2.3287940210850853e-07 + 1.3222624977752484 * ((hx + hy) / 2) + -0.3228608954266203 * ((ox + oy) / 2)",
+          "expression_bytes": 32,
+          "free_parameters": 3,
+          "learned_state_bytes": 84,
+          "literal_state_bytes": 2,
+          "nodes": 33,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.081310990804685e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((hx+hy)/2)+p2*((ox+oy)/2)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-3",
+      "rule_sha256": "a03f6cd7a058877b7a35f199431a6f5d6944378fdd78f06253442ae0c5bc8449",
+      "run_id": "full-comparison-v5--P100-070--principia_engine",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-2.3287940210850853e-07 + 1.3222624977752484 * ((hx + hy) / 2) + -0.3228608954266203 * ((ox + oy) / 2)",
+        "expression_bytes": 32,
+        "free_parameters": 3,
+        "learned_state_bytes": 84,
+        "literal_state_bytes": 2,
+        "nodes": 33,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.1703709748944806,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.115085338442256e-06,
+        "primary": "mae",
+        "primary_error": 2.115085338442256e-06,
+        "rmse": 9.680565069730249e-06
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 1.7760200147044004e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.073639440988372e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3457506028600057e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.566445548544517e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.460760077090731e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 9.054202279061239e-07,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.7136805162437723e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 5.845667249626646e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 5.154835633368571e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.622563835410849e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.1568921209091153e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 2.8119848082831588e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 8.103254723923778e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 3.93423847966738e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 2.6474207014534115e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.418964980728876e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 4.886337603636273e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.062436350583306e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.981082814195904e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 3.986202303294004e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.3531246485811853e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 5.056352244609571e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.865928619267555e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 2.521453271482115e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.948736609647384e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0240219087232667e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 3.925247306079896e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 6.123151052877152e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.762116963048571e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.875265604495168e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.935216148508665e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.8070048230729971e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 5.496297387560748e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.222144381002514e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.0194839314109434e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.3541970868360636e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.272031201823184e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*((hx+hy)/2)+p2*((hx+hy+ox+oy+dg)/5)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -2.462148033744308e-07,
+          "p1": 1.5878553007313132,
+          "p2": -0.5728102457768827
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.0916187519530744,
+            "gx": 0.021036639122779564,
+            "gy": 0.03350849490021185,
+            "hi": -0.038327269146664726,
+            "hx": -0.007964499444516538,
+            "hy": -0.03259067159202201,
+            "lo": 0.00787965537688423,
+            "ox": -0.10674978709399462,
+            "oy": -0.023300226626361196
+          },
+          "mean": -3.291389966803589e-07,
+          "p90_abs": 4.246387759979877e-06,
+          "std": 7.293853764136671e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-1",
+        "rule_sha256": "6f03cc28f63938b6a0dbb897f46924e134db802ba89bf3388091339bd8fd8b09",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-2.462148033744308e-07 + 1.5878553007313132 * ((hx + hy) / 2) + -0.5728102457768827 * ((hx + hy + ox + oy + dg) / 5)",
+          "expression_bytes": 41,
+          "free_parameters": 3,
+          "learned_state_bytes": 83,
+          "literal_state_bytes": 2,
+          "nodes": 45,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 11
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.0791341379399084e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((hx+hy)/2)+p2*((hx+hy+ox+oy+dg)/5)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-1",
+      "rule_sha256": "6f03cc28f63938b6a0dbb897f46924e134db802ba89bf3388091339bd8fd8b09",
+      "run_id": "full-comparison-v5--P100-070--principia_engine",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-2.462148033744308e-07 + 1.5878553007313132 * ((hx + hy) / 2) + -0.5728102457768827 * ((hx + hy + ox + oy + dg) / 5)",
+        "expression_bytes": 41,
+        "free_parameters": 3,
+        "learned_state_bytes": 83,
+        "literal_state_bytes": 2,
+        "nodes": 45,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 11
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.17525679631946262,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.3407446577160007e-06,
+        "primary": "mae",
+        "primary_error": 2.3407446577160007e-06,
+        "rmse": 1.0046999627261954e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 1.7227892809654044e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.3114903906667624e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3646072543183316e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 8.355468625137199e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.526923048511015e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.0482006056807506e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 2.190229325924146e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.24670565934706e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 5.171915810687024e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.476125005925915e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.2835789552963295e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 2.801753130779851e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.665454005074528e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 5.059010094212858e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.253844339226017e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.480549674157371e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.493634235512979e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.083079644889103e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.7291124259774816e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 4.7285009286520355e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.8288915599441056e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 5.048126567364275e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.333940509246993e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 2.6969291029850335e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.798180425301404e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0543848891152233e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.7249879550013045e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.057329079857896e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.622793798155256e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.903195776959035e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.74528790760326e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 2.2169756839454867e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 5.824663765337259e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 5.909956294746517e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.4136910780041615e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6840074331361909e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.453262386674131e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hy)+p2*(hx)+p3*(dg)+p4*(tanh((hy--1.0491897849756604e-07)/1.919590015446636e-05))+p5*(tanh((hx-7.44206320750713e-08)/1.829847352183075e-05))+p6*(hy*gx)+p7*(ox)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -2.1382938280031234e-07,
+          "p1": 0.5975608487144669,
+          "p2": 0.554339800783343,
+          "p3": 0.06460486094871941,
+          "p4": -6.4046690298388685e-06,
+          "p5": 3.9513642021585e-06,
+          "p6": 0.019499824497607267,
+          "p7": -0.09906109950324622
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.03405239483362923,
+            "gx": 0.024078983544173045,
+            "gy": 0.026591559672622386,
+            "hi": -0.012578330805533037,
+            "hx": -0.006451901472002787,
+            "hy": -0.03571037526291442,
+            "lo": 0.04772740468237846,
+            "ox": -0.05222884060057043,
+            "oy": 0.06777216722944
+          },
+          "mean": -3.614643314395906e-07,
+          "p90_abs": 5.256761836854359e-06,
+          "std": 7.2905584787474656e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-1",
+        "rule_sha256": "6e4a4a04a1adc2e03ddd20141229ebb74b69feb4060cf2d166e677b057aa9db5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-2.1382938280031234e-07 + 0.5975608487144669 * hy + 0.554339800783343 * hx + 0.06460486094871941 * dg + -6.4046690298388685e-06 * tanh((hy - -1.0491897849756604e-07) / 1.919590015446636e-05) + 3.9513642021585e-06 * tanh((hx - 7.44206320750713e-08) / 1.829847352183075e-05) + 0.019499824497607267 * (hy * gx) + -0.09906109950324622 * ox",
+          "expression_bytes": 166,
+          "free_parameters": 8,
+          "learned_state_bytes": 223,
+          "literal_state_bytes": 84,
+          "nodes": 83,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 22
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.259846139878852e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hy)+p2*(hx)+p3*(dg)+p4*(tanh((hy--1.0491897849756604e-07)/1.919590015446636e-05))+p5*(tanh((hx-7.44206320750713e-08)/1.829847352183075e-05))+p6*(hy*gx)+p7*(ox)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-1",
+      "rule_sha256": "6e4a4a04a1adc2e03ddd20141229ebb74b69feb4060cf2d166e677b057aa9db5",
+      "run_id": "full-comparison-v5--P100-070--symbolic_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-2.1382938280031234e-07 + 0.5975608487144669 * hy + 0.554339800783343 * hx + 0.06460486094871941 * dg + -6.4046690298388685e-06 * tanh((hy - -1.0491897849756604e-07) / 1.919590015446636e-05) + 3.9513642021585e-06 * tanh((hx - 7.44206320750713e-08) / 1.829847352183075e-05) + 0.019499824497607267 * (hy * gx) + -0.09906109950324622 * ox",
+        "expression_bytes": 166,
+        "free_parameters": 8,
+        "learned_state_bytes": 223,
+        "literal_state_bytes": 84,
+        "nodes": 83,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 22
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.13824658227007355,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.3685732311288054e-06,
+        "primary": "mae",
+        "primary_error": 2.3685732311288054e-06,
+        "rmse": 1.0241263408367705e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 2.3395648461088676e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.387929477184538e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3986689580178547e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.668632206472355e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.087006811903872e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 9.870578641037085e-07,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.961543190662913e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.950123374380859e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 4.924055399366939e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.3484079810894144e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.160414163469172e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.4158302420959567e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.54354155425198e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.232885406295905e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.1907199850644035e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.656197237427921e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.303300422519606e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.2541886151740673e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.852289116055001e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 5.168347829054058e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.9097681189970597e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.3816086655226e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.378510215929449e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.149618801520029e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.4901065664346956e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0619723083898976e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.635043019607981e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.984845976197689e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.212286742738438e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.673464127100436e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.980423428485168e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.9917605324696316e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.13606844872092e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.55223387632314e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.188198865407712e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6799243613517065e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.5036253932025554e-06,
+        "execution_status": "complete",
+        "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*lo + p6*hi + p7",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.5784851764353613,
+          "p1": 0.7133065497684505,
+          "p2": -0.025053193118506054,
+          "p3": -0.1951902429909282,
+          "p4": 0.2694257542206334,
+          "p5": -0.11380066825267096,
+          "p6": -0.14710486903369838,
+          "p7": 2.8703853065982365e-07
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.013673124184047803,
+            "gx": -0.016101415245107893,
+            "gy": 0.021670947851487415,
+            "hi": -0.12032830236364093,
+            "hx": 0.015639196110991554,
+            "hy": -0.003603044872731484,
+            "lo": 0.055842268235625735,
+            "ox": -0.057020717054378736,
+            "oy": -0.0544761686904839
+          },
+          "mean": -1.2540339775482392e-07,
+          "p90_abs": 5.60534089814849e-06,
+          "std": 7.131583363522682e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--direct_glm-rule-1",
+        "rule_sha256": "215594f9b5a045d9b99bcbd7e1f3e554602e3b34038db8c3a7aa53d4553e3d39",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.5784851764353613 * hx + 0.7133065497684505 * hy + -0.025053193118506054 * ox + -0.1951902429909282 * oy + 0.2694257542206334 * dg + -0.11380066825267096 * lo + -0.14710486903369838 * hi + 2.8703853065982365e-07",
+          "expression_bytes": 58,
+          "free_parameters": 8,
+          "learned_state_bytes": 220,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.275704758635612e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*lo + p6*hi + p7",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--direct_glm-rule-1",
+      "rule_sha256": "215594f9b5a045d9b99bcbd7e1f3e554602e3b34038db8c3a7aa53d4553e3d39",
+      "run_id": "full-comparison-v5--P100-070--direct_glm",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.5784851764353613 * hx + 0.7133065497684505 * hy + -0.025053193118506054 * ox + -0.1951902429909282 * oy + 0.2694257542206334 * dg + -0.11380066825267096 * lo + -0.14710486903369838 * hi + 2.8703853065982365e-07",
+        "expression_bytes": 58,
+        "free_parameters": 8,
+        "learned_state_bytes": 220,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.18081655205759756,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.3685732324686667e-06,
+        "primary": "mae",
+        "primary_error": 2.3685732324686667e-06,
+        "rmse": 1.024126342722595e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 2.339564834131489e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.387929481036587e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3986689618615994e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.668632161259783e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.087006787680737e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 9.870578741968322e-07,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.961543204010601e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.95012336851087e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 4.924055362095521e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.348407959455504e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.1604141712921285e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.4158302551197808e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.54354151566918e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.232885458643054e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.1907199920104802e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.656197175209163e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.303300472034364e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.254188607509568e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.85228907369867e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 5.168347865614352e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.9097680994127355e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.381608646289835e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.378510203746005e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.149618813007467e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.490106546351995e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0619723162347777e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.635043053190465e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.984845942710389e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.212286694965523e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.673464086304764e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.980423405139747e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.991760551653287e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.136068419326981e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.5522338400322e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.188198867436399e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6799243597552353e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.5036253954091884e-06,
+        "execution_status": "complete",
+        "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 2.870385226732046e-07,
+          "p1": 0.5784851644989171,
+          "p2": 0.7133065402744238,
+          "p3": -0.02505319875821062,
+          "p4": -0.19519024790440878,
+          "p5": 0.2694257787785551,
+          "p6": -0.11380066504143577,
+          "p7": -0.1471048650909032
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.013673120740392432,
+            "gx": -0.016101415708374662,
+            "gy": 0.02167094730405583,
+            "hi": -0.12032830015641623,
+            "hx": 0.015639193903688883,
+            "hy": -0.0036030457028330596,
+            "lo": 0.05584226804200713,
+            "ox": -0.05702071707360095,
+            "oy": -0.05447616715965625
+          },
+          "mean": -1.2540339774017771e-07,
+          "p90_abs": 5.6053408439258404e-06,
+          "std": 7.131583355602735e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--feedback_refinement-rule-1",
+        "rule_sha256": "80a0fcf109bf66d31b63712dece05a7368c2f8e56331f856cc911d62617ff839",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "2.870385226732046e-07 + 0.5784851644989171 * hx + 0.7133065402744238 * hy + -0.02505319875821062 * ox + -0.19519024790440878 * oy + 0.2694257787785551 * dg + -0.11380066504143577 * lo + -0.1471048650909032 * hi",
+          "expression_bytes": 58,
+          "free_parameters": 8,
+          "learned_state_bytes": 218,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.275704760686366e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--feedback_refinement-rule-1",
+      "rule_sha256": "80a0fcf109bf66d31b63712dece05a7368c2f8e56331f856cc911d62617ff839",
+      "run_id": "full-comparison-v5--P100-070--feedback_refinement",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "2.870385226732046e-07 + 0.5784851644989171 * hx + 0.7133065402744238 * hy + -0.02505319875821062 * ox + -0.19519024790440878 * oy + 0.2694257787785551 * dg + -0.11380066504143577 * lo + -0.1471048650909032 * hi",
+        "expression_bytes": 58,
+        "free_parameters": 8,
+        "learned_state_bytes": 218,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.18081654972446565,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.3685732324686667e-06,
+        "primary": "mae",
+        "primary_error": 2.3685732324686667e-06,
+        "rmse": 1.024126342722595e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 2.339564834131489e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.387929481036587e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3986689618615994e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.668632161259783e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.087006787680737e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 9.870578741968322e-07,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.961543204010601e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.95012336851087e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 4.924055362095521e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.348407959455504e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.1604141712921285e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.4158302551197808e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.54354151566918e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.232885458643054e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.1907199920104802e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.656197175209163e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.303300472034364e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.254188607509568e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.85228907369867e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 5.168347865614352e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.9097680994127355e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.381608646289835e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.378510203746005e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.149618813007467e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.490106546351995e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0619723162347777e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.635043053190465e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.984845942710389e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.212286694965523e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.673464086304764e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.980423405139747e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.991760551653287e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.136068419326981e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.5522338400322e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.188198867436399e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6799243597552353e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.5036253954091884e-06,
+        "execution_status": "complete",
+        "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 2.870385226732046e-07,
+          "p1": 0.5784851644989171,
+          "p2": 0.7133065402744238,
+          "p3": -0.02505319875821062,
+          "p4": -0.19519024790440878,
+          "p5": 0.2694257787785551,
+          "p6": -0.11380066504143577,
+          "p7": -0.1471048650909032
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.013673120740392432,
+            "gx": -0.016101415708374662,
+            "gy": 0.02167094730405583,
+            "hi": -0.12032830015641623,
+            "hx": 0.015639193903688883,
+            "hy": -0.0036030457028330596,
+            "lo": 0.05584226804200713,
+            "ox": -0.05702071707360095,
+            "oy": -0.05447616715965625
+          },
+          "mean": -1.2540339774017771e-07,
+          "p90_abs": 5.6053408439258404e-06,
+          "std": 7.131583355602735e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--tool_agent-rule-1",
+        "rule_sha256": "7eac25d4194659f6bf2b0624ea698c83415878fd055a0399a4cd787b055d896a",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "2.870385226732046e-07 + 0.5784851644989171 * hx + 0.7133065402744238 * hy + -0.02505319875821062 * ox + -0.19519024790440878 * oy + 0.2694257787785551 * dg + -0.11380066504143577 * lo + -0.1471048650909032 * hi",
+          "expression_bytes": 58,
+          "free_parameters": 8,
+          "learned_state_bytes": 218,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.275704760686366e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--tool_agent-rule-1",
+      "rule_sha256": "7eac25d4194659f6bf2b0624ea698c83415878fd055a0399a4cd787b055d896a",
+      "run_id": "full-comparison-v5--P100-070--tool_agent",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "2.870385226732046e-07 + 0.5784851644989171 * hx + 0.7133065402744238 * hy + -0.02505319875821062 * ox + -0.19519024790440878 * oy + 0.2694257787785551 * dg + -0.11380066504143577 * lo + -0.1471048650909032 * hi",
+        "expression_bytes": 58,
+        "free_parameters": 8,
+        "learned_state_bytes": 218,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.18081654972446565,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.368573232808567e-06,
+        "primary": "mae",
+        "primary_error": 2.368573232808567e-06,
+        "rmse": 1.0241263418850401e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 2.339564846915968e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.387929484146875e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3986689613648588e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.668632202979583e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.08700680429627e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 9.870578645470068e-07,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.9615431929424234e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.95012338503103e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 4.924055394302301e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.348407979325312e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.1604141647779215e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.415830250723086e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.543541546881859e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.23288540978866e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.1907199851134276e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.656197224462025e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.303300437645375e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.254188614187612e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.852289107197702e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 5.168347844247505e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.9097681168248225e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.3816086641813423e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.37851022186865e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.1496188083408633e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.490106562675132e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.061972310912839e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.6350430332119795e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.984845991093787e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.212286730134593e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.673464116874241e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.980423424291049e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.991760536899351e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.136068437400792e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.552233870620712e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.1881988664117242e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6799243608583826e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.503625394877594e-06,
+        "execution_status": "complete",
+        "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 2.8703852709589526e-07,
+          "p1": 0.5784851723062648,
+          "p2": 0.7133065507671122,
+          "p3": -0.025053195512807724,
+          "p4": -0.1951902477034855,
+          "p5": 0.2694257618989435,
+          "p6": -0.11380066786501943,
+          "p7": -0.14710486829087907
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.013673124113261487,
+            "gx": -0.016101415543963445,
+            "gy": 0.02167094777626633,
+            "hi": -0.1203283022213891,
+            "hx": 0.015639194989342232,
+            "hy": -0.0036030451670497846,
+            "lo": 0.05584226646408111,
+            "ox": -0.057020718672816884,
+            "oy": -0.05447617097962368
+          },
+          "mean": -1.2540339636672486e-07,
+          "p90_abs": 5.605340802649477e-06,
+          "std": 7.131583364653624e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--best_of_n-rule-1",
+        "rule_sha256": "50dd7562ad4acc7d98d3a6c11c32ae6e6b4abcb9489edb9c227963a63e7d40f4",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "2.8703852709589526e-07 + 0.5784851723062648 * hx + 0.7133065507671122 * hy + -0.025053195512807724 * ox + -0.1951902477034855 * oy + 0.2694257618989435 * dg + -0.11380066786501943 * lo + -0.14710486829087907 * hi",
+          "expression_bytes": 58,
+          "free_parameters": 8,
+          "learned_state_bytes": 220,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.275704760483264e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--best_of_n-rule-1",
+      "rule_sha256": "50dd7562ad4acc7d98d3a6c11c32ae6e6b4abcb9489edb9c227963a63e7d40f4",
+      "run_id": "full-comparison-v5--P100-070--best_of_n",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "2.8703852709589526e-07 + 0.5784851723062648 * hx + 0.7133065507671122 * hy + -0.025053195512807724 * ox + -0.1951902477034855 * oy + 0.2694257618989435 * dg + -0.11380066786501943 * lo + -0.14710486829087907 * hi",
+        "expression_bytes": 58,
+        "free_parameters": 8,
+        "learned_state_bytes": 220,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.18081655206520497,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.399963263799989e-06,
+        "primary": "mae",
+        "primary_error": 2.399963263799989e-06,
+        "rmse": 1.0239307809968193e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 2.353395509610655e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.3773135108553147e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.424750143558786e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.650352416693218e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.602360217959551e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.0505555476012404e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.9788109037509026e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.9690743044274135e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 5.344909706201558e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.885470164987168e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.2125725879774724e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.4496400694972405e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.932837752636541e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.288489584705691e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.2762925385672733e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.6310852087801005e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.3122200230658314e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.292972292559215e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 5.367326480027641e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 5.1624495708713554e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.966383551184943e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 5.208111023763067e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.437235985854785e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.172617294301817e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 5.057173161330144e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.1662697116181148e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.626723327782586e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 8.344371785121606e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.641160169801843e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 6.240988116730424e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 6.438600142774481e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 2.0051365045362883e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.112421147897886e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.812931912448588e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.190380914593483e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6974231703990057e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.5661099923758087e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(lo)+p9*(hi)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 6.913096274749683e-07,
+          "p1": 0.5778430253094696,
+          "p2": 0.7136455018496605,
+          "p3": -0.02431610262168515,
+          "p4": -0.1962326888437273,
+          "p5": 0.2689002512826177,
+          "p6": -4.7489046016873014e-07,
+          "p7": -5.151147776055369e-08,
+          "p8": -0.11409392871217638,
+          "p9": -0.14601125829651865
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.013408757056646436,
+            "gx": -0.05735206440302309,
+            "gy": 0.01366559768506614,
+            "hi": -0.1223346680845991,
+            "hx": 0.01485240705758325,
+            "hy": -0.0034078525310927443,
+            "lo": 0.05745817547328066,
+            "ox": -0.05661243107968959,
+            "oy": -0.05564152020435633
+          },
+          "mean": -1.0768783792671451e-07,
+          "p90_abs": 5.631356578367562e-06,
+          "std": 7.137891962067645e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--linear_control-rule-1",
+        "rule_sha256": "22f226aacf90a8fda03dbee6878f9dc3182df0782a54f44fe069489f3fd64b52",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "6.913096274749683e-07 + 0.5778430253094696 * hx + 0.7136455018496605 * hy + -0.02431610262168515 * ox + -0.1962326888437273 * oy + 0.2689002512826177 * dg + -4.7489046016873014e-07 * gx + -5.151147776055369e-08 * gy + -0.11409392871217638 * lo + -0.14601125829651865 * hi",
+          "expression_bytes": 74,
+          "free_parameters": 10,
+          "learned_state_bytes": 279,
+          "literal_state_bytes": 0,
+          "nodes": 75,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 18
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.31034167918646e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(lo)+p9*(hi)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--linear_control-rule-1",
+      "rule_sha256": "22f226aacf90a8fda03dbee6878f9dc3182df0782a54f44fe069489f3fd64b52",
+      "run_id": "full-comparison-v5--P100-070--linear_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "6.913096274749683e-07 + 0.5778430253094696 * hx + 0.7136455018496605 * hy + -0.02431610262168515 * ox + -0.1962326888437273 * oy + 0.2689002512826177 * dg + -4.7489046016873014e-07 * gx + -5.151147776055369e-08 * gy + -0.11409392871217638 * lo + -0.14601125829651865 * hi",
+        "expression_bytes": 74,
+        "free_parameters": 10,
+        "learned_state_bytes": 279,
+        "literal_state_bytes": 0,
+        "nodes": 75,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 18
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.18076705676382215,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.399963263799989e-06,
+        "primary": "mae",
+        "primary_error": 2.399963263799989e-06,
+        "rmse": 1.0239307809968193e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 2.353395509610655e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.3773135108553147e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.424750143558786e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 7.650352416693218e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.602360217959551e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.0505555476012404e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 1.9788109037509026e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.9690743044274135e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 5.344909706201558e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.885470164987168e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.2125725879774724e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.4496400694972405e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.932837752636541e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 4.288489584705691e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.2762925385672733e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.6310852087801005e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.3122200230658314e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.292972292559215e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 5.367326480027641e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 5.1624495708713554e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.966383551184943e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 5.208111023763067e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.437235985854785e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.172617294301817e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 5.057173161330144e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.1662697116181148e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 4.626723327782586e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 8.344371785121606e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.641160169801843e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 6.240988116730424e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 6.438600142774481e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 2.0051365045362883e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.112421147897886e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.812931912448588e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.190380914593483e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.6974231703990057e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.5661099923758087e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(lo)+p9*(hi)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 6.913096274749683e-07,
+          "p1": 0.5778430253094696,
+          "p2": 0.7136455018496605,
+          "p3": -0.02431610262168515,
+          "p4": -0.1962326888437273,
+          "p5": 0.2689002512826177,
+          "p6": -4.7489046016873014e-07,
+          "p7": -5.151147776055369e-08,
+          "p8": -0.11409392871217638,
+          "p9": -0.14601125829651865
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.013408757056646436,
+            "gx": -0.05735206440302309,
+            "gy": 0.01366559768506614,
+            "hi": -0.1223346680845991,
+            "hx": 0.01485240705758325,
+            "hy": -0.0034078525310927443,
+            "lo": 0.05745817547328066,
+            "ox": -0.05661243107968959,
+            "oy": -0.05564152020435633
+          },
+          "mean": -1.0768783792671451e-07,
+          "p90_abs": 5.631356578367562e-06,
+          "std": 7.137891962067645e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--polynomial_control-rule-1",
+        "rule_sha256": "52ed53a2c46aca3dc9054f6b8d7a5651717b5084b0d04ee9cb375cd18bddf6b8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "6.913096274749683e-07 + 0.5778430253094696 * hx + 0.7136455018496605 * hy + -0.02431610262168515 * ox + -0.1962326888437273 * oy + 0.2689002512826177 * dg + -4.7489046016873014e-07 * gx + -5.151147776055369e-08 * gy + -0.11409392871217638 * lo + -0.14601125829651865 * hi",
+          "expression_bytes": 74,
+          "free_parameters": 10,
+          "learned_state_bytes": 279,
+          "literal_state_bytes": 0,
+          "nodes": 75,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 18
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.31034167918646e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(lo)+p9*(hi)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--polynomial_control-rule-1",
+      "rule_sha256": "52ed53a2c46aca3dc9054f6b8d7a5651717b5084b0d04ee9cb375cd18bddf6b8",
+      "run_id": "full-comparison-v5--P100-070--polynomial_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "6.913096274749683e-07 + 0.5778430253094696 * hx + 0.7136455018496605 * hy + -0.02431610262168515 * ox + -0.1962326888437273 * oy + 0.2689002512826177 * dg + -4.7489046016873014e-07 * gx + -5.151147776055369e-08 * gy + -0.11409392871217638 * lo + -0.14601125829651865 * hi",
+        "expression_bytes": 74,
+        "free_parameters": 10,
+        "learned_state_bytes": 279,
+        "literal_state_bytes": 0,
+        "nodes": 75,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 18
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.18076705676382215,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 2.4474249972154593e-06,
+        "primary": "mae",
+        "primary_error": 2.4474249972154593e-06,
+        "rmse": 1.0209404042152524e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 1.9016011736251671e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 3.5352320808203878e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.3865281194961805e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 8.59344546434172e-06,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.416062529307172e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.133590944633735e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 2.373232290224903e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 6.4531823969929416e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 5.083990204622662e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.4835704551209876e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.3184379399502312e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.016494124412671e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.626888550096251e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 5.197686223274062e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 3.6218177667059e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 4.573183565229722e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 5.693361845142885e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.1298636941956443e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.6387964871208333e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 4.971474866514651e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 2.9576298358250492e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 5.011828084965365e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.397999942858315e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 2.7001722175121008e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.754132628161002e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0916585088705236e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 5.154313804394221e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.032734390447886e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.53229112756362e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.76841177432013e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.590271149770812e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 2.288386088863384e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 6.207951160626465e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 5.771818777433548e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 3.6061476578369487e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 1.8910285200881974e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.5104444880132435e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hy)+p2*(hx)+p3*(dg)+p4*(tanh((hy--1.0491897849756604e-07)/1.919590015446636e-05))+p5*(tanh((hx-7.44206320750713e-08)/1.829847352183075e-05))",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -2.2879764459897484e-07,
+          "p1": 0.6214275285877441,
+          "p2": 0.5399458467048177,
+          "p3": 0.012485582169912223,
+          "p4": -5.569841838591438e-06,
+          "p5": 2.5232078827948695e-06
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.01414542860277992,
+            "gx": 0.02316005174353899,
+            "gy": 0.032260611201335214,
+            "hi": 0.01472378356012709,
+            "hx": 0.00945934658756523,
+            "hy": -0.0207059494430093,
+            "lo": 0.06882278969264168,
+            "ox": 0.02263364850342292,
+            "oy": 0.08733672919424833
+          },
+          "mean": -3.53051156410838e-07,
+          "p90_abs": 5.36804142074889e-06,
+          "std": 7.227706509986703e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-3",
+        "rule_sha256": "a2c36ab91ab7956ec714af203e8728cccf0c9ebd6720804ccdb61dded47825a2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-2.2879764459897484e-07 + 0.6214275285877441 * hy + 0.5399458467048177 * hx + 0.012485582169912223 * dg + -5.569841838591438e-06 * tanh((hy - -1.0491897849756604e-07) / 1.919590015446636e-05) + 2.5232078827948695e-06 * tanh((hx - 7.44206320750713e-08) / 1.829847352183075e-05)",
+          "expression_bytes": 147,
+          "free_parameters": 6,
+          "learned_state_bytes": 171,
+          "literal_state_bytes": 84,
+          "nodes": 63,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.343751697438793e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hy)+p2*(hx)+p3*(dg)+p4*(tanh((hy--1.0491897849756604e-07)/1.919590015446636e-05))+p5*(tanh((hx-7.44206320750713e-08)/1.829847352183075e-05))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-3",
+      "rule_sha256": "a2c36ab91ab7956ec714af203e8728cccf0c9ebd6720804ccdb61dded47825a2",
+      "run_id": "full-comparison-v5--P100-070--symbolic_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-2.2879764459897484e-07 + 0.6214275285877441 * hy + 0.5399458467048177 * hx + 0.012485582169912223 * dg + -5.569841838591438e-06 * tanh((hy - -1.0491897849756604e-07) / 1.919590015446636e-05) + 2.5232078827948695e-06 * tanh((hx - 7.44206320750713e-08) / 1.829847352183075e-05)",
+        "expression_bytes": 147,
+        "free_parameters": 6,
+        "learned_state_bytes": 171,
+        "literal_state_bytes": 84,
+        "nodes": 63,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.13169956333424876,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 3.041104622415894e-06,
+        "primary": "mae",
+        "primary_error": 3.041104622415894e-06,
+        "rmse": 1.2227329171795172e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 3.152166381331833e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 4.681974550937117e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.8255037383053053e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 1.0390418790274002e-05,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.113691510104845e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.1461231686148431e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 2.731318896070011e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 7.278634071081463e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 4.6343814732680233e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.325663596893217e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.533488668309792e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.733623071281436e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 8.03077449914088e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 6.572648864257754e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 4.465908733170907e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 5.079419770771705e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 7.211924796560422e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.9031051810612723e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.5491351179227054e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 6.73537057207184e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 3.636737345659613e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.826480876591653e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.540139542624612e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.948437376691371e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.6794068368054966e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0648385599551628e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 7.185390318120832e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.420000278801457e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.525298947158771e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.060415445629371e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.839055431985214e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 3.082855253478954e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 8.016958588850005e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.201624973159573e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 4.412276232735095e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 2.4160366243728873e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.9628703883368195e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hy)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -1.6367468465962276e-07,
+          "p1": 0.9672358723676365
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.29347891797737047,
+            "gx": -0.013133891940447331,
+            "gy": 0.04041778139861426,
+            "hi": -0.18993678398901695,
+            "hx": -0.40602167502145636,
+            "hy": -0.21860873257710878,
+            "lo": -0.11610627132387576,
+            "ox": -0.31425697544535464,
+            "oy": -0.02864950784340765
+          },
+          "mean": -3.3532267532528133e-07,
+          "p90_abs": 6.880054517808303e-06,
+          "std": 8.555419165074876e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-2",
+        "rule_sha256": "f93404e9560a7c73818c548d75cc0e31dae59c40a3ecf88a83ca4fe1f9f6d79f",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-1.6367468465962276e-07 + 0.9672358723676365 * hy",
+          "expression_bytes": 10,
+          "free_parameters": 2,
+          "learned_state_bytes": 57,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.91809258171631e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hy)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-2",
+      "rule_sha256": "f93404e9560a7c73818c548d75cc0e31dae59c40a3ecf88a83ca4fe1f9f6d79f",
+      "run_id": "full-comparison-v5--P100-070--symbolic_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-1.6367468465962276e-07 + 0.9672358723676365 * hy",
+        "expression_bytes": 10,
+        "free_parameters": 2,
+        "learned_state_bytes": 57,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.20704576453797885,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 3.041104622415894e-06,
+        "primary": "mae",
+        "primary_error": 3.041104622415894e-06,
+        "rmse": 1.2227329171795172e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 3.152166381331833e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 4.681974550937117e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.8255037383053053e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 1.0390418790274002e-05,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.113691510104845e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.1461231686148431e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 2.731318896070011e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 7.278634071081463e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 4.6343814732680233e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.325663596893217e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.533488668309792e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 3.733623071281436e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 8.03077449914088e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 6.572648864257754e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 4.465908733170907e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 5.079419770771705e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 7.211924796560422e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.9031051810612723e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.5491351179227054e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 6.73537057207184e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 3.636737345659613e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 4.826480876591653e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 6.540139542624612e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 3.948437376691371e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 4.6794068368054966e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.0648385599551628e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 7.185390318120832e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 7.420000278801457e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.525298947158771e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.060415445629371e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.839055431985214e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 3.082855253478954e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 8.016958588850005e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 6.201624973159573e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 4.412276232735095e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 2.4160366243728873e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.9628703883368195e-06,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hy)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -1.6367468465962276e-07,
+          "p1": 0.9672358723676365
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.29347891797737047,
+            "gx": -0.013133891940447331,
+            "gy": 0.04041778139861426,
+            "hi": -0.18993678398901695,
+            "hx": -0.40602167502145636,
+            "hy": -0.21860873257710878,
+            "lo": -0.11610627132387576,
+            "ox": -0.31425697544535464,
+            "oy": -0.02864950784340765
+          },
+          "mean": -3.3532267532528133e-07,
+          "p90_abs": 6.880054517808303e-06,
+          "std": 8.555419165074876e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-2",
+        "rule_sha256": "c75703275af035d2a08fd159d42789be68c9334c4eec38642b8314ed3155021e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-1.6367468465962276e-07 + 0.9672358723676365 * hy",
+          "expression_bytes": 10,
+          "free_parameters": 2,
+          "learned_state_bytes": 57,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 3.91809258171631e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hy)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-2",
+      "rule_sha256": "c75703275af035d2a08fd159d42789be68c9334c4eec38642b8314ed3155021e",
+      "run_id": "full-comparison-v5--P100-070--principia_engine",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-1.6367468465962276e-07 + 0.9672358723676365 * hy",
+        "expression_bytes": 10,
+        "free_parameters": 2,
+        "learned_state_bytes": 57,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.20704576453797885,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 3.5657803800070467e-06,
+        "primary": "mae",
+        "primary_error": 3.5657803800070467e-06,
+        "rmse": 1.3561772103171741e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 4.618713673794305e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 5.089066958935453e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.562118502396893e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 1.1297412412416197e-05,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 5.009032347967963e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.4496764996104048e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 4.1483950748399396e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 9.208860193230978e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 6.591308256918302e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 4.5516594912854386e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.4041176927242823e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 5.423940762448638e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 8.279586185733485e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 7.228601648826927e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 6.008545587322445e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 6.849705160228467e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 7.260041050673243e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.9363022751256407e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 4.816397787266475e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 6.9829454170319064e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 4.93625779513204e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 7.015369852469617e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 7.312088991771455e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 4.098794932347834e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 3.791280487405614e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.522936126682926e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 7.237086467224411e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 1.3371852757519776e-06,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.313678932919747e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.80910010797279e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.209078816226579e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 4.8671879093357425e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 7.888727268471546e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 5.275021750237794e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 5.02373219507975e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 3.9903824998041715e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 3.6090814837921555e-06,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-070--tree_control-rule-1",
+        "rule_sha256": "0c2856a16887e530003fea5f959a9a653ebb655e97a595c08fbdab15709940bb",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 43,
+          "weighted_operator_count": 43
+        },
+        "task_id": "P100-070.compact.v2",
+        "tree": {
+          "feature": [
+            0,
+            1,
+            1,
+            -2,
+            0,
+            -2,
+            6,
+            -2,
+            -2,
+            0,
+            1,
+            0,
+            -2,
+            1,
+            -2,
+            -2,
+            5,
+            0,
+            -2,
+            -2,
+            -2,
+            0,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            2,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            3,
+            -2,
+            -2,
+            -2
+          ],
+          "features": [
+            "hx",
+            "hy",
+            "ox",
+            "oy",
+            "dg",
+            "gx",
+            "gy",
+            "lo",
+            "hi"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            -1,
+            5,
+            -1,
+            7,
+            -1,
+            -1,
+            10,
+            11,
+            12,
+            -1,
+            14,
+            -1,
+            -1,
+            17,
+            18,
+            -1,
+            -1,
+            -1,
+            22,
+            23,
+            24,
+            -1,
+            -1,
+            27,
+            -1,
+            -1,
+            30,
+            31,
+            -1,
+            -1,
+            34,
+            -1,
+            -1,
+            37,
+            38,
+            -1,
+            40,
+            -1,
+            -1,
+            -1
+          ],
+          "right": [
+            36,
+            9,
+            4,
+            -1,
+            6,
+            -1,
+            8,
+            -1,
+            -1,
+            21,
+            16,
+            13,
+            -1,
+            15,
+            -1,
+            -1,
+            20,
+            19,
+            -1,
+            -1,
+            -1,
+            29,
+            26,
+            25,
+            -1,
+            -1,
+            28,
+            -1,
+            -1,
+            33,
+            32,
+            -1,
+            -1,
+            35,
+            -1,
+            -1,
+            42,
+            39,
+            -1,
+            41,
+            -1,
+            -1,
+            -1
+          ],
+          "threshold": [
+            2.334404234716203e-05,
+            -2.6078512746607885e-05,
+            -6.228201891644858e-05,
+            -2.0,
+            -3.989236392953899e-05,
+            -2.0,
+            0.6714838743209839,
+            -2.0,
+            -2.0,
+            -1.0354207461205078e-05,
+            -1.5498643733735662e-05,
+            -2.2737347535439767e-05,
+            -2.0,
+            -1.9551107470761053e-05,
+            -2.0,
+            -2.0,
+            1.2652742862701416,
+            -1.5916531083348673e-05,
+            -2.0,
+            -2.0,
+            -2.0,
+            5.81200401938986e-06,
+            -7.175525524871773e-06,
+            -1.1190174518560525e-05,
+            -2.0,
+            -2.0,
+            5.32572244082985e-06,
+            -2.0,
+            -2.0,
+            1.3947643310530111e-05,
+            8.381151928915642e-06,
+            -2.0,
+            -2.0,
+            4.42857458438084e-06,
+            -2.0,
+            -2.0,
+            6.108866728027351e-05,
+            2.3693616640230175e-05,
+            -2.0,
+            2.4010270863072947e-05,
+            -2.0,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            -2.651560843546378e-07,
+            -2.812998916540411e-06,
+            -5.3903745385864985e-05,
+            -0.00010246636126811048,
+            -3.872792792266325e-05,
+            -5.2377492201378115e-05,
+            -3.101295680860704e-05,
+            -3.48125359466321e-05,
+            -2.704450748666978e-05,
+            -4.5381223618312066e-07,
+            -1.6549149689428513e-05,
+            -2.154925553196338e-05,
+            -2.7633176218322938e-05,
+            -1.9323430890612312e-05,
+            -2.1513493653734195e-05,
+            -1.7921790722214302e-05,
+            -1.2974605938169552e-05,
+            -1.4380163696679167e-05,
+            -2.059025347809941e-05,
+            -1.2204365817057467e-05,
+            -7.774042231684011e-06,
+            1.3040254314748458e-06,
+            -6.335131965724564e-07,
+            -9.276672044838974e-06,
+            -1.2523977035938249e-05,
+            -7.727957356776244e-06,
+            -7.040274565044069e-08,
+            -3.789518258246144e-07,
+            5.376074372107592e-06,
+            1.2342017724470273e-05,
+            8.61614682985964e-06,
+            6.6604235768214676e-06,
+            1.0977324903649639e-05,
+            1.947834187181972e-05,
+            2.5233216863210556e-05,
+            1.7679943437010092e-05,
+            4.9551569976921306e-05,
+            3.5128310713236607e-05,
+            2.3438635513881105e-05,
+            4.0870607302393676e-05,
+            4.8772123132905686e-05,
+            3.491407998400771e-05,
+            9.95914490550112e-05
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--tree_control-rule-1",
+      "rule_sha256": "0c2856a16887e530003fea5f959a9a653ebb655e97a595c08fbdab15709940bb",
+      "run_id": "full-comparison-v5--P100-070--tree_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 64,
+        "learned_state_bytes": 2277,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 43
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.1766330694973723,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 3.606615991024965e-06,
+        "primary": "mae",
+        "primary_error": 3.606615991024965e-06,
+        "rmse": 1.3002323125860546e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 3.844127445258064e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 5.21479413149961e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 1.6776523119399414e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 1.2433989375829347e-05,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 7.207365197159891e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 1.4414553451981506e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 3.7709635378949493e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 8.234571557518817e-06,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 6.584020999528097e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 5.863062976626028e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 1.8043692701662228e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 4.482093188128154e-06,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 8.532698789669754e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 8.377125950531972e-06,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 5.76770899026593e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 5.681173572071709e-06,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 8.884185463810294e-06,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 1.5648787020874448e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 6.023618666210413e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 7.606240904788742e-06,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 4.772113821191255e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 7.54259801233807e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 8.113400666405336e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 4.740961958975849e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 6.159191088840785e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 1.5402227852860988e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 7.809357201040657e-06,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 9.271724742172161e-07,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.556348642743519e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 6.863562937260957e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 6.822852765482591e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 3.6600969482355796e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 8.863147254276836e-06,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 7.268507953770308e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 4.763668366920242e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 3.622382250162061e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 3.600703092600206e-06,
+        "execution_status": "complete",
+        "expression": "p0*(hx+ox+dg) + p1*(hy+oy) + p2*(lo+hi) + p3*gx + p4*gy",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.3688303338202345,
+          "p1": 0.31120538031518813,
+          "p2": -0.1963146998508962,
+          "p3": -3.614108995048608e-07,
+          "p4": -8.685182835602478e-08
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": 0.04799851450378402,
+            "gx": -0.023572379202325744,
+            "gy": 0.013440940508982445,
+            "hi": -0.020460937237170886,
+            "hx": -0.06535191432475897,
+            "hy": -0.07217728192502566,
+            "lo": 0.09500031398363878,
+            "ox": 0.16969159426735,
+            "oy": 0.23728977949958244
+          },
+          "mean": -5.002381597083702e-07,
+          "p90_abs": 9.34896699505369e-06,
+          "std": 8.712514501258386e-06
+        },
+        "rule_id": "full-comparison-v5--P100-070--direct_qwen-rule-1",
+        "rule_sha256": "92783d5c31585b9ca202a4403f29c636821b6ff341c521c00fff89353ca74f97",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.3688303338202345 * (hx + ox + dg) + 0.31120538031518813 * (hy + oy) + -0.1963146998508962 * (lo + hi) + -3.614108995048608e-07 * gx + -8.685182835602478e-08 * gy",
+          "expression_bytes": 55,
+          "free_parameters": 5,
+          "learned_state_bytes": 140,
+          "literal_state_bytes": 0,
+          "nodes": 55,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 4.483067462500311e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0*(hx+ox+dg) + p1*(hy+oy) + p2*(lo+hi) + p3*gx + p4*gy",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--direct_qwen-rule-1",
+      "rule_sha256": "92783d5c31585b9ca202a4403f29c636821b6ff341c521c00fff89353ca74f97",
+      "run_id": "full-comparison-v5--P100-070--direct_qwen",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.3688303338202345 * (hx + ox + dg) + 0.31120538031518813 * (hy + oy) + -0.1963146998508962 * (lo + hi) + -3.614108995048608e-07 * gx + -8.685182835602478e-08 * gy",
+        "expression_bytes": 55,
+        "free_parameters": 5,
+        "learned_state_bytes": 140,
+        "literal_state_bytes": 0,
+        "nodes": 55,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.12682933482685096,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 6.321772958910593e-06,
+        "primary": "mae",
+        "primary_error": 6.321772958910593e-06,
+        "rmse": 2.0934490958634393e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 6.894590906785181e-06,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 7.968397249287778e-06,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 2.669749433531936e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 2.4130313728658464e-05,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 6.29827100441865e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 3.339387011755991e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 7.11565314697111e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 1.0330449400371084e-05,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 6.590595242938505e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 5.559509165354529e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 2.91222772887751e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 1.0106071983891598e-05,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 8.367489105457343e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 1.626059994700406e-05,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 9.77838325166074e-06,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 1.5375790278967745e-05,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 1.1851430669516724e-05,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 2.825629383758187e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 6.43372348027231e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 1.369823971911912e-05,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 9.673446499923688e-06,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 7.953457631717726e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 7.643858748616778e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 9.901263350197842e-06,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 5.557925602772884e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 2.1662989908519773e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 1.2240132037584598e-05,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 2.0965629485691094e-06,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 6.567179203807531e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 8.711453857621557e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 6.493540037058878e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 5.870206246566544e-06,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 1.788566108036385e-05,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 7.955666640921458e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 8.702063825653129e-06,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 5.378010728817574e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 6.557825838236904e-06,
+        "execution_status": "complete",
+        "expression": "hx * gx + hy * gy + ox + oy + dg + p0 * (hi - lo) + p1 * (hx + hy) + p2 * (ox + oy) + p3 * dg",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.018673686862829678,
+          "p1": -0.7373280960197285,
+          "p2": -0.9453856247825916,
+          "p3": 0.03656247642168564
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.1650206532144551,
+            "gx": 0.06901363351634457,
+            "gy": 0.06913516250072077,
+            "hi": 0.10045607493587909,
+            "hx": -0.11531419077871452,
+            "hy": -0.15454135587267837,
+            "lo": -0.15862985723841483,
+            "ox": -0.14648391003742428,
+            "oy": -0.07709034392655814
+          },
+          "mean": 9.590755914283079e-07,
+          "p90_abs": 1.7587812629661177e-05,
+          "std": 1.6850470741283603e-05
+        },
+        "rule_id": "full-comparison-v5--P100-070--direct_kimi-rule-1",
+        "rule_sha256": "f29d075dbc65987041965ca2c89d366d70c3e03d008f08ea9a6ab62b9a47f38d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "hx * gx + hy * gy + ox + oy + dg + 0.018673686862829678 * (hi - lo) + -0.7373280960197285 * (hx + hy) + -0.9453856247825916 * (ox + oy) + 0.03656247642168564 * dg",
+          "expression_bytes": 93,
+          "free_parameters": 4,
+          "learned_state_bytes": 109,
+          "literal_state_bytes": 0,
+          "nodes": 71,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 8.118155693894706e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "hx * gx + hy * gy + ox + oy + dg + p0 * (hi - lo) + p1 * (hx + hy) + p2 * (ox + oy) + p3 * dg",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-070--direct_kimi-rule-1",
+      "rule_sha256": "f29d075dbc65987041965ca2c89d366d70c3e03d008f08ea9a6ab62b9a47f38d",
+      "run_id": "full-comparison-v5--P100-070--direct_kimi",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "hx * gx + hy * gy + ox + oy + dg + 0.018673686862829678 * (hi - lo) + -0.7373280960197285 * (hx + hy) + -0.9453856247825916 * (ox + oy) + 0.03656247642168564 * dg",
+        "expression_bytes": 93,
+        "free_parameters": 4,
+        "learned_state_bytes": 109,
+        "literal_state_bytes": 0,
+        "nodes": 71,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.2024856762455749,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.137172410624584e-06,
+        "primary": "mae",
+        "primary_error": 8.137172410624584e-06,
+        "rmse": 2.3118015047166307e-05
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 8.137172410624584e-06,
+      "by_group": [
+        {
+          "error": 1.2668652628503697e-05,
+          "group": "group-0075bacd3ccd3449ee575748",
+          "rows": 160
+        },
+        {
+          "error": 1.1564131724683398e-05,
+          "group": "group-07db4f9103c600ad96407052",
+          "rows": 160
+        },
+        {
+          "error": 2.5768684968283875e-06,
+          "group": "group-099156bab8991969d8733c85",
+          "rows": 160
+        },
+        {
+          "error": 2.587304089414385e-05,
+          "group": "group-1599eb7bdf632a5e6c27839a",
+          "rows": 150
+        },
+        {
+          "error": 4.7596735273425593e-07,
+          "group": "group-17b02e53d993b6658a0b65f8",
+          "rows": 160
+        },
+        {
+          "error": 3.0386718312755883e-06,
+          "group": "group-19d52dbff6f50719ad402f6e",
+          "rows": 160
+        },
+        {
+          "error": 9.714466042619886e-06,
+          "group": "group-1f93168c81c150903f1651f6",
+          "rows": 160
+        },
+        {
+          "error": 1.81351330290056e-05,
+          "group": "group-28e9de90b9b9aecb03253f1a",
+          "rows": 160
+        },
+        {
+          "error": 7.482310914485552e-07,
+          "group": "group-2bddcc7bc907314c9fc25160",
+          "rows": 144
+        },
+        {
+          "error": 5.178772587590592e-07,
+          "group": "group-340483b2cf1c0a5e5ab57007",
+          "rows": 160
+        },
+        {
+          "error": 2.4993550730534915e-06,
+          "group": "group-3e7c636ea82ad5c4f2db08b0",
+          "rows": 160
+        },
+        {
+          "error": 1.2427952620702568e-05,
+          "group": "group-3fb204aeb9593b64bf0e6fd1",
+          "rows": 160
+        },
+        {
+          "error": 7.734159960061947e-07,
+          "group": "group-45a108fab1176065582d2770",
+          "rows": 144
+        },
+        {
+          "error": 1.845511428260708e-05,
+          "group": "group-4c081ff57db25a59a2474537",
+          "rows": 160
+        },
+        {
+          "error": 1.4037337704061773e-05,
+          "group": "group-4fadb78d147ab46cbd29c720",
+          "rows": 160
+        },
+        {
+          "error": 1.5585371161053417e-05,
+          "group": "group-4fead39fa80194d9d400ca19",
+          "rows": 160
+        },
+        {
+          "error": 1.920119775514995e-05,
+          "group": "group-593740b8e47a7cb5041eb470",
+          "rows": 160
+        },
+        {
+          "error": 3.2226583844336354e-06,
+          "group": "group-5c0220affd4a660af0df78ff",
+          "rows": 160
+        },
+        {
+          "error": 5.550721589706502e-07,
+          "group": "group-68024c206d365ad01c6cb69d",
+          "rows": 160
+        },
+        {
+          "error": 1.7450961524456254e-05,
+          "group": "group-7157cfd7fe45bb8cfcf7bbfd",
+          "rows": 160
+        },
+        {
+          "error": 1.1305367367777616e-05,
+          "group": "group-73f5e7d03a202fab26f3d8f1",
+          "rows": 160
+        },
+        {
+          "error": 7.838022985408756e-07,
+          "group": "group-777265032c965a68bd921a54",
+          "rows": 144
+        },
+        {
+          "error": 8.043434276356719e-07,
+          "group": "group-7cfa1fb7f26a19b008ee298a",
+          "rows": 135
+        },
+        {
+          "error": 1.2715740567354801e-05,
+          "group": "group-87600195d2f406074424b069",
+          "rows": 160
+        },
+        {
+          "error": 3.7314525067141e-07,
+          "group": "group-8f043935b42eff9a5153dfe0",
+          "rows": 160
+        },
+        {
+          "error": 2.2424957461628698e-06,
+          "group": "group-94b5f3c6d1d48fc3afb44afe",
+          "rows": 160
+        },
+        {
+          "error": 1.8896714300364354e-05,
+          "group": "group-a2157c21499487b668e0ed1f",
+          "rows": 160
+        },
+        {
+          "error": 2.422103348812818e-06,
+          "group": "group-a775adc76c0bac8ae57ca5c9",
+          "rows": 150
+        },
+        {
+          "error": 5.938928750101996e-07,
+          "group": "group-c99640f913dddbc3aaeac99f",
+          "rows": 144
+        },
+        {
+          "error": 5.807724954764109e-07,
+          "group": "group-cda399c0e69898b7420c4396",
+          "rows": 150
+        },
+        {
+          "error": 5.119882933645991e-07,
+          "group": "group-cf2b49309440b6ccc96723c5",
+          "rows": 144
+        },
+        {
+          "error": 1.1432837415788985e-05,
+          "group": "group-dc02fa3fa237c1ff2891c04f",
+          "rows": 150
+        },
+        {
+          "error": 1.9845180383168784e-05,
+          "group": "group-e6e36e736e5c3d1472fdbe0a",
+          "rows": 150
+        },
+        {
+          "error": 5.17629487738473e-07,
+          "group": "group-f20a9ecb7c1e2d37b75a6a6f",
+          "rows": 160
+        },
+        {
+          "error": 1.1106639459769644e-05,
+          "group": "group-f60a9f7fa64d92dab3a42fd4",
+          "rows": 160
+        },
+        {
+          "error": 9.284077054350183e-06,
+          "group": "group-f646145e51c78af3877caee5",
+          "rows": 160
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 8.473940245678028e-06,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "lo",
+          "hi"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -2.651560843546373e-07
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "dg": -0.8867401785171484,
+            "gx": 0.005202765895949031,
+            "gy": -0.027111026824893285,
+            "hi": -0.6173817568562568,
+            "hx": -0.9104301355996489,
+            "hy": -0.9138386869096682,
+            "lo": -0.5047813486634465,
+            "ox": -0.7230738747028926,
+            "oy": -0.6710783685010043
+          },
+          "mean": -9.5047276768165e-07,
+          "p90_abs": 2.5348450542836117e-05,
+          "std": 2.055885354741385e-05
+        },
+        "rule_id": "full-comparison-v5--P100-070--mean_control-rule-1",
+        "rule_sha256": "9b975e4371c16cd99c88e22c569da218469d31b673122f9419fa69934b6c29e8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-2.651560843546373e-07",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 30,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-070.compact.v2",
+        "train_error": 9.61183004434027e-06,
+        "units": {
+          "inputs": {
+            "dg": "source-native Bz unit",
+            "gx": "dimensionless local contrast",
+            "gy": "dimensionless local contrast",
+            "hi": "source-native Bz unit",
+            "hx": "source-native Bz unit",
+            "hy": "source-native Bz unit",
+            "lo": "source-native Bz unit",
+            "ox": "source-native Bz unit",
+            "oy": "source-native Bz unit"
+          },
+          "output": "source-native Bz unit (SI conversion unresolved)",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 5605,
+        "fraction": 1.0,
+        "predicted": 5605
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-070--mean_control-rule-1",
+      "rule_sha256": "9b975e4371c16cd99c88e22c569da218469d31b673122f9419fa69934b6c29e8",
+      "run_id": "full-comparison-v5--P100-070--mean_control",
+      "scenario_id": "P100-070",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-2.651560843546373e-07",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 30,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 5605,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-070.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-070",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-070.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

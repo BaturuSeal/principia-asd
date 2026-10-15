@@ -1,0 +1,65 @@
+{
+  "dev_error": 8.202486138212556,
+  "execution_status": "complete",
+  "expression": "p0+p1*((p72_pct)**2)+p2*(p22_pct)",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 12.765859599700029,
+    "p1": 0.006683620660871119,
+    "p2": 0.257581537833035
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": 0.3772617102569837,
+      "p72_pct": -0.46607871708509235,
+      "time_h": 0.02087596210178971
+    },
+    "mean": 3.01520278850155,
+    "p90_abs": 16.12474756726278,
+    "std": 9.939513989583128
+  },
+  "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-3",
+  "rule_sha256": "0919addf1ca1892d8c02435705090faccbdf8ad8e206a5777d7a43d4cf3b024e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "12.765859599700029 + 0.006683620660871119 * p72_pct ** 2 + 0.257581537833035 * p22_pct",
+    "expression_bytes": 33,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "literal_state_bytes": 1,
+    "nodes": 22,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 8.427727189271138,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

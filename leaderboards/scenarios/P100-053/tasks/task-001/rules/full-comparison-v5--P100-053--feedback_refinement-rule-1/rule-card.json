@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.0314706723387831,
+  "execution_status": "complete",
+  "expression": "p0 + p1*early + p2*finding + p3*gradient_proxy + p4*roughness + p5*usage + p6*left + p7*has_history",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.1969193313705597,
+    "p1": 1.3392581550836633,
+    "p2": -0.011075668239331898,
+    "p3": 0.24752560252731526,
+    "p4": -0.10745774019217963,
+    "p5": -0.003829495347057631,
+    "p6": -0.019094730328855156,
+    "p7": -0.14033549539495013
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.027963141630186112,
+      "finding": -0.04486156681357677,
+      "first_y": -0.00913271597822495,
+      "gradient_proxy": -0.0035643043646130536,
+      "has_history": 0.032634557413038445,
+      "history_gap": -0.01070075489266273,
+      "left": -0.001258933119518744,
+      "mean_past_y": -0.2522045389912663,
+      "prev_early": -0.24928343776582806,
+      "prev_gradient": -0.17647318260434927,
+      "prev_y": -0.3881485726242946,
+      "roughness": -0.05701834764913161,
+      "usage": 0.018132285514919654
+    },
+    "mean": -0.0005039853684868617,
+    "p90_abs": 0.06611625785433167,
+    "std": 0.04233903197967175
+  },
+  "rule_id": "full-comparison-v5--P100-053--feedback_refinement-rule-1",
+  "rule_sha256": "66078bed9599901e8005e888202f9b3c001645f4c866b14a97c799ce0fe3fa76",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.1969193313705597 + 1.3392581550836633 * early + -0.011075668239331898 * finding + 0.24752560252731526 * gradient_proxy + -0.10745774019217963 * roughness + -0.003829495347057631 * usage + -0.019094730328855156 * left + -0.14033549539495013 * has_history",
+    "expression_bytes": 99,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.030666378616576968,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

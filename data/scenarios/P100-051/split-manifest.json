@@ -1,0 +1,26 @@
+{
+  "disjoint_groups": true,
+  "disjoint_samples": true,
+  "identity_join": "verified opaque reference sample_id and all allowed input values",
+  "partitions": {
+    "dev": {
+      "group_ids_sha256": "20f53d5dc51a09e7688762cf4cad78d34637f97656314e28f6359f32d645cdaa",
+      "groups": 5,
+      "rows": 990,
+      "sample_ids_sha256": "32e0bc8ad73f40f06a6dd1e86d2e15133e0ec4051cf67e685bf0a39e43befb34"
+    },
+    "test": {
+      "group_ids_sha256": "dc522170da023e15e5ccdd8cb7449327735a9edfc7cb5767692eee0d79903163",
+      "groups": 9,
+      "rows": 1782,
+      "sample_ids_sha256": "4e8533f92ff07b1af1048f4fee7fd5330b2a538d9df235efaf4761b960f61ea2"
+    },
+    "train": {
+      "group_ids_sha256": "c252dab6ca30e7c10bd5c8835e9443bad0cbb4f334ceebdadb59208ae2dd6557",
+      "groups": 22,
+      "rows": 4356,
+      "sample_ids_sha256": "3f8f43770fedc463223679a6e226b467ba558269c2f2b9a4862b340b2a71d228"
+    }
+  },
+  "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+}

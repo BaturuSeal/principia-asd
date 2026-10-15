@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.19243872773231954,
+    "primary": "mae",
+    "primary_error": 0.19243872773231954,
+    "rmse": 0.3502060663694614
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.11410302735607576,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.27077442810856334,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-023--principia_engine-rule-3",
+  "rule_sha256": "e4720252a978fe4e4c13354b3cec5574a283d73216da5a618c17449c96f03cb3",
+  "run_id": "full-comparison-v5--P100-023--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.26089163498222423 + 0.07878706449342499 * (H * area) + 0.1111568487970799 * H ** 2",
+    "expression_bytes": 26,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "literal_state_bytes": 1,
+    "nodes": 26,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.15069920583718327,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

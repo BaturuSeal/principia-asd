@@ -1,0 +1,101 @@
+{
+  "dev_error": 0.024913646463141193,
+  "execution_status": "complete",
+  "expression": "p0+p1*(early)+p2*(finding)+p3*(gradient_proxy)+p4*(roughness)+p5*(usage)+p6*(left)+p7*(has_history)+p8*(prev_y)+p9*(prev_early)+p10*(prev_gradient)+p11*(first_y)+p12*(mean_past_y)+p13*(history_gap)",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.21702692632808854,
+    "p1": 1.08892995689658,
+    "p10": 0.024003182058419687,
+    "p11": -0.006733148246232323,
+    "p12": 0.10804211133030764,
+    "p13": 0.02114954641679589,
+    "p2": -0.038936400030361716,
+    "p3": 0.21827902102450975,
+    "p4": -0.061124602336767066,
+    "p5": -0.0008738459802685923,
+    "p6": -0.010495598309940481,
+    "p7": -0.23625050535794895,
+    "p8": 0.3240877135399266,
+    "p9": -0.268429520321253
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.02283878804020668,
+      "finding": -0.03949307408703889,
+      "first_y": 0.025164851656923726,
+      "gradient_proxy": 0.017430073019523835,
+      "has_history": 0.0407311973841755,
+      "history_gap": 0.038661091755564016,
+      "left": -0.00775296049727303,
+      "mean_past_y": 0.005166563771866004,
+      "prev_early": -0.0295395763501451,
+      "prev_gradient": -0.046417407232612985,
+      "prev_y": -0.008198425752216014,
+      "roughness": -0.07389277258151626,
+      "usage": 0.011876992316902467
+    },
+    "mean": -6.865593241060355e-05,
+    "p90_abs": 0.05493851373279081,
+    "std": 0.03571574811456285
+  },
+  "rule_id": "full-comparison-v5--P100-053--linear_control-rule-1",
+  "rule_sha256": "04f7010702046af9cda6409f3800463fe7b61814c1a6153f54625e017c26e50d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.21702692632808854 + 1.08892995689658 * early + -0.038936400030361716 * finding + 0.21827902102450975 * gradient_proxy + -0.061124602336767066 * roughness + -0.0008738459802685923 * usage + -0.010495598309940481 * left + -0.23625050535794895 * has_history + 0.3240877135399266 * prev_y + -0.268429520321253 * prev_early + 0.024003182058419687 * prev_gradient + -0.006733148246232323 * first_y + 0.10804211133030764 * mean_past_y + 0.02114954641679589 * history_gap",
+    "expression_bytes": 197,
+    "free_parameters": 14,
+    "learned_state_bytes": 390,
+    "literal_state_bytes": 0,
+    "nodes": 107,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 26
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.024260793039383503,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "dev_error": 1.0222222222222224,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.9666666666666667
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.37130664180695855,
+      "soft": -0.4745465078367638
+    },
+    "mean": 0.5952380952380955,
+    "p90_abs": 1.0333333333333332,
+    "std": 0.8971610553204329
+  },
+  "rule_id": "full-comparison-v5--P100-076--mean_control-rule-1",
+  "rule_sha256": "557f0f6aef5264ae16bad5c81cbc0380ac936771ae2137307c40f96d118b6c98",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.9666666666666667",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.800113378684807,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "lag1": "author-normalized relative flux",
+    "lag12": "author-normalized relative flux",
+    "lag2": "author-normalized relative flux",
+    "lag24": "author-normalized relative flux",
+    "lag3": "author-normalized relative flux",
+    "lag4": "author-normalized relative flux",
+    "lag6": "author-normalized relative flux",
+    "mad6": "author-normalized relative flux",
+    "median24": "author-normalized relative flux",
+    "median6": "author-normalized relative flux"
+  },
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "lag6",
+    "lag12",
+    "lag24",
+    "median6",
+    "median24",
+    "mad6"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Predict next disjoint hourly bin using preceding observed hourly medians only. The released light curve was author-corrected using full-sector information; this is a retrospective product-space forecast, not a raw real-time pipeline.",
+  "output": "target",
+  "output_description": "Next hourly median systematics-corrected stellar flux",
+  "output_units": "relative flux (native normalization)",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-002",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "2104c205f6a3de4a65b25d63beaf21064438fdaf2d10aa1c7efa695003f7a75a",
+  "source_task": "P100-002.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Star; repeated hourly bins are dependent",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-002.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Next hourly median systematics-corrected stellar flux",
+  "version": "1.0.0rc2"
+}

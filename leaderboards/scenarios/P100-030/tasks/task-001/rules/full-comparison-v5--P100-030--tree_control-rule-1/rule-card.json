@@ -1,0 +1,79 @@
+{
+  "dev_error": 0.006857777777777779,
+  "execution_status": "complete",
+  "expression": "Decision tree; see complete node arrays",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "tree_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "tree_reference",
+  "output": "target",
+  "parameters": {},
+  "representation": "tree",
+  "rule_id": "full-comparison-v5--P100-030--tree_control-rule-1",
+  "rule_sha256": "9af250176d08fc4cd0c8cc1d7c98e45dce441b596d27c5d73ee895f1aa39bf88",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "free_parameters": 7,
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-030.compact.v2",
+  "tree": {
+    "feature": [
+      0,
+      1,
+      -2,
+      -2,
+      0,
+      -2,
+      -2
+    ],
+    "features": [
+      "speed_mm_s",
+      "boundary_cof",
+      "highspeed_cof",
+      "concentration_wt_pct"
+    ],
+    "left": [
+      1,
+      2,
+      -1,
+      -1,
+      5,
+      -1,
+      -1
+    ],
+    "right": [
+      4,
+      3,
+      -1,
+      -1,
+      6,
+      -1,
+      -1
+    ],
+    "threshold": [
+      1.6850000023841858,
+      0.11084999889135361,
+      -2.0,
+      -2.0,
+      4.4999998807907104,
+      -2.0,
+      -2.0
+    ],
+    "value": [
+      0.045411666666666656,
+      0.06048000000000001,
+      0.04892083333333333,
+      0.10671666666666667,
+      0.030343333333333333,
+      0.037693333333333336,
+      0.02299333333333333
+    ]
+  }
+}

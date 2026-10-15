@@ -1,0 +1,67 @@
+{
+  "dev_error": 37.9815268958971,
+  "execution_status": "complete",
+  "expression": "p0 + p1*current + p2*slope6 + p3*time_h + p4*slope6*time_h + p5*current*time_h + p6*current*slope6 + p7*current*slope6*time_h",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 137.20419962012144,
+    "p1": 0.9980537022217828,
+    "p2": 3.1311916176823362,
+    "p3": 1.8925950536427567,
+    "p4": 0.006077011937291284,
+    "p5": -0.00018623002034405775,
+    "p6": 1.0728203118690502e-05,
+    "p7": -2.5743844134890093e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.034131198435138246,
+      "slope6": 0.06390988325416577,
+      "time_h": -0.03426566470578155
+    },
+    "mean": 0.46308890018246096,
+    "p90_abs": 78.75066895132349,
+    "std": 63.356554784754685
+  },
+  "rule_id": "full-comparison-v5--P100-086--feedback_refinement-rule-1",
+  "rule_sha256": "051db56d51f862e64fc62bd074beb480efb53a6e08d0d72c95b1464d78e6efb0",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "137.20419962012144 + 0.9980537022217828 * current + 3.1311916176823362 * slope6 + 1.8925950536427567 * time_h + 0.006077011937291284 * slope6 * time_h + -0.00018623002034405775 * current * time_h + 1.0728203118690502e-05 * current * slope6 + -2.5743844134890093e-07 * current * slope6 * time_h",
+    "expression_bytes": 125,
+    "free_parameters": 8,
+    "learned_state_bytes": 224,
+    "literal_state_bytes": 0,
+    "nodes": 79,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 37.59111486369878,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.7292942173467049,
+  "execution_status": "complete",
+  "expression": "p0 + p1*current + p2*soft + p3*kd + p4*cal_mean + p5*cal_last",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.002747253310302713,
+    "p1": 0.017032967029963878,
+    "p2": -0.4107142850164516,
+    "p3": 0.7857142862481878,
+    "p4": 1.1158193978807556,
+    "p5": 0.7604586709463963
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.061325274481630276,
+      "soft": -0.6575292508507182
+    },
+    "mean": 0.14285714245310036,
+    "p90_abs": 1.7048901098802571,
+    "std": 0.9534978567581048
+  },
+  "rule_id": "full-comparison-v5--P100-076--tool_agent-rule-1",
+  "rule_sha256": "ffc5d2598891cfad6387ce5afc847bc58d87bf9d648296ca60f4bff3a40275b9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.002747253310302713 + 0.017032967029963878 * current + -0.4107142850164516 * soft + 0.7857142862481878 * kd + 1.1158193978807556 * cal_mean + 0.7604586709463963 * cal_last",
+    "expression_bytes": 61,
+    "free_parameters": 6,
+    "learned_state_bytes": 162,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7204483441850577,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

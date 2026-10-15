@@ -1,0 +1,935 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T17:09:10.404982+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 6769483,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "One cell/cycle and shared measured references; triplet splits do not establish independent replication",
+        "Same-spectrum pre/post-edge measurements and whole-cycle durations are permitted calibration, not online forecasts",
+        "Nominal spectral midpoint is not a hardware synchronization timestamp; phase-boundary triplets may mix segments",
+        "Source raw mu(E) already embodies spectroscopy reduction; detector-count processing is not reconstructed",
+        "Rule-only complexity excludes reference normalization, numerical gradients and interpolation; full-pipeline complexity remains unassessed",
+        "Rights/notices, calibrated uncertainty and final scientific admission remain pending"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-025/reconstruction.json",
+      "candidate_receipt_sha256": "db2318c0766202844fee2a50996950227301e886b405774da8691228475e4470",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 4030
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1014
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 754,
+            "reconstructed_rows": 754,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 1014,
+            "reconstructed_rows": 1014,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 3276,
+            "reconstructed_rows": 3276,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_slag_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_xas_validation": {
+        "acquisition_clock": {
+          "date_text": "07.06.23",
+          "response_channels_used_as_predictors": false,
+          "rows": 58068,
+          "segments": [
+            {
+              "end_s": 31981.0,
+              "name": "charge",
+              "segment_end_s": 31981.0,
+              "segment_start_s": 0.0,
+              "source_lines": [
+                22,
+                32003
+              ],
+              "start_s": 0.0
+            },
+            {
+              "end_s": 39181.0,
+              "name": "rest-1",
+              "segment_end_s": 7199.5,
+              "segment_start_s": 0.5,
+              "source_lines": [
+                32004,
+                39203
+              ],
+              "start_s": 31982.0
+            },
+            {
+              "end_s": 50866.0,
+              "name": "discharge",
+              "segment_end_s": 11684.0,
+              "segment_start_s": 0.0,
+              "source_lines": [
+                39204,
+                50888
+              ],
+              "start_s": 39182.0
+            },
+            {
+              "end_s": 58067.0,
+              "name": "rest-2",
+              "segment_end_s": 7200.0,
+              "segment_start_s": 0.0,
+              "source_lines": [
+                50889,
+                58089
+              ],
+              "start_s": 50867.0
+            }
+          ]
+        },
+        "calibration_bands": {
+          "raw_post_rows": [
+            848,
+            849,
+            850,
+            851,
+            852,
+            853,
+            854,
+            855,
+            856,
+            857,
+            858,
+            859,
+            860,
+            861,
+            862,
+            863,
+            864,
+            865,
+            866,
+            867,
+            868,
+            869,
+            870,
+            871,
+            872,
+            873,
+            874,
+            875,
+            876,
+            877,
+            878,
+            879,
+            880,
+            881,
+            882,
+            883,
+            884,
+            885,
+            886,
+            887,
+            888,
+            889,
+            890,
+            891,
+            892,
+            893,
+            894,
+            895,
+            896,
+            897
+          ],
+          "raw_pre_rows": [
+            598,
+            599,
+            600,
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608,
+            609,
+            610,
+            611,
+            612,
+            613,
+            614,
+            615,
+            616,
+            617,
+            618,
+            619,
+            620,
+            621,
+            622,
+            623,
+            624,
+            625,
+            626,
+            627,
+            628,
+            629,
+            630,
+            631,
+            632,
+            633,
+            634,
+            635,
+            636,
+            637,
+            638,
+            639,
+            640,
+            641,
+            642,
+            643,
+            644,
+            645,
+            646,
+            647
+          ],
+          "reference_post_rows": [
+            850,
+            851,
+            852,
+            853,
+            854,
+            855,
+            856,
+            857,
+            858,
+            859,
+            860,
+            861,
+            862,
+            863,
+            864,
+            865,
+            866,
+            867,
+            868,
+            869,
+            870,
+            871,
+            872,
+            873,
+            874,
+            875,
+            876,
+            877,
+            878,
+            879,
+            880,
+            881,
+            882,
+            883,
+            884,
+            885,
+            886,
+            887,
+            888,
+            889,
+            890,
+            891,
+            892,
+            893,
+            894,
+            895,
+            896,
+            897,
+            898,
+            899
+          ],
+          "reference_pre_rows": [
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608,
+            609,
+            610,
+            611,
+            612,
+            613,
+            614,
+            615,
+            616,
+            617,
+            618,
+            619,
+            620,
+            621,
+            622,
+            623,
+            624,
+            625,
+            626,
+            627,
+            628,
+            629,
+            630,
+            631,
+            632,
+            633,
+            634,
+            635,
+            636,
+            637,
+            638,
+            639,
+            640,
+            641,
+            642,
+            643,
+            644,
+            645,
+            646,
+            647,
+            648,
+            649
+          ]
+        },
+        "eligible_rows": 5044,
+        "finite_native_measurements": 365514,
+        "fit_count": 0,
+        "group_counts": {
+          "dev": 10,
+          "test": 13,
+          "train": 42
+        },
+        "independence_scope": "Interleaved triplets from one cell/cycle; no independent cells, chronological forecast or state-of-charge identification",
+        "last_triplet_spectra": 2,
+        "learned_transformations": [],
+        "legacy_five_folds_not_used_in_compact_split": true,
+        "member_hashes": {
+          "01_XANES/LFP/LFP_raw_0-Binning_01-194.dat": "0375dc1e1c6f162cc4378d70969adbfcdadc7eca046a7c23eb53f8204cc43ca2",
+          "01_XANES/LFP/LFP_references_FePO4_LiFePO4.xmu": "bbbfdbab7ea57f947ee9c723f12e506824228b64196325958b8f5591e5f7a092",
+          "03_galvanostatic-potential-profiles/LFP-potential-time_curve.txt": "0f44d35717a54302a16a4c6e24158fec6771a3243abc93d401f7badc9cddc10d",
+          "LFP-spectra-assignment.xlsx": "a7637fb04722dc9b85b830a6835b8153179183d66d356cd2ea47786480e676f1"
+        },
+        "missing_native_measurements": 23456,
+        "native_energy_rows": 2005,
+        "native_measurement_cells": 388970,
+        "protocol": [
+          {
+            "binned": "001-036",
+            "duration_s": 31981,
+            "end_s": 31981,
+            "name": "charge",
+            "unbinned": "001-107"
+          },
+          {
+            "binned": "037-044",
+            "duration_s": 7200,
+            "end_s": 39181,
+            "name": "rest-1",
+            "unbinned": "108-131"
+          },
+          {
+            "binned": "045-057",
+            "duration_s": 11684,
+            "end_s": 50866,
+            "name": "discharge",
+            "unbinned": "132-170"
+          },
+          {
+            "binned": "058-065",
+            "duration_s": 7200,
+            "end_s": 58067,
+            "name": "rest-2",
+            "unbinned": "171-194"
+          }
+        ],
+        "reference_energy_rows": 1873,
+        "reference_lineage": [
+          {
+            "energy_eV": 7070.221,
+            "first_gradient_reference_row_range": [
+              669,
+              672
+            ],
+            "interpolation_reference_rows": [
+              670,
+              671
+            ],
+            "raw_source_row": 668,
+            "second_gradient_reference_row_range": [
+              668,
+              673
+            ]
+          },
+          {
+            "energy_eV": 7075.221,
+            "first_gradient_reference_row_range": [
+              674,
+              677
+            ],
+            "interpolation_reference_rows": [
+              675,
+              676
+            ],
+            "raw_source_row": 673,
+            "second_gradient_reference_row_range": [
+              673,
+              678
+            ]
+          },
+          {
+            "energy_eV": 7080.221,
+            "first_gradient_reference_row_range": [
+              679,
+              682
+            ],
+            "interpolation_reference_rows": [
+              680,
+              681
+            ],
+            "raw_source_row": 678,
+            "second_gradient_reference_row_range": [
+              678,
+              683
+            ]
+          },
+          {
+            "energy_eV": 7085.221,
+            "first_gradient_reference_row_range": [
+              684,
+              687
+            ],
+            "interpolation_reference_rows": [
+              685,
+              686
+            ],
+            "raw_source_row": 683,
+            "second_gradient_reference_row_range": [
+              683,
+              688
+            ]
+          },
+          {
+            "energy_eV": 7090.221,
+            "first_gradient_reference_row_range": [
+              689,
+              692
+            ],
+            "interpolation_reference_rows": [
+              690,
+              691
+            ],
+            "raw_source_row": 688,
+            "second_gradient_reference_row_range": [
+              688,
+              693
+            ]
+          },
+          {
+            "energy_eV": 7095.221,
+            "first_gradient_reference_row_range": [
+              694,
+              697
+            ],
+            "interpolation_reference_rows": [
+              695,
+              696
+            ],
+            "raw_source_row": 693,
+            "second_gradient_reference_row_range": [
+              693,
+              698
+            ]
+          },
+          {
+            "energy_eV": 7100.221,
+            "first_gradient_reference_row_range": [
+              699,
+              702
+            ],
+            "interpolation_reference_rows": [
+              700,
+              701
+            ],
+            "raw_source_row": 698,
+            "second_gradient_reference_row_range": [
+              698,
+              703
+            ]
+          },
+          {
+            "energy_eV": 7105.221,
+            "first_gradient_reference_row_range": [
+              704,
+              707
+            ],
+            "interpolation_reference_rows": [
+              705,
+              706
+            ],
+            "raw_source_row": 703,
+            "second_gradient_reference_row_range": [
+              703,
+              708
+            ]
+          },
+          {
+            "energy_eV": 7110.221,
+            "first_gradient_reference_row_range": [
+              709,
+              712
+            ],
+            "interpolation_reference_rows": [
+              710,
+              711
+            ],
+            "raw_source_row": 708,
+            "second_gradient_reference_row_range": [
+              708,
+              713
+            ]
+          },
+          {
+            "energy_eV": 7115.221,
+            "first_gradient_reference_row_range": [
+              714,
+              717
+            ],
+            "interpolation_reference_rows": [
+              715,
+              716
+            ],
+            "raw_source_row": 713,
+            "second_gradient_reference_row_range": [
+              713,
+              718
+            ]
+          },
+          {
+            "energy_eV": 7120.221,
+            "first_gradient_reference_row_range": [
+              719,
+              722
+            ],
+            "interpolation_reference_rows": [
+              720,
+              721
+            ],
+            "raw_source_row": 718,
+            "second_gradient_reference_row_range": [
+              718,
+              723
+            ]
+          },
+          {
+            "energy_eV": 7125.221,
+            "first_gradient_reference_row_range": [
+              724,
+              727
+            ],
+            "interpolation_reference_rows": [
+              725,
+              726
+            ],
+            "raw_source_row": 723,
+            "second_gradient_reference_row_range": [
+              723,
+              728
+            ]
+          },
+          {
+            "energy_eV": 7130.221,
+            "first_gradient_reference_row_range": [
+              729,
+              732
+            ],
+            "interpolation_reference_rows": [
+              730,
+              731
+            ],
+            "raw_source_row": 728,
+            "second_gradient_reference_row_range": [
+              728,
+              733
+            ]
+          },
+          {
+            "energy_eV": 7135.221,
+            "first_gradient_reference_row_range": [
+              734,
+              737
+            ],
+            "interpolation_reference_rows": [
+              735,
+              736
+            ],
+            "raw_source_row": 733,
+            "second_gradient_reference_row_range": [
+              733,
+              738
+            ]
+          },
+          {
+            "energy_eV": 7140.221,
+            "first_gradient_reference_row_range": [
+              739,
+              742
+            ],
+            "interpolation_reference_rows": [
+              740,
+              741
+            ],
+            "raw_source_row": 738,
+            "second_gradient_reference_row_range": [
+              738,
+              743
+            ]
+          },
+          {
+            "energy_eV": 7145.221,
+            "first_gradient_reference_row_range": [
+              744,
+              747
+            ],
+            "interpolation_reference_rows": [
+              745,
+              746
+            ],
+            "raw_source_row": 743,
+            "second_gradient_reference_row_range": [
+              743,
+              748
+            ]
+          },
+          {
+            "energy_eV": 7150.221,
+            "first_gradient_reference_row_range": [
+              749,
+              752
+            ],
+            "interpolation_reference_rows": [
+              750,
+              751
+            ],
+            "raw_source_row": 748,
+            "second_gradient_reference_row_range": [
+              748,
+              753
+            ]
+          },
+          {
+            "energy_eV": 7155.221,
+            "first_gradient_reference_row_range": [
+              754,
+              757
+            ],
+            "interpolation_reference_rows": [
+              755,
+              756
+            ],
+            "raw_source_row": 753,
+            "second_gradient_reference_row_range": [
+              753,
+              758
+            ]
+          },
+          {
+            "energy_eV": 7160.221,
+            "first_gradient_reference_row_range": [
+              759,
+              762
+            ],
+            "interpolation_reference_rows": [
+              760,
+              761
+            ],
+            "raw_source_row": 758,
+            "second_gradient_reference_row_range": [
+              758,
+              763
+            ]
+          },
+          {
+            "energy_eV": 7165.221,
+            "first_gradient_reference_row_range": [
+              764,
+              767
+            ],
+            "interpolation_reference_rows": [
+              765,
+              766
+            ],
+            "raw_source_row": 763,
+            "second_gradient_reference_row_range": [
+              763,
+              768
+            ]
+          },
+          {
+            "energy_eV": 7170.221,
+            "first_gradient_reference_row_range": [
+              769,
+              772
+            ],
+            "interpolation_reference_rows": [
+              770,
+              771
+            ],
+            "raw_source_row": 768,
+            "second_gradient_reference_row_range": [
+              768,
+              773
+            ]
+          },
+          {
+            "energy_eV": 7175.221,
+            "first_gradient_reference_row_range": [
+              774,
+              777
+            ],
+            "interpolation_reference_rows": [
+              775,
+              776
+            ],
+            "raw_source_row": 773,
+            "second_gradient_reference_row_range": [
+              773,
+              778
+            ]
+          },
+          {
+            "energy_eV": 7180.221,
+            "first_gradient_reference_row_range": [
+              779,
+              782
+            ],
+            "interpolation_reference_rows": [
+              780,
+              781
+            ],
+            "raw_source_row": 778,
+            "second_gradient_reference_row_range": [
+              778,
+              783
+            ]
+          },
+          {
+            "energy_eV": 7185.221,
+            "first_gradient_reference_row_range": [
+              784,
+              787
+            ],
+            "interpolation_reference_rows": [
+              785,
+              786
+            ],
+            "raw_source_row": 783,
+            "second_gradient_reference_row_range": [
+              783,
+              788
+            ]
+          },
+          {
+            "energy_eV": 7190.221,
+            "first_gradient_reference_row_range": [
+              789,
+              792
+            ],
+            "interpolation_reference_rows": [
+              790,
+              791
+            ],
+            "raw_source_row": 788,
+            "second_gradient_reference_row_range": [
+              788,
+              793
+            ]
+          },
+          {
+            "energy_eV": 7195.221,
+            "first_gradient_reference_row_range": [
+              794,
+              797
+            ],
+            "interpolation_reference_rows": [
+              795,
+              796
+            ],
+            "raw_source_row": 793,
+            "second_gradient_reference_row_range": [
+              793,
+              798
+            ]
+          }
+        ],
+        "selected_energy_rows": [
+          668,
+          673,
+          678,
+          683,
+          688,
+          693,
+          698,
+          703,
+          708,
+          713,
+          718,
+          723,
+          728,
+          733,
+          738,
+          743,
+          748,
+          753,
+          758,
+          763,
+          768,
+          773,
+          778,
+          783,
+          788,
+          793
+        ],
+        "spectra": 194
+      },
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "6e5b87f94e74948e14bfd66c84865e7d630a8ff8059ec146112789dc19ffb553",
+      "recipe_sha256": "ab659afcb0b38a25541fbeac8028b5eaf3ea604d3a6f08183e415444de5a2b51",
+      "rows": {
+        "dev": 754,
+        "test": 1014,
+        "train": 3276
+      },
+      "runtime_binding_sha256": "bb7a45b0a957ac5f4d0740c71b0bf1edccc9a2454b84720df6283ff221dc4f79",
+      "scenario_id": "P100-025",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "triplet-01",
+            "triplet-03",
+            "triplet-04",
+            "triplet-06",
+            "triplet-12",
+            "triplet-13",
+            "triplet-14",
+            "triplet-18",
+            "triplet-61",
+            "triplet-64"
+          ],
+          "test": [
+            "triplet-08",
+            "triplet-10",
+            "triplet-21",
+            "triplet-22",
+            "triplet-28",
+            "triplet-29",
+            "triplet-32",
+            "triplet-39",
+            "triplet-44",
+            "triplet-46",
+            "triplet-48",
+            "triplet-49",
+            "triplet-63"
+          ],
+          "train": [
+            "triplet-00",
+            "triplet-02",
+            "triplet-05",
+            "triplet-07",
+            "triplet-09",
+            "triplet-11",
+            "triplet-15",
+            "triplet-16",
+            "triplet-17",
+            "triplet-19",
+            "triplet-20",
+            "triplet-23",
+            "triplet-24",
+            "triplet-25",
+            "triplet-26",
+            "triplet-27",
+            "triplet-30",
+            "triplet-31",
+            "triplet-33",
+            "triplet-34",
+            "triplet-35",
+            "triplet-36",
+            "triplet-37",
+            "triplet-38",
+            "triplet-40",
+            "triplet-41",
+            "triplet-42",
+            "triplet-43",
+            "triplet-45",
+            "triplet-47",
+            "triplet-50",
+            "triplet-51",
+            "triplet-52",
+            "triplet-53",
+            "triplet-54",
+            "triplet-55",
+            "triplet-56",
+            "triplet-57",
+            "triplet-58",
+            "triplet-59",
+            "triplet-60",
+            "triplet-62"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

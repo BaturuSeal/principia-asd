@@ -1,0 +1,74 @@
+{
+  "dev_error": 0.16745944069356494,
+  "execution_status": "complete",
+  "expression": "p0+p1*(y2)+p2*((y0 + y1 + y2 + y3) / 4)",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.036752982246744864,
+    "p1": -1.3791350899998078,
+    "p2": 1.131548264625609
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.27196297308272277,
+      "t": -0.04319184511274659,
+      "y0": -0.04446463054280213,
+      "y1": 0.14275423083450955,
+      "y2": -0.009572186598302862,
+      "y3": -0.1819927657553606
+    },
+    "mean": -0.027802643252329475,
+    "p90_abs": 0.36658337287343906,
+    "std": 0.21204903627053365
+  },
+  "rule_id": "live-pilot-v3--P100-068--principia_engine-rule-3",
+  "rule_sha256": "0064df0e8a069f33d55bdc5d0a4353a6accbdbeae192cb9899c233218083d2ac",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.036752982246744864 + -1.3791350899998078 * y2 + 1.131548264625609 * ((y0 + y1 + y2 + y3) / 4)",
+    "expression_bytes": 39,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "literal_state_bytes": 1,
+    "nodes": 34,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.16117015463787282,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

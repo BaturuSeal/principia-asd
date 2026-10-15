@@ -1,0 +1,74 @@
+{
+  "dev_error": 1.6433093954364854e-05,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hi*ghi)+p2*(lo*g)",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -4.5293395512064425e-07,
+    "p1": 10.981920058864278,
+    "p2": -3.6659540583511765
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": -0.019056891848366612,
+      "glo": -2.437105521888741e-17,
+      "hi": -0.01451738573814125,
+      "lo": -0.007768820277995311,
+      "noise": -0.059424792015004474,
+      "r": -0.01905689184836662,
+      "sep": -0.2007095327085454
+    },
+    "mean": 2.727480570216381e-07,
+    "p90_abs": 3.8375608235305855e-05,
+    "std": 2.2813994269080032e-05
+  },
+  "rule_id": "full-comparison-v5--P100-028--symbolic_control-rule-1",
+  "rule_sha256": "bf7bd5859d31b1666e83d777da1bd9270b5413c929b2729863c040a8d4c5e333",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-4.5293395512064425e-07 + 10.981920058864278 * (hi * ghi) + -3.6659540583511765 * (lo * g)",
+    "expression_bytes": 24,
+    "free_parameters": 3,
+    "learned_state_bytes": 84,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 1.4378072075153322e-05,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dev_error": 4.0511546171637836,
+  "execution_status": "complete",
+  "expression": "17.4528342891572",
+  "inputs": [
+    "pilot_seconds",
+    "qubits",
+    "pilot_gates",
+    "pilot_depth",
+    "load_seconds",
+    "is_tket",
+    "is_bqskit"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "is_bqskit": -0.26107216071677397,
+      "is_tket": -0.12309374563257636,
+      "load_seconds": -0.44947335050320575,
+      "pilot_depth": -0.504689053509291,
+      "pilot_gates": -0.5363200997142796,
+      "pilot_seconds": -0.5343943912269208,
+      "qubits": -0.4773610350474638
+    },
+    "mean": 15.111892564225803,
+    "p90_abs": 17.4464868134491,
+    "std": 4.5357336787978335
+  },
+  "rule_id": "controls-v2--P100-031--mean_control-rule-1",
+  "rule_sha256": "ba80fd945afc7d73298194d6615e1077a74e37289e2c93cba639ee607d0a0f1c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "17.4528342891572",
+    "expression_bytes": 16,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-031.compact.v2",
+  "train_error": 4.780829549544551,
+  "units": {
+    "inputs": {
+      "is_bqskit": "SDK indicator,elseStaq",
+      "is_tket": "SDK indicator",
+      "load_seconds": "Qiskit QASM loading seconds",
+      "pilot_depth": "Qiskit output two-qubit depth",
+      "pilot_gates": "Qiskit output two-qubit gate count",
+      "pilot_seconds": "seconds Qiskit calibration cost",
+      "qubits": "input qubit count"
+    },
+    "output": "seconds",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

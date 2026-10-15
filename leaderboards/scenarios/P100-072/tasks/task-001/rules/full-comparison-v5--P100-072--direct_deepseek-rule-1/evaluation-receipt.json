@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 11.738669837947477,
+    "primary": "mae",
+    "primary_error": 11.738669837947477,
+    "rmse": 12.977292779233977
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 18.64585021444242,
+  "by_group": [
+    {
+      "error": 11.259439698738094,
+      "group": "group-4e416791cc5a4c53c3e429e4",
+      "rows": 9
+    },
+    {
+      "error": 12.217899977156861,
+      "group": "group-a43dee716e618130ec9f7082",
+      "rows": 9
+    }
+  ],
+  "coverage": {
+    "eligible": 18,
+    "fraction": 1.0,
+    "predicted": 18
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_deepseek",
+  "rule_id": "full-comparison-v5--P100-072--direct_deepseek-rule-1",
+  "rule_sha256": "6f09bca3b0cee94c83cde428dc8b32ea633b62a7a0f76ed177a7b2a5a23b4612",
+  "run_id": "full-comparison-v5--P100-072--direct_deepseek",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(100, maximum(0, 34.05040413747147 + 0.42581184909271963 * p22_pct + 0.7798561740877714 * p72_pct + -0.3315946550676762 * time_h + -0.005723814598824265 * p22_pct * p72_pct + 0.0012565271140308964 * p22_pct * time_h + 0.0021371792761103662 * p72_pct * time_h + 7.2894239059895655e-06 * time_h * time_h))",
+    "expression_bytes": 146,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 4,
+    "nodes": 83,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.035926847744940815,
+    "perturbation_labels_available": false,
+    "population_rows": 18,
+    "ranking": false,
+    "samples": 18,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

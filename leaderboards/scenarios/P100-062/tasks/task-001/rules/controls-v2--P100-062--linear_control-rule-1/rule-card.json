@@ -1,0 +1,63 @@
+{
+  "dev_error": 8.542122038491836,
+  "execution_status": "complete",
+  "expression": "p0+p1*(t)+p2*(offset)+p3*(drive)+p4*(high)",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 5.79666645115085,
+    "p1": 0.0017839336939854083,
+    "p2": 0.4633118553426909,
+    "p3": 8.76363756930931,
+    "p4": 36.48450636995835
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": -0.9947947818546395,
+      "high": -0.9947947818546395,
+      "offset": -0.9947947818546401,
+      "t": -0.20487227544775088
+    },
+    "mean": -7.141397763120462,
+    "p90_abs": 12.730133990764946,
+    "std": 3.6871054855821495
+  },
+  "rule_id": "controls-v2--P100-062--linear_control-rule-1",
+  "rule_sha256": "ea4b59c39e003d04b59a3b5904474379a5b9d0ee38d38a2d8c594a3f74c9aadc",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "5.79666645115085 + 0.0017839336939854083 * t + 0.4633118553426909 * offset + 8.76363756930931 * drive + 36.48450636995835 * high",
+    "expression_bytes": 42,
+    "free_parameters": 5,
+    "learned_state_bytes": 128,
+    "nodes": 35,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 7.191839187998475,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

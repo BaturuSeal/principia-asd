@@ -1,0 +1,85 @@
+{
+  "assets": [
+    {
+      "bytes": 35241173,
+      "path": "scenarios/39_sociology_oecd_piaac/raw/prgusap2.csv",
+      "role": "USA_respondents",
+      "sha256": "f20a4677d9c4b03638f77e61bdf307fc282561bd129334ccf2179ef2b960641e"
+    },
+    {
+      "bytes": 47787872,
+      "path": "scenarios/39_sociology_oecd_piaac/raw/prgjpnp2.csv",
+      "role": "Japan_respondents",
+      "sha256": "498bd1372de027006a424f26d9a1209a5c4437bb978144f7b9e8c0228e91729b"
+    },
+    {
+      "bytes": 288096,
+      "path": "scenarios/39_sociology_oecd_piaac/context/piaac-cy2-international-codebook.xlsx",
+      "role": "international_codebook",
+      "sha256": "02bb30f84763ba27871daee7ee1133c3c98e26d716173272e313e596ce7908d2"
+    },
+    {
+      "bytes": 1099044,
+      "path": "scenarios/39_sociology_oecd_piaac/context/piaac-cy2-codebook-and-sql-codes-for-derived-variables.pdf",
+      "role": "derived_codebook",
+      "sha256": "19043c850365611d715da279b9fba12d53a5decb7b845042df50350ee51d67d1"
+    }
+  ],
+  "group_assignments": {
+    "Japan:respondentblock0": "test",
+    "Japan:respondentblock1": "test",
+    "Japan:respondentblock2": "dev",
+    "Japan:respondentblock3": "train",
+    "Japan:respondentblock4": "dev",
+    "Japan:respondentblock5": "train",
+    "Japan:respondentblock6": "train",
+    "Japan:respondentblock7": "train",
+    "Japan:respondentblock8": "train",
+    "Japan:respondentblock9": "train",
+    "USA:respondentblock0": "test",
+    "USA:respondentblock1": "test",
+    "USA:respondentblock2": "train",
+    "USA:respondentblock3": "train",
+    "USA:respondentblock4": "train",
+    "USA:respondentblock5": "train",
+    "USA:respondentblock6": "train",
+    "USA:respondentblock7": "train",
+    "USA:respondentblock8": "train",
+    "USA:respondentblock9": "dev"
+  },
+  "historical_contract_sha256": "520574e64b4faa4fcc621a997ec61179bb95f6025d2c9f169a1d5f6cc6344746",
+  "input_units": {
+    "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+    "education": "source derived years of formal education",
+    "japan": "country indicator"
+  },
+  "limitations": [
+    "Country-relative earnings classification, not absolute wages or prospective income",
+    "Survey design and replicate-weight variance not reconstructed; compact scoring is unweighted",
+    "Source-derived age/education/deciles and complete-case selection; no causal inference",
+    "No country-held-out or time-held-out evidence; random hash blocks are not survey PSUs",
+    "OECD license declarations require final notice and rights review"
+  ],
+  "numerical_policy": {
+    "discovery_rule_fits": 0,
+    "local_preprocessing_fits": 0,
+    "split_policy": "registered whole country/hash-block groups; original test buckets 0 and 1 unchanged",
+    "weights": "positive SPFWT0 for eligibility only; no survey weights in compact predictors or current scoring"
+  },
+  "output_units": "binary EARNHRDCLC2>=8",
+  "parser": "piaac-native-respondent-deciles-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-039/native.py",
+    "reuse": "Historical eligibility, identity hash and fixed age midpoints preserved; bounded standard-library decoder and explicit weighting/survey-scope audit independently implemented; no evaluator state copied",
+    "sha256": "43cd1dca60ccb46440565fd9715fffcb788faad4236fd687b24c0c0cf348b4a8"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-039",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "retrieval_finalized_utc": "2026-09-14T16:29:13.689556+00:00",
+    "url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+    "version": "Cycle 2 public-use files; December 2024 release"
+  },
+  "source_scenario_descriptor_sha256": "aab4580eb5a9f4a5a5508db7989ed08b45fba1edf64745c7c853d5b2f2f56946"
+}

@@ -1,0 +1,65 @@
+{
+  "dev_error": 0.19078554814429388,
+  "execution_status": "complete",
+  "expression": "p0+p1*(ratio)+p2*(water)+p3*(age_min)+p4*(time_s)",
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6360885914698622,
+    "p1": -0.05113673139158589,
+    "p2": -1.082020631067932,
+    "p3": 0.007490333333333457,
+    "p4": 0.00018636535101486057
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_min": -0.17764254695171777,
+      "ratio": 0.7959088065855677,
+      "time_s": -0.23657562843544183,
+      "water": 0.7959088065855676
+    },
+    "mean": -0.05917850930420769,
+    "p90_abs": 0.3739819389818194,
+    "std": 0.22842688325314556
+  },
+  "rule_id": "controls-v3--P100-055--polynomial_control-rule-1",
+  "rule_sha256": "0d6bc3c0cefde6d4435a32698fa57007cb9ff10204a2943af3ddf427879a0dba",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6360885914698622 + -0.05113673139158589 * ratio + -1.082020631067932 * water + 0.007490333333333457 * age_min + 0.00018636535101486057 * time_s",
+    "expression_bytes": 49,
+    "free_parameters": 5,
+    "learned_state_bytes": 138,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-055.compact.v2",
+  "train_error": 0.051920174140020245,
+  "units": {
+    "inputs": {
+      "age_min": "min since mixing; 0 or 30",
+      "ratio": "mix-design ratio encoded in author mixture label",
+      "time_s": "native penetration clock index; unit unspecified",
+      "water": "water ratio encoded in author mixture label"
+    },
+    "output": "N",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

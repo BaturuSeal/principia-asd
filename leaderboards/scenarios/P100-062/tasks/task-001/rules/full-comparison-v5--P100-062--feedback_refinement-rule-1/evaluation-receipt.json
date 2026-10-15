@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.7982895317992011,
+    "primary": "mae",
+    "primary_error": 1.7982895317992011,
+    "rmse": 2.019635195536139
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 62.72231225017243,
+  "by_group": [
+    {
+      "error": 1.477420937955009,
+      "group": "group-1000ba85327fac63d060ca46",
+      "rows": 119
+    },
+    {
+      "error": 2.119158125643393,
+      "group": "group-4d7b9fc94e5faa5af1241873",
+      "rows": 251
+    }
+  ],
+  "coverage": {
+    "eligible": 370,
+    "fraction": 1.0,
+    "predicted": 370
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "feedback_refinement",
+  "rule_id": "full-comparison-v5--P100-062--feedback_refinement-rule-1",
+  "rule_sha256": "359fcd0715dc15489cb18ea84ecdf3642583800486ecfcaa000843fb204fbabd",
+  "run_id": "full-comparison-v5--P100-062--feedback_refinement",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + 550.3173902129619 * drive * (1 - exp(-t / 26073.16896766997)) + -56850.4756650668 * high * drive * (1 - exp(-t / 3611056.3030174617)) + -0.00731287974028302 * t",
+    "expression_bytes": 90,
+    "free_parameters": 5,
+    "learned_state_bytes": 129,
+    "literal_state_bytes": 2,
+    "nodes": 63,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.08129201717050728,
+    "perturbation_labels_available": false,
+    "population_rows": 370,
+    "ranking": false,
+    "samples": 370,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

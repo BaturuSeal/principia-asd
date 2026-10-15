@@ -1,0 +1,75 @@
+{
+  "dev_error": 4.15833772900322,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lag1)+p2*(lag3)+p3*(lag6)+p4*(month)+p5*(lag1*lag1)+p6*(lag1*lag3)+p7*(lag1*lag6)+p8*(lag1*month)+p9*(lag3*lag3)+p10*(lag3*lag6)+p11*(lag3*month)+p12*(lag6*lag6)+p13*(lag6*month)+p14*(month*month)",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.43034463101044024,
+    "p1": 1.1798620646060085,
+    "p10": 0.0024268842027635245,
+    "p11": 0.039043705284739515,
+    "p12": -0.0077017250873956025,
+    "p13": 0.009563211744612995,
+    "p14": -0.010796520518695894,
+    "p2": -0.27436555005935026,
+    "p3": 0.20545375475013442,
+    "p4": 0.15060009257294438,
+    "p5": 0.0012157894871067702,
+    "p6": -0.015727652720646693,
+    "p7": 0.013864936400782579,
+    "p8": -0.05716798571814653,
+    "p9": 0.005539629126707569
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": 0.0410561029004591,
+      "lag3": -0.022918180113403516,
+      "lag6": -0.05993801802443789,
+      "month": 0.17839347502295516
+    },
+    "mean": 0.14752709956303733,
+    "p90_abs": 9.980119331047888,
+    "std": 7.866822567112958
+  },
+  "rule_id": "controls-v3--P100-019--polynomial_control-rule-1",
+  "rule_sha256": "2bb62e5487913e933b16667e58ee2298301bc600818fb8f210569e3377a958f7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.43034463101044024 + 1.1798620646060085 * lag1 + -0.27436555005935026 * lag3 + 0.20545375475013442 * lag6 + 0.15060009257294438 * month + 0.0012157894871067702 * (lag1 * lag1) + -0.015727652720646693 * (lag1 * lag3) + 0.013864936400782579 * (lag1 * lag6) + -0.05716798571814653 * (lag1 * month) + 0.005539629126707569 * (lag3 * lag3) + 0.0024268842027635245 * (lag3 * lag6) + 0.039043705284739515 * (lag3 * month) + -0.0077017250873956025 * (lag6 * lag6) + 0.009563211744612995 * (lag6 * month) + -0.010796520518695894 * (month * month)",
+    "expression_bytes": 203,
+    "free_parameters": 15,
+    "learned_state_bytes": 427,
+    "literal_state_bytes": 0,
+    "nodes": 155,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 38
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.092760325546159,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

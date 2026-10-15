@@ -1,0 +1,57 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.06452168948909451,
+    "primary": "mae",
+    "primary_error": 0.06452168948909451,
+    "rmse": 0.10713263566209946
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.23307961305015756,
+  "by_group": [
+    {
+      "error": 0.04384756395968854,
+      "group": "group-2d4be703bac713893e380306",
+      "rows": 2400
+    },
+    {
+      "error": 0.08519581501850046,
+      "group": "group-a5093bf7ea537f01bcf93bca",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tree_control",
+  "rule_id": "full-comparison-v5--P100-006--tree_control-rule-1",
+  "rule_sha256": "3a1034b68b53d2864966980a9e9e1eb6b912cba4d00e996c4e969795f19765f0",
+  "run_id": "full-comparison-v5--P100-006--tree_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "complete tree in Rule Card",
+    "free_parameters": 136,
+    "learned_state_bytes": 4140,
+    "scope": "predictive reference, not a compact scientific formula",
+    "weighted_operator_count": 91
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.05540485063245208,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

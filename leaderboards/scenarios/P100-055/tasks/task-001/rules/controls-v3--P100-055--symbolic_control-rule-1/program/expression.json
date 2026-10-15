@@ -1,0 +1,14 @@
+{
+  "expression": "p0+p1*(ratio*water)+p2*(log1p(abs((water-0.31)/0.04898979485566355)))+p3*(tanh((age_min-15.0)/15.0))+p4*((age_min)**2)+p5*(age_min)",
+  "parameters": {
+    "p0": 0.03969966187411501,
+    "p1": -0.13924338864893612,
+    "p2": 0.47395542974061433,
+    "p3": 0.014423988592020405,
+    "p4": 0.00011263308286971598,
+    "p5": 0.0033789924860914786
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

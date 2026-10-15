@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.35735068789673524,
+  "execution_status": "complete",
+  "expression": "p0 + 0.5 * (p0 - p20) + 0.2 * de0",
+  "inputs": [
+    "p0",
+    "p05",
+    "p10",
+    "p20",
+    "p30",
+    "p40",
+    "p50",
+    "di0",
+    "de0",
+    "di20",
+    "de20",
+    "trial_BH",
+    "trial_FEM"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "de0": 0.2442047839449002,
+      "de20": 0.21088419260680194,
+      "di0": -0.14351559275899628,
+      "di20": -0.16046175325839285,
+      "p0": 0.29446562471329835,
+      "p05": 0.31796979800988084,
+      "p10": 0.3159126185554108,
+      "p20": 0.2888886454292878,
+      "p30": 0.2733606781615432,
+      "p40": 0.2579293168574006,
+      "p50": 0.24936121782952175,
+      "trial_BH": 0.0022367557227551704,
+      "trial_FEM": 0.017237035857294625
+    },
+    "mean": 0.010003779899539933,
+    "p90_abs": 0.8984691952868684,
+    "std": 0.6723484362499694
+  },
+  "rule_id": "full-comparison-v5--P100-032--direct_qwen-rule-1",
+  "rule_sha256": "204a59298df0f521f7a1acf7ee0037a9bbfd26a949f7931a78e9fe5ade074ae9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "p0 + 0.5 * (p0 - p20) + 0.2 * de0",
+    "expression_bytes": 33,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 6,
+    "nodes": 21,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-032.compact.v2",
+  "train_error": 0.3483201067888942,
+  "units": {
+    "inputs": {
+      "de0": "cmH2O",
+      "de20": "cmH2O",
+      "di0": "cmH2O",
+      "di20": "cmH2O",
+      "p0": "cmH2O",
+      "p05": "cmH2O",
+      "p10": "cmH2O",
+      "p20": "cmH2O",
+      "p30": "cmH2O",
+      "p40": "cmH2O",
+      "p50": "cmH2O",
+      "trial_BH": "binary",
+      "trial_FEM": "binary"
+    },
+    "output": "cmH2O",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

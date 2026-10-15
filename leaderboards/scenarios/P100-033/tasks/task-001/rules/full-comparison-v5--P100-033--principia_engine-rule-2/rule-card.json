@@ -1,0 +1,79 @@
+{
+  "dev_error": 9.666373553584883,
+  "execution_status": "complete",
+  "expression": "p0+p1*(motion)",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 78.83872938301775,
+    "p1": 2.0350152367814105
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.2153558402012865,
+      "agreement": 0.15844236845695184,
+      "ear": -0.1669368160273494,
+      "fft_bpm": 0.21653626789888517,
+      "half_bpm": 0.20301401369231323,
+      "half_strength": -0.15616970497591004,
+      "motion": 0.022991488306348284,
+      "spectral_quality": -0.07713612234774063
+    },
+    "mean": 6.4319670482151645,
+    "p90_abs": 20.873744619799155,
+    "std": 11.05649370276687
+  },
+  "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-2",
+  "rule_sha256": "2c1dbc17e43f13b9291a8217db75b56a8b7a6b826f0e16c650e3a7ee7bf55cea",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "78.83872938301775 + 2.0350152367814105 * motion",
+    "expression_bytes": 14,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 11.881926239669282,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

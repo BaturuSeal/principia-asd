@@ -1,0 +1,80 @@
+{
+  "dev_error": 0.1389353691141939,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)))",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.013887053772561851,
+    "p1": 0.16381727207296937,
+    "p2": -0.10271419223464907,
+    "p3": 0.5963403725518669
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": -0.0639470290769173,
+      "child": -0.06291399284114974,
+      "description": 0.05711528162776724,
+      "has_history": 0.04889629345687808,
+      "history_mean": -0.06786776278172345,
+      "lag_choice": -0.06779912547202292,
+      "multi": -0.019605077402004113,
+      "probability": -0.1311043543466298,
+      "reward": -0.09118455817747573,
+      "trial_progress": 0.03792976700924617
+    },
+    "mean": 0.024383925795274108,
+    "p90_abs": 0.5880115100260246,
+    "std": 0.3697134108632299
+  },
+  "rule_id": "controls-v2--P100-089--symbolic_control-rule-2",
+  "rule_sha256": "e78688371db0a8f82087a8866158f687de42a6242d8b3419de6ddb68a02f842c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.013887053772561851 + 0.16381727207296937 * (reward * probability) + -0.10271419223464907 * (probability * lag_choice) + 0.5963403725518669 * (lag_choice * history_mean)))",
+    "expression_bytes": 105,
+    "free_parameters": 4,
+    "learned_state_bytes": 109,
+    "nodes": 47,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.14869623067819784,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

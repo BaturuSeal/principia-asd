@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.19369534877239572,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(education**2/441)+p2*((education)**2)+p3*(education)+p4*(tanh((education-14.146865671641791)/2.5552837906214267))+p5*(log1p(education))+p6*(education*age)+p7*((age-45)**2)))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.3595464483871894,
+    "p1": 0.9673908533348823,
+    "p2": 0.0021936300529135804,
+    "p3": -0.11828978807383486,
+    "p4": 0.09980497586107202,
+    "p5": 0.2031679452132284,
+    "p6": 0.0004219172120560283,
+    "p7": -0.0005352482654634898
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.039844449276757475,
+      "education": 0.03408429974302773,
+      "japan": -0.01484026102888315
+    },
+    "mean": 0.007162521197200347,
+    "p90_abs": 0.7384568829551075,
+    "std": 0.444184985485661
+  },
+  "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-1",
+  "rule_sha256": "d4ffcbc8c51bb75b49b9b832fdd83a02fde5c852a0b947368c330c431b753e90",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.3595464483871894 + 0.9673908533348823 * (education ** 2 / 441) + 0.0021936300529135804 * education ** 2 + -0.11828978807383486 * education + 0.09980497586107202 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.2031679452132284 * log1p(education) + 0.0004219172120560283 * (education * age) + -0.0005352482654634898 * (age - 45) ** 2))",
+    "expression_bytes": 200,
+    "free_parameters": 8,
+    "learned_state_bytes": 221,
+    "literal_state_bytes": 46,
+    "nodes": 98,
+    "numeric_literal_count": 9,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 28
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.18583446228530867,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

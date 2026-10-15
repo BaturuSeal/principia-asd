@@ -1,0 +1,16 @@
+{
+  "expression": "where(has_history > 0.5, p0 * mean_past_y + p1 * early + p2 * finding + p3 * roughness + p4 * gradient_proxy + p5 * (usage / 25.0) + p6 * (history_gap / 5.0) + p7, p0 * early + p1 * finding + p2 * roughness + p3 * gradient_proxy + p4 * (usage / 25.0) + p5 * (history_gap / 5.0) + p6 * left + p7)",
+  "parameters": {
+    "p0": 0.11713891625199462,
+    "p1": 1.8391740925784628,
+    "p2": -0.924515516265548,
+    "p3": -0.9026006415530561,
+    "p4": 0.014388225725578163,
+    "p5": -0.11136557884440328,
+    "p6": 0.18402653220823834,
+    "p7": 0.02617869377246859
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

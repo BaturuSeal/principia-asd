@@ -1,0 +1,68 @@
+{
+  "assets": [
+    {
+      "bytes": 129225370,
+      "path": "scenarios/03_physics_gwosc_o4a_h1_strain/raw/H-H1_GWOSC_O4a_4KHZ_R1-1388511232-4096.hdf5",
+      "role": "gwosc_hdf5",
+      "sha256": "b0d7ae53435952801347f8bf518bc8ef5a167dfdb790fe562a2214cc2072522a"
+    },
+    {
+      "bytes": 956,
+      "path": "scenarios/03_physics_gwosc_o4a_h1_strain/context/strain_file_api.json",
+      "role": "source_metadata_identity_only",
+      "sha256": "fed04f5569cf7e853585879922328e2beae80edfc2fea68b1ba424130c559c5e"
+    }
+  ],
+  "group_assignments": {
+    "block0": "dev",
+    "block1": "train",
+    "block2": "train",
+    "block3": "train",
+    "block4": "train",
+    "block5": "dev",
+    "block6": "test",
+    "block7": "test"
+  },
+  "historical_contract_sha256": "9e832471efb864cfe545db154fdf5856ceefa0a9caff71d572494a2ed9a4940f",
+  "input_units": {
+    "high1": "RMS strain in units of 1e-21",
+    "lag1": "RMS strain in units of 1e-21",
+    "lag2": "RMS strain in units of 1e-21",
+    "lag3": "RMS strain in units of 1e-21",
+    "lag4": "RMS strain in units of 1e-21",
+    "line1": "RMS strain in units of 1e-21",
+    "low1": "RMS strain in units of 1e-21",
+    "mad4": "RMS strain in units of 1e-21",
+    "median4": "RMS strain in units of 1e-21"
+  },
+  "limitations": [
+    "No requirement for continuous-wave injection veto or higher-category data-quality bits",
+    "Retrospective quality eligibility includes target windows",
+    "Single-detector interval and observed-history overlap do not establish independent experiments",
+    "All earlier measured windows are available online, including earlier test-block observations",
+    "Historical complexity excludes spectral preprocessing; novelty and astrophysical interpretation unassessed"
+  ],
+  "numerical_policy": {
+    "discovery_rule_fits": 0,
+    "local_preprocessing": "15 independent constant detrends per eligible Welch window; no cross-window fit",
+    "split_policy": "Frozen whole-512-second-block compact allocation, original last-two-block confirmation preserved"
+  },
+  "output_units": "10^-21 strain",
+  "parser": "gwosc-native-causal-spectral-windows-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-003/native.py",
+    "reuse": "Fixed Welch reduction, causal four-window history and sample identity reimplemented; no evaluation state or historical runtime copied",
+    "sha256": "ed7ce7dca3ceb12b01bc86d4f74a95799ab99e080a5dc0f747301d31923b655a"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-003",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "detector": "H1",
+    "duration_seconds": 4096,
+    "gps_start": 1388511232,
+    "url": "https://gwosc.org/O4/O4a/",
+    "version": "O4a 4KHZ R1"
+  },
+  "source_scenario_descriptor_sha256": "7f5afe0befaeefdcc087bfc6827cc879a6455aaf4fffac66f35cc1c258ee1cc1"
+}

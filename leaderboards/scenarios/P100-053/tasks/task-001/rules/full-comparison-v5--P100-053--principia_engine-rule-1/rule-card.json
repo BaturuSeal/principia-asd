@@ -1,0 +1,100 @@
+{
+  "dev_error": 0.031238754007104484,
+  "execution_status": "complete",
+  "expression": "p0 + p1*early + p2*finding + p3*(prev_y * has_history) + p4*((prev_y - prev_early) * has_history) + p5*(gradient_proxy + prev_gradient * has_history) + p6*(roughness * (usage + 1) / (history_gap + 1)) + p7*(mean_past_y * has_history)",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.06239183303531541,
+    "p1": 1.5499136435786047,
+    "p2": 0.2257738045976443,
+    "p3": -0.09882296292967073,
+    "p4": 0.626753311091815,
+    "p5": 0.21451501305644377,
+    "p6": -0.23422469279093916,
+    "p7": -0.28737731047275666
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.04494929972227348,
+      "finding": -0.06713686163072032,
+      "first_y": 0.1171766552750082,
+      "gradient_proxy": -0.03699550429893677,
+      "has_history": 0.2689033724647762,
+      "history_gap": 0.22813572875458787,
+      "left": 0.1582877889917604,
+      "mean_past_y": -0.12356511105822453,
+      "prev_early": -0.26579711044830784,
+      "prev_gradient": -0.06245048651830951,
+      "prev_y": -0.11899020737046333,
+      "roughness": -0.18622943980304024,
+      "usage": 0.05060848226253445
+    },
+    "mean": -0.00047105411977884016,
+    "p90_abs": 0.06904705959855557,
+    "std": 0.04266184193619823
+  },
+  "rule_id": "full-comparison-v5--P100-053--principia_engine-rule-1",
+  "rule_sha256": "46ae1e01e60f7e58d91b088f8c1f326ea0fbdf370767e6009e4242ae900544d3",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.06239183303531541 + 1.5499136435786047 * early + 0.2257738045976443 * finding + -0.09882296292967073 * (prev_y * has_history) + 0.626753311091815 * ((prev_y - prev_early) * has_history) + 0.21451501305644377 * (gradient_proxy + prev_gradient * has_history) + -0.23422469279093916 * (roughness * (usage + 1) / (history_gap + 1)) + -0.28737731047275666 * (mean_past_y * has_history)",
+    "expression_bytes": 233,
+    "free_parameters": 8,
+    "learned_state_bytes": 215,
+    "literal_state_bytes": 2,
+    "nodes": 97,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.03102065502328829,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

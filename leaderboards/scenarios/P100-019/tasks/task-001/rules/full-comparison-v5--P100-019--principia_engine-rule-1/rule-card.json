@@ -1,0 +1,71 @@
+{
+  "dev_error": 4.059655586425283,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lag3)+p2*(lag6)+p3*(lag1)+p4*(tanh((lag6-13.898665514592931)/28.495286536302263))+p5*(tanh((lag3-13.810963901689709)/28.419742843218735))",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.111489897888408,
+    "p1": -0.031941546397956974,
+    "p2": 0.32012716578767647,
+    "p3": 0.6110161136423736,
+    "p4": -7.647353723782602,
+    "p5": 12.491736987125007
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.02530840583035593,
+      "lag3": -0.07108220879372801,
+      "lag6": -0.11951740837763236,
+      "month": 0.15347331443619394
+    },
+    "mean": -0.3135425836771864,
+    "p90_abs": 8.856304056854963,
+    "std": 8.003582156791333
+  },
+  "rule_id": "full-comparison-v5--P100-019--principia_engine-rule-1",
+  "rule_sha256": "24bb1553c5c94b17d2c8cdac3cbde8b47f5b797554f2ce87f099e60a09798a3a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.111489897888408 + -0.031941546397956974 * lag3 + 0.32012716578767647 * lag6 + 0.6110161136423736 * lag1 + -7.647353723782602 * tanh((lag6 - 13.898665514592931) / 28.495286536302263) + 12.491736987125007 * tanh((lag3 - 13.810963901689709) / 28.419742843218735)",
+    "expression_bytes": 144,
+    "free_parameters": 6,
+    "learned_state_bytes": 159,
+    "literal_state_bytes": 72,
+    "nodes": 61,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.102283222856602,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

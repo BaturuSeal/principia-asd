@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.7131923532842062,
+  "execution_status": "complete",
+  "expression": "maximum(0, p0 * (current - p1) + p2 * cal_last + p3 * cal_mean + p4 * soft + p5 * kd)",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.017372489789300182,
+    "p1": 1.3469818417949682,
+    "p2": 370.9108889848887,
+    "p3": -2219.680676493664,
+    "p4": -0.4213230065303395,
+    "p5": 0.7998590310132769
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.07276652845900865,
+      "soft": -0.6480677392000552
+    },
+    "mean": 0.1428572708339921,
+    "p90_abs": 1.7220278595884078,
+    "std": 0.9540528204073696
+  },
+  "rule_id": "full-comparison-v5--P100-076--direct_qwen-rule-1",
+  "rule_sha256": "c960bbc635e0edf510e04d518ce337e5f1e94653df13b54aefaa76dad1ec418a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "maximum(0, 0.017372489789300182 * (current - 1.3469818417949682) + 370.9108889848887 * cal_last + -2219.680676493664 * cal_mean + -0.4213230065303395 * soft + 0.7998590310132769 * kd)",
+    "expression_bytes": 85,
+    "free_parameters": 6,
+    "learned_state_bytes": 158,
+    "literal_state_bytes": 1,
+    "nodes": 47,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7140067686500257,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

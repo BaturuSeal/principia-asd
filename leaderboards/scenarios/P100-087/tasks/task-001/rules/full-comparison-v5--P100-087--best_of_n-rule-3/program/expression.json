@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1*own_previous + p2*peer_previous + p3*required_contribution + p4*previous_success + p5*(own_history_mean - peer_history_mean) + p6*(endowment - peer_endowment) + p7*round",
+  "parameters": {
+    "p0": 1.1947298690169157,
+    "p1": 0.6765176322331649,
+    "p2": 0.2284728794240805,
+    "p3": 0.015268810968799262,
+    "p4": -0.5467651544677636,
+    "p5": 0.2342915501422883,
+    "p6": 0.01384776044401835,
+    "p7": 0.006144376940727224
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.6317148975198896,
+    "primary": "mae",
+    "primary_error": 1.6317148975198896,
+    "rmse": 1.7597953633202628
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 13.908091790069633,
+  "by_group": [
+    {
+      "error": 1.3053570458597477,
+      "group": "group-4e35dcda9a447a6811081934",
+      "rows": 120
+    },
+    {
+      "error": 1.9580727491800316,
+      "group": "group-b70cac56b3a53ee7c0a3a849",
+      "rows": 113
+    }
+  ],
+  "coverage": {
+    "eligible": 233,
+    "fraction": 1.0,
+    "predicted": 233
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-026--principia_engine-rule-1",
+  "rule_sha256": "81a9ab5062cfbf2d3d06b205ccd4881e30c2f1f480ab2ed91f7c61cf4001b70e",
+  "run_id": "full-comparison-v5--P100-026--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.146573258479112 + 1.013226372770438 * anchor_selectivity_pct + 9.69502804084285 * prefix_slope_pct_min * sqrt(elapsed_min) + -0.15794853639705725 * log1p(ag_wt_pct)",
+    "expression_bytes": 96,
+    "free_parameters": 4,
+    "learned_state_bytes": 102,
+    "literal_state_bytes": 0,
+    "nodes": 37,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.5589652814842494,
+    "perturbation_labels_available": false,
+    "population_rows": 233,
+    "ranking": false,
+    "samples": 233,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

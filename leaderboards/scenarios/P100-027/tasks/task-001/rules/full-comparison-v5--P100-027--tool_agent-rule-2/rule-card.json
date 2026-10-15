@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.2691083051112026,
+  "execution_status": "complete",
+  "expression": "p0+p1*(quality)",
+  "inputs": [
+    "pressure_Pa",
+    "massflux_kg_m2_s",
+    "quality",
+    "radial_fraction",
+    "rho_liquid",
+    "rho_vapor"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "grammar-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.541784700757782,
+    "p1": 0.8013188965843976
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "massflux_kg_m2_s": -0.44914713286796504,
+      "pressure_Pa": -0.4491471328679649,
+      "quality": 0.44914713286796504,
+      "radial_fraction": 0.7998346049992091,
+      "rho_liquid": 0.4491471328679649,
+      "rho_vapor": -0.44914713286796504
+    },
+    "mean": 0.2538690763973152,
+    "p90_abs": 0.44689031385833783,
+    "std": 0.16636180827544017
+  },
+  "rule_id": "full-comparison-v5--P100-027--tool_agent-rule-2",
+  "rule_sha256": "95cf9ef1d6de977beaa38a660f3510904d7ab03bad2934933e9465c33daff1ad",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.541784700757782 + 0.8013188965843976 * quality",
+    "expression_bytes": 15,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-027.compact.v2",
+  "train_error": 0.15560530181416338,
+  "units": {
+    "inputs": {
+      "massflux_kg_m2_s": "kg m^-2 s^-1",
+      "pressure_Pa": "Pa, absolute",
+      "quality": "kg vapor per kg mixture",
+      "radial_fraction": "dimensionless native coordinate / maximum sampled coordinate",
+      "rho_liquid": "kg m^-3",
+      "rho_vapor": "kg m^-3"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

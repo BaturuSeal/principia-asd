@@ -1,0 +1,111 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.3145484356098506,
+    "primary": "brier",
+    "primary_error": 0.15385660793275327,
+    "rmse": 0.39224559644788015
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.24756319527925527,
+  "by_group": [
+    {
+      "error": 0.12874857208824209,
+      "group": "group-013c228d3602222ecd84876a",
+      "rows": 540
+    },
+    {
+      "error": 0.21787740532620503,
+      "group": "group-36ab9113afaf1a272a291eb5",
+      "rows": 430
+    },
+    {
+      "error": 0.14439969333653513,
+      "group": "group-4936635db931a97bb6d209f3",
+      "rows": 539
+    },
+    {
+      "error": 0.11037111165659898,
+      "group": "group-512ca13f0617abc81d2b6658",
+      "rows": 540
+    },
+    {
+      "error": 0.19434168875163507,
+      "group": "group-6417b4407f40adeaee9213b0",
+      "rows": 430
+    },
+    {
+      "error": 0.17714116421230633,
+      "group": "group-7220376568b33ddcdcf7589c",
+      "rows": 430
+    },
+    {
+      "error": 0.20468047566845973,
+      "group": "group-91986d80daf8f1021accc9dd",
+      "rows": 540
+    },
+    {
+      "error": 0.18890911462728555,
+      "group": "group-acffd88ab9fbf6166f845234",
+      "rows": 400
+    },
+    {
+      "error": 0.13628709164072314,
+      "group": "group-b3f6f586950bd9dc9d7bb961",
+      "rows": 539
+    },
+    {
+      "error": 0.11386725577636307,
+      "group": "group-b4600adeb3ff0811d2dcd214",
+      "rows": 540
+    },
+    {
+      "error": 0.14910487007723128,
+      "group": "group-d4bd366bf1a6c1abc8421f99",
+      "rows": 540
+    },
+    {
+      "error": 0.08055085203145369,
+      "group": "group-f1df054a67de9e5df31711fb",
+      "rows": 540
+    }
+  ],
+  "coverage": {
+    "eligible": 6008,
+    "fraction": 1.0,
+    "predicted": 6008
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "full-comparison-v5--P100-089--polynomial_control-rule-1",
+  "rule_sha256": "73af281824a80bea56e26296ae55427deb09f98210973e6b7b56382fca1d538c",
+  "run_id": "full-comparison-v5--P100-089--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.439350890238386 + 0.10124025259822102 * reward + 0.6542177097092128 * probability + 0.2038582984462 * child + -0.012000216274842641 * age_child + 0.0046825956321604936 * multi + -0.043961328449351224 * description + -0.04361962097707332 * trial_progress + 0.23159369077854766 * lag_choice + 0.34304192342286627 * history_mean + -0.11132277674222976 * has_history))",
+    "expression_bytes": 179,
+    "free_parameters": 11,
+    "learned_state_bytes": 300,
+    "literal_state_bytes": 2,
+    "nodes": 91,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.010553033235759186,
+    "perturbation_labels_available": false,
+    "population_rows": 6008,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

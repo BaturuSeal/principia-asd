@@ -1,0 +1,101 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 4.42778305296348e-05,
+    "primary": "mae",
+    "primary_error": 4.42778305296348e-05,
+    "rmse": 5.803048723811877e-05
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.0002368376710295621,
+  "by_group": [
+    {
+      "error": 3.632131681826604e-05,
+      "group": "group-063c9f47d39f582fb9d83dfd",
+      "rows": 156
+    },
+    {
+      "error": 5.26542696619061e-05,
+      "group": "group-1b643105aaa28c532a04bf27",
+      "rows": 156
+    },
+    {
+      "error": 4.417862102632266e-05,
+      "group": "group-259eb0a4a9be72caa53c0afb",
+      "rows": 156
+    },
+    {
+      "error": 5.485061242690588e-05,
+      "group": "group-5385e61a16ea7c120bd82d95",
+      "rows": 156
+    },
+    {
+      "error": 3.860624997102848e-05,
+      "group": "group-5a5005d21adf71fd42f6b65a",
+      "rows": 156
+    },
+    {
+      "error": 4.009902541969611e-05,
+      "group": "group-5b29b6506eb605aadc3a892c",
+      "rows": 156
+    },
+    {
+      "error": 4.156452535006835e-05,
+      "group": "group-67f3ca1fdf7023b3e6772cdc",
+      "rows": 156
+    },
+    {
+      "error": 4.7081681428351204e-05,
+      "group": "group-978aa369ec293326942a3b78",
+      "rows": 156
+    },
+    {
+      "error": 3.7195038367380506e-05,
+      "group": "group-9d589e78dbd38c442b2a57b5",
+      "rows": 156
+    },
+    {
+      "error": 5.0226964826422644e-05,
+      "group": "group-c6565d7a985670a18ed38007",
+      "rows": 156
+    }
+  ],
+  "coverage": {
+    "eligible": 1560,
+    "fraction": 1.0,
+    "predicted": 1560
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "feedback_refinement",
+  "rule_id": "full-comparison-v5--P100-028--feedback_refinement-rule-1",
+  "rule_sha256": "d1aa3c84066cc694e1bfbec1a74f2056a6a90cad24dd4e110ce6a4bb149e4921",
+  "run_id": "full-comparison-v5--P100-028--feedback_refinement",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.4969240391188624e-05 + -0.7722063544824131 * lo + 1.747289892505225 * hi + 0.291290568528333 * noise + -0.0001221921607847042 * (g - glo) + -0.00022885212033106565 * (g - glo) * (r - 1) + -3.1420823892868713e-06 * sep + 3.6346039931586776e-07 * sep * sep",
+    "expression_bytes": 83,
+    "free_parameters": 8,
+    "learned_state_bytes": 229,
+    "literal_state_bytes": 1,
+    "nodes": 78,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.06498340203376715,
+    "perturbation_labels_available": false,
+    "population_rows": 1560,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

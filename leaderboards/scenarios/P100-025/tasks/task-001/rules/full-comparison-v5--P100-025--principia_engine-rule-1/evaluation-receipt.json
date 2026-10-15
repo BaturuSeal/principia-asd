@@ -1,0 +1,116 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.060268739167723004,
+    "primary": "mae",
+    "primary_error": 0.060268739167723004,
+    "rmse": 0.09045336743618672
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.5503985009621104,
+  "by_group": [
+    {
+      "error": 0.06694251129552528,
+      "group": "group-056290eb119e4f03cd7fadc0",
+      "rows": 78
+    },
+    {
+      "error": 0.06941482752972192,
+      "group": "group-3ac8d5f7d64eb06032dd0e9d",
+      "rows": 78
+    },
+    {
+      "error": 0.03437827899082857,
+      "group": "group-506cdf2ad8071ecdc466a869",
+      "rows": 78
+    },
+    {
+      "error": 0.07246314906931717,
+      "group": "group-6646ceec24a59885c237f3c8",
+      "rows": 78
+    },
+    {
+      "error": 0.03737447034793655,
+      "group": "group-90987369f2916dbdf8c3ebee",
+      "rows": 78
+    },
+    {
+      "error": 0.042692269055984874,
+      "group": "group-95fbfd42ac399722ea699243",
+      "rows": 78
+    },
+    {
+      "error": 0.06273602946818045,
+      "group": "group-9f5918dde8b2fb33dcfacbeb",
+      "rows": 78
+    },
+    {
+      "error": 0.07843615721192361,
+      "group": "group-a9b89754d307d72b30d396e4",
+      "rows": 78
+    },
+    {
+      "error": 0.07285383657886656,
+      "group": "group-b227bff012823be054c111f3",
+      "rows": 78
+    },
+    {
+      "error": 0.064716117975466,
+      "group": "group-d5ec275ce613f4a497e4a4d7",
+      "rows": 78
+    },
+    {
+      "error": 0.07759843771069315,
+      "group": "group-df486bada0530c2c9bd60220",
+      "rows": 78
+    },
+    {
+      "error": 0.06150223516909915,
+      "group": "group-e336120f04e8fe91277d3ae1",
+      "rows": 78
+    },
+    {
+      "error": 0.04238528877685576,
+      "group": "group-f9ccafb62fdffb8239481420",
+      "rows": 78
+    }
+  ],
+  "coverage": {
+    "eligible": 1014,
+    "fraction": 1.0,
+    "predicted": 1014
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-025--principia_engine-rule-1",
+  "rule_sha256": "78503cf6c8d692008b3c5bbeda28133fbd41b5df900964281ee5b7f95f7e66cd",
+  "run_id": "full-comparison-v5--P100-025--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.8581689878104182 + 1.2213032880343389 * pre + 1.1326571274932111 * (jump * (rL + rF) / 2) + -0.7643381250056959 * (jump * f * (rL - rF)) + 0.0453063159481365 * (e / 100) + -0.014002400132913628 * (jump * dL * 100) + 0.0066792358756537235 * (jump * d2L * 1000)",
+    "expression_bytes": 108,
+    "free_parameters": 7,
+    "learned_state_bytes": 190,
+    "literal_state_bytes": 11,
+    "nodes": 91,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01922778719675549,
+    "perturbation_labels_available": false,
+    "population_rows": 1014,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

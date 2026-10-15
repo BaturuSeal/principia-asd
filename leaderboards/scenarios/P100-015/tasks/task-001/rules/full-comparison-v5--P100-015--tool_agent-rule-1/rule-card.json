@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.0881149763310336,
+  "execution_status": "complete",
+  "expression": "1/(1+exp(-(p0+p1*income_proxy+p2*household_size+p3*shock+p4*age)))",
+  "inputs": [
+    "income_proxy",
+    "household_size",
+    "shock",
+    "age"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-5",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.23856390370828534,
+    "p1": -0.02649244864504022,
+    "p2": 0.08547865386450772,
+    "p3": 0.5889989194356247,
+    "p4": -0.02066701483700603
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.09614633914329061,
+      "household_size": -0.09789058680262287,
+      "income_proxy": 0.05532379454523758,
+      "shock": 0.010842122052665652
+    },
+    "mean": -0.028095899971405942,
+    "p90_abs": 0.6271813301684289,
+    "std": 0.30780309369369774
+  },
+  "rule_id": "full-comparison-v5--P100-015--tool_agent-rule-1",
+  "rule_sha256": "7d443f6be2167f6c11bcad229c0d6f869ebc5bf66917126e602d8e2b5291b979",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(0.23856390370828534 + -0.02649244864504022 * income_proxy + 0.08547865386450772 * household_size + 0.5889989194356247 * shock + -0.02066701483700603 * age)))",
+    "expression_bytes": 66,
+    "free_parameters": 5,
+    "learned_state_bytes": 136,
+    "literal_state_bytes": 2,
+    "nodes": 46,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-015.compact.v2",
+  "train_error": 0.08128848438456221,
+  "units": {
+    "inputs": {
+      "age": "years",
+      "household_size": "persons",
+      "income_proxy": "thousands USD/year bracket proxy",
+      "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+    },
+    "output": "binary EF3_h",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

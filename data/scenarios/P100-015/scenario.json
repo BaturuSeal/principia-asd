@@ -1,0 +1,86 @@
+{
+  "description": "Unable to pay hypothetical400USD emergency expense by any listed means",
+  "domain": "economics",
+  "independent_unit": "Respondents nested in whole states; source respondents may share unreported household/environmental dependencies. States not independent populations.",
+  "input_units": {
+    "age": "years",
+    "household_size": "persons",
+    "income_proxy": "thousands USD/year bracket proxy",
+    "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+  },
+  "limitations": [
+    "Contemporaneous2025 household survey association. No future distress observation and no income intervention.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "binary EF3_h",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1285,
+    "test": 2215,
+    "train": 9434
+  },
+  "scenario_id": "P100-015",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1140459,
+    "limit_bytes": 10000000,
+    "public_bytes": 275847
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+        "license": "Federal Reserve public-use data terms",
+        "rights_url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+        "source": "scenarios/15_economics_federal_reserve_shed_2025/context/SHED_2025_codebook.pdf",
+        "source_sha256": "143137652f0464c57704ee60fa17d2eb94a24ed976bde26a0287920bf250c6df"
+      },
+      {
+        "citation_url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+        "license": "Federal Reserve public-use data terms",
+        "rights_url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+        "source": "scenarios/15_economics_federal_reserve_shed_2025/raw/SHED_public_use_data_2025_CSV.zip",
+        "source_sha256": "a4ab3f7d042f16d63626b1af9aeb6f0b8a0b39e412fa94b87265bc67fe26de14"
+      }
+    ],
+    "historical_case": "P100-015",
+    "license": "Federal Reserve public-use data terms",
+    "url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+    "version": "2025 public-use release updated July 2026"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "15fd1b6461a2ea30184b0fd6c99793443df616ceba2c4c84c594f1f4712fb5d8",
+        "groups": 8,
+        "rows": 1285,
+        "sample_ids_sha256": "e20a35a100d2702c7b34edb351a21446366e592cc675a57e33b991dc83043832"
+      },
+      "test": {
+        "group_ids_sha256": "e77c02c90b1e0d0729d193024a7ff26de9477997ed9992604431f76b1ede2af9",
+        "groups": 10,
+        "rows": 2215,
+        "sample_ids_sha256": "489b22eac07d5f0c01032d6113eb3e828a28d24c75c561b7a5df474c8f96e091"
+      },
+      "train": {
+        "group_ids_sha256": "ea917651fd79ee1eded64a85f9b51e4e59489ea192956a53d90a78d613d425b9",
+        "groups": 33,
+        "rows": 9434,
+        "sample_ids_sha256": "cff46a882467768c93f1e1f4ac9707c441864f9b18692cb107b792c256c44074"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Federal Reserve 2025 SHED public-use microdata",
+  "version": "1.0.0rc2"
+}

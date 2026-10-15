@@ -1,0 +1,100 @@
+{
+  "delivery_id": "software-acceptance-20261014",
+  "version": "1.0.0rc2",
+  "checked_at": "2026-10-14T03:17:20.593502+00:00",
+  "software_acceptance_ready": true,
+  "user_acceptance": "pending",
+  "development_phase": "closed_for_user_acceptance",
+  "scope": "Local application functionality and user-interface delivery; user narrowed the current phase on 2026-10-14. Research and publication gates remain separate.",
+  "public_release_allowed": false,
+  "scientific_release_ready": false,
+  "research_status": "deferred_with_disclosed_limitations",
+  "application_url": "http://127.0.0.1:8150/",
+  "wheel": {
+    "path": "dist/principia_asd-1.0.0rc2-py3-none-any.whl",
+    "sha256": "4dcfab543aeefab8804799a22320a5ec9246655f060c6b2ea481ab39e0dec6e6",
+    "bytes": 464781
+  },
+  "checks": {
+    "application_suite": {
+      "passed": 1696,
+      "duration_seconds": 383.97,
+      "receipt": "docs/ASTA_WORKER_ACCEPTANCE.json",
+      "receipt_sha256": "a20330e31a28ba07a4baa0e88f684f89d982f684c88a64d5677f63d13cf9feea",
+      "reuse_reason": "All 110 executable package/source files are byte-identical to the prior fully tested build. Wheel metadata changed for the acceptance README."
+    },
+    "new_packaging_tests": {
+      "passed": 6,
+      "duration_seconds": 7.73,
+      "covers": [
+        "deterministic archive",
+        "offline integrity and tamper detection",
+        "target/env/ledger rejection",
+        "credential and symlink rejection",
+        "cache omission accounting",
+        "no recursive or overwrite output"
+      ]
+    },
+    "ruff": "passed",
+    "fresh_wheel_installation": "passed",
+    "cli_help_paths": 12,
+    "http_host_origin_csrf_guards": "passed",
+    "relocated_zero_api_discovery": "passed",
+    "browser_walkthrough": "passed",
+    "static_report_links": "passed",
+    "frozen_artifact_preservation": "passed"
+  },
+  "artifacts": {
+    "html_pages_checked": 1141,
+    "broken_local_links": [],
+    "wheel_source_files_compared": 110,
+    "source_differences": [],
+    "canonical_files_checked": 4495,
+    "changed_canonical_files": [],
+    "api_calls": 0
+  },
+  "coverage": {
+    "assigned_attempt_denominator": 520,
+    "attempts": 520,
+    "rules": 693,
+    "scenarios": 40,
+    "separate_engineering_attempts": 336,
+    "status_counts": {
+      "complete": 483,
+      "failed": 37
+    },
+    "superseded_engineering_attempts": 200,
+    "track": "primary"
+  },
+  "test_assessments": {
+    "valid": 684,
+    "invalid": 9
+  },
+  "costs": {
+    "accounted_cny": 60.9629845,
+    "cap_cny": 3000.0,
+    "remaining_cny": 2939.0370155,
+    "requests": 1783,
+    "states": {
+      "completed": 1779,
+      "unknown": 4
+    },
+    "unknown_usage_reserved": 24.0
+  },
+  "new_paid_calls_for_handoff": 0,
+  "remaining_research": "docs/RESEARCH_BACKLOG.md",
+  "acceptance_walkthrough": "ACCEPTANCE.md",
+  "installation": "docs/SOFTWARE_ACCEPTANCE_INSTALLATION.json",
+  "browser_receipt": "docs/SOFTWARE_ACCEPTANCE_UI.json",
+  "archive_integrity": "The archive includes BUNDLE_MANIFEST.json, SHA256SUMS and VERIFY.py. Its adjacent SHA256 file is the external archive digest.",
+  "known_limits": [
+    "40 prepared retrospective examples; final source rights and scientific admission pending",
+    "Six known preparation defects and three unfinished source-specific reviews",
+    "Historical learned-state accounting incomplete for at least 65 rules",
+    "Disabled external methods and development-only options remain disclosed",
+    "No independent novelty, causality or practical-impact assessment",
+    "Loopback application; no hosted multi-user deployment",
+    "New private test metrics require separately controlled evaluator custody"
+  ],
+  "monitor_handoff": "Pause hourly research/development automation after this verified handoff; no automatic new experiments."
+}

@@ -1,0 +1,69 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "boundary_cof": "dimensionless",
+    "concentration_wt_pct": "wt percent",
+    "highspeed_cof": "dimensionless",
+    "speed_mm_s": "mm/s"
+  },
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Six formulations were developed with leave-formulation-out validation; N+S functionalization and NG supplier curves were reserved. Duplicate curves cannot cross partitions. Both endpoint calibrations are provided for every curve. Scoring covers only 0.28–10 mm/s and tests calibrated shape transfer, not unmeasured-lubricant performance.",
+  "output": "target",
+  "output_description": "Coefficient of friction",
+  "output_units": "dimensionless",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-030",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "9c37b96f424edbda7774323f209b0f1e9650ecb1a35fd85931d40c5203972645",
+  "source_task": "P100-030.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Material formulation, repeated representations linked. Two-point calibration at 0.2 and500 mm/s; score0.28–10 mm/s.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-030.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Coefficient of friction",
+  "version": "1.0.0rc2"
+}

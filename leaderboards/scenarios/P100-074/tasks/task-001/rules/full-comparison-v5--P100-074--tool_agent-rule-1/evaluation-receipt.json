@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 143.575596745492,
+    "primary": "mae",
+    "primary_error": 143.575596745492,
+    "rmse": 183.01559929805086
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 158.41744805624666,
+  "by_group": [
+    {
+      "error": 160.72053772531362,
+      "group": "group-32f65e8bcf958b45c6c92eb1",
+      "rows": 43
+    },
+    {
+      "error": 126.43065576567037,
+      "group": "group-9325ce927d38c901d5f70925",
+      "rows": 43
+    }
+  ],
+  "coverage": {
+    "eligible": 86,
+    "fraction": 1.0,
+    "predicted": 86
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tool_agent",
+  "rule_id": "full-comparison-v5--P100-074--tool_agent-rule-1",
+  "rule_sha256": "4f4271f9caf2a3ea9f5bdcfdca541fd23fca2659ce358c6f3c9da0d23fc01921",
+  "run_id": "full-comparison-v5--P100-074--tool_agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "calibration_F6 + 11.078700023049059 * (time_min - 6.0) + -0.21524887576725737 * (time_min - 6.0) * (time_min - 6.0) + 0.3090558803942934 * concentration_uM * (time_min - 6.0) + 0.016256859354972602 * concentration_uM * (time_min - 6.0) * (time_min - 6.0)",
+    "expression_bytes": 186,
+    "free_parameters": 4,
+    "learned_state_bytes": 108,
+    "literal_state_bytes": 18,
+    "nodes": 69,
+    "numeric_literal_count": 6,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 18
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01427118652243597,
+    "perturbation_labels_available": false,
+    "population_rows": 86,
+    "ranking": false,
+    "samples": 86,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

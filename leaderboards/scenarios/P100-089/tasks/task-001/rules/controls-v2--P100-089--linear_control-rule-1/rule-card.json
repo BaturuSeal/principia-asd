@@ -1,0 +1,87 @@
+{
+  "dev_error": 0.14101186961425352,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(reward)+p2*(probability)+p3*(child)+p4*(age_child)+p5*(multi)+p6*(description)+p7*(trial_progress)+p8*(lag_choice)+p9*(history_mean)+p10*(has_history)))",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.439350890238386,
+    "p1": 0.10124025259822102,
+    "p10": -0.11132277674222976,
+    "p2": 0.6542177097092128,
+    "p3": 0.2038582984462,
+    "p4": -0.012000216274842641,
+    "p5": 0.0046825956321604936,
+    "p6": -0.043961328449351224,
+    "p7": -0.04361962097707332,
+    "p8": 0.23159369077854766,
+    "p9": 0.34304192342286627
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": 0.025471407027164324,
+      "child": 0.026464114602708137,
+      "description": 0.034925948680531345,
+      "has_history": 0.026231646247721965,
+      "history_mean": -0.03141027957914037,
+      "lag_choice": -0.04096342441634974,
+      "multi": 0.0027029872203045953,
+      "probability": -0.11432138084481676,
+      "reward": -0.02340034265072078,
+      "trial_progress": 0.012888656128771414
+    },
+    "mean": 0.017256564302106134,
+    "p90_abs": 0.6014445627576578,
+    "std": 0.37286982869549795
+  },
+  "rule_id": "controls-v2--P100-089--linear_control-rule-1",
+  "rule_sha256": "a4da835e50ea3dd0df4916c5f997d3201ec1603356549c90210ea0c55f237dc1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.439350890238386 + 0.10124025259822102 * reward + 0.6542177097092128 * probability + 0.2038582984462 * child + -0.012000216274842641 * age_child + 0.0046825956321604936 * multi + -0.043961328449351224 * description + -0.04361962097707332 * trial_progress + 0.23159369077854766 * lag_choice + 0.34304192342286627 * history_mean + -0.11132277674222976 * has_history))",
+    "expression_bytes": 179,
+    "free_parameters": 11,
+    "learned_state_bytes": 300,
+    "nodes": 91,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.14393169200112274,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

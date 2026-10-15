@@ -1,0 +1,75 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "is_bqskit": "SDK indicator,elseStaq",
+    "is_tket": "SDK indicator",
+    "load_seconds": "Qiskit QASM loading seconds",
+    "pilot_depth": "Qiskit output two-qubit depth",
+    "pilot_gates": "Qiskit output two-qubit gate count",
+    "pilot_seconds": "seconds Qiskit calibration cost",
+    "qubits": "input qubit count"
+  },
+  "inputs": [
+    "pilot_seconds",
+    "qubits",
+    "pilot_gates",
+    "pilot_depth",
+    "load_seconds",
+    "is_tket",
+    "is_bqskit"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "log_mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Must execute the complete Qiskit pilot first; its runtime and resulting circuit statistics are known only afterward. Candidate SDK timing is withheld. Pilot cost is not free. This is runtime diagnostics, not pre-compilation prediction or quantum-device performance.",
+  "output": "target",
+  "output_description": "Author-benchmarked mean compilation wall time after matched Qiskit pilot",
+  "output_units": "seconds",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-031",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "d95a87c1bfb857b2f6ae1c3185408d7868f318a5611003b21fa3a3cce15c512c",
+  "source_task": "P100-031.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Circuit family after stripping numeric size suffixes; compiler observations on each family stay linked. One local CPU family; no independent hardware transfer.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-031.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Author-benchmarked mean compilation wall time after matched Qiskit pilot",
+  "version": "1.0.0rc2"
+}

@@ -1,0 +1,75 @@
+{
+  "dev_error": 0.25333424820432104,
+  "execution_status": "complete",
+  "expression": "0.5414947271893626",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": -0.1192241393644869,
+      "child": -0.11888616552377301,
+      "description": 0.04455532292984788,
+      "has_history": 0.03519982703959568,
+      "history_mean": -0.2382668140174127,
+      "lag_choice": -0.43382462909796254,
+      "multi": -0.02743159204829442,
+      "probability": -0.4494242200218496,
+      "reward": -0.3509506348012268,
+      "trial_progress": 0.04963491607493575
+    },
+    "mean": 0.06536079225704255,
+    "p90_abs": 0.5414947271893626,
+    "std": 0.4994300861363733
+  },
+  "rule_id": "controls-v2--P100-089--mean_control-rule-1",
+  "rule_sha256": "17be65a1d08133c9efc667130a6771bf23a27a114cc754878dcb1bfd3b72ddce",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5414947271893626",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.24742451175285457,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

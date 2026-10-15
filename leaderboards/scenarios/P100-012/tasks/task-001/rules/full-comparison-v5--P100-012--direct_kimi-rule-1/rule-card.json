@@ -1,0 +1,66 @@
+{
+  "dev_error": 10068.001600281983,
+  "execution_status": "complete",
+  "expression": "I0 * exp(-p0 * (q/q0)**p1) * (1 + p2 * outer) + p3",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.0512060947225805,
+    "p1": 0.8755818600258113,
+    "p2": -0.16169681620311097,
+    "p3": -2155.0838261154745
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": 0.08075280381017319,
+      "outer": -0.04614007983370939,
+      "q": -0.18048766473209985,
+      "q0": 2.102251910091125e-17
+    },
+    "mean": 2535.7779143459093,
+    "p90_abs": 25707.138726860525,
+    "std": 19024.691010945236
+  },
+  "rule_id": "full-comparison-v5--P100-012--direct_kimi-rule-1",
+  "rule_sha256": "4aaa74b85cb8f25b8bd15402f3fef18e4e1557b5abb71133fdf1bcdc1cb95ade",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "I0 * exp(-2.0512060947225805 * (q / q0) ** 0.8755818600258113) * (1 + -0.16169681620311097 * outer) + -2155.0838261154745",
+    "expression_bytes": 50,
+    "free_parameters": 4,
+    "learned_state_bytes": 107,
+    "literal_state_bytes": 1,
+    "nodes": 39,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 10452.513516596113,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dev_error": 0.20091448154146996,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(education)))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.5201924652083398,
+    "p1": 0.06055124827920197
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": -0.09002073766230659,
+      "education": 0.0239275248091178,
+      "japan": -0.02486869324897631
+    },
+    "mean": 0.0016381398341867206,
+    "p90_abs": 0.7330262375787142,
+    "std": 0.45057118892377435
+  },
+  "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-2",
+  "rule_sha256": "be79531b527cbec4770b7d2fac5ffb45bc1ae0e52485a153a0c97b568f3db458",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.5201924652083398 + 0.06055124827920197 * education))",
+    "expression_bytes": 39,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 2,
+    "nodes": 19,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.19548464209378322,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

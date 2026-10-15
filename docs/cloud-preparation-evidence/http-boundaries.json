@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "foreign_origin",
+      "status_code": 400
+    },
+    {
+      "check": "foreign_host",
+      "status_code": 400
+    },
+    {
+      "check": "key_without_csrf",
+      "status_code": 403
+    },
+    {
+      "check": "credential_file",
+      "status_code": 404
+    },
+    {
+      "check": "public_api_read",
+      "status_code": 404
+    },
+    {
+      "check": "public_api_write",
+      "status_code": 501
+    }
+  ]
+}

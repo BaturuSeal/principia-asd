@@ -1,0 +1,61 @@
+{
+  "dev_error": 63.59646552939668,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 67.18155925148247
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": -0.9998397722158124,
+      "high": -0.9998397722158124,
+      "offset": -0.9998397722158126,
+      "t": -0.30199161634465527
+    },
+    "mean": -6.351545578517532,
+    "p90_abs": 92.91710814851751,
+    "std": 59.42116803015597
+  },
+  "rule_id": "controls-v3--P100-062--mean_control-rule-1",
+  "rule_sha256": "ce97c1efb8e6ee9eeee722507d3ad080390ba974e99285af2ce05ccc84a0de60",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "67.18155925148247",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 55.35351128240769,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

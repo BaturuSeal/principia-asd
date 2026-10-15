@@ -1,0 +1,9 @@
+{
+  "expression": "anchor_selectivity_pct + elapsed_min * prefix_slope_pct_min + p0 * (ag_wt_pct / 20.0) * (1 - exp(-elapsed_min / 300.0))",
+  "parameters": {
+    "p0": -9.681075850565797
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

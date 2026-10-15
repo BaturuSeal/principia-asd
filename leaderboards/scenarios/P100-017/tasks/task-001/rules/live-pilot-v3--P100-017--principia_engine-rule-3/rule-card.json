@@ -1,0 +1,74 @@
+{
+  "dev_error": 0.4333667654983864,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((depth_km-68.00584003311745)/126.79665427654581))+p2*(gap_deg)",
+  "inputs": [
+    "depth_km",
+    "rms_s",
+    "phases",
+    "stations",
+    "gap_deg",
+    "dmin_km"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.0546815881331666,
+    "p1": 4.76049759496418,
+    "p2": 0.007744240704545916
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "depth_km": -0.051386866652728486,
+      "dmin_km": 0.09104220998125852,
+      "gap_deg": -0.14623336851107557,
+      "phases": 0.09048299366242082,
+      "rms_s": 0.09830769748078066,
+      "stations": 0.10492181805366002
+    },
+    "mean": -1.7946774831079135,
+    "p90_abs": 7.097503280785075,
+    "std": 4.659407064615106
+  },
+  "rule_id": "live-pilot-v3--P100-017--principia_engine-rule-3",
+  "rule_sha256": "1b1350424c238a8b320df513037c6f2777f7072605797750332f5a2a17dfbcb7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.0546815881331666 + 4.76049759496418 * tanh((depth_km - 68.00584003311745) / 126.79665427654581) + 0.007744240704545916 * gap_deg",
+    "expression_bytes": 74,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "literal_state_bytes": 35,
+    "nodes": 28,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-017.compact.v2",
+  "train_error": 0.3677832991325136,
+  "units": {
+    "inputs": {
+      "depth_km": "km below network reference (may negative)",
+      "dmin_km": "minimum angular station distance*111.195km/degree",
+      "gap_deg": "largest azimuthal gap degrees",
+      "phases": "used phase count",
+      "rms_s": "seconds phase residual standardError",
+      "stations": "used station count"
+    },
+    "output": "km",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

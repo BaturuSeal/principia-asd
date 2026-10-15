@@ -1,0 +1,71 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.39204728147103307,
+    "primary": "brier",
+    "primary_error": 0.19263475288967097,
+    "rmse": 0.43890175767439227
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.21862448052450872,
+  "by_group": [
+    {
+      "error": 0.218937629534743,
+      "group": "group-0b95827d139695ee703b2a32",
+      "rows": 349
+    },
+    {
+      "error": 0.15837221569786966,
+      "group": "group-7e220f1f688288ccb15fd312",
+      "rows": 164
+    },
+    {
+      "error": 0.18501259170329803,
+      "group": "group-973f07eeb68ad5339919fe62",
+      "rows": 159
+    },
+    {
+      "error": 0.20821657462277313,
+      "group": "group-f92d57ee06910585315b543a",
+      "rows": 382
+    }
+  ],
+  "coverage": {
+    "eligible": 1054,
+    "fraction": 1.0,
+    "predicted": 1054
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-2",
+  "rule_sha256": "0f6e363e9f2ca9858f86628034e042a3e01cb3ca1d89ec19dc27559cf2d9c36e",
+  "run_id": "full-comparison-v5--P100-039--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.5201924652083398 + 0.06055124827920197 * education))",
+    "expression_bytes": 39,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 2,
+    "nodes": 19,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.02196563241692285,
+    "perturbation_labels_available": false,
+    "population_rows": 1054,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

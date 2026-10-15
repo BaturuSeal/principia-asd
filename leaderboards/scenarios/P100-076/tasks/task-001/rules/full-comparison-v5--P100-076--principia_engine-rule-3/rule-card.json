@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.7210967196872364,
+  "execution_status": "complete",
+  "expression": "p0+p1*(kd)+p2*(tanh((current-40.0)/16.1245154965971))",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6309523809523813,
+    "p1": 0.5595238095238092,
+    "p2": 0.40276886782900134
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.07633374323163869,
+      "soft": -0.5109280142296221
+    },
+    "mean": 0.25952380952380977,
+    "p90_abs": 1.329285455052355,
+    "std": 0.8332771621681296
+  },
+  "rule_id": "full-comparison-v5--P100-076--principia_engine-rule-3",
+  "rule_sha256": "fa0872ff08d904d7a20da2c9c197eb96be527f4e0291198a07d7bd5a28573f0e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6309523809523813 + 0.5595238095238092 * kd + 0.40276886782900134 * tanh((current - 40.0) / 16.1245154965971)",
+    "expression_bytes": 53,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "literal_state_bytes": 20,
+    "nodes": 28,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7785335927626448,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

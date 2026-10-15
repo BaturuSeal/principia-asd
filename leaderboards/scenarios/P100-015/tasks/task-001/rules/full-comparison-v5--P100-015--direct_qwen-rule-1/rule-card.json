@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.0873573778383327,
+  "execution_status": "complete",
+  "expression": "1 / (1 + exp(-(p0 + p1 * (income_proxy / household_size) + p2 * shock + p3 * age)))",
+  "inputs": [
+    "income_proxy",
+    "household_size",
+    "shock",
+    "age"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.057315301807651174,
+    "p1": -0.06648201614245974,
+    "p2": 0.6451944187255556,
+    "p3": -0.013275481148810973
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.0908085420058059,
+      "household_size": 0.011183003283350802,
+      "income_proxy": 0.11128019856728961,
+      "shock": -0.002896241117595452
+    },
+    "mean": -0.033687042666732885,
+    "p90_abs": 0.6296559905231732,
+    "std": 0.30754541564577037
+  },
+  "rule_id": "full-comparison-v5--P100-015--direct_qwen-rule-1",
+  "rule_sha256": "99b0adc0cbe3d6d8bcac7a32c8744f2ca60678bbc348041c51e0c994e897e4d5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(0.057315301807651174 + -0.06648201614245974 * (income_proxy / household_size) + 0.6451944187255556 * shock + -0.013275481148810973 * age)))",
+    "expression_bytes": 83,
+    "free_parameters": 4,
+    "learned_state_bytes": 111,
+    "literal_state_bytes": 2,
+    "nodes": 42,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-015.compact.v2",
+  "train_error": 0.0828178023821036,
+  "units": {
+    "inputs": {
+      "age": "years",
+      "household_size": "persons",
+      "income_proxy": "thousands USD/year bracket proxy",
+      "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+    },
+    "output": "binary EF3_h",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

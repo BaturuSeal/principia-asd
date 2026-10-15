@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.026106519099595733,
+  "execution_status": "complete",
+  "expression": "p0+p1*(anchor_loss*early_loss)+p2*(early_loss)",
+  "inputs": [
+    "tokens_B",
+    "anchor_tokens_B",
+    "early_tokens_B",
+    "anchor_loss",
+    "early_loss",
+    "params_B",
+    "width",
+    "depth"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.9455664547656406,
+    "p1": 0.33558013921670715,
+    "p2": -1.0397102072659619
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": 0.19465327553316392,
+      "anchor_tokens_B": 7.180880363985697e-17,
+      "depth": -0.19255450103637337,
+      "early_loss": 0.19587247025501836,
+      "early_tokens_B": -3.168035454699573e-17,
+      "params_B": -0.1786632540555139,
+      "tokens_B": 0.8849673549632839,
+      "width": -0.143743355665519
+    },
+    "mean": -0.015577985681370797,
+    "p90_abs": 0.06617576450048174,
+    "std": 0.03504452650547877
+  },
+  "rule_id": "controls-v2--P100-043--symbolic_control-rule-2",
+  "rule_sha256": "8a2c3e3930f9924d7c6bc0c55544caef6990e8587962c5f92afc51718a0f8fae",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.9455664547656406 + 0.33558013921670715 * (anchor_loss * early_loss) + -1.0397102072659619 * early_loss",
+    "expression_bytes": 46,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "nodes": 23,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-043.compact.v2",
+  "train_error": 0.03860553244594345,
+  "units": {
+    "inputs": {
+      "anchor_loss": "nats per token",
+      "anchor_tokens_B": "billions of training tokens",
+      "depth": "layers",
+      "early_loss": "nats per token",
+      "early_tokens_B": "billions of training tokens",
+      "params_B": "billions of parameters",
+      "tokens_B": "billions of training tokens",
+      "width": "embedding dimensions"
+    },
+    "output": "nats per token",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

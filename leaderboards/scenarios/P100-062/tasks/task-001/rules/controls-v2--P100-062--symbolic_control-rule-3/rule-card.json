@@ -1,0 +1,61 @@
+{
+  "dev_error": 9.498282583026858,
+  "execution_status": "complete",
+  "expression": "p0+p1*((offset)**2)+p2*(log1p(abs((offset-50.56949460017969)/42.91221288316154)))",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -9.090135105572035,
+    "p1": 0.006814478904837984,
+    "p2": 71.89954837969906
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": -0.9906527628163132,
+      "high": -0.9906527628163131,
+      "offset": -0.9906527628163134,
+      "t": -0.41046586217256503
+    },
+    "mean": -6.355038730732943,
+    "p90_abs": 17.85464111787693,
+    "std": 7.797732118608328
+  },
+  "rule_id": "controls-v2--P100-062--symbolic_control-rule-3",
+  "rule_sha256": "88e57e1e212fda435762b71553dd28e629d4e427c3e5166908410f88ec4d42b2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-9.090135105572035 + 0.006814478904837984 * offset ** 2 + 71.89954837969906 * log1p(abs((offset - 50.56949460017969) / 42.91221288316154))",
+    "expression_bytes": 81,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "nodes": 34,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 9.305839256280146,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

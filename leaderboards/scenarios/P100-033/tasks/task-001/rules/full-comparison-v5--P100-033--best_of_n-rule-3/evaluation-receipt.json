@@ -1,0 +1,101 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 10.29469192145811,
+    "primary": "mae",
+    "primary_error": 10.29469192145811,
+    "rmse": 12.431735824021876
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 10.096878669586468,
+  "by_group": [
+    {
+      "error": 11.787902525234866,
+      "group": "group-04dbf2956bf5e22ef266acbb",
+      "rows": 108
+    },
+    {
+      "error": 11.633874356634806,
+      "group": "group-300537a1bd171a7b60ca5515",
+      "rows": 108
+    },
+    {
+      "error": 4.82756352270985,
+      "group": "group-4607ea431ee2fb5521e7169c",
+      "rows": 108
+    },
+    {
+      "error": 3.814103768558149,
+      "group": "group-52223673c1f734ffbc828161",
+      "rows": 108
+    },
+    {
+      "error": 15.448440076922562,
+      "group": "group-6037163e47b0fd4ee840500c",
+      "rows": 4
+    },
+    {
+      "error": 9.492712748054757,
+      "group": "group-67ae81ee9f997517e0acad56",
+      "rows": 108
+    },
+    {
+      "error": 9.322845815227659,
+      "group": "group-8aacba2fc66c95abd49225fd",
+      "rows": 96
+    },
+    {
+      "error": 13.477852402083617,
+      "group": "group-998fb8913ba5162ed2b6914e",
+      "rows": 4
+    },
+    {
+      "error": 9.793597196632469,
+      "group": "group-c5c23b1a6428ea75d2c125bb",
+      "rows": 108
+    },
+    {
+      "error": 13.348026802522366,
+      "group": "group-d704dfdb1cb6d836e5257ed3",
+      "rows": 4
+    }
+  ],
+  "coverage": {
+    "eligible": 756,
+    "fraction": 1.0,
+    "predicted": 756
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-3",
+  "rule_sha256": "1b7176747f5a2b221111f13060a75b06ec225b884edf4c496ad261c3bf9f63a5",
+  "run_id": "full-comparison-v5--P100-033--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "83.99070174522882 + -0.042750674821773 * (fft_bpm + acf_bpm) / 2 + -0.11053706196682456 * (half_bpm - (fft_bpm + acf_bpm) / 2) + -1.905837985927702 * half_strength + -3.113375346259061 * spectral_quality + -0.0290537093538381 * agreement + 2.2634184620456708 * motion + -2.0732524115351625 * ear",
+    "expression_bytes": 164,
+    "free_parameters": 8,
+    "learned_state_bytes": 211,
+    "literal_state_bytes": 2,
+    "nodes": 77,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.007758060449789297,
+    "perturbation_labels_available": false,
+    "population_rows": 756,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

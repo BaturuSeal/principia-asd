@@ -1,0 +1,112 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.026291739580936255,
+    "primary": "mae",
+    "primary_error": 0.026291739580936255,
+    "rmse": 0.038529385900701
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.5503985009621104,
+  "by_group": [
+    {
+      "error": 0.026724927617623073,
+      "group": "group-056290eb119e4f03cd7fadc0",
+      "rows": 78
+    },
+    {
+      "error": 0.017417574654439945,
+      "group": "group-3ac8d5f7d64eb06032dd0e9d",
+      "rows": 78
+    },
+    {
+      "error": 0.04072418981481475,
+      "group": "group-506cdf2ad8071ecdc466a869",
+      "rows": 78
+    },
+    {
+      "error": 0.015251091844066585,
+      "group": "group-6646ceec24a59885c237f3c8",
+      "rows": 78
+    },
+    {
+      "error": 0.04440532064979178,
+      "group": "group-90987369f2916dbdf8c3ebee",
+      "rows": 78
+    },
+    {
+      "error": 0.02617133039595328,
+      "group": "group-95fbfd42ac399722ea699243",
+      "rows": 78
+    },
+    {
+      "error": 0.026998241626764143,
+      "group": "group-9f5918dde8b2fb33dcfacbeb",
+      "rows": 78
+    },
+    {
+      "error": 0.02795997130092572,
+      "group": "group-a9b89754d307d72b30d396e4",
+      "rows": 78
+    },
+    {
+      "error": 0.01711529472732762,
+      "group": "group-b227bff012823be054c111f3",
+      "rows": 78
+    },
+    {
+      "error": 0.025900850247119758,
+      "group": "group-d5ec275ce613f4a497e4a4d7",
+      "rows": 78
+    },
+    {
+      "error": 0.016154449925283396,
+      "group": "group-df486bada0530c2c9bd60220",
+      "rows": 78
+    },
+    {
+      "error": 0.02922148630928352,
+      "group": "group-e336120f04e8fe91277d3ae1",
+      "rows": 78
+    },
+    {
+      "error": 0.027747885438777715,
+      "group": "group-f9ccafb62fdffb8239481420",
+      "rows": 78
+    }
+  ],
+  "coverage": {
+    "eligible": 1014,
+    "fraction": 1.0,
+    "predicted": 1014
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tree_control",
+  "rule_id": "full-comparison-v5--P100-025--tree_control-rule-1",
+  "rule_sha256": "7a42930157111876e30d0ab02cdf8fffc88832e73d4fde41cb6e82840ef24244",
+  "run_id": "full-comparison-v5--P100-025--tree_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "complete tree in Rule Card",
+    "free_parameters": 112,
+    "learned_state_bytes": 3363,
+    "scope": "predictive reference, not a compact scientific formula",
+    "weighted_operator_count": 75
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.016945107348357257,
+    "perturbation_labels_available": false,
+    "population_rows": 1014,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

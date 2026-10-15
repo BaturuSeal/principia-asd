@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.11927793738432543,
+    "primary": "mae",
+    "primary_error": 0.11927793738432543,
+    "rmse": 0.1659181396391636
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.23307961305015756,
+  "by_group": [
+    {
+      "error": 0.0708691737092416,
+      "group": "group-2d4be703bac713893e380306",
+      "rows": 2400
+    },
+    {
+      "error": 0.16768670105940925,
+      "group": "group-a5093bf7ea537f01bcf93bca",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-006--direct_kimi-rule-1",
+  "rule_sha256": "b5edcb1849401d59732f46a5e4b7a98ba3ef2b022fa96bfe0e32459757a7e0d2",
+  "run_id": "full-comparison-v5--P100-006--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.2763024528566454 + -38.60027268628994 * (rabi_MHz - 2.168453845258424) / ((detuning_MHz - -2.4758350845498254) ** 2 + -1.4918633062052111 * rabi_MHz ** 2 + 214.29589976562667) + 0.08083708387455174 * rabi_MHz + 0.0004024618590757639 * detuning_MHz",
+    "expression_bytes": 116,
+    "free_parameters": 8,
+    "learned_state_bytes": 213,
+    "literal_state_bytes": 2,
+    "nodes": 57,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.3373093230755172,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

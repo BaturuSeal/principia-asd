@@ -1,0 +1,100 @@
+{
+  "dev_error": 0.4057228823014812,
+  "execution_status": "complete",
+  "expression": "p0 + p1*(p05) + p2*(p10) + p3*(p20) + p4*tanh((p05-0.9811146089459318)/2.590292659381246) + p5*tanh((p10-0.9720261793501266)/2.5810469703220478) + p6*(p30) + p7*tanh((p20-0.9972458868398096)/2.5895280648957213)",
+  "inputs": [
+    "p0",
+    "p05",
+    "p10",
+    "p20",
+    "p30",
+    "p40",
+    "p50",
+    "di0",
+    "de0",
+    "di20",
+    "de20",
+    "trial_BH",
+    "trial_FEM"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.10608836103463395,
+    "p1": 1.4870476662606402,
+    "p2": -0.2809420909831566,
+    "p3": -0.16926916883621526,
+    "p4": 2.057012741282242,
+    "p5": -1.1497593238468664,
+    "p6": -0.13870064550880573,
+    "p7": -0.7219694009977587
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "de0": 0.0031819689845617757,
+      "de20": -0.0009180653937942977,
+      "di0": -0.10589655027437359,
+      "di20": -0.16092990996058285,
+      "p0": 0.0027923693685829743,
+      "p05": 0.056785952851757665,
+      "p10": 0.05730397610735633,
+      "p20": 0.05879262798615691,
+      "p30": 0.060371479802326315,
+      "p40": 0.05608458551489376,
+      "p50": 0.061525407040983304,
+      "trial_BH": 0.00010988272405622401,
+      "trial_FEM": 0.04268371914500861
+    },
+    "mean": 0.031376389823829925,
+    "p90_abs": 0.9992358801089221,
+    "std": 0.7853013378831023
+  },
+  "rule_id": "full-comparison-v5--P100-032--principia_engine-rule-1",
+  "rule_sha256": "bfcd7e9716af2f49f7e78cb4bde3b9cac2081cf43807ffb3728d042eba7b6c7d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.10608836103463395 + 1.4870476662606402 * p05 + -0.2809420909831566 * p10 + -0.16926916883621526 * p20 + 2.057012741282242 * tanh((p05 - 0.9811146089459318) / 2.590292659381246) + -1.1497593238468664 * tanh((p10 - 0.9720261793501266) / 2.5810469703220478) + -0.13870064550880573 * p30 + -0.7219694009977587 * tanh((p20 - 0.9972458868398096) / 2.5895280648957213)",
+    "expression_bytes": 210,
+    "free_parameters": 8,
+    "learned_state_bytes": 215,
+    "literal_state_bytes": 107,
+    "nodes": 86,
+    "numeric_literal_count": 6,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "task_id": "P100-032.compact.v2",
+  "train_error": 0.3654734330626665,
+  "units": {
+    "inputs": {
+      "de0": "cmH2O",
+      "de20": "cmH2O",
+      "di0": "cmH2O",
+      "di20": "cmH2O",
+      "p0": "cmH2O",
+      "p05": "cmH2O",
+      "p10": "cmH2O",
+      "p20": "cmH2O",
+      "p30": "cmH2O",
+      "p40": "cmH2O",
+      "p50": "cmH2O",
+      "trial_BH": "binary",
+      "trial_FEM": "binary"
+    },
+    "output": "cmH2O",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.02120340642070851,
+    "primary": "mae",
+    "primary_error": 0.02120340642070851,
+    "rmse": 0.02432732868228974
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.06938069444444445,
+  "by_group": [
+    {
+      "error": 0.017239608102477655,
+      "group": "group-0a265a6180cfba94d3eb0666",
+      "rows": 12
+    },
+    {
+      "error": 0.025167204738939363,
+      "group": "group-191e001270476d8b8d4971b9",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_deepseek",
+  "rule_id": "full-comparison-v5--P100-030--direct_deepseek-rule-1",
+  "rule_sha256": "aa636fc275beccf2d5185e5eeee262e6901b3af9b7e6995a50a4fb3baf430684",
+  "run_id": "full-comparison-v5--P100-030--direct_deepseek",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "boundary_cof * (1 - 0.5 * log1p(speed_mm_s) / log1p(10)) + highspeed_cof * (log1p(speed_mm_s) / log1p(10))",
+    "expression_bytes": 106,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 8,
+    "nodes": 39,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 1.3213867698572843,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

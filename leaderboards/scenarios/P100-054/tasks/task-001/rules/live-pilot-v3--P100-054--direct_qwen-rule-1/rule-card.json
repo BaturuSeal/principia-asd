@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.02263175418225674,
+  "execution_status": "complete",
+  "expression": "p0 * thickness_um * (width_um - notch_width_um) * (1 - notch_depth_um / thickness_um) ** p1",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.49194487666231895,
+    "p1": 1.7434652519292182
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": -0.3444779196278707,
+      "notch_depth_um": 0.07336313486878115,
+      "notch_width_um": -0.4015338785748149,
+      "thickness_um": -0.08147898598315573,
+      "width_um": 0.008817991965606368
+    },
+    "mean": 0.00601221625092764,
+    "p90_abs": 0.03620822487151007,
+    "std": 0.030817625524266548
+  },
+  "rule_id": "live-pilot-v3--P100-054--direct_qwen-rule-1",
+  "rule_sha256": "7fddff0fdcf807b7d2ace81e07794bdcfd9cbde88dd42cf3a2c1f3a54d2b90ce",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.49194487666231895 * thickness_um * (width_um - notch_width_um) * (1 - notch_depth_um / thickness_um) ** 1.7434652519292182",
+    "expression_bytes": 91,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "literal_state_bytes": 1,
+    "nodes": 30,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.021632953081770455,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

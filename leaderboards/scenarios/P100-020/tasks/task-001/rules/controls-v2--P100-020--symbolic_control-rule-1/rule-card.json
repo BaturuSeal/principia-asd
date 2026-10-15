@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.033494523438659975,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)+p4*(ox)+p5*(oy)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.0018056456048288162,
+    "p1": 1.0282674331535453,
+    "p2": 0.6574900289917077,
+    "p3": -0.3861323387593054,
+    "p4": -0.2050920475785128,
+    "p5": -0.09711126541669142
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": -0.008797576504483326,
+      "dg": -0.02094538965205466,
+      "gx": 0.07759897358348716,
+      "gy": 0.009006711103438075,
+      "hx": -0.02451407886859396,
+      "hy": -0.02746882108554498,
+      "ox": -0.01850279989088134,
+      "oy": -0.023898613050958736
+    },
+    "mean": -0.0006533682232717729,
+    "p90_abs": 0.07308182731824776,
+    "std": 0.0495601443871382
+  },
+  "rule_id": "controls-v2--P100-020--symbolic_control-rule-1",
+  "rule_sha256": "0452cc3366023acc4678a316b2930a33460885cae33a621364fea1c59082f652",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0018056456048288162 + 1.0282674331535453 * hx + 0.6574900289917077 * hy + -0.3861323387593054 * dg + -0.2050920475785128 * ox + -0.09711126541669142 * oy",
+    "expression_bytes": 42,
+    "free_parameters": 6,
+    "learned_state_bytes": 163,
+    "nodes": 43,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.03599561913874887,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

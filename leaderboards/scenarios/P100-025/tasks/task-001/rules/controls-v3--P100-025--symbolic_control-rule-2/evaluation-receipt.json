@@ -1,0 +1,116 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.08005525443072109,
+    "primary": "mae",
+    "primary_error": 0.08005525443072109,
+    "rmse": 0.11717189563663757
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.5503985009621104,
+  "by_group": [
+    {
+      "error": 0.07605484819875374,
+      "group": "group-056290eb119e4f03cd7fadc0",
+      "rows": 78
+    },
+    {
+      "error": 0.1074161761541048,
+      "group": "group-3ac8d5f7d64eb06032dd0e9d",
+      "rows": 78
+    },
+    {
+      "error": 0.07162027280562128,
+      "group": "group-506cdf2ad8071ecdc466a869",
+      "rows": 78
+    },
+    {
+      "error": 0.11012395184561637,
+      "group": "group-6646ceec24a59885c237f3c8",
+      "rows": 78
+    },
+    {
+      "error": 0.07953052921587767,
+      "group": "group-90987369f2916dbdf8c3ebee",
+      "rows": 78
+    },
+    {
+      "error": 0.044301126110475236,
+      "group": "group-95fbfd42ac399722ea699243",
+      "rows": 78
+    },
+    {
+      "error": 0.08579839278995535,
+      "group": "group-9f5918dde8b2fb33dcfacbeb",
+      "rows": 78
+    },
+    {
+      "error": 0.05943603947021378,
+      "group": "group-a9b89754d307d72b30d396e4",
+      "rows": 78
+    },
+    {
+      "error": 0.1009930992310279,
+      "group": "group-b227bff012823be054c111f3",
+      "rows": 78
+    },
+    {
+      "error": 0.06285098132357218,
+      "group": "group-d5ec275ce613f4a497e4a4d7",
+      "rows": 78
+    },
+    {
+      "error": 0.11812078614242424,
+      "group": "group-df486bada0530c2c9bd60220",
+      "rows": 78
+    },
+    {
+      "error": 0.0807954139240245,
+      "group": "group-e336120f04e8fe91277d3ae1",
+      "rows": 78
+    },
+    {
+      "error": 0.04367669038770737,
+      "group": "group-f9ccafb62fdffb8239481420",
+      "rows": 78
+    }
+  ],
+  "coverage": {
+    "eligible": 1014,
+    "fraction": 1.0,
+    "predicted": 1014
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v3--P100-025--symbolic_control-rule-2",
+  "rule_sha256": "54b4aa3c26b35ada6fe08f4d8ca817af319775764e4982ad2c507337dc64f294",
+  "run_id": "controls-v3--P100-025--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.636404767328667 + 1.030576972412644 * rF",
+    "expression_bytes": 10,
+    "free_parameters": 2,
+    "learned_state_bytes": 50,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.017353941564106155,
+    "perturbation_labels_available": false,
+    "population_rows": 1014,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

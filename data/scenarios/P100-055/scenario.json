@@ -1,0 +1,114 @@
+{
+  "description": "Individual penetration normal force",
+  "domain": "Construction materials",
+  "independent_unit": "whole mixture across both ages and replicates",
+  "input_units": {
+    "age_min": "min since mixing; 0 or 30",
+    "ratio": "mix-design ratio encoded in author mixture label",
+    "time_s": "native penetration clock index; unit unspecified",
+    "water": "water ratio encoded in author mixture label"
+  },
+  "limitations": [
+    "Known mix label, age and elapsed penetration index only; force is never an input.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "N",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 4800,
+    "test": 4800,
+    "train": 12000
+  },
+  "scenario_id": "P100-055",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 2631913,
+    "limit_bytes": 10000000,
+    "public_bytes": 434284
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/17092152",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/17092152",
+        "source": "scenarios/55_materials_slag_printing/raw/08.2025_Micro-CT data.xlsx",
+        "source_sha256": "1063a677f84ea0d52fe15a5cab123f4185e88fc9bdbee7a34da34cc33fd919a5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17092152",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/17092152",
+        "source": "scenarios/55_materials_slag_printing/raw/08.2025_mixes_strength-results.xlsx",
+        "source_sha256": "bfd01900019552a81c9f414c6d13d052dc8dcf06273631dbff58cf1b7934ebac"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17092152",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/17092152",
+        "source": "scenarios/55_materials_slag_printing/raw/08.2025_TGA.xlsx",
+        "source_sha256": "2e7f5582b04457972e0c89554a785c27f07d44129af84bf38798934e418f8285"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17092152",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/17092152",
+        "source": "scenarios/55_materials_slag_printing/raw/08.2025_Rheology tests.xlsx",
+        "source_sha256": "7697c76bd1c02614a7ffddd1f261be7215e3a42aca2aba0262fa7138b9caac63"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17092152",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/17092152",
+        "source": "scenarios/55_materials_slag_printing/raw/08.2025_CARBCOMN Dataset_Early-research results.pdf",
+        "source_sha256": "23fc7b9716e5e0216f158463771c781dab6f95160c3fe0b6277cf5a91dbf07dd"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17092152",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/55_materials_slag_printing/context/source_record.json",
+        "source_sha256": "1087e2536ca0ba70f223aaa49574a6957f565f02798ddd815f87543287754441"
+      }
+    ],
+    "historical_case": "P100-055",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/17092152",
+    "version": "17092152"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "83970480512e212d5aae1f632dc69c912d800799e5848b365a3d2a89aa276b62",
+        "groups": 2,
+        "rows": 4800,
+        "sample_ids_sha256": "108c20c01f675d4dc776dd667b72dbfb0e8e73f314871cf8282a391ca362b84d"
+      },
+      "test": {
+        "group_ids_sha256": "156c0ee1f5185d85d1899d52bc91318b63f0af58f258c5dbc5a039ea7f57cfb4",
+        "groups": 2,
+        "rows": 4800,
+        "sample_ids_sha256": "7273a721960c607bb2d4a78b62902e94c377bbe60218df9278daf91dbbeb247f"
+      },
+      "train": {
+        "group_ids_sha256": "61a4e73782a42df87c35dc4c5ee3ab0c44dcabfccaba5ab9d95bdc59533a43c2",
+        "groups": 5,
+        "rows": 12000,
+        "sample_ids_sha256": "ca125def71cb2e689424f87f721a4b9fc50dc7495127332507eb02c4850662cd"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "CARBCOMN - Dataset of Early Research Outcomes - Mix Design of 3D-printable Mixes Based on Industrial Slags",
+  "version": "1.0.0rc2"
+}

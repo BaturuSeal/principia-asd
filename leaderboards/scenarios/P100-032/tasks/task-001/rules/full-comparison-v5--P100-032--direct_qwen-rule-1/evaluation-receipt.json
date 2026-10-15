@@ -1,0 +1,76 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.5068711505943638,
+    "primary": "mae",
+    "primary_error": 0.5068711505943638,
+    "rmse": 0.7995950512512621
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 2.0019032384820847,
+  "by_group": [
+    {
+      "error": 0.6056889630855128,
+      "group": "group-2b09dda17a253c249df0e7a8",
+      "rows": 754
+    },
+    {
+      "error": 0.4914500935201653,
+      "group": "group-4c63635f5be7ff767a0280fd",
+      "rows": 754
+    },
+    {
+      "error": 0.5868267656558158,
+      "group": "group-8517c4dab132d6dd9ac97c35",
+      "rows": 754
+    },
+    {
+      "error": 0.3766822828376157,
+      "group": "group-964949b009745a083e09daf5",
+      "rows": 752
+    },
+    {
+      "error": 0.47370764787270936,
+      "group": "group-eef6832aaef92c5f6915fbea",
+      "rows": 754
+    }
+  ],
+  "coverage": {
+    "eligible": 3768,
+    "fraction": 1.0,
+    "predicted": 3768
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_qwen",
+  "rule_id": "full-comparison-v5--P100-032--direct_qwen-rule-1",
+  "rule_sha256": "204a59298df0f521f7a1acf7ee0037a9bbfd26a949f7931a78e9fe5ade074ae9",
+  "run_id": "full-comparison-v5--P100-032--direct_qwen",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "p0 + 0.5 * (p0 - p20) + 0.2 * de0",
+    "expression_bytes": 33,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 6,
+    "nodes": 21,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.21642707243760714,
+    "perturbation_labels_available": false,
+    "population_rows": 3768,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

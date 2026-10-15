@@ -1,0 +1,225 @@
+{
+  "description": "magnitude of native complex USB off-diagonal response",
+  "domain": "microwave physics",
+  "independent_unit": "Completepumpstrengthmatrix; all156offdiagonaldirectedpairslinked. Oneinstrument/day; strengthlevels are not independent devices.",
+  "input_units": {
+    "g": "fsu;pumpamplitudecontrol",
+    "ghi": "fsu;highcalibrationpumpcontrol",
+    "glo": "fsu;lowpumpcontrol",
+    "hi": "fsu;secondcalibrationresponse",
+    "lo": "fsu;lowpumpamplituderesponse",
+    "noise": "fsu;zero-pumpresponse",
+    "r": "dimensionless normalizedpumpincrement",
+    "sep": "integer frequency-bin separation;100kHzbins"
+  },
+  "limitations": [
+    "Predict conversion response above the two calibration pump strengths; each directedmodepair is calibrated at0,.13,.1402040816pumpunits. Whole strongerpumpmatrices are reserved, not selected edges.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "images",
+    "scientific_arrays_or_events",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "fsu; instrument full-scale units",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 780,
+    "test": 1560,
+    "train": 3744
+  },
+  "scenario_id": "P100-028",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1453239,
+    "limit_bytes": 10000000,
+    "public_bytes": 332100
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/28_physics_parametric_microwave/context/zenodo_record.json",
+        "source_sha256": "1a3980f1855cf74e605d4e1b1e0ed5bdeef38b1e83402b6d2805649f57d4e066"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/2025-11.hdf5",
+        "source_sha256": "686e64a5c6c2c9adb836a27a4c27709566345aa3d8d209a61563a4e0d043cd10"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Data_Img.hdf5",
+        "source_sha256": "6ac7ab23fbcf2860c776e6c1f384275b84c7217bfabd764884148b7a6ee29be6"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Error_vs_N_2025-10-01_22_56.npz",
+        "source_sha256": "f768435f9d55f3be383267af4b36642e84e7de566d81eb665e6dade0c869a6cf"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Error_vs_N_stat2025-10-07_06_08.npz",
+        "source_sha256": "cf2c4a3f3bb10cd23a5a2d1c7803e1bc4cfe3d7122163b212a1709451f7634fb"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Figures_InversePumpProblem_Fig2.ipynb",
+        "source_sha256": "64ece71bd23211b490c1916c14b369874f9bc7ee7469a7a1333ccc1ec2cf2b67"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Figures_InversePumpProblem_Fig3.ipynb",
+        "source_sha256": "ee01aea384587c5778f818537f2929b2a556316f00a0ecf2d2eba0e87a4f18c1"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Figures_InversePumpProblem_Fig4.ipynb",
+        "source_sha256": "2cacb7ae7dc620ba6a5d00b9886e3ee633db9a2e92745ce1cc75dfef42a6ef09"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Figures_InversePumpProblem_Fig5.ipynb",
+        "source_sha256": "dad15cf71d75b9d65c0d619368d803defe2f00d1b0f3d4090b7c7b5b2f9ba6ec"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Folders.zip",
+        "source_sha256": "38fc933e647ca56c0db7a6609053dfb9ab509ee0a0e390ad71576b744075b0f5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Img2Scattering.ipynb",
+        "source_sha256": "558cc05332bdbcdee4ccef4ef9564f5a8ec1ba5ccb6fb9e5d5c0dad5e25cb6c7"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Inverse_Pump_Problem_Analysis.ipynb",
+        "source_sha256": "6f11187031bcf581da9c8cb75d025eb909c9f2a9d5a0726a877e741db51ef096"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/PeaceFilmx2_BW_96x151.png",
+        "source_sha256": "0bc9948de4098a4ad4046f2a1dcf34c9939a619fab850a0cd1fe152fc3c35eae"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/PyPump.py",
+        "source_sha256": "4a16cb7658df11f6735d5d29799ef5b8ed1f902012cba68e090b4c1a548fb4ff"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Readme.txt",
+        "source_sha256": "540559528c98f54dae726dc2ed61bc73b80ffc92eb117a3734e48cb38f0cf666"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/S_tar_dB_13_best.npz",
+        "source_sha256": "3953327744ca7799099dd4c69bef94316a266313b60981cc1d8ceb553070abd8"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Sexp_abs_dB_13_best.npz",
+        "source_sha256": "4576a334f9ba0f98e9ce93dd05b47fe15a8897b8a2ae1e4f3b00f7b52ae2c23b"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Sexp_abs_dB_3.npz",
+        "source_sha256": "4f34dcc2c485acad2738d7c2b1c573475148cf450d7a768b433bb05e6238a929"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/Stargets_Image_PeaceFilmx2_96x151.npz",
+        "source_sha256": "2e52886e9507a8a72ca5be5b1a1c691f640bd82378f774c33a784c963358f18a"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/inverse_problem_visualize_&_savedata.ipynb",
+        "source_sha256": "04070cf0f47e2a4aa2cfd5f1bdae964a1657f6c17dc04c39e0e29d064960b267"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/18938314",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/18938314",
+        "source": "scenarios/28_physics_parametric_microwave/raw/myPy_functions.py",
+        "source_sha256": "ebb8ff8e81f130d48ece7b9f78c0a57865122b74250a3b48f6627f3c2116f040"
+      }
+    ],
+    "historical_case": "P100-028",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/18938314",
+    "version": "1.0"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "ea1573cb55118887035ea672ab5e12eaf0958828f3c17854766b776c611f6260",
+        "groups": 5,
+        "rows": 780,
+        "sample_ids_sha256": "e97296b86cc4cd087608b551279cb18291c08d57772b5d760fa6e100df5e2dc3"
+      },
+      "test": {
+        "group_ids_sha256": "8c964af067f0efabd7953f08a4269982290b5982a26fec0f382f7e3f7b1035a9",
+        "groups": 10,
+        "rows": 1560,
+        "sample_ids_sha256": "70665a40ca92066f8772635a75339577e26ce059345ca3a05fba0ebc94d0f750"
+      },
+      "train": {
+        "group_ids_sha256": "4fa45d5537b8b826b6725fefa8edca1752469a8c27d6d00d6f5a19c36d96321e",
+        "groups": 24,
+        "rows": 3744,
+        "sample_ids_sha256": "b72ceb09c1e9e3cb838bcc4704982757ace994eed7294e17381e8a508b139422"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Inverse parametric microwave scattering",
+  "version": "1.0.0rc2"
+}

@@ -1,0 +1,127 @@
+{
+  "assets": [
+    {
+      "bytes": 90951417,
+      "path": "scenarios/33_biomedical_but_smartphone_ppg/raw/brno-university-of-technology-smartphone-ppg-database-but-ppg-2.0.0.zip",
+      "role": "ppg_archive",
+      "sha256": "9b910fc884f63eca1c5d3a00c5710f838e0053dce94f8a02196bd0adc2ffa33c"
+    },
+    {
+      "bytes": 1656,
+      "path": "scenarios/33_biomedical_but_smartphone_ppg/context/SOURCE_FACTS.json",
+      "role": "source_metadata",
+      "sha256": "32979b6912b38571023a8be622bc886828915dbc623a6f15f91a8e1b460e7da2"
+    },
+    {
+      "bytes": 7643,
+      "path": "scenarios/33_biomedical_but_smartphone_ppg/PROVENANCE.json",
+      "role": "acquisition_provenance",
+      "sha256": "ad8034d6c85580051a70cb598e523971c2623793c7adba73e4eb97fa5039c69c"
+    },
+    {
+      "bytes": 14842,
+      "path": "scenarios/33_biomedical_but_smartphone_ppg/context/LICENSE.txt",
+      "role": "source_license",
+      "sha256": "9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2"
+    },
+    {
+      "bytes": 2344284,
+      "path": "scenarios/33_biomedical_but_smartphone_ppg/context/SHA256SUMS.txt",
+      "role": "publisher_checksums",
+      "sha256": "3536e14265e271d4e4bf8494e714547ac7ed691f37f5ea28ed8f62e3dcc8a0db"
+    }
+  ],
+  "group_assignments": {
+    "100": "train",
+    "101": "train",
+    "102": "test",
+    "103": "test",
+    "104": "train",
+    "105": "train",
+    "106": "test",
+    "107": "train",
+    "108": "train",
+    "109": "train",
+    "110": "train",
+    "111": "train",
+    "112": "dev",
+    "113": "train",
+    "114": "test",
+    "115": "dev",
+    "116": "train",
+    "117": "test",
+    "118": "train",
+    "119": "test",
+    "120": "dev",
+    "121": "train",
+    "122": "dev",
+    "123": "train",
+    "124": "test",
+    "125": "train",
+    "126": "train",
+    "127": "train",
+    "128": "test",
+    "129": "dev",
+    "130": "train",
+    "131": "train",
+    "132": "train",
+    "133": "train",
+    "134": "train",
+    "135": "train",
+    "136": "dev",
+    "137": "test",
+    "138": "train",
+    "139": "train",
+    "140": "train",
+    "141": "dev",
+    "142": "train",
+    "143": "train",
+    "144": "test",
+    "145": "dev",
+    "146": "train",
+    "147": "train",
+    "148": "train",
+    "149": "train"
+  },
+  "historical_contract_sha256": "8ca505f3ec363b7b0f78acb00551d8e5d82a56c2461920af6a872e370b546221",
+  "input_units": {
+    "acf_bpm": "bpm",
+    "agreement": "bpm",
+    "ear": "dimensionless",
+    "fft_bpm": "bpm",
+    "half_bpm": "bpm",
+    "half_strength": "dimensionless",
+    "motion": "dimensionless",
+    "spectral_quality": "dimensionless"
+  },
+  "limitations": [
+    "Retrospective task; not independent confirmation or clinical performance",
+    "48 single-frame source headers require temporal-orientation review",
+    "Author video extraction and synchronization are not independently reconstructed",
+    "Acquisition condition metadata is assumed available at prediction",
+    "Full signal-processing complexity and measurement uncertainty are not in the frozen rule metrics"
+  ],
+  "numerical_policy": {
+    "exclusions": "none; all quality flags preserved outside predictors",
+    "linear_detrend_parameters_per_segment": 2,
+    "rule_fits": 0,
+    "signal_scale_estimates_per_segment": 1,
+    "signal_window": "complete 300-point signal interpreted at 30Hz; flat single-frame layout explicitly flagged",
+    "targets": "source ECG-reference annotation only; no ECG waveform enters features"
+  },
+  "output_units": "bpm",
+  "parser": "ppg-native-waveform-features-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-033/native.py",
+    "reuse": "Independently implemented source indexing, signal feature and sample identity specification; no old runtime, fitted model or evaluator outputs",
+    "sha256": "1fe3cd1cae834c72406cb232910ea39965b4cd49b55204afd93ec8524f5d3d99"
+  },
+  "rights_status": "source_cc_by_4.0_notice_packaging_pending",
+  "scenario_id": "P100-033",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "url": "https://www.physionet.org/content/butppg/2.0.0/",
+    "version": "2.0.0; 2024-08-23"
+  },
+  "source_scenario_descriptor_sha256": "082439d2acd21a33a8bc672f89de5ecbf6cd14a3c173775a10d00a14be33e8ab"
+}

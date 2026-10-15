@@ -1,0 +1,66 @@
+{
+  "dev_error": 9131.869308413061,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((q-0.22062855995994404)/0.0706543746807153))+p2*(q*I0)+p3*(q)+p4*(q*q0)+p5*((q)**2)",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 391422.87027586554,
+    "p1": 72756.61439034755,
+    "p2": -0.004293279055059634,
+    "p3": -1275745.9844601732,
+    "p4": -17922575.026204363,
+    "p5": 3543162.3669660133
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": -0.0029599627820980556,
+      "outer": 0.02502143769155602,
+      "q": -0.14093569580889906,
+      "q0": -1.0670466875336024e-17
+    },
+    "mean": 1080.1533805403571,
+    "p90_abs": 24491.177920590035,
+    "std": 17299.232826705924
+  },
+  "rule_id": "full-comparison-v5--P100-012--symbolic_control-rule-3",
+  "rule_sha256": "f5f6e4683d41de2fadcc7bb6634196d99d4aa0f81e7de9aa13d411306d697052",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "391422.87027586554 + 72756.61439034755 * tanh((q - 0.22062855995994404) / 0.0706543746807153) + -0.004293279055059634 * (q * I0) + -1275745.9844601732 * q + -17922575.026204363 * (q * q0) + 3543162.3669660133 * q ** 2",
+    "expression_bytes": 95,
+    "free_parameters": 6,
+    "learned_state_bytes": 160,
+    "literal_state_bytes": 38,
+    "nodes": 63,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 9586.92643204911,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

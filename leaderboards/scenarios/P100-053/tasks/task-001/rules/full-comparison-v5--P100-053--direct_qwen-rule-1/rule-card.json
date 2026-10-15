@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.04197468257043243,
+  "execution_status": "complete",
+  "expression": "where(has_history > 0.5, p0 * mean_past_y + p1 * early + p2 * finding + p3 * roughness + p4 * gradient_proxy + p5 * (usage / 25.0) + p6 * (history_gap / 5.0) + p7, p0 * early + p1 * finding + p2 * roughness + p3 * gradient_proxy + p4 * (usage / 25.0) + p5 * (history_gap / 5.0) + p6 * left + p7)",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.11713891625199462,
+    "p1": 1.8391740925784628,
+    "p2": -0.924515516265548,
+    "p3": -0.9026006415530561,
+    "p4": 0.014388225725578163,
+    "p5": -0.11136557884440328,
+    "p6": 0.18402653220823834,
+    "p7": 0.02617869377246859
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.368449085953876,
+      "finding": -0.3966208118118876,
+      "first_y": 0.33430633491573447,
+      "gradient_proxy": -0.17904520872737856,
+      "has_history": 0.5827164680953633,
+      "history_gap": 0.500187739166012,
+      "left": 0.19932115380276072,
+      "mean_past_y": -0.01952208907356724,
+      "prev_early": -0.4080584531609921,
+      "prev_gradient": -0.26795034363541437,
+      "prev_y": -0.20830030855606377,
+      "roughness": -0.35795761590059144,
+      "usage": 0.028353211298933187
+    },
+    "mean": -0.0008818895332121102,
+    "p90_abs": 0.08401262079750652,
+    "std": 0.06454448524245796
+  },
+  "rule_id": "full-comparison-v5--P100-053--direct_qwen-rule-1",
+  "rule_sha256": "b68a1fd46c0f292d3e48c743dbf34f4fff66c2fb4d2c57069f82541bbf98f812",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "where(has_history > 0.5, 0.11713891625199462 * mean_past_y + 1.8391740925784628 * early + -0.924515516265548 * finding + -0.9026006415530561 * roughness + 0.014388225725578163 * gradient_proxy + -0.11136557884440328 * (usage / 25.0) + 0.18402653220823834 * (history_gap / 5.0) + 0.02617869377246859, 0.11713891625199462 * early + 1.8391740925784628 * finding + -0.924515516265548 * roughness + -0.9026006415530561 * gradient_proxy + 0.014388225725578163 * (usage / 25.0) + -0.11136557884440328 * (history_gap / 5.0) + 0.18402653220823834 * left + 0.02617869377246859)",
+    "expression_bytes": 295,
+    "free_parameters": 8,
+    "learned_state_bytes": 216,
+    "literal_state_bytes": 17,
+    "nodes": 137,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 34
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.04024875959893459,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

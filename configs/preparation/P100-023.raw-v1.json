@@ -1,0 +1,140 @@
+{
+  "assets": [
+    {
+      "bytes": 8703,
+      "path": "scenarios/23_tribology_inm_finger_liquid/context/zenodo_record.json",
+      "role": "zenodo_record",
+      "sha256": "4092644f40e0177d0f205db51f317c264ef32e3dee4945d0c8a8a05ca488c5b3"
+    },
+    {
+      "bytes": 66595,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID04sample01.dat",
+      "role": "height_hersey",
+      "sha256": "7c2cdb60402f05653ca9d7c4b0d059761ebcd516cea6986dac298a1e7fac1bcb"
+    },
+    {
+      "bytes": 55773,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID04sample12.dat",
+      "role": "height_hersey",
+      "sha256": "35a2be20b59d092a74f024300d3360837cc31867a74e714218c70a0be8f412bd"
+    },
+    {
+      "bytes": 30817,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID08sample02.dat",
+      "role": "height_hersey",
+      "sha256": "6faa69c437c70bcda0045de93f879656659d59fe3edad45be693b024da430893"
+    },
+    {
+      "bytes": 51243,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID10sample11.dat",
+      "role": "height_hersey",
+      "sha256": "4609ab679f09245bdfcebf58f9d65ea7849db4a4a4d9829c0c85ddc43f0e882d"
+    },
+    {
+      "bytes": 24252,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/friction data.dat",
+      "role": "friction_summary",
+      "sha256": "2ef9eee3e0f3c3ac04dcd7c550ded2e12f3584288e6a31f9bd6388932b173b06"
+    },
+    {
+      "bytes": 269,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/participant_hydration_size.dat",
+      "role": "participants",
+      "sha256": "993754af15b720cb991ece2dc499fdc00c688034bf0cb59be655c0520c8a7eb6"
+    },
+    {
+      "bytes": 730,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/power law fit parameter.dat",
+      "role": "rheology_fit",
+      "sha256": "f8299edd76a5f2c0ff95959cdbf4629971e759108943117f92ab4c173dc29aaf"
+    },
+    {
+      "bytes": 12439336,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/raw_data_position_force.dat",
+      "role": "raw_trials",
+      "sha256": "a8bc041b1d684652f08ce65f2c7213b000fa98970ff2eebcdb1b3236c0547d28"
+    },
+    {
+      "bytes": 1241,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/readme.txt",
+      "role": "source_readme",
+      "sha256": "9c2186fb1902962ea7342943e7a5992c72d6f25b705b8314723689e404b5ec85"
+    },
+    {
+      "bytes": 2767,
+      "path": "scenarios/23_tribology_inm_finger_liquid/raw/viscosity vs shear rate.dat",
+      "role": "rheology",
+      "sha256": "ed3f2e9c6800b7c620b1cd707f04ae46f6ef27ff4a42086a32ec0dab833b9abb"
+    }
+  ],
+  "group_assignments": {
+    "ID01": "train",
+    "ID02": "dev",
+    "ID03": "test",
+    "ID04": "train",
+    "ID05": "train",
+    "ID06": "test",
+    "ID07": "train",
+    "ID08": "train",
+    "ID09": "train",
+    "ID10": "train",
+    "ID11": "dev"
+  },
+  "historical_contract_sha256": "40410be836ff382c86326db6cf71351111b857518cdba9db66596c6ef2422f2a",
+  "input_units": {
+    "H": "dimensionless; author Hersey calibration",
+    "area": "cm^2",
+    "hydration": "corneometer instrument units",
+    "load": "N",
+    "speed": "m/s",
+    "viscosity": "Pa s at 500 s^-1; author rheology fit"
+  },
+  "limitations": [
+    "Conditional participant transfer within one shared fluid panel and substrate, not prospective control or a new physical law",
+    "Author Hersey calibration and preprocessing require review; fitted rheology cannot independently confirm itself",
+    "Curator-only original source contains historically exposed responses; no evaluator vault access or test-target export"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "1",
+  "parser": "finger-friction-participant-summary-v1",
+  "partition_provenance": {
+    "allocation": "Original SHA256(P100-ASD-B4-20261001:participant) lowest two whole participants are test; compact-v2 opaque-group hash selects two dev participants from remaining nine",
+    "dev_participants": [
+      "ID02",
+      "ID11"
+    ],
+    "test_participants": [
+      "ID03",
+      "ID06"
+    ]
+  },
+  "policy": {
+    "auxiliary": "Four height/Hersey traces and rheology table checked and inventoried, excluded from predictors",
+    "derived_inputs": "Hersey calibration and viscosity at 500 per second are author-derived; viscosity expansion K * 500 ** (n-1) checked without fitting",
+    "measurements": "Published median speed/load/CoF; area from source photography and hydration from corneometer; all 165 participant-fluid rows retained",
+    "native_audit": "All position/force rows decoded, trial identities joined and normal-force medians verified; missing clocks/positions and repeated clocks preserved; CoF and speed not recomputed",
+    "units": "Conflicting mPa s^n versus Pa s^n prefactor headers retained for review; no silently corrected values"
+  },
+  "reference_parser_provenance": {
+    "identity_shim_path": "evaluation/preparation/__init__.py",
+    "identity_shim_sha256": "423d7e078e6102fd8be382f581eca9299084a1f09838b00338a7600de8ab1030",
+    "path": "evaluation/preparation/ports/batch4.py:case23",
+    "reuse": "Independent measurement/identity reconstruction, no old fitting code, evaluator or runtime",
+    "sha256": "d4caae6dabf7c75f13c0220c33a2b1574b5c92da7178048c983e964ffb5b2fe4"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-023",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.15365365",
+    "url": "https://zenodo.org/records/15365365",
+    "version": "15365365 (record identity; no declared semantic version)"
+  },
+  "source_scenario_descriptor_sha256": "a4f4e352a9bae1fbf2ca14ca61bb921ef7cefae98a9870095590d04eddefbb3d",
+  "source_task": "P100-023.continuation.v1",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test"
+}

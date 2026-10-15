@@ -1,0 +1,3813 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0036904639564454556
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0059477550676092505
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.011734529049135745
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.6588486699620262
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 91,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 91,
+        "wall_seconds": 0.45824334397912025
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-036--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 20,
+        "structures": 1,
+        "wall_seconds": 4.17283362604212
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 18,
+        "structures": 1,
+        "wall_seconds": 10.713653507991694
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 16,
+        "structures": 1,
+        "wall_seconds": 10.355535520007834
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 14.077499601989985
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-036--direct_kimi",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 68,
+        "structures": 3,
+        "wall_seconds": 12.664131753961556
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 31,
+        "structures": 2,
+        "wall_seconds": 12.842356420936994
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 3,
+        "optimizer_evaluations": 28,
+        "structures": 1,
+        "wall_seconds": 11.079957682057284
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-036--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 228,
+        "model_calls": 4,
+        "optimizer_evaluations": 81,
+        "structures": 102,
+        "wall_seconds": 82.8806209290633
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-036--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-036--tree_control-rule-1",
+    "full-comparison-v5--P100-036--principia_engine-rule-1",
+    "full-comparison-v5--P100-036--principia_engine-rule-3",
+    "full-comparison-v5--P100-036--symbolic_control-rule-2",
+    "full-comparison-v5--P100-036--principia_engine-rule-2",
+    "full-comparison-v5--P100-036--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.004712063431398462,
+        "primary": "mae",
+        "primary_error": 0.004712063431398462,
+        "rmse": 0.008266130705939958
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.007121651863407519,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.004747793366552644,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0017038739847601958,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0018950630577146076,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.012968832333742797,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.0007102427158034441,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.0010949416472522343,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.00514351101790409,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.0022784064563911464,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.0018900323887753423,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.015447135669793907,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0010557789710368582,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.003958693803319961,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.005119171736889583,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.006087072152446749,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.004170813736584307,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0029844921264652415,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-036--tree_control-rule-1",
+        "rule_sha256": "213d8ad8180ba33df83e4f81d9a9e5109e207ccebbc2ad7e687c57d2bb97a903",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 31,
+          "weighted_operator_count": 31
+        },
+        "task_id": "P100-036.compact.v2",
+        "tree": {
+          "feature": [
+            4,
+            2,
+            1,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            5,
+            -2,
+            -2,
+            7,
+            -2,
+            -2,
+            1,
+            3,
+            2,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            1,
+            -2,
+            -2,
+            3,
+            -2,
+            -2
+          ],
+          "features": [
+            "npq",
+            "rfd",
+            "ngrdi",
+            "area",
+            "tiny",
+            "salt",
+            "drought",
+            "high_stress"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            -1,
+            -1,
+            7,
+            -1,
+            -1,
+            10,
+            11,
+            -1,
+            -1,
+            14,
+            -1,
+            -1,
+            17,
+            18,
+            19,
+            -1,
+            -1,
+            22,
+            -1,
+            -1,
+            25,
+            26,
+            -1,
+            -1,
+            29,
+            -1,
+            -1
+          ],
+          "right": [
+            16,
+            9,
+            6,
+            5,
+            -1,
+            -1,
+            8,
+            -1,
+            -1,
+            13,
+            12,
+            -1,
+            -1,
+            15,
+            -1,
+            -1,
+            24,
+            21,
+            20,
+            -1,
+            -1,
+            23,
+            -1,
+            -1,
+            28,
+            27,
+            -1,
+            -1,
+            30,
+            -1,
+            -1
+          ],
+          "threshold": [
+            0.5,
+            0.1387942135334015,
+            2.878832221031189,
+            0.9975524842739105,
+            -2.0,
+            -2.0,
+            1.0253769755363464,
+            -2.0,
+            -2.0,
+            1.202317237854004,
+            0.5,
+            -2.0,
+            -2.0,
+            0.5,
+            -2.0,
+            -2.0,
+            1.8653045892715454,
+            18618.78125,
+            0.1503528654575348,
+            -2.0,
+            -2.0,
+            1.3748844861984253,
+            -2.0,
+            -2.0,
+            1.1569203734397888,
+            1.9817979335784912,
+            -2.0,
+            -2.0,
+            39662.8642578125,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            0.841076350919275,
+            0.8326101589809531,
+            0.8358377914800335,
+            0.8376451758700335,
+            0.8343698548817613,
+            0.8387545587854164,
+            0.8279423754605574,
+            0.8152112791149035,
+            0.8313373344860653,
+            0.8208523548771617,
+            0.8187087769485556,
+            0.8235366151916171,
+            0.8069840269296912,
+            0.833713822448799,
+            0.830588250186961,
+            0.836839394710637,
+            0.8533052948301835,
+            0.8544044872423315,
+            0.8507684848615455,
+            0.847516316552519,
+            0.8522467431838304,
+            0.8553740878772077,
+            0.8561853710902201,
+            0.8541571630576897,
+            0.8473382503070955,
+            0.8436079509455974,
+            0.8420688444814818,
+            0.8447622807936842,
+            0.8510685496685932,
+            0.8538621474113895,
+            0.8473437526781987
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--tree_control-rule-1",
+      "rule_sha256": "213d8ad8180ba33df83e4f81d9a9e5109e207ccebbc2ad7e687c57d2bb97a903",
+      "run_id": "full-comparison-v5--P100-036--tree_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 46,
+        "learned_state_bytes": 1450,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 31
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.045895487488829045,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.004803026205926347,
+        "primary": "mae",
+        "primary_error": 0.004803026205926347,
+        "rmse": 0.008422612630598248
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.004378682184135767,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.001862130908801718,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.002190267186613304,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.001423855785508965,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.010984630694494957,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.0018278102643704663,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.008255116626640913,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.003342342326984138,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.001851764943973566,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.0024871460839945626,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.017166347479724342,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0026645700445699916,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.003870013691620137,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0023435250254018416,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.00879564478905015,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.003404571258936747,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.002750302312560642,
+        "execution_status": "complete",
+        "expression": "p0+p1*(rfd/npq)+p2*(tanh((rfd-2.2161338628189617)/0.7298525550595808))",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8749448008483439,
+          "p1": -0.015726779386907547,
+          "p2": -0.0045014347937925156
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.07614598418783272,
+            "drought": 0.11189438751741941,
+            "high_stress": -0.025893863645767515,
+            "ngrdi": 0.04748044725571298,
+            "npq": -0.0924661589460918,
+            "rfd": -0.08985674372745647,
+            "salt": -0.0318944098705844,
+            "tiny": 0.024219823325342928
+          },
+          "mean": -2.2784742197991326e-05,
+          "p90_abs": 0.006704674817954781,
+          "std": 0.004284081427802444
+        },
+        "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-1",
+        "rule_sha256": "0727c8ce59894c9d87f5a7dc0e19c822dd32c0d2f0889d2363882068ebe1db76",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8749448008483439 + -0.015726779386907547 * (rfd / npq) + -0.0045014347937925156 * tanh((rfd - 2.2161338628189617) / 0.7298525550595808)",
+          "expression_bytes": 70,
+          "free_parameters": 3,
+          "learned_state_bytes": 85,
+          "literal_state_bytes": 36,
+          "nodes": 32,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.0053188909818704866,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(rfd/npq)+p2*(tanh((rfd-2.2161338628189617)/0.7298525550595808))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-1",
+      "rule_sha256": "0727c8ce59894c9d87f5a7dc0e19c822dd32c0d2f0889d2363882068ebe1db76",
+      "run_id": "full-comparison-v5--P100-036--principia_engine",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8749448008483439 + -0.015726779386907547 * (rfd / npq) + -0.0045014347937925156 * tanh((rfd - 2.2161338628189617) / 0.7298525550595808)",
+        "expression_bytes": 70,
+        "free_parameters": 3,
+        "learned_state_bytes": 85,
+        "literal_state_bytes": 36,
+        "nodes": 32,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.04602021797838995,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.004871274229801243,
+        "primary": "mae",
+        "primary_error": 0.004871274229801243,
+        "rmse": 0.0085635752174978
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.004956952590220924,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.0017267732277296722,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0018518263666272184,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0012487682699445113,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.010888184550266878,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.00174566063217918,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.00822718073624069,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.004415179239763911,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.0016291001906654002,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.002700323710695729,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.01800452659334506,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0026514717814659196,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.003618773719984462,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.002335788031200344,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.008485122957675117,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.003454755078814875,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.002785489566970529,
+        "execution_status": "complete",
+        "expression": "p0+p1*(rfd/npq)+p2*(ngrdi*tiny)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8842018660139946,
+          "p1": -0.020282472094218372,
+          "p2": 0.005269656279386167
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.06438238724229883,
+            "drought": 0.14962770548082127,
+            "high_stress": -0.0392195954154431,
+            "ngrdi": 0.1059575218580704,
+            "npq": 0.032728668937324054,
+            "rfd": -0.02544238332077994,
+            "salt": -0.08508625428562315,
+            "tiny": 0.01149710694739725
+          },
+          "mean": -0.0004149860012631614,
+          "p90_abs": 0.006159750840706746,
+          "std": 0.004402220603090166
+        },
+        "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-3",
+        "rule_sha256": "7aaaf9ab6b9793c3a6ecd397ec1be8cf2b90a7372d5802cf55384fd0a87ac5a3",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8842018660139946 + -0.020282472094218372 * (rfd / npq) + 0.005269656279386167 * (ngrdi * tiny)",
+          "expression_bytes": 31,
+          "free_parameters": 3,
+          "learned_state_bytes": 83,
+          "literal_state_bytes": 0,
+          "nodes": 27,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.00524550831684531,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(rfd/npq)+p2*(ngrdi*tiny)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-3",
+      "rule_sha256": "7aaaf9ab6b9793c3a6ecd397ec1be8cf2b90a7372d5802cf55384fd0a87ac5a3",
+      "run_id": "full-comparison-v5--P100-036--principia_engine",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8842018660139946 + -0.020282472094218372 * (rfd / npq) + 0.005269656279386167 * (ngrdi * tiny)",
+        "expression_bytes": 31,
+        "free_parameters": 3,
+        "learned_state_bytes": 83,
+        "literal_state_bytes": 0,
+        "nodes": 27,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.051396261775854594,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005189997274348689,
+        "primary": "mae",
+        "primary_error": 0.005189997274348689,
+        "rmse": 0.008116537677862013
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.005516658689988445,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.003096085748092459,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0020843320948505497,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0035577838606592584,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011771971729369746,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.004184487753042143,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.009911078244968197,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.004412817619477804,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.003738972029725862,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.003594520513062638,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.012024838731483004,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0032250465912588623,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.0047220337172537334,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0024307591903888945,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.004814247657558335,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.003954322218399087,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0034545016945723666,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tiny)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8326101589809537,
+          "p1": 0.020695135849230575
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.16747927058148038,
+            "drought": 0.10867788692012188,
+            "high_stress": 0.20788954453425498,
+            "ngrdi": 0.252387911894077,
+            "npq": 0.1251490374161854,
+            "rfd": 0.1959029421064661,
+            "salt": -0.07327440144677244,
+            "tiny": -0.026484019361768477
+          },
+          "mean": -0.0011295551055752013,
+          "p90_abs": 0.006193631568092273,
+          "std": 0.004831374995872076
+        },
+        "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-2",
+        "rule_sha256": "33afb2c798dc6f4540d261cace06711be6d0264c213529a64be62cb4e80e9f6b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8326101589809537 + 0.020695135849230575 * tiny",
+          "expression_bytes": 12,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.006534431999766055,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tiny)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-2",
+      "rule_sha256": "33afb2c798dc6f4540d261cace06711be6d0264c213529a64be62cb4e80e9f6b",
+      "run_id": "full-comparison-v5--P100-036--symbolic_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8326101589809537 + 0.020695135849230575 * tiny",
+        "expression_bytes": 12,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.006736026634602424,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005189997274348689,
+        "primary": "mae",
+        "primary_error": 0.005189997274348689,
+        "rmse": 0.008116537677862013
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.005516658689988445,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.003096085748092459,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0020843320948505497,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0035577838606592584,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011771971729369746,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.004184487753042143,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.009911078244968197,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.004412817619477804,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.003738972029725862,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.003594520513062638,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.012024838731483004,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0032250465912588623,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.0047220337172537334,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0024307591903888945,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.004814247657558335,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.003954322218399087,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0034545016945723666,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tiny)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8326101589809537,
+          "p1": 0.020695135849230575
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.16747927058148038,
+            "drought": 0.10867788692012188,
+            "high_stress": 0.20788954453425498,
+            "ngrdi": 0.252387911894077,
+            "npq": 0.1251490374161854,
+            "rfd": 0.1959029421064661,
+            "salt": -0.07327440144677244,
+            "tiny": -0.026484019361768477
+          },
+          "mean": -0.0011295551055752013,
+          "p90_abs": 0.006193631568092273,
+          "std": 0.004831374995872076
+        },
+        "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-2",
+        "rule_sha256": "4b95698838cdc1f87870953962fe8f062c73460f86aa134a0e7eb1164002f47e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8326101589809537 + 0.020695135849230575 * tiny",
+          "expression_bytes": 12,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.006534431999766055,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tiny)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-2",
+      "rule_sha256": "4b95698838cdc1f87870953962fe8f062c73460f86aa134a0e7eb1164002f47e",
+      "run_id": "full-comparison-v5--P100-036--principia_engine",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8326101589809537 + 0.020695135849230575 * tiny",
+        "expression_bytes": 12,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.006736026634602424,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005265054678891226,
+        "primary": "mae",
+        "primary_error": 0.005265054678891226,
+        "rmse": 0.008589479566115592
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.0041637723739076,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.003992992464174861,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0025422533145014635,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.003131589581254057,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.01107541535779053,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.002981313742989311,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.008119664307157114,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.006405909883959548,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.002836357848197646,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.003010817941640065,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.013818691639626271,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.002741655849328417,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.004548679995947806,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0020454999269835517,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.00757453639979444,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005251724235006934,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0029374184960581206,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tiny)+p2*((rfd)**2)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8519264263804567,
+          "p1": 0.006989463594331981,
+          "p2": -0.0025182894118444613
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.2547679971933327,
+            "drought": 0.001900261126637868,
+            "high_stress": 0.0892246545751611,
+            "ngrdi": -0.16373599444636378,
+            "npq": -0.21065740378899311,
+            "rfd": 0.047485715591685684,
+            "salt": 0.03903173782463264,
+            "tiny": -0.16795195347037883
+          },
+          "mean": 0.0003754556729996878,
+          "p90_abs": 0.006040429203731601,
+          "std": 0.004511092292123425
+        },
+        "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-3",
+        "rule_sha256": "3fcc56a7bd779b43b56869e5a22115d5f7f9efcb97868da34951eaa060cd72d9",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8519264263804567 + 0.006989463594331981 * tiny + -0.0025182894118444613 * rfd ** 2",
+          "expression_bytes": 26,
+          "free_parameters": 3,
+          "learned_state_bytes": 84,
+          "literal_state_bytes": 1,
+          "nodes": 22,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 5
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.006013000195889988,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tiny)+p2*((rfd)**2)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-3",
+      "rule_sha256": "3fcc56a7bd779b43b56869e5a22115d5f7f9efcb97868da34951eaa060cd72d9",
+      "run_id": "full-comparison-v5--P100-036--symbolic_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8519264263804567 + 0.006989463594331981 * tiny + -0.0025182894118444613 * rfd ** 2",
+        "expression_bytes": 26,
+        "free_parameters": 3,
+        "learned_state_bytes": 84,
+        "literal_state_bytes": 1,
+        "nodes": 22,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 5
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022881874132448066,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005269365296214478,
+        "primary": "mae",
+        "primary_error": 0.005269365296214478,
+        "rmse": 0.008585521957464164
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.004161952808754421,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.003982045027350889,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.002658231945484313,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0029646991639461495,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011072613103561469,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.0030352234370127464,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.00812610663006117,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.006396140772535297,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.002723477324552559,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.00321799394389759,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.01380997830979532,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0027407439873319726,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.004552305480514589,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0020397877833555253,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.007575516278184313,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005253028743093339,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.002903130382532294,
+        "execution_status": "complete",
+        "expression": "p0+p1*(ngrdi*tiny)+p2*((rfd)**2)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.851887957994239,
+          "p1": 0.04687578653501292,
+          "p2": -0.0025140130694782624
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.2625195973817573,
+            "drought": 0.019028858551530112,
+            "high_stress": 0.07909626502917781,
+            "ngrdi": -0.1521663103647718,
+            "npq": -0.20100671215234092,
+            "rfd": 0.05515132564600244,
+            "salt": 0.021040633655313775,
+            "tiny": -0.17281016567802845
+          },
+          "mean": 0.00034091123031744383,
+          "p90_abs": 0.0060098432508695065,
+          "std": 0.004509363415577101
+        },
+        "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-1",
+        "rule_sha256": "014dc709b2c19903bba0d1ab44e6c4a7754389ad1c58d0b269d49928a229d8f2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.851887957994239 + 0.04687578653501292 * (ngrdi * tiny) + -0.0025140130694782624 * rfd ** 2",
+          "expression_bytes": 32,
+          "free_parameters": 3,
+          "learned_state_bytes": 82,
+          "literal_state_bytes": 1,
+          "nodes": 26,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.006001710982298691,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(ngrdi*tiny)+p2*((rfd)**2)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-1",
+      "rule_sha256": "014dc709b2c19903bba0d1ab44e6c4a7754389ad1c58d0b269d49928a229d8f2",
+      "run_id": "full-comparison-v5--P100-036--symbolic_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.851887957994239 + 0.04687578653501292 * (ngrdi * tiny) + -0.0025140130694782624 * rfd ** 2",
+        "expression_bytes": 32,
+        "free_parameters": 3,
+        "learned_state_bytes": 82,
+        "literal_state_bytes": 1,
+        "nodes": 26,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022754097422520738,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005449641267670282,
+        "primary": "mae",
+        "primary_error": 0.005449641267670282,
+        "rmse": 0.009183638715030815
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.004487684875272735,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.00343128394962966,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0014123454984047434,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0021502569351816493,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.010530990651063665,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.002877665313180122,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.007037416723817991,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.0028882215678436964,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.0022508285937544283,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.002539699399562578,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.017639251707980936,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0017752205883667439,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.010977590494643419,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0035412503306510392,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.008265795786431274,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.0053887578669398195,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.002929786222402426,
+        "execution_status": "complete",
+        "expression": "p0 - p1*npq - p2*rfd + p3*ngrdi + p4*log1p(area) + p5*tiny + p6*(salt + drought + high_stress)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8776593093874041,
+          "p1": -0.03185426699334756,
+          "p2": 0.018066294102330904,
+          "p3": -0.22260216622397394,
+          "p4": 0.00011277218754110821,
+          "p5": 0.005430012469978431,
+          "p6": -0.0007288233086591893
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": 0.013624352401832926,
+            "drought": 0.11860803290087484,
+            "high_stress": -0.03411931454489158,
+            "ngrdi": -0.550827637388593,
+            "npq": -0.024909566146297777,
+            "rfd": -0.06493179547843057,
+            "salt": -0.10640895417524555,
+            "tiny": -0.048879132058448085
+          },
+          "mean": -0.0006393729006781409,
+          "p90_abs": 0.006033427059336738,
+          "std": 0.00504172561915677
+        },
+        "rule_id": "full-comparison-v5--P100-036--direct_glm-rule-1",
+        "rule_sha256": "fb2880f70d7144a91c38e0663e320e7e4daab88e97128dfbb36a18e3b9f5583d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8776593093874041 - -0.03185426699334756 * npq - 0.018066294102330904 * rfd + -0.22260216622397394 * ngrdi + 0.00011277218754110821 * log1p(area) + 0.005430012469978431 * tiny + -0.0007288233086591893 * (salt + drought + high_stress)",
+          "expression_bytes": 94,
+          "free_parameters": 7,
+          "learned_state_bytes": 198,
+          "literal_state_bytes": 0,
+          "nodes": 62,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.005343435197585864,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 - p1*npq - p2*rfd + p3*ngrdi + p4*log1p(area) + p5*tiny + p6*(salt + drought + high_stress)",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--direct_glm-rule-1",
+      "rule_sha256": "fb2880f70d7144a91c38e0663e320e7e4daab88e97128dfbb36a18e3b9f5583d",
+      "run_id": "full-comparison-v5--P100-036--direct_glm",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8776593093874041 - -0.03185426699334756 * npq - 0.018066294102330904 * rfd + -0.22260216622397394 * ngrdi + 0.00011277218754110821 * log1p(area) + 0.005430012469978431 * tiny + -0.0007288233086591893 * (salt + drought + high_stress)",
+        "expression_bytes": 94,
+        "free_parameters": 7,
+        "learned_state_bytes": 198,
+        "literal_state_bytes": 0,
+        "nodes": 62,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.05921424821595984,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005451165988696391,
+        "primary": "mae",
+        "primary_error": 0.005451165988696391,
+        "rmse": 0.009199284649747987
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.004536597297106611,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.0033918168473304087,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.001406456422535962,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.002190039454730175,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.010529275946497352,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.0028732167191541703,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.0070430888031179474,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.002863406774577548,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.0022969646953872715,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.0025481767357790953,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.017702255824597907,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0017643387139082867,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.010954780813955919,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0035264524228047303,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.00819181123500945,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005399977112649427,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0029340377231032552,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * npq + p2 * rfd + p3 * ngrdi + p4 * (salt + drought + high_stress) + p5 * tiny",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8790922071587508,
+          "p1": 0.03206109451311975,
+          "p2": -0.01819191478125812,
+          "p3": -0.22462789566722643,
+          "p4": -0.0007475840973574883,
+          "p5": 0.005486177943001411
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": 0.009770651437192199,
+            "drought": 0.11776219726447272,
+            "high_stress": -0.03482095956551154,
+            "ngrdi": -0.5502856377851036,
+            "npq": -0.02731374586513757,
+            "rfd": -0.06708624785990928,
+            "salt": -0.10607972106433003,
+            "tiny": -0.04722610689574127
+          },
+          "mean": -0.0006399909266971854,
+          "p90_abs": 0.006036964282198687,
+          "std": 0.005059487840839036
+        },
+        "rule_id": "full-comparison-v5--P100-036--direct_qwen-rule-1",
+        "rule_sha256": "95783dd37ef82b35f52972338da65886e87c0a9485054a877ecdae9ff0cf8ef9",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8790922071587508 + 0.03206109451311975 * npq + -0.01819191478125812 * rfd + -0.22462789566722643 * ngrdi + -0.0007475840973574883 * (salt + drought + high_stress) + 0.005486177943001411 * tiny",
+          "expression_bytes": 87,
+          "free_parameters": 6,
+          "learned_state_bytes": 167,
+          "literal_state_bytes": 0,
+          "nodes": 51,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 12
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.005339536446760744,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * npq + p2 * rfd + p3 * ngrdi + p4 * (salt + drought + high_stress) + p5 * tiny",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--direct_qwen-rule-1",
+      "rule_sha256": "95783dd37ef82b35f52972338da65886e87c0a9485054a877ecdae9ff0cf8ef9",
+      "run_id": "full-comparison-v5--P100-036--direct_qwen",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8790922071587508 + 0.03206109451311975 * npq + -0.01819191478125812 * rfd + -0.22462789566722643 * ngrdi + -0.0007475840973574883 * (salt + drought + high_stress) + 0.005486177943001411 * tiny",
+        "expression_bytes": 87,
+        "free_parameters": 6,
+        "learned_state_bytes": 167,
+        "literal_state_bytes": 0,
+        "nodes": 51,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 12
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.05955654336160929,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005513076737884844,
+        "primary": "mae",
+        "primary_error": 0.005513076737884844,
+        "rmse": 0.009199426361245629
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.0026956258635147945,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.005263694105435768,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0013540422035517087,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.003929689577240203,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.012532075557533861,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.004060760004698483,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.007083747792018302,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.0021555705366910647,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.002847352088067834,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.0024663527845256274,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.016709818999779563,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.001597559668443349,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.011127891675261329,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0031183295388640766,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.0061520129943289925,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005114704416202542,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0034561026485497182,
+        "execution_status": "complete",
+        "expression": "p0+p1*(npq)+p2*(rfd)+p3*(ngrdi)+p4*(area)+p5*(tiny)+p6*(salt)+p7*(drought)+p8*(high_stress)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8862679226296793,
+          "p1": 0.0336588401576845,
+          "p2": -0.019098090923399962,
+          "p3": -0.2540598008327816,
+          "p4": -3.775964216078659e-08,
+          "p5": 0.005854875216681706,
+          "p6": -0.005327208183485642,
+          "p7": -0.004230556862025895,
+          "p8": 0.0023693707956873077
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.1424509103953207,
+            "drought": 0.14507861406368655,
+            "high_stress": 0.16791304304893515,
+            "ngrdi": -0.5962835670397583,
+            "npq": 0.06719450286930352,
+            "rfd": 0.04784220348076167,
+            "salt": -0.19986284482372985,
+            "tiny": -0.13132069104534122
+          },
+          "mean": -0.00046454794024297457,
+          "p90_abs": 0.00570143013633706,
+          "std": 0.0055812692118373
+        },
+        "rule_id": "full-comparison-v5--P100-036--linear_control-rule-1",
+        "rule_sha256": "ce9c8d66972519652ec554613f09359848d8067d809c790105284d92298f594b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8862679226296793 + 0.0336588401576845 * npq + -0.019098090923399962 * rfd + -0.2540598008327816 * ngrdi + -3.775964216078659e-08 * area + 0.005854875216681706 * tiny + -0.005327208183485642 * salt + -0.004230556862025895 * drought + 0.0023693707956873077 * high_stress",
+          "expression_bytes": 91,
+          "free_parameters": 9,
+          "learned_state_bytes": 253,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.0053419406826599024,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(npq)+p2*(rfd)+p3*(ngrdi)+p4*(area)+p5*(tiny)+p6*(salt)+p7*(drought)+p8*(high_stress)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--linear_control-rule-1",
+      "rule_sha256": "ce9c8d66972519652ec554613f09359848d8067d809c790105284d92298f594b",
+      "run_id": "full-comparison-v5--P100-036--linear_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8862679226296793 + 0.0336588401576845 * npq + -0.019098090923399962 * rfd + -0.2540598008327816 * ngrdi + -3.775964216078659e-08 * area + 0.005854875216681706 * tiny + -0.005327208183485642 * salt + -0.004230556862025895 * drought + 0.0023693707956873077 * high_stress",
+        "expression_bytes": 91,
+        "free_parameters": 9,
+        "learned_state_bytes": 253,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06383984089239533,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005513076737884844,
+        "primary": "mae",
+        "primary_error": 0.005513076737884844,
+        "rmse": 0.009199426361245629
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.0026956258635147945,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.005263694105435768,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0013540422035517087,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.003929689577240203,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.012532075557533861,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.004060760004698483,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.007083747792018302,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.0021555705366910647,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.002847352088067834,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.0024663527845256274,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.016709818999779563,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.001597559668443349,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.011127891675261329,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0031183295388640766,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.0061520129943289925,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005114704416202542,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0034561026485497182,
+        "execution_status": "complete",
+        "expression": "p0+p1*(npq)+p2*(rfd)+p3*(ngrdi)+p4*(area)+p5*(tiny)+p6*(salt)+p7*(drought)+p8*(high_stress)",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8862679226296793,
+          "p1": 0.0336588401576845,
+          "p2": -0.019098090923399962,
+          "p3": -0.2540598008327816,
+          "p4": -3.775964216078659e-08,
+          "p5": 0.005854875216681706,
+          "p6": -0.005327208183485642,
+          "p7": -0.004230556862025895,
+          "p8": 0.0023693707956873077
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.1424509103953207,
+            "drought": 0.14507861406368655,
+            "high_stress": 0.16791304304893515,
+            "ngrdi": -0.5962835670397583,
+            "npq": 0.06719450286930352,
+            "rfd": 0.04784220348076167,
+            "salt": -0.19986284482372985,
+            "tiny": -0.13132069104534122
+          },
+          "mean": -0.00046454794024297457,
+          "p90_abs": 0.00570143013633706,
+          "std": 0.0055812692118373
+        },
+        "rule_id": "full-comparison-v5--P100-036--polynomial_control-rule-1",
+        "rule_sha256": "af00127925aba38078a1a5468390c728e46fc9dd51b191642627d7ba015002fb",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8862679226296793 + 0.0336588401576845 * npq + -0.019098090923399962 * rfd + -0.2540598008327816 * ngrdi + -3.775964216078659e-08 * area + 0.005854875216681706 * tiny + -0.005327208183485642 * salt + -0.004230556862025895 * drought + 0.0023693707956873077 * high_stress",
+          "expression_bytes": 91,
+          "free_parameters": 9,
+          "learned_state_bytes": 253,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.0053419406826599024,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(npq)+p2*(rfd)+p3*(ngrdi)+p4*(area)+p5*(tiny)+p6*(salt)+p7*(drought)+p8*(high_stress)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--polynomial_control-rule-1",
+      "rule_sha256": "af00127925aba38078a1a5468390c728e46fc9dd51b191642627d7ba015002fb",
+      "run_id": "full-comparison-v5--P100-036--polynomial_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8862679226296793 + 0.0336588401576845 * npq + -0.019098090923399962 * rfd + -0.2540598008327816 * ngrdi + -3.775964216078659e-08 * area + 0.005854875216681706 * tiny + -0.005327208183485642 * salt + -0.004230556862025895 * drought + 0.0023693707956873077 * high_stress",
+        "expression_bytes": 91,
+        "free_parameters": 9,
+        "learned_state_bytes": 253,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06383984089239533,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.00552629791646407,
+        "primary": "mae",
+        "primary_error": 0.00552629791646407,
+        "rmse": 0.009424003186639237
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.003378495137111267,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.005029330663849141,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0010748871883391909,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0027934742925947997,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011311010024379887,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.0034865064466437223,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.0069711658542843,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.002589113675139565,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.0024079695546431966,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.002728782689757736,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.018012592604456385,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0019700067534977883,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.012184380767816286,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0030575073279937768,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.0059622619972571345,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005463281685660941,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.003358716488559519,
+        "execution_status": "complete",
+        "expression": "p0 + p1*npq + p2*rfd + p3*ngrdi + p4*log(area) + p5*tiny + p6*salt + p7*drought",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8948518000515975,
+          "p1": 0.03393068873662122,
+          "p2": -0.01956215925190722,
+          "p3": -0.25889954296004347,
+          "p4": -0.0008213663136711505,
+          "p5": 0.005482987923675235,
+          "p6": -0.004266400871962695,
+          "p7": -0.003014698962837045
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.07650303318194229,
+            "drought": 0.1639764882055038,
+            "high_stress": -0.027905577982850743,
+            "ngrdi": -0.5935929704645374,
+            "npq": 0.029260011597692457,
+            "rfd": 0.0023028273620262717,
+            "salt": -0.2297791801142725,
+            "tiny": -0.10996126734041867
+          },
+          "mean": -0.0008975984621808614,
+          "p90_abs": 0.006487398878769812,
+          "std": 0.005513806677240388
+        },
+        "rule_id": "full-comparison-v5--P100-036--feedback_refinement-rule-1",
+        "rule_sha256": "be81697433ae63b2165abbc23404a92423caa331e355782041cbc11d06a1c38b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8948518000515975 + 0.03393068873662122 * npq + -0.01956215925190722 * rfd + -0.25889954296004347 * ngrdi + -0.0008213663136711505 * log(area) + 0.005482987923675235 * tiny + -0.004266400871962695 * salt + -0.003014698962837045 * drought",
+          "expression_bytes": 79,
+          "free_parameters": 8,
+          "learned_state_bytes": 225,
+          "literal_state_bytes": 0,
+          "nodes": 62,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.00533567815872177,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*npq + p2*rfd + p3*ngrdi + p4*log(area) + p5*tiny + p6*salt + p7*drought",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--feedback_refinement-rule-1",
+      "rule_sha256": "be81697433ae63b2165abbc23404a92423caa331e355782041cbc11d06a1c38b",
+      "run_id": "full-comparison-v5--P100-036--feedback_refinement",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8948518000515975 + 0.03393068873662122 * npq + -0.01956215925190722 * rfd + -0.25889954296004347 * ngrdi + -0.0008213663136711505 * log(area) + 0.005482987923675235 * tiny + -0.004266400871962695 * salt + -0.003014698962837045 * drought",
+        "expression_bytes": 79,
+        "free_parameters": 8,
+        "learned_state_bytes": 225,
+        "literal_state_bytes": 0,
+        "nodes": 62,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06464322655382355,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005526297927268776,
+        "primary": "mae",
+        "primary_error": 0.005526297927268776,
+        "rmse": 0.009424003183099045
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.003378495089140158,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.0050293306038804,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0010748872893502348,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0027934743820896336,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011311010032413416,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.0034865067369268753,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.006971165824561321,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.0025891136810464845,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.002407969434871049,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.002728782772627425,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.01801259258297594,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.001970006761108367,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.012184380804425743,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.003057507246484681,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.005962261983288641,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005463281611110056,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0033587165228368262,
+        "execution_status": "complete",
+        "expression": "p0+p1*npq+p2*rfd+p3*ngrdi+p4*log(area)+p5*tiny+p6*salt+p7*drought",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8948517984748994,
+          "p1": 0.03393068858227112,
+          "p2": -0.01956215882362847,
+          "p3": -0.2588995435853449,
+          "p4": -0.0008213662440736133,
+          "p5": 0.005482988158083988,
+          "p6": -0.004266400825966993,
+          "p7": -0.0030146988795337875
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.07650304181052099,
+            "drought": 0.16397649682622717,
+            "high_stress": -0.027905572643242053,
+            "ngrdi": -0.5935929731212892,
+            "npq": 0.02926003521800853,
+            "rfd": 0.002302851534874654,
+            "salt": -0.22977919184374304,
+            "tiny": -0.10996128492485496
+          },
+          "mean": -0.0008975986023602231,
+          "p90_abs": 0.006487398871870664,
+          "std": 0.005513806668696775
+        },
+        "rule_id": "full-comparison-v5--P100-036--best_of_n-rule-1",
+        "rule_sha256": "b8c9266de00b64916cccc4b33edc723dc75ff4b094e443fb81778a82ba08d2c0",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8948517984748994 + 0.03393068858227112 * npq + -0.01956215882362847 * rfd + -0.2588995435853449 * ngrdi + -0.0008213662440736133 * log(area) + 0.005482988158083988 * tiny + -0.004266400825966993 * salt + -0.0030146988795337875 * drought",
+          "expression_bytes": 65,
+          "free_parameters": 8,
+          "learned_state_bytes": 225,
+          "literal_state_bytes": 0,
+          "nodes": 62,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.005335678145261136,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*npq+p2*rfd+p3*ngrdi+p4*log(area)+p5*tiny+p6*salt+p7*drought",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--best_of_n-rule-1",
+      "rule_sha256": "b8c9266de00b64916cccc4b33edc723dc75ff4b094e443fb81778a82ba08d2c0",
+      "run_id": "full-comparison-v5--P100-036--best_of_n",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8948517984748994 + 0.03393068858227112 * npq + -0.01956215882362847 * rfd + -0.2588995435853449 * ngrdi + -0.0008213662440736133 * log(area) + 0.005482988158083988 * tiny + -0.004266400825966993 * salt + -0.0030146988795337875 * drought",
+        "expression_bytes": 65,
+        "free_parameters": 8,
+        "learned_state_bytes": 225,
+        "literal_state_bytes": 0,
+        "nodes": 62,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06464322584781412,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.0055262979474825225,
+        "primary": "mae",
+        "primary_error": 0.0055262979474825225,
+        "rmse": 0.009424003250637887
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.003378495105458623,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.005029330651716579,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.0010748871214278921,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0027934742595059348,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011311010151503886,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.003486506435686265,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.006971165830322645,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.002589113759432027,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.0024079695692516,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.002728782683072173,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.01801259271033573,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0019700067514334617,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.012184380991129395,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0030575073718140944,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.0059622620284564,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005463281739173653,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0033587164949664245,
+        "execution_status": "complete",
+        "expression": "p0 + p1*npq + p2*rfd + p3*ngrdi + p4*log(area) + p5*tiny + p6*salt + p7*drought",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.894851801016102,
+          "p1": 0.0339306886775094,
+          "p2": -0.019562159284742895,
+          "p3": -0.25889954822331684,
+          "p4": -0.0008213663271646823,
+          "p5": 0.005482987978740627,
+          "p6": -0.004266400883530152,
+          "p7": -0.0030146988546938787
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.07650302953997681,
+            "drought": 0.1639764954950744,
+            "high_stress": -0.02790557783144478,
+            "ngrdi": -0.5935929755297524,
+            "npq": 0.02926000802773272,
+            "rfd": 0.0023028223630921895,
+            "salt": -0.22977918461954677,
+            "tiny": -0.10996126351435014
+          },
+          "mean": -0.0008975984319891998,
+          "p90_abs": 0.006487398883134987,
+          "std": 0.0055138067298031715
+        },
+        "rule_id": "full-comparison-v5--P100-036--direct_deepseek-rule-1",
+        "rule_sha256": "1c178f9e74a516eeba4ae7f2dfe7f7887e2caf0f142d174ffd171a402b8328cd",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.894851801016102 + 0.0339306886775094 * npq + -0.019562159284742895 * rfd + -0.25889954822331684 * ngrdi + -0.0008213663271646823 * log(area) + 0.005482987978740627 * tiny + -0.004266400883530152 * salt + -0.0030146988546938787 * drought",
+          "expression_bytes": 79,
+          "free_parameters": 8,
+          "learned_state_bytes": 225,
+          "literal_state_bytes": 0,
+          "nodes": 62,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.005335678160112884,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*npq + p2*rfd + p3*ngrdi + p4*log(area) + p5*tiny + p6*salt + p7*drought",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--direct_deepseek-rule-1",
+      "rule_sha256": "1c178f9e74a516eeba4ae7f2dfe7f7887e2caf0f142d174ffd171a402b8328cd",
+      "run_id": "full-comparison-v5--P100-036--direct_deepseek",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.894851801016102 + 0.0339306886775094 * npq + -0.019562159284742895 * rfd + -0.25889954822331684 * ngrdi + -0.0008213663271646823 * log(area) + 0.005482987978740627 * tiny + -0.004266400883530152 * salt + -0.0030146988546938787 * drought",
+        "expression_bytes": 79,
+        "free_parameters": 8,
+        "learned_state_bytes": 225,
+        "literal_state_bytes": 0,
+        "nodes": 62,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06464322700832059,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.005579744991989273,
+        "primary": "mae",
+        "primary_error": 0.005579744991989273,
+        "rmse": 0.009367965167649728
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.003256963919687217,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.0052059619649763135,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.001014000233072454,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.0031597485613769514,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.011209558823308518,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.003427727489359267,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.0069251824954941425,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.002496062236756269,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.003015639305665352,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.0027641510556230655,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.017840896620901565,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0020733587964365087,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.01225498273619341,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.0030825939629976298,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.006099591978210639,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.0054494996917690735,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.0033603789357182163,
+        "execution_status": "complete",
+        "expression": "p0 + p1*rfd + p2*tiny + p3*area + p4*ngrdi + p5*npq + p6*salt + p7*drought",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8854924362950124,
+          "p1": -0.019235419017585662,
+          "p2": 0.005944704075827471,
+          "p3": -4.548142999654093e-08,
+          "p4": -0.24884881788808152,
+          "p5": 0.034164571581232483,
+          "p6": -0.004382395255446312,
+          "p7": -0.003177996743122378
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.10118380977888879,
+            "drought": 0.16693647200429823,
+            "high_stress": -0.019043688165266505,
+            "ngrdi": -0.5844401855054463,
+            "npq": 0.036409980294267036,
+            "rfd": 0.004240048097767658,
+            "salt": -0.23845034217631433,
+            "tiny": -0.10782371357150176
+          },
+          "mean": -0.0008708726604434092,
+          "p90_abs": 0.006377355435098431,
+          "std": 0.005437211797045491
+        },
+        "rule_id": "full-comparison-v5--P100-036--tool_agent-rule-1",
+        "rule_sha256": "a59cd24f0bc728058138641102ab3380761fc60a893d6b217b93d797717b1a74",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8854924362950124 + -0.019235419017585662 * rfd + 0.005944704075827471 * tiny + -4.548142999654093e-08 * area + -0.24884881788808152 * ngrdi + 0.034164571581232483 * npq + -0.004382395255446312 * salt + -0.003177996743122378 * drought",
+          "expression_bytes": 74,
+          "free_parameters": 8,
+          "learned_state_bytes": 227,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.005319692306274861,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*rfd + p2*tiny + p3*area + p4*ngrdi + p5*npq + p6*salt + p7*drought",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-036--tool_agent-rule-1",
+      "rule_sha256": "a59cd24f0bc728058138641102ab3380761fc60a893d6b217b93d797717b1a74",
+      "run_id": "full-comparison-v5--P100-036--tool_agent",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8854924362950124 + -0.019235419017585662 * rfd + 0.005944704075827471 * tiny + -4.548142999654093e-08 * area + -0.24884881788808152 * ngrdi + 0.034164571581232483 * npq + -0.004382395255446312 * salt + -0.003177996743122378 * drought",
+        "expression_bytes": 74,
+        "free_parameters": 8,
+        "learned_state_bytes": 227,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06378623566470173,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.011311287489068005,
+        "primary": "mae",
+        "primary_error": 0.011311287489068005,
+        "rmse": 0.013953735110707915
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.011311287489068005,
+      "by_group": [
+        {
+          "error": 0.010654603532506579,
+          "group": "group-10ec5526d6f8cc588c9488dd",
+          "rows": 3
+        },
+        {
+          "error": 0.009349691280429706,
+          "group": "group-17ba1f77acf23ebf05ce5d8b",
+          "rows": 5
+        },
+        {
+          "error": 0.013909598216172126,
+          "group": "group-2d1090a9aa63f6250f25d751",
+          "rows": 5
+        },
+        {
+          "error": 0.015405074434369715,
+          "group": "group-3b0f40531f77f5733a7fa338",
+          "rows": 5
+        },
+        {
+          "error": 0.015290624467601321,
+          "group": "group-50b332ada0d3a695bd24d3a0",
+          "rows": 5
+        },
+        {
+          "error": 0.010865422505034505,
+          "group": "group-56d85a26de23e77df9bf4058",
+          "rows": 5
+        },
+        {
+          "error": 0.009220136160184089,
+          "group": "group-5a5a1755c4370fe5ea94d984",
+          "rows": 5
+        },
+        {
+          "error": 0.012456511134556902,
+          "group": "group-600a39b382c885474598f16f",
+          "rows": 5
+        },
+        {
+          "error": 0.015841451731118304,
+          "group": "group-9a15e7e3f4a86b84ce9b77e8",
+          "rows": 5
+        },
+        {
+          "error": 0.01536935569189828,
+          "group": "group-ae03b2bcc06af6684f987435",
+          "rows": 5
+        },
+        {
+          "error": 0.020491030669804216,
+          "group": "group-b8b61ad7ad799b8a86da2954",
+          "rows": 3
+        },
+        {
+          "error": 0.0073037422287296925,
+          "group": "group-b8d10d01ba8b48458cfc06ac",
+          "rows": 5
+        },
+        {
+          "error": 0.005371012539532612,
+          "group": "group-cf64c9791d552f035ac3d5e0",
+          "rows": 3
+        },
+        {
+          "error": 0.010016815245162588,
+          "group": "group-d849ea6eafaddf8ee085af7e",
+          "rows": 3
+        },
+        {
+          "error": 0.0036519442807628755,
+          "group": "group-dc0b5b625344ce9e33d90ed1",
+          "rows": 1
+        },
+        {
+          "error": 0.005783585707224555,
+          "group": "group-f3ba965cf83cfcf98967f12f",
+          "rows": 3
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.010656833517761616,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "npq",
+          "rfd",
+          "ngrdi",
+          "area",
+          "tiny",
+          "salt",
+          "drought",
+          "high_stress"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8410763509192749
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "area": -0.7055573088740784,
+            "drought": 0.006360006516018778,
+            "high_stress": 0.09277259007568675,
+            "ngrdi": -0.25101832819152975,
+            "npq": 0.48693417876517625,
+            "rfd": 0.8835352605948857,
+            "salt": -0.19639169559538033,
+            "tiny": -0.9063858049945593
+          },
+          "mean": -0.004537621441402667,
+          "p90_abs": 0.016264295388876082,
+          "std": 0.011432524342374507
+        },
+        "rule_id": "full-comparison-v5--P100-036--mean_control-rule-1",
+        "rule_sha256": "ddc5d1cad4abc1a9cdcd2194f14e231b81d24792202f51548763924d6e3860c2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.8410763509192749",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-036.compact.v2",
+        "train_error": 0.010478715237234591,
+        "units": {
+          "inputs": {
+            "area": "source AREA_MM scale; only relative/log descriptor used",
+            "drought": "drought-treatment indicator",
+            "high_stress": "source second stress-level indicator; no invented dose units",
+            "ngrdi": "dimensionless RGB index",
+            "npq": "dimensionless author NPQ_Lss",
+            "rfd": "dimensionless author Rfd_Lss",
+            "salt": "salt-treatment indicator",
+            "tiny": "cultivar indicator"
+          },
+          "output": "dimensionless quantum yield",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 66,
+        "fraction": 1.0,
+        "predicted": 66
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-036--mean_control-rule-1",
+      "rule_sha256": "ddc5d1cad4abc1a9cdcd2194f14e231b81d24792202f51548763924d6e3860c2",
+      "run_id": "full-comparison-v5--P100-036--mean_control",
+      "scenario_id": "P100-036",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.8410763509192749",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 66,
+        "ranking": false,
+        "samples": 66,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-036.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-036",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-036.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

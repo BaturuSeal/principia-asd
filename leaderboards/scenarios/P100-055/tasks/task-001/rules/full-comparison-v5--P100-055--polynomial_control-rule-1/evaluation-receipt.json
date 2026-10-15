@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.21239705486005545,
+    "primary": "mae",
+    "primary_error": 0.21239705486005545,
+    "rmse": 0.2527388020775045
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.25530277777777777,
+  "by_group": [
+    {
+      "error": 0.3076240088996761,
+      "group": "group-68ac150dbaf3e5acadd8ed34",
+      "rows": 2400
+    },
+    {
+      "error": 0.11717010082043477,
+      "group": "group-88a9b273a766ea99e85f6114",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "full-comparison-v5--P100-055--polynomial_control-rule-1",
+  "rule_sha256": "115b81d2931ed108c53318776e4154c9f5b62e841ff7a23e9a191c8582a50fa6",
+  "run_id": "full-comparison-v5--P100-055--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6360885914698622 + -0.05113673139158589 * ratio + -1.082020631067932 * water + 0.007490333333333457 * age_min + 0.00018636535101486057 * time_s",
+    "expression_bytes": 49,
+    "free_parameters": 5,
+    "learned_state_bytes": 138,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.012625699772291155,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

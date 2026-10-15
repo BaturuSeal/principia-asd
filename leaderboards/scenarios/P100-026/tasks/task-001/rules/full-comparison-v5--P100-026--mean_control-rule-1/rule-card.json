@@ -1,0 +1,60 @@
+{
+  "dev_error": 12.5085906042678,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 57.99434115995302
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": -0.9192166695535522,
+      "elapsed_min": -0.368235357425241,
+      "prefix_slope_pct_min": 0.9192166695535521
+    },
+    "mean": 1.7283275299780239,
+    "p90_abs": 19.582918231832338,
+    "std": 13.607611295473482
+  },
+  "rule_id": "full-comparison-v5--P100-026--mean_control-rule-1",
+  "rule_sha256": "c2b8b40561e5dbac9c339faa9676b1674ce665127c97c2248d29316c04119078",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "57.99434115995302",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 13.504655773155745,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

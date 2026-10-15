@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.010976896662050825,
+    "primary": "mae",
+    "primary_error": 0.010976896662050825,
+    "rmse": 0.013252555083141177
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.011003542604276611,
+  "by_group": [
+    {
+      "error": 0.012597705554486385,
+      "group": "group-2d4a3f44ac9fdd8d0d4bbce8",
+      "rows": 32
+    },
+    {
+      "error": 0.009356087769615266,
+      "group": "group-f1263395f4d4af8c39623846",
+      "rows": 32
+    }
+  ],
+  "coverage": {
+    "eligible": 64,
+    "fraction": 1.0,
+    "predicted": 64
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_glm",
+  "rule_id": "full-comparison-v5--P100-003--direct_glm-rule-1",
+  "rule_sha256": "ef0f7ea850d9c518174c1c1fae640581b67490f26de69072ca283ce4fa5a1722",
+  "run_id": "full-comparison-v5--P100-003--direct_glm",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "maximum(0, 0.07328468616444202 + 0.1436800215697266 * lag1 + 0.09524454441539575 * lag2 + 0.0054927628163815925 * lag3 + 0.0479314193040648 * median4 + -1.2042589025787347 * mad4)",
+    "expression_bytes": 67,
+    "free_parameters": 6,
+    "learned_state_bytes": 162,
+    "literal_state_bytes": 1,
+    "nodes": 47,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.015984998230301833,
+    "perturbation_labels_available": false,
+    "population_rows": 64,
+    "ranking": false,
+    "samples": 64,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

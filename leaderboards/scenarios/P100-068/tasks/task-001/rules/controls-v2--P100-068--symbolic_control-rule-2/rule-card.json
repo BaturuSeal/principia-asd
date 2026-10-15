@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.18131564854390336,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((y2--0.1895795469574468)/0.6537253017058364))+p2*(y0)",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.07560070836647788,
+    "p1": -0.740927670692685,
+    "p2": 0.30048346324021247
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.31903234290704785,
+      "t": -0.04856439130533246,
+      "y0": -0.0651314531036967,
+      "y1": 0.15461170155747847,
+      "y2": 0.03281428331533863,
+      "y3": -0.19273144527252023
+    },
+    "mean": -0.04119611566711451,
+    "p90_abs": 0.38940646313490485,
+    "std": 0.23200640768866504
+  },
+  "rule_id": "controls-v2--P100-068--symbolic_control-rule-2",
+  "rule_sha256": "f060f67a4a4430257d0b7d59f0ecb974d8048c02341503a3cb464f20a38777c9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.07560070836647788 + -0.740927670692685 * tanh((y2 - -0.1895795469574468) / 0.6537253017058364) + 0.30048346324021247 * y0",
+    "expression_bytes": 65,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "nodes": 30,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.15782487828879627,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

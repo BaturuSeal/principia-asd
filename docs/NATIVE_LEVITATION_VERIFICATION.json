@@ -1,0 +1,142 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T06:03:23.137791+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 348200,
+  "registered_source_files": 4,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "admission_blockers": [
+        "Final scientific-contract and source-rights/notice review remain pending",
+        "Excitation metadata and independent installation replication are not established by trace identifiers",
+        "Sensor calibration, latency and measurement-error perturbation model require scientific review"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-068/reconstruction.json",
+      "candidate_receipt_sha256": "d6a66fecb818d114c7883b5352f741a65af14a276e0437c5953fd32fa5ff5185",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 2325
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 534
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 445,
+            "reconstructed_rows": 445,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 534,
+            "reconstructed_rows": 534,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 1880,
+            "reconstructed_rows": 1880,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_choice_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": {
+        "all_raw_denoised_clocks_equal": true,
+        "denoised_values_used_as_inputs": false,
+        "distinct_raw_signals": 31,
+        "eligible_rows": 2859,
+        "forecast_horizon_s": 0.005,
+        "future_filtering_or_fitting": false,
+        "initial_calibration_samples": 20,
+        "linked_denoised_traces": 31,
+        "maximum_history_s": 0.015,
+        "nonfinite_or_failed_windows_dropped": 0,
+        "raw_samples": 30969,
+        "raw_traces": 31,
+        "sample_intervals_s": [
+          0.0005,
+          0.001
+        ]
+      },
+      "native_trace_validation": null,
+      "reader_source_sha256": "cf8274f73a5a1ef1a97e182362693d8a424312412432e4f22591aef30989346b",
+      "recipe_sha256": "278c24c3df18a5708f8a324bb4f857d421dcba7e3163fdc412013b18e0eaeae1",
+      "rows": {
+        "dev": 445,
+        "test": 534,
+        "train": 1880
+      },
+      "runtime_binding_sha256": "d50a33ceda17fcc53c2526ad0c2eb7c231678d293dc9ac1c192173a515d16e44",
+      "scenario_id": "P100-068",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "data1145n",
+            "data1156n",
+            "data1159n",
+            "data1164n",
+            "data1169n"
+          ],
+          "test": [
+            "data1142n",
+            "data1143n",
+            "data1144n",
+            "data1153n",
+            "data1168n",
+            "data1171n"
+          ],
+          "train": [
+            "data1146n",
+            "data1147n",
+            "data1148n",
+            "data1149n",
+            "data1150n",
+            "data1151n",
+            "data1152n",
+            "data1154n",
+            "data1155n",
+            "data1157n",
+            "data1158n",
+            "data1160n",
+            "data1161n",
+            "data1162n",
+            "data1163n",
+            "data1165n",
+            "data1166n",
+            "data1167n",
+            "data1170n",
+            "data1172n"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

@@ -1,0 +1,65 @@
+{
+  "dev_error": 2.3891862128039807,
+  "execution_status": "complete",
+  "expression": "anchor_selectivity_pct + p0 * prefix_slope_pct_min * elapsed_min + p1 * ag_wt_pct + p2 * log(elapsed_min) + p3",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.31104739521135827,
+    "p1": 0.001955580715021789,
+    "p2": 0.4958398318127941,
+    "p3": -0.8746214193832672
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": 0.07054440389010569,
+      "elapsed_min": 0.8018840162768578,
+      "prefix_slope_pct_min": -0.07054440389010572
+    },
+    "mean": 0.053007030966408734,
+    "p90_abs": 4.417165886392237,
+    "std": 2.9744509057340376
+  },
+  "rule_id": "full-comparison-v5--P100-026--direct_kimi-rule-1",
+  "rule_sha256": "c4fec514b8cff8917e37b08b5183367d27c9531e481ddf0a43cc086be440a348",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "anchor_selectivity_pct + 0.31104739521135827 * prefix_slope_pct_min * elapsed_min + 0.001955580715021789 * ag_wt_pct + 0.4958398318127941 * log(elapsed_min) + -0.8746214193832672",
+    "expression_bytes": 110,
+    "free_parameters": 4,
+    "learned_state_bytes": 108,
+    "literal_state_bytes": 0,
+    "nodes": 38,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 0.9535769122608848,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "expression": "p0 * (0.5 + 0.5*tanh((current - p1)/p2)) * (1 + p3*cal_last + p4*cal_mean) * (1 + p5*soft + p6*kd)",
+  "parameters": {
+    "p0": 0.8600795547347886,
+    "p1": 23.279860413496664,
+    "p2": 24.067972816625574,
+    "p3": -59.33501368028317,
+    "p4": 372.0450817656483,
+    "p5": -0.5377588586957418,
+    "p6": 1.2906864589398885
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,50 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0036900369003689537,
+    "mae": null,
+    "primary": "log_mae",
+    "primary_error": null,
+    "rmse": null
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.759087840276369,
+  "by_group": [],
+  "coverage": {
+    "eligible": 271,
+    "fraction": 0.996309963099631,
+    "predicted": 270
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-017--best_of_n-rule-1",
+  "rule_sha256": "0e125dc68550ecb25876259c594520fd3e3f68d258053e98b809a844d1350dbd",
+  "run_id": "full-comparison-v5--P100-017--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.23434418715689684 + 0.03635468317568148 * depth_km + 1.4716307183592319 * rms_s + -0.010218237160178919 * phases + 0.008092162927768688 * stations + 0.00556536941742485 * gap_deg + 1.911321571889934e-05 * dmin_km + -4.393099917573834e-05 * (depth_km * depth_km)",
+    "expression_bytes": 120,
+    "free_parameters": 8,
+    "learned_state_bytes": 223,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.04197361550212995,
+    "perturbation_labels_available": false,
+    "population_rows": 271,
+    "ranking": false,
+    "samples": 271,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "invalid",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

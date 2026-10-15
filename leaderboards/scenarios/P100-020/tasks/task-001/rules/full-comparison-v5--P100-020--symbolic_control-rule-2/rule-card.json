@@ -1,0 +1,74 @@
+{
+  "dev_error": 0.05345770325388818,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hx)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.005299445365961308,
+    "p1": 1.0092166165968912
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": 0.07610463542735264,
+      "dg": 0.07675917829160385,
+      "gx": 0.1140584897134018,
+      "gy": 0.02741470217471196,
+      "hx": 0.07019429446872674,
+      "hy": 0.04265931108719093,
+      "ox": 0.12426322302651367,
+      "oy": 0.0768319291090903
+    },
+    "mean": 0.002442894680316041,
+    "p90_abs": 0.10753007333386051,
+    "std": 0.07337759358434594
+  },
+  "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-2",
+  "rule_sha256": "538fbf90a544778d2c6ed751b79e929146d2b8653617b9570c000624be16fca2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.005299445365961308 + 1.0092166165968912 * hx",
+    "expression_bytes": 10,
+    "free_parameters": 2,
+    "learned_state_bytes": 55,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.05255860581730641,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

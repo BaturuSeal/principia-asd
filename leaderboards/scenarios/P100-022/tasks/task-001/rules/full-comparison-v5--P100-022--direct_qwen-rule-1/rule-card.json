@@ -1,0 +1,59 @@
+{
+  "dev_error": 201.4343412489411,
+  "execution_status": "complete",
+  "expression": "p0 * voltage_V ** p1 * (1 + p2 * bromine_rich)",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1073.6010634913348,
+    "p1": 1.626233587956072,
+    "p2": 0.4783059707728635
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": -0.2112115843439738,
+      "voltage_V": -0.15530697489701192
+    },
+    "mean": -7.205916942450159,
+    "p90_abs": 437.0972567179694,
+    "std": 256.9161583726388
+  },
+  "rule_id": "full-comparison-v5--P100-022--direct_qwen-rule-1",
+  "rule_sha256": "995551168433cc500aa5a4fa0a05dbdbf4ebfe866d3aeaa6bb34988b382360a5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1073.6010634913348 * voltage_V ** 1.626233587956072 * (1 + 0.4783059707728635 * bromine_rich)",
+    "expression_bytes": 46,
+    "free_parameters": 3,
+    "learned_state_bytes": 77,
+    "literal_state_bytes": 1,
+    "nodes": 22,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 207.6232895472292,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

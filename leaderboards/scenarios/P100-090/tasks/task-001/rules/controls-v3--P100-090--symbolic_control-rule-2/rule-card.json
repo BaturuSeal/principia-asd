@@ -1,0 +1,71 @@
+{
+  "dev_error": 0.07318299585258879,
+  "execution_status": "complete",
+  "expression": "p0+p1*(p_now)",
+  "inputs": [
+    "p_now",
+    "p_past",
+    "p_initial",
+    "density",
+    "speed",
+    "radius90",
+    "polarization_variance"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.02100308516510679,
+    "p1": 0.869350024993757
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "density": 0.14415618331393168,
+      "p_initial": 0.04125391653972865,
+      "p_now": 0.04314237092310052,
+      "p_past": 0.07056520241577421,
+      "polarization_variance": 0.05127142443392441,
+      "radius90": -0.0558550027813223,
+      "speed": -0.18201296883274848
+    },
+    "mean": -0.002808284043997383,
+    "p90_abs": 0.12977239488915093,
+    "std": 0.08193166408599567
+  },
+  "rule_id": "controls-v3--P100-090--symbolic_control-rule-2",
+  "rule_sha256": "e865a8cdcd7b7827b01a62e8f1bb4c93660b0aeb27e5152ccfd0f803c35b79ce",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.02100308516510679 + 0.869350024993757 * p_now",
+    "expression_bytes": 13,
+    "free_parameters": 2,
+    "learned_state_bytes": 52,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-090.compact.v2",
+  "train_error": 0.07034893739871097,
+  "units": {
+    "inputs": {
+      "density": "tracked persons/(pi*r90²), proxy persons/m²",
+      "p_initial": "first2seconds mean order, declared pertrialcalibration",
+      "p_now": "dimensionless current signed angular order",
+      "p_past": "previous2integerseconds mean order",
+      "polarization_variance": "withinframe variance of individual signedorder",
+      "radius90": "90th-percentile centroiddistance metres",
+      "speed": "mean1sbackwardsecant m/s"
+    },
+    "output": "dimensionless signed[-1,1]",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

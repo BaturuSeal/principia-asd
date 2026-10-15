@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.032746688282581406,
+  "execution_status": "complete",
+  "expression": "p0+p1*((early)**2)+p2*(roughness*prev_y)",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.029258890127831665,
+    "p1": 5.0284067261227285,
+    "p2": 9.062392002892388
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.029248133351228094,
+      "finding": 0.02294796828887168,
+      "first_y": 0.32777672704395133,
+      "gradient_proxy": -0.13310389628079705,
+      "has_history": 0.45333009396978885,
+      "history_gap": 0.3766752946633742,
+      "left": 0.026494371326125615,
+      "mean_past_y": -0.09991134736456281,
+      "prev_early": -0.13754900665144543,
+      "prev_gradient": -0.13273223694159864,
+      "prev_y": -0.08474725912003529,
+      "roughness": 0.08830633338786902,
+      "usage": 0.3403524437407953
+    },
+    "mean": -0.0006717832519108106,
+    "p90_abs": 0.07417851920457143,
+    "std": 0.04783481924415142
+  },
+  "rule_id": "controls-v2--P100-053--symbolic_control-rule-1",
+  "rule_sha256": "1c70f884b87c69b4ee9a424df27fd4bf80232f45368447649ae5c03580581eb7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.029258890127831665 + 5.0284067261227285 * early ** 2 + 9.062392002892388 * (roughness * prev_y)",
+    "expression_bytes": 40,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "nodes": 26,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.03284290907085839,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

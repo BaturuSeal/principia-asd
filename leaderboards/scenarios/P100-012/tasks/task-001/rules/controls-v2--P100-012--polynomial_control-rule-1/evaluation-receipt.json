@@ -1,0 +1,64 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 23255.82468034173,
+    "primary": "mae",
+    "primary_error": 23255.82468034173,
+    "rmse": 34655.99945265757
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 23255.824680341728,
+  "by_group": [
+    {
+      "error": 21933.398130926627,
+      "group": "group-7a1f1b604ba0642d89f62acc",
+      "rows": 430
+    },
+    {
+      "error": 21962.400829182447,
+      "group": "group-999276b104705b2c5ec6f11a",
+      "rows": 172
+    },
+    {
+      "error": 25871.67508091612,
+      "group": "group-de819024b53df83268ad9144",
+      "rows": 172
+    }
+  ],
+  "coverage": {
+    "eligible": 774,
+    "fraction": 1.0,
+    "predicted": 774
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "controls-v2--P100-012--polynomial_control-rule-1",
+  "rule_sha256": "cfb135cf5f1d1020075decd4deb21f03e2c9d8aa7260f6d2545d3af68b14b25d",
+  "run_id": "controls-v2--P100-012--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.324993692479179e-18 + 1.469516946724325e-16 * q + 236676.2223248463 * q0 + 8.787804662091674e-23 * I0 + 1.7099967561321926e-17 * outer",
+    "expression_bytes": 36,
+    "free_parameters": 5,
+    "learned_state_bytes": 142,
+    "nodes": 35,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 774,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

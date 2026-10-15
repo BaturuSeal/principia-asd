@@ -1,0 +1,98 @@
+{
+  "dev_error": 0.8233208332989796,
+  "execution_status": "complete",
+  "expression": "p0*own_previous + p1*required_contribution + p2*own_history_mean + p3*peer_previous + p4*peer_history_mean + p5",
+  "inputs": [
+    "round",
+    "own_previous",
+    "peer_previous",
+    "own_lag2",
+    "peer_lag2",
+    "own_history_mean",
+    "peer_history_mean",
+    "endowment",
+    "peer_endowment",
+    "productivity",
+    "peer_productivity",
+    "threshold",
+    "previous_success",
+    "required_contribution"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.5359451873329503,
+    "p1": 0.02564044998841474,
+    "p2": 0.42335605637231566,
+    "p3": 0.09500347423456658,
+    "p4": -0.08655776128922237,
+    "p5": -0.014448699490503364
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "endowment": -0.040785532618115114,
+      "own_history_mean": -0.03234608076426078,
+      "own_lag2": -0.05918121521476493,
+      "own_previous": -0.03854972527933336,
+      "peer_endowment": 0.040785532618115114,
+      "peer_history_mean": -0.01874952148544645,
+      "peer_lag2": -0.025835658929994645,
+      "peer_previous": 0.01265756553793018,
+      "peer_productivity": 0.030647348524574188,
+      "previous_success": -0.029907685924949856,
+      "productivity": 0.02054390465957617,
+      "required_contribution": 0.012848996541534097,
+      "round": -0.010451512166661441,
+      "threshold": 0.016182621098878906
+    },
+    "mean": 0.070475341700143,
+    "p90_abs": 2.0911922881936653,
+    "std": 2.0049873101244553
+  },
+  "rule_id": "full-comparison-v5--P100-087--direct_glm-rule-1",
+  "rule_sha256": "cc399c752380a6d58f4a64d4489dc49286aa044fffbcfd1b033ea4fa9c17379c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5359451873329503 * own_previous + 0.02564044998841474 * required_contribution + 0.42335605637231566 * own_history_mean + 0.09500347423456658 * peer_previous + -0.08655776128922237 * peer_history_mean + -0.014448699490503364",
+    "expression_bytes": 111,
+    "free_parameters": 6,
+    "learned_state_bytes": 164,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-087.compact.v2",
+  "train_error": 1.150540947873275,
+  "units": {
+    "inputs": {
+      "endowment": "experimental tokens",
+      "own_history_mean": "experimental tokens",
+      "own_lag2": "experimental tokens",
+      "own_previous": "experimental tokens",
+      "peer_endowment": "experimental tokens",
+      "peer_history_mean": "experimental tokens",
+      "peer_lag2": "experimental tokens",
+      "peer_previous": "experimental tokens",
+      "peer_productivity": "dimensionless",
+      "previous_success": "indicator",
+      "productivity": "dimensionless",
+      "required_contribution": "experimental tokens",
+      "round": "round",
+      "threshold": "productivity-weighted tokens"
+    },
+    "output": "experimental tokens",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.017038427340663916,
+  "execution_status": "complete",
+  "expression": "p0 + p1*sqrt(cal_plus20_uA)*maximum(gate_V - p2, 0)**2",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.0011651677115563847,
+    "p1": 0.0036446481469432834,
+    "p2": 0.6024715249999214
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.5403571143972238,
+      "cal_plus20_uA": -0.04914660875848083,
+      "cal_zero_uA": -0.46927836090670727,
+      "gate_V": 0.16184228891043725
+    },
+    "mean": 0.006285427182635044,
+    "p90_abs": 0.05185250683862065,
+    "std": 0.028006791528703563
+  },
+  "rule_id": "live-pilot-v3--P100-051--principia_engine-rule-1",
+  "rule_sha256": "6569c476263290100d871454dca32566ae17be8a55f0a942aee40dccda9d5987",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0011651677115563847 + 0.0036446481469432834 * sqrt(cal_plus20_uA) * maximum(gate_V - 0.6024715249999214, 0) ** 2",
+    "expression_bytes": 54,
+    "free_parameters": 3,
+    "learned_state_bytes": 84,
+    "literal_state_bytes": 2,
+    "nodes": 29,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.01834797462897443,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

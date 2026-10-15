@@ -1,0 +1,65 @@
+{
+  "dev_error": 88.26705471430859,
+  "execution_status": "complete",
+  "expression": "p0+p1*(time_min*calibration_v6)",
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 36.09038400969086,
+    "p1": 0.7345991726692022
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "calibration_F6": -0.5501765169153957,
+      "calibration_curvature": 0.5501765169153957,
+      "calibration_v6": -0.5501765169153956,
+      "concentration_uM": -0.5501765169153957,
+      "time_min": -0.3807494764653931
+    },
+    "mean": -85.90175240550961,
+    "p90_abs": 196.42538360064617,
+    "std": 69.15612947161928
+  },
+  "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-3",
+  "rule_sha256": "d0c6498f24968520baf756ce9e7858f17e888908ab076ae1904f9e035f67f213",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "36.09038400969086 + 0.7345991726692022 * (time_min * calibration_v6)",
+    "expression_bytes": 31,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 15,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-074.compact.v2",
+  "train_error": 55.81509896098205,
+  "units": {
+    "inputs": {
+      "calibration_F6": "source fluorescence units",
+      "calibration_curvature": "source fluorescence units/min^2",
+      "calibration_v6": "source fluorescence units/min",
+      "concentration_uM": "uM",
+      "time_min": "min"
+    },
+    "output": "source fluorescence units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

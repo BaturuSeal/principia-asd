@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.026422524185396,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * early + p2 * prev_y + p3 * finding + p4 * roughness + p5 * usage + p6 * history_gap + p7 * has_history * prev_y",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.01219224279380203,
+    "p1": 1.1606909846604068,
+    "p2": 1.0673179219833018,
+    "p3": -0.11786973940812599,
+    "p4": -0.12577310486131468,
+    "p5": -0.001694632386589744,
+    "p6": 0.00819671183377446,
+    "p7": -0.7654179281553413
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.050840676860130024,
+      "finding": -0.06672459156598792,
+      "first_y": 0.011019614822956733,
+      "gradient_proxy": -0.09059771218779758,
+      "has_history": 0.07486041968283104,
+      "history_gap": 0.04937130150837772,
+      "left": 0.12645299892379552,
+      "mean_past_y": -0.05019325598867036,
+      "prev_early": 0.00781909630687619,
+      "prev_gradient": -0.0639187131829191,
+      "prev_y": -0.03160298211989014,
+      "roughness": -0.09350514696676483,
+      "usage": 0.02188158629220258
+    },
+    "mean": -0.00048381028468943776,
+    "p90_abs": 0.05698292848452344,
+    "std": 0.03728423413678547
+  },
+  "rule_id": "full-comparison-v5--P100-053--direct_glm-rule-1",
+  "rule_sha256": "871d983ad49fb842fc0c701be0ccf8ba8626a331b31cceca5dbf00234b3ee65d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.01219224279380203 + 1.1606909846604068 * early + 1.0673179219833018 * prev_y + -0.11786973940812599 * finding + -0.12577310486131468 * roughness + -0.001694632386589744 * usage + 0.00819671183377446 * history_gap + -0.7654179281553413 * has_history * prev_y",
+    "expression_bytes": 121,
+    "free_parameters": 8,
+    "learned_state_bytes": 219,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.026018277612986217,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

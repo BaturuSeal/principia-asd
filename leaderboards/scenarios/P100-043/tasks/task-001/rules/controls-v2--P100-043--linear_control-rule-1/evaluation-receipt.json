@@ -1,0 +1,74 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.39248906684937895,
+    "primary": "mae",
+    "primary_error": 0.39248906684937895,
+    "rmse": 0.4767003571088103
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.2860829921486803,
+  "by_group": [
+    {
+      "error": 0.32546096988809126,
+      "group": "group-2202a086cb33273ce2d378c3",
+      "rows": 42
+    },
+    {
+      "error": 0.21517978123887435,
+      "group": "group-71145ec09dd8be2729e0100a",
+      "rows": 43
+    },
+    {
+      "error": 0.9151344498075749,
+      "group": "group-ab62ca3054292a2e9049d31e",
+      "rows": 49
+    },
+    {
+      "error": 0.19477416688222596,
+      "group": "group-aec67ad855dba6b880f2abfa",
+      "rows": 41
+    },
+    {
+      "error": 0.3118959664301282,
+      "group": "group-e90b4881bf0e2712c670ec14",
+      "rows": 46
+    }
+  ],
+  "coverage": {
+    "eligible": 221,
+    "fraction": 1.0,
+    "predicted": 221
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "controls-v2--P100-043--linear_control-rule-1",
+  "rule_sha256": "fff087bbd293ebea93b690a5fdc794696b0f46ecee31c59d0e88afa8b906fe28",
+  "run_id": "controls-v2--P100-043--linear_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "4.7456071140315335e-26 + 5.130762830485325e-27 * tokens_B + 8.85700835281663e-21 * anchor_tokens_B + 0.37977822062747185 * early_tokens_B + 2.8830387924668033e-24 * anchor_loss + 4.400899839323039e-24 * early_loss + 5.998002339030521e-26 * params_B + 5.777560686419754e-29 * width + 2.7963523365524714e-27 * depth",
+    "expression_bytes": 126,
+    "free_parameters": 9,
+    "learned_state_bytes": 261,
+    "nodes": 67,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.4436309954698517,
+    "perturbation_labels_available": false,
+    "population_rows": 221,
+    "ranking": false,
+    "samples": 221,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

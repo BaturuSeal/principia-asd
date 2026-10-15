@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.07040666732379165,
+  "execution_status": "complete",
+  "expression": "p0 + p1*p_now + p2*p_past + p3*p_initial + p4*(polarization_variance*p_now)",
+  "inputs": [
+    "p_now",
+    "p_past",
+    "p_initial",
+    "density",
+    "speed",
+    "radius90",
+    "polarization_variance"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.025839439667209828,
+    "p1": 1.052760944708378,
+    "p2": -0.11712114510196572,
+    "p3": -0.001021322546133463,
+    "p4": -0.1744974368997865
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "density": 0.12106079364831271,
+      "p_initial": 0.07057929233444249,
+      "p_now": 0.05849649509420149,
+      "p_past": 0.07332576163547092,
+      "polarization_variance": -0.017319001709704112,
+      "radius90": -0.07918695168999376,
+      "speed": -0.12052765386933614
+    },
+    "mean": -0.004076591976268249,
+    "p90_abs": 0.12864213541021416,
+    "std": 0.08060945831642
+  },
+  "rule_id": "full-comparison-v5--P100-090--direct_glm-rule-1",
+  "rule_sha256": "cbbe3076e164952102d2b14bbb1b814e1e7b26211fbd5c7c84ae00a0a194e25a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.025839439667209828 + 1.052760944708378 * p_now + -0.11712114510196572 * p_past + -0.001021322546133463 * p_initial + -0.1744974368997865 * (polarization_variance * p_now)",
+    "expression_bytes": 75,
+    "free_parameters": 5,
+    "learned_state_bytes": 137,
+    "literal_state_bytes": 0,
+    "nodes": 39,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 9
+  },
+  "task_id": "P100-090.compact.v2",
+  "train_error": 0.06764181459290139,
+  "units": {
+    "inputs": {
+      "density": "tracked persons/(pi*r90²), proxy persons/m²",
+      "p_initial": "first2seconds mean order, declared pertrialcalibration",
+      "p_now": "dimensionless current signed angular order",
+      "p_past": "previous2integerseconds mean order",
+      "polarization_variance": "withinframe variance of individual signedorder",
+      "radius90": "90th-percentile centroiddistance metres",
+      "speed": "mean1sbackwardsecant m/s"
+    },
+    "output": "dimensionless signed[-1,1]",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "dev_error": 22.71969709403261,
+  "execution_status": "complete",
+  "expression": "minimum(100, maximum(0, p0 + p1*p22_pct + p2*p72_pct + p3*time_h + p4*p22_pct*p72_pct + p5*p22_pct*time_h + p6*p72_pct*time_h + p7*time_h*time_h))",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 34.05040413747147,
+    "p1": 0.42581184909271963,
+    "p2": 0.7798561740877714,
+    "p3": -0.3315946550676762,
+    "p4": -0.005723814598824265,
+    "p5": 0.0012565271140308964,
+    "p6": 0.0021371792761103662,
+    "p7": 7.2894239059895655e-06
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": 0.33283857874518236,
+      "p72_pct": -0.39137466842923396,
+      "time_h": -0.9000659306134237
+    },
+    "mean": -13.111567953522979,
+    "p90_abs": 35.249672345907726,
+    "std": 20.442739724937816
+  },
+  "rule_id": "full-comparison-v5--P100-072--direct_deepseek-rule-1",
+  "rule_sha256": "6f09bca3b0cee94c83cde428dc8b32ea633b62a7a0f76ed177a7b2a5a23b4612",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(100, maximum(0, 34.05040413747147 + 0.42581184909271963 * p22_pct + 0.7798561740877714 * p72_pct + -0.3315946550676762 * time_h + -0.005723814598824265 * p22_pct * p72_pct + 0.0012565271140308964 * p22_pct * time_h + 0.0021371792761103662 * p72_pct * time_h + 7.2894239059895655e-06 * time_h * time_h))",
+    "expression_bytes": 146,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 4,
+    "nodes": 83,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 1.8554832794709346,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

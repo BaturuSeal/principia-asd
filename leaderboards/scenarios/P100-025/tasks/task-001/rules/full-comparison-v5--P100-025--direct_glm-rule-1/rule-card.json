@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.06698886819909314,
+  "execution_status": "complete",
+  "expression": "pre + jump * (p0*rL + p1*rF + p2*dL + p3*d2L + p4*f) + p5*e + p6*discharge + p7*rest",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.4215071380805988,
+    "p1": 1.472809826630821,
+    "p2": 0.6161026922080322,
+    "p3": 0.20481281639166982,
+    "p4": -0.01839933140896205,
+    "p5": 0.0012877649732877298,
+    "p6": 0.0005148776982351019,
+    "p7": 0.004190921277864953
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": 0.4816201051749186,
+      "dL": 0.05519064059502225,
+      "discharge": -0.0723488715651203,
+      "e": -0.01270016453621338,
+      "f": 0.002100273614661436,
+      "jump": -0.08062770432939612,
+      "pre": -0.07596191635265877,
+      "rF": -0.08378591971008774,
+      "rL": -0.29454809425692435,
+      "rest": -0.0723488715651203
+    },
+    "mean": 0.01025700576480996,
+    "p90_abs": 0.14022539309264231,
+    "std": 0.0886977166733161
+  },
+  "rule_id": "full-comparison-v5--P100-025--direct_glm-rule-1",
+  "rule_sha256": "ae28af2c0178ad2c98e3d4171920a1a205a1b9960371aa3c208f136433adbe9e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "pre + jump * (-0.4215071380805988 * rL + 1.472809826630821 * rF + 0.6161026922080322 * dL + 0.20481281639166982 * d2L + -0.01839933140896205 * f) + 0.0012877649732877298 * e + 0.0005148776982351019 * discharge + 0.004190921277864953 * rest",
+    "expression_bytes": 84,
+    "free_parameters": 8,
+    "learned_state_bytes": 219,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.059884086351294226,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+    "education": "source derived years of formal education",
+    "japan": "country indicator"
+  },
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error",
+      "within_group_weight": "sample_weight"
+    },
+    "primary": "brier"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Contemporaneous cross-sectional earnings association using age/education/country. All10 plausible numeracy values are excluded: conditioned on background and unsuitable individual prediction scores. This is not future earnings or causal education return.",
+  "output": "target",
+  "output_description": "Upper three country-specific hourly-earnings deciles, excluding bonuses",
+  "output_units": "binary EARNHRDCLC2>=8",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-039",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "34e8ab5d4ff51c60ac68203e225dba02ada8307847a7b47c6015ba52594f20d8",
+  "source_task": "P100-039.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Respondents nested in country and deterministic ten hashblocks; not10 independent samples from plausible values. Repeated respondent information stays linked. Survey clustering not publicly fully reconstructible.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-039.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Upper three country-specific hourly-earnings deciles, excluding bonuses",
+  "version": "1.0.0rc2"
+}

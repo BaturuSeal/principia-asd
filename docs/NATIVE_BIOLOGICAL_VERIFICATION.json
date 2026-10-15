@@ -1,0 +1,223 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T01:01:04.792613+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 1867502,
+  "registered_source_files": 4,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-074/reconstruction.json",
+      "candidate_receipt_sha256": "ea8ff0f54f9a305b745b1f4e12bd3d96d2ac52920c55d895c324c56cb43d9607",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 301
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 86
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 86,
+            "reconstructed_rows": 86,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 86,
+            "reconstructed_rows": 86,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 215,
+            "reconstructed_rows": 215,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_curve_validation": {
+        "calibration_inventory_sha256": "f791aa9119556f6a21fc73923bec7ff4bc0199e358b5d0b5cff3105948ceb6f1",
+        "dose_curves": 9,
+        "independence_scope": "Complete dose curves; biological replicate identifiers and independently repeated assays are unavailable",
+        "recordings": 0,
+        "repeated_cell_recordings": [],
+        "response_scope": "Source fluorescence values; no raw optical acquisition, mechanistic identification or causal validation",
+        "source_cells": null,
+        "test_recording_date": null
+      },
+      "native_trace_validation": null,
+      "reader_source_sha256": "91a70c2e8511ea5ea80c616ef3aa6f7606b9e7d348b74ed1b1d42873c0444ff9",
+      "recipe_sha256": "5c92a4f36d76f1f2888d9802d9d17ed17daf197af3898bc401972d6ccdd057b0",
+      "rows": {
+        "dev": 86,
+        "test": 86,
+        "train": 215
+      },
+      "runtime_binding_sha256": "29d3a586021108d7cd8850cec4b22a99669b78afebf710c50ac70cf6244c96dd",
+      "scenario_id": "P100-074",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "dose-10",
+            "dose-7.5"
+          ],
+          "test": [
+            "dose-1",
+            "dose-5"
+          ],
+          "train": [
+            "dose-0.25",
+            "dose-0.5",
+            "dose-0.75",
+            "dose-2.5",
+            "dose-20"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      }
+    },
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-076/reconstruction.json",
+      "candidate_receipt_sha256": "dc3257c03ccf028b055c2f6ea2512fb1dfecdbf3fb9f57958eac864d9f7cc7ed",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 280
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 266
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 70,
+            "reconstructed_rows": 70,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 266,
+            "reconstructed_rows": 266,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 210,
+            "reconstructed_rows": 210,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_curve_validation": {
+        "calibration_inventory_sha256": "1615fe1b5a6c01dc520cdff9e5afc08b7e1434da43aaf5d232a0aa11537bc8ce",
+        "dose_curves": 0,
+        "independence_scope": "Whole culture dishes within recording dates; repeated sweeps/cells in one dish are not independent experimental units",
+        "recordings": 39,
+        "repeated_cell_recordings": [
+          {
+            "cell": "C4",
+            "date": "20250418",
+            "dish": "D4S3",
+            "recordings": [
+              "20250418_10kPa_DIV7_HWT_D4S3_C4_0004.abf",
+              "20250418_10kPa_DIV7_HWT_D4S3_C4_0008.abf"
+            ]
+          },
+          {
+            "cell": "C6",
+            "date": "20250418",
+            "dish": "D4S3",
+            "recordings": [
+              "20250418_10kPa_DIV7_HWT_D4S3_C6_0004.abf",
+              "20250418_10kPa_DIV7_HWT_D4S3_C6_0006.abf"
+            ]
+          },
+          {
+            "cell": "C1",
+            "date": "20250418",
+            "dish": "D4S4",
+            "recordings": [
+              "20250418_100Pa_DIV7_H2_D4S4_C1_0004.abf",
+              "20250418_100Pa_DIV7_H2_D4S4_C1_0005.abf"
+            ]
+          }
+        ],
+        "response_scope": "Author-derived spike counts and manual source quality flags; voltage recordings and spike detector independently unverified",
+        "source_cells": 36,
+        "test_recording_date": "20250418"
+      },
+      "native_trace_validation": null,
+      "reader_source_sha256": "91a70c2e8511ea5ea80c616ef3aa6f7606b9e7d348b74ed1b1d42873c0444ff9",
+      "recipe_sha256": "37af6c2850801fccdd519d7e32176dea1ea9ba6ac10c6675f2a975f560e021c6",
+      "rows": {
+        "dev": 70,
+        "test": 266,
+        "train": 210
+      },
+      "runtime_binding_sha256": "29d3a586021108d7cd8850cec4b22a99669b78afebf710c50ac70cf6244c96dd",
+      "scenario_id": "P100-076",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "20250417:D3S1",
+            "20250417:D3S5"
+          ],
+          "test": [
+            "20250418:D4S1",
+            "20250418:D4S3",
+            "20250418:D4S4",
+            "20250418:D4S5",
+            "20250418:D4S6",
+            "20250418:D4S7",
+            "20250418:D4S8",
+            "20250418:D4S9"
+          ],
+          "train": [
+            "20250416:D2S2",
+            "20250416:D2S3",
+            "20250416:D2S5",
+            "20250416:D2S6",
+            "20250417:D3S3",
+            "20250417:D3S4",
+            "20250417:D3S7"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      }
+    }
+  ],
+  "scope": "Curator-only native reconstruction and corrected development partition drafts, not scientific admission",
+  "status": "passed",
+  "test_targets_exported": false
+}

@@ -1,0 +1,499 @@
+{
+  "api_calls": 0,
+  "assessment": {
+    "accuracy": {
+      "aggregation": "equal_group_mean",
+      "invalid_output_rate": 0.0,
+      "mae": 0.0,
+      "primary": "rmse",
+      "primary_error": 0.0,
+      "rmse": 0.0
+    },
+    "api_calls": 0,
+    "by_group": [
+      {
+        "error": 0.0,
+        "group": "synthetic-assessment",
+        "rows": 4
+      }
+    ],
+    "candidate_id": "ca289c80c7bc8d91a51966b5467ab0d5129dc32798a729408386fca6fd84dd4a",
+    "coverage": {
+      "eligible": 4,
+      "fraction": 1.0,
+      "predicted": 4
+    },
+    "evaluator_policy": "host-search-explicit-state-v1-dev",
+    "fitting_attempts": 0,
+    "predictions": [
+      0.20719448398483664,
+      0.32832852032984283,
+      0.5109199444698764,
+      0.5928055160151634
+    ],
+    "ranking_authorized": false,
+    "scientific_review": "not_assessed",
+    "simplicity": {
+      "binding_receipt_bytes": 882,
+      "degrees_of_freedom": "not_assessed",
+      "expanded_expression": "0.0 + 1.0 * (0.4 + 0.2 * tanh((x - 0.0) / 2.0))",
+      "expression_bytes": 57,
+      "final_stage_parameters": 2,
+      "fixed_scientific_scalars": 0,
+      "free_parameters": 2,
+      "inherited_fitted_scalars": 2,
+      "learned_scalar_count": 6,
+      "learned_state_bytes": 48,
+      "learned_state_encoding": "float64 values, unique state IDs; excludes provenance metadata",
+      "literal_state_bytes": 0,
+      "nodes": 30,
+      "numeric_literal_count": 0,
+      "policy": "explicit-scalar-lineage-v1-dev",
+      "preprocessing": "Only operations expanded here; upstream measurement preprocessing remains separate",
+      "ranking_authorized": false,
+      "train_statistic_scalars": 2,
+      "weighted_operator_count": 7
+    },
+    "stability": {
+      "invalid_output_rate": 0.0,
+      "mean_relative_sensitivity": 0.060326547319672325,
+      "perturbation_labels_available": false,
+      "population_rows": 4,
+      "ranking": false,
+      "samples": 4,
+      "scope": "diagnostic"
+    },
+    "status": "valid",
+    "submission_sha256": "0303e6202054ec57f0d774526a5fdbcb33a43b723991a2774947726f2d50794f",
+    "uncertainty": {
+      "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+      "status": "not_assessed"
+    }
+  },
+  "checked_at": "2026-10-13T08:26:13.193648+00:00",
+  "evaluator_sha256": "848e01d414ad3a2221003c8b3382c6386f76f4b80acc9d3d0cbe6ee70181b1de",
+  "frozen_inquiry": {
+    "accounting": {
+      "api_calls": 0,
+      "cpu_scope": "current process; run in a dedicated bounded worker",
+      "cpu_seconds": 0.05298599999999998,
+      "duplicate_requests": 0,
+      "fitting_attempts": 3,
+      "optimizer_evaluations": 13,
+      "structures": 4,
+      "wall_seconds": 0.053192571038380265
+    },
+    "binding_policy": "explicit-scalar-lineage-v1-dev",
+    "candidates": [
+      {
+        "candidate_id": "0c5ad1f4edf2047e646198c7a760bbf194d8cc7735e8c5d7d05107938697379c",
+        "context": {
+          "dev_sha256": "657356dd399f8ff3d628ac55f95c7bfb11fbd8d1cbb5654fcc9b30cab410b351",
+          "task_sha256": "7822bf8e12f0367e13e1cc251f127bb03760654203c9f8bc4379547a1e4399c0",
+          "train_sha256": "5cea6492d9fa09cd1a234da6389061e7d56fd8c3b1761612a4b4a7bc8c7abb71"
+        },
+        "dev_error": 0.0,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * tanh((x - bound0) / bound1)",
+        "final_fit_source": "88b9ab22fcf662c4d6fd5d619d1e077aa094d5fe44e56c6cab6bfcb9080cf829",
+        "inputs": [
+          "x"
+        ],
+        "output": "y",
+        "parameter_uncertainty": "not_assessed",
+        "policy": "host-search-explicit-state-v1-dev",
+        "program": {
+          "execution_values": {
+            "bound0": 0.0,
+            "bound1": 2.0,
+            "p0": 0.4,
+            "p1": 0.2
+          },
+          "expression": "p0 + p1 * tanh((x - bound0) / bound1)",
+          "policy": "explicit-scalar-lineage-v1-dev",
+          "sha256": "e417af2a32faa9c0474d191191f60f893a42dc4ae9b1b8c98e27c12a5dd805b9",
+          "simplicity": {
+            "binding_receipt_bytes": 448,
+            "degrees_of_freedom": "not_assessed",
+            "expanded_expression": "0.4 + 0.2 * tanh((x - 0.0) / 2.0)",
+            "expression_bytes": 37,
+            "final_stage_parameters": 2,
+            "fixed_scientific_scalars": 0,
+            "free_parameters": 2,
+            "inherited_fitted_scalars": 0,
+            "learned_scalar_count": 4,
+            "learned_state_bytes": 32,
+            "learned_state_encoding": "float64 values, unique state IDs; excludes provenance metadata",
+            "literal_state_bytes": 0,
+            "nodes": 22,
+            "numeric_literal_count": 0,
+            "policy": "explicit-scalar-lineage-v1-dev",
+            "preprocessing": "Only operations expanded here; upstream measurement preprocessing remains separate",
+            "ranking_authorized": false,
+            "train_statistic_scalars": 2,
+            "weighted_operator_count": 5
+          },
+          "specification": {
+            "bindings": {
+              "center": "4df28550e28f1ef856553e75cee14b45264827023443e833adf5651c7481a3d3",
+              "scale": "b6a85dc03a0ab6ba1e73b97ab292b68f76205a8890852c70948a4f4ed57eaa69"
+            },
+            "expression": "p0+p1*z",
+            "inputs": [
+              "x"
+            ],
+            "kernels": {
+              "z": "tanh((x-center)/scale)"
+            },
+            "parameters": {
+              "p0": 0.4,
+              "p1": 0.2
+            }
+          },
+          "states": {
+            "4df28550e28f1ef856553e75cee14b45264827023443e833adf5651c7481a3d3": {
+              "artifact_sha256": "2701b8a93eeebacc6a59cd3671c30ea72251984e5176709bd6c319ab82fde2ca",
+              "kind": "train_statistic",
+              "value": 0.0,
+              "value_path": [
+                "values",
+                "center"
+              ]
+            },
+            "b6a85dc03a0ab6ba1e73b97ab292b68f76205a8890852c70948a4f4ed57eaa69": {
+              "artifact_sha256": "2701b8a93eeebacc6a59cd3671c30ea72251984e5176709bd6c319ab82fde2ca",
+              "kind": "train_statistic",
+              "value": 2.0,
+              "value_path": [
+                "values",
+                "scale"
+              ]
+            }
+          }
+        },
+        "representation": "bound_expression_v1",
+        "residuals": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "simplicity": {
+          "binding_receipt_bytes": 448,
+          "degrees_of_freedom": "not_assessed",
+          "expanded_expression": "0.4 + 0.2 * tanh((x - 0.0) / 2.0)",
+          "expression_bytes": 37,
+          "final_stage_parameters": 2,
+          "fixed_scientific_scalars": 0,
+          "free_parameters": 2,
+          "inherited_fitted_scalars": 0,
+          "learned_scalar_count": 4,
+          "learned_state_bytes": 32,
+          "learned_state_encoding": "float64 values, unique state IDs; excludes provenance metadata",
+          "literal_state_bytes": 0,
+          "nodes": 22,
+          "numeric_literal_count": 0,
+          "policy": "explicit-scalar-lineage-v1-dev",
+          "preprocessing": "Only operations expanded here; upstream measurement preprocessing remains separate",
+          "ranking_authorized": false,
+          "train_statistic_scalars": 2,
+          "weighted_operator_count": 5
+        },
+        "train_error": 0.0
+      },
+      {
+        "candidate_id": "ca289c80c7bc8d91a51966b5467ab0d5129dc32798a729408386fca6fd84dd4a",
+        "context": {
+          "dev_sha256": "657356dd399f8ff3d628ac55f95c7bfb11fbd8d1cbb5654fcc9b30cab410b351",
+          "task_sha256": "7822bf8e12f0367e13e1cc251f127bb03760654203c9f8bc4379547a1e4399c0",
+          "train_sha256": "5cea6492d9fa09cd1a234da6389061e7d56fd8c3b1761612a4b4a7bc8c7abb71"
+        },
+        "dev_error": 0.0,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * (bound3 + bound0 * tanh((x - bound1) / bound2))",
+        "final_fit_source": "a18fc90a36981629f0ad2beb7cc5aab82ab89254085213207b4ad3e0098c5d08",
+        "inputs": [
+          "x"
+        ],
+        "output": "y",
+        "parameter_uncertainty": "not_assessed",
+        "policy": "host-search-explicit-state-v1-dev",
+        "program": {
+          "execution_values": {
+            "bound0": 0.2,
+            "bound1": 0.0,
+            "bound2": 2.0,
+            "bound3": 0.4,
+            "p0": 0.0,
+            "p1": 1.0
+          },
+          "expression": "p0 + p1 * (bound3 + bound0 * tanh((x - bound1) / bound2))",
+          "policy": "explicit-scalar-lineage-v1-dev",
+          "sha256": "b27c47b48646d1944f0358f2d97b0cdb176a7fd2fd458fa254e813e14f89f60b",
+          "simplicity": {
+            "binding_receipt_bytes": 882,
+            "degrees_of_freedom": "not_assessed",
+            "expanded_expression": "0.0 + 1.0 * (0.4 + 0.2 * tanh((x - 0.0) / 2.0))",
+            "expression_bytes": 57,
+            "final_stage_parameters": 2,
+            "fixed_scientific_scalars": 0,
+            "free_parameters": 2,
+            "inherited_fitted_scalars": 2,
+            "learned_scalar_count": 6,
+            "learned_state_bytes": 48,
+            "learned_state_encoding": "float64 values, unique state IDs; excludes provenance metadata",
+            "literal_state_bytes": 0,
+            "nodes": 30,
+            "numeric_literal_count": 0,
+            "policy": "explicit-scalar-lineage-v1-dev",
+            "preprocessing": "Only operations expanded here; upstream measurement preprocessing remains separate",
+            "ranking_authorized": false,
+            "train_statistic_scalars": 2,
+            "weighted_operator_count": 7
+          },
+          "specification": {
+            "bindings": {
+              "state_072f4d717e8f431b6929c9e39a7c4c13b503ab6b46b9fe28329f6956c23df7e7": "072f4d717e8f431b6929c9e39a7c4c13b503ab6b46b9fe28329f6956c23df7e7",
+              "state_4df28550e28f1ef856553e75cee14b45264827023443e833adf5651c7481a3d3": "4df28550e28f1ef856553e75cee14b45264827023443e833adf5651c7481a3d3",
+              "state_b6a85dc03a0ab6ba1e73b97ab292b68f76205a8890852c70948a4f4ed57eaa69": "b6a85dc03a0ab6ba1e73b97ab292b68f76205a8890852c70948a4f4ed57eaa69",
+              "state_e3faf095b1276a3d3f1b807407a0c7cd174568a3a3287454029aa6ef83209ccc": "e3faf095b1276a3d3f1b807407a0c7cd174568a3a3287454029aa6ef83209ccc"
+            },
+            "expression": "p0+p1*K",
+            "inputs": [
+              "x"
+            ],
+            "kernels": {
+              "K": "state_e3faf095b1276a3d3f1b807407a0c7cd174568a3a3287454029aa6ef83209ccc + state_072f4d717e8f431b6929c9e39a7c4c13b503ab6b46b9fe28329f6956c23df7e7 * tanh((x - state_4df28550e28f1ef856553e75cee14b45264827023443e833adf5651c7481a3d3) / state_b6a85dc03a0ab6ba1e73b97ab292b68f76205a8890852c70948a4f4ed57eaa69)"
+            },
+            "parameters": {
+              "p0": 0.0,
+              "p1": 1.0
+            }
+          },
+          "states": {
+            "072f4d717e8f431b6929c9e39a7c4c13b503ab6b46b9fe28329f6956c23df7e7": {
+              "artifact_sha256": "88b9ab22fcf662c4d6fd5d619d1e077aa094d5fe44e56c6cab6bfcb9080cf829",
+              "kind": "train_fitted",
+              "value": 0.2,
+              "value_path": [
+                "values",
+                "p1"
+              ]
+            },
+            "4df28550e28f1ef856553e75cee14b45264827023443e833adf5651c7481a3d3": {
+              "artifact_sha256": "2701b8a93eeebacc6a59cd3671c30ea72251984e5176709bd6c319ab82fde2ca",
+              "kind": "train_statistic",
+              "value": 0.0,
+              "value_path": [
+                "values",
+                "center"
+              ]
+            },
+            "b6a85dc03a0ab6ba1e73b97ab292b68f76205a8890852c70948a4f4ed57eaa69": {
+              "artifact_sha256": "2701b8a93eeebacc6a59cd3671c30ea72251984e5176709bd6c319ab82fde2ca",
+              "kind": "train_statistic",
+              "value": 2.0,
+              "value_path": [
+                "values",
+                "scale"
+              ]
+            },
+            "e3faf095b1276a3d3f1b807407a0c7cd174568a3a3287454029aa6ef83209ccc": {
+              "artifact_sha256": "88b9ab22fcf662c4d6fd5d619d1e077aa094d5fe44e56c6cab6bfcb9080cf829",
+              "kind": "train_fitted",
+              "value": 0.4,
+              "value_path": [
+                "values",
+                "p0"
+              ]
+            }
+          }
+        },
+        "representation": "bound_expression_v1",
+        "residuals": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "simplicity": {
+          "binding_receipt_bytes": 882,
+          "degrees_of_freedom": "not_assessed",
+          "expanded_expression": "0.0 + 1.0 * (0.4 + 0.2 * tanh((x - 0.0) / 2.0))",
+          "expression_bytes": 57,
+          "final_stage_parameters": 2,
+          "fixed_scientific_scalars": 0,
+          "free_parameters": 2,
+          "inherited_fitted_scalars": 2,
+          "learned_scalar_count": 6,
+          "learned_state_bytes": 48,
+          "learned_state_encoding": "float64 values, unique state IDs; excludes provenance metadata",
+          "literal_state_bytes": 0,
+          "nodes": 30,
+          "numeric_literal_count": 0,
+          "policy": "explicit-scalar-lineage-v1-dev",
+          "preprocessing": "Only operations expanded here; upstream measurement preprocessing remains separate",
+          "ranking_authorized": false,
+          "train_statistic_scalars": 2,
+          "weighted_operator_count": 7
+        },
+        "train_error": 0.0
+      }
+    ],
+    "context": {
+      "dev_sha256": "657356dd399f8ff3d628ac55f95c7bfb11fbd8d1cbb5654fcc9b30cab410b351",
+      "task_sha256": "7822bf8e12f0367e13e1cc251f127bb03760654203c9f8bc4379547a1e4399c0",
+      "train_sha256": "5cea6492d9fa09cd1a234da6389061e7d56fd8c3b1761612a4b4a7bc8c7abb71"
+    },
+    "failures": [
+      {
+        "optimizer_evaluations": 0,
+        "reason": "Unbound literal state: use a trusted fixed or train-state binding",
+        "request": {
+          "bindings": {},
+          "expression": "0.123*x",
+          "initial": {},
+          "kernels": {}
+        }
+      },
+      {
+        "optimizer_evaluations": 1,
+        "reason": "Nonfinite training domain during fitting",
+        "request": {
+          "bindings": {},
+          "expression": "p0*log(x)",
+          "initial": {
+            "p0": 1
+          },
+          "kernels": {}
+        }
+      }
+    ],
+    "limits": {
+      "max_fits": 4,
+      "max_optimizer_evaluations": 4096,
+      "max_seconds": 2400,
+      "max_structures": 8000
+    },
+    "policy": "host-search-explicit-state-v1-dev",
+    "ranking_authorized": false,
+    "scope": "development host integration",
+    "sha256": "0303e6202054ec57f0d774526a5fdbcb33a43b723991a2774947726f2d50794f",
+    "source_artifacts": {
+      "2701b8a93eeebacc6a59cd3671c30ea72251984e5176709bd6c319ab82fde2ca": {
+        "input": "x",
+        "kind": "train_statistic",
+        "numpy_version": "2.5.4",
+        "operation": "numpy_mean_std_ddof0",
+        "policy": "host-search-explicit-state-v1-dev",
+        "rows": 7,
+        "scope": "train",
+        "status": "complete",
+        "train_sha256": "5cea6492d9fa09cd1a234da6389061e7d56fd8c3b1761612a4b4a7bc8c7abb71",
+        "values": {
+          "center": 0.0,
+          "scale": 2.0
+        }
+      },
+      "346ddd10d02d260d0b78fb6016463ac71b6e30589a940083ebc964473d51cccd": {
+        "kind": "fixed_scientific",
+        "meaning": "Arithmetic identities, squared terms and binary probability bounds",
+        "operation": "structural_constant_inventory_v1",
+        "policy": "host-search-explicit-state-v1-dev",
+        "scope": "fixed",
+        "status": "complete",
+        "values": {
+          "one": 1.0,
+          "two": 2.0,
+          "zero": 0.0
+        }
+      },
+      "88b9ab22fcf662c4d6fd5d619d1e077aa094d5fe44e56c6cab6bfcb9080cf829": {
+        "folds": 1,
+        "initial": {
+          "p0": 0,
+          "p1": 1
+        },
+        "kind": "train_fitted",
+        "max_nfev": 60,
+        "numpy_version": "2.5.4",
+        "objective": "train squared residuals standardized by train target std",
+        "operation": "scipy_least_squares_trf",
+        "optimizer_evaluations": 9,
+        "optimizer_status": 1,
+        "policy": "host-search-explicit-state-v1-dev",
+        "program_sha256": "e417af2a32faa9c0474d191191f60f893a42dc4ae9b1b8c98e27c12a5dd805b9",
+        "request_sha256": "35ccd36f324415edaf27f3cad41035b83505370b8f6f3d0eab3763acb158b8bc",
+        "restarts": 0,
+        "scipy_version": "1.18.1",
+        "scope": "train",
+        "status": "complete",
+        "task_sha256": "7822bf8e12f0367e13e1cc251f127bb03760654203c9f8bc4379547a1e4399c0",
+        "template_sha256": "9ef28e48a196be02bbbb80a947f2c0908fdfb09c650ad4f7cf2963ce6ecc8c57",
+        "train_sha256": "5cea6492d9fa09cd1a234da6389061e7d56fd8c3b1761612a4b4a7bc8c7abb71",
+        "values": {
+          "p0": 0.4,
+          "p1": 0.2
+        }
+      },
+      "a18fc90a36981629f0ad2beb7cc5aab82ab89254085213207b4ad3e0098c5d08": {
+        "folds": 1,
+        "initial": {
+          "p0": 0,
+          "p1": 1
+        },
+        "kind": "train_fitted",
+        "max_nfev": 60,
+        "numpy_version": "2.5.4",
+        "objective": "train squared residuals standardized by train target std",
+        "operation": "scipy_least_squares_trf",
+        "optimizer_evaluations": 3,
+        "optimizer_status": 1,
+        "policy": "host-search-explicit-state-v1-dev",
+        "program_sha256": "b27c47b48646d1944f0358f2d97b0cdb176a7fd2fd458fa254e813e14f89f60b",
+        "request_sha256": "ff9fb0cefd13b0565beeafb96adf375ee5413cf9ee2e717d15082ee036dd2c9b",
+        "restarts": 0,
+        "scipy_version": "1.18.1",
+        "scope": "train",
+        "status": "complete",
+        "task_sha256": "7822bf8e12f0367e13e1cc251f127bb03760654203c9f8bc4379547a1e4399c0",
+        "template_sha256": "b27c47b48646d1944f0358f2d97b0cdb176a7fd2fd458fa254e813e14f89f60b",
+        "train_sha256": "5cea6492d9fa09cd1a234da6389061e7d56fd8c3b1761612a4b4a7bc8c7abb71",
+        "values": {
+          "p0": 0.0,
+          "p1": 1.0
+        }
+      }
+    },
+    "task": {
+      "inputs": [
+        "x"
+      ],
+      "metric": {
+        "primary": "rmse"
+      },
+      "output": "y",
+      "stability": {
+        "input_ranges": {
+          "x": [
+            -3.0,
+            3.0
+          ]
+        },
+        "output_scale": 0.1357675023811515,
+        "ranking": false,
+        "relative_noise": 0.01
+      }
+    }
+  },
+  "historical_campaign_changed": false,
+  "integration_remaining": [
+    "multi-role model protocol",
+    "bounded worker and UI method option",
+    "symmetric control/adaptation integration",
+    "new configuration freeze and pilot"
+  ],
+  "module_sha256": "c032cc66cd9fcdb352a29f7440984361e086f1e228694d46145769ce86e60fb2",
+  "private_data_accessed": false,
+  "ranking_authorized": false,
+  "real_scientific_trial": false,
+  "scope": "Synthetic host normalization, real fitting, kernel promotion, freeze and zero-fit assessment",
+  "source_is_installed_distribution": true,
+  "status": "passed_development_integration"
+}

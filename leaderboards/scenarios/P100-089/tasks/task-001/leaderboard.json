@@ -1,0 +1,2832 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.05187611503060907
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-089--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0659055020660162
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-089--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.13042707298882306
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-089--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.4986795110162348
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-089--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 116,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 116,
+        "wall_seconds": 1.922249685972929
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-089--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 5.628694204962812
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-089--direct_deepseek",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 81,
+        "structures": 1,
+        "wall_seconds": 16.8095055349404
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-089--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 10.606134997098707
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-089--direct_qwen",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 10.231473695952445
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-089--direct_kimi",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 3,
+        "optimizer_evaluations": 27,
+        "structures": 2,
+        "wall_seconds": 8.270006003091112
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-089--best_of_n",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 3,
+        "optimizer_evaluations": 0,
+        "structures": 3,
+        "wall_seconds": 11.470683317980729
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-089--feedback_refinement",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 6,
+        "optimizer_evaluations": 18,
+        "structures": 1,
+        "wall_seconds": 42.426290010917
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-089--tool_agent",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 299,
+        "model_calls": 4,
+        "optimizer_evaluations": 191,
+        "structures": 125,
+        "wall_seconds": 53.67962870397605
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-089--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-089--tree_control-rule-1",
+    "full-comparison-v5--P100-089--direct_glm-rule-1",
+    "full-comparison-v5--P100-089--principia_engine-rule-1",
+    "full-comparison-v5--P100-089--symbolic_control-rule-3",
+    "full-comparison-v5--P100-089--principia_engine-rule-3",
+    "full-comparison-v5--P100-089--symbolic_control-rule-2",
+    "full-comparison-v5--P100-089--principia_engine-rule-2",
+    "full-comparison-v5--P100-089--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.2784638823735101,
+        "primary": "brier",
+        "primary_error": 0.14650474949760858,
+        "rmse": 0.3827593885166092
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.10424179083845339,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.26807465471228725,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.15840353042677222,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.09685407844861242,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.17979609909149058,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.18045614975078103,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.19215933630537738,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.1835421390558779,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.13688422889507587,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.07952201456059453,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.11879406602829366,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.059328905857686805,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.1248365358990582,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-089--tree_control-rule-1",
+        "rule_sha256": "0a89de6c2de8a300eba5f104588534802b0eefcce6fd202bd55cc6fa52d761c8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 83,
+          "weighted_operator_count": 83
+        },
+        "task_id": "P100-089.compact.v2",
+        "tree": {
+          "feature": [
+            7,
+            1,
+            0,
+            3,
+            0,
+            8,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            8,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            4,
+            8,
+            -2,
+            -2,
+            8,
+            -2,
+            -2,
+            0,
+            8,
+            -2,
+            -2,
+            6,
+            -2,
+            6,
+            -2,
+            -2,
+            1,
+            8,
+            1,
+            3,
+            4,
+            -2,
+            -2,
+            -2,
+            0,
+            4,
+            -2,
+            -2,
+            8,
+            -2,
+            -2,
+            4,
+            3,
+            -2,
+            -2,
+            0,
+            8,
+            -2,
+            -2,
+            6,
+            -2,
+            -2,
+            0,
+            8,
+            -2,
+            8,
+            -2,
+            -2,
+            1,
+            0,
+            8,
+            -2,
+            -2,
+            3,
+            -2,
+            -2,
+            6,
+            8,
+            -2,
+            -2,
+            3,
+            -2,
+            -2
+          ],
+          "features": [
+            "reward",
+            "probability",
+            "child",
+            "age_child",
+            "multi",
+            "description",
+            "trial_progress",
+            "lag_choice",
+            "history_mean",
+            "has_history"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            -1,
+            -1,
+            9,
+            -1,
+            -1,
+            12,
+            13,
+            -1,
+            -1,
+            16,
+            -1,
+            -1,
+            19,
+            -1,
+            21,
+            22,
+            -1,
+            -1,
+            25,
+            -1,
+            -1,
+            28,
+            29,
+            -1,
+            -1,
+            32,
+            -1,
+            34,
+            -1,
+            -1,
+            37,
+            38,
+            39,
+            40,
+            41,
+            -1,
+            -1,
+            -1,
+            45,
+            46,
+            -1,
+            -1,
+            49,
+            -1,
+            -1,
+            52,
+            53,
+            -1,
+            -1,
+            56,
+            57,
+            -1,
+            -1,
+            60,
+            -1,
+            -1,
+            63,
+            64,
+            -1,
+            66,
+            -1,
+            -1,
+            69,
+            70,
+            71,
+            -1,
+            -1,
+            74,
+            -1,
+            -1,
+            77,
+            78,
+            -1,
+            -1,
+            81,
+            -1,
+            -1
+          ],
+          "right": [
+            36,
+            27,
+            18,
+            11,
+            8,
+            7,
+            -1,
+            -1,
+            10,
+            -1,
+            -1,
+            15,
+            14,
+            -1,
+            -1,
+            17,
+            -1,
+            -1,
+            20,
+            -1,
+            24,
+            23,
+            -1,
+            -1,
+            26,
+            -1,
+            -1,
+            31,
+            30,
+            -1,
+            -1,
+            33,
+            -1,
+            35,
+            -1,
+            -1,
+            62,
+            51,
+            44,
+            43,
+            42,
+            -1,
+            -1,
+            -1,
+            48,
+            47,
+            -1,
+            -1,
+            50,
+            -1,
+            -1,
+            55,
+            54,
+            -1,
+            -1,
+            59,
+            58,
+            -1,
+            -1,
+            61,
+            -1,
+            -1,
+            68,
+            65,
+            -1,
+            67,
+            -1,
+            -1,
+            76,
+            73,
+            72,
+            -1,
+            -1,
+            75,
+            -1,
+            -1,
+            80,
+            79,
+            -1,
+            -1,
+            82,
+            -1,
+            -1
+          ],
+          "threshold": [
+            0.25,
+            0.75,
+            5.0,
+            2.5,
+            3.0,
+            0.6908153593540192,
+            -2.0,
+            -2.0,
+            0.4150000065565109,
+            -2.0,
+            -2.0,
+            3.0,
+            0.5185439586639404,
+            -2.0,
+            -2.0,
+            0.2900000065565109,
+            -2.0,
+            -2.0,
+            0.2900000065565109,
+            -2.0,
+            0.5,
+            0.29469987750053406,
+            -2.0,
+            -2.0,
+            0.42497916519641876,
+            -2.0,
+            -2.0,
+            3.0,
+            0.47943662106990814,
+            -2.0,
+            -2.0,
+            0.21249999850988388,
+            -2.0,
+            0.512499988079071,
+            -2.0,
+            -2.0,
+            0.4150000065565109,
+            0.6254771053791046,
+            0.2900000065565109,
+            2.5,
+            0.5,
+            -2.0,
+            -2.0,
+            -2.0,
+            5.0,
+            0.5,
+            -2.0,
+            -2.0,
+            0.4641689956188202,
+            -2.0,
+            -2.0,
+            0.5,
+            2.5,
+            -2.0,
+            -2.0,
+            5.0,
+            0.739262193441391,
+            -2.0,
+            -2.0,
+            0.3125,
+            -2.0,
+            -2.0,
+            3.0,
+            0.5832134485244751,
+            -2.0,
+            0.7695074677467346,
+            -2.0,
+            -2.0,
+            0.75,
+            5.0,
+            0.6877216398715973,
+            -2.0,
+            -2.0,
+            5.5,
+            -2.0,
+            -2.0,
+            0.2875000089406967,
+            0.6582156717777252,
+            -2.0,
+            -2.0,
+            8.5,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            0.5414947271893626,
+            0.2957462874402215,
+            0.2350217076700434,
+            0.16514418771269926,
+            0.1105127604776399,
+            0.02131336405529954,
+            0.015424164524421594,
+            0.07222222222222222,
+            0.17159763313609466,
+            0.10737527114967461,
+            0.3429811866859624,
+            0.3429878048780488,
+            0.19881305637982197,
+            0.28888888888888886,
+            0.1659919028340081,
+            0.4952978056426332,
+            0.3819241982507289,
+            0.6271186440677966,
+            0.5290128108515448,
+            0.19196428571428573,
+            0.5974614687216682,
+            0.4572317262830482,
+            0.16091954022988506,
+            0.5671641791044776,
+            0.7934782608695652,
+            0.7427385892116183,
+            0.8493150684931506,
+            0.7007722007722008,
+            0.3532608695652174,
+            0.21354166666666666,
+            0.5056818181818182,
+            0.8922155688622755,
+            0.7323232323232324,
+            0.9595744680851064,
+            0.921875,
+            0.9856115107913669,
+            0.7470006314460114,
+            0.5594865372573575,
+            0.39234184239733627,
+            0.2580993520518359,
+            0.19610570236439498,
+            0.3248407643312102,
+            0.0962962962962963,
+            0.47342995169082125,
+            0.5342465753424658,
+            0.4321223709369025,
+            0.6151315789473685,
+            0.1780821917808219,
+            0.6855524079320113,
+            0.5517241379310345,
+            0.8156424581005587,
+            0.7758620689655172,
+            0.658252427184466,
+            0.584,
+            0.7283018867924528,
+            0.8449258836944128,
+            0.7756653992395437,
+            0.6974358974358974,
+            0.8217522658610272,
+            0.9487179487179487,
+            0.9257142857142857,
+            0.9715909090909091,
+            0.8419467343056436,
+            0.5059445178335535,
+            0.25,
+            0.6462167689161554,
+            0.5192307692307693,
+            0.7402135231316725,
+            0.8877679697351829,
+            0.8136807817589576,
+            0.7353612167300381,
+            0.6768507638072856,
+            0.8426724137931034,
+            0.8723646723646724,
+            0.9204064352243861,
+            0.7735191637630662,
+            0.9794437726723095,
+            0.9472954230235784,
+            0.924433249370277,
+            0.9753086419753086,
+            0.9926136363636363,
+            0.9958677685950413,
+            0.9772727272727273
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--tree_control-rule-1",
+      "rule_sha256": "0a89de6c2de8a300eba5f104588534802b0eefcce6fd202bd55cc6fa52d761c8",
+      "run_id": "full-comparison-v5--P100-089--tree_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 124,
+        "learned_state_bytes": 3555,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 83
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.004505180981815702,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.2849287038906713,
+        "primary": "brier",
+        "primary_error": 0.1537668265214757,
+        "rmse": 0.39213113434344343
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.11399403422611966,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.25874539341606984,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.13726706029514976,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.09105150115769231,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.2126702256919189,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.18145463077911658,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.21148408267398847,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.19978384315676412,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.13641823887574014,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.11160745547931587,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.13821229361628365,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.05251315888954882,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.12634945113009055,
+        "execution_status": "complete",
+        "expression": "0.5*(1 + tanh(p0 + p1*(reward*probability) + p2*(history_mean - 0.5) + p3*(lag_choice - 0.5) + p4*child + p5*trial_progress + p6*multi + p7*description))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -1.5005496277627237,
+          "p1": 0.7570317301400727,
+          "p2": 1.5787416162955994,
+          "p3": 0.633024793346678,
+          "p4": 0.3942761037149126,
+          "p5": -0.14497275159198234,
+          "p6": 0.0693908655057992,
+          "p7": -0.09350017790017545
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": 0.03940510776736004,
+            "child": 0.040819333672708034,
+            "description": 0.01946246534671856,
+            "has_history": 0.04848546322171508,
+            "history_mean": 0.009392293731229942,
+            "lag_choice": -0.010918973582333865,
+            "multi": -0.0008219599592600624,
+            "probability": 0.0019391007771315397,
+            "reward": 0.004967860346392809,
+            "trial_progress": 0.00434382674185436
+          },
+          "mean": 0.024119349823195014,
+          "p90_abs": 0.6383774127842584,
+          "std": 0.35134064963078493
+        },
+        "rule_id": "full-comparison-v5--P100-089--direct_glm-rule-1",
+        "rule_sha256": "dd0355522a3c36cb13169181923013375f0bdd3f96f061a006f1afd497b1cd8d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.5 * (1 + tanh(-1.5005496277627237 + 0.7570317301400727 * (reward * probability) + 1.5787416162955994 * (history_mean - 0.5) + 0.633024793346678 * (lag_choice - 0.5) + 0.3942761037149126 * child + -0.14497275159198234 * trial_progress + 0.0693908655057992 * multi + -0.09350017790017545 * description))",
+          "expression_bytes": 153,
+          "free_parameters": 8,
+          "learned_state_bytes": 212,
+          "literal_state_bytes": 10,
+          "nodes": 78,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 20
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.13597163888907224,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "0.5*(1 + tanh(p0 + p1*(reward*probability) + p2*(history_mean - 0.5) + p3*(lag_choice - 0.5) + p4*child + p5*trial_progress + p6*multi + p7*description))",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-089--direct_glm-rule-1",
+      "rule_sha256": "dd0355522a3c36cb13169181923013375f0bdd3f96f061a006f1afd497b1cd8d",
+      "run_id": "full-comparison-v5--P100-089--direct_glm",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.5 * (1 + tanh(-1.5005496277627237 + 0.7570317301400727 * (reward * probability) + 1.5787416162955994 * (history_mean - 0.5) + 0.633024793346678 * (lag_choice - 0.5) + 0.3942761037149126 * child + -0.14497275159198234 * trial_progress + 0.0693908655057992 * multi + -0.09350017790017545 * description))",
+        "expression_bytes": 153,
+        "free_parameters": 8,
+        "learned_state_bytes": 212,
+        "literal_state_bytes": 10,
+        "nodes": 78,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 20
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01296212378517047,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.3145484356098506,
+        "primary": "brier",
+        "primary_error": 0.15385660793275327,
+        "rmse": 0.39224559644788015
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.12874857208824209,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.21787740532620503,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.14439969333653513,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.11037111165659898,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.19434168875163507,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.17714116421230633,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.20468047566845973,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.18890911462728555,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.13628709164072314,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.11386725577636307,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.14910487007723128,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.08055085203145369,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.14101186961425352,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(reward)+p2*(probability)+p3*(child)+p4*(age_child)+p5*(multi)+p6*(description)+p7*(trial_progress)+p8*(lag_choice)+p9*(history_mean)+p10*(has_history)))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.439350890238386,
+          "p1": 0.10124025259822102,
+          "p10": -0.11132277674222976,
+          "p2": 0.6542177097092128,
+          "p3": 0.2038582984462,
+          "p4": -0.012000216274842641,
+          "p5": 0.0046825956321604936,
+          "p6": -0.043961328449351224,
+          "p7": -0.04361962097707332,
+          "p8": 0.23159369077854766,
+          "p9": 0.34304192342286627
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": 0.025471407027164324,
+            "child": 0.026464114602708137,
+            "description": 0.034925948680531345,
+            "has_history": 0.026231646247721965,
+            "history_mean": -0.03141027957914037,
+            "lag_choice": -0.04096342441634974,
+            "multi": 0.0027029872203045953,
+            "probability": -0.11432138084481676,
+            "reward": -0.02340034265072078,
+            "trial_progress": 0.012888656128771414
+          },
+          "mean": 0.017256564302106134,
+          "p90_abs": 0.6014445627576578,
+          "std": 0.37286982869549795
+        },
+        "rule_id": "full-comparison-v5--P100-089--linear_control-rule-1",
+        "rule_sha256": "39357d9aa4cbaf1f988686e00a1b152dca4364fba9e605c44e1c365956d2f81c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.439350890238386 + 0.10124025259822102 * reward + 0.6542177097092128 * probability + 0.2038582984462 * child + -0.012000216274842641 * age_child + 0.0046825956321604936 * multi + -0.043961328449351224 * description + -0.04361962097707332 * trial_progress + 0.23159369077854766 * lag_choice + 0.34304192342286627 * history_mean + -0.11132277674222976 * has_history))",
+          "expression_bytes": 179,
+          "free_parameters": 11,
+          "learned_state_bytes": 300,
+          "literal_state_bytes": 2,
+          "nodes": 91,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 22
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.14393169200112274,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(reward)+p2*(probability)+p3*(child)+p4*(age_child)+p5*(multi)+p6*(description)+p7*(trial_progress)+p8*(lag_choice)+p9*(history_mean)+p10*(has_history)))",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--linear_control-rule-1",
+      "rule_sha256": "39357d9aa4cbaf1f988686e00a1b152dca4364fba9e605c44e1c365956d2f81c",
+      "run_id": "full-comparison-v5--P100-089--linear_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.439350890238386 + 0.10124025259822102 * reward + 0.6542177097092128 * probability + 0.2038582984462 * child + -0.012000216274842641 * age_child + 0.0046825956321604936 * multi + -0.043961328449351224 * description + -0.04361962097707332 * trial_progress + 0.23159369077854766 * lag_choice + 0.34304192342286627 * history_mean + -0.11132277674222976 * has_history))",
+        "expression_bytes": 179,
+        "free_parameters": 11,
+        "learned_state_bytes": 300,
+        "literal_state_bytes": 2,
+        "nodes": 91,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 22
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.010553033235759186,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.3145484356098506,
+        "primary": "brier",
+        "primary_error": 0.15385660793275327,
+        "rmse": 0.39224559644788015
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.12874857208824209,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.21787740532620503,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.14439969333653513,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.11037111165659898,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.19434168875163507,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.17714116421230633,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.20468047566845973,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.18890911462728555,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.13628709164072314,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.11386725577636307,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.14910487007723128,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.08055085203145369,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.14101186961425352,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(reward)+p2*(probability)+p3*(child)+p4*(age_child)+p5*(multi)+p6*(description)+p7*(trial_progress)+p8*(lag_choice)+p9*(history_mean)+p10*(has_history)))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.439350890238386,
+          "p1": 0.10124025259822102,
+          "p10": -0.11132277674222976,
+          "p2": 0.6542177097092128,
+          "p3": 0.2038582984462,
+          "p4": -0.012000216274842641,
+          "p5": 0.0046825956321604936,
+          "p6": -0.043961328449351224,
+          "p7": -0.04361962097707332,
+          "p8": 0.23159369077854766,
+          "p9": 0.34304192342286627
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": 0.025471407027164324,
+            "child": 0.026464114602708137,
+            "description": 0.034925948680531345,
+            "has_history": 0.026231646247721965,
+            "history_mean": -0.03141027957914037,
+            "lag_choice": -0.04096342441634974,
+            "multi": 0.0027029872203045953,
+            "probability": -0.11432138084481676,
+            "reward": -0.02340034265072078,
+            "trial_progress": 0.012888656128771414
+          },
+          "mean": 0.017256564302106134,
+          "p90_abs": 0.6014445627576578,
+          "std": 0.37286982869549795
+        },
+        "rule_id": "full-comparison-v5--P100-089--polynomial_control-rule-1",
+        "rule_sha256": "73af281824a80bea56e26296ae55427deb09f98210973e6b7b56382fca1d538c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.439350890238386 + 0.10124025259822102 * reward + 0.6542177097092128 * probability + 0.2038582984462 * child + -0.012000216274842641 * age_child + 0.0046825956321604936 * multi + -0.043961328449351224 * description + -0.04361962097707332 * trial_progress + 0.23159369077854766 * lag_choice + 0.34304192342286627 * history_mean + -0.11132277674222976 * has_history))",
+          "expression_bytes": 179,
+          "free_parameters": 11,
+          "learned_state_bytes": 300,
+          "literal_state_bytes": 2,
+          "nodes": 91,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 22
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.14393169200112274,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(reward)+p2*(probability)+p3*(child)+p4*(age_child)+p5*(multi)+p6*(description)+p7*(trial_progress)+p8*(lag_choice)+p9*(history_mean)+p10*(has_history)))",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--polynomial_control-rule-1",
+      "rule_sha256": "73af281824a80bea56e26296ae55427deb09f98210973e6b7b56382fca1d538c",
+      "run_id": "full-comparison-v5--P100-089--polynomial_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.439350890238386 + 0.10124025259822102 * reward + 0.6542177097092128 * probability + 0.2038582984462 * child + -0.012000216274842641 * age_child + 0.0046825956321604936 * multi + -0.043961328449351224 * description + -0.04361962097707332 * trial_progress + 0.23159369077854766 * lag_choice + 0.34304192342286627 * history_mean + -0.11132277674222976 * has_history))",
+        "expression_bytes": 179,
+        "free_parameters": 11,
+        "learned_state_bytes": 300,
+        "literal_state_bytes": 2,
+        "nodes": 91,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 22
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.010553033235759186,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.2859280984272644,
+        "primary": "brier",
+        "primary_error": 0.15442922468784734,
+        "rmse": 0.3929748397643892
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.1138319844915101,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.25868892908114804,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.13822929491493438,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.0921774958862173,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.2139620763353006,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.18333237692428647,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.21186630025207215,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.20044826502083668,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.13720857389996352,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.11165810921594822,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.13932443121436014,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.052422859017590376,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.12714475159422964,
+        "execution_status": "complete",
+        "expression": "0.5*(1+tanh(p0+p1*(reward*probability/7)+p2*lag_choice+p3*history_mean+p4*child))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -2.679067231090268,
+          "p1": 5.3116235999407735,
+          "p2": 0.6430327639715909,
+          "p3": 1.5989743953594013,
+          "p4": 0.40920026875299215
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": 0.04014526912244148,
+            "child": 0.041516133277242614,
+            "description": 0.05265792000478907,
+            "has_history": 0.051770829967896836,
+            "history_mean": 0.010655499848443292,
+            "lag_choice": -0.010288640195832177,
+            "multi": -0.03576603414631807,
+            "probability": 0.001124289069468953,
+            "reward": 0.008153484665016426,
+            "trial_progress": 0.03619402646455435
+          },
+          "mean": 0.024427917463559788,
+          "p90_abs": 0.6332727335483432,
+          "std": 0.35232271525304737
+        },
+        "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-1",
+        "rule_sha256": "238064333ec1406f6ac672c8f34934b60de89e0797cdc69b40a6390a4511a82a",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.5 * (1 + tanh(-2.679067231090268 + 5.3116235999407735 * (reward * probability / 7) + 0.6430327639715909 * lag_choice + 1.5989743953594013 * history_mean + 0.40920026875299215 * child))",
+          "expression_bytes": 81,
+          "free_parameters": 5,
+          "learned_state_bytes": 131,
+          "literal_state_bytes": 5,
+          "nodes": 51,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.13654811091562083,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "0.5*(1+tanh(p0+p1*(reward*probability/7)+p2*lag_choice+p3*history_mean+p4*child))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-1",
+      "rule_sha256": "238064333ec1406f6ac672c8f34934b60de89e0797cdc69b40a6390a4511a82a",
+      "run_id": "full-comparison-v5--P100-089--principia_engine",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.5 * (1 + tanh(-2.679067231090268 + 5.3116235999407735 * (reward * probability / 7) + 0.6430327639715909 * lag_choice + 1.5989743953594013 * history_mean + 0.40920026875299215 * child))",
+        "expression_bytes": 81,
+        "free_parameters": 5,
+        "learned_state_bytes": 131,
+        "literal_state_bytes": 5,
+        "nodes": 51,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.013033846832173014,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.3282415492554765,
+        "primary": "brier",
+        "primary_error": 0.15699068178377526,
+        "rmse": 0.39622049642058554
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.13576700814860748,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.21185212544301668,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.14560414256434112,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.11807716817477745,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.1925229082917656,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.18704314621643628,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.18853416435955994,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.1884292110059174,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.13897685374035146,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.1256941386997143,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.15256079603157915,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.09882651872923648,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.1389353691141939,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.013887053772561851,
+          "p1": 0.16381727207296937,
+          "p2": -0.10271419223464907,
+          "p3": 0.5963403725518669
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": -0.0639470290769173,
+            "child": -0.06291399284114974,
+            "description": 0.05711528162776724,
+            "has_history": 0.04889629345687808,
+            "history_mean": -0.06786776278172345,
+            "lag_choice": -0.06779912547202292,
+            "multi": -0.019605077402004113,
+            "probability": -0.1311043543466298,
+            "reward": -0.09118455817747573,
+            "trial_progress": 0.03792976700924617
+          },
+          "mean": 0.024383925795274108,
+          "p90_abs": 0.5880115100260246,
+          "std": 0.3697134108632299
+        },
+        "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-3",
+        "rule_sha256": "10cd2c381d945cade4d5aec803d6fd31f33fdec2422e7157138f5130e45a102a",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.013887053772561851 + 0.16381727207296937 * (reward * probability) + -0.10271419223464907 * (probability * lag_choice) + 0.5963403725518669 * (lag_choice * history_mean)))",
+          "expression_bytes": 105,
+          "free_parameters": 4,
+          "learned_state_bytes": 109,
+          "literal_state_bytes": 2,
+          "nodes": 47,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 11
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.14869623067819784,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-3",
+      "rule_sha256": "10cd2c381d945cade4d5aec803d6fd31f33fdec2422e7157138f5130e45a102a",
+      "run_id": "full-comparison-v5--P100-089--symbolic_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.013887053772561851 + 0.16381727207296937 * (reward * probability) + -0.10271419223464907 * (probability * lag_choice) + 0.5963403725518669 * (lag_choice * history_mean)))",
+        "expression_bytes": 105,
+        "free_parameters": 4,
+        "learned_state_bytes": 109,
+        "literal_state_bytes": 2,
+        "nodes": 47,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 11
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01081323313290862,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.32928995745635004,
+        "primary": "brier",
+        "primary_error": 0.15719281116792266,
+        "rmse": 0.39647548621311085
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.13477882342607211,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.21076908669369332,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.14873491225994492,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.11623869961231137,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.1937013368328388,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.18706302477249842,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.1915129372031301,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.1891130054089528,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.14108244502367703,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.12300076205230288,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.15340243111967763,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.09691626960997263,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.13959651890840502,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(reward*probability/7)+p2*(lag_choice*history_mean)))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.029618582873527727,
+          "p1": 1.0669040616472083,
+          "p2": 0.5292368232205733
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": -0.06914594591307292,
+            "child": -0.06813059915989247,
+            "description": 0.053693628050338366,
+            "has_history": 0.048774771730847585,
+            "history_mean": -0.07900545591660194,
+            "lag_choice": -0.05583852795792871,
+            "multi": -0.02281807607384936,
+            "probability": -0.12140335505672595,
+            "reward": -0.1076928241871132,
+            "trial_progress": 0.0408187721482692
+          },
+          "mean": 0.024284830348803216,
+          "p90_abs": 0.5827501853010607,
+          "std": 0.37061433447206465
+        },
+        "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-3",
+        "rule_sha256": "c31e3e3c7b2169d72d3da29471ec32a9d75aced960446ca6975f22581723cc2f",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.029618582873527727 + 1.0669040616472083 * (reward * probability / 7) + 0.5292368232205733 * (lag_choice * history_mean)))",
+          "expression_bytes": 79,
+          "free_parameters": 3,
+          "learned_state_bytes": 80,
+          "literal_state_bytes": 3,
+          "nodes": 38,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 9
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.14916064278115593,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(reward*probability/7)+p2*(lag_choice*history_mean)))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-3",
+      "rule_sha256": "c31e3e3c7b2169d72d3da29471ec32a9d75aced960446ca6975f22581723cc2f",
+      "run_id": "full-comparison-v5--P100-089--principia_engine",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.029618582873527727 + 1.0669040616472083 * (reward * probability / 7) + 0.5292368232205733 * (lag_choice * history_mean)))",
+        "expression_bytes": 79,
+        "free_parameters": 3,
+        "learned_state_bytes": 80,
+        "literal_state_bytes": 3,
+        "nodes": 38,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 9
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01034942839919466,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.32811110494244966,
+        "primary": "brier",
+        "primary_error": 0.15794804673979204,
+        "rmse": 0.39742678160862793
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.1356080685898513,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.21565656791454885,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.14671876572657092,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.11711597030355295,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.19304279730714663,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.18696393676927175,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.18964335685298508,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.1900037397751288,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.14075092138789314,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.12761596896706817,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.15189221888586787,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.10036424839761907,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.13860978098003746,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)+p4*(probability*history_mean)+p5*(tanh((probability-0.5246893626776707)/0.26494115732924056))))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.05445075169687456,
+          "p1": 0.15683580655996976,
+          "p2": -0.13587346387546528,
+          "p3": 0.6369793620842605,
+          "p4": -0.08036410611816851,
+          "p5": 0.04853080240413695
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": -0.06434967792784424,
+            "child": -0.06330200530300693,
+            "description": 0.05740275118409722,
+            "has_history": 0.04942940181298623,
+            "history_mean": -0.07192569695412412,
+            "lag_choice": -0.0648667591327683,
+            "multi": -0.018587237256256772,
+            "probability": -0.11256466759171574,
+            "reward": -0.10426840752387172,
+            "trial_progress": 0.034442828476024104
+          },
+          "mean": 0.024625346669983058,
+          "p90_abs": 0.586199149044321,
+          "std": 0.3692560894937847
+        },
+        "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-1",
+        "rule_sha256": "7375b51924585cff30437602afbdfb42170a4b8ddcf3f4eb80e867dbc0740f63",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.05445075169687456 + 0.15683580655996976 * (reward * probability) + -0.13587346387546528 * (probability * lag_choice) + 0.6369793620842605 * (lag_choice * history_mean) + -0.08036410611816851 * (probability * history_mean) + 0.04853080240413695 * tanh((probability - 0.5246893626776707) / 0.26494115732924056)))",
+          "expression_bytes": 199,
+          "free_parameters": 6,
+          "learned_state_bytes": 163,
+          "literal_state_bytes": 39,
+          "nodes": 76,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 19
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.14897471249151328,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)+p4*(probability*history_mean)+p5*(tanh((probability-0.5246893626776707)/0.26494115732924056))))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-1",
+      "rule_sha256": "7375b51924585cff30437602afbdfb42170a4b8ddcf3f4eb80e867dbc0740f63",
+      "run_id": "full-comparison-v5--P100-089--symbolic_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.05445075169687456 + 0.15683580655996976 * (reward * probability) + -0.13587346387546528 * (probability * lag_choice) + 0.6369793620842605 * (lag_choice * history_mean) + -0.08036410611816851 * (probability * history_mean) + 0.04853080240413695 * tanh((probability - 0.5246893626776707) / 0.26494115732924056)))",
+        "expression_bytes": 199,
+        "free_parameters": 6,
+        "learned_state_bytes": 163,
+        "literal_state_bytes": 39,
+        "nodes": 76,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 19
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.011115536578536875,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.39403034928865815,
+        "primary": "brier",
+        "primary_error": 0.1964311999635591,
+        "rmse": 0.4432055955914355
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.20558889023896032,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.23919114399214442,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.19381250401917136,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.1867949565954593,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.2452158983591357,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.19398448317319958,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.1969499797275503,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.2096850020871392,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.1745770077744251,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.11705285103376789,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.2325259447380343,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.1617957378237217,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.20382876250973536,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(lag_choice)))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.29644591768490386,
+          "p1": 0.45246961513665346
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": -0.07244030580446716,
+            "child": -0.07191976029615882,
+            "description": 0.027645525595122112,
+            "has_history": 0.03726190827524607,
+            "history_mean": -0.11012448206020542,
+            "lag_choice": 0.019265134156522066,
+            "multi": -0.017350506174919265,
+            "probability": -0.40853665979018916,
+            "reward": -0.27388223094061237,
+            "trial_progress": 0.02662092380077758
+          },
+          "mean": 0.03585557049044338,
+          "p90_abs": 0.7489155328215573,
+          "std": 0.450068703043288
+        },
+        "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-2",
+        "rule_sha256": "3e84121297daaeb99424c850d76696d4f91e7fd59fe35621996f408298930908",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.29644591768490386 + 0.45246961513665346 * lag_choice))",
+          "expression_bytes": 40,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 2,
+          "nodes": 19,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.19789493123278,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(lag_choice)))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-2",
+      "rule_sha256": "3e84121297daaeb99424c850d76696d4f91e7fd59fe35621996f408298930908",
+      "run_id": "full-comparison-v5--P100-089--symbolic_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.29644591768490386 + 0.45246961513665346 * lag_choice))",
+        "expression_bytes": 40,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 2,
+        "nodes": 19,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.003816187820759243,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.39403034928865815,
+        "primary": "brier",
+        "primary_error": 0.1964311999635591,
+        "rmse": 0.4432055955914355
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.20558889023896032,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.23919114399214442,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.19381250401917136,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.1867949565954593,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.2452158983591357,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.19398448317319958,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.1969499797275503,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.2096850020871392,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.1745770077744251,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.11705285103376789,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.2325259447380343,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.1617957378237217,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.20382876250973536,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(lag_choice)))",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.29644591768490386,
+          "p1": 0.45246961513665346
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": -0.07244030580446716,
+            "child": -0.07191976029615882,
+            "description": 0.027645525595122112,
+            "has_history": 0.03726190827524607,
+            "history_mean": -0.11012448206020542,
+            "lag_choice": 0.019265134156522066,
+            "multi": -0.017350506174919265,
+            "probability": -0.40853665979018916,
+            "reward": -0.27388223094061237,
+            "trial_progress": 0.02662092380077758
+          },
+          "mean": 0.03585557049044338,
+          "p90_abs": 0.7489155328215573,
+          "std": 0.450068703043288
+        },
+        "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-2",
+        "rule_sha256": "e84373eb61810168d946282dbdae8657e57d2e28103f564aff4655e0b8757bc3",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.29644591768490386 + 0.45246961513665346 * lag_choice))",
+          "expression_bytes": 40,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 2,
+          "nodes": 19,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.19789493123278,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(lag_choice)))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-2",
+      "rule_sha256": "e84373eb61810168d946282dbdae8657e57d2e28103f564aff4655e0b8757bc3",
+      "run_id": "full-comparison-v5--P100-089--principia_engine",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.29644591768490386 + 0.45246961513665346 * lag_choice))",
+        "expression_bytes": 40,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 2,
+        "nodes": 19,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.003816187820759243,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.49584138289473567,
+        "primary": "brier",
+        "primary_error": 0.24756319527925527,
+        "rmse": 0.4975572281449193
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.24756319527925527,
+      "by_group": [
+        {
+          "error": 0.2551028642295788,
+          "group": "group-013c228d3602222ecd84876a",
+          "rows": 540
+        },
+        {
+          "error": 0.2602137565535054,
+          "group": "group-36ab9113afaf1a272a291eb5",
+          "rows": 430
+        },
+        {
+          "error": 0.23994316069625893,
+          "group": "group-4936635db931a97bb6d209f3",
+          "rows": 539
+        },
+        {
+          "error": 0.26217233626924796,
+          "group": "group-512ca13f0617abc81d2b6658",
+          "rows": 540
+        },
+        {
+          "error": 0.24901983014893317,
+          "group": "group-6417b4407f40adeaee9213b0",
+          "rows": 430
+        },
+        {
+          "error": 0.23589591643322777,
+          "group": "group-7220376568b33ddcdcf7589c",
+          "rows": 430
+        },
+        {
+          "error": 0.23450918480967284,
+          "group": "group-91986d80daf8f1021accc9dd",
+          "rows": 540
+        },
+        {
+          "error": 0.24217802513096615,
+          "group": "group-acffd88ab9fbf6166f845234",
+          "rows": 400
+        },
+        {
+          "error": 0.23763362114954112,
+          "group": "group-b3f6f586950bd9dc9d7bb961",
+          "rows": 539
+        },
+        {
+          "error": 0.23911971005293536,
+          "group": "group-b4600adeb3ff0811d2dcd214",
+          "rows": 540
+        },
+        {
+          "error": 0.2523365490836212,
+          "group": "group-d4bd366bf1a6c1abc8421f99",
+          "rows": 540
+        },
+        {
+          "error": 0.26263338879357423,
+          "group": "group-f1df054a67de9e5df31711fb",
+          "rows": 540
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.25333424820432104,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "reward",
+          "probability",
+          "child",
+          "age_child",
+          "multi",
+          "description",
+          "trial_progress",
+          "lag_choice",
+          "history_mean",
+          "has_history"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.5414947271893626
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age_child": -0.1192241393644869,
+            "child": -0.11888616552377301,
+            "description": 0.04455532292984788,
+            "has_history": 0.03519982703959568,
+            "history_mean": -0.2382668140174127,
+            "lag_choice": -0.43382462909796254,
+            "multi": -0.02743159204829442,
+            "probability": -0.4494242200218496,
+            "reward": -0.3509506348012268,
+            "trial_progress": 0.04963491607493575
+          },
+          "mean": 0.06536079225704255,
+          "p90_abs": 0.5414947271893626,
+          "std": 0.4994300861363733
+        },
+        "rule_id": "full-comparison-v5--P100-089--mean_control-rule-1",
+        "rule_sha256": "9cbcbaae65b6411904ab678fcf3942f78e6329997f42e40aef2d35897303b46d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.5414947271893626",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-089.compact.v2",
+        "train_error": 0.24742451175285457,
+        "units": {
+          "inputs": {
+            "age_child": "years; adult sentinel0",
+            "child": "binary",
+            "description": "binary",
+            "has_history": "binary",
+            "history_mean": "proportion or first-trial prior0.5",
+            "lag_choice": "binary or first-trial prior0.5",
+            "multi": "binary",
+            "probability": "probability",
+            "reward": "points",
+            "trial_progress": "trial index/40"
+          },
+          "output": "binary choice",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 6008,
+        "fraction": 1.0,
+        "predicted": 6008
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-089--mean_control-rule-1",
+      "rule_sha256": "9cbcbaae65b6411904ab678fcf3942f78e6329997f42e40aef2d35897303b46d",
+      "run_id": "full-comparison-v5--P100-089--mean_control",
+      "scenario_id": "P100-089",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.5414947271893626",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 6008,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-089.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-089",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-089.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

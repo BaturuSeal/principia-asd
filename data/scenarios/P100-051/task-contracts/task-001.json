@@ -1,0 +1,69 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "cal_minus20_uA": "uA",
+    "cal_plus20_uA": "uA",
+    "cal_zero_uA": "uA",
+    "gate_V": "V"
+  },
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "offline sparse-characterization task: three responses at -20,0,20 V are obtained before reconstructing other gate points; not an uncalibrated or causal sweep forecast",
+  "output": "target",
+  "output_description": "measured drain current between three disclosed gate-voltage calibration anchors",
+  "output_units": "uA",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-051",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "1f5a64120b4d17c78b6b0bd16afb1a3dfacbb3dd4c2415397081eaebb8f85a6a",
+  "source_task": "P100-051.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "complete source FET column/device",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-051.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "measured drain current between three disclosed gate-voltage calibration anchors",
+  "version": "1.0.0rc2"
+}

@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.4229767261904762,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "pressure_Pa",
+    "massflux_kg_m2_s",
+    "quality",
+    "radial_fraction",
+    "rho_liquid",
+    "rho_vapor"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.7659738095238096
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "massflux_kg_m2_s": -0.3577961577458232,
+      "pressure_Pa": -0.35779615774582324,
+      "quality": 0.35779615774582324,
+      "radial_fraction": 0.8359655873312789,
+      "rho_liquid": 0.35779615774582324,
+      "rho_vapor": -0.35779615774582324
+    },
+    "mean": 0.4229767261904762,
+    "p90_abs": 0.6068878095238095,
+    "std": 0.15917466440148817
+  },
+  "rule_id": "full-comparison-v5--P100-027--mean_control-rule-1",
+  "rule_sha256": "728943e5b96bc63256be8a6e492f014390bd4dbc05106fd331bef1d6c4d2a3d4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.7659738095238096",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-027.compact.v2",
+  "train_error": 0.20077185941043083,
+  "units": {
+    "inputs": {
+      "massflux_kg_m2_s": "kg m^-2 s^-1",
+      "pressure_Pa": "Pa, absolute",
+      "quality": "kg vapor per kg mixture",
+      "radial_fraction": "dimensionless native coordinate / maximum sampled coordinate",
+      "rho_liquid": "kg m^-3",
+      "rho_vapor": "kg m^-3"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

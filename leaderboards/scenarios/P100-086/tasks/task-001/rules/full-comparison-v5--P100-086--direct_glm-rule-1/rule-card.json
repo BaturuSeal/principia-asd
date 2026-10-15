@@ -1,0 +1,60 @@
+{
+  "dev_error": 39.92537331114784,
+  "execution_status": "complete",
+  "expression": "current + p0*slope6",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 5.879554012386709
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.13306481752269045,
+      "slope6": 0.309556775321525,
+      "time_h": 0.10856095190842038
+    },
+    "mean": -4.177621811300149,
+    "p90_abs": 89.30439385560418,
+    "std": 70.72520857584256
+  },
+  "rule_id": "full-comparison-v5--P100-086--direct_glm-rule-1",
+  "rule_sha256": "2253c585567662bc020e0eb3f79e1728f81123e29a938f7625f30850a6d06f7b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "current + 5.879554012386709 * slope6",
+    "expression_bytes": 19,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 39.06596103999865,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

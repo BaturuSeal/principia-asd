@@ -1,0 +1,68 @@
+{
+  "dev_error": 1.477292868784783,
+  "execution_status": "complete",
+  "expression": "p0 + p1*anchor_selectivity_pct + p2*prefix_slope_pct_min*sqrt(elapsed_min) + p3*log1p(ag_wt_pct)",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.146573258479112,
+    "p1": 1.013226372770438,
+    "p2": 9.69502804084285,
+    "p3": -0.15794853639705725
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": -0.14685658839726887,
+      "elapsed_min": -0.035226069185772604,
+      "prefix_slope_pct_min": 0.14685658839726884
+    },
+    "mean": 1.4772928687847828,
+    "p90_abs": 2.8526768725749903,
+    "std": 0.8784753383014154
+  },
+  "rule_id": "full-comparison-v5--P100-026--principia_engine-rule-1",
+  "rule_sha256": "81a9ab5062cfbf2d3d06b205ccd4881e30c2f1f480ab2ed91f7c61cf4001b70e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.146573258479112 + 1.013226372770438 * anchor_selectivity_pct + 9.69502804084285 * prefix_slope_pct_min * sqrt(elapsed_min) + -0.15794853639705725 * log1p(ag_wt_pct)",
+    "expression_bytes": 96,
+    "free_parameters": 4,
+    "learned_state_bytes": 102,
+    "literal_state_bytes": 0,
+    "nodes": 37,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 1.2370513271826227,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

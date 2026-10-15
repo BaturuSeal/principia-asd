@@ -1,0 +1,16 @@
+{
+  "expression": "0.5*(1 + tanh(p0 + p1*(reward*probability) + p2*(history_mean - 0.5) + p3*(lag_choice - 0.5) + p4*child + p5*trial_progress + p6*multi + p7*description))",
+  "parameters": {
+    "p0": -1.5005496277627237,
+    "p1": 0.7570317301400727,
+    "p2": 1.5787416162955994,
+    "p3": 0.633024793346678,
+    "p4": 0.3942761037149126,
+    "p5": -0.14497275159198234,
+    "p6": 0.0693908655057992,
+    "p7": -0.09350017790017545
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

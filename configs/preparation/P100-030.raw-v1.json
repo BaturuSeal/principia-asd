@@ -1,0 +1,88 @@
+{
+  "assets": [
+    {
+      "bytes": 7959,
+      "path": "scenarios/30_nanomaterials_hbn_lubricants/context/zenodo_record.json",
+      "role": "zenodo_record",
+      "sha256": "0b2348f5165d117b1600c85b5cd173d02ddef7a6c9b6c747242dcc5dc46c9399"
+    },
+    {
+      "bytes": 1295,
+      "path": "scenarios/30_nanomaterials_hbn_lubricants/raw/README.txt",
+      "role": "source_readme",
+      "sha256": "e5230b4f68ef1c46a85a414a2e75ba198fc3d0426d337ab2c430d88c35859483"
+    },
+    {
+      "bytes": 19590034,
+      "path": "scenarios/30_nanomaterials_hbn_lubricants/raw/dataset.zip",
+      "role": "lubricant_archive",
+      "sha256": "658c7be90b88e2755fd568fd25842536a4e9d154ac3b1354cc1d91812251b195"
+    }
+  ],
+  "duplicate_aliases": {
+    "functionalization:PEG": "concentration:PEG",
+    "suppliers:P5": "concentration:P5",
+    "suppliers:PEG": "concentration:PEG"
+  },
+  "group_assignments": {
+    "N": "dev",
+    "NG": "test",
+    "NS": "test",
+    "P1": "train",
+    "P2": "train",
+    "P5": "train",
+    "PCH": "dev",
+    "PEG": "train"
+  },
+  "historical_contract_sha256": "cac4871b6dafc6753d09a42a8bfc7e535d2880a5d1ba02c3a78324eb364cb602",
+  "input_units": {
+    "boundary_cof": "dimensionless",
+    "concentration_wt_pct": "wt percent",
+    "highspeed_cof": "dimensionless",
+    "speed_mm_s": "mm/s"
+  },
+  "limitations": [
+    "Whole-formulation allocation does not establish independent physical acquisitions or batches",
+    "Distinct P5 curves share one formulation and stay in one partition; duplicated controls are counted only once",
+    "Table temperatures differ and no justified perturbation distribution is adopted",
+    "Curator-only retrospective reconstruction; source contains historically exposed responses; no evaluator vault access or test-target export"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "dimensionless",
+  "parser": "hbn-calibrated-formulation-curves-v1",
+  "partition_provenance": {
+    "allocation": "NS and NG fixed confirmation; compact-v2 opaque-formulation hash selects two dev groups from remaining six. Original leave-formulation-out metadata are not the compact train/dev split.",
+    "source_split_sha256": "0e82ded96baf39991dcc5be0e5671095b9ce7e9686ee24daf8087a12f9c8c5d5"
+  },
+  "policy": {
+    "calibration": "Observed CoF at0.2 and500mm/s of each curve; strictly outside all12 scored0.28\u201310mm/s rows",
+    "duplicates": "Frozen aliases among all 25-row curves; changed duplicates reject reconstruction rather than select a new cohort",
+    "lineage": "Exact CSV member, one-based row/column and both calibration cell coordinates",
+    "measurement": "Published CoF curves in measured speed coordinates; no native force/torque acquisition or summary variability used as target",
+    "predictors": "Speed, two measured endpoint calibrations and concentration; no condition ID, scored response, fitted curve or author summary bars"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-030/native.py",
+    "reuse": "Independently reimplemented only measurement/identity specification; no fitted model, evaluator or runtime copied",
+    "sha256": "9239061460879dbd6fe5ff723cb2259f82b10103d575a9eb2243ee14374b6006"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-030",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.17864405",
+    "url": "https://zenodo.org/records/17864405",
+    "version": "17864405 (record identity; no declared semantic version)"
+  },
+  "source_member_sha256": {
+    "dataset/CoF dataset concentration.csv": "c070b994d976bb19388c463b41991c0bd7037f91c553bebe94fe418fe3e1b9ad",
+    "dataset/CoF dataset functionalization.csv": "25f15d55df1eaf64816caf806ddf52fd2476a3a5c4a6cf4645aacbc7da0a636b",
+    "dataset/CoF dataset suppliers.csv": "131e59ea5c51a8fe4ad5ca15dceeed5813f8e4b6eebb387811e99080d47ad82b"
+  },
+  "source_scenario_descriptor_sha256": "0ba4852062bb430fb9af2ecd273545ce606bf8cc6e5c69459dd58d78511914b8",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test"
+}

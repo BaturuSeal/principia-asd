@@ -1,0 +1,67 @@
+{
+  "dev_error": 1.8252848154732793,
+  "execution_status": "complete",
+  "expression": "offset + p0 * drive**p1 * (1 - exp(-(t/p2)**p3)) * (1 + p4*high)",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 19.944793014719345,
+    "p1": 0.5677025276735944,
+    "p2": 2020.9336867575394,
+    "p3": 1.5767324080370073,
+    "p4": 0.008994422438389457
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": 0.6564885491177153,
+      "high": 0.6564885491177154,
+      "offset": 0.6564885491177154,
+      "t": -0.4943856668074729
+    },
+    "mean": 1.6251065360703885,
+    "p90_abs": 2.4584095227820058,
+    "std": 0.7984655859142112
+  },
+  "rule_id": "full-comparison-v5--P100-062--direct_glm-rule-1",
+  "rule_sha256": "2e2bfa1ea671222911cc6f39a7f121cb63f2768842cbafb6878842c351f0a725",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + 19.944793014719345 * drive ** 0.5677025276735944 * (1 - exp(-(t / 2020.9336867575394) ** 1.5767324080370073)) * (1 + 0.008994422438389457 * high)",
+    "expression_bytes": 64,
+    "free_parameters": 5,
+    "learned_state_bytes": 132,
+    "literal_state_bytes": 2,
+    "nodes": 46,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 1.416849937024731,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

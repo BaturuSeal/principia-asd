@@ -1,0 +1,97 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 4.183683877812991e-05,
+    "primary": "mae",
+    "primary_error": 4.183683877812991e-05,
+    "rmse": 5.459044047908614e-05
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.0002368376710295621,
+  "by_group": [
+    {
+      "error": 2.537953994499711e-05,
+      "group": "group-063c9f47d39f582fb9d83dfd",
+      "rows": 156
+    },
+    {
+      "error": 5.548645308154942e-05,
+      "group": "group-1b643105aaa28c532a04bf27",
+      "rows": 156
+    },
+    {
+      "error": 4.376683666125692e-05,
+      "group": "group-259eb0a4a9be72caa53c0afb",
+      "rows": 156
+    },
+    {
+      "error": 5.9437027990968796e-05,
+      "group": "group-5385e61a16ea7c120bd82d95",
+      "rows": 156
+    },
+    {
+      "error": 3.173770755700183e-05,
+      "group": "group-5a5005d21adf71fd42f6b65a",
+      "rows": 156
+    },
+    {
+      "error": 3.507168223483719e-05,
+      "group": "group-5b29b6506eb605aadc3a892c",
+      "rows": 156
+    },
+    {
+      "error": 3.898941841357128e-05,
+      "group": "group-67f3ca1fdf7023b3e6772cdc",
+      "rows": 156
+    },
+    {
+      "error": 4.782358428901293e-05,
+      "group": "group-978aa369ec293326942a3b78",
+      "rows": 156
+    },
+    {
+      "error": 2.8985633449146938e-05,
+      "group": "group-9d589e78dbd38c442b2a57b5",
+      "rows": 156
+    },
+    {
+      "error": 5.169050415895667e-05,
+      "group": "group-c6565d7a985670a18ed38007",
+      "rows": 156
+    }
+  ],
+  "coverage": {
+    "eligible": 1560,
+    "fraction": 1.0,
+    "predicted": 1560
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tree_control",
+  "rule_id": "controls-v3--P100-028--tree_control-rule-1",
+  "rule_sha256": "cd362c2e42608b33739b1bad60d5b8c44908e8ade3b85a21bc80bbd5803b42ff",
+  "run_id": "controls-v3--P100-028--tree_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "complete tree in Rule Card",
+    "free_parameters": 70,
+    "learned_state_bytes": 2336,
+    "scope": "predictive reference, not a compact scientific formula",
+    "weighted_operator_count": 47
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.026710100660786048,
+    "perturbation_labels_available": false,
+    "population_rows": 1560,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

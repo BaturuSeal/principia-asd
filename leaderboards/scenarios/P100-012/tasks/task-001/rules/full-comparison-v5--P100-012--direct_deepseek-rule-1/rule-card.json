@@ -1,0 +1,67 @@
+{
+  "dev_error": 12384.783668901639,
+  "execution_status": "complete",
+  "expression": "I0 * (p0 + p1 * (q - q0) + p2 * (q - q0)**2 + p3 * outer + p4 * outer * (q - q0))",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.06588877657779443,
+    "p1": -0.6981114530277273,
+    "p2": 1.7519765079502019,
+    "p3": -0.004359700753301271,
+    "p4": 0.022410081324079633
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": 0.0775512036006536,
+      "outer": -0.013033922937065387,
+      "q": -0.1730407639472474,
+      "q0": -2.5731986597762823e-17
+    },
+    "mean": 1885.36561791396,
+    "p90_abs": 28514.323215070977,
+    "std": 17933.991429769725
+  },
+  "rule_id": "full-comparison-v5--P100-012--direct_deepseek-rule-1",
+  "rule_sha256": "cbd8c6b124d5338b51f501d3d71c4a8ec32d08e48ab0b979c17507053196ba00",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "I0 * (0.06588877657779443 + -0.6981114530277273 * (q - q0) + 1.7519765079502019 * (q - q0) ** 2 + -0.004359700753301271 * outer + 0.022410081324079633 * outer * (q - q0))",
+    "expression_bytes": 81,
+    "free_parameters": 5,
+    "learned_state_bytes": 137,
+    "literal_state_bytes": 1,
+    "nodes": 58,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 13032.338706417824,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

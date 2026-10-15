@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.05863158318670371,
+  "execution_status": "complete",
+  "expression": "p0 + p1*pre + p2*jump + p3*rL + p4*rF + p5*dL + p6*d2L + p7*f",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.5734799551895198,
+    "p1": 1.1964246527916806,
+    "p2": 0.9210647678874636,
+    "p3": -0.2516580387690244,
+    "p4": 1.27478447046834,
+    "p5": 0.34629820219373186,
+    "p6": 1.8160146222624691,
+    "p7": -0.020729005789860602
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": 0.49385355916031576,
+      "dL": 0.0369248108690169,
+      "discharge": -0.019061699700935332,
+      "e": -0.05904670852855758,
+      "f": 0.015438061781754081,
+      "jump": -0.01269746789568857,
+      "pre": -0.00668333034843065,
+      "rF": 0.0204682279043066,
+      "rL": -0.20452602700014727,
+      "rest": -0.019061699700935332
+    },
+    "mean": -0.0021934124398249755,
+    "p90_abs": 0.13805072918759542,
+    "std": 0.08525863632491325
+  },
+  "rule_id": "full-comparison-v5--P100-025--best_of_n-rule-1",
+  "rule_sha256": "010e6aa52f338af7a1bae120cca07a278b4f4a9a9ea295cb491ff998f45e0ada",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-1.5734799551895198 + 1.1964246527916806 * pre + 0.9210647678874636 * jump + -0.2516580387690244 * rL + 1.27478447046834 * rF + 0.34629820219373186 * dL + 1.8160146222624691 * d2L + -0.020729005789860602 * f",
+    "expression_bytes": 61,
+    "free_parameters": 8,
+    "learned_state_bytes": 212,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.055412946436570125,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "dev_error": 19.080014499706138,
+  "execution_status": "complete",
+  "expression": "background_high + p0*(low - background_low) + p1*(low_lag - background_low) + p2*(time_s - 50) + p3*(channel_low_keV - 101.9) + p4*(channel_high_keV - 294.9)",
+  "inputs": [
+    "low",
+    "low_lag",
+    "background_low",
+    "background_high",
+    "time_s",
+    "channel_low_keV",
+    "channel_high_keV"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.45065329311916713,
+    "p1": 0.023681854575556622,
+    "p2": -0.056259034281307525,
+    "p3": 5.25505479093481,
+    "p4": -1.3608455990916013
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "background_high": -0.27398085615321427,
+      "background_low": -0.27398085615321427,
+      "channel_high_keV": -0.2739808561532142,
+      "channel_low_keV": 0.2739808561532143,
+      "low": -0.461058057756717,
+      "low_lag": -0.37876618143916824,
+      "time_s": 0.21133068135204108
+    },
+    "mean": 3.2782535311388337,
+    "p90_abs": 37.91333730148317,
+    "std": 26.31945790898593
+  },
+  "rule_id": "full-comparison-v5--P100-045--tool_agent-rule-1",
+  "rule_sha256": "a5dd929a565a1f4273bf8b8c6dd5acb38ed6fb6e1fdc176b16f350ec184adee4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "background_high + 0.45065329311916713 * (low - background_low) + 0.023681854575556622 * (low_lag - background_low) + -0.056259034281307525 * (time_s - 50) + 5.25505479093481 * (channel_low_keV - 101.9) + -1.3608455990916013 * (channel_high_keV - 294.9)",
+    "expression_bytes": 157,
+    "free_parameters": 5,
+    "learned_state_bytes": 135,
+    "literal_state_bytes": 12,
+    "nodes": 60,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-045.compact.v2",
+  "train_error": 14.902460795147402,
+  "units": {
+    "inputs": {
+      "background_high": "counts/s in pretrigger channel 4",
+      "background_low": "counts/s in pretrigger channels 2+3",
+      "channel_high_keV": "keV",
+      "channel_low_keV": "keV",
+      "low": "counts/s in channels 2+3",
+      "low_lag": "counts/s in preceding bin, channels 2+3",
+      "time_s": "s after trigger"
+    },
+    "output": "counts/s",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

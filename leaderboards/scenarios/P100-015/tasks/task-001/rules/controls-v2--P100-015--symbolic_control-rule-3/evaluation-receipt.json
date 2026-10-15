@@ -1,0 +1,99 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.16726610318762242,
+    "primary": "brier",
+    "primary_error": 0.07679432954611856,
+    "rmse": 0.2771178982781851
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.08981712628774777,
+  "by_group": [
+    {
+      "error": 0.0606833338986392,
+      "group": "group-1e6a6845ec383f15e78fb713",
+      "rows": 248
+    },
+    {
+      "error": 0.025007393042742965,
+      "group": "group-3a33d785605755f54649f40e",
+      "rows": 35
+    },
+    {
+      "error": 0.07022664110829684,
+      "group": "group-4cf91036817a436bf24331aa",
+      "rows": 404
+    },
+    {
+      "error": 0.04286873831010112,
+      "group": "group-5ca18f9ba583179700c726cc",
+      "rows": 24
+    },
+    {
+      "error": 0.11956157617703017,
+      "group": "group-83006a6a541dd2e2cd1b0940",
+      "rows": 1049
+    },
+    {
+      "error": 0.0042786504726931365,
+      "group": "group-86b2be79091861947f275023",
+      "rows": 16
+    },
+    {
+      "error": 0.07816113224320399,
+      "group": "group-a7ea1724c0a57512fdda6536",
+      "rows": 149
+    },
+    {
+      "error": 0.1340650315593165,
+      "group": "group-df77a96b90b8780d3474c8a7",
+      "rows": 68
+    },
+    {
+      "error": 0.09917338118118191,
+      "group": "group-e6e94c254bb4507cec340dd6",
+      "rows": 36
+    },
+    {
+      "error": 0.1339174174679797,
+      "group": "group-f3f4f42a17e832f861e49d7c",
+      "rows": 186
+    }
+  ],
+  "coverage": {
+    "eligible": 2215,
+    "fraction": 1.0,
+    "predicted": 2215
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-015--symbolic_control-rule-3",
+  "rule_sha256": "48bd64e9fbed9f157d1c2e89c0979784317a48c632352f11a80a7643cc05e174",
+  "run_id": "controls-v2--P100-015--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.40460755650578484 + -0.001762021185818478 * income_proxy + -0.0022807166407665977 * age))",
+    "expression_bytes": 51,
+    "free_parameters": 3,
+    "learned_state_bytes": 86,
+    "nodes": 27,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.006790842373902824,
+    "perturbation_labels_available": false,
+    "population_rows": 2215,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

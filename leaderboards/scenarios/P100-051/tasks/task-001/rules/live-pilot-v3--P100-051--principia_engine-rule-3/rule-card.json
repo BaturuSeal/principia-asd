@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.0197656826350922,
+  "execution_status": "complete",
+  "expression": "p0+p1*(maximum(gate_V - 0.6024715249999214, 0)**2)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.001575449173985861,
+    "p1": 0.004945626668566868
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.5087795548873324,
+      "cal_plus20_uA": -0.2009665770977747,
+      "cal_zero_uA": -0.45946561608135933,
+      "gate_V": -0.07811036872192736
+    },
+    "mean": 0.0013147980539885034,
+    "p90_abs": 0.05834941773597834,
+    "std": 0.032134149534649575
+  },
+  "rule_id": "live-pilot-v3--P100-051--principia_engine-rule-3",
+  "rule_sha256": "9ee7b490382af3e207128a0f726759bc8f5972ce949dc22bf2fa2bc9ee003c61",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.001575449173985861 + 0.004945626668566868 * maximum(gate_V - 0.6024715249999214, 0) ** 2",
+    "expression_bytes": 50,
+    "free_parameters": 2,
+    "learned_state_bytes": 56,
+    "literal_state_bytes": 20,
+    "nodes": 21,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.02446015431512164,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

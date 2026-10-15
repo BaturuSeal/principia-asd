@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.0661201539014234,
+  "execution_status": "complete",
+  "expression": "p0+p1*(jump*rF)",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.636477413818937,
+    "p1": 1.1629730425600096
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": -0.1696519781438822,
+      "dL": 0.2819651951178889,
+      "discharge": -0.2941172855185857,
+      "e": -0.09966428318038643,
+      "f": -0.054150390414076904,
+      "jump": -0.3108336548352205,
+      "pre": -0.4024288388717943,
+      "rF": -0.06307999352278201,
+      "rL": 0.0020206166140978124,
+      "rest": -0.2941172855185857
+    },
+    "mean": 0.04683121416348305,
+    "p90_abs": 0.1425576169517416,
+    "std": 0.07155054017328084
+  },
+  "rule_id": "controls-v2--P100-025--symbolic_control-rule-3",
+  "rule_sha256": "e0f782741cc062e6a4fa79dbdb7f14924a9a0fac55237da6e1ed96267a34aa02",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.636477413818937 + 1.1629730425600096 * (jump * rF)",
+    "expression_bytes": 15,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "nodes": 15,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.0772440740833207,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.22630666930965376,
+  "execution_status": "complete",
+  "expression": "p0 * log1p(viscosity) * speed * (hydration - 25.0) / (load * area) + p1 * H",
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.10120331345621729,
+    "p1": 0.617258414395258
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "H": 0.5891022005434944,
+      "area": 0.16905491850547905,
+      "hydration": 0.16905491850547905,
+      "load": 0.047754302486926276,
+      "speed": -0.12456548342842409,
+      "viscosity": 0.4017468785094076
+    },
+    "mean": -0.09968206763927354,
+    "p90_abs": 0.6061056953609405,
+    "std": 0.3002599015781398
+  },
+  "rule_id": "full-comparison-v5--P100-023--direct_qwen-rule-1",
+  "rule_sha256": "d0a5e37937d2b9ba1b9c493fa09151378f8d7062610e07c38d286ae7718c120b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.10120331345621729 * log1p(viscosity) * speed * (hydration - 25.0) / (load * area) + 0.617258414395258 * H",
+    "expression_bytes": 75,
+    "free_parameters": 2,
+    "learned_state_bytes": 52,
+    "literal_state_bytes": 4,
+    "nodes": 37,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-023.compact.v2",
+  "train_error": 0.21462976808022088,
+  "units": {
+    "inputs": {
+      "H": "dimensionless; author Hersey calibration",
+      "area": "cm^2",
+      "hydration": "corneometer instrument units",
+      "load": "N",
+      "speed": "m/s",
+      "viscosity": "Pa s at 500 s^-1; author rheology fit"
+    },
+    "output": "1",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

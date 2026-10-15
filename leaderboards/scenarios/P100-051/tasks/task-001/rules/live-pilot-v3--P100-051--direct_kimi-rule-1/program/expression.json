@@ -1,0 +1,10 @@
+{
+  "expression": "cal_zero_uA + (cal_plus20_uA - cal_zero_uA) * (gate_V / 20.0) ** p0 + (cal_minus20_uA - cal_zero_uA) * ((-gate_V / 20.0) ** p1) * where(gate_V < 0, 1.0, 0.0)",
+  "parameters": {
+    "p0": 2.0,
+    "p1": 2.0
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

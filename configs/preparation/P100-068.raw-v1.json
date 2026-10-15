@@ -1,0 +1,157 @@
+{
+  "assets": [
+    {
+      "bytes": 2897,
+      "path": "scenarios/68_physics_acoustic_levitation/raw/MATLAB Code PSD AND TIME SERIES DATA.txt",
+      "role": "source_documentation",
+      "sha256": "898e7d3a30d0046d96c8f8892a0ff3c4c2cb46e5a5faa53392d7e4c877b3502c"
+    },
+    {
+      "bytes": 11706,
+      "path": "scenarios/68_physics_acoustic_levitation/raw/MATLAB Code SINDy.txt",
+      "role": "source_documentation",
+      "sha256": "4950ffb628cc9b30dd13a9219938db22d0295159efeae6caae9659b452abb82e"
+    },
+    {
+      "bytes": 328760,
+      "path": "scenarios/68_physics_acoustic_levitation/raw/Data.rar",
+      "role": "levitation_traces",
+      "sha256": "38f849ce6973bf140cf3975c2826e71607df346935419fde36ab668c7c66cbe1"
+    },
+    {
+      "bytes": 4837,
+      "path": "scenarios/68_physics_acoustic_levitation/context/source_record.json",
+      "role": "source_documentation",
+      "sha256": "a24dee7058d93c244833f7ae26a2763d06540cdf810fc4a0193df7c96262c775"
+    }
+  ],
+  "decoder_binding": {
+    "executable": "/usr/bin/bsdtar",
+    "sha256": "465aa6ae11e635dea208c0a24f16d1a1236a71fc4e143dbf1967426e649758d9",
+    "version": "bsdtar 3.5.3 - libarchive 3.7.4 zlib/1.2.12 liblzma/5.4.3 bz2lib/1.0.8"
+  },
+  "group_assignments": {
+    "data1142n": "test",
+    "data1143n": "test",
+    "data1144n": "test",
+    "data1145n": "dev",
+    "data1146n": "train",
+    "data1147n": "train",
+    "data1148n": "train",
+    "data1149n": "train",
+    "data1150n": "train",
+    "data1151n": "train",
+    "data1152n": "train",
+    "data1153n": "test",
+    "data1154n": "train",
+    "data1155n": "train",
+    "data1156n": "dev",
+    "data1157n": "train",
+    "data1158n": "train",
+    "data1159n": "dev",
+    "data1160n": "train",
+    "data1161n": "train",
+    "data1162n": "train",
+    "data1163n": "train",
+    "data1164n": "dev",
+    "data1165n": "train",
+    "data1166n": "train",
+    "data1167n": "train",
+    "data1168n": "test",
+    "data1169n": "dev",
+    "data1170n": "train",
+    "data1171n": "test",
+    "data1172n": "train"
+  },
+  "historical_contract_sha256": "a4b313f0152cdcaa8ccbe6dbd5d450bf7272f292f6f9738ead8767436ec8338a",
+  "independent_units": "Complete acquisitiontrace, with raw/denoised pair linked; sixmetadata-hashselectedtracesconfirm. Alltraces shareone levitator/object setup.",
+  "input_units": {
+    "offset": "V; first20samplemean",
+    "t": "s; storedtimestamp",
+    "y0": "V; currentrawminusinitialoffset",
+    "y1": "V;5mslagminusoffset",
+    "y2": "V;10mslagminusoffset",
+    "y3": "V;15mslagminusoffset"
+  },
+  "limitations": [
+    "One levitator/object installation; trace identifiers do not establish independent devices or excitation conditions",
+    "Causal use of stored raw voltage does not independently validate sensor latency or calibration",
+    "Existing public raw acquisitions contain historically exposed outcomes; no new independent test evidence",
+    "Reconstruction parity is not source-rights or scientific admission"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "floating_point_parity_tolerance": 1e-12,
+    "learned_transformations": []
+  },
+  "output_units": "V",
+  "parser": "levitation-raw-delay-traces-v1",
+  "partition_provenance": {
+    "development": "Unchanged compact-v2 metadata hash allocation on complete acquisition traces",
+    "source_split_sha256": "65dd5f6df6f1c1e7657366ca0f1efae1055e4077be11323733388857334dcb95",
+    "test": "First6 SHA256(P100-068-v1|native member) complete traces; remaining25development, five deterministictracefolds."
+  },
+  "policy": {
+    "exclusions": [
+      "denoised_s values",
+      "GHKSS filter",
+      "Matlab fitted coefficients",
+      "integrated or differentiated signals",
+      "velocity calibration constants",
+      "PSD summaries"
+    ],
+    "inputs": "Raw noisy_s only; initial20samples mean subtracted from current and 5/10/15ms past samples; offset retained as explicit input",
+    "issue": "Native index round(50ms/dt), every round(5ms/dt); record actual timestamps beginning dt rather than invent zero",
+    "lineage": "Per-sample zero-based MATLAB vector indices, named member and variable; complete per-record initial calibration indices",
+    "target": "Raw noisy_s five milliseconds after the issue timestamp"
+  },
+  "raw_members": [
+    "Data/data1142n.mat",
+    "Data/data1143n.mat",
+    "Data/data1144n.mat",
+    "Data/data1145n.mat",
+    "Data/data1146n.mat",
+    "Data/data1147n.mat",
+    "Data/data1148n.mat",
+    "Data/data1149n.mat",
+    "Data/data1150n.mat",
+    "Data/data1151n.mat",
+    "Data/data1152n.mat",
+    "Data/data1153n.mat",
+    "Data/data1154n.mat",
+    "Data/data1155n.mat",
+    "Data/data1156n.mat",
+    "Data/data1157n.mat",
+    "Data/data1158n.mat",
+    "Data/data1159n.mat",
+    "Data/data1160n.mat",
+    "Data/data1161n.mat",
+    "Data/data1162n.mat",
+    "Data/data1163n.mat",
+    "Data/data1164n.mat",
+    "Data/data1165n.mat",
+    "Data/data1166n.mat",
+    "Data/data1167n.mat",
+    "Data/data1168n.mat",
+    "Data/data1169n.mat",
+    "Data/data1170n.mat",
+    "Data/data1171n.mat",
+    "Data/data1172n.mat"
+  ],
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-068/native.py",
+    "reuse": "Raw voltage, causal sample delays and initial calibration independently reconstructed; strict bounded archive/MAT decoding, clocks, paired-trace custody and lineage added; no source Matlab or old runtime executed",
+    "sha256": "5724148f23f25966c6b91665272a2968efa7dbee07b7cce2a3de78800437c797"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-068",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "historical_case": "P100-068",
+    "revision": "16033764",
+    "url": "https://zenodo.org/records/16033764"
+  },
+  "source_scenario_descriptor_sha256": "2714d214a407f4a47906024cd04dc50d1a0d0965fa56c8cca65bbca42bdce5d0",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test"
+}

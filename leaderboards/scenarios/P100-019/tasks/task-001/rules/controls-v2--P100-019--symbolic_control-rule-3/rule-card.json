@@ -1,0 +1,62 @@
+{
+  "dev_error": 4.092328248195718,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lag3)+p2*(lag6)+p3*(lag1)",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6651336498971896,
+    "p1": 0.07141861150812621,
+    "p2": 0.2600174115992187,
+    "p3": 0.6251517801624571
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.0059646454196715035,
+      "lag3": -0.05653322179469542,
+      "lag6": -0.11285693669537124,
+      "month": 0.14538537784143193
+    },
+    "mean": -0.3835368665983262,
+    "p90_abs": 9.114062246776669,
+    "std": 8.16366501538182
+  },
+  "rule_id": "controls-v2--P100-019--symbolic_control-rule-3",
+  "rule_sha256": "e33f7a9bf3c742c9dabb6496061776ded6cc49e4f316c062ecc9f907ab15e22c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6651336498971896 + 0.07141861150812621 * lag3 + 0.2600174115992187 * lag6 + 0.6251517801624571 * lag1",
+    "expression_bytes": 32,
+    "free_parameters": 4,
+    "learned_state_bytes": 105,
+    "nodes": 27,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.139150691315129,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

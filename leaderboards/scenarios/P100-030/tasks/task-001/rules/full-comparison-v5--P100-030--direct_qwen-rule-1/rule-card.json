@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.01236143830621989,
+  "execution_status": "complete",
+  "expression": "where(speed_mm_s < 1.0, boundary_cof * (1.0 - p0 * (speed_mm_s / 1.0) ** p1) + p2 * concentration_wt_pct, highspeed_cof * (1.0 + p3 * (1.0 / speed_mm_s) ** p4) + p5 * concentration_wt_pct)",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.39362924827484697,
+    "p1": 1.2258171688561865,
+    "p2": 0.0009547138398758023,
+    "p3": 4.020130895050803,
+    "p4": 0.5629571073865671,
+    "p5": -0.0004966272329049714
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.8043709628437976,
+      "highspeed_cof": 0.8043709628437976,
+      "speed_mm_s": 0.017990698647361872
+    },
+    "mean": -0.010794347902894895,
+    "p90_abs": 0.03396099423697455,
+    "std": 0.013904264219806105
+  },
+  "rule_id": "full-comparison-v5--P100-030--direct_qwen-rule-1",
+  "rule_sha256": "28741bf516c2d6af99271958725b8a015c07ac1aa99ff72ca151d1d0dac6adbc",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "where(speed_mm_s < 1.0, boundary_cof * (1.0 - 0.39362924827484697 * (speed_mm_s / 1.0) ** 1.2258171688561865) + 0.0009547138398758023 * concentration_wt_pct, highspeed_cof * (1.0 + 4.020130895050803 * (1.0 / speed_mm_s) ** 0.5629571073865671) + -0.0004966272329049714 * concentration_wt_pct)",
+    "expression_bytes": 188,
+    "free_parameters": 6,
+    "learned_state_bytes": 163,
+    "literal_state_bytes": 15,
+    "nodes": 65,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.010555214658946028,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dev_error": 2.764186596230301,
+  "execution_status": "complete",
+  "expression": "p0+p1*(high*(1 - exp(-t/1000)))+p2*(log1p(abs((drive-1.9474393530997305)/2.1019981941112653)))",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -57.755219484744394,
+    "p1": 60.93657701684485,
+    "p2": 170.53658802952353
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": -0.8081223152731942,
+      "high": -0.8081223152731942,
+      "offset": -0.8081223152731943,
+      "t": -0.7758497324902924
+    },
+    "mean": -2.0233769878746135,
+    "p90_abs": 4.2507881201436,
+    "std": 1.7743236076442948
+  },
+  "rule_id": "full-comparison-v5--P100-062--principia_engine-rule-3",
+  "rule_sha256": "1b74c8fe8f9af3ba0cc2124143b4e738b5ffbc52ac3a84cf1164650c029cd11e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-57.755219484744394 + 60.93657701684485 * (high * (1 - exp(-t / 1000))) + 170.53658802952353 * log1p(abs((drive - 1.9474393530997305) / 2.1019981941112653))",
+    "expression_bytes": 94,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "literal_state_bytes": 41,
+    "nodes": 46,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 4.135398523317848,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

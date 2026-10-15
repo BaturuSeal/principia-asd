@@ -1,0 +1,68 @@
+{
+  "dev_error": 1.7128083192046566,
+  "execution_status": "complete",
+  "expression": "base + amp * (p0 + p1*progress + p2*progress*progress + p3*x + p4*x*x + p5*x*progress)",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.17585386854837168,
+    "p1": 0.11537851015867434,
+    "p2": 0.1273785576959652,
+    "p3": -0.10203665028848123,
+    "p4": -0.0003035243453301754,
+    "p5": 0.12271212944897604
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": -0.00016896682630109858,
+      "base": -0.00016896682630110547,
+      "progress": 0.004151220175386525,
+      "x": 0.007322902681138569
+    },
+    "mean": -0.27407435724563023,
+    "p90_abs": 4.477578867923803,
+    "std": 3.4358161390461643
+  },
+  "rule_id": "full-comparison-v5--P100-084--tool_agent-rule-1",
+  "rule_sha256": "6f4a3deeba085725195529322006c8f9678ae474971013e3f737d03348afd796",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "base + amp * (-0.17585386854837168 + 0.11537851015867434 * progress + 0.1273785576959652 * progress * progress + -0.10203665028848123 * x + -0.0003035243453301754 * x * x + 0.12271212944897604 * x * progress)",
+    "expression_bytes": 86,
+    "free_parameters": 6,
+    "learned_state_bytes": 166,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 1.5740938278735117,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

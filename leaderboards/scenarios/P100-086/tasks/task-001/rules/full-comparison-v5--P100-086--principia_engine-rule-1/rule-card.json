@@ -1,0 +1,70 @@
+{
+  "dev_error": 37.69845366139731,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current + 6*slope6)+p2*(current)+p3*(time_h)+p4*(tanh((current-6620.781379942208)/2567.5502008232106))+p5*(tanh((time_h-96.6647755303404)/33.49123523771944))+p6*((current)**2)+p7*(time_h*current)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 140.84570124851166,
+    "p1": 0.595582372423833,
+    "p2": 0.39497597643087223,
+    "p3": 2.5438101919241793,
+    "p4": 124.5437547729163,
+    "p5": -97.8052263932024,
+    "p6": -2.4995211895808393e-06,
+    "p7": -3.440461007491052e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.029044856041205717,
+      "slope6": 0.05470125264748443,
+      "time_h": -0.02862498499359516
+    },
+    "mean": 0.3856624080367064,
+    "p90_abs": 79.33993501127287,
+    "std": 63.434136800096184
+  },
+  "rule_id": "full-comparison-v5--P100-086--principia_engine-rule-1",
+  "rule_sha256": "7a9c40b8aadf0631b8b49db9a395c47d112f62c006a809d53c26df6c09567726",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "140.84570124851166 + 0.595582372423833 * (current + 6 * slope6) + 0.39497597643087223 * current + 2.5438101919241793 * time_h + 124.5437547729163 * tanh((current - 6620.781379942208) / 2567.5502008232106) + -97.8052263932024 * tanh((time_h - 96.6647755303404) / 33.49123523771944) + -2.4995211895808393e-06 * current ** 2 + -3.440461007491052e-05 * (time_h * current)",
+    "expression_bytes": 202,
+    "free_parameters": 8,
+    "learned_state_bytes": 215,
+    "literal_state_bytes": 70,
+    "nodes": 91,
+    "numeric_literal_count": 6,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 37.39200253869557,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

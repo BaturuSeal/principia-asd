@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.19078554825807498,
+  "execution_status": "complete",
+  "expression": "p0 + p1*ratio + p2*water + p3*age_min + p4*time_s",
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6360885909281542,
+    "p1": -0.051136730908866244,
+    "p2": -1.0820206305341025,
+    "p3": 0.007490333333329234,
+    "p4": 0.00018636535101426949
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_min": -0.17764254686901101,
+      "ratio": 0.7959088068004989,
+      "time_s": -0.23657562832537585,
+      "water": 0.7959088068004988
+    },
+    "mean": -0.059178509337313855,
+    "p90_abs": 0.3739819391489472,
+    "std": 0.22842688335985323
+  },
+  "rule_id": "full-comparison-v5--P100-055--direct_glm-rule-1",
+  "rule_sha256": "c6c28a23596adad53308ec4f276e066183eb49ce1774a4f484ea11e764e53801",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6360885909281542 + -0.051136730908866244 * ratio + -1.0820206305341025 * water + 0.007490333333329234 * age_min + 0.00018636535101426949 * time_s",
+    "expression_bytes": 49,
+    "free_parameters": 5,
+    "learned_state_bytes": 140,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-055.compact.v2",
+  "train_error": 0.05192017413299425,
+  "units": {
+    "inputs": {
+      "age_min": "min since mixing; 0 or 30",
+      "ratio": "mix-design ratio encoded in author mixture label",
+      "time_s": "native penetration clock index; unit unspecified",
+      "water": "water ratio encoded in author mixture label"
+    },
+    "output": "N",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

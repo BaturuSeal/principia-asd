@@ -1,0 +1,101 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 10.154614579758555,
+    "primary": "mae",
+    "primary_error": 10.154614579758555,
+    "rmse": 13.02070787817453
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 10.096878669586468,
+  "by_group": [
+    {
+      "error": 13.29148684706879,
+      "group": "group-04dbf2956bf5e22ef266acbb",
+      "rows": 108
+    },
+    {
+      "error": 13.896613573926077,
+      "group": "group-300537a1bd171a7b60ca5515",
+      "rows": 108
+    },
+    {
+      "error": 6.227713353455979,
+      "group": "group-4607ea431ee2fb5521e7169c",
+      "rows": 108
+    },
+    {
+      "error": 5.363237619215901,
+      "group": "group-52223673c1f734ffbc828161",
+      "rows": 108
+    },
+    {
+      "error": 14.005954073969878,
+      "group": "group-6037163e47b0fd4ee840500c",
+      "rows": 4
+    },
+    {
+      "error": 8.470934935263115,
+      "group": "group-67ae81ee9f997517e0acad56",
+      "rows": 108
+    },
+    {
+      "error": 10.081284482888266,
+      "group": "group-8aacba2fc66c95abd49225fd",
+      "rows": 96
+    },
+    {
+      "error": 11.358179599477996,
+      "group": "group-998fb8913ba5162ed2b6914e",
+      "rows": 4
+    },
+    {
+      "error": 9.835988894522325,
+      "group": "group-c5c23b1a6428ea75d2c125bb",
+      "rows": 108
+    },
+    {
+      "error": 9.014752417797233,
+      "group": "group-d704dfdb1cb6d836e5257ed3",
+      "rows": 4
+    }
+  ],
+  "coverage": {
+    "eligible": 756,
+    "fraction": 1.0,
+    "predicted": 756
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-033--direct_kimi-rule-1",
+  "rule_sha256": "4038a5a4254c7cfa7146b97142d5cc3b979034f6a797e7cbc3f248cf81539d38",
+  "run_id": "full-comparison-v5--P100-033--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "fft_bpm + 0.06046533722812384 * acf_bpm + -1.575986359781622 * half_bpm + 47.26913265337146 * half_strength + 12.53668119506674 * spectral_quality + -0.08673358443608006 * agreement + 3.244208884033519 * motion + -1.4843786801351777 * ear + 43.804712192663814",
+    "expression_bytes": 130,
+    "free_parameters": 8,
+    "learned_state_bytes": 209,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.11983932884565968,
+    "perturbation_labels_available": false,
+    "population_rows": 756,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

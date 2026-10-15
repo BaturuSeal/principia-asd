@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.2653637993607887,
+    "primary": "mae",
+    "primary_error": 0.2653637993607887,
+    "rmse": 0.3865951788817297
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.1938804142057018,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.33684718451587553,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_qwen",
+  "rule_id": "full-comparison-v5--P100-023--direct_qwen-rule-1",
+  "rule_sha256": "d0a5e37937d2b9ba1b9c493fa09151378f8d7062610e07c38d286ae7718c120b",
+  "run_id": "full-comparison-v5--P100-023--direct_qwen",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.10120331345621729 * log1p(viscosity) * speed * (hydration - 25.0) / (load * area) + 0.617258414395258 * H",
+    "expression_bytes": 75,
+    "free_parameters": 2,
+    "learned_state_bytes": 52,
+    "literal_state_bytes": 4,
+    "nodes": 37,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.22962184781391531,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

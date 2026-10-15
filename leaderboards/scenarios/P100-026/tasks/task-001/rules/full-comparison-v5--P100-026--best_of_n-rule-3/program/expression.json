@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1 * elapsed_min + p2 * anchor_selectivity_pct + p3 * prefix_slope_pct_min + p4 * ag_wt_pct + p5 * elapsed_min * anchor_selectivity_pct + p6 * elapsed_min * prefix_slope_pct_min + p7 * anchor_selectivity_pct * ag_wt_pct",
+  "parameters": {
+    "p0": -1.4907153323587534,
+    "p1": 0.005619017699049375,
+    "p2": 1.0109428652552415,
+    "p3": 8.870438870145826,
+    "p4": 2.425513547464372,
+    "p5": -7.333076065834717e-05,
+    "p6": 0.2574012784206822,
+    "p7": -0.03939665195602434
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

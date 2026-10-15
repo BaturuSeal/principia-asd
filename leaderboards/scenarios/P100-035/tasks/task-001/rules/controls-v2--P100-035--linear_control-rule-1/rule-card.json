@@ -1,0 +1,87 @@
+{
+  "dev_error": 0.22762227384724795,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(log_duration)+p2*(log_centroid)+p3*(log_peak)+p4*(high_share)+p5*(entropy)+p6*(flatness)+p7*(envelope_cv)+p8*(log_modulation)+p9*(log_rms)+p10*(species_code)))",
+  "inputs": [
+    "log_duration",
+    "log_centroid",
+    "log_peak",
+    "high_share",
+    "entropy",
+    "flatness",
+    "envelope_cv",
+    "log_modulation",
+    "log_rms",
+    "species_code"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.2822122934963391,
+    "p1": -0.23223882377108473,
+    "p10": 0.004943033298944109,
+    "p2": -0.09119373775700391,
+    "p3": 0.01225068791115993,
+    "p4": 0.21145947832176137,
+    "p5": 0.37430682455748887,
+    "p6": 0.09769090667497354,
+    "p7": 0.2628424863185331,
+    "p8": 0.016640557379779267,
+    "p9": -0.3713926349246075
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "entropy": 0.0632297894650599,
+      "envelope_cv": 0.09430077611816055,
+      "flatness": 0.09408757847640391,
+      "high_share": -0.050557293344015,
+      "log_centroid": 0.033853788243008956,
+      "log_duration": 0.0887337345506662,
+      "log_modulation": -0.06439089484070366,
+      "log_peak": 0.036132852176702354,
+      "log_rms": 0.13697185604270978,
+      "species_code": -0.045131949174170495
+    },
+    "mean": -0.07129861553430164,
+    "p90_abs": 0.7905486774868226,
+    "std": 0.3968086607867145
+  },
+  "rule_id": "controls-v2--P100-035--linear_control-rule-1",
+  "rule_sha256": "9009fc4a6080b792a20743cd0823eb6f08edda2c68394da3bf17704ee410f5b5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -1.2822122934963391 + -0.23223882377108473 * log_duration + -0.09119373775700391 * log_centroid + 0.01225068791115993 * log_peak + 0.21145947832176137 * high_share + 0.37430682455748887 * entropy + 0.09769090667497354 * flatness + 0.2628424863185331 * envelope_cv + 0.016640557379779267 * log_modulation + -0.3713926349246075 * log_rms + 0.004943033298944109 * species_code))",
+    "expression_bytes": 186,
+    "free_parameters": 11,
+    "learned_state_bytes": 301,
+    "nodes": 91,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "task_id": "P100-035.compact.v2",
+  "train_error": 0.18139715929122074,
+  "units": {
+    "inputs": {
+      "entropy": "dimensionless",
+      "envelope_cv": "dimensionless",
+      "flatness": "dimensionless",
+      "high_share": "dimensionless",
+      "log_centroid": "dimensionless",
+      "log_duration": "dimensionless",
+      "log_modulation": "dimensionless",
+      "log_peak": "dimensionless",
+      "log_rms": "dimensionless",
+      "species_code": "dimensionless"
+    },
+    "output": "probability",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

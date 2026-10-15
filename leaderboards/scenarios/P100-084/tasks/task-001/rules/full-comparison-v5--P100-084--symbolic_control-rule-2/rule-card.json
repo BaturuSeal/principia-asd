@@ -1,0 +1,62 @@
+{
+  "dev_error": 2.614112289685679,
+  "execution_status": "complete",
+  "expression": "p0+p1*(base)",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.6529567352849357,
+    "p1": 0.9685976417316956
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": -0.050639634325637804,
+      "base": -0.050639634325637777,
+      "progress": -0.4610797423694571,
+      "x": 0.47127537408169895
+    },
+    "mean": -0.09549176172792959,
+    "p90_abs": 6.847947608491416,
+    "std": 3.98693251353098
+  },
+  "rule_id": "full-comparison-v5--P100-084--symbolic_control-rule-2",
+  "rule_sha256": "71eb7b9731966d8b7a947b3b000c327e75e896e18f06b4cb99076ddc84455dfd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-1.6529567352849357 + 0.9685976417316956 * base",
+    "expression_bytes": 12,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 2.25008601359113,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

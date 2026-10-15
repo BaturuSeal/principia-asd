@@ -1,0 +1,64 @@
+{
+  "dev_error": 0.02171423973880597,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.11808761194029851
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": 0.17193464713295803,
+      "notch_depth_um": 0.5987984395800576,
+      "notch_width_um": 0.2506175426421689,
+      "thickness_um": -0.07202591036138298,
+      "width_um": 0.012583871333164548
+    },
+    "mean": 0.00024114135206321953,
+    "p90_abs": 0.03927961194029851,
+    "std": 0.027175910383836484
+  },
+  "rule_id": "controls-v3--P100-054--mean_control-rule-1",
+  "rule_sha256": "9d0565ff82d921421b6925f55421faddac03bffe0b27a36bfb141d85038366a8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.11808761194029851",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.02684380597014925,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

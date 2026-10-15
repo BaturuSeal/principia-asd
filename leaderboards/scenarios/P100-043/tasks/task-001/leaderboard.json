@@ -1,0 +1,3616 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.004142620018683374
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.006726042949594557
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.013135490007698536
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.3815282160649076
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 91,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 91,
+        "wall_seconds": 0.3035528310574591
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-043--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 16,
+        "structures": 1,
+        "wall_seconds": 8.059222648036666
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 10,
+        "structures": 1,
+        "wall_seconds": 11.946146180969663
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 16,
+        "structures": 1,
+        "wall_seconds": 8.597839143010788
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 30,
+        "structures": 1,
+        "wall_seconds": 10.859927196986973
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 117,
+        "structures": 3,
+        "wall_seconds": 8.454623437020928
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-043--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 22,
+        "structures": 2,
+        "wall_seconds": 14.930037777055986
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-043--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 6,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 21.32283608696889
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-043--tool_agent",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 232,
+        "model_calls": 4,
+        "optimizer_evaluations": 56,
+        "structures": 103,
+        "wall_seconds": 61.087643841980025
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-043--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-043--direct_glm-rule-1",
+    "full-comparison-v5--P100-043--symbolic_control-rule-2",
+    "full-comparison-v5--P100-043--principia_engine-rule-2",
+    "full-comparison-v5--P100-043--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.007331684037738599,
+        "primary": "mae",
+        "primary_error": 0.007331684037738599,
+        "rmse": 0.008542651418111464
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.005153411479852884,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.00446539399969414,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.0068506649259314715,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.009703320821506808,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.010485628961707693,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.008700328263007153,
+        "execution_status": "complete",
+        "expression": "anchor_loss + ((anchor_loss - early_loss) / (anchor_tokens_B**(-p0) - early_tokens_B**(-p0))) * (tokens_B**(-p0) - anchor_tokens_B**(-p0))",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.6238408668231715
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.4753168860504874,
+            "anchor_tokens_B": 3.880599409955563e-17,
+            "depth": 0.7660164255328716,
+            "early_loss": -0.49855162787862584,
+            "early_tokens_B": -4.850749262444454e-17,
+            "params_B": 0.2788521209120164,
+            "tokens_B": -0.18732510150698445,
+            "width": 0.010297382636981926
+          },
+          "mean": -0.005975866672072826,
+          "p90_abs": 0.026066569594866005,
+          "std": 0.011443830267838646
+        },
+        "rule_id": "full-comparison-v5--P100-043--direct_glm-rule-1",
+        "rule_sha256": "482b7d6ed50a3c98c110dcb1c7a48250e5ee1f8c0dcbe65c966cc17f81624b26",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "anchor_loss + (anchor_loss - early_loss) / (anchor_tokens_B ** (-0.6238408668231715) - early_tokens_B ** (-0.6238408668231715)) * (tokens_B ** (-0.6238408668231715) - anchor_tokens_B ** (-0.6238408668231715))",
+          "expression_bytes": 138,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 51,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.007513801187589897,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "anchor_loss + ((anchor_loss - early_loss) / (anchor_tokens_B**(-p0) - early_tokens_B**(-p0))) * (tokens_B**(-p0) - anchor_tokens_B**(-p0))",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--direct_glm-rule-1",
+      "rule_sha256": "482b7d6ed50a3c98c110dcb1c7a48250e5ee1f8c0dcbe65c966cc17f81624b26",
+      "run_id": "full-comparison-v5--P100-043--direct_glm",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "anchor_loss + (anchor_loss - early_loss) / (anchor_tokens_B ** (-0.6238408668231715) - early_tokens_B ** (-0.6238408668231715)) * (tokens_B ** (-0.6238408668231715) - anchor_tokens_B ** (-0.6238408668231715))",
+        "expression_bytes": 138,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 51,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.04044101865408615,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.008144580202906626,
+        "primary": "mae",
+        "primary_error": 0.008144580202906626,
+        "rmse": 0.00973194021309837
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.013274947845049642,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.007703962679719786,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.008209254851564606,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.002810613861758158,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.008724121776440934,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.010627513915072268,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * anchor_loss - p2 * ((anchor_loss - early_loss) / log(anchor_tokens_B / early_tokens_B)) * sqrt(log(tokens_B / anchor_tokens_B)) * (1 + p3 * log(params_B))",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.15856440128772206,
+          "p1": 0.965086842618524,
+          "p2": -0.7911669006793686,
+          "p3": 0.014388995333677032
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.316292927867547,
+            "anchor_tokens_B": -6.043180970022496e-17,
+            "depth": 0.669389239373546,
+            "early_loss": -0.3426870631107282,
+            "early_tokens_B": 9.064771455033744e-18,
+            "params_B": 0.10060011822841992,
+            "tokens_B": -0.14012487029602866,
+            "width": -0.1770235309343761
+          },
+          "mean": 0.0018654522653390017,
+          "p90_abs": 0.019015425637226004,
+          "std": 0.012247667027596602
+        },
+        "rule_id": "full-comparison-v5--P100-043--principia_engine-rule-1",
+        "rule_sha256": "1e568d14f61d32523199038ff568ed054cc0446753c15a41d490a7dd8148e492",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.15856440128772206 + 0.965086842618524 * anchor_loss - -0.7911669006793686 * ((anchor_loss - early_loss) / log(anchor_tokens_B / early_tokens_B)) * sqrt(log(tokens_B / anchor_tokens_B)) * (1 + 0.014388995333677032 * log(params_B))",
+          "expression_bytes": 164,
+          "free_parameters": 4,
+          "learned_state_bytes": 107,
+          "literal_state_bytes": 1,
+          "nodes": 62,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 22
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.00764336732413857,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * anchor_loss - p2 * ((anchor_loss - early_loss) / log(anchor_tokens_B / early_tokens_B)) * sqrt(log(tokens_B / anchor_tokens_B)) * (1 + p3 * log(params_B))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--principia_engine-rule-1",
+      "rule_sha256": "1e568d14f61d32523199038ff568ed054cc0446753c15a41d490a7dd8148e492",
+      "run_id": "full-comparison-v5--P100-043--principia_engine",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.15856440128772206 + 0.965086842618524 * anchor_loss - -0.7911669006793686 * ((anchor_loss - early_loss) / log(anchor_tokens_B / early_tokens_B)) * sqrt(log(tokens_B / anchor_tokens_B)) * (1 + 0.014388995333677032 * log(params_B))",
+        "expression_bytes": 164,
+        "free_parameters": 4,
+        "learned_state_bytes": 107,
+        "literal_state_bytes": 1,
+        "nodes": 62,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 22
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.04423066394560487,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.011390151445605956,
+        "primary": "mae",
+        "primary_error": 0.011390151445605956,
+        "rmse": 0.014771995115984546
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.01431166289599591,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.006332705565269397,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.0245300545946979,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.004283560655678505,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.007492773516388068,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.010424501853694734,
+        "execution_status": "complete",
+        "expression": "anchor_loss + p0 * (anchor_loss - early_loss) * log(tokens_B / anchor_tokens_B) + p1 * (anchor_loss - early_loss) * log(params_B) + p2 * (anchor_loss - early_loss) * log(width) + p3 * (anchor_loss - early_loss) * depth + p4 * (anchor_loss - early_loss)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.5405023145829813,
+          "p1": -0.013084000312229305,
+          "p2": 0.07908044276934326,
+          "p3": 0.0023254527369571953,
+          "p4": -0.49726026156805253
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.22003512936684325,
+            "anchor_tokens_B": 3.51791653946289e-17,
+            "depth": 0.5567327652704943,
+            "early_loss": -0.24463233275353918,
+            "early_tokens_B": -4.6172654580450444e-17,
+            "params_B": 0.021528166169488504,
+            "tokens_B": -0.32052537331350456,
+            "width": -0.22802405628554362
+          },
+          "mean": 0.0006273794373247981,
+          "p90_abs": 0.02067951276622324,
+          "std": 0.012623642569924792
+        },
+        "rule_id": "full-comparison-v5--P100-043--direct_kimi-rule-1",
+        "rule_sha256": "4d1b3adc83ccb16607d57842f6f9a8111eea3ae453710d495afa1dab5ab1c50d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "anchor_loss + 0.5405023145829813 * (anchor_loss - early_loss) * log(tokens_B / anchor_tokens_B) + -0.013084000312229305 * (anchor_loss - early_loss) * log(params_B) + 0.07908044276934326 * (anchor_loss - early_loss) * log(width) + 0.0023254527369571953 * (anchor_loss - early_loss) * depth + -0.49726026156805253 * (anchor_loss - early_loss)",
+          "expression_bytes": 252,
+          "free_parameters": 5,
+          "learned_state_bytes": 139,
+          "literal_state_bytes": 0,
+          "nodes": 92,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 29
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.007316299106186505,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "anchor_loss + p0 * (anchor_loss - early_loss) * log(tokens_B / anchor_tokens_B) + p1 * (anchor_loss - early_loss) * log(params_B) + p2 * (anchor_loss - early_loss) * log(width) + p3 * (anchor_loss - early_loss) * depth + p4 * (anchor_loss - early_loss)",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--direct_kimi-rule-1",
+      "rule_sha256": "4d1b3adc83ccb16607d57842f6f9a8111eea3ae453710d495afa1dab5ab1c50d",
+      "run_id": "full-comparison-v5--P100-043--direct_kimi",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "anchor_loss + 0.5405023145829813 * (anchor_loss - early_loss) * log(tokens_B / anchor_tokens_B) + -0.013084000312229305 * (anchor_loss - early_loss) * log(params_B) + 0.07908044276934326 * (anchor_loss - early_loss) * log(width) + 0.0023254527369571953 * (anchor_loss - early_loss) * depth + -0.49726026156805253 * (anchor_loss - early_loss)",
+        "expression_bytes": 252,
+        "free_parameters": 5,
+        "learned_state_bytes": 139,
+        "literal_state_bytes": 0,
+        "nodes": 92,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 29
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.05098003059331806,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.011558614764892273,
+        "primary": "mae",
+        "primary_error": 0.011558614764892273,
+        "rmse": 0.015690539294509732
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.014354720129030333,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.0051410983076124695,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.014625286306190992,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.010858992391747875,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.012812976689879695,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.01282599185666596,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * anchor_loss + p2 * (anchor_loss - early_loss) + p3 * log(tokens_B / anchor_tokens_B) + p4 * log(params_B) + p5 * log(width) + p6 * log(depth)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.3289161954972124,
+          "p1": 0.8935576959077282,
+          "p2": -0.1033215617983532,
+          "p3": -0.09615792919969984,
+          "p4": 0.022527447754506304,
+          "p5": -0.1237106712084127,
+          "p6": -0.060230919747453183
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": 0.24991128893548573,
+            "anchor_tokens_B": -1.8525859312766722e-17,
+            "depth": -0.10114949582371859,
+            "early_loss": 0.24147411447228423,
+            "early_tokens_B": 1.0420795863431281e-17,
+            "params_B": -0.30710988486913876,
+            "tokens_B": -0.6962782495282448,
+            "width": -0.35277637618346336
+          },
+          "mean": -0.0004947247910664672,
+          "p90_abs": 0.02707712361908943,
+          "std": 0.01598087668890758
+        },
+        "rule_id": "full-comparison-v5--P100-043--best_of_n-rule-1",
+        "rule_sha256": "8f8903609f04b02a48d4cc9415030d6d86effe98a6407c0fa11ca87ae0b3e5a1",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1.3289161954972124 + 0.8935576959077282 * anchor_loss + -0.1033215617983532 * (anchor_loss - early_loss) + -0.09615792919969984 * log(tokens_B / anchor_tokens_B) + 0.022527447754506304 * log(params_B) + -0.1237106712084127 * log(width) + -0.060230919747453183 * log(depth)",
+          "expression_bytes": 151,
+          "free_parameters": 7,
+          "learned_state_bytes": 191,
+          "literal_state_bytes": 0,
+          "nodes": 71,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 26
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.010447607306289028,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * anchor_loss + p2 * (anchor_loss - early_loss) + p3 * log(tokens_B / anchor_tokens_B) + p4 * log(params_B) + p5 * log(width) + p6 * log(depth)",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--best_of_n-rule-1",
+      "rule_sha256": "8f8903609f04b02a48d4cc9415030d6d86effe98a6407c0fa11ca87ae0b3e5a1",
+      "run_id": "full-comparison-v5--P100-043--best_of_n",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1.3289161954972124 + 0.8935576959077282 * anchor_loss + -0.1033215617983532 * (anchor_loss - early_loss) + -0.09615792919969984 * log(tokens_B / anchor_tokens_B) + 0.022527447754506304 * log(params_B) + -0.1237106712084127 * log(width) + -0.060230919747453183 * log(depth)",
+        "expression_bytes": 151,
+        "free_parameters": 7,
+        "learned_state_bytes": 191,
+        "literal_state_bytes": 0,
+        "nodes": 71,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 26
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03439684892629695,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.01363229061407147,
+        "primary": "mae",
+        "primary_error": 0.01363229061407147,
+        "rmse": 0.017694367891659426
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.013674899149283512,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.006746486097710534,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.020071282298595675,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.013201445943433787,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.014467339581333852,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.014345888422138527,
+        "execution_status": "complete",
+        "expression": "anchor_loss - p0 * (log1p(tokens_B - anchor_tokens_B) - log1p(anchor_tokens_B - early_tokens_B)) - p1 * log1p(params_B) - p2 * log1p(width) - p3 * log1p(depth)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.05368717472383738,
+          "p1": 0.08543303506532979,
+          "p2": 0.002766335099519149,
+          "p3": 0.005797483059641172
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.5251634204900311,
+            "anchor_tokens_B": 2.0063872727042222e-17,
+            "depth": 0.6301044069799541,
+            "early_loss": -0.5360266972756095,
+            "early_tokens_B": 1.8057485454338002e-17,
+            "params_B": 0.42316705539104915,
+            "tokens_B": -0.46199976746761906,
+            "width": 0.26042822016669587
+          },
+          "mean": -0.007326142986945776,
+          "p90_abs": 0.04024621801934779,
+          "std": 0.018444811057983346
+        },
+        "rule_id": "full-comparison-v5--P100-043--feedback_refinement-rule-1",
+        "rule_sha256": "483a068dab0c04af838e2e8c021ea8b1cd59a9873433c53d25f71edaa9727c91",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "anchor_loss - 0.05368717472383738 * (log1p(tokens_B - anchor_tokens_B) - log1p(anchor_tokens_B - early_tokens_B)) - 0.08543303506532979 * log1p(params_B) - 0.002766335099519149 * log1p(width) - 0.005797483059641172 * log1p(depth)",
+          "expression_bytes": 159,
+          "free_parameters": 4,
+          "learned_state_bytes": 110,
+          "literal_state_bytes": 0,
+          "nodes": 62,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 26
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.012777843801265598,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "anchor_loss - p0 * (log1p(tokens_B - anchor_tokens_B) - log1p(anchor_tokens_B - early_tokens_B)) - p1 * log1p(params_B) - p2 * log1p(width) - p3 * log1p(depth)",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--feedback_refinement-rule-1",
+      "rule_sha256": "483a068dab0c04af838e2e8c021ea8b1cd59a9873433c53d25f71edaa9727c91",
+      "run_id": "full-comparison-v5--P100-043--feedback_refinement",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "anchor_loss - 0.05368717472383738 * (log1p(tokens_B - anchor_tokens_B) - log1p(anchor_tokens_B - early_tokens_B)) - 0.08543303506532979 * log1p(params_B) - 0.002766335099519149 * log1p(width) - 0.005797483059641172 * log1p(depth)",
+        "expression_bytes": 159,
+        "free_parameters": 4,
+        "learned_state_bytes": 110,
+        "literal_state_bytes": 0,
+        "nodes": 62,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 26
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03191623534542112,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.014922648248857698,
+        "primary": "mae",
+        "primary_error": 0.014922648248857698,
+        "rmse": 0.02068438798082445
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.01617488073384108,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.01186476360979923,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.016819241642401252,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.012887930299256065,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.016866424958990857,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.015298105003468981,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * anchor_loss + p2 * (tokens_B - anchor_tokens_B) + p3 * log1p(params_B) + p4 * log1p(width) + p5 * log1p(depth)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.015346003928222,
+          "p1": 0.8874426993587016,
+          "p2": -0.001752272556700194,
+          "p3": 0.009941005515451714,
+          "p4": -0.086489064436726,
+          "p5": -0.046767471448578596
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.06568015656908534,
+            "anchor_tokens_B": 4.484598835208351e-17,
+            "depth": 0.26565496371393016,
+            "early_loss": -0.07983402057246361,
+            "early_tokens_B": -3.924023980807307e-17,
+            "params_B": -0.04650616389523104,
+            "tokens_B": -0.508445323985685,
+            "width": -0.18262679513143917
+          },
+          "mean": -0.004273335305746468,
+          "p90_abs": 0.03318144317712744,
+          "std": 0.019805080729341562
+        },
+        "rule_id": "full-comparison-v5--P100-043--best_of_n-rule-2",
+        "rule_sha256": "90f4135d4b182d6d26460190e79e1e04b5b408b043004b19d89f854e97130895",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1.015346003928222 + 0.8874426993587016 * anchor_loss + -0.001752272556700194 * (tokens_B - anchor_tokens_B) + 0.009941005515451714 * log1p(params_B) + -0.086489064436726 * log1p(width) + -0.046767471448578596 * log1p(depth)",
+          "expression_bytes": 120,
+          "free_parameters": 6,
+          "learned_state_bytes": 163,
+          "literal_state_bytes": 0,
+          "nodes": 56,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 20
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.014440403504769926,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * anchor_loss + p2 * (tokens_B - anchor_tokens_B) + p3 * log1p(params_B) + p4 * log1p(width) + p5 * log1p(depth)",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--best_of_n-rule-2",
+      "rule_sha256": "90f4135d4b182d6d26460190e79e1e04b5b408b043004b19d89f854e97130895",
+      "run_id": "full-comparison-v5--P100-043--best_of_n",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1.015346003928222 + 0.8874426993587016 * anchor_loss + -0.001752272556700194 * (tokens_B - anchor_tokens_B) + 0.009941005515451714 * log1p(params_B) + -0.086489064436726 * log1p(width) + -0.046767471448578596 * log1p(depth)",
+        "expression_bytes": 120,
+        "free_parameters": 6,
+        "learned_state_bytes": 163,
+        "literal_state_bytes": 0,
+        "nodes": 56,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 20
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.029608351464638985,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.015100150796310654,
+        "primary": "mae",
+        "primary_error": 0.015100150796310654,
+        "rmse": 0.020330193793893458
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.014832250500532612,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.013027836236963013,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.01618179251322962,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.012495141867930151,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.01896373286289788,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.01704975951049861,
+        "execution_status": "complete",
+        "expression": "anchor_loss + p0 * log1p(tokens_B / anchor_tokens_B) + p1 * log1p(params_B) + p2 * log1p(width) + p3 * log1p(depth)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.12730808401380392,
+          "p1": -0.11438979503062528,
+          "p2": 0.012941301686360405,
+          "p3": 0.002819877727357158
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.6656218981900389,
+            "anchor_tokens_B": 1.6746519077687697e-16,
+            "depth": 0.7397768456801519,
+            "early_loss": -0.6753604480368801,
+            "early_tokens_B": -8.202376691112341e-17,
+            "params_B": 0.567663923676224,
+            "tokens_B": -0.4371112040837698,
+            "width": 0.3978634022363338
+          },
+          "mean": -0.008599129671303824,
+          "p90_abs": 0.04642568839515199,
+          "std": 0.021656611324922644
+        },
+        "rule_id": "full-comparison-v5--P100-043--direct_qwen-rule-1",
+        "rule_sha256": "12ca09f425b2dd80fc848e23ad993335ed9b7d660c35b929c3ffdbc73605f378",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "anchor_loss + -0.12730808401380392 * log1p(tokens_B / anchor_tokens_B) + -0.11438979503062528 * log1p(params_B) + 0.012941301686360405 * log1p(width) + 0.002819877727357158 * log1p(depth)",
+          "expression_bytes": 115,
+          "free_parameters": 4,
+          "learned_state_bytes": 112,
+          "literal_state_bytes": 0,
+          "nodes": 51,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.014831335516653435,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "anchor_loss + p0 * log1p(tokens_B / anchor_tokens_B) + p1 * log1p(params_B) + p2 * log1p(width) + p3 * log1p(depth)",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--direct_qwen-rule-1",
+      "rule_sha256": "12ca09f425b2dd80fc848e23ad993335ed9b7d660c35b929c3ffdbc73605f378",
+      "run_id": "full-comparison-v5--P100-043--direct_qwen",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "anchor_loss + -0.12730808401380392 * log1p(tokens_B / anchor_tokens_B) + -0.11438979503062528 * log1p(params_B) + 0.012941301686360405 * log1p(width) + 0.002819877727357158 * log1p(depth)",
+        "expression_bytes": 115,
+        "free_parameters": 4,
+        "learned_state_bytes": 112,
+        "literal_state_bytes": 0,
+        "nodes": 51,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.026286690951477277,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.015390342002846674,
+        "primary": "mae",
+        "primary_error": 0.015390342002846674,
+        "rmse": 0.01956781154285165
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.00956507645837555,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.010490417915238118,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.03434975133610175,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.007694907918104652,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.014851556386413304,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.012176515883980893,
+        "execution_status": "complete",
+        "expression": "anchor_loss - p0 * (anchor_loss - early_loss) * log1p((tokens_B - anchor_tokens_B) / anchor_tokens_B) - p1 * log1p(params_B) * (tokens_B - anchor_tokens_B) / (anchor_tokens_B + early_tokens_B)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.6115400379348679,
+          "p1": 0.006669544632118657
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.33697884583438364,
+            "anchor_tokens_B": -2.4573198200383747e-17,
+            "depth": 0.5697113085134057,
+            "early_loss": -0.35527547565874434,
+            "early_tokens_B": 4.7917736490748304e-17,
+            "params_B": 0.18351820311475267,
+            "tokens_B": -0.6508720769160707,
+            "width": -0.02338030600637785
+          },
+          "mean": -0.001074718654509489,
+          "p90_abs": 0.027322323109852064,
+          "std": 0.015060080439018296
+        },
+        "rule_id": "full-comparison-v5--P100-043--direct_deepseek-rule-1",
+        "rule_sha256": "84696914ffb8f2508f69008c6cc61c80cd24f5482fd4118fdf6b9022685d1e18",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "anchor_loss - -0.6115400379348679 * (anchor_loss - early_loss) * log1p((tokens_B - anchor_tokens_B) / anchor_tokens_B) - 0.006669544632118657 * log1p(params_B) * (tokens_B - anchor_tokens_B) / (anchor_tokens_B + early_tokens_B)",
+          "expression_bytes": 192,
+          "free_parameters": 2,
+          "learned_state_bytes": 55,
+          "literal_state_bytes": 0,
+          "nodes": 57,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 18
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.011616882083567714,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "anchor_loss - p0 * (anchor_loss - early_loss) * log1p((tokens_B - anchor_tokens_B) / anchor_tokens_B) - p1 * log1p(params_B) * (tokens_B - anchor_tokens_B) / (anchor_tokens_B + early_tokens_B)",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--direct_deepseek-rule-1",
+      "rule_sha256": "84696914ffb8f2508f69008c6cc61c80cd24f5482fd4118fdf6b9022685d1e18",
+      "run_id": "full-comparison-v5--P100-043--direct_deepseek",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "anchor_loss - -0.6115400379348679 * (anchor_loss - early_loss) * log1p((tokens_B - anchor_tokens_B) / anchor_tokens_B) - 0.006669544632118657 * log1p(params_B) * (tokens_B - anchor_tokens_B) / (anchor_tokens_B + early_tokens_B)",
+        "expression_bytes": 192,
+        "free_parameters": 2,
+        "learned_state_bytes": 55,
+        "literal_state_bytes": 0,
+        "nodes": 57,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 18
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0488022626336021,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.021775394477786387,
+        "primary": "mae",
+        "primary_error": 0.021775394477786387,
+        "rmse": 0.027622383201020242
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.04931920482910074,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.021638429218767803,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.018200520350935362,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.007711227335780143,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.01200759065434788,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.17052745563097804,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-043--tree_control-rule-1",
+        "rule_sha256": "7351e4bc1420f55bc943e10b406559a14cc24754c537dec92a491d5ac820c5fd",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 107,
+          "weighted_operator_count": 107
+        },
+        "task_id": "P100-043.compact.v2",
+        "tree": {
+          "feature": [
+            6,
+            5,
+            0,
+            0,
+            4,
+            -2,
+            -2,
+            3,
+            -2,
+            -2,
+            5,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            3,
+            0,
+            0,
+            -2,
+            -2,
+            4,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            4,
+            -2,
+            -2,
+            5,
+            0,
+            5,
+            -2,
+            -2,
+            5,
+            -2,
+            -2,
+            7,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            4,
+            0,
+            0,
+            3,
+            6,
+            -2,
+            -2,
+            -2,
+            3,
+            0,
+            -2,
+            -2,
+            -2,
+            3,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            3,
+            0,
+            0,
+            -2,
+            6,
+            -2,
+            -2,
+            6,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2
+          ],
+          "features": [
+            "tokens_B",
+            "anchor_tokens_B",
+            "early_tokens_B",
+            "anchor_loss",
+            "early_loss",
+            "params_B",
+            "width",
+            "depth"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            -1,
+            -1,
+            8,
+            -1,
+            -1,
+            11,
+            12,
+            13,
+            -1,
+            -1,
+            16,
+            -1,
+            -1,
+            19,
+            -1,
+            21,
+            -1,
+            -1,
+            24,
+            25,
+            26,
+            27,
+            -1,
+            -1,
+            30,
+            -1,
+            -1,
+            33,
+            34,
+            -1,
+            -1,
+            37,
+            -1,
+            -1,
+            40,
+            41,
+            42,
+            -1,
+            -1,
+            45,
+            -1,
+            -1,
+            48,
+            49,
+            -1,
+            -1,
+            52,
+            -1,
+            -1,
+            55,
+            56,
+            57,
+            58,
+            59,
+            -1,
+            -1,
+            -1,
+            63,
+            64,
+            -1,
+            -1,
+            -1,
+            68,
+            69,
+            70,
+            -1,
+            -1,
+            73,
+            -1,
+            -1,
+            76,
+            77,
+            -1,
+            -1,
+            80,
+            -1,
+            -1,
+            83,
+            84,
+            85,
+            -1,
+            87,
+            -1,
+            -1,
+            90,
+            91,
+            -1,
+            -1,
+            94,
+            -1,
+            -1,
+            97,
+            98,
+            -1,
+            -1,
+            101,
+            102,
+            -1,
+            -1,
+            105,
+            -1,
+            -1
+          ],
+          "right": [
+            54,
+            23,
+            10,
+            7,
+            6,
+            -1,
+            -1,
+            9,
+            -1,
+            -1,
+            18,
+            15,
+            14,
+            -1,
+            -1,
+            17,
+            -1,
+            -1,
+            20,
+            -1,
+            22,
+            -1,
+            -1,
+            39,
+            32,
+            29,
+            28,
+            -1,
+            -1,
+            31,
+            -1,
+            -1,
+            36,
+            35,
+            -1,
+            -1,
+            38,
+            -1,
+            -1,
+            47,
+            44,
+            43,
+            -1,
+            -1,
+            46,
+            -1,
+            -1,
+            51,
+            50,
+            -1,
+            -1,
+            53,
+            -1,
+            -1,
+            82,
+            67,
+            62,
+            61,
+            60,
+            -1,
+            -1,
+            -1,
+            66,
+            65,
+            -1,
+            -1,
+            -1,
+            75,
+            72,
+            71,
+            -1,
+            -1,
+            74,
+            -1,
+            -1,
+            79,
+            78,
+            -1,
+            -1,
+            81,
+            -1,
+            -1,
+            96,
+            89,
+            86,
+            -1,
+            88,
+            -1,
+            -1,
+            93,
+            92,
+            -1,
+            -1,
+            95,
+            -1,
+            -1,
+            100,
+            99,
+            -1,
+            -1,
+            104,
+            103,
+            -1,
+            -1,
+            106,
+            -1,
+            -1
+          ],
+          "threshold": [
+            640.0,
+            0.07394995167851448,
+            47.01605033874512,
+            31.010586738586426,
+            3.648066759109497,
+            -2.0,
+            -2.0,
+            3.517936110496521,
+            -2.0,
+            -2.0,
+            0.05034470371901989,
+            71.02424621582031,
+            59.0201473236084,
+            -2.0,
+            -2.0,
+            89.31351089477539,
+            -2.0,
+            -2.0,
+            67.02288055419922,
+            -2.0,
+            85.02902603149414,
+            -2.0,
+            -2.0,
+            41.190162658691406,
+            3.305887818336487,
+            26.32974338531494,
+            23.007854461669922,
+            -2.0,
+            -2.0,
+            3.4312751293182373,
+            -2.0,
+            -2.0,
+            27.009220123291016,
+            23.007854461669922,
+            -2.0,
+            -2.0,
+            3.497868061065674,
+            -2.0,
+            -2.0,
+            0.11050956696271896,
+            67.02288055419922,
+            0.09911564737558365,
+            -2.0,
+            -2.0,
+            0.09911564737558365,
+            -2.0,
+            -2.0,
+            26.0,
+            69.02356338500977,
+            -2.0,
+            -2.0,
+            71.02424621582031,
+            -2.0,
+            -2.0,
+            3.14926278591156,
+            40.235958099365234,
+            29.137829780578613,
+            2.8831852674484253,
+            2560.0,
+            -2.0,
+            -2.0,
+            -2.0,
+            2.8831852674484253,
+            35.011953353881836,
+            -2.0,
+            -2.0,
+            -2.0,
+            2.8831852674484253,
+            67.5912094116211,
+            50.95450210571289,
+            -2.0,
+            -2.0,
+            80.30624008178711,
+            -2.0,
+            -2.0,
+            63.021514892578125,
+            53.01809883117676,
+            -2.0,
+            -2.0,
+            81.02766036987305,
+            -2.0,
+            -2.0,
+            3.0261263847351074,
+            43.01468467712402,
+            29.009902954101562,
+            -2.0,
+            1664.0,
+            -2.0,
+            -2.0,
+            1664.0,
+            63.021514892578125,
+            -2.0,
+            -2.0,
+            65.02219772338867,
+            -2.0,
+            -2.0,
+            43.01468467712402,
+            31.010586738586426,
+            -2.0,
+            -2.0,
+            67.02288055419922,
+            55.494834899902344,
+            -2.0,
+            -2.0,
+            83.0283432006836,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            3.039263331271429,
+            3.2606651818266252,
+            3.431547676226506,
+            3.4651385460678568,
+            3.4865841070833343,
+            3.4713397026000004,
+            3.5018285115666665,
+            3.4490543753062504,
+            3.43341192605,
+            3.4646968245625,
+            3.414446869761819,
+            3.431869396139286,
+            3.442566514008334,
+            3.4469962517333337,
+            3.4381367762833333,
+            3.4238465577374995,
+            3.42760853768,
+            3.4175765911666667,
+            3.3963790646296297,
+            3.4092146158200003,
+            3.3888287404,
+            3.3922588825222224,
+            3.3849698305125004,
+            3.2050446052180392,
+            3.2543813092400007,
+            3.231926546379412,
+            3.259407997133333,
+            3.2702138821333335,
+            3.2486021121333333,
+            3.2169366641500003,
+            3.200007259825,
+            3.226610609478571,
+            3.275588585274999,
+            3.3054660467,
+            3.3144570759428573,
+            3.294976512583333,
+            3.2587013244695653,
+            3.25055470468,
+            3.2739762365750003,
+            3.1863766631556762,
+            3.201289603785484,
+            3.217117958598149,
+            3.2327800989142856,
+            3.2116362094875006,
+            3.1890791586442853,
+            3.202753874988889,
+            3.184345602986537,
+            3.156061833022951,
+            3.17268881798,
+            3.1877980572857147,
+            3.1594682335875,
+            3.1399712024193547,
+            3.1547292709333328,
+            3.1261355131874997,
+            2.7700769086539556,
+            2.6939301970944447,
+            2.7805422419026313,
+            2.814417547655556,
+            2.8018915057249996,
+            2.79245547455,
+            2.8113275369,
+            2.8394696315166663,
+            2.750054466725,
+            2.734891976635715,
+            2.7468069195875002,
+            2.719005386033333,
+            2.785433610266667,
+            2.662880596125472,
+            2.641654256316667,
+            2.6707363352156253,
+            2.691790978108333,
+            2.6581035494799994,
+            2.6183885931975004,
+            2.6309875100875004,
+            2.6099893152708336,
+            2.7078304921911767,
+            2.7367597421000003,
+            2.748493234316667,
+            2.7250262498833333,
+            2.692050901331818,
+            2.70356886387,
+            2.6824525992166666,
+            2.851906210628359,
+            2.820542284610112,
+            2.8904132751230764,
+            2.92777354716,
+            2.8670631051,
+            2.8885226547625,
+            2.8456035554375005,
+            2.7917066377317465,
+            2.820438615978126,
+            2.8450971733363635,
+            2.807522228790476,
+            2.7620478214774185,
+            2.78860890865,
+            2.7452723980000004,
+            2.9139370865311114,
+            2.9766808106307696,
+            3.0048420429166662,
+            2.9525426115285716,
+            2.8884474486156257,
+            2.910215652915385,
+            2.9194123745142866,
+            2.8994861443833333,
+            2.873553414094737,
+            2.8819305101999997,
+            2.8660140276
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--tree_control-rule-1",
+      "rule_sha256": "7351e4bc1420f55bc943e10b406559a14cc24754c537dec92a491d5ac820c5fd",
+      "run_id": "full-comparison-v5--P100-043--tree_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 160,
+        "learned_state_bytes": 4731,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 107
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.06348948482253128,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.037518455050714904,
+        "primary": "mae",
+        "primary_error": 0.037518455050714904,
+        "rmse": 0.049345681324143804
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.02483121888984891,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.03853039114481058,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.050730347065467085,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.025985618627723965,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.04751469952572397,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.026356595208933273,
+        "execution_status": "complete",
+        "expression": "p0+p1*(anchor_loss)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.593079386408118,
+          "p1": 1.1463260230991728
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": 0.09136910455258733,
+            "anchor_tokens_B": -4.26137986235264e-18,
+            "depth": -0.027066463651680632,
+            "early_loss": 0.08760549683825457,
+            "early_tokens_B": -1.917620938058688e-17,
+            "params_B": -0.11755709511409311,
+            "tokens_B": 0.8911689465823598,
+            "width": -0.14039575651372355
+          },
+          "mean": -0.01401144717467136,
+          "p90_abs": 0.06271008750315138,
+          "std": 0.03473751258939931
+        },
+        "rule_id": "full-comparison-v5--P100-043--symbolic_control-rule-2",
+        "rule_sha256": "69db0a7e04db75c4199cac8ba6e5bbfc4b4bbfae6e5d6b77526a93180b61a612",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.593079386408118 + 1.1463260230991728 * anchor_loss",
+          "expression_bytes": 19,
+          "free_parameters": 2,
+          "learned_state_bytes": 52,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.036152633981655344,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(anchor_loss)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--symbolic_control-rule-2",
+      "rule_sha256": "69db0a7e04db75c4199cac8ba6e5bbfc4b4bbfae6e5d6b77526a93180b61a612",
+      "run_id": "full-comparison-v5--P100-043--symbolic_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.593079386408118 + 1.1463260230991728 * anchor_loss",
+        "expression_bytes": 19,
+        "free_parameters": 2,
+        "learned_state_bytes": 52,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.033203988023112516,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.037518455050714904,
+        "primary": "mae",
+        "primary_error": 0.037518455050714904,
+        "rmse": 0.049345681324143804
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.02483121888984891,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.03853039114481058,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.050730347065467085,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.025985618627723965,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.04751469952572397,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.026356595208933273,
+        "execution_status": "complete",
+        "expression": "p0+p1*(anchor_loss)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.593079386408118,
+          "p1": 1.1463260230991728
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": 0.09136910455258733,
+            "anchor_tokens_B": -4.26137986235264e-18,
+            "depth": -0.027066463651680632,
+            "early_loss": 0.08760549683825457,
+            "early_tokens_B": -1.917620938058688e-17,
+            "params_B": -0.11755709511409311,
+            "tokens_B": 0.8911689465823598,
+            "width": -0.14039575651372355
+          },
+          "mean": -0.01401144717467136,
+          "p90_abs": 0.06271008750315138,
+          "std": 0.03473751258939931
+        },
+        "rule_id": "full-comparison-v5--P100-043--principia_engine-rule-2",
+        "rule_sha256": "c92539c81088efe8397da950e5f08d4eeeb8fd21a3a7d6a15a7eef41fa3ea4d6",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.593079386408118 + 1.1463260230991728 * anchor_loss",
+          "expression_bytes": 19,
+          "free_parameters": 2,
+          "learned_state_bytes": 52,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.036152633981655344,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(anchor_loss)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--principia_engine-rule-2",
+      "rule_sha256": "c92539c81088efe8397da950e5f08d4eeeb8fd21a3a7d6a15a7eef41fa3ea4d6",
+      "run_id": "full-comparison-v5--P100-043--principia_engine",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.593079386408118 + 1.1463260230991728 * anchor_loss",
+        "expression_bytes": 19,
+        "free_parameters": 2,
+        "learned_state_bytes": 52,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.033203988023112516,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.0387585091854515,
+        "primary": "mae",
+        "primary_error": 0.0387585091854515,
+        "rmse": 0.050173922983807163
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.026585406914859253,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.03883056010721782,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.05317259691705386,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.026802728892278138,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.04840125309584844,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.025971167450360415,
+        "execution_status": "complete",
+        "expression": "p0+p1*((anchor_loss)**2)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.2141746901148196,
+          "p1": 0.18083247554943446
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": 0.18257469441806093,
+            "anchor_tokens_B": -3.389070432125743e-17,
+            "depth": -0.1502486340737422,
+            "early_loss": 0.18163939673068646,
+            "early_tokens_B": 0.0,
+            "params_B": -0.18373125746768698,
+            "tokens_B": 0.8862578954369854,
+            "width": -0.16978692370789056
+          },
+          "mean": -0.014583024893467805,
+          "p90_abs": 0.06616235169688925,
+          "std": 0.03494285281615423
+        },
+        "rule_id": "full-comparison-v5--P100-043--symbolic_control-rule-1",
+        "rule_sha256": "6ca1f95823017ea84533139fd9589130962b4220c926e443515401bf50c6dbc0",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1.2141746901148196 + 0.18083247554943446 * anchor_loss ** 2",
+          "expression_bytes": 24,
+          "free_parameters": 2,
+          "learned_state_bytes": 53,
+          "literal_state_bytes": 1,
+          "nodes": 14,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 3
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.037398463430013164,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((anchor_loss)**2)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--symbolic_control-rule-1",
+      "rule_sha256": "6ca1f95823017ea84533139fd9589130962b4220c926e443515401bf50c6dbc0",
+      "run_id": "full-comparison-v5--P100-043--symbolic_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1.2141746901148196 + 0.18083247554943446 * anchor_loss ** 2",
+        "expression_bytes": 24,
+        "free_parameters": 2,
+        "learned_state_bytes": 53,
+        "literal_state_bytes": 1,
+        "nodes": 14,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 3
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03158504571460669,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.0387585091854515,
+        "primary": "mae",
+        "primary_error": 0.0387585091854515,
+        "rmse": 0.050173922983807163
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.026585406914859253,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.03883056010721782,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.05317259691705386,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.026802728892278138,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.04840125309584844,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.025971167450360415,
+        "execution_status": "complete",
+        "expression": "p0+p1*((anchor_loss)**2)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.2141746901148196,
+          "p1": 0.18083247554943446
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": 0.18257469441806093,
+            "anchor_tokens_B": -3.389070432125743e-17,
+            "depth": -0.1502486340737422,
+            "early_loss": 0.18163939673068646,
+            "early_tokens_B": 0.0,
+            "params_B": -0.18373125746768698,
+            "tokens_B": 0.8862578954369854,
+            "width": -0.16978692370789056
+          },
+          "mean": -0.014583024893467805,
+          "p90_abs": 0.06616235169688925,
+          "std": 0.03494285281615423
+        },
+        "rule_id": "full-comparison-v5--P100-043--principia_engine-rule-3",
+        "rule_sha256": "34ddd48bfef9048bf6c2fa31b366a48b20224e24115ff24f2f0cecc994353b2e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1.2141746901148196 + 0.18083247554943446 * anchor_loss ** 2",
+          "expression_bytes": 24,
+          "free_parameters": 2,
+          "learned_state_bytes": 53,
+          "literal_state_bytes": 1,
+          "nodes": 14,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 3
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.037398463430013164,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((anchor_loss)**2)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--principia_engine-rule-3",
+      "rule_sha256": "34ddd48bfef9048bf6c2fa31b366a48b20224e24115ff24f2f0cecc994353b2e",
+      "run_id": "full-comparison-v5--P100-043--principia_engine",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1.2141746901148196 + 0.18083247554943446 * anchor_loss ** 2",
+        "expression_bytes": 24,
+        "free_parameters": 2,
+        "learned_state_bytes": 53,
+        "literal_state_bytes": 1,
+        "nodes": 14,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 3
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03158504571460669,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03989658448820284,
+        "primary": "mae",
+        "primary_error": 0.03989658448820284,
+        "rmse": 0.05113907058507578
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.027015049587860072,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.0387524697030593,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.05619863777405714,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.028247931786852445,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.049268833589185226,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.026106519099595733,
+        "execution_status": "complete",
+        "expression": "p0+p1*(anchor_loss*early_loss)+p2*(early_loss)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 2.9455664547656406,
+          "p1": 0.33558013921670715,
+          "p2": -1.0397102072659619
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": 0.19465327553316392,
+            "anchor_tokens_B": 7.180880363985697e-17,
+            "depth": -0.19255450103637337,
+            "early_loss": 0.19587247025501836,
+            "early_tokens_B": -3.168035454699573e-17,
+            "params_B": -0.1786632540555139,
+            "tokens_B": 0.8849673549632839,
+            "width": -0.143743355665519
+          },
+          "mean": -0.015577985681370797,
+          "p90_abs": 0.06617576450048174,
+          "std": 0.03504452650547877
+        },
+        "rule_id": "full-comparison-v5--P100-043--symbolic_control-rule-3",
+        "rule_sha256": "8b56d3d2766b142767565f6aa965028f2798fa95d99c078dcba208960a03b261",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "2.9455664547656406 + 0.33558013921670715 * (anchor_loss * early_loss) + -1.0397102072659619 * early_loss",
+          "expression_bytes": 46,
+          "free_parameters": 3,
+          "learned_state_bytes": 80,
+          "literal_state_bytes": 0,
+          "nodes": 23,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 5
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.03860553244594345,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(anchor_loss*early_loss)+p2*(early_loss)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--symbolic_control-rule-3",
+      "rule_sha256": "8b56d3d2766b142767565f6aa965028f2798fa95d99c078dcba208960a03b261",
+      "run_id": "full-comparison-v5--P100-043--symbolic_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "2.9455664547656406 + 0.33558013921670715 * (anchor_loss * early_loss) + -1.0397102072659619 * early_loss",
+        "expression_bytes": 46,
+        "free_parameters": 3,
+        "learned_state_bytes": 80,
+        "literal_state_bytes": 0,
+        "nodes": 23,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 5
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.027153193272659075,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.06486273746082023,
+        "primary": "mae",
+        "primary_error": 0.06486273746082023,
+        "rmse": 0.0933622402983141
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.01090092698781224,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.13670708184118707,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.154445944222922,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.008918915703950826,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.013340818548228989,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.012955674244662478,
+        "execution_status": "complete",
+        "expression": "p0 + p1*anchor_loss + p2*early_loss + p3*log1p(tokens_B - anchor_tokens_B) + p4*log1p(params_B) + p5*log1p(width) + p6*log1p(depth) + p7*log1p(anchor_tokens_B)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 8.829982904074313,
+          "p1": 0.7085097997793169,
+          "p2": 0.16088614768916384,
+          "p3": -0.05405120572538602,
+          "p4": 0.004270280136931416,
+          "p5": -0.09721167292828214,
+          "p6": -0.05163785170385241,
+          "p7": -2.574350479146664
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.17401308413993372,
+            "anchor_tokens_B": 4.7097253534071956e-17,
+            "depth": 0.39155378464228774,
+            "early_loss": -0.1901283565651851,
+            "early_tokens_B": -6.422352754646175e-17,
+            "params_B": 0.04295858932156382,
+            "tokens_B": -0.5185661429408972,
+            "width": -0.12420353422474495
+          },
+          "mean": -0.006364972621595495,
+          "p90_abs": 0.03537356334664229,
+          "std": 0.017286858368562495
+        },
+        "rule_id": "full-comparison-v5--P100-043--best_of_n-rule-3",
+        "rule_sha256": "499d70b98328979d50e27959a920725658f9909d8683ab75c132dd46e2bee8b7",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "8.829982904074313 + 0.7085097997793169 * anchor_loss + 0.16088614768916384 * early_loss + -0.05405120572538602 * log1p(tokens_B - anchor_tokens_B) + 0.004270280136931416 * log1p(params_B) + -0.09721167292828214 * log1p(width) + -0.05163785170385241 * log1p(depth) + -2.574350479146664 * log1p(anchor_tokens_B)",
+          "expression_bytes": 159,
+          "free_parameters": 8,
+          "learned_state_bytes": 216,
+          "literal_state_bytes": 0,
+          "nodes": 78,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 30
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.009683492768794169,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*anchor_loss + p2*early_loss + p3*log1p(tokens_B - anchor_tokens_B) + p4*log1p(params_B) + p5*log1p(width) + p6*log1p(depth) + p7*log1p(anchor_tokens_B)",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-043--best_of_n-rule-3",
+      "rule_sha256": "499d70b98328979d50e27959a920725658f9909d8683ab75c132dd46e2bee8b7",
+      "run_id": "full-comparison-v5--P100-043--best_of_n",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "8.829982904074313 + 0.7085097997793169 * anchor_loss + 0.16088614768916384 * early_loss + -0.05405120572538602 * log1p(tokens_B - anchor_tokens_B) + 0.004270280136931416 * log1p(params_B) + -0.09721167292828214 * log1p(width) + -0.05163785170385241 * log1p(depth) + -2.574350479146664 * log1p(anchor_tokens_B)",
+        "expression_bytes": 159,
+        "free_parameters": 8,
+        "learned_state_bytes": 216,
+        "literal_state_bytes": 0,
+        "nodes": 78,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 30
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.23535639486644724,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.2860829921486803,
+        "primary": "mae",
+        "primary_error": 0.2860829921486803,
+        "rmse": 0.29850086244248175
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.32546096988809525,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.21517978123887038,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.3831040763040816,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.19477416688222995,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.31189596643012424,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.24818290213060656,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 3.0392633312714286
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.9886974039469348,
+            "anchor_tokens_B": 4.1060487602607496e-17,
+            "depth": 0.8887837399309947,
+            "early_loss": -0.988778083184674,
+            "early_tokens_B": -7.31389935421446e-17,
+            "params_B": 0.9549747883997458,
+            "tokens_B": 0.1524070569082072,
+            "width": 0.8329061171014575
+          },
+          "mean": -0.11938761248777141,
+          "p90_abs": 0.35664130508857145,
+          "std": 0.23073041010030215
+        },
+        "rule_id": "full-comparison-v5--P100-043--mean_control-rule-1",
+        "rule_sha256": "41d2a2502d64311d2d71ba9b96069c38a3f14708b6b87d4a067272e577192e16",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "3.0392633312714286",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.2409309815382228,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--mean_control-rule-1",
+      "rule_sha256": "41d2a2502d64311d2d71ba9b96069c38a3f14708b6b87d4a067272e577192e16",
+      "run_id": "full-comparison-v5--P100-043--mean_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "3.0392633312714286",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.39248906684937895,
+        "primary": "mae",
+        "primary_error": 0.39248906684937895,
+        "rmse": 0.4767003571088103
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.32546096988809126,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.21517978123887435,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.9151344498075749,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.19477416688222596,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.3118959664301282,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.24818290213060526,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tokens_B)+p2*(anchor_tokens_B)+p3*(early_tokens_B)+p4*(anchor_loss)+p5*(early_loss)+p6*(params_B)+p7*(width)+p8*(depth)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 4.7456071140315335e-26,
+          "p1": 5.130762830485325e-27,
+          "p2": 8.85700835281663e-21,
+          "p3": 0.37977822062747185,
+          "p4": 2.8830387924668033e-24,
+          "p5": 4.400899839323039e-24,
+          "p6": 5.998002339030521e-26,
+          "p7": 5.777560686419754e-29,
+          "p8": 2.7963523365524714e-27
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.9886974039469348,
+            "anchor_tokens_B": 4.1060487602607496e-17,
+            "depth": 0.8887837399309947,
+            "early_loss": -0.988778083184674,
+            "early_tokens_B": -7.31389935421446e-17,
+            "params_B": 0.9549747883997458,
+            "tokens_B": 0.1524070569082072,
+            "width": 0.8329061171014575
+          },
+          "mean": -0.11938761248776743,
+          "p90_abs": 0.35664130508856745,
+          "std": 0.23073041010030215
+        },
+        "rule_id": "full-comparison-v5--P100-043--linear_control-rule-1",
+        "rule_sha256": "ffdd829745249259f36b231da43c114ab19062e6cdb01daead90497b9ef64410",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "4.7456071140315335e-26 + 5.130762830485325e-27 * tokens_B + 8.85700835281663e-21 * anchor_tokens_B + 0.37977822062747185 * early_tokens_B + 2.8830387924668033e-24 * anchor_loss + 4.400899839323039e-24 * early_loss + 5.998002339030521e-26 * params_B + 5.777560686419754e-29 * width + 2.7963523365524714e-27 * depth",
+          "expression_bytes": 126,
+          "free_parameters": 9,
+          "learned_state_bytes": 261,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.24093098153822215,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tokens_B)+p2*(anchor_tokens_B)+p3*(early_tokens_B)+p4*(anchor_loss)+p5*(early_loss)+p6*(params_B)+p7*(width)+p8*(depth)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--linear_control-rule-1",
+      "rule_sha256": "ffdd829745249259f36b231da43c114ab19062e6cdb01daead90497b9ef64410",
+      "run_id": "full-comparison-v5--P100-043--linear_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "4.7456071140315335e-26 + 5.130762830485325e-27 * tokens_B + 8.85700835281663e-21 * anchor_tokens_B + 0.37977822062747185 * early_tokens_B + 2.8830387924668033e-24 * anchor_loss + 4.400899839323039e-24 * early_loss + 5.998002339030521e-26 * params_B + 5.777560686419754e-29 * width + 2.7963523365524714e-27 * depth",
+        "expression_bytes": 126,
+        "free_parameters": 9,
+        "learned_state_bytes": 261,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.4436309954698517,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.39248906684937895,
+        "primary": "mae",
+        "primary_error": 0.39248906684937895,
+        "rmse": 0.4767003571088103
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 0.2860829921486803,
+      "by_group": [
+        {
+          "error": 0.32546096988809126,
+          "group": "group-2202a086cb33273ce2d378c3",
+          "rows": 42
+        },
+        {
+          "error": 0.21517978123887435,
+          "group": "group-71145ec09dd8be2729e0100a",
+          "rows": 43
+        },
+        {
+          "error": 0.9151344498075749,
+          "group": "group-ab62ca3054292a2e9049d31e",
+          "rows": 49
+        },
+        {
+          "error": 0.19477416688222596,
+          "group": "group-aec67ad855dba6b880f2abfa",
+          "rows": 41
+        },
+        {
+          "error": 0.3118959664301282,
+          "group": "group-e90b4881bf0e2712c670ec14",
+          "rows": 46
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.24818290213060526,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tokens_B)+p2*(anchor_tokens_B)+p3*(early_tokens_B)+p4*(anchor_loss)+p5*(early_loss)+p6*(params_B)+p7*(width)+p8*(depth)",
+        "inputs": [
+          "tokens_B",
+          "anchor_tokens_B",
+          "early_tokens_B",
+          "anchor_loss",
+          "early_loss",
+          "params_B",
+          "width",
+          "depth"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 4.7456071140315335e-26,
+          "p1": 5.130762830485325e-27,
+          "p2": 8.85700835281663e-21,
+          "p3": 0.37977822062747185,
+          "p4": 2.8830387924668033e-24,
+          "p5": 4.400899839323039e-24,
+          "p6": 5.998002339030521e-26,
+          "p7": 5.777560686419754e-29,
+          "p8": 2.7963523365524714e-27
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "anchor_loss": -0.9886974039469348,
+            "anchor_tokens_B": 4.1060487602607496e-17,
+            "depth": 0.8887837399309947,
+            "early_loss": -0.988778083184674,
+            "early_tokens_B": -7.31389935421446e-17,
+            "params_B": 0.9549747883997458,
+            "tokens_B": 0.1524070569082072,
+            "width": 0.8329061171014575
+          },
+          "mean": -0.11938761248776743,
+          "p90_abs": 0.35664130508856745,
+          "std": 0.23073041010030215
+        },
+        "rule_id": "full-comparison-v5--P100-043--polynomial_control-rule-1",
+        "rule_sha256": "5acddcaee59325557253cf4dc892a08ee515f65c0c5884e2a3f6703de10201ca",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "4.7456071140315335e-26 + 5.130762830485325e-27 * tokens_B + 8.85700835281663e-21 * anchor_tokens_B + 0.37977822062747185 * early_tokens_B + 2.8830387924668033e-24 * anchor_loss + 4.400899839323039e-24 * early_loss + 5.998002339030521e-26 * params_B + 5.777560686419754e-29 * width + 2.7963523365524714e-27 * depth",
+          "expression_bytes": 126,
+          "free_parameters": 9,
+          "learned_state_bytes": 261,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-043.compact.v2",
+        "train_error": 0.24093098153822215,
+        "units": {
+          "inputs": {
+            "anchor_loss": "nats per token",
+            "anchor_tokens_B": "billions of training tokens",
+            "depth": "layers",
+            "early_loss": "nats per token",
+            "early_tokens_B": "billions of training tokens",
+            "params_B": "billions of parameters",
+            "tokens_B": "billions of training tokens",
+            "width": "embedding dimensions"
+          },
+          "output": "nats per token",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 221,
+        "fraction": 1.0,
+        "predicted": 221
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tokens_B)+p2*(anchor_tokens_B)+p3*(early_tokens_B)+p4*(anchor_loss)+p5*(early_loss)+p6*(params_B)+p7*(width)+p8*(depth)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-043--polynomial_control-rule-1",
+      "rule_sha256": "5acddcaee59325557253cf4dc892a08ee515f65c0c5884e2a3f6703de10201ca",
+      "run_id": "full-comparison-v5--P100-043--polynomial_control",
+      "scenario_id": "P100-043",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "4.7456071140315335e-26 + 5.130762830485325e-27 * tokens_B + 8.85700835281663e-21 * anchor_tokens_B + 0.37977822062747185 * early_tokens_B + 2.8830387924668033e-24 * anchor_loss + 4.400899839323039e-24 * early_loss + 5.998002339030521e-26 * params_B + 5.777560686419754e-29 * width + 2.7963523365524714e-27 * depth",
+        "expression_bytes": 126,
+        "free_parameters": 9,
+        "learned_state_bytes": 261,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.4436309954698517,
+        "perturbation_labels_available": false,
+        "population_rows": 221,
+        "ranking": false,
+        "samples": 221,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-043.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-043",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-043.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

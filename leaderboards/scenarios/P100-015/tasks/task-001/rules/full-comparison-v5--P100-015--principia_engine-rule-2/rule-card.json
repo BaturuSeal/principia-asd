@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.09763929528928926,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(income_proxy)))",
+  "inputs": [
+    "income_proxy",
+    "household_size",
+    "shock",
+    "age"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.2909004961108277,
+    "p1": -0.001796573178027478
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.19522731204171237,
+      "household_size": -0.1653622905600937,
+      "income_proxy": 0.1055003151103125,
+      "shock": -0.03766502055152614
+    },
+    "mean": -0.021638961497453577,
+    "p90_abs": 0.7405395345046532,
+    "std": 0.32526071825109487
+  },
+  "rule_id": "full-comparison-v5--P100-015--principia_engine-rule-2",
+  "rule_sha256": "f5720ac6bce7a7fa974153f22fa965ffee518ea5476f0f0e69ba2430051e2a31",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.2909004961108277 + -0.001796573178027478 * income_proxy))",
+    "expression_bytes": 42,
+    "free_parameters": 2,
+    "learned_state_bytes": 55,
+    "literal_state_bytes": 2,
+    "nodes": 19,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-015.compact.v2",
+  "train_error": 0.08791470893998844,
+  "units": {
+    "inputs": {
+      "age": "years",
+      "household_size": "persons",
+      "income_proxy": "thousands USD/year bracket proxy",
+      "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+    },
+    "output": "binary EF3_h",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

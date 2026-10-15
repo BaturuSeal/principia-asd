@@ -1,0 +1,166 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T15:13:08.353076+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 10081425,
+  "registered_source_files": 3,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "README and per-curve instrument deflection sensitivities require source reconciliation",
+        "Same surfaces/acquisitions span partitions; curve-held-out prediction is not specimen or batch transfer",
+        "Author-calibrated text exports retained; binary signal decoding and export processing not independently reproduced",
+        "Only permitted approach and early retraction calibrate inputs; no cell response, modulus or mechanism claim",
+        "Full-pipeline complexity, instrument uncertainty, valid perturbations, rights/notices and scientific admission remain unassessed"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-084/reconstruction.json",
+      "candidate_receipt_sha256": "4acd618cd77f34799c6390cf871177de815679cf340077714ed34ab847f3aca2",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1120
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 336
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 224,
+            "reconstructed_rows": 224,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 336,
+            "reconstructed_rows": 336,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 896,
+            "reconstructed_rows": 896,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": {
+        "archive": {
+          "expanded_bytes": 8318170,
+          "members": 98
+        },
+        "curves": 13,
+        "deflection_sensitivity_nm_per_V": [
+          66.70613,
+          68.4995
+        ],
+        "eligible_rows": 1456,
+        "fit_count": 0,
+        "force_deflection_relation_checked_without_fitting": true,
+        "group_counts": {
+          "dev": 2,
+          "test": 3,
+          "train": 8
+        },
+        "independence_scope": "Distinct locations within three surface specimens/acquisitions; not independent batches",
+        "late_response_used_in_inputs": false,
+        "learned_transformations": [],
+        "readme_deflection_sensitivity_nm_per_V": 86.5,
+        "readme_scope": "Bound source README says 86.5nm/V; instrument headers retained without reinterpretation",
+        "readme_sensitivity_matches_headers": false,
+        "source_rows": 1664,
+        "surface_counts": {
+          "CA Flat": 4,
+          "CA High Roughness": 5,
+          "CA Low Roughness": 4
+        },
+        "surface_partition_overlap": {
+          "CA Flat": [
+            "dev",
+            "test",
+            "train"
+          ],
+          "CA High Roughness": [
+            "test",
+            "train"
+          ],
+          "CA Low Roughness": [
+            "dev",
+            "test",
+            "train"
+          ]
+        }
+      },
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "3147f434705f8be4028c7b6286be648f329c3011510ad6377af69f05af2ac5e9",
+      "recipe_sha256": "aef455e7b010597be4e554743cbd4d7e0b82a37a34fb5416b45866b5ea054535",
+      "rows": {
+        "dev": 224,
+        "test": 336,
+        "train": 896
+      },
+      "runtime_binding_sha256": "50eafe3ed8632e6d817b3ba158c41132f06ae44cb9ac075ca656f973bc159357",
+      "scenario_id": "P100-084",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_32893.spm.txt",
+            "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_34177.spm.txt"
+          ],
+          "test": [
+            "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_36494.spm.txt",
+            "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32904.spm.txt",
+            "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_32907.spm.txt"
+          ],
+          "train": [
+            "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_33161.spm.txt",
+            "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_34949.spm.txt",
+            "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32378.spm.txt",
+            "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32384.spm.txt",
+            "230807_CA_high.0_00022.pfc-56F0_ForceCurveIndex_32640.spm.txt",
+            "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_30859.spm.txt",
+            "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_32388.spm.txt",
+            "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_33925.spm.txt"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

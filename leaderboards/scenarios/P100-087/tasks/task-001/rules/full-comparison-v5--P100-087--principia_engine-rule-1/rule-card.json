@@ -1,0 +1,101 @@
+{
+  "dev_error": 0.7480226029856325,
+  "execution_status": "complete",
+  "expression": "p0+p1*own_previous+p2*own_history_mean+p3*tanh((own_previous-10.778558052434457)/6.094869696918072)+p4*own_lag2+p5*tanh((own_lag2-10.801186017478152)/6.100499240052563)",
+  "inputs": [
+    "round",
+    "own_previous",
+    "peer_previous",
+    "own_lag2",
+    "peer_lag2",
+    "own_history_mean",
+    "peer_history_mean",
+    "endowment",
+    "peer_endowment",
+    "productivity",
+    "peer_productivity",
+    "threshold",
+    "previous_success",
+    "required_contribution"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8783882270092765,
+    "p1": 0.42707216138338744,
+    "p2": 0.29243735561143097,
+    "p3": 0.8178961659992776,
+    "p4": 0.19359047517450412,
+    "p5": -0.2798388437655251
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "endowment": -0.057873609296036445,
+      "own_history_mean": -0.024341899804612554,
+      "own_lag2": 0.0010321071108078624,
+      "own_previous": -0.026845065644473816,
+      "peer_endowment": 0.057873609296036445,
+      "peer_history_mean": -0.0013228942897036892,
+      "peer_lag2": -0.01781649240321306,
+      "peer_previous": 0.0006986395728105129,
+      "peer_productivity": 0.02836957649813397,
+      "previous_success": -0.02534718876759389,
+      "productivity": 0.020342108238890065,
+      "required_contribution": 0.0018517547503050446,
+      "round": -0.013937889992229852,
+      "threshold": 0.019010778820060723
+    },
+    "mean": 0.07013437658798655,
+    "p90_abs": 1.8469243924049772,
+    "std": 1.9889145528837806
+  },
+  "rule_id": "full-comparison-v5--P100-087--principia_engine-rule-1",
+  "rule_sha256": "fb5749c1dffd8b7ec4f1201e59f2033cea82d5478902cc04519c9f7ed4614812",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.8783882270092765 + 0.42707216138338744 * own_previous + 0.29243735561143097 * own_history_mean + 0.8178961659992776 * tanh((own_previous - 10.778558052434457) / 6.094869696918072) + 0.19359047517450412 * own_lag2 + -0.2798388437655251 * tanh((own_lag2 - 10.801186017478152) / 6.100499240052563)",
+    "expression_bytes": 168,
+    "free_parameters": 6,
+    "learned_state_bytes": 160,
+    "literal_state_bytes": 70,
+    "nodes": 61,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-087.compact.v2",
+  "train_error": 1.0913141928997132,
+  "units": {
+    "inputs": {
+      "endowment": "experimental tokens",
+      "own_history_mean": "experimental tokens",
+      "own_lag2": "experimental tokens",
+      "own_previous": "experimental tokens",
+      "peer_endowment": "experimental tokens",
+      "peer_history_mean": "experimental tokens",
+      "peer_lag2": "experimental tokens",
+      "peer_previous": "experimental tokens",
+      "peer_productivity": "dimensionless",
+      "previous_success": "indicator",
+      "productivity": "dimensionless",
+      "required_contribution": "experimental tokens",
+      "round": "round",
+      "threshold": "productivity-weighted tokens"
+    },
+    "output": "experimental tokens",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

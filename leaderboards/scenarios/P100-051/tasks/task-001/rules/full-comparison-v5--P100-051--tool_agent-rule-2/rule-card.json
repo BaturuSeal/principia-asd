@@ -1,0 +1,64 @@
+{
+  "dev_error": 0.25404934049092676,
+  "execution_status": "complete",
+  "expression": "p0+p1*(gate_V)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "grammar-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.30073185084020804,
+    "p1": 0.03406051094047151
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.05332561164221903,
+      "cal_plus20_uA": -0.02106347540980723,
+      "cal_zero_uA": -0.04815697637758498,
+      "gate_V": -0.005682633869052657
+    },
+    "mean": 0.0013147980539883401,
+    "p90_abs": 0.40700732576137505,
+    "std": 0.30659185696011754
+  },
+  "rule_id": "full-comparison-v5--P100-051--tool_agent-rule-2",
+  "rule_sha256": "21265b2d6b1fe4d70697439f6178cbfde3704224517b3612ee87e3dc9a896626",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.30073185084020804 + 0.03406051094047151 * gate_V",
+    "expression_bytes": 14,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.24741323762893483,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

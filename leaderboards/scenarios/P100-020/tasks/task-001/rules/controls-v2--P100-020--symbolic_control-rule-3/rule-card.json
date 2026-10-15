@@ -1,0 +1,74 @@
+{
+  "dev_error": 0.03537767652905773,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.00120997657222825,
+    "p1": 1.0063611072144172,
+    "p2": 0.8296321146879722,
+    "p3": -0.8334349165391893
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": 0.027122097440255018,
+      "dg": 0.03713024521705837,
+      "gx": 0.09883765571708926,
+      "gy": 0.028390171139932377,
+      "hx": 0.033879377173685526,
+      "hy": 0.030764380633234622,
+      "ox": 0.06235974069012222,
+      "oy": 0.05271848513786077
+    },
+    "mean": 0.00111641433647531,
+    "p90_abs": 0.07726396163217934,
+    "std": 0.05237211266000234
+  },
+  "rule_id": "controls-v2--P100-020--symbolic_control-rule-3",
+  "rule_sha256": "cd99cded38e629d8b424385e44d8314e140e9c70db7ee1d973cb8cc75177631c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.00120997657222825 + 1.0063611072144172 * hx + 0.8296321146879722 * hy + -0.8334349165391893 * dg",
+    "expression_bytes": 26,
+    "free_parameters": 4,
+    "learned_state_bytes": 107,
+    "nodes": 27,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.0394064860183408,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

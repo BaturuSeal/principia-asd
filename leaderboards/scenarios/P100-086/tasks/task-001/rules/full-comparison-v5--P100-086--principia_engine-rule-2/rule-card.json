@@ -1,0 +1,64 @@
+{
+  "dev_error": 57.78749375909941,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 534.6241118554835,
+    "p1": 0.9855225122136191
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.03265642622914542,
+      "slope6": -0.5577495952205515,
+      "time_h": -0.0048521518782865146
+    },
+    "mean": 0.5666611544601462,
+    "p90_abs": 109.59067741671646,
+    "std": 81.2001390355034
+  },
+  "rule_id": "full-comparison-v5--P100-086--principia_engine-rule-2",
+  "rule_sha256": "35589f8efe81c39d15b631826ca899aca9ad7818ccf94bbaeec36f35b101d3f1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "534.6241118554835 + 0.9855225122136191 * current",
+    "expression_bytes": 15,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 59.19644710614601,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "dev_error": 0.27425858333333336,
+  "execution_status": "complete",
+  "expression": "where(quality > 0.0, quality, 0.0)",
+  "inputs": [
+    "pressure_Pa",
+    "massflux_kg_m2_s",
+    "quality",
+    "radial_fraction",
+    "rho_liquid",
+    "rho_vapor"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.0
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "massflux_kg_m2_s": -0.46991018868149287,
+      "pressure_Pa": -0.4699101886814928,
+      "quality": 0.469910188681493,
+      "radial_fraction": 0.7902129777757999,
+      "rho_liquid": 0.46991018868149287,
+      "rho_vapor": -0.469910188681493
+    },
+    "mean": -0.27425858333333336,
+    "p90_abs": 0.5665539999999999,
+    "std": 0.16838660926963991
+  },
+  "rule_id": "full-comparison-v5--P100-027--direct_qwen-rule-1",
+  "rule_sha256": "874103a6035ad0193cf0e5999796194b43c6ead463e5eec382eaebee96727d02",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "where(quality > 0.0, quality, 0.0)",
+    "expression_bytes": 34,
+    "free_parameters": 1,
+    "learned_state_bytes": 11,
+    "literal_state_bytes": 6,
+    "nodes": 12,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-027.compact.v2",
+  "train_error": 0.4861986666666667,
+  "units": {
+    "inputs": {
+      "massflux_kg_m2_s": "kg m^-2 s^-1",
+      "pressure_Pa": "Pa, absolute",
+      "quality": "kg vapor per kg mixture",
+      "radial_fraction": "dimensionless native coordinate / maximum sampled coordinate",
+      "rho_liquid": "kg m^-3",
+      "rho_vapor": "kg m^-3"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

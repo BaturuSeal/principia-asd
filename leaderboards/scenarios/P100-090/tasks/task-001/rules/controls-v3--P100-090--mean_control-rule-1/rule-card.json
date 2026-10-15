@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.23714159557276826,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "p_now",
+    "p_past",
+    "p_initial",
+    "density",
+    "speed",
+    "radius90",
+    "polarization_variance"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.16991461051321813
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "density": 0.38079386823163214,
+      "p_initial": -0.0817954202697523,
+      "p_now": -0.8741298770052173,
+      "p_past": -0.8375826701416381,
+      "polarization_variance": 0.7195433240272336,
+      "radius90": 0.0034585294946007676,
+      "speed": -0.5483875286429036
+    },
+    "mean": -0.026045557276497204,
+    "p90_abs": 0.26577959537272017,
+    "std": 0.16853343029410947
+  },
+  "rule_id": "controls-v3--P100-090--mean_control-rule-1",
+  "rule_sha256": "e068464b821e108ba610c21d82a007fc83d5ab21eb4fc3ed2296a23ba7066c25",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.16991461051321813",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-090.compact.v2",
+  "train_error": 0.18592388383763128,
+  "units": {
+    "inputs": {
+      "density": "tracked persons/(pi*r90²), proxy persons/m²",
+      "p_initial": "first2seconds mean order, declared pertrialcalibration",
+      "p_now": "dimensionless current signed angular order",
+      "p_past": "previous2integerseconds mean order",
+      "polarization_variance": "withinframe variance of individual signedorder",
+      "radius90": "90th-percentile centroiddistance metres",
+      "speed": "mean1sbackwardsecant m/s"
+    },
+    "output": "dimensionless signed[-1,1]",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

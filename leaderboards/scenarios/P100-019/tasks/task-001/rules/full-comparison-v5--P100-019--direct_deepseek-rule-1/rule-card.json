@@ -1,0 +1,67 @@
+{
+  "dev_error": 4.21529637171448,
+  "execution_status": "complete",
+  "expression": "p0 * lag1 + p1 * lag3 + p2 * lag6 + p3 * month + p4",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6172112115912111,
+    "p1": 0.08679273729255475,
+    "p2": 0.25267069325832897,
+    "p3": -0.1414131167342373,
+    "p4": 1.7258226870174393
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.006335385813207879,
+      "lag3": -0.05544875719669241,
+      "lag6": -0.11248186109680036,
+      "month": 0.13689128664370337
+    },
+    "mean": 0.18438976081426342,
+    "p90_abs": 8.940372781767232,
+    "std": 8.15255842413764
+  },
+  "rule_id": "full-comparison-v5--P100-019--direct_deepseek-rule-1",
+  "rule_sha256": "7b32ca94cd0e8f86736ecd1db4aacb9b6443f7852eaf767c49ba047d953d1398",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6172112115912111 * lag1 + 0.08679273729255475 * lag3 + 0.25267069325832897 * lag6 + -0.1414131167342373 * month + 1.7258226870174393",
+    "expression_bytes": 51,
+    "free_parameters": 5,
+    "learned_state_bytes": 133,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.13929870095119,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "ambiguous_requests_not_replayed": [
+    {
+      "error_type": "HTTPError",
+      "payload_sha256": "f135988f7081d301fc98443eaa246e3bfac1067ddede6ca4356100f6b05c1ffc",
+      "request_id": "data-to-paper-domain-pilot-v3--P100-043--data_to_paper--critic--3",
+      "reserved_cny": 2.0,
+      "state": "unknown",
+      "verification_scope": "Recorded unknown-usage boundary only; no provider redispatch or billing-resolution claim"
+    },
+    {
+      "error_type": "HTTPError",
+      "payload_sha256": "50c7e752cad4d15523815fbb86ce2e420df17ef085a54db6eedc2148c84d9564",
+      "request_id": "data-to-paper-domain-pilot-v3--P100-054--data_to_paper--critic--3",
+      "reserved_cny": 2.0,
+      "state": "unknown",
+      "verification_scope": "Recorded unknown-usage boundary only; no provider redispatch or billing-resolution claim"
+    }
+  ],
+  "assigned_attempts": 8,
+  "attempt_statuses": {
+    "complete": 5,
+    "failed": 2,
+    "incomplete_method_execution": 1
+  },
+  "campaign_id": "data-to-paper-domain-pilot-v3",
+  "checked_at": "2026-10-11T16:46:17.915456+00:00",
+  "driver_summary_note": "Campaign-local completion counts verified separately from canonical primary export counts",
+  "evaluation_freeze_sha256": "7e0c6725ff056c2ec391a7ee19698c87762d16acd0aa22a62a9f603e3b08e2c4",
+  "included_in_primary_ranking": false,
+  "jobs": [
+    {
+      "conformance": {
+        "checks": {
+          "analysis_plan_guard": true,
+          "critic_received_executed_analysis": true,
+          "executed_analysis": true,
+          "traceable_report_guard": true
+        },
+        "status": "complete"
+      },
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [],
+      "recorded_requests_replayed": 4,
+      "rules": 1,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-002--data_to_paper",
+      "scenario_id": "P100-002",
+      "status": "complete"
+    },
+    {
+      "conformance": {
+        "checks": {
+          "analysis_plan_guard": true,
+          "critic_received_executed_analysis": false,
+          "executed_analysis": false,
+          "traceable_report_guard": false
+        },
+        "status": "incomplete_method_execution"
+      },
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [],
+      "recorded_requests_replayed": 3,
+      "rules": 0,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-017--data_to_paper",
+      "scenario_id": "P100-017",
+      "status": "incomplete_method_execution"
+    },
+    {
+      "conformance": null,
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [
+        {
+          "error_type": "HTTPError",
+          "payload_sha256": "f135988f7081d301fc98443eaa246e3bfac1067ddede6ca4356100f6b05c1ffc",
+          "request_id": "data-to-paper-domain-pilot-v3--P100-043--data_to_paper--critic--3",
+          "reserved_cny": 2.0,
+          "state": "unknown",
+          "verification_scope": "Recorded unknown-usage boundary only; no provider redispatch or billing-resolution claim"
+        }
+      ],
+      "recorded_requests_replayed": 2,
+      "rules": 0,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-043--data_to_paper",
+      "scenario_id": "P100-043",
+      "status": "failed"
+    },
+    {
+      "conformance": {
+        "checks": {
+          "analysis_plan_guard": true,
+          "critic_received_executed_analysis": true,
+          "executed_analysis": true,
+          "traceable_report_guard": true
+        },
+        "status": "complete"
+      },
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [],
+      "recorded_requests_replayed": 4,
+      "rules": 1,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-051--data_to_paper",
+      "scenario_id": "P100-051",
+      "status": "complete"
+    },
+    {
+      "conformance": null,
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [
+        {
+          "error_type": "HTTPError",
+          "payload_sha256": "50c7e752cad4d15523815fbb86ce2e420df17ef085a54db6eedc2148c84d9564",
+          "request_id": "data-to-paper-domain-pilot-v3--P100-054--data_to_paper--critic--3",
+          "reserved_cny": 2.0,
+          "state": "unknown",
+          "verification_scope": "Recorded unknown-usage boundary only; no provider redispatch or billing-resolution claim"
+        }
+      ],
+      "recorded_requests_replayed": 2,
+      "rules": 0,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-054--data_to_paper",
+      "scenario_id": "P100-054",
+      "status": "failed"
+    },
+    {
+      "conformance": {
+        "checks": {
+          "analysis_plan_guard": true,
+          "critic_received_executed_analysis": true,
+          "executed_analysis": true,
+          "traceable_report_guard": true
+        },
+        "status": "complete"
+      },
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [],
+      "recorded_requests_replayed": 4,
+      "rules": 1,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-068--data_to_paper",
+      "scenario_id": "P100-068",
+      "status": "complete"
+    },
+    {
+      "conformance": {
+        "checks": {
+          "analysis_plan_guard": true,
+          "critic_received_executed_analysis": true,
+          "executed_analysis": true,
+          "traceable_report_guard": true
+        },
+        "status": "complete"
+      },
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [],
+      "recorded_requests_replayed": 4,
+      "rules": 1,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-087--data_to_paper",
+      "scenario_id": "P100-087",
+      "status": "complete"
+    },
+    {
+      "conformance": {
+        "checks": {
+          "analysis_plan_guard": true,
+          "critic_received_executed_analysis": true,
+          "executed_analysis": true,
+          "traceable_report_guard": true
+        },
+        "status": "complete"
+      },
+      "method_id": "data_to_paper",
+      "recorded_failure_boundaries": [],
+      "recorded_requests_replayed": 4,
+      "rules": 1,
+      "run_id": "data-to-paper-domain-pilot-v3--P100-090--data_to_paper",
+      "scenario_id": "P100-090",
+      "status": "complete"
+    }
+  ],
+  "ledger_unchanged": true,
+  "new_api_calls": 0,
+  "recorded_requests_replayed": 27,
+  "replay_scope": "Exact paid-payload hashes, cached responses, handoffs, programs, numeric results, conformance and final assessments. Unknown-usage failures verify cached prefixes and their recorded error boundary only; they are never redispatched. Excludes wall-clock timing and external billing resolution.",
+  "rule_statuses": {
+    "complete": 5
+  },
+  "runtime_sha256": "fe5e7f4650459cd69bdac2db51d21745e1f1911858cda966bce97bfc92dc4675",
+  "scientific_review": "not_assessed",
+  "status": "passed",
+  "submission_freeze_sha256": "1d2f1b27d648ccd4181511cebd1179c6a2d35aea84618d520d928c198931e239",
+  "track": "engineering"
+}

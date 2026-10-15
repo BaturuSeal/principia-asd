@@ -1,0 +1,77 @@
+{
+  "dev_error": 0.1154545789498889,
+  "execution_status": "complete",
+  "expression": "p0+p1*y0+p2*(y0-y1)+p3*(0.5*(y0+y1)-0.5*(y2+y3))+p4*offset+p5*t",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.0010678808051842357,
+    "p1": 0.10205544151956601,
+    "p2": 0.9513577687438195,
+    "p3": 0.013551440652896039,
+    "p4": 0.0902723597649997,
+    "p5": 0.026990919460759415
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.028019451505214156,
+      "t": -0.02158127223369679,
+      "y0": -0.05735296836462217,
+      "y1": -0.03450209906101628,
+      "y2": -0.01124850357109831,
+      "y3": 0.021401546371477835
+    },
+    "mean": 0.0039354723000164515,
+    "p90_abs": 0.2462770859095423,
+    "std": 0.1458513131947186
+  },
+  "rule_id": "full-comparison-v5--P100-068--principia_engine-rule-3",
+  "rule_sha256": "b8c255eb8270ba06e8c3389a7d631c3019e2ea62f2763f5da8f829a342c0d299",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.0010678808051842357 + 0.10205544151956601 * y0 + 0.9513577687438195 * (y0 - y1) + 0.013551440652896039 * (0.5 * (y0 + y1) - 0.5 * (y2 + y3)) + 0.0902723597649997 * offset + 0.026990919460759415 * t",
+    "expression_bytes": 63,
+    "free_parameters": 6,
+    "learned_state_bytes": 165,
+    "literal_state_bytes": 6,
+    "nodes": 65,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.1124593320673805,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

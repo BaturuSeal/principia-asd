@@ -1,0 +1,102 @@
+{
+  "assets": [
+    {
+      "bytes": 17608,
+      "path": "scenarios/28_physics_parametric_microwave/context/zenodo_record.json",
+      "role": "source_metadata",
+      "sha256": "1a3980f1855cf74e605d4e1b1e0ed5bdeef38b1e83402b6d2805649f57d4e066"
+    },
+    {
+      "bytes": 907472,
+      "path": "scenarios/28_physics_parametric_microwave/raw/2025-11.hdf5",
+      "role": "microwave_hdf5",
+      "sha256": "686e64a5c6c2c9adb836a27a4c27709566345aa3d8d209a61563a4e0d043cd10"
+    },
+    {
+      "bytes": 2665,
+      "path": "scenarios/28_physics_parametric_microwave/raw/Readme.txt",
+      "role": "source_readme",
+      "sha256": "540559528c98f54dae726dc2ed61bc73b80ffc92eb117a3734e48cb38f0cf666"
+    }
+  ],
+  "group_assignments": {
+    "pump-12": "train",
+    "pump-13": "train",
+    "pump-14": "train",
+    "pump-15": "dev",
+    "pump-16": "train",
+    "pump-17": "train",
+    "pump-18": "train",
+    "pump-19": "train",
+    "pump-20": "dev",
+    "pump-21": "train",
+    "pump-22": "train",
+    "pump-23": "train",
+    "pump-24": "train",
+    "pump-25": "train",
+    "pump-26": "train",
+    "pump-27": "train",
+    "pump-28": "dev",
+    "pump-29": "train",
+    "pump-30": "train",
+    "pump-31": "train",
+    "pump-32": "train",
+    "pump-33": "train",
+    "pump-34": "train",
+    "pump-35": "train",
+    "pump-36": "dev",
+    "pump-37": "train",
+    "pump-38": "dev",
+    "pump-39": "train",
+    "pump-40": "train",
+    "pump-41": "test",
+    "pump-42": "test",
+    "pump-43": "test",
+    "pump-44": "test",
+    "pump-45": "test",
+    "pump-46": "test",
+    "pump-47": "test",
+    "pump-48": "test",
+    "pump-49": "test",
+    "pump-50": "test"
+  },
+  "historical_contract_sha256": "32ebf65fce36707f8d0341cffa5467428203ca9d8c7873554d188f0e0cd0de1b",
+  "input_units": {
+    "g": "fsu;pumpamplitudecontrol",
+    "ghi": "fsu;highcalibrationpumpcontrol",
+    "glo": "fsu;lowpumpcontrol",
+    "hi": "fsu;secondcalibrationresponse",
+    "lo": "fsu;lowpumpamplituderesponse",
+    "noise": "fsu;zero-pumpresponse",
+    "r": "dimensionless normalizedpumpincrement",
+    "sep": "integer frequency-bin separation;100kHzbins"
+  },
+  "limitations": [
+    "Single installation; whole pump matrices share one measurement setup and low-control calibration",
+    "Retrospective complex-magnitude task, not inverse pump design",
+    "No evaluator-vault access or test-target export"
+  ],
+  "numerical_policy": {
+    "complexity": "Complex magnitudes and normalized pump controls expanded in lineage; not included in historical rule complexity",
+    "decoder": "Optional h5py/HDF5 versions and core extension hash bound; external/virtual/filtered storage denied",
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "fsu; instrument full-scale units",
+  "parser": "microwave-native-usb-matrices-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-028/native.py",
+    "reuse": "Source indexing, fixed calibration and identity specification independently implemented; no source executable, fitted state or evaluator copied",
+    "sha256": "0e643067d6468f4a4bc11a3068b7dbf69a0bda1bf20f79737b4de2a381d6c369",
+    "split_sha256": "c930a223f2f6bef2fb6b144dc586660701068d68684a87f0e0cca90acafbeeb8"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-028",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.18938314",
+    "url": "https://zenodo.org/records/18938314",
+    "version": "1.0"
+  },
+  "source_scenario_descriptor_sha256": "35a1a14bde4007e2088ee75c07245bcce233e3b5ca7e22ffd10d3d73c1e04cf4"
+}

@@ -1,0 +1,15 @@
+{
+  "expression": "p0 * lag1 + p1 * lag2 + p2 * median6 + p3 * median24 + p4 * (lag1 - median6) / (mad6 + p5) + p6",
+  "parameters": {
+    "p0": 0.13636506601249387,
+    "p1": 0.0486933100654124,
+    "p2": 0.30471685703227525,
+    "p3": 0.36435265434880454,
+    "p4": -5.168015791695233e-05,
+    "p5": 0.00045631434353621335,
+    "p6": 0.14581426762915348
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

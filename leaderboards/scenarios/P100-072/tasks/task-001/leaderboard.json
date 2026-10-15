@@ -1,0 +1,1666 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0018939640140160918
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-072--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0012281599920243025
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-072--linear_control",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.004315671976655722
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-072--polynomial_control",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.3669490970205516
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-072--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 46,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 46,
+        "wall_seconds": 0.08925307297613472
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-072--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 72,
+        "structures": 1,
+        "wall_seconds": 2.127298600040376
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-072--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 65,
+        "structures": 1,
+        "wall_seconds": 12.165775509085506
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-072--direct_glm",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 18,
+        "structures": 1,
+        "wall_seconds": 12.354568745009601
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-072--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 69,
+        "structures": 1,
+        "wall_seconds": 8.439515798003413
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-072--direct_kimi",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 182,
+        "structures": 3,
+        "wall_seconds": 47.258289622026496
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-072--best_of_n",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 179,
+        "structures": 3,
+        "wall_seconds": 106.05440631194506
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-072--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 6,
+        "optimizer_evaluations": 168,
+        "structures": 2,
+        "wall_seconds": 15.821224490995519
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-072--tool_agent",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 91,
+        "model_calls": 4,
+        "optimizer_evaluations": 18,
+        "structures": 57,
+        "wall_seconds": 51.38917366811074
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-072--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-072--symbolic_control-rule-1",
+    "full-comparison-v5--P100-072--symbolic_control-rule-3",
+    "full-comparison-v5--P100-072--principia_engine-rule-3",
+    "full-comparison-v5--P100-072--symbolic_control-rule-2",
+    "full-comparison-v5--P100-072--principia_engine-rule-2",
+    "full-comparison-v5--P100-072--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 6.792911691675583,
+        "primary": "mae",
+        "primary_error": 6.792911691675583,
+        "rmse": 8.308063367224946
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 9.118205202168726,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 4.46761818118244,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 6.413308377231335,
+        "execution_status": "complete",
+        "expression": "p0+p1*(p22_pct*p72_pct)+p2*((p22_pct)**2)",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 20.108239116947207,
+          "p1": 0.019624663768298186,
+          "p2": -0.011981643331805092
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.10141496460676229,
+            "p72_pct": -0.08223608880472756,
+            "time_h": 0.12450455114529736
+          },
+          "mean": -2.8907907309452248,
+          "p90_abs": 15.94041333927797,
+          "std": 9.002977849169627
+        },
+        "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-1",
+        "rule_sha256": "07c967788140bc535035116136c4381ca7c938462b75c3984f0a543ebb03e40c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "20.108239116947207 + 0.019624663768298186 * (p22_pct * p72_pct) + -0.011981643331805092 * p22_pct ** 2",
+          "expression_bytes": 41,
+          "free_parameters": 3,
+          "learned_state_bytes": 83,
+          "literal_state_bytes": 1,
+          "nodes": 26,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 8.409545792400108,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(p22_pct*p72_pct)+p2*((p22_pct)**2)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-1",
+      "rule_sha256": "07c967788140bc535035116136c4381ca7c938462b75c3984f0a543ebb03e40c",
+      "run_id": "full-comparison-v5--P100-072--symbolic_control",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "20.108239116947207 + 0.019624663768298186 * (p22_pct * p72_pct) + -0.011981643331805092 * p22_pct ** 2",
+        "expression_bytes": 41,
+        "free_parameters": 3,
+        "learned_state_bytes": 83,
+        "literal_state_bytes": 1,
+        "nodes": 26,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022595831871786563,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 6.792911694474339,
+        "primary": "mae",
+        "primary_error": 6.792911694474339,
+        "rmse": 8.308063369507341
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 9.118205203976622,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 4.467618184972055,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 6.413308376926224,
+        "execution_status": "complete",
+        "expression": "p0+p1*(p22_pct*p72_pct)+p2*(p22_pct**2)",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 20.108239108829157,
+          "p1": 0.019624663772599284,
+          "p2": -0.011981643335775349
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.10141496432433453,
+            "p72_pct": -0.0822360884476749,
+            "time_h": 0.12450455123001912
+          },
+          "mean": -2.890790739063932,
+          "p90_abs": 15.940413348460167,
+          "std": 9.002977848865582
+        },
+        "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-1",
+        "rule_sha256": "911adc95b758a9e48ce77d4a49ed8ba46df77cac176a61892717f55290b93525",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "20.108239108829157 + 0.019624663772599284 * (p22_pct * p72_pct) + -0.011981643335775349 * p22_pct ** 2",
+          "expression_bytes": 39,
+          "free_parameters": 3,
+          "learned_state_bytes": 83,
+          "literal_state_bytes": 1,
+          "nodes": 26,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 8.409545792492182,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(p22_pct*p72_pct)+p2*(p22_pct**2)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-1",
+      "rule_sha256": "911adc95b758a9e48ce77d4a49ed8ba46df77cac176a61892717f55290b93525",
+      "run_id": "full-comparison-v5--P100-072--principia_engine",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "20.108239108829157 + 0.019624663772599284 * (p22_pct * p72_pct) + -0.011981643335775349 * p22_pct ** 2",
+        "expression_bytes": 39,
+        "free_parameters": 3,
+        "learned_state_bytes": 83,
+        "literal_state_bytes": 1,
+        "nodes": 26,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02259583187640869,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 6.998444559056226,
+        "primary": "mae",
+        "primary_error": 6.998444559056226,
+        "rmse": 8.555138693913865
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 9.339587707061362,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 4.657301411051091,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 8.202486138212556,
+        "execution_status": "complete",
+        "expression": "p0+p1*((p72_pct)**2)+p2*(p22_pct)",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 12.765859599700029,
+          "p1": 0.006683620660871119,
+          "p2": 0.257581537833035
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.3772617102569837,
+            "p72_pct": -0.46607871708509235,
+            "time_h": 0.02087596210178971
+          },
+          "mean": 3.01520278850155,
+          "p90_abs": 16.12474756726278,
+          "std": 9.939513989583128
+        },
+        "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-3",
+        "rule_sha256": "9e78d35b7c3c7f9d159d3d9e34d4a43c86b16f53c18e9178558908bc87f39e7b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "12.765859599700029 + 0.006683620660871119 * p72_pct ** 2 + 0.257581537833035 * p22_pct",
+          "expression_bytes": 33,
+          "free_parameters": 3,
+          "learned_state_bytes": 79,
+          "literal_state_bytes": 1,
+          "nodes": 22,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 5
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 8.427727189271138,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((p72_pct)**2)+p2*(p22_pct)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-3",
+      "rule_sha256": "9e78d35b7c3c7f9d159d3d9e34d4a43c86b16f53c18e9178558908bc87f39e7b",
+      "run_id": "full-comparison-v5--P100-072--symbolic_control",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "12.765859599700029 + 0.006683620660871119 * p72_pct ** 2 + 0.257581537833035 * p22_pct",
+        "expression_bytes": 33,
+        "free_parameters": 3,
+        "learned_state_bytes": 79,
+        "literal_state_bytes": 1,
+        "nodes": 22,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 5
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02281803608981957,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 6.998444559056226,
+        "primary": "mae",
+        "primary_error": 6.998444559056226,
+        "rmse": 8.555138693913865
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 9.339587707061362,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 4.657301411051091,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 8.202486138212556,
+        "execution_status": "complete",
+        "expression": "p0+p1*((p72_pct)**2)+p2*(p22_pct)",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 12.765859599700029,
+          "p1": 0.006683620660871119,
+          "p2": 0.257581537833035
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.3772617102569837,
+            "p72_pct": -0.46607871708509235,
+            "time_h": 0.02087596210178971
+          },
+          "mean": 3.01520278850155,
+          "p90_abs": 16.12474756726278,
+          "std": 9.939513989583128
+        },
+        "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-3",
+        "rule_sha256": "0919addf1ca1892d8c02435705090faccbdf8ad8e206a5777d7a43d4cf3b024e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "12.765859599700029 + 0.006683620660871119 * p72_pct ** 2 + 0.257581537833035 * p22_pct",
+          "expression_bytes": 33,
+          "free_parameters": 3,
+          "learned_state_bytes": 79,
+          "literal_state_bytes": 1,
+          "nodes": 22,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 5
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 8.427727189271138,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((p72_pct)**2)+p2*(p22_pct)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-3",
+      "rule_sha256": "0919addf1ca1892d8c02435705090faccbdf8ad8e206a5777d7a43d4cf3b024e",
+      "run_id": "full-comparison-v5--P100-072--principia_engine",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "12.765859599700029 + 0.006683620660871119 * p72_pct ** 2 + 0.257581537833035 * p22_pct",
+        "expression_bytes": 33,
+        "free_parameters": 3,
+        "learned_state_bytes": 79,
+        "literal_state_bytes": 1,
+        "nodes": 22,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 5
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02281803608981957,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 7.612831587080931,
+        "primary": "mae",
+        "primary_error": 7.612831587080931,
+        "rmse": 9.49130486233524
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 8.615324619111895,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 6.610338555049967,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 23.65329786005039,
+        "execution_status": "complete",
+        "expression": "p0+p1*(p22_pct)",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 5.72605695795906,
+          "p1": 1.1958012139592047
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.8506600245105711,
+            "p72_pct": -0.893435315147306,
+            "time_h": -0.1507458664084291
+          },
+          "mean": 12.325775245651853,
+          "p90_abs": 39.89612365995853,
+          "std": 24.512988767078568
+        },
+        "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-2",
+        "rule_sha256": "72ce8953d6498e37e8b3715d42e587059565b2d7e6450262f756b4bafb87af6b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "5.72605695795906 + 1.1958012139592047 * p22_pct",
+          "expression_bytes": 15,
+          "free_parameters": 2,
+          "learned_state_bytes": 50,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 12.878305212497036,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(p22_pct)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-2",
+      "rule_sha256": "72ce8953d6498e37e8b3715d42e587059565b2d7e6450262f756b4bafb87af6b",
+      "run_id": "full-comparison-v5--P100-072--symbolic_control",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "5.72605695795906 + 1.1958012139592047 * p22_pct",
+        "expression_bytes": 15,
+        "free_parameters": 2,
+        "learned_state_bytes": 50,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018670280817031197,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 7.612831587080931,
+        "primary": "mae",
+        "primary_error": 7.612831587080931,
+        "rmse": 9.49130486233524
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 8.615324619111895,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 6.610338555049967,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 23.65329786005039,
+        "execution_status": "complete",
+        "expression": "p0+p1*(p22_pct)",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 5.72605695795906,
+          "p1": 1.1958012139592047
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.8506600245105711,
+            "p72_pct": -0.893435315147306,
+            "time_h": -0.1507458664084291
+          },
+          "mean": 12.325775245651853,
+          "p90_abs": 39.89612365995853,
+          "std": 24.512988767078568
+        },
+        "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-2",
+        "rule_sha256": "cd5f5d5ca4bfb9a20f8e6e8dae4917e4644a0963ef1458e9225ae222b4e70d5c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "5.72605695795906 + 1.1958012139592047 * p22_pct",
+          "expression_bytes": 15,
+          "free_parameters": 2,
+          "learned_state_bytes": 50,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 12.878305212497036,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(p22_pct)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-2",
+      "rule_sha256": "cd5f5d5ca4bfb9a20f8e6e8dae4917e4644a0963ef1458e9225ae222b4e70d5c",
+      "run_id": "full-comparison-v5--P100-072--principia_engine",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "5.72605695795906 + 1.1958012139592047 * p22_pct",
+        "expression_bytes": 15,
+        "free_parameters": 2,
+        "learned_state_bytes": 50,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018670280817031197,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.59003691341946,
+        "primary": "mae",
+        "primary_error": 10.59003691341946,
+        "rmse": 13.326485718238983
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 9.584450933939982,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 11.595622892898938,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 18.50413229989786,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-072--tree_control-rule-1",
+        "rule_sha256": "8d711b54e634ff56cf2a8b2cceac2c41c5c3e0e90ef10d4534f1e26e8ac51a77",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 7,
+          "weighted_operator_count": 7
+        },
+        "task_id": "P100-072.compact.v2",
+        "tree": {
+          "feature": [
+            1,
+            2,
+            -2,
+            -2,
+            2,
+            -2,
+            -2
+          ],
+          "features": [
+            "p22_pct",
+            "p72_pct",
+            "time_h"
+          ],
+          "left": [
+            1,
+            2,
+            -1,
+            -1,
+            5,
+            -1,
+            -1
+          ],
+          "right": [
+            4,
+            3,
+            -1,
+            -1,
+            6,
+            -1,
+            -1
+          ],
+          "threshold": [
+            84.30195236206055,
+            298.0,
+            -2.0,
+            -2.0,
+            156.0,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            78.51612619164399,
+            54.41889213193156,
+            66.25507034252632,
+            36.66462481603941,
+            94.58094889811896,
+            97.18471085315437,
+            93.27906792060126
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-072--tree_control-rule-1",
+      "rule_sha256": "8d711b54e634ff56cf2a8b2cceac2c41c5c3e0e90ef10d4534f1e26e8ac51a77",
+      "run_id": "full-comparison-v5--P100-072--tree_control",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 10,
+        "learned_state_bytes": 371,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 7
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.689672893315493,
+        "primary": "mae",
+        "primary_error": 10.689672893315493,
+        "rmse": 11.718610041927565
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 10.483346608414914,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 10.895999178216073,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 12.325231907930917,
+        "execution_status": "complete",
+        "expression": "maximum(0, minimum(100, p72_pct + p0 * (p22_pct - p72_pct) + p1 * (time_h - 96)))",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.3167286855326844,
+          "p1": -0.11184537310192937
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": -0.4894829112434006,
+            "p72_pct": 0.45175132652598926,
+            "time_h": -0.526377313690768
+          },
+          "mean": -8.19212395455121,
+          "p90_abs": 23.80589853189937,
+          "std": 12.647518534625956
+        },
+        "rule_id": "full-comparison-v5--P100-072--direct_qwen-rule-1",
+        "rule_sha256": "c660c5c4df8b1ae7abf51c2eb63d44a8eda097e8b9faf76f0343994a9aa9c477",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "maximum(0, minimum(100, p72_pct + -0.3167286855326844 * (p22_pct - p72_pct) + -0.11184537310192937 * (time_h - 96)))",
+          "expression_bytes": 81,
+          "free_parameters": 2,
+          "learned_state_bytes": 55,
+          "literal_state_bytes": 6,
+          "nodes": 34,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 4.182296604118331,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "maximum(0, minimum(100, p72_pct + p0 * (p22_pct - p72_pct) + p1 * (time_h - 96)))",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-072--direct_qwen-rule-1",
+      "rule_sha256": "c660c5c4df8b1ae7abf51c2eb63d44a8eda097e8b9faf76f0343994a9aa9c477",
+      "run_id": "full-comparison-v5--P100-072--direct_qwen",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "maximum(0, minimum(100, p72_pct + -0.3167286855326844 * (p22_pct - p72_pct) + -0.11184537310192937 * (time_h - 96)))",
+        "expression_bytes": 81,
+        "free_parameters": 2,
+        "learned_state_bytes": 55,
+        "literal_state_bytes": 6,
+        "nodes": 34,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.042070724357028466,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 11.655328637019595,
+        "primary": "mae",
+        "primary_error": 11.655328637019595,
+        "rmse": 12.887558355807027
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 11.184802971403604,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 12.125854302635586,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 22.81978428554978,
+        "execution_status": "complete",
+        "expression": "minimum(100, maximum(0, p0 + p1 * p22_pct + p2 * p72_pct + p3 * time_h + p4 * p22_pct * p72_pct + p5 * p22_pct * time_h + p6 * p72_pct * time_h + p7 * p22_pct * p72_pct * time_h))",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 38.54390193728602,
+          "p1": 0.3281268736873735,
+          "p2": 0.7202029091557163,
+          "p3": -0.34546692194312095,
+          "p4": -0.004556546626169212,
+          "p5": 0.001610334169515979,
+          "p6": 0.0023635297724943567,
+          "p7": -4.450889083734828e-06
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.3296259821390445,
+            "p72_pct": -0.3894491940253172,
+            "time_h": -0.9013163537830258
+          },
+          "mean": -12.965468673260428,
+          "p90_abs": 35.249672345907726,
+          "std": 20.66153409585364
+        },
+        "rule_id": "full-comparison-v5--P100-072--feedback_refinement-rule-1",
+        "rule_sha256": "5b62f77cff1ed7a381cd7821b1b7d93a76c0ceaa093a9453c673c4f4cbb4141c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(100, maximum(0, 38.54390193728602 + 0.3281268736873735 * p22_pct + 0.7202029091557163 * p72_pct + -0.34546692194312095 * time_h + -0.004556546626169212 * p22_pct * p72_pct + 0.001610334169515979 * p22_pct * time_h + 0.0023635297724943567 * p72_pct * time_h + -4.450889083734828e-06 * p22_pct * p72_pct * time_h))",
+          "expression_bytes": 179,
+          "free_parameters": 8,
+          "learned_state_bytes": 221,
+          "literal_state_bytes": 4,
+          "nodes": 87,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 1.8369359631796263,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(100, maximum(0, p0 + p1 * p22_pct + p2 * p72_pct + p3 * time_h + p4 * p22_pct * p72_pct + p5 * p22_pct * time_h + p6 * p72_pct * time_h + p7 * p22_pct * p72_pct * time_h))",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-072--feedback_refinement-rule-1",
+      "rule_sha256": "5b62f77cff1ed7a381cd7821b1b7d93a76c0ceaa093a9453c673c4f4cbb4141c",
+      "run_id": "full-comparison-v5--P100-072--feedback_refinement",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(100, maximum(0, 38.54390193728602 + 0.3281268736873735 * p22_pct + 0.7202029091557163 * p72_pct + -0.34546692194312095 * time_h + -0.004556546626169212 * p22_pct * p72_pct + 0.001610334169515979 * p22_pct * time_h + 0.0023635297724943567 * p72_pct * time_h + -4.450889083734828e-06 * p22_pct * p72_pct * time_h))",
+        "expression_bytes": 179,
+        "free_parameters": 8,
+        "learned_state_bytes": 221,
+        "literal_state_bytes": 4,
+        "nodes": 87,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.035852851169699225,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 11.738669837947477,
+        "primary": "mae",
+        "primary_error": 11.738669837947477,
+        "rmse": 12.977292779233977
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 11.259439698738094,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 12.217899977156861,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 22.71969709403261,
+        "execution_status": "complete",
+        "expression": "minimum(100, maximum(0, p0 + p1*p22_pct + p2*p72_pct + p3*time_h + p4*p22_pct*p72_pct + p5*p22_pct*time_h + p6*p72_pct*time_h + p7*time_h*time_h))",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 34.05040413747147,
+          "p1": 0.42581184909271963,
+          "p2": 0.7798561740877714,
+          "p3": -0.3315946550676762,
+          "p4": -0.005723814598824265,
+          "p5": 0.0012565271140308964,
+          "p6": 0.0021371792761103662,
+          "p7": 7.2894239059895655e-06
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.33283857874518236,
+            "p72_pct": -0.39137466842923396,
+            "time_h": -0.9000659306134237
+          },
+          "mean": -13.111567953522979,
+          "p90_abs": 35.249672345907726,
+          "std": 20.442739724937816
+        },
+        "rule_id": "full-comparison-v5--P100-072--direct_deepseek-rule-1",
+        "rule_sha256": "6f09bca3b0cee94c83cde428dc8b32ea633b62a7a0f76ed177a7b2a5a23b4612",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(100, maximum(0, 34.05040413747147 + 0.42581184909271963 * p22_pct + 0.7798561740877714 * p72_pct + -0.3315946550676762 * time_h + -0.005723814598824265 * p22_pct * p72_pct + 0.0012565271140308964 * p22_pct * time_h + 0.0021371792761103662 * p72_pct * time_h + 7.2894239059895655e-06 * time_h * time_h))",
+          "expression_bytes": 146,
+          "free_parameters": 8,
+          "learned_state_bytes": 222,
+          "literal_state_bytes": 4,
+          "nodes": 83,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 20
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 1.8554832794709346,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(100, maximum(0, p0 + p1*p22_pct + p2*p72_pct + p3*time_h + p4*p22_pct*p72_pct + p5*p22_pct*time_h + p6*p72_pct*time_h + p7*time_h*time_h))",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-072--direct_deepseek-rule-1",
+      "rule_sha256": "6f09bca3b0cee94c83cde428dc8b32ea633b62a7a0f76ed177a7b2a5a23b4612",
+      "run_id": "full-comparison-v5--P100-072--direct_deepseek",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(100, maximum(0, 34.05040413747147 + 0.42581184909271963 * p22_pct + 0.7798561740877714 * p72_pct + -0.3315946550676762 * time_h + -0.005723814598824265 * p22_pct * p72_pct + 0.0012565271140308964 * p22_pct * time_h + 0.0021371792761103662 * p72_pct * time_h + 7.2894239059895655e-06 * time_h * time_h))",
+        "expression_bytes": 146,
+        "free_parameters": 8,
+        "learned_state_bytes": 222,
+        "literal_state_bytes": 4,
+        "nodes": 83,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 20
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.035926847744940815,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 18.64585021444242,
+        "primary": "mae",
+        "primary_error": 18.64585021444242,
+        "rmse": 20.18075185686413
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 18.64585021444242,
+      "by_group": [
+        {
+          "error": 16.65946821843874,
+          "group": "group-4e416791cc5a4c53c3e429e4",
+          "rows": 9
+        },
+        {
+          "error": 20.632232210446098,
+          "group": "group-a43dee716e618130ec9f7082",
+          "rows": 9
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 49.5243683179155,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "p22_pct",
+          "p72_pct",
+          "time_h"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 78.516126191644
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "p22_pct": 0.5894616510102351,
+            "p72_pct": -0.8092350042390629,
+            "time_h": -0.09801606335890545
+          },
+          "mean": 49.524368317915496,
+          "p90_abs": 67.15312703653574,
+          "std": 15.953123720893428
+        },
+        "rule_id": "full-comparison-v5--P100-072--mean_control-rule-1",
+        "rule_sha256": "fd1a4fdc9b1d37bbbd072d6a3996055a9ddee6cf63d12dad7ea99f8f2291b8e9",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "78.516126191644",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 23,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-072.compact.v2",
+        "train_error": 20.93943964031142,
+        "units": {
+          "inputs": {
+            "p22_pct": "percentage points; own replicate at22h",
+            "p72_pct": "percentage points; own replicate at72h",
+            "time_h": "h since inoculation"
+          },
+          "output": "percentage points",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 18,
+        "fraction": 1.0,
+        "predicted": 18
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-072--mean_control-rule-1",
+      "rule_sha256": "fd1a4fdc9b1d37bbbd072d6a3996055a9ddee6cf63d12dad7ea99f8f2291b8e9",
+      "run_id": "full-comparison-v5--P100-072--mean_control",
+      "scenario_id": "P100-072",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "78.516126191644",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 23,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 18,
+        "ranking": false,
+        "samples": 18,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-072.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-072",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-072.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

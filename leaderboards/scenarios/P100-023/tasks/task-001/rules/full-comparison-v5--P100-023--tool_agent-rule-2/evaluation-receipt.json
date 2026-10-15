@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.2010279899650341,
+    "primary": "mae",
+    "primary_error": 0.2010279899650341,
+    "rmse": 0.2619888186433747
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.17096112386537052,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.23109485606469768,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tool_agent",
+  "rule_id": "full-comparison-v5--P100-023--tool_agent-rule-2",
+  "rule_sha256": "5d16b8daed8572fbd314967514fe4dcdb52af0acd8538ad4f12e175d9f3165b5",
+  "run_id": "full-comparison-v5--P100-023--tool_agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.22075662390854217 + 0.07923661927870085 * H + 0.004689056016264845 * viscosity + -1.652606202676388 * speed + -0.14861399632582498 * load + 0.003830887052425671 * hydration + 0.023247952718658392 * area + 0.013058580916221633 * H * viscosity",
+    "expression_bytes": 87,
+    "free_parameters": 8,
+    "learned_state_bytes": 220,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.09717396570823225,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

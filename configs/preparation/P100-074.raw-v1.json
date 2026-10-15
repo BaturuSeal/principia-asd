@@ -1,0 +1,99 @@
+{
+  "assets": [
+    {
+      "bytes": 10562,
+      "path": "scenarios/74_biochemistry_kinase_biosensors/raw/Fig_S3A.csv",
+      "role": "kinase_curves",
+      "sha256": "9f7f8cdaaee4e7b1bdd1a29a2dfa14e982ce996d0b8693dd21ed163007a816ed"
+    },
+    {
+      "bytes": 19373,
+      "path": "scenarios/74_biochemistry_kinase_biosensors/context/source_record.json",
+      "role": "source_documentation",
+      "sha256": "dd4d22a6ef93c7e054cf999b6847fbd81b6d5c404b1f095c8f8149c872e5aa39"
+    }
+  ],
+  "group_assignments": {
+    "dose-0.25": "train",
+    "dose-0.5": "train",
+    "dose-0.75": "train",
+    "dose-1": "test",
+    "dose-10": "dev",
+    "dose-2.5": "train",
+    "dose-20": "train",
+    "dose-5": "test",
+    "dose-7.5": "dev"
+  },
+  "historical_contract_sha256": "1b8ac4522fc29c5de3a8bcbd715c3b0d89dec29a3cf509c8653716110aa50ba1",
+  "independent_units": "Entire source dose curve. No biological replicate or independently repeated assay identifiers are present.",
+  "input_units": {
+    "calibration_F6": "source fluorescence units",
+    "calibration_curvature": "source fluorescence units/min^2",
+    "calibration_v6": "source fluorescence units/min",
+    "concentration_uM": "uM",
+    "time_min": "min"
+  },
+  "limitations": [
+    "Curator-only: registered source acquisitions include historical responses; discovery workers must not receive the source root",
+    "No test targets exported and no evaluator vault accessed",
+    "Reconstruction parity does not establish scientific admission, independent evidence or redistribution rights"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "source fluorescence units",
+  "parser": "src-kinase-calibrated-curves-v1",
+  "partition_provenance": {
+    "allocation": "Original confirmation groups retained; development groups sorted by canonical SHA256([compact-v2, case, opaque group]); first max(2, floor(n/5)) become dev. Registered source identities, not numeric folder matching.",
+    "source_split_sha256": "8fc1b2fbf1c44ba7287793dfb2000f45dc89b7a7a10002c1094d9dfe845b0bb5"
+  },
+  "policy": {
+    "calibration": "Responses at 3,4.5,6 min; finite differences only, no fitting; all scored responses strictly after 7.5 min",
+    "missingness": "The literal -- marks unavailable measurements; preserve source row gaps and retain every finite forecast response",
+    "scope": "Conditional fluorescence forecasting after early observed calibration; no mechanistic or causal identification",
+    "split": "Whole dose curves; original confirmation and compact-v2 development assignments retained"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-074/native.py",
+    "reuse": "Measurement and identity specification reimplemented; no upstream fitting, reference state, scientific formula or evaluator copied",
+    "sha256": "49388fb69da68b68bcd4c195fabf8182dcc0cca92430b712418f019db96026a8"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-074",
+  "schema_version": "native-reconstruction/1",
+  "source_columns": [
+    "Time (min)",
+    "BS 0,25uM",
+    "BS 0,5uM",
+    "BS 0,75uM",
+    "BS 1uM",
+    "BS 2,5uM",
+    "BS 5uM",
+    "BS 7,5uM",
+    "BS 10uM",
+    "BS 20uM",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "source_identity": {
+    "historical_case": "P100-074",
+    "revision": "18911385",
+    "url": "https://zenodo.org/records/18911385"
+  },
+  "source_scenario_descriptor_sha256": "30473ad3fd0bdabda666359bb37fcdb93115a574cf1c75e4eab5833ed682ffab",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test",
+  "units_evidence": {
+    "basis": "Time (min) and BS dose in uM in original CSV headers; fluorescence response units inherited from the historical contract and require assay documentation review."
+  }
+}

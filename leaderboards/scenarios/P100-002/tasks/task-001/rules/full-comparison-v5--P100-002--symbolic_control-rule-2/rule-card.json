@@ -1,0 +1,80 @@
+{
+  "dev_error": 0.006477863503682436,
+  "execution_status": "complete",
+  "expression": "p0+p1*(median6)",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "lag6",
+    "lag12",
+    "lag24",
+    "median6",
+    "median24",
+    "mad6"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.28467579278925015,
+    "p1": 0.7152900105016623
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.27663490456172746,
+      "lag12": -0.22377038294627127,
+      "lag2": -0.25924241959164224,
+      "lag24": 0.044202637428326946,
+      "lag3": -0.2323643680239615,
+      "lag4": -0.14033185269710516,
+      "lag6": -0.17424348941247653,
+      "mad6": 0.08294046389630108,
+      "median24": -0.19121791761875456,
+      "median6": -0.23308439666384836
+    },
+    "mean": 0.0005116209245547312,
+    "p90_abs": 0.0170180791915549,
+    "std": 0.009653922929952886
+  },
+  "rule_id": "full-comparison-v5--P100-002--symbolic_control-rule-2",
+  "rule_sha256": "fcc579f1b81e86aac0fc35f69ba28d103049b3f7b7a635de64d5e0067f38f67b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.28467579278925015 + 0.7152900105016623 * median6",
+    "expression_bytes": 15,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-002.compact.v2",
+  "train_error": 0.001200359707810829,
+  "units": {
+    "inputs": {
+      "lag1": "author-normalized relative flux",
+      "lag12": "author-normalized relative flux",
+      "lag2": "author-normalized relative flux",
+      "lag24": "author-normalized relative flux",
+      "lag3": "author-normalized relative flux",
+      "lag4": "author-normalized relative flux",
+      "lag6": "author-normalized relative flux",
+      "mad6": "author-normalized relative flux",
+      "median24": "author-normalized relative flux",
+      "median6": "author-normalized relative flux"
+    },
+    "output": "relative flux (native normalization)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

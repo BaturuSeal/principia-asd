@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.22431194699850876,
+  "execution_status": "complete",
+  "expression": "p0+p1*(quality*rho_liquid)+p2*((quality)**2)",
+  "inputs": [
+    "pressure_Pa",
+    "massflux_kg_m2_s",
+    "quality",
+    "radial_fraction",
+    "rho_liquid",
+    "rho_vapor"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.3271246789200175,
+    "p1": 0.003862643675348309,
+    "p2": -3.2941218170552036
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "massflux_kg_m2_s": -0.5936819423653,
+      "pressure_Pa": -0.5936819423652999,
+      "quality": 0.5936819423652998,
+      "radial_fraction": 0.720349526864481,
+      "rho_liquid": 0.5936819423653,
+      "rho_vapor": -0.5936819423653
+    },
+    "mean": 0.16094570953571763,
+    "p90_abs": 0.3647535556488007,
+    "std": 0.18471143938821036
+  },
+  "rule_id": "controls-v2--P100-027--symbolic_control-rule-3",
+  "rule_sha256": "0eadfa320c4dfb7c1eec8bef8106e1a5ecba0a8ad4a704f6b4a55889dfd459db",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.3271246789200175 + 0.003862643675348309 * (quality * rho_liquid) + -3.2941218170552036 * quality ** 2",
+    "expression_bytes": 44,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "nodes": 26,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-027.compact.v2",
+  "train_error": 0.13926977796924653,
+  "units": {
+    "inputs": {
+      "massflux_kg_m2_s": "kg m^-2 s^-1",
+      "pressure_Pa": "Pa, absolute",
+      "quality": "kg vapor per kg mixture",
+      "radial_fraction": "dimensionless native coordinate / maximum sampled coordinate",
+      "rho_liquid": "kg m^-3",
+      "rho_vapor": "kg m^-3"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "dev_error": 4.5558990352279976,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -5.401904196205358
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": -0.6275539510617295,
+      "base": -0.6275539510617294,
+      "progress": -0.3594454462977439,
+      "x": 0.44312913580574537
+    },
+    "mean": 2.3901390779017855,
+    "p90_abs": 9.673222121517863,
+    "std": 5.114249839906274
+  },
+  "rule_id": "full-comparison-v5--P100-084--mean_control-rule-1",
+  "rule_sha256": "7202fb399a17b2a6127f3ab64006de2a3e158be951eaee1f1945171f29dca93d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-5.401904196205358",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 4.437296875224211,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

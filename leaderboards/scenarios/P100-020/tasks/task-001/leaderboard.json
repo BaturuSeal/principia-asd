@@ -1,0 +1,5158 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.01674558303784579
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.017485852004028857
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.03609729092568159
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.542850306024775
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 91,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 91,
+        "wall_seconds": 0.7015018749516457
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-020--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 45,
+        "structures": 1,
+        "wall_seconds": 2.044730640016496
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 9,
+        "structures": 1,
+        "wall_seconds": 12.033045426942408
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 37,
+        "structures": 1,
+        "wall_seconds": 7.1319459839724
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 36,
+        "structures": 1,
+        "wall_seconds": 11.101407051901333
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 96,
+        "structures": 3,
+        "wall_seconds": 61.88165064807981
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 2,
+      "run_id": "full-comparison-v5--P100-020--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 63,
+        "structures": 2,
+        "wall_seconds": 15.719522955012508
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 2,
+        "optimizer_evaluations": 27,
+        "structures": 1,
+        "wall_seconds": 21.184341065003537
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-020--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 232,
+        "model_calls": 4,
+        "optimizer_evaluations": 157,
+        "structures": 103,
+        "wall_seconds": 52.87749162095133
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-020--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-020--principia_engine-rule-3",
+    "full-comparison-v5--P100-020--symbolic_control-rule-3",
+    "full-comparison-v5--P100-020--symbolic_control-rule-2",
+    "full-comparison-v5--P100-020--principia_engine-rule-2",
+    "full-comparison-v5--P100-020--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.031889109734612335,
+        "primary": "mae",
+        "primary_error": 0.031889109734612335,
+        "rmse": 0.04686791278266478
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.02832117436907871,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.026280810075620286,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.025443790261036353,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.029880267886667283,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.038269405079913506,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.019081525275280613,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026480182192298772,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.02028771362289286,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.01151397229893858,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.019855096023581445,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.02592455516749416,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04248168920072791,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04624333694587489,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.02229209926915973,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.07028926842118895,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.03616348282125589,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.046963788950067385,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.03114825773993359,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.025287039984357385,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04019281397464371,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03086719309598627,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.032839526420202686,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03734253481988268,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.033670568988233986,
+        "execution_status": "complete",
+        "expression": "p0 + p1*((hx+hy+ox+oy+dg)/5) + p2*dg + p3*((hx+hy)/2) + p4*((ox+oy)/2)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.001957717138017437,
+          "p1": 2.9746885937759,
+          "p2": -1.099812534078047,
+          "p3": 0.5750180776450871,
+          "p4": -1.4526079953967148
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.022564144526682307,
+            "dg": -0.01642754855261957,
+            "gx": 0.09672950640633185,
+            "gy": 0.028299785720405854,
+            "hx": -0.026009713127634133,
+            "hy": -0.016752291855060542,
+            "ox": -0.0166808601669429,
+            "oy": -0.015049893026284017
+          },
+          "mean": -4.296149791159799e-05,
+          "p90_abs": 0.07225177632862335,
+          "std": 0.04989472401478147
+        },
+        "rule_id": "full-comparison-v5--P100-020--principia_engine-rule-3",
+        "rule_sha256": "cecb118c1f1ffd7931a8af0c761958df599068b9b09308f0fefac1e92d36c45c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.001957717138017437 + 2.9746885937759 * ((hx + hy + ox + oy + dg) / 5) + -1.099812534078047 * dg + 0.5750180776450871 * ((hx + hy) / 2) + -1.4526079953967148 * ((ox + oy) / 2)",
+          "expression_bytes": 70,
+          "free_parameters": 5,
+          "learned_state_bytes": 130,
+          "literal_state_bytes": 3,
+          "nodes": 68,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03659199747790966,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*((hx+hy+ox+oy+dg)/5) + p2*dg + p3*((hx+hy)/2) + p4*((ox+oy)/2)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--principia_engine-rule-3",
+      "rule_sha256": "cecb118c1f1ffd7931a8af0c761958df599068b9b09308f0fefac1e92d36c45c",
+      "run_id": "full-comparison-v5--P100-020--principia_engine",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.001957717138017437 + 2.9746885937759 * ((hx + hy + ox + oy + dg) / 5) + -1.099812534078047 * dg + 0.5750180776450871 * ((hx + hy) / 2) + -1.4526079953967148 * ((ox + oy) / 2)",
+        "expression_bytes": 70,
+        "free_parameters": 5,
+        "learned_state_bytes": 130,
+        "literal_state_bytes": 3,
+        "nodes": 68,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.12084808198747318,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03269497320422864,
+        "primary": "mae",
+        "primary_error": 0.03269497320422864,
+        "rmse": 0.047712958975507244
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.026953189130435772,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.028120177003179703,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026824068591974937,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.02970515523160489,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.0434454173217892,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.019932212779544434,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.03045714198035186,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.018747550363907826,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.00187142137201457,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.0201376005512956,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.024128373346033048,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04743850271917534,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04148777284799333,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.03885187235649738,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.055592199650520986,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.036907136107176435,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04639351817972281,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.031590882183213057,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.027510520449435288,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.0474603775643894,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03353092301970696,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.037898941810965314,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03699942913633042,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03537767652905773,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.00120997657222825,
+          "p1": 1.0063611072144172,
+          "p2": 0.8296321146879722,
+          "p3": -0.8334349165391893
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": 0.027122097440255018,
+            "dg": 0.03713024521705837,
+            "gx": 0.09883765571708926,
+            "gy": 0.028390171139932377,
+            "hx": 0.033879377173685526,
+            "hy": 0.030764380633234622,
+            "ox": 0.06235974069012222,
+            "oy": 0.05271848513786077
+          },
+          "mean": 0.00111641433647531,
+          "p90_abs": 0.07726396163217934,
+          "std": 0.05237211266000234
+        },
+        "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-3",
+        "rule_sha256": "baf87b9e5a5ad432cb4a76515c4efec2c558a6060d0b0037d6e36e20138fa1ad",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.00120997657222825 + 1.0063611072144172 * hx + 0.8296321146879722 * hy + -0.8334349165391893 * dg",
+          "expression_bytes": 26,
+          "free_parameters": 4,
+          "learned_state_bytes": 107,
+          "literal_state_bytes": 0,
+          "nodes": 27,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.0394064860183408,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-3",
+      "rule_sha256": "baf87b9e5a5ad432cb4a76515c4efec2c558a6060d0b0037d6e36e20138fa1ad",
+      "run_id": "full-comparison-v5--P100-020--symbolic_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.00120997657222825 + 1.0063611072144172 * hx + 0.8296321146879722 * hy + -0.8334349165391893 * dg",
+        "expression_bytes": 26,
+        "free_parameters": 4,
+        "learned_state_bytes": 107,
+        "literal_state_bytes": 0,
+        "nodes": 27,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.13803666329341094,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03291805952409445,
+        "primary": "mae",
+        "primary_error": 0.03291805952409445,
+        "rmse": 0.046586786755194544
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025348552690448032,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024738547209050377,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026075268271716356,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03250006117412903,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.03917984322326769,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.019160078210536356,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.02699255392734177,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.018345347379986273,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.03052285104252095,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018946326420836625,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.0233505629145822,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04085944294547063,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.041433057417427074,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.04632195372035104,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06719155789687871,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.03578401843585617,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04405492249435567,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.030560154634136687,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.025002914193772884,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.042912892683885075,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03176949633688427,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03229456769600674,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03377039813473178,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.033494523438659975,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)+p4*(ox)+p5*(oy)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.0018056456048288162,
+          "p1": 1.0282674331535453,
+          "p2": 0.6574900289917077,
+          "p3": -0.3861323387593054,
+          "p4": -0.2050920475785128,
+          "p5": -0.09711126541669142
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.008797576504483326,
+            "dg": -0.02094538965205466,
+            "gx": 0.07759897358348716,
+            "gy": 0.009006711103438075,
+            "hx": -0.02451407886859396,
+            "hy": -0.02746882108554498,
+            "ox": -0.01850279989088134,
+            "oy": -0.023898613050958736
+          },
+          "mean": -0.0006533682232717729,
+          "p90_abs": 0.07308182731824776,
+          "std": 0.0495601443871382
+        },
+        "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-1",
+        "rule_sha256": "3b8734a2fde3febf1ede9931b06e113748efc303d315cd8062ea0886325ffddb",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.0018056456048288162 + 1.0282674331535453 * hx + 0.6574900289917077 * hy + -0.3861323387593054 * dg + -0.2050920475785128 * ox + -0.09711126541669142 * oy",
+          "expression_bytes": 42,
+          "free_parameters": 6,
+          "learned_state_bytes": 163,
+          "literal_state_bytes": 0,
+          "nodes": 43,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 10
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03599561913874887,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)+p4*(ox)+p5*(oy)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-1",
+      "rule_sha256": "3b8734a2fde3febf1ede9931b06e113748efc303d315cd8062ea0886325ffddb",
+      "run_id": "full-comparison-v5--P100-020--symbolic_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.0018056456048288162 + 1.0282674331535453 * hx + 0.6574900289917077 * hy + -0.3861323387593054 * dg + -0.2050920475785128 * ox + -0.09711126541669142 * oy",
+        "expression_bytes": 42,
+        "free_parameters": 6,
+        "learned_state_bytes": 163,
+        "literal_state_bytes": 0,
+        "nodes": 43,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 10
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11809402337060439,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03291805958843834,
+        "primary": "mae",
+        "primary_error": 0.03291805958843834,
+        "rmse": 0.04658678685056077
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025348552612311653,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.02473854718654324,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.02607526828713266,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03250006125723111,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.03917984324630496,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.019160078219517346,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026992553965939754,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.01834534733154122,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.030522851772859183,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018946326406912357,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.0233505627829554,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.040859442921684794,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04143305729093581,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.046321954955635194,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06719155774546672,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.0357840184367347,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.0440549223925417,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.030560154597137835,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.025002914201183956,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04291289280498705,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03176949639340633,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03229456771666579,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03377039800845303,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03349452343286545,
+        "execution_status": "complete",
+        "expression": "p0+p1*((hx+hy)/2)+p2*(hx)+p3*(hy)+p4*((hx+hy+ox+oy+dg)/5)+p5*(dg)+p6*((ox+oy)/2)+p7*(ox)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.001805645601760337,
+          "p1": 0.5555473753697366,
+          "p2": 0.7377322140417064,
+          "p3": 0.36695479775629686,
+          "p4": 0.06380768692631703,
+          "p5": -0.3988938755348755,
+          "p6": -0.21974560177816835,
+          "p7": -0.10798078638754936
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.008797576080257,
+            "dg": -0.02094538994718697,
+            "gx": 0.07759897268411346,
+            "gy": 0.009006710376178952,
+            "hx": -0.0245140789050913,
+            "hy": -0.02746882150065075,
+            "ox": -0.018502800129023445,
+            "oy": -0.02389861336375133
+          },
+          "mean": -0.0006533682453537418,
+          "p90_abs": 0.0730818278706061,
+          "std": 0.04956014439581941
+        },
+        "rule_id": "full-comparison-v5--P100-020--principia_engine-rule-1",
+        "rule_sha256": "43d831e69ad81902098f8847f874b701fe71ac45077e73c99750891f3b4633d8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.001805645601760337 + 0.5555473753697366 * ((hx + hy) / 2) + 0.7377322140417064 * hx + 0.36695479775629686 * hy + 0.06380768692631703 * ((hx + hy + ox + oy + dg) / 5) + -0.3988938755348755 * dg + -0.21974560177816835 * ((ox + oy) / 2) + -0.10798078638754936 * ox",
+          "expression_bytes": 88,
+          "free_parameters": 8,
+          "learned_state_bytes": 217,
+          "literal_state_bytes": 3,
+          "nodes": 92,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 23
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03599561914612326,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*((hx+hy)/2)+p2*(hx)+p3*(hy)+p4*((hx+hy+ox+oy+dg)/5)+p5*(dg)+p6*((ox+oy)/2)+p7*(ox)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--principia_engine-rule-1",
+      "rule_sha256": "43d831e69ad81902098f8847f874b701fe71ac45077e73c99750891f3b4633d8",
+      "run_id": "full-comparison-v5--P100-020--principia_engine",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.001805645601760337 + 0.5555473753697366 * ((hx + hy) / 2) + 0.7377322140417064 * hx + 0.36695479775629686 * hy + 0.06380768692631703 * ((hx + hy + ox + oy + dg) / 5) + -0.3988938755348755 * dg + -0.21974560177816835 * ((ox + oy) / 2) + -0.10798078638754936 * ox",
+        "expression_bytes": 88,
+        "free_parameters": 8,
+        "learned_state_bytes": 217,
+        "literal_state_bytes": 3,
+        "nodes": 92,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 23
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11809402357534313,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03322685921986679,
+        "primary": "mae",
+        "primary_error": 0.03322685921986679,
+        "rmse": 0.04702673812685539
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025253197549992303,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024616460253404738,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.02621176331529916,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03272174957775373,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.038679242776869,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.019325679505892097,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026888345194220578,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.018336921977311335,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.032469784007536584,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.01893761466340053,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.023752482568287256,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04125110347173687,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04163244858893099,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.05152397432829124,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06771662126661365,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.0354192684237248,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04346759988668842,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.030918177389039205,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.02502327497699262,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04315470917529614,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03182014087961006,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03173049433393496,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.033366707946109894,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03344552460140513,
+        "execution_status": "complete",
+        "expression": "p0*dg + p1*hx + p2*hy + p3*ox + p4*oy + p5*gx + p6*gy + p7*clat",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.38519675649811824,
+          "p1": 1.0282559815390266,
+          "p2": 0.6576250540128957,
+          "p3": -0.20572103625023316,
+          "p4": -0.09771416058387723,
+          "p5": 0.007439599934482883,
+          "p6": 0.003553422294986387,
+          "p7": -9.887387495492846e-05
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.020492933268021003,
+            "dg": -0.027503811612621495,
+            "gx": 0.11832826443731383,
+            "gy": 0.041875212595299534,
+            "hx": -0.03156769236838207,
+            "hy": -0.034102093006907926,
+            "ox": -0.02499008964874166,
+            "oy": -0.030052973718323286
+          },
+          "mean": -0.0006993327022525047,
+          "p90_abs": 0.07213299501111455,
+          "std": 0.049745161809841405
+        },
+        "rule_id": "full-comparison-v5--P100-020--direct_qwen-rule-1",
+        "rule_sha256": "8a6e3654e6c0cdbac8c955fe98315f49adc3d372037bd4ca1c27cf97c88998cc",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.38519675649811824 * dg + 1.0282559815390266 * hx + 0.6576250540128957 * hy + -0.20572103625023316 * ox + -0.09771416058387723 * oy + 0.007439599934482883 * gx + 0.003553422294986387 * gy + -9.887387495492846e-05 * clat",
+          "expression_bytes": 63,
+          "free_parameters": 8,
+          "learned_state_bytes": 222,
+          "literal_state_bytes": 0,
+          "nodes": 63,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 15
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03595241688852886,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0*dg + p1*hx + p2*hy + p3*ox + p4*oy + p5*gx + p6*gy + p7*clat",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--direct_qwen-rule-1",
+      "rule_sha256": "8a6e3654e6c0cdbac8c955fe98315f49adc3d372037bd4ca1c27cf97c88998cc",
+      "run_id": "full-comparison-v5--P100-020--direct_qwen",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.38519675649811824 * dg + 1.0282559815390266 * hx + 0.6576250540128957 * hy + -0.20572103625023316 * ox + -0.09771416058387723 * oy + 0.007439599934482883 * gx + 0.003553422294986387 * gy + -9.887387495492846e-05 * clat",
+        "expression_bytes": 63,
+        "free_parameters": 8,
+        "learned_state_bytes": 222,
+        "literal_state_bytes": 0,
+        "nodes": 63,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 15
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11807033243858153,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03322685931669796,
+        "primary": "mae",
+        "primary_error": 0.03322685931669796,
+        "rmse": 0.04702673826506107
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025253197570539645,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.02461646024937447,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026211763297608576,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03272174962043204,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.03867924275370621,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.019325679502805997,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026888345191008894,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.018336922001072595,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.032469784736382845,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.01893761464353557,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.0237524825671179,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04125110345219614,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04163244861683768,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.051523975608805464,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.0677166213559261,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.03541926845048126,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04346759986893392,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.030918177391395987,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.02502327498435758,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04315470926060557,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.031820140880013094,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03173049433431071,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03336670794660469,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03344552456476127,
+        "execution_status": "complete",
+        "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*gx + p6*gy + p7*clat",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.0282559846217942,
+          "p1": 0.6576250544238464,
+          "p2": -0.20572103880752438,
+          "p3": -0.09771416050638844,
+          "p4": -0.38519675757033467,
+          "p5": 0.00743959991001175,
+          "p6": 0.003553422331775699,
+          "p7": -9.887384222354061e-05
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.020492933600522734,
+            "dg": -0.027503812164612413,
+            "gx": 0.11832826340381376,
+            "gy": 0.04187521211361939,
+            "hx": -0.03156769274253624,
+            "hy": -0.03410209338030506,
+            "ox": -0.02499009057023161,
+            "oy": -0.030052974381709657
+          },
+          "mean": -0.0006993327304571312,
+          "p90_abs": 0.07213299497023118,
+          "std": 0.04974516178594688
+        },
+        "rule_id": "full-comparison-v5--P100-020--direct_kimi-rule-1",
+        "rule_sha256": "5d58fd97efdea90a48696bb5020be2d287ba6320eb8b04757ad8318f51b58358",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1.0282559846217942 * hx + 0.6576250544238464 * hy + -0.20572103880752438 * ox + -0.09771416050638844 * oy + -0.38519675757033467 * dg + 0.00743959991001175 * gx + 0.003553422331775699 * gy + -9.887384222354061e-05 * clat",
+          "expression_bytes": 63,
+          "free_parameters": 8,
+          "learned_state_bytes": 221,
+          "literal_state_bytes": 0,
+          "nodes": 63,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 15
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03595241689054652,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*gx + p6*gy + p7*clat",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--direct_kimi-rule-1",
+      "rule_sha256": "5d58fd97efdea90a48696bb5020be2d287ba6320eb8b04757ad8318f51b58358",
+      "run_id": "full-comparison-v5--P100-020--direct_kimi",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1.0282559846217942 * hx + 0.6576250544238464 * hy + -0.20572103880752438 * ox + -0.09771416050638844 * oy + -0.38519675757033467 * dg + 0.00743959991001175 * gx + 0.003553422331775699 * gy + -9.887384222354061e-05 * clat",
+        "expression_bytes": 63,
+        "free_parameters": 8,
+        "learned_state_bytes": 221,
+        "literal_state_bytes": 0,
+        "nodes": 63,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 15
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11807033277376691,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03322685933401339,
+        "primary": "mae",
+        "primary_error": 0.03322685933401339,
+        "rmse": 0.04702673829773067
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025253197531071976,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024616460236213396,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026211763313218155,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.032721749659925733,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.0386792427669404,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.01932567950662671,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026888345197042085,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.018336921975951565,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.032469784909055444,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018937614635381936,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.023752482511792787,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.041251103432719025,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.041632448560293064,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.05152397598537922,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06771662135296516,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.03541926846975289,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04346759987328438,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.030918177398333958,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.025023274984229116,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.0431547092783441,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.031820140890801665,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.031730494320478024,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.033366707892507334,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03344552458236143,
+        "execution_status": "complete",
+        "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*gx + p6*gy + p7*clat",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.0282559859160176,
+          "p1": 0.6576250513403573,
+          "p2": -0.2057210398512164,
+          "p3": -0.09771416010045743,
+          "p4": -0.3851967551354898,
+          "p5": 0.007439599538686135,
+          "p6": 0.003553422581696645,
+          "p7": -9.887383763733178e-05
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.02049293334283063,
+            "dg": -0.027503812065733255,
+            "gx": 0.11832826223326784,
+            "gy": 0.04187521248017452,
+            "hx": -0.031567692623471276,
+            "hy": -0.034102093364960645,
+            "ox": -0.02499009048567153,
+            "oy": -0.030052974285031703
+          },
+          "mean": -0.0006993327345676066,
+          "p90_abs": 0.0721329951484973,
+          "std": 0.04974516179183313
+        },
+        "rule_id": "full-comparison-v5--P100-020--direct_deepseek-rule-1",
+        "rule_sha256": "716a9960620923b9a07ca974305f399a3cc2e4a59011413a21369fc5a3465c6c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1.0282559859160176 * hx + 0.6576250513403573 * hy + -0.2057210398512164 * ox + -0.09771416010045743 * oy + -0.3851967551354898 * dg + 0.007439599538686135 * gx + 0.003553422581696645 * gy + -9.887383763733178e-05 * clat",
+          "expression_bytes": 63,
+          "free_parameters": 8,
+          "learned_state_bytes": 220,
+          "literal_state_bytes": 0,
+          "nodes": 63,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 15
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.035952416890314635,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*gx + p6*gy + p7*clat",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--direct_deepseek-rule-1",
+      "rule_sha256": "716a9960620923b9a07ca974305f399a3cc2e4a59011413a21369fc5a3465c6c",
+      "run_id": "full-comparison-v5--P100-020--direct_deepseek",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1.0282559859160176 * hx + 0.6576250513403573 * hy + -0.2057210398512164 * ox + -0.09771416010045743 * oy + -0.3851967551354898 * dg + 0.007439599538686135 * gx + 0.003553422581696645 * gy + -9.887383763733178e-05 * clat",
+        "expression_bytes": 63,
+        "free_parameters": 8,
+        "learned_state_bytes": 220,
+        "literal_state_bytes": 0,
+        "nodes": 63,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 15
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.1180703327018637,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03326622471511236,
+        "primary": "mae",
+        "primary_error": 0.03326622471511236,
+        "rmse": 0.04707194196533954
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.02520809055493365,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024613995697020184,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026246280224843665,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03278078789736976,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.038603825033977274,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.01935517631286772,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.02685923541847163,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.01836214275787363,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.032819021856533626,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018960917469411028,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.023953229069947977,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04127951348507601,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04162454253348222,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.05179294155249269,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06782908512358826,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.035373038461397145,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04342720747059125,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.0308676242994278,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.025020476538872256,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04324257779057163,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03181360180972198,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03170616866332391,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03338368842578907,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03345773707351161,
+        "execution_status": "complete",
+        "expression": "p0+p1*hx+p2*hy+p3*ox+p4*oy+p5*dg+p6*gx+p7*gy",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.0006018406175622624,
+          "p1": 1.0282205465853227,
+          "p2": 0.6575245167909722,
+          "p3": -0.2055689300941477,
+          "p4": -0.09753421269013826,
+          "p5": -0.38522162261219306,
+          "p6": 0.007926300656171082,
+          "p7": 0.004015630634712513
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.0199938234057461,
+            "dg": -0.023949445115179237,
+            "gx": 0.12119749835382256,
+            "gy": 0.0451109527200753,
+            "hx": -0.028081539816708218,
+            "hy": -0.030570883177825876,
+            "ox": -0.021420289356408995,
+            "oy": -0.02643310357400186
+          },
+          "mean": -0.0008691602637690085,
+          "p90_abs": 0.07226755409652913,
+          "std": 0.04975866843581843
+        },
+        "rule_id": "full-comparison-v5--P100-020--best_of_n-rule-1",
+        "rule_sha256": "0cb1f68814a8964f700820dfcc73fcb423ed1b0c7011685ee262f382ef85f608",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.0006018406175622624 + 1.0282205465853227 * hx + 0.6575245167909722 * hy + -0.2055689300941477 * ox + -0.09753421269013826 * oy + -0.38522162261219306 * dg + 0.007926300656171082 * gx + 0.004015630634712513 * gy",
+          "expression_bytes": 44,
+          "free_parameters": 8,
+          "learned_state_bytes": 221,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03593431079090917,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*hx+p2*hy+p3*ox+p4*oy+p5*dg+p6*gx+p7*gy",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--best_of_n-rule-1",
+      "rule_sha256": "0cb1f68814a8964f700820dfcc73fcb423ed1b0c7011685ee262f382ef85f608",
+      "run_id": "full-comparison-v5--P100-020--best_of_n",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.0006018406175622624 + 1.0282205465853227 * hx + 0.6575245167909722 * hy + -0.2055689300941477 * ox + -0.09753421269013826 * oy + -0.38522162261219306 * dg + 0.007926300656171082 * gx + 0.004015630634712513 * gy",
+        "expression_bytes": 44,
+        "free_parameters": 8,
+        "learned_state_bytes": 221,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11805578086853712,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03326622471511236,
+        "primary": "mae",
+        "primary_error": 0.03326622471511236,
+        "rmse": 0.04707194196533954
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.02520809055493365,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024613995697020184,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026246280224843665,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03278078789736976,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.038603825033977274,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.01935517631286772,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.02685923541847163,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.01836214275787363,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.032819021856533626,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018960917469411028,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.023953229069947977,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04127951348507601,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04162454253348222,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.05179294155249269,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06782908512358826,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.035373038461397145,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04342720747059125,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.0308676242994278,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.025020476538872256,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04324257779057163,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03181360180972198,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03170616866332391,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03338368842578907,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03345773707351161,
+        "execution_status": "complete",
+        "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*gx + p7*gy",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.0006018406175622624,
+          "p1": 1.0282205465853227,
+          "p2": 0.6575245167909722,
+          "p3": -0.2055689300941477,
+          "p4": -0.09753421269013826,
+          "p5": -0.38522162261219306,
+          "p6": 0.007926300656171082,
+          "p7": 0.004015630634712513
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.0199938234057461,
+            "dg": -0.023949445115179237,
+            "gx": 0.12119749835382256,
+            "gy": 0.0451109527200753,
+            "hx": -0.028081539816708218,
+            "hy": -0.030570883177825876,
+            "ox": -0.021420289356408995,
+            "oy": -0.02643310357400186
+          },
+          "mean": -0.0008691602637690085,
+          "p90_abs": 0.07226755409652913,
+          "std": 0.04975866843581843
+        },
+        "rule_id": "full-comparison-v5--P100-020--feedback_refinement-rule-1",
+        "rule_sha256": "dbf83e73c6f3fad846d998606687e66e5af2390e29b2048d8a324627ee655b1d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.0006018406175622624 + 1.0282205465853227 * hx + 0.6575245167909722 * hy + -0.2055689300941477 * ox + -0.09753421269013826 * oy + -0.38522162261219306 * dg + 0.007926300656171082 * gx + 0.004015630634712513 * gy",
+          "expression_bytes": 58,
+          "free_parameters": 8,
+          "learned_state_bytes": 221,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.03593431079090917,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*gx + p7*gy",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--feedback_refinement-rule-1",
+      "rule_sha256": "dbf83e73c6f3fad846d998606687e66e5af2390e29b2048d8a324627ee655b1d",
+      "run_id": "full-comparison-v5--P100-020--feedback_refinement",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.0006018406175622624 + 1.0282205465853227 * hx + 0.6575245167909722 * hy + -0.2055689300941477 * ox + -0.09753421269013826 * oy + -0.38522162261219306 * dg + 0.007926300656171082 * gx + 0.004015630634712513 * gy",
+        "expression_bytes": 58,
+        "free_parameters": 8,
+        "learned_state_bytes": 221,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11805578086853712,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03326622473846649,
+        "primary": "mae",
+        "primary_error": 0.03326622473846649,
+        "rmse": 0.047071941996800745
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025208090529114678,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024613995679856438,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026246280251699092,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.03278078795141395,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.03860382503464143,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.0193551763220794,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026859235409642333,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.018362142762456388,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.032819022177324464,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018960917458353373,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.023953229140751688,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04127951343640669,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04162454253389179,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.051792941587455676,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06782908520270133,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.03537303849022632,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04342720745977634,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.030867624377069247,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.02502047653178715,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.043242577805347786,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03181360181120714,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.03170616861862103,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.033383688412905455,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.033457737084286315,
+        "execution_status": "complete",
+        "expression": "p0+p1*hx+p2*hy+p3*ox+p4*oy+p5*dg+p6*gx+p7*gy",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.0006018406246527303,
+          "p1": 1.0282205473899502,
+          "p2": 0.6575245138820882,
+          "p3": -0.205568932269252,
+          "p4": -0.09753421268569133,
+          "p5": -0.3852216183403991,
+          "p6": 0.007926300621467468,
+          "p7": 0.004015630701356953
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.01999382354356152,
+            "dg": -0.02394944516897638,
+            "gx": 0.12119749812761578,
+            "gy": 0.04511095289407754,
+            "hx": -0.028081539925926196,
+            "hy": -0.03057088326172897,
+            "ox": -0.02142028965046749,
+            "oy": -0.02643310361430468
+          },
+          "mean": -0.0008691602654508993,
+          "p90_abs": 0.07226755406780984,
+          "std": 0.04975866844765239
+        },
+        "rule_id": "full-comparison-v5--P100-020--tool_agent-rule-1",
+        "rule_sha256": "5ee2e2c965728bc35bed390f2c8e06d62a5e01911e7a49ecc86a47023046c612",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.0006018406246527303 + 1.0282205473899502 * hx + 0.6575245138820882 * hy + -0.205568932269252 * ox + -0.09753421268569133 * oy + -0.3852216183403991 * dg + 0.007926300621467468 * gx + 0.004015630701356953 * gy",
+          "expression_bytes": 44,
+          "free_parameters": 8,
+          "learned_state_bytes": 219,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.035934310789969226,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*hx+p2*hy+p3*ox+p4*oy+p5*dg+p6*gx+p7*gy",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--tool_agent-rule-1",
+      "rule_sha256": "5ee2e2c965728bc35bed390f2c8e06d62a5e01911e7a49ecc86a47023046c612",
+      "run_id": "full-comparison-v5--P100-020--tool_agent",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.0006018406246527303 + 1.0282205473899502 * hx + 0.6575245138820882 * hy + -0.205568932269252 * ox + -0.09753421268569133 * oy + -0.3852216183403991 * dg + 0.007926300621467468 * gx + 0.004015630701356953 * gy",
+        "expression_bytes": 44,
+        "free_parameters": 8,
+        "learned_state_bytes": 219,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11805578075485484,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.033299808034383004,
+        "primary": "mae",
+        "primary_error": 0.033299808034383004,
+        "rmse": 0.047112647443951376
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025376445956904095,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024563682764866607,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026424567496534043,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.033010830397441536,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.038707571800271234,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.01925501347525664,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026698790392298024,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.01847298932891585,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.03288560785962197,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018951919370093415,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.02465646931336134,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04139622638127176,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.041960897543094955,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.050288053323077675,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06781940989989303,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.035380656609698025,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04352002536815629,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.03062073496857403,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.024981544225449473,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04330406880115552,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03187833887298682,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.031839303989640494,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03390243665224638,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03361115874011343,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(clat)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.008931285583638213,
+          "p1": 1.028376872976415,
+          "p2": 0.6575119526441591,
+          "p3": -0.20575341177260845,
+          "p4": -0.09755481451027322,
+          "p5": -0.3852682477124193,
+          "p6": 0.008453660295617423,
+          "p7": 0.005103783352913694,
+          "p8": 0.009725975343681298
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": 0.00279075050772578,
+            "dg": -0.019075826543043736,
+            "gx": 0.12083197546005875,
+            "gy": 0.046784821982306275,
+            "hx": -0.023204820153193605,
+            "hy": -0.02578576408553589,
+            "ox": -0.016401500789058727,
+            "oy": -0.021527886234452648
+          },
+          "mean": -0.0004121275576554549,
+          "p90_abs": 0.07187937408009819,
+          "std": 0.04977571406282469
+        },
+        "rule_id": "full-comparison-v5--P100-020--linear_control-rule-1",
+        "rule_sha256": "6c43c26aa5a986218374a5da2b023e9c11c7b979d7a7dbc20d1f2604fc1f57e8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.008931285583638213 + 1.028376872976415 * hx + 0.6575119526441591 * hy + -0.20575341177260845 * ox + -0.09755481451027322 * oy + -0.3852682477124193 * dg + 0.008453660295617423 * gx + 0.005103783352913694 * gy + 0.009725975343681298 * clat",
+          "expression_bytes": 68,
+          "free_parameters": 9,
+          "learned_state_bytes": 247,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.035902023301412685,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(clat)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--linear_control-rule-1",
+      "rule_sha256": "6c43c26aa5a986218374a5da2b023e9c11c7b979d7a7dbc20d1f2604fc1f57e8",
+      "run_id": "full-comparison-v5--P100-020--linear_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.008931285583638213 + 1.028376872976415 * hx + 0.6575119526441591 * hy + -0.20575341177260845 * ox + -0.09755481451027322 * oy + -0.3852682477124193 * dg + 0.008453660295617423 * gx + 0.005103783352913694 * gy + 0.009725975343681298 * clat",
+        "expression_bytes": 68,
+        "free_parameters": 9,
+        "learned_state_bytes": 247,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.1180713368982283,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.033299808034383004,
+        "primary": "mae",
+        "primary_error": 0.033299808034383004,
+        "rmse": 0.047112647443951376
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.025376445956904095,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.024563682764866607,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.026424567496534043,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.033010830397441536,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.038707571800271234,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.01925501347525664,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.026698790392298024,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.01847298932891585,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.03288560785962197,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.018951919370093415,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.02465646931336134,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.04139622638127176,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.041960897543094955,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.050288053323077675,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.06781940989989303,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.035380656609698025,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.04352002536815629,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.03062073496857403,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.024981544225449473,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.04330406880115552,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.03187833887298682,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.031839303989640494,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.03390243665224638,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.03361115874011343,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(clat)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.008931285583638213,
+          "p1": 1.028376872976415,
+          "p2": 0.6575119526441591,
+          "p3": -0.20575341177260845,
+          "p4": -0.09755481451027322,
+          "p5": -0.3852682477124193,
+          "p6": 0.008453660295617423,
+          "p7": 0.005103783352913694,
+          "p8": 0.009725975343681298
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": 0.00279075050772578,
+            "dg": -0.019075826543043736,
+            "gx": 0.12083197546005875,
+            "gy": 0.046784821982306275,
+            "hx": -0.023204820153193605,
+            "hy": -0.02578576408553589,
+            "ox": -0.016401500789058727,
+            "oy": -0.021527886234452648
+          },
+          "mean": -0.0004121275576554549,
+          "p90_abs": 0.07187937408009819,
+          "std": 0.04977571406282469
+        },
+        "rule_id": "full-comparison-v5--P100-020--polynomial_control-rule-1",
+        "rule_sha256": "230e7df3c9c4283ca8354e127df53a544c13e030bd337ba55303efba87828eb9",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.008931285583638213 + 1.028376872976415 * hx + 0.6575119526441591 * hy + -0.20575341177260845 * ox + -0.09755481451027322 * oy + -0.3852682477124193 * dg + 0.008453660295617423 * gx + 0.005103783352913694 * gy + 0.009725975343681298 * clat",
+          "expression_bytes": 68,
+          "free_parameters": 9,
+          "learned_state_bytes": 247,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.035902023301412685,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(clat)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--polynomial_control-rule-1",
+      "rule_sha256": "230e7df3c9c4283ca8354e127df53a544c13e030bd337ba55303efba87828eb9",
+      "run_id": "full-comparison-v5--P100-020--polynomial_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.008931285583638213 + 1.028376872976415 * hx + 0.6575119526441591 * hy + -0.20575341177260845 * ox + -0.09755481451027322 * oy + -0.3852682477124193 * dg + 0.008453660295617423 * gx + 0.005103783352913694 * gy + 0.009725975343681298 * clat",
+        "expression_bytes": 68,
+        "free_parameters": 9,
+        "learned_state_bytes": 247,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.1180713368982283,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.047973962510915895,
+        "primary": "mae",
+        "primary_error": 0.047973962510915895,
+        "rmse": 0.06781866820306195
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.026260683815779822,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.029131696691622654,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.04110135337324057,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.0500728119883331,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.06264607639528427,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.030109231595389765,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.0410931103802965,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.023783889801074203,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.024539278347406657,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.025780909459933058,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.06612327514774612,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.056680021691549454,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04472490881536245,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.057833985922479486,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.067638993047584,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.05640991529167852,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.061775143373890756,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.05021726027258732,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.033818374192320096,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.08403226922701912,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.0468755921510967,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.05339343877604607,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.06935891799334484,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.05345770325388818,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.005299445365961308,
+          "p1": 1.0092166165968912
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": 0.07610463542735264,
+            "dg": 0.07675917829160385,
+            "gx": 0.1140584897134018,
+            "gy": 0.02741470217471196,
+            "hx": 0.07019429446872674,
+            "hy": 0.04265931108719093,
+            "ox": 0.12426322302651367,
+            "oy": 0.0768319291090903
+          },
+          "mean": 0.002442894680316041,
+          "p90_abs": 0.10753007333386051,
+          "std": 0.07337759358434594
+        },
+        "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-2",
+        "rule_sha256": "538fbf90a544778d2c6ed751b79e929146d2b8653617b9570c000624be16fca2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.005299445365961308 + 1.0092166165968912 * hx",
+          "expression_bytes": 10,
+          "free_parameters": 2,
+          "learned_state_bytes": 55,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.05255860581730641,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--symbolic_control-rule-2",
+      "rule_sha256": "538fbf90a544778d2c6ed751b79e929146d2b8653617b9570c000624be16fca2",
+      "run_id": "full-comparison-v5--P100-020--symbolic_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.005299445365961308 + 1.0092166165968912 * hx",
+        "expression_bytes": 10,
+        "free_parameters": 2,
+        "learned_state_bytes": 55,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.09013401572320838,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.047973962510915895,
+        "primary": "mae",
+        "primary_error": 0.047973962510915895,
+        "rmse": 0.06781866820306195
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.026260683815779822,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.029131696691622654,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.04110135337324057,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.0500728119883331,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.06264607639528427,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.030109231595389765,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.0410931103802965,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.023783889801074203,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.024539278347406657,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.025780909459933058,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.06612327514774612,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.056680021691549454,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.04472490881536245,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.057833985922479486,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.067638993047584,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.05640991529167852,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.061775143373890756,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.05021726027258732,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.033818374192320096,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.08403226922701912,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.0468755921510967,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.05339343877604607,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.06935891799334484,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.05345770325388818,
+        "execution_status": "complete",
+        "expression": "p0+p1*(hx)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.005299445365961308,
+          "p1": 1.0092166165968912
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": 0.07610463542735264,
+            "dg": 0.07675917829160385,
+            "gx": 0.1140584897134018,
+            "gy": 0.02741470217471196,
+            "hx": 0.07019429446872674,
+            "hy": 0.04265931108719093,
+            "ox": 0.12426322302651367,
+            "oy": 0.0768319291090903
+          },
+          "mean": 0.002442894680316041,
+          "p90_abs": 0.10753007333386051,
+          "std": 0.07337759358434594
+        },
+        "rule_id": "full-comparison-v5--P100-020--principia_engine-rule-2",
+        "rule_sha256": "d2626e85611de573a96f232a750c81b552f95cf1c0d5f8eb6494a9fc5fe9cd55",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.005299445365961308 + 1.0092166165968912 * hx",
+          "expression_bytes": 10,
+          "free_parameters": 2,
+          "learned_state_bytes": 55,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.05255860581730641,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(hx)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--principia_engine-rule-2",
+      "rule_sha256": "d2626e85611de573a96f232a750c81b552f95cf1c0d5f8eb6494a9fc5fe9cd55",
+      "run_id": "full-comparison-v5--P100-020--principia_engine",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.005299445365961308 + 1.0092166165968912 * hx",
+        "expression_bytes": 10,
+        "free_parameters": 2,
+        "learned_state_bytes": 55,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.09013401572320838,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.06689368023014018,
+        "primary": "mae",
+        "primary_error": 0.06689368023014018,
+        "rmse": 0.12746641512549092
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.03679592245073884,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.034196750567795475,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.041505723130201407,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.05597266902323253,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.1599612860652579,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.044379020263709545,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.05502003232944047,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.03600948200645733,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.0048299319727889145,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.0359614407401997,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.07960227299056127,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.05473453109214219,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.05759288847755471,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.07898995240613439,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.11381698238989264,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.07929710751222929,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.0688286620175118,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.05867465411297574,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.04041882930377632,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.1893383460050082,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.052429943783013855,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.07418247705904976,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.08601573959355192,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.07941991590783866,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-020--tree_control-rule-1",
+        "rule_sha256": "66249495f0bbd95e4d0641e59bf0081b16db2f967de7bfc19eab9e20c07fc1f3",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 85,
+          "weighted_operator_count": 85
+        },
+        "task_id": "P100-020.compact.v2",
+        "tree": {
+          "feature": [
+            0,
+            0,
+            0,
+            0,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            1,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            1,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            1,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            1,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            -2
+          ],
+          "features": [
+            "hx",
+            "hy",
+            "ox",
+            "oy",
+            "dg",
+            "gx",
+            "gy",
+            "clat"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            -1,
+            6,
+            -1,
+            -1,
+            9,
+            10,
+            11,
+            -1,
+            -1,
+            14,
+            -1,
+            -1,
+            17,
+            18,
+            -1,
+            -1,
+            21,
+            -1,
+            -1,
+            24,
+            25,
+            26,
+            27,
+            -1,
+            -1,
+            30,
+            -1,
+            -1,
+            33,
+            34,
+            -1,
+            -1,
+            37,
+            -1,
+            -1,
+            40,
+            41,
+            42,
+            -1,
+            -1,
+            45,
+            -1,
+            -1,
+            48,
+            49,
+            -1,
+            -1,
+            52,
+            -1,
+            -1,
+            55,
+            56,
+            57,
+            58,
+            59,
+            -1,
+            -1,
+            62,
+            -1,
+            -1,
+            65,
+            -1,
+            67,
+            -1,
+            -1,
+            70,
+            71,
+            72,
+            -1,
+            -1,
+            75,
+            -1,
+            -1,
+            78,
+            -1,
+            -1,
+            81,
+            82,
+            -1,
+            -1,
+            -1
+          ],
+          "right": [
+            54,
+            23,
+            8,
+            5,
+            -1,
+            7,
+            -1,
+            -1,
+            16,
+            13,
+            12,
+            -1,
+            -1,
+            15,
+            -1,
+            -1,
+            20,
+            19,
+            -1,
+            -1,
+            22,
+            -1,
+            -1,
+            39,
+            32,
+            29,
+            28,
+            -1,
+            -1,
+            31,
+            -1,
+            -1,
+            36,
+            35,
+            -1,
+            -1,
+            38,
+            -1,
+            -1,
+            47,
+            44,
+            43,
+            -1,
+            -1,
+            46,
+            -1,
+            -1,
+            51,
+            50,
+            -1,
+            -1,
+            53,
+            -1,
+            -1,
+            80,
+            69,
+            64,
+            61,
+            60,
+            -1,
+            -1,
+            63,
+            -1,
+            -1,
+            66,
+            -1,
+            68,
+            -1,
+            -1,
+            77,
+            74,
+            73,
+            -1,
+            -1,
+            76,
+            -1,
+            -1,
+            79,
+            -1,
+            -1,
+            84,
+            83,
+            -1,
+            -1,
+            -1
+          ],
+          "threshold": [
+            1.0274999737739563,
+            0.07750000059604645,
+            -0.7124999761581421,
+            -1.2524999976158142,
+            -2.0,
+            -0.9175000190734863,
+            -2.0,
+            -2.0,
+            -0.2524999976158142,
+            -0.48750001192092896,
+            -0.5724999904632568,
+            -2.0,
+            -2.0,
+            -0.3824999928474426,
+            -2.0,
+            -2.0,
+            -0.10249999910593033,
+            -0.14750000089406967,
+            -2.0,
+            -2.0,
+            -0.007499999832361937,
+            -2.0,
+            -2.0,
+            0.5324999988079071,
+            0.3075000047683716,
+            0.20749999582767487,
+            0.13750000298023224,
+            -2.0,
+            -2.0,
+            0.23250000178813934,
+            -2.0,
+            -2.0,
+            0.41749998927116394,
+            0.3675000071525574,
+            -2.0,
+            -2.0,
+            0.47749999165534973,
+            -2.0,
+            -2.0,
+            0.7475000023841858,
+            0.6324999928474426,
+            0.5824999809265137,
+            -2.0,
+            -2.0,
+            0.6974999904632568,
+            -2.0,
+            -2.0,
+            0.9024999737739563,
+            0.8425000011920929,
+            -2.0,
+            -2.0,
+            0.9624999761581421,
+            -2.0,
+            -2.0,
+            2.5475000143051147,
+            1.6175000071525574,
+            1.3175000548362732,
+            1.1824999451637268,
+            1.090000033378601,
+            -2.0,
+            -2.0,
+            1.2524999976158142,
+            -2.0,
+            -2.0,
+            1.3924999833106995,
+            -2.0,
+            1.5374999642372131,
+            -2.0,
+            -2.0,
+            1.9775000214576721,
+            1.7724999785423279,
+            1.6975000500679016,
+            -2.0,
+            -2.0,
+            1.8425000309944153,
+            -2.0,
+            -2.0,
+            2.2274999618530273,
+            -2.0,
+            -2.0,
+            3.8274999856948853,
+            3.1149998903274536,
+            -2.0,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            0.6179537885095728,
+            0.2256733682181214,
+            -0.3715166666666666,
+            -1.2064640883977902,
+            -1.976250000000001,
+            -0.9286466165413529,
+            -1.0872549019607844,
+            -0.8300000000000005,
+            -0.22320902845927348,
+            -0.44887468030690564,
+            -0.5919285714285716,
+            -0.6443835616438354,
+            -0.5347761194029851,
+            -0.3690836653386457,
+            -0.4463636363636363,
+            -0.31875000000000014,
+            -0.08270700636942682,
+            -0.18662551440329217,
+            -0.21851612903225817,
+            -0.13045454545454546,
+            -0.017116883116883114,
+            -0.06417085427135677,
+            0.033225806451612896,
+            0.5204607157548345,
+            0.30805887032617374,
+            0.19647619047619067,
+            0.14771014492753623,
+            0.10893442622950815,
+            0.16892376681614354,
+            0.2555087719298242,
+            0.20977528089887645,
+            0.27627551020408153,
+            0.42017543859649104,
+            0.3586524822695034,
+            0.33085365853658527,
+            0.3972881355932202,
+            0.47046376811594204,
+            0.44494949494949476,
+            0.5048299319727889,
+            0.747879045996592,
+            0.6346511627906981,
+            0.58036253776435,
+            0.546103896103896,
+            0.6101694915254238,
+            0.6918789808917203,
+            0.6655445544554452,
+            0.7393749999999999,
+            0.8859357277882793,
+            0.830771604938271,
+            0.8008955223880598,
+            0.8795934959349598,
+            0.9731219512195128,
+            0.9408130081300815,
+            1.0215853658536587,
+            1.8322506393861882,
+            1.5489154228855708,
+            1.297783094098884,
+            1.1771544715447162,
+            1.1078000000000006,
+            1.0510526315789475,
+            1.1591428571428568,
+            1.2592307692307698,
+            1.2227906976744187,
+            1.2969879518072285,
+            1.47031007751938,
+            1.349846153846154,
+            1.510880829015545,
+            1.471893939393939,
+            1.595245901639344,
+            1.9654761904761906,
+            1.7835294117647065,
+            1.7025000000000006,
+            1.6551020408163262,
+            1.7393650793650794,
+            1.8667889908256876,
+            1.814,
+            1.9115254237288135,
+            2.2215923566878994,
+            2.109651162790698,
+            2.3571830985915487,
+            3.5272023809523794,
+            3.1044166666666637,
+            2.8327536231884056,
+            3.471960784313726,
+            4.584166666666667
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--tree_control-rule-1",
+      "rule_sha256": "66249495f0bbd95e4d0641e59bf0081b16db2f967de7bfc19eab9e20c07fc1f3",
+      "run_id": "full-comparison-v5--P100-020--tree_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 127,
+        "learned_state_bytes": 3925,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 85
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.08899839265128391,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.09447235164661452,
+        "primary": "mae",
+        "primary_error": 0.09447235164661452,
+        "rmse": 0.16337636720139173
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.04668386045072012,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.04294959605604737,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.06169074757365855,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.06279846073190465,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.105961163263973,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.035795862138070164,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.05122754604778615,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.04734635707088436,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.15350281171566726,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.03611417264843303,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.0915553189651877,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.08248862677127027,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.07284249174686411,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.42155577213651046,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.09767506546528604,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.09908835073105093,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.10128209894077553,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.10167496872661684,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.042655441232647966,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.11454125282293905,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.06198722235988294,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.09456906282449963,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.14687783745145774,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.08089870245943713,
+        "execution_status": "complete",
+        "expression": "(hx + hy + ox + oy + dg) / 5 + p0 * gy * (1 - clat) + p1 * gx * (1 - clat)",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.024420096898875754,
+          "p1": -0.07128865183353181
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.023006363624096228,
+            "dg": -0.15836881498445976,
+            "gx": 0.18029250340243888,
+            "gy": 0.12277380356902029,
+            "hx": -0.2033908477549635,
+            "hy": -0.18202306877079344,
+            "ox": -0.13800931762599175,
+            "oy": -0.09784612433866237
+          },
+          "mean": 0.0013973769366247594,
+          "p90_abs": 0.1493081866604423,
+          "std": 0.10995097118351298
+        },
+        "rule_id": "full-comparison-v5--P100-020--direct_glm-rule-1",
+        "rule_sha256": "c5090227b4b0d4b86ca263821a00716f7e59ee87a43b10877721a180d971e717",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "(hx + hy + ox + oy + dg) / 5 + 0.024420096898875754 * gy * (1 - clat) + -0.07128865183353181 * gx * (1 - clat)",
+          "expression_bytes": 74,
+          "free_parameters": 2,
+          "learned_state_bytes": 56,
+          "literal_state_bytes": 3,
+          "nodes": 52,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.0836856952847365,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "(hx + hy + ox + oy + dg) / 5 + p0 * gy * (1 - clat) + p1 * gx * (1 - clat)",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--direct_glm-rule-1",
+      "rule_sha256": "c5090227b4b0d4b86ca263821a00716f7e59ee87a43b10877721a180d971e717",
+      "run_id": "full-comparison-v5--P100-020--direct_glm",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "(hx + hy + ox + oy + dg) / 5 + 0.024420096898875754 * gy * (1 - clat) + -0.07128865183353181 * gx * (1 - clat)",
+        "expression_bytes": 74,
+        "free_parameters": 2,
+        "learned_state_bytes": 56,
+        "literal_state_bytes": 3,
+        "nodes": 52,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03737130134380065,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.09509167484166371,
+        "primary": "mae",
+        "primary_error": 0.09509167484166371,
+        "rmse": 0.17056269067791574
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.05054951027412681,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.040399386166158166,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.06251481325082747,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.06286016104976269,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 0.09589460081720526,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.038227272367006696,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.05650642729872552,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.045990678519236355,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.14921616217464895,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.03624413055592173,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.10321456260460188,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.07953100682561765,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.07924783956517278,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.47095181508517836,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.08261017258414972,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.09446861533962213,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.099098049404287,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.09894588175231843,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.0417386000389252,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 0.10780932920018363,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.05607581832116068,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.09185124720012608,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.14316244096330177,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.08298092441862896,
+        "execution_status": "complete",
+        "expression": "p0 + p1*dg + p2*(hx+hy+ox+oy)/4 + p3*clat + p4*gx + p5*gy",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.014267512440129682,
+          "p1": 0.637019303511732,
+          "p2": 0.3865252068779028,
+          "p3": 0.0004137480237400241,
+          "p4": -0.004215866959664854,
+          "p5": 0.0076339846048559855
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": 0.0332488218030088,
+            "dg": 0.09173859381597459,
+            "gx": 0.18648764385799557,
+            "gy": 0.1370243951976803,
+            "hx": 0.04262207715119784,
+            "hy": 0.06647910705449181,
+            "ox": 0.10473970157688454,
+            "oy": 0.14462970019255078
+          },
+          "mean": 0.012623926918945684,
+          "p90_abs": 0.15802441880453993,
+          "std": 0.10963023850470077
+        },
+        "rule_id": "full-comparison-v5--P100-020--best_of_n-rule-2",
+        "rule_sha256": "bd7d4498336366c29bb76bc014a598044bb0c9b09b090be5e3c03120aa6536f9",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.014267512440129682 + 0.637019303511732 * dg + 0.3865252068779028 * (hx + hy + ox + oy) / 4 + 0.0004137480237400241 * clat + -0.004215866959664854 * gx + 0.0076339846048559855 * gy",
+          "expression_bytes": 57,
+          "free_parameters": 6,
+          "learned_state_bytes": 167,
+          "literal_state_bytes": 1,
+          "nodes": 58,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.08316613437268942,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*dg + p2*(hx+hy+ox+oy)/4 + p3*clat + p4*gx + p5*gy",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-020--best_of_n-rule-2",
+      "rule_sha256": "bd7d4498336366c29bb76bc014a598044bb0c9b09b090be5e3c03120aa6536f9",
+      "run_id": "full-comparison-v5--P100-020--best_of_n",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.014267512440129682 + 0.637019303511732 * dg + 0.3865252068779028 * (hx + hy + ox + oy) / 4 + 0.0004137480237400241 * clat + -0.004215866959664854 * gx + 0.0076339846048559855 * gy",
+        "expression_bytes": 57,
+        "free_parameters": 6,
+        "learned_state_bytes": 167,
+        "literal_state_bytes": 1,
+        "nodes": 58,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.05893692446545515,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.6497547708247648,
+        "primary": "mae",
+        "primary_error": 0.6497547708247648,
+        "rmse": 0.9071718021516597
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.6497547708247648,
+      "by_group": [
+        {
+          "error": 0.24085494230997978,
+          "group": "group-10098ead464ff73ff3614264",
+          "rows": 21
+        },
+        {
+          "error": 0.307163867067299,
+          "group": "group-20b257bc8221d3459eaeae32",
+          "rows": 92
+        },
+        {
+          "error": 0.26309042464612825,
+          "group": "group-2ce5f2a8a0fbe90cfac79755",
+          "rows": 50
+        },
+        {
+          "error": 0.5444775603663614,
+          "group": "group-42b21a31acb558a230e0de77",
+          "rows": 100
+        },
+        {
+          "error": 1.7892547876769358,
+          "group": "group-4f9d835f55d27e413c6e3189",
+          "rows": 100
+        },
+        {
+          "error": 0.5948095753538718,
+          "group": "group-541774a905455f346a5b75d8",
+          "rows": 100
+        },
+        {
+          "error": 0.9513277268942549,
+          "group": "group-6a40613f924aaebe178a474c",
+          "rows": 100
+        },
+        {
+          "error": 0.2487629907176119,
+          "group": "group-749be1f98445988230b280d2",
+          "rows": 27
+        },
+        {
+          "error": 0.11795378850957527,
+          "group": "group-74f7d6172cd5eb72172db785",
+          "rows": 1
+        },
+        {
+          "error": 0.5851282314938354,
+          "group": "group-827f07007d9082d61186b380",
+          "rows": 83
+        },
+        {
+          "error": 0.8940903413821815,
+          "group": "group-8f76ed3bb868681416b88136",
+          "rows": 16
+        },
+        {
+          "error": 0.42259695045795176,
+          "group": "group-9573168bb0f4641b6ba587db",
+          "rows": 80
+        },
+        {
+          "error": 0.7512211178184846,
+          "group": "group-a41d3f383878556b2a6e35bd",
+          "rows": 16
+        },
+        {
+          "error": 0.8599999999999999,
+          "group": "group-a704ac854508dd2a04f19f59",
+          "rows": 2
+        },
+        {
+          "error": 0.6374389397724118,
+          "group": "group-ab55a34c3279d898f717c169",
+          "rows": 15
+        },
+        {
+          "error": 0.5895815154038301,
+          "group": "group-b24efd5b7c2e4732e5276073",
+          "rows": 100
+        },
+        {
+          "error": 0.7727771374731586,
+          "group": "group-c32cc31dfdc91b19e9da6530",
+          "rows": 95
+        },
+        {
+          "error": 0.4812659093612465,
+          "group": "group-c77e6bcfc4f8896b9e3309ad",
+          "rows": 28
+        },
+        {
+          "error": 0.6469123583882119,
+          "group": "group-c97527a60074988870d968ab",
+          "rows": 99
+        },
+        {
+          "error": 1.4589626324909424,
+          "group": "group-cf421c03f337784a01a1b143",
+          "rows": 37
+        },
+        {
+          "error": 0.3566385249134492,
+          "group": "group-e1097518bdd79c7c12d4cf0d",
+          "rows": 95
+        },
+        {
+          "error": 0.7824703261466507,
+          "group": "group-f1e7e0984ae65aca04edcad0",
+          "rows": 47
+        },
+        {
+          "error": 0.6475800803252191,
+          "group": "group-f36d5e6ee3351edaf9df2b14",
+          "rows": 34
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.660863758160041,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "hx",
+          "hy",
+          "ox",
+          "oy",
+          "dg",
+          "gx",
+          "gy",
+          "clat"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.6179537885095753
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "clat": -0.29835882623662807,
+            "dg": -0.9951691582455179,
+            "gx": 0.10501973547637346,
+            "gy": 0.02794824193904034,
+            "hx": -0.9978979470036072,
+            "hy": -0.9965575831844175,
+            "ox": -0.9899785721139955,
+            "oy": -0.9839976142861223
+          },
+          "mean": -0.3425630478255852,
+          "p90_abs": 1.7895907577019154,
+          "std": 1.1294900336047875
+        },
+        "rule_id": "full-comparison-v5--P100-020--mean_control-rule-1",
+        "rule_sha256": "6edc0bd63d757b644bd9ea3a55bac3af48f4573dbad0971378d2b38a7b2b3be5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.6179537885095753",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-020.compact.v2",
+        "train_error": 0.6830530319121106,
+        "units": {
+          "inputs": {
+            "clat": "dimensionless cosine latitude",
+            "dg": "degree C",
+            "gx": "degree C",
+            "gy": "degree C",
+            "hx": "degree C",
+            "hy": "degree C",
+            "ox": "degree C",
+            "oy": "degree C"
+          },
+          "output": "degree C",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1338,
+        "fraction": 1.0,
+        "predicted": 1338
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-020--mean_control-rule-1",
+      "rule_sha256": "6edc0bd63d757b644bd9ea3a55bac3af48f4573dbad0971378d2b38a7b2b3be5",
+      "run_id": "full-comparison-v5--P100-020--mean_control",
+      "scenario_id": "P100-020",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.6179537885095753",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 1338,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-020.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-020",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-020.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

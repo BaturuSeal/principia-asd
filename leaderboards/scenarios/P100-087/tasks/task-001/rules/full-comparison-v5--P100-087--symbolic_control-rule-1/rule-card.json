@@ -1,0 +1,96 @@
+{
+  "dev_error": 0.748022604015943,
+  "execution_status": "complete",
+  "expression": "p0+p1*(own_previous)+p2*(own_history_mean)+p3*(tanh((own_previous-10.778558052434457)/6.094869696918072))+p4*(own_lag2)+p5*(tanh((own_lag2-10.801186017478152)/6.100499240052563))",
+  "inputs": [
+    "round",
+    "own_previous",
+    "peer_previous",
+    "own_lag2",
+    "peer_lag2",
+    "own_history_mean",
+    "peer_history_mean",
+    "endowment",
+    "peer_endowment",
+    "productivity",
+    "peer_productivity",
+    "threshold",
+    "previous_success",
+    "required_contribution"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.878388223757082,
+    "p1": 0.4270722168615644,
+    "p2": 0.2924373564163674,
+    "p3": 0.8178955426255242,
+    "p4": 0.19359041912749334,
+    "p5": -0.2798382146497475
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "endowment": -0.057873608322835945,
+      "own_history_mean": -0.024341897913845462,
+      "own_lag2": 0.0010321084294566438,
+      "own_previous": -0.02684506312967723,
+      "peer_endowment": 0.057873608322835945,
+      "peer_history_mean": -0.001322893640690941,
+      "peer_lag2": -0.017816492101530905,
+      "peer_previous": 0.0006986402908245021,
+      "peer_productivity": 0.02836957621520205,
+      "previous_success": -0.025347187457088777,
+      "productivity": 0.02034210873299369,
+      "required_contribution": 0.0018517545977194212,
+      "round": -0.013937890928461934,
+      "threshold": 0.01901077903816728
+    },
+    "mean": 0.0701343750451905,
+    "p90_abs": 1.8469244515973693,
+    "std": 1.9889145527720427
+  },
+  "rule_id": "full-comparison-v5--P100-087--symbolic_control-rule-1",
+  "rule_sha256": "1483f0cc154798eb4bf90e51171f70f70dbf4a2cc2ae8c265711ed7200ba4fa6",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.878388223757082 + 0.4270722168615644 * own_previous + 0.2924373564163674 * own_history_mean + 0.8178955426255242 * tanh((own_previous - 10.778558052434457) / 6.094869696918072) + 0.19359041912749334 * own_lag2 + -0.2798382146497475 * tanh((own_lag2 - 10.801186017478152) / 6.100499240052563)",
+    "expression_bytes": 178,
+    "free_parameters": 6,
+    "learned_state_bytes": 157,
+    "literal_state_bytes": 70,
+    "nodes": 61,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-087.compact.v2",
+  "train_error": 1.091314191991705,
+  "units": {
+    "inputs": {
+      "endowment": "experimental tokens",
+      "own_history_mean": "experimental tokens",
+      "own_lag2": "experimental tokens",
+      "own_previous": "experimental tokens",
+      "peer_endowment": "experimental tokens",
+      "peer_history_mean": "experimental tokens",
+      "peer_lag2": "experimental tokens",
+      "peer_previous": "experimental tokens",
+      "peer_productivity": "dimensionless",
+      "previous_success": "indicator",
+      "productivity": "dimensionless",
+      "required_contribution": "experimental tokens",
+      "round": "round",
+      "threshold": "productivity-weighted tokens"
+    },
+    "output": "experimental tokens",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

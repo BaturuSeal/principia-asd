@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.644219866171451,
+  "execution_status": "complete",
+  "expression": "p0 + p1*current + p2*soft + p3*kd + p4*cal_mean + p5*cal_last + p6*maximum(0, current - 40) + p7*soft*kd",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.46108059358324827,
+    "p1": 0.02596153858313574,
+    "p2": 0.15476191176493295,
+    "p3": 1.2380952445746245,
+    "p4": -2.0311751237266957,
+    "p5": 0.9456720287436096,
+    "p6": -0.01785714304707291,
+    "p7": -0.9047619146064527
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.07259778660607277,
+      "soft": -0.434451941644082
+    },
+    "mean": 0.14285714169007274,
+    "p90_abs": 1.2584615342446,
+    "std": 0.8054449045776984
+  },
+  "rule_id": "full-comparison-v5--P100-076--feedback_refinement-rule-1",
+  "rule_sha256": "dde5a9e52ecdb215608176761581a7898a3a396e14e2eb098a4590679cc45c0c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.46108059358324827 + 0.02596153858313574 * current + 0.15476191176493295 * soft + 1.2380952445746245 * kd + -2.0311751237266957 * cal_mean + 0.9456720287436096 * cal_last + -0.01785714304707291 * maximum(0, current - 40) + -0.9047619146064527 * soft * kd",
+    "expression_bytes": 104,
+    "free_parameters": 8,
+    "learned_state_bytes": 216,
+    "literal_state_bytes": 3,
+    "nodes": 70,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7382715359162911,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

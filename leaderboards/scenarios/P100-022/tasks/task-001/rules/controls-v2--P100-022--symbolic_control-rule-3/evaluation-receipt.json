@@ -1,0 +1,149 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 182.89752354500314,
+    "primary": "mae",
+    "primary_error": 182.89752354500314,
+    "rmse": 237.64791938783927
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 480.7508739703988,
+  "by_group": [
+    {
+      "error": 234.89269563283045,
+      "group": "group-0576a6e1314aeacfa7a21a4c",
+      "rows": 95
+    },
+    {
+      "error": 260.90535494804703,
+      "group": "group-16e743c9289e5e7d82e76945",
+      "rows": 95
+    },
+    {
+      "error": 103.59637439555121,
+      "group": "group-1eaa554a04b362c2f28f8340",
+      "rows": 95
+    },
+    {
+      "error": 102.51016261121794,
+      "group": "group-27309180063bdea86c072240",
+      "rows": 95
+    },
+    {
+      "error": 93.81565492512829,
+      "group": "group-2e51a7c40adfca2eaa995a2e",
+      "rows": 95
+    },
+    {
+      "error": 97.50865373030639,
+      "group": "group-365ecb9b6e95dc08f708208c",
+      "rows": 95
+    },
+    {
+      "error": 163.29029996879413,
+      "group": "group-3ddfbb2f103885e018b8eb98",
+      "rows": 95
+    },
+    {
+      "error": 266.61907610024406,
+      "group": "group-41b07c8e06d8e68c64dfbb3c",
+      "rows": 95
+    },
+    {
+      "error": 258.66895835953875,
+      "group": "group-6417f7a8f8cab55fb5428f64",
+      "rows": 95
+    },
+    {
+      "error": 87.99785649838702,
+      "group": "group-78608521104ffdaa59acdf62",
+      "rows": 95
+    },
+    {
+      "error": 262.00030547983926,
+      "group": "group-78b7875b2a657d221dcb2fad",
+      "rows": 95
+    },
+    {
+      "error": 239.46682167628225,
+      "group": "group-7b1dab4794a88e0a921f0694",
+      "rows": 95
+    },
+    {
+      "error": 261.1737437422983,
+      "group": "group-82284f2777b212069fd277d3",
+      "rows": 95
+    },
+    {
+      "error": 134.4586246858683,
+      "group": "group-8d4b3a530ca6e2984541b54e",
+      "rows": 95
+    },
+    {
+      "error": 211.6030802320711,
+      "group": "group-9622a56f49cfe299b4cc3e9b",
+      "rows": 95
+    },
+    {
+      "error": 149.80547595508932,
+      "group": "group-9bf13164f0ec12297b1705d5",
+      "rows": 95
+    },
+    {
+      "error": 250.5779164462381,
+      "group": "group-d2ebdc89b60293d722bfa817",
+      "rows": 95
+    },
+    {
+      "error": 293.85300049192256,
+      "group": "group-ead28e6246afc5a0e60a8bf0",
+      "rows": 95
+    },
+    {
+      "error": 96.40296924828645,
+      "group": "group-f1c5b97ca98a1fe9c26688a5",
+      "rows": 95
+    },
+    {
+      "error": 88.80344577212205,
+      "group": "group-f444649d419902c1622e00da",
+      "rows": 95
+    }
+  ],
+  "coverage": {
+    "eligible": 1900,
+    "fraction": 1.0,
+    "predicted": 1900
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-022--symbolic_control-rule-3",
+  "rule_sha256": "6761a501efbb3c943a244f9341f07adb47bdbdea278a6c3817c0685959aecada",
+  "run_id": "controls-v2--P100-022--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "353.59520082729375 + 620.6130579098559 * tanh((voltage_V - 0.5260379884868421) / 0.2741732549285368) + 322.3367565980367 * bromine_rich ** 2",
+    "expression_bytes": 86,
+    "free_parameters": 3,
+    "learned_state_bytes": 76,
+    "nodes": 31,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01902917518895094,
+    "perturbation_labels_available": false,
+    "population_rows": 1900,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

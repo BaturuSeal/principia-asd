@@ -1,0 +1,13 @@
+{
+  "expression": "offset + p0 * drive * (1 - exp(-t / p1)) + p2 * high * drive * (1 - exp(-t / p3)) + p4 * t",
+  "parameters": {
+    "p0": 550.3173902129619,
+    "p1": 26073.16896766997,
+    "p2": -56850.4756650668,
+    "p3": 3611056.3030174617,
+    "p4": -0.00731287974028302
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

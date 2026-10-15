@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.1599239030411437,
+    "primary": "mae",
+    "primary_error": 1.1599239030411437,
+    "rmse": 1.5241599431481583
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 13.908091790069633,
+  "by_group": [
+    {
+      "error": 0.4942208732206229,
+      "group": "group-4e35dcda9a447a6811081934",
+      "rows": 120
+    },
+    {
+      "error": 1.8256269328616643,
+      "group": "group-b70cac56b3a53ee7c0a3a849",
+      "rows": 113
+    }
+  ],
+  "coverage": {
+    "eligible": 233,
+    "fraction": 1.0,
+    "predicted": 233
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-026--direct_kimi-rule-1",
+  "rule_sha256": "c4fec514b8cff8917e37b08b5183367d27c9531e481ddf0a43cc086be440a348",
+  "run_id": "full-comparison-v5--P100-026--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "anchor_selectivity_pct + 0.31104739521135827 * prefix_slope_pct_min * elapsed_min + 0.001955580715021789 * ag_wt_pct + 0.4958398318127941 * log(elapsed_min) + -0.8746214193832672",
+    "expression_bytes": 110,
+    "free_parameters": 4,
+    "learned_state_bytes": 108,
+    "literal_state_bytes": 0,
+    "nodes": 38,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.5518732415215284,
+    "perturbation_labels_available": false,
+    "population_rows": 233,
+    "ranking": false,
+    "samples": 233,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

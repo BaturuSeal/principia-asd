@@ -1,0 +1,33 @@
+{
+  "additional_inherited_fitted_coefficients": 3,
+  "affected_portfolio_or_pareto_ranking_recomputed": false,
+  "campaign_submission_sha256": "cd03cb3bbb456eb685dd96eb35bce051edec19ec5faaadec04cb722de81f93b9",
+  "checked_at": "2026-10-13T06:17:52.688982+00:00",
+  "critic_kernel": {
+    "expression": "minimum(1, maximum(0, 0.4565726363721293 - 0.11475869089379873 * (log(income_proxy) - log1p(household_size)) + 0.9576568824544455 * (shock / income_proxy)))",
+    "meaning": "critic patch",
+    "model": "Qwen/Qwen3.8-27B",
+    "round": 0
+  },
+  "earlier_fitted_program": {
+    "expression": "minimum(1,maximum(0,p0+p1*(log(income_proxy) - log1p(household_size))+p2*(shock / income_proxy)))",
+    "parameters": {
+      "p0": 0.4565726363721293,
+      "p1": -0.11475869089379873,
+      "p2": 0.9576568824544455
+    }
+  },
+  "earlier_trace_index": 5,
+  "existing_scores_changed": false,
+  "final_expression": "minimum(1,maximum(0,p0+p1*(minimum(1, maximum(0, 0.4565726363721293 - 0.11475869089379873 * (log(income_proxy) - log1p(household_size)) + 0.9576568824544455 * (shock / income_proxy))))))",
+  "final_parameter_map": {
+    "p0": -0.006667150377735264,
+    "p1": 1.0332032456784528
+  },
+  "interpretation": "Two final-stage refitted parameters plus three stored coefficients learned in an earlier fit; this is not a claim of five identifiable statistical degrees of freedom",
+  "public_rule_sha256": "afa937cddf99bf10d2bccb19686a04926f94f1343825629be6c65b349aae0b34",
+  "reported_free_parameters": 2,
+  "rule_id": "full-comparison-v5--P100-015--principia_engine-rule-3",
+  "scope": "One proven witness; complete campaign affected coverage not yet assessed",
+  "status": "confirmed_learned_state_accounting_gap"
+}

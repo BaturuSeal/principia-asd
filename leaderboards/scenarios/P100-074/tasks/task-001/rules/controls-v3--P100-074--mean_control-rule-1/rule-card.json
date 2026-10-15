@@ -1,0 +1,64 @@
+{
+  "dev_error": 306.5976329356409,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 242.75339446511626
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "calibration_F6": -0.8072086175688812,
+      "calibration_curvature": 0.8072086175688812,
+      "calibration_v6": -0.8072086175688814,
+      "concentration_uM": -0.8072086175688812,
+      "time_min": -0.533109647778698
+    },
+    "mean": -258.54461716279076,
+    "p90_abs": 758.2956055348837,
+    "std": 325.31178561380784
+  },
+  "rule_id": "controls-v3--P100-074--mean_control-rule-1",
+  "rule_sha256": "9e5a0cecab3aac14c2f9cdc717cce3f0a626061b0145cb6acf7b0a9728a45a8c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "242.75339446511626",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-074.compact.v2",
+  "train_error": 251.41194463558676,
+  "units": {
+    "inputs": {
+      "calibration_F6": "source fluorescence units",
+      "calibration_curvature": "source fluorescence units/min^2",
+      "calibration_v6": "source fluorescence units/min",
+      "concentration_uM": "uM",
+      "time_min": "min"
+    },
+    "output": "source fluorescence units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

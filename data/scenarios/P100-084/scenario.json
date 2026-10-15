@@ -1,0 +1,94 @@
+{
+  "description": "native AFM retraction force",
+  "domain": "Surface mechanics",
+  "independent_unit": "Complete approach/retraction curve is held together; one hashselectedcurveper surface type confirms. Curves are locations on three samples, not independentmanufacturingbatches.",
+  "input_units": {
+    "amp": "nN; initialretractionlevel minusbase",
+    "base": "nN; mean first10approachpoints",
+    "progress": "dimensionless fraction ofretractionramp",
+    "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+  },
+  "limitations": [
+    "Predict late retraction after the entire approach and firstfive retraction samples are available. Targets begin at retractionindex16. Measured retraction deflection is excluded because it algebraically determines force.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "images",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "nN",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 224,
+    "test": 336,
+    "train": 896
+  },
+  "scenario_id": "P100-084",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 258665,
+    "limit_bytes": 10000000,
+    "public_bytes": 54674
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/20281797",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/20281797",
+        "source": "scenarios/84_biomaterials_cellulose_afm/raw/Microstructured cellulose acetate biointerfaces regulate mesenchymal stem cell response and promote osteogenic commitment_Dataset.zip",
+        "source_sha256": "0102b2289400d96f1dc2e53c768ee731f1f13ed7ce9c63493a2fabe95fcdfba5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/20281797",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/20281797",
+        "source": "scenarios/84_biomaterials_cellulose_afm/raw/Microstructured cellulose acetate biointerfaces regulate mesenchymal stem cell response and promote osteogenic commitment_README.docx",
+        "source_sha256": "c5d6383b376c00c7f94aae9225e3cd5d65545225407d7234977073f4b7969704"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/20281797",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/84_biomaterials_cellulose_afm/context/source_record.json",
+        "source_sha256": "ef11fb5666ecbaab705ab789cf8c3ecc7442a00656a32c391f85bf369454a26f"
+      }
+    ],
+    "historical_case": "P100-084",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/20281797",
+    "version": "20281797"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "d6f35260260770ff9e7323bf115496cde06524355778ca6a8b4a66b14298b7af",
+        "groups": 2,
+        "rows": 224,
+        "sample_ids_sha256": "466dae5a4b4f0ec99990fe40e4464e0b731c8c9cfa40996542ac40eea1b38d36"
+      },
+      "test": {
+        "group_ids_sha256": "b35b1802a6cbba9cc910e0da5d4d4e4e111ec46d3a75228395c649430b630e93",
+        "groups": 3,
+        "rows": 336,
+        "sample_ids_sha256": "9e9dd36387de55f842ffaab62edad6290cbaab42f9f322e70cad3b7242119e61"
+      },
+      "train": {
+        "group_ids_sha256": "060bf782ff81bdb9c16728aba6931ea98aee528e320f2181a9c9f8c4fbaa493f",
+        "groups": 8,
+        "rows": 896,
+        "sample_ids_sha256": "f4fe53cc21b9d4caa9853438aa4e07124c0816058d15b879f5ccebe4c691c430"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Experimental dataset on Microstructured cellulose acetate biointerfaces regulate mesenchymal stem cell response and promote osteogenic commitment",
+  "version": "1.0.0rc2"
+}

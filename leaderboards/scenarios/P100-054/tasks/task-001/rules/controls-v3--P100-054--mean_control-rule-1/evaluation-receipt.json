@@ -1,0 +1,161 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.03538194708276798,
+    "primary": "mae",
+    "primary_error": 0.03538194708276798,
+    "rmse": 0.03904450079248432
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.03538194708276798,
+  "by_group": [
+    {
+      "error": 0.02578761194029852,
+      "group": "group-09d00e4a4a217412226ae6c4",
+      "rows": 1
+    },
+    {
+      "error": 0.042517611940298516,
+      "group": "group-1ab1d64f61932c971cc5ba3f",
+      "rows": 1
+    },
+    {
+      "error": 0.058487611940298515,
+      "group": "group-21868b5cecc3a28bc4dbcc2a",
+      "rows": 1
+    },
+    {
+      "error": 0.011887611940298512,
+      "group": "group-411e41195bb1cc1c78adc7a0",
+      "rows": 1
+    },
+    {
+      "error": 0.031352388059701475,
+      "group": "group-41350b2afe2201898a75ad40",
+      "rows": 1
+    },
+    {
+      "error": 0.03617761194029852,
+      "group": "group-4d26a33cbd0c41288ddc10b1",
+      "rows": 1
+    },
+    {
+      "error": 0.044472388059701495,
+      "group": "group-503c02c2ba37acdd16d3de3b",
+      "rows": 1
+    },
+    {
+      "error": 0.05818761194029851,
+      "group": "group-5400bf6688dd0d7ee3a56f8a",
+      "rows": 1
+    },
+    {
+      "error": 0.0636276119402985,
+      "group": "group-5bbab497384562689490aefa",
+      "rows": 1
+    },
+    {
+      "error": 0.020899999999999995,
+      "group": "group-64c5ad5794f52cef6c3b9067",
+      "rows": 2
+    },
+    {
+      "error": 0.05407238805970149,
+      "group": "group-66e500c32fb9b9d620d40925",
+      "rows": 1
+    },
+    {
+      "error": 0.03929238805970148,
+      "group": "group-6d4b691ed0431d803f195d47",
+      "rows": 1
+    },
+    {
+      "error": 0.03554761194029851,
+      "group": "group-7d55561ca6aa71d4ea76f742",
+      "rows": 1
+    },
+    {
+      "error": 0.02438761194029851,
+      "group": "group-a0553cc62ab0e68a19bfb4f2",
+      "rows": 1
+    },
+    {
+      "error": 0.04703761194029851,
+      "group": "group-a1b040f2657db72fafa2140d",
+      "rows": 1
+    },
+    {
+      "error": 0.030402388059701496,
+      "group": "group-a2894abfd90dd87bb764842b",
+      "rows": 1
+    },
+    {
+      "error": 0.017507611940298512,
+      "group": "group-aacfb7e48b74f1d3c2fb52ce",
+      "rows": 1
+    },
+    {
+      "error": 0.05605761194029851,
+      "group": "group-b9e58665056484ca8a6fdbe6",
+      "rows": 1
+    },
+    {
+      "error": 0.0065923880597014844,
+      "group": "group-dbb96af41941a49895b3a068",
+      "rows": 1
+    },
+    {
+      "error": 0.016212388059701488,
+      "group": "group-e7cecdd416615729cbc38d8e",
+      "rows": 1
+    },
+    {
+      "error": 0.017892388059701475,
+      "group": "group-e8d1c6f3a27e683111a084be",
+      "rows": 1
+    },
+    {
+      "error": 0.040002388059701494,
+      "group": "group-f7a9a002b15403438eb2d4f4",
+      "rows": 1
+    }
+  ],
+  "coverage": {
+    "eligible": 23,
+    "fraction": 1.0,
+    "predicted": 23
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "mean_control",
+  "rule_id": "controls-v3--P100-054--mean_control-rule-1",
+  "rule_sha256": "9d0565ff82d921421b6925f55421faddac03bffe0b27a36bfb141d85038366a8",
+  "run_id": "controls-v3--P100-054--mean_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.11808761194029851",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 23,
+    "ranking": false,
+    "samples": 23,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

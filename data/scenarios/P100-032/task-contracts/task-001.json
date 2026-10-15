@@ -1,0 +1,87 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "de0": "cmH2O",
+    "de20": "cmH2O",
+    "di0": "cmH2O",
+    "di20": "cmH2O",
+    "p0": "cmH2O",
+    "p05": "cmH2O",
+    "p10": "cmH2O",
+    "p20": "cmH2O",
+    "p30": "cmH2O",
+    "p40": "cmH2O",
+    "p50": "cmH2O",
+    "trial_BH": "binary",
+    "trial_FEM": "binary"
+  },
+  "inputs": [
+    "p0",
+    "p05",
+    "p10",
+    "p20",
+    "p30",
+    "p40",
+    "p50",
+    "di0",
+    "de0",
+    "di20",
+    "de20",
+    "trial_BH",
+    "trial_FEM"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "At each fixed1s origin predict native gauge pressure0.20s later using only present/past pressure and differential-pressure signals.",
+  "output": "target",
+  "output_description": "gauge_pressure_200ms_future",
+  "output_units": "cmH2O",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-032",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "6a909312b88ae85abdfbc6ab7b82617caa8c680504496a5cb4249d9cbc697ab1",
+  "source_task": "P100-032.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "participant",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-032.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "gauge_pressure_200ms_future",
+  "version": "1.0.0rc2"
+}

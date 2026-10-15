@@ -1,0 +1,69 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "lag1": "prior calendar month unique ODINO count",
+    "lag3": "mean prior3monthly counts",
+    "lag6": "mean prior6monthly counts",
+    "month": "target calendar month1–12"
+  },
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Only prior-month LDATE received counts predict next month. Retrospective snapshot may revise product labels and records; historical DATEA/report publication lag means calendar causality is not verified as-issued availability. No incident-date future information used.",
+  "output": "target",
+  "output_description": "Next-month unique received vehicle complaints per known make/model",
+  "output_units": "complaints/month",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-019",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "63a35b6928cd12217709bb4dc65f621efb8b33d5364a59bf689d84a0fd151095",
+  "source_task": "P100-019.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Whole target months; same known vehicle cohorts repeat, lag windows overlap. Three held months are not independent fleets or defect experiments.",
+    "policy": "latest complete development time blocks; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-019.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Next-month unique received vehicle complaints per known make/model",
+  "version": "1.0.0rc2"
+}

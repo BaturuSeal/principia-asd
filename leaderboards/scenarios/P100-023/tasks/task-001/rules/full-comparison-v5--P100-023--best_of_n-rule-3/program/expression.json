@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1 * (viscosity * speed / load) + p2 * (H * load / area) + p3 * (hydration / 100) + p4 * (viscosity * speed / load) * (H * load / area) + p5 * (viscosity * speed / load) * (hydration / 100) + p6 * (H * load / area) * (hydration / 100) + p7 * (viscosity * speed / load) * (H * load / area) * (hydration / 100)",
+  "parameters": {
+    "p0": 0.11209874092465881,
+    "p1": -0.17314507306633523,
+    "p2": 7.206579645339988,
+    "p3": 0.29823727977734943,
+    "p4": -8.384025761840096,
+    "p5": 0.5435970921740165,
+    "p6": -12.713323855116675,
+    "p7": 18.07649998847494
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

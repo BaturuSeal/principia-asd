@@ -1,0 +1,64 @@
+{
+  "dev_error": 2.2531454645462654,
+  "execution_status": "complete",
+  "expression": "p0+p1*(elapsed_min)+p2*(anchor_selectivity_pct)+p3*(prefix_slope_pct_min)+p4*(ag_wt_pct)",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.0213796302761717,
+    "p1": 0.006604471673533681,
+    "p2": 0.9755783190198244,
+    "p3": 202.428999874098,
+    "p4": 0.018546032468072654
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": -0.11289739441559604,
+      "elapsed_min": -0.8152128605488004,
+      "prefix_slope_pct_min": 0.11289739441559606
+    },
+    "mean": 1.0997641407613754,
+    "p90_abs": 6.151798015687292,
+    "std": 3.3402649572338947
+  },
+  "rule_id": "controls-v3--P100-026--linear_control-rule-1",
+  "rule_sha256": "f12f1ebdf3988261c09aba7747c44607f4e1cff64eb60b670ea6fd8290f5bc0b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-1.0213796302761717 + 0.006604471673533681 * elapsed_min + 0.9755783190198244 * anchor_selectivity_pct + 202.428999874098 * prefix_slope_pct_min + 0.018546032468072654 * ag_wt_pct",
+    "expression_bytes": 88,
+    "free_parameters": 5,
+    "learned_state_bytes": 133,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 1.328091715739256,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

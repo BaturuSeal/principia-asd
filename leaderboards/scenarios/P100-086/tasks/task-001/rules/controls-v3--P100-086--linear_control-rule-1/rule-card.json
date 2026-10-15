@@ -1,0 +1,61 @@
+{
+  "dev_error": 39.504805436095026,
+  "execution_status": "complete",
+  "expression": "p0+p1*(time_h)+p2*(current)+p3*(slope6)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 156.49981356927762,
+    "p1": 1.0222221277683265,
+    "p2": 0.979747819795214,
+    "p3": 4.28406190821879
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.023072790019011837,
+      "slope6": 0.0670382292394509,
+      "time_h": -0.023585669863944468
+    },
+    "mean": -0.2435108225730761,
+    "p90_abs": 82.64834436021602,
+    "std": 65.1575215625272
+  },
+  "rule_id": "controls-v3--P100-086--linear_control-rule-1",
+  "rule_sha256": "665c702293d9c87bdb687988413d14a28a2267be03c61f6d9bfea4e46b72115a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "156.49981356927762 + 1.0222221277683265 * time_h + 0.979747819795214 * current + 4.28406190821879 * slope6",
+    "expression_bytes": 39,
+    "free_parameters": 4,
+    "learned_state_bytes": 101,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 39.184464294326084,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 9.941270456565585,
+    "primary": "mae",
+    "primary_error": 9.941270456565585,
+    "rmse": 12.12130284904577
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 10.096878669586468,
+  "by_group": [
+    {
+      "error": 11.295899322256933,
+      "group": "group-04dbf2956bf5e22ef266acbb",
+      "rows": 108
+    },
+    {
+      "error": 11.372325220970401,
+      "group": "group-300537a1bd171a7b60ca5515",
+      "rows": 108
+    },
+    {
+      "error": 4.071980839761716,
+      "group": "group-4607ea431ee2fb5521e7169c",
+      "rows": 108
+    },
+    {
+      "error": 4.151661409243133,
+      "group": "group-52223673c1f734ffbc828161",
+      "rows": 108
+    },
+    {
+      "error": 15.872697319114486,
+      "group": "group-6037163e47b0fd4ee840500c",
+      "rows": 4
+    },
+    {
+      "error": 8.649682763380904,
+      "group": "group-67ae81ee9f997517e0acad56",
+      "rows": 108
+    },
+    {
+      "error": 8.616956773247976,
+      "group": "group-8aacba2fc66c95abd49225fd",
+      "rows": 96
+    },
+    {
+      "error": 12.669263099483693,
+      "group": "group-998fb8913ba5162ed2b6914e",
+      "rows": 4
+    },
+    {
+      "error": 9.029416677475924,
+      "group": "group-c5c23b1a6428ea75d2c125bb",
+      "rows": 108
+    },
+    {
+      "error": 13.68282114072069,
+      "group": "group-d704dfdb1cb6d836e5257ed3",
+      "rows": 4
+    }
+  ],
+  "coverage": {
+    "eligible": 756,
+    "fraction": 1.0,
+    "predicted": 756
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-1",
+  "rule_sha256": "d8d585e5e42abe4119d3015543fd6a8c6f0b4d34e953b3224557145c79604fdc",
+  "run_id": "full-comparison-v5--P100-033--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "81.15169907231197 + 0.07863203242619259 * fft_bpm + 0.02751380664140997 * acf_bpm + -0.17421286544824832 * half_bpm + 0.4804218695927963 * half_strength + -2.8022945661056458 * spectral_quality + -0.022205041029370765 * agreement + 2.2866009315089504 * motion",
+    "expression_bytes": 96,
+    "free_parameters": 8,
+    "learned_state_bytes": 215,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.011805188255537676,
+    "perturbation_labels_available": false,
+    "population_rows": 756,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

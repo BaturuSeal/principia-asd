@@ -1,0 +1,70 @@
+{
+  "dev_error": 1.6751369799315754,
+  "execution_status": "complete",
+  "expression": "base + amp * (p0 + p1 * progress + p2 * progress**2 + p3 * progress**3 + p4 * x + p5 * x**2 + p6 * x * progress + p7 * x * progress**2)",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.04318383528482004,
+    "p1": -1.7473908235538214,
+    "p2": 4.4530484364381016,
+    "p3": -2.830838198363621,
+    "p4": -0.36055223260601926,
+    "p5": -0.0003035231867605472,
+    "p6": 0.9711585763877618,
+    "p7": -0.6294723534965663
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": 0.008848398758167198,
+      "base": 0.008848398758167205,
+      "progress": 0.007836543002406342,
+      "x": 0.0035527715638846704
+    },
+    "mean": -0.27993094537427365,
+    "p90_abs": 4.29633029957323,
+    "std": 3.472816649127574
+  },
+  "rule_id": "full-comparison-v5--P100-084--feedback_refinement-rule-1",
+  "rule_sha256": "6294dadf9c84ec89ee973c2924180952b99fd91f8399db7a9879fa58602cd72d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "base + amp * (0.04318383528482004 + -1.7473908235538214 * progress + 4.4530484364381016 * progress ** 2 + -2.830838198363621 * progress ** 3 + -0.36055223260601926 * x + -0.0003035231867605472 * x ** 2 + 0.9711585763877618 * x * progress + -0.6294723534965663 * x * progress ** 2)",
+    "expression_bytes": 135,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 4,
+    "nodes": 87,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 1.3539783815451163,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

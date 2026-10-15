@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.19102757016876237,
+  "execution_status": "complete",
+  "expression": "p0+p1*(age_min/30)+p2*ratio+p3*water+p4*(log1p(time_s)/log1p(600))",
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.5119892510304936,
+    "p1": 0.22471000000006655,
+    "p2": -0.05113673217931471,
+    "p3": -1.0820206315508942,
+    "p4": 0.2128377170891968
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_min": -0.1775660212374931,
+      "ratio": 0.7955659402323938,
+      "time_s": -0.2548380640104461,
+      "water": 0.7955659402323939
+    },
+    "mean": -0.05917850926370707,
+    "p90_abs": 0.3882456524532602,
+    "std": 0.22852532849754442
+  },
+  "rule_id": "full-comparison-v5--P100-055--principia_engine-rule-3",
+  "rule_sha256": "6e08f59e43a78c193c6e39b4797ba928e74ffad3fa0a24e029c72c9e51848bc2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5119892510304936 + 0.22471000000006655 * (age_min / 30) + -0.05113673217931471 * ratio + -1.0820206315508942 * water + 0.2128377170891968 * (log1p(time_s) / log1p(600))",
+    "expression_bytes": 66,
+    "free_parameters": 5,
+    "learned_state_bytes": 134,
+    "literal_state_bytes": 5,
+    "nodes": 47,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-055.compact.v2",
+  "train_error": 0.05110734277068132,
+  "units": {
+    "inputs": {
+      "age_min": "min since mixing; 0 or 30",
+      "ratio": "mix-design ratio encoded in author mixture label",
+      "time_s": "native penetration clock index; unit unspecified",
+      "water": "water ratio encoded in author mixture label"
+    },
+    "output": "N",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

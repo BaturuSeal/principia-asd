@@ -1,0 +1,10 @@
+{
+  "expression": "cal_zero_uA + (cal_plus20_uA - cal_zero_uA) * (0.5 + 0.5 * tanh((gate_V - p0) / p1)) + (cal_minus20_uA - cal_zero_uA) * (0.5 - 0.5 * tanh((gate_V + p0) / p1))",
+  "parameters": {
+    "p0": 13.92900677616739,
+    "p1": 6.029666954202855
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

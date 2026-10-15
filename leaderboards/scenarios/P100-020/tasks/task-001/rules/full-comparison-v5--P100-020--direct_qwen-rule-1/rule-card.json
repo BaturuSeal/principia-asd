@@ -1,0 +1,82 @@
+{
+  "dev_error": 0.03344552460140513,
+  "execution_status": "complete",
+  "expression": "p0*dg + p1*hx + p2*hy + p3*ox + p4*oy + p5*gx + p6*gy + p7*clat",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.38519675649811824,
+    "p1": 1.0282559815390266,
+    "p2": 0.6576250540128957,
+    "p3": -0.20572103625023316,
+    "p4": -0.09771416058387723,
+    "p5": 0.007439599934482883,
+    "p6": 0.003553422294986387,
+    "p7": -9.887387495492846e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": -0.020492933268021003,
+      "dg": -0.027503811612621495,
+      "gx": 0.11832826443731383,
+      "gy": 0.041875212595299534,
+      "hx": -0.03156769236838207,
+      "hy": -0.034102093006907926,
+      "ox": -0.02499008964874166,
+      "oy": -0.030052973718323286
+    },
+    "mean": -0.0006993327022525047,
+    "p90_abs": 0.07213299501111455,
+    "std": 0.049745161809841405
+  },
+  "rule_id": "full-comparison-v5--P100-020--direct_qwen-rule-1",
+  "rule_sha256": "8a6e3654e6c0cdbac8c955fe98315f49adc3d372037bd4ca1c27cf97c88998cc",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.38519675649811824 * dg + 1.0282559815390266 * hx + 0.6576250540128957 * hy + -0.20572103625023316 * ox + -0.09771416058387723 * oy + 0.007439599934482883 * gx + 0.003553422294986387 * gy + -9.887387495492846e-05 * clat",
+    "expression_bytes": 63,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.03595241688852886,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

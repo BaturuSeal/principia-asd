@@ -1,0 +1,60 @@
+{
+  "dev_error": 0.010455583726745241,
+  "execution_status": "complete",
+  "expression": "boundary_cof * (1 - 0.5 * log1p(speed_mm_s) / log1p(10)) + highspeed_cof * (log1p(speed_mm_s) / log1p(10))",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.7526323633788755,
+      "highspeed_cof": 0.7526323633788756,
+      "speed_mm_s": 0.5536148832427041
+    },
+    "mean": 0.0007498050629899715,
+    "p90_abs": 0.018830962457527686,
+    "std": 0.012209589899373928
+  },
+  "rule_id": "full-comparison-v5--P100-030--direct_deepseek-rule-1",
+  "rule_sha256": "aa636fc275beccf2d5185e5eeee262e6901b3af9b7e6995a50a4fb3baf430684",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "boundary_cof * (1 - 0.5 * log1p(speed_mm_s) / log1p(10)) + highspeed_cof * (log1p(speed_mm_s) / log1p(10))",
+    "expression_bytes": 106,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 8,
+    "nodes": 39,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.020300327100501624,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.7292942176870747,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current)+p2*(soft)+p3*(kd)+p4*(cal_mean)+p5*(cal_last)",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.0027472527472537454,
+    "p1": 0.017032967032967052,
+    "p2": -0.41071428571428614,
+    "p3": 0.7857142857142848,
+    "p4": 2.839285714285698,
+    "p5": 0.4732142857142876
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.061325274416577376,
+      "soft": -0.6575292510562936
+    },
+    "mean": 0.14285714285714246,
+    "p90_abs": 1.7048901098901106,
+    "std": 0.9534978569799233
+  },
+  "rule_id": "full-comparison-v5--P100-076--linear_control-rule-1",
+  "rule_sha256": "6480902075a1af93f8805226272d403ceadc530284f9082443b7d34e007de207",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.0027472527472537454 + 0.017032967032967052 * current + -0.41071428571428614 * soft + 0.7857142857142848 * kd + 2.839285714285698 * cal_mean + 0.4732142857142876 * cal_last",
+    "expression_bytes": 61,
+    "free_parameters": 6,
+    "learned_state_bytes": 163,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7204483441728337,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

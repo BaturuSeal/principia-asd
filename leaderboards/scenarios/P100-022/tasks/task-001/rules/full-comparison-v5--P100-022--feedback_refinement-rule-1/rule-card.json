@@ -1,0 +1,64 @@
+{
+  "dev_error": 172.9302346590702,
+  "execution_status": "complete",
+  "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*exp(p7*voltage_V)",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1960.6652388547582,
+    "p1": -2117.500782482456,
+    "p2": 267.1803402967888,
+    "p3": 104.89222409169221,
+    "p4": 7624.844296169606,
+    "p5": -4244.11010273096,
+    "p6": 2055.621275353803,
+    "p7": -0.18608638083321213
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": 0.016605328305337563,
+      "voltage_V": -0.08070845128544417
+    },
+    "mean": -22.956400940446365,
+    "p90_abs": 380.5078817090908,
+    "std": 216.8895431482384
+  },
+  "rule_id": "full-comparison-v5--P100-022--feedback_refinement-rule-1",
+  "rule_sha256": "f722b941d71ee6026d9cc88e774a161d47ac02bf546dfc7b71771e9d610f4323",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-1960.6652388547582 + -2117.500782482456 * voltage_V + 267.1803402967888 * bromine_rich + 104.89222409169221 * voltage_V * bromine_rich + 7624.844296169606 * voltage_V ** 2 + -4244.11010273096 * voltage_V ** 3 + 2055.621275353803 * exp(-0.18608638083321213 * voltage_V)",
+    "expression_bytes": 122,
+    "free_parameters": 8,
+    "learned_state_bytes": 207,
+    "literal_state_bytes": 2,
+    "nodes": 68,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 181.59908647748082,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

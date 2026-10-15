@@ -1,0 +1,69 @@
+{
+  "dev_error": 1.5139871641736882,
+  "execution_status": "complete",
+  "expression": "offset + p0 * (1 - exp(-t / p1)) + p2 * drive * (1 - exp(-t / p3)) + p4 * high * (1 - exp(-t / p5)) + p6 * t",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -6.456591648561394,
+    "p1": 188.37417760680424,
+    "p2": 58.27455220234948,
+    "p3": 3458.528046041861,
+    "p4": -236.9493218768781,
+    "p5": 4292.129249262086,
+    "p6": -0.0006702717385549008
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": 0.9797194381145437,
+      "high": 0.9797194381145433,
+      "offset": 0.9797194381145434,
+      "t": 0.43190203233015884
+    },
+    "mean": 0.8705178736341926,
+    "p90_abs": 3.1619650636762233,
+    "std": 1.3865708348363934
+  },
+  "rule_id": "full-comparison-v5--P100-062--best_of_n-rule-1",
+  "rule_sha256": "289e5e0e1bd47288346e32d7fd20f8d4e81273f10ddfb0d6e0711815ed9d8129",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + -6.456591648561394 * (1 - exp(-t / 188.37417760680424)) + 58.27455220234948 * drive * (1 - exp(-t / 3458.528046041861)) + -236.9493218768781 * high * (1 - exp(-t / 4292.129249262086)) + -0.0006702717385549008 * t",
+    "expression_bytes": 108,
+    "free_parameters": 7,
+    "learned_state_bytes": 183,
+    "literal_state_bytes": 3,
+    "nodes": 79,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 28
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 1.0770871717142885,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

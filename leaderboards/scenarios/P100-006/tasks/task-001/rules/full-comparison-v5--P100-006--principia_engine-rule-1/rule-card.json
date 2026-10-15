@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.11746682994981844,
+  "execution_status": "complete",
+  "expression": "p0+p1*rabi_MHz**2/(rabi_MHz**2 + detuning_MHz**2)+p2*log1p(abs(detuning_MHz - 0.5192834103625016))+p3*abs(detuning_MHz)+p4*sqrt(rabi_MHz**2 + detuning_MHz**2)+p5*log1p(rabi_MHz)+p6*tanh((rabi_MHz - 2.859368176327778)/1.6170877212865005)+p7*rabi_MHz",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.5523927671994687,
+    "p1": -0.05838486585070718,
+    "p2": -0.09728263206323687,
+    "p3": 0.2486991463943233,
+    "p4": -0.24759768614594227,
+    "p5": 0.15868598884352547,
+    "p6": -0.004244303553271968,
+    "p7": 0.025832089914207306
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.2319202969665268,
+      "rabi_MHz": 0.00811134875585259
+    },
+    "mean": 0.00039854475967037985,
+    "p90_abs": 0.2943924886956489,
+    "std": 0.15938282326687842
+  },
+  "rule_id": "full-comparison-v5--P100-006--principia_engine-rule-1",
+  "rule_sha256": "5ac259bff8759f8165df436856ec4fba8934c0bcf5174711bc49c7ff841c355d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5523927671994687 + -0.05838486585070718 * rabi_MHz ** 2 / (rabi_MHz ** 2 + detuning_MHz ** 2) + -0.09728263206323687 * log1p(abs(detuning_MHz - 0.5192834103625016)) + 0.2486991463943233 * abs(detuning_MHz) + -0.24759768614594227 * sqrt(rabi_MHz ** 2 + detuning_MHz ** 2) + 0.15868598884352547 * log1p(rabi_MHz) + -0.004244303553271968 * tanh((rabi_MHz - 2.859368176327778) / 1.6170877212865005) + 0.025832089914207306 * rabi_MHz",
+    "expression_bytes": 248,
+    "free_parameters": 8,
+    "learned_state_bytes": 220,
+    "literal_state_bytes": 58,
+    "nodes": 113,
+    "numeric_literal_count": 8,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 35
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.06179558727988766,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

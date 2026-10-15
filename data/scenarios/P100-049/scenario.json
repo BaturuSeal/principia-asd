@@ -1,0 +1,104 @@
+{
+  "description": "voltage during current-free relaxation",
+  "domain": "battery diagnostics and laboratory data integration",
+  "independent_unit": "Complete rest block linked to preceding current pulse; all blocks belong to one half-cell, so block summaries are not independent-cell confidence.",
+  "input_units": {
+    "current": "A",
+    "pulse_s": "s",
+    "t": "s",
+    "t120": "s",
+    "t60": "s",
+    "u10": "V",
+    "u120": "V",
+    "u60": "V"
+  },
+  "limitations": [
+    "Issue predictions at120s of each current-free block; only actual samples at or before10/60/120s and completed preceding current pulse are predictors. Targets are nearest native samples to300/600/1200/1800s, tolerance15s.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "V",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 304,
+    "test": 384,
+    "train": 1216
+  },
+  "scenario_id": "P100-049",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 491741,
+    "limit_bytes": 10000000,
+    "public_bytes": 93896
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/17295469",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/49_battery_dlr_native_exports/context/zenodo_record.json",
+        "source_sha256": "c13ee009c904937d3ba678f9ebba4d3b1fcd08a82c3bced3e787548d3725ea98"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17295469",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/17295469",
+        "source": "scenarios/49_battery_dlr_native_exports/raw/DLR__LiGrHydra0b__20221114__GITT__25degC__Basytec.txt",
+        "source_sha256": "9e9c27472a4b28e1ec78ca16acde4a8d8734b730035ed8f64b3c98d912c10017"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17295469",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/17295469",
+        "source": "scenarios/49_battery_dlr_native_exports/raw/DLR__LiGrHydra0b__20230131__POCV__25degC__Basytec.txt",
+        "source_sha256": "f4d41fc0daa3f80f5c7cd46d31b4fe0c69074aa5f2ef0f07d2d247a7ce4526b9"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17295469",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/17295469",
+        "source": "scenarios/49_battery_dlr_native_exports/raw/metadata.json",
+        "source_sha256": "ebaa6644d4a79599776f56ea21e0f47cb56cb7f96660877e1da7e6bd26513228"
+      }
+    ],
+    "historical_case": "P100-049",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/17295469",
+    "version": "0.5.0"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "ed2ec0e76a7cbc02fb64becc27958a24e2008b0bf9691bc3f0e012aa02264c3b",
+        "groups": 76,
+        "rows": 304,
+        "sample_ids_sha256": "51ebb62800e574c2a19e2b15db418e738149ac099f1711385f19bcd3f98330a8"
+      },
+      "test": {
+        "group_ids_sha256": "41521aa90210d01ae10ee9225bd00b39438f603cd20d44f22967a32066a27dba",
+        "groups": 96,
+        "rows": 384,
+        "sample_ids_sha256": "212f1d517b1f10b9e76c743c2cd223e58860204e0ed6e1c52cbdf98f7f75c34b"
+      },
+      "train": {
+        "group_ids_sha256": "0ca00ddfd1998401a7c5d13498c1eeab2f7e184bed67eca12a397fc27c3756eb",
+        "groups": 304,
+        "rows": 1216,
+        "sample_ids_sha256": "a4b9ca98b3115033dca28826467e0e2d47512ba7e2f81259275193113eca059e"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "DLR lithium-graphite cell GITT and quasi-open-circuit measurements",
+  "version": "1.0.0rc2"
+}

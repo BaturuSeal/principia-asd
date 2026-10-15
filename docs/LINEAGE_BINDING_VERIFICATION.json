@@ -1,0 +1,145 @@
+{
+  "active_campaign_implementation_changed": false,
+  "api_calls": 0,
+  "binding_module_sha256": "93974039519e36ab565e67fdd899875a82bdffd6d2ee7e0c4f9a9ed0c7fe45c8",
+  "checked_at": "2026-10-13T07:28:43.237136+00:00",
+  "compiled_program": {
+    "execution_values": {
+      "bound0": -0.11475869089379873,
+      "bound1": 0.9576568824544455,
+      "bound2": 1.0,
+      "bound3": 0.4565726363721293,
+      "bound4": 0.0,
+      "p0": -0.006667150377735264,
+      "p1": 1.0332032456784528
+    },
+    "expression": "minimum(bound2, maximum(bound4, p0 + p1 * minimum(bound2, maximum(bound4, bound3 + bound0 * (log(income_proxy) - log1p(household_size)) + bound1 * (shock / income_proxy)))))",
+    "policy": "explicit-scalar-lineage-v1-dev",
+    "sha256": "bfcf6cc4e2a2e7b3c7261597e42f5b0a23c8443d9843e72ab239fd75de54ba78",
+    "simplicity": {
+      "binding_receipt_bytes": 1156,
+      "degrees_of_freedom": "not_assessed",
+      "expanded_expression": "minimum(1.0, maximum(0.0, -0.006667150377735264 + 1.0332032456784528 * minimum(1.0, maximum(0.0, 0.4565726363721293 + -0.11475869089379873 * (log(income_proxy) - log1p(household_size)) + 0.9576568824544455 * (shock / income_proxy)))))",
+      "expression_bytes": 173,
+      "final_stage_parameters": 2,
+      "fixed_scientific_scalars": 2,
+      "free_parameters": 2,
+      "inherited_fitted_scalars": 3,
+      "learned_scalar_count": 5,
+      "learned_state_bytes": 40,
+      "learned_state_encoding": "float64 values, unique state IDs; excludes provenance metadata",
+      "literal_state_bytes": 0,
+      "nodes": 61,
+      "numeric_literal_count": 0,
+      "policy": "explicit-scalar-lineage-v1-dev",
+      "preprocessing": "Only operations expanded here; upstream measurement preprocessing remains separate",
+      "ranking_authorized": false,
+      "train_statistic_scalars": 0,
+      "weighted_operator_count": 18
+    },
+    "specification": {
+      "bindings": {
+        "a": "863e540257971fcffe2c9cce18ade9a120e87d8b46b7564017e786e0cb9090e4",
+        "b": "3655d67fd8e26d283cbbf8158b1eb30340787f42c66da04e1229e1a927df6644",
+        "c": "5b4d9ca34a5847a22a08665a3777e4dee9ba6ad5353bdcd721e35133f18faaed",
+        "one": "5f8440db1e119cd96b8dc20b7501d469579863866530f2f48e04b5b299d50198",
+        "zero": "ff123aed8be709a0ea0ef114fe1f682c8b6bdb988b9a1a278200ac5c4b5b20fa"
+      },
+      "expression": "minimum(one,maximum(zero,p0+p1*risk))",
+      "inputs": [
+        "income_proxy",
+        "household_size",
+        "shock",
+        "age"
+      ],
+      "kernels": {
+        "risk": "minimum(one,maximum(zero,a+b*(log(income_proxy)-log1p(household_size))+c*(shock/income_proxy)))"
+      },
+      "parameters": {
+        "p0": -0.006667150377735264,
+        "p1": 1.0332032456784528
+      }
+    },
+    "states": {
+      "3655d67fd8e26d283cbbf8158b1eb30340787f42c66da04e1229e1a927df6644": {
+        "artifact_sha256": "4c7dae50f868e8418527f8c0506f18d12f5262be2af7b0b7c34956fa577866f4",
+        "kind": "train_fitted",
+        "value": -0.11475869089379873,
+        "value_path": [
+          "parameters",
+          "p1"
+        ]
+      },
+      "5b4d9ca34a5847a22a08665a3777e4dee9ba6ad5353bdcd721e35133f18faaed": {
+        "artifact_sha256": "4c7dae50f868e8418527f8c0506f18d12f5262be2af7b0b7c34956fa577866f4",
+        "kind": "train_fitted",
+        "value": 0.9576568824544455,
+        "value_path": [
+          "parameters",
+          "p2"
+        ]
+      },
+      "5f8440db1e119cd96b8dc20b7501d469579863866530f2f48e04b5b299d50198": {
+        "artifact_sha256": "4e847fa1f711c0447f411597336b8dad24ba993592c0dc14426d4e3eed4ddf34",
+        "kind": "fixed_scientific",
+        "value": 1.0,
+        "value_path": [
+          "values",
+          "one"
+        ]
+      },
+      "863e540257971fcffe2c9cce18ade9a120e87d8b46b7564017e786e0cb9090e4": {
+        "artifact_sha256": "4c7dae50f868e8418527f8c0506f18d12f5262be2af7b0b7c34956fa577866f4",
+        "kind": "train_fitted",
+        "value": 0.4565726363721293,
+        "value_path": [
+          "parameters",
+          "p0"
+        ]
+      },
+      "ff123aed8be709a0ea0ef114fe1f682c8b6bdb988b9a1a278200ac5c4b5b20fa": {
+        "artifact_sha256": "4e847fa1f711c0447f411597336b8dad24ba993592c0dc14426d4e3eed4ddf34",
+        "kind": "fixed_scientific",
+        "value": 0.0,
+        "value_path": [
+          "values",
+          "zero"
+        ]
+      }
+    }
+  },
+  "fitting_attempts": 0,
+  "integration_status": "not_yet_wired_into_discovery_or_ranking",
+  "predictions_bit_identical": true,
+  "scope": "Synthetic-input execution equivalence; not a new discovery, fit, evaluation or ranking",
+  "source_artifacts": {
+    "4c7dae50f868e8418527f8c0506f18d12f5262be2af7b0b7c34956fa577866f4": {
+      "archived_submission_sha256": "cd03cb3bbb456eb685dd96eb35bce051edec19ec5faaadec04cb722de81f93b9",
+      "expression": "minimum(1,maximum(0,p0+p1*(log(income_proxy) - log1p(household_size))+p2*(shock / income_proxy)))",
+      "kind": "train_fitted",
+      "parameters": {
+        "p0": 0.4565726363721293,
+        "p1": -0.11475869089379873,
+        "p2": 0.9576568824544455
+      },
+      "scope": "train",
+      "status": "complete",
+      "trace_index": 5
+    },
+    "4e847fa1f711c0447f411597336b8dad24ba993592c0dc14426d4e3eed4ddf34": {
+      "kind": "fixed_scientific",
+      "meaning": "Fixed binary probability clipping bounds",
+      "scope": "fixed",
+      "status": "complete",
+      "values": {
+        "one": 1,
+        "zero": 0
+      }
+    }
+  },
+  "source_is_installed_distribution": true,
+  "status": "passed_development_fixture",
+  "synthetic_rows": 7,
+  "test_targets_accessed": false,
+  "witness_sha256": "5fef7b18e610d14cc30d083b26cd1ba6263af945b315d8b4ea87dfd9419551cf"
+}

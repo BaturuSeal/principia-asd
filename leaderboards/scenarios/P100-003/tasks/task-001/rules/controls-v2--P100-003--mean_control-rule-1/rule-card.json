@@ -1,0 +1,72 @@
+{
+  "dev_error": 0.011634656185899745,
+  "execution_status": "complete",
+  "expression": "0.0939860339961476",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "median4",
+    "mad4",
+    "low1",
+    "high1",
+    "line1"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "high1": -0.038108147144347106,
+      "lag1": -0.17481912324005539,
+      "lag2": -0.13475933749356026,
+      "lag3": -0.09590224268512397,
+      "lag4": -0.01587267608038044,
+      "line1": -0.19977492553846843,
+      "low1": 0.056653267487232026,
+      "mad4": 0.007723139424305527,
+      "median4": -0.136553156047618
+    },
+    "mean": 0.0022093412181415917,
+    "p90_abs": 0.021701555639297945,
+    "std": 0.014591529265093972
+  },
+  "rule_id": "controls-v2--P100-003--mean_control-rule-1",
+  "rule_sha256": "f408e7d8696929823067f38903126be88c308884bca0f57d51962f40a1223da9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0939860339961476",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-003.compact.v2",
+  "train_error": 0.013010416817799925,
+  "units": {
+    "inputs": {
+      "high1": "RMS strain in units of 1e-21",
+      "lag1": "RMS strain in units of 1e-21",
+      "lag2": "RMS strain in units of 1e-21",
+      "lag3": "RMS strain in units of 1e-21",
+      "lag4": "RMS strain in units of 1e-21",
+      "line1": "RMS strain in units of 1e-21",
+      "low1": "RMS strain in units of 1e-21",
+      "mad4": "RMS strain in units of 1e-21",
+      "median4": "RMS strain in units of 1e-21"
+    },
+    "output": "10^-21 strain",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

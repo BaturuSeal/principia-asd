@@ -1,0 +1,45 @@
+{
+  "models": {
+    "Pro/moonshotai/Kimi-K2.6": {
+      "input_rate": 6.5,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 27,
+      "reasoning_bound": 0
+    },
+    "Qwen/Qwen3.8-27B": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 12,
+      "reasoning_bound": 0
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 9,
+      "reasoning_bound": 0
+    },
+    "zai-org/GLM-5.3": {
+      "input_rate": 8,
+      "options": {
+        "enable_thinking": true,
+        "reasoning_effort": "high",
+        "thinking_budget": 1024
+      },
+      "output_rate": 28,
+      "reasoning_bound": 1024
+    }
+  },
+  "source": {
+    "currency": "CNY",
+    "date": "2026-10-11",
+    "policy": "highest daily input/output rates; cache discounts not assumed",
+    "unit": "per million tokens",
+    "url": "https://www.siliconflow.cn/pricing"
+  }
+}

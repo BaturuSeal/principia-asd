@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.00986657430677227,
+    "primary": "mae",
+    "primary_error": 0.00986657430677227,
+    "rmse": 0.012663493793377537
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.011003542604276611,
+  "by_group": [
+    {
+      "error": 0.011993065203837524,
+      "group": "group-2d4a3f44ac9fdd8d0d4bbce8",
+      "rows": 32
+    },
+    {
+      "error": 0.007740083409707016,
+      "group": "group-f1263395f4d4af8c39623846",
+      "rows": 32
+    }
+  ],
+  "coverage": {
+    "eligible": 64,
+    "fraction": 1.0,
+    "predicted": 64
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-003--best_of_n-rule-1",
+  "rule_sha256": "0f00bbd4d633400b363ec8851b4366ef942b9f8ac2f08a0d2c5b5f5d3e759507",
+  "run_id": "full-comparison-v5--P100-003--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.08546201650235909 + 0.15990099832159746 * lag1 + 0.10423093508590107 * lag2 + 0.01417927836429737 * lag3 + 0.031831738815767174 * lag4 + -0.08180181531108563 * median4 + -1.3111321082810747 * mad4 + -0.00023548983170829847 * low1",
+    "expression_bytes": 75,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01743063697392884,
+    "perturbation_labels_available": false,
+    "population_rows": 64,
+    "ranking": false,
+    "samples": 64,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

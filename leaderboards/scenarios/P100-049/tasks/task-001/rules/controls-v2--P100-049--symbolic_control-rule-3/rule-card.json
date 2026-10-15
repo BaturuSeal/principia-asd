@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.0005305250349438205,
+  "execution_status": "complete",
+  "expression": "p0+p1*(u120*pulse_s)+p2*(u120)+p3*(u60*pulse_s)+p4*(u60)+p5*(t120*u120)+p6*(t120*u60)+p7*(u10*pulse_s)",
+  "inputs": [
+    "t",
+    "t60",
+    "t120",
+    "u60",
+    "u120",
+    "u10",
+    "pulse_s",
+    "current"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.00013597932783320906,
+    "p1": 140.37444951928677,
+    "p2": -26023.916457767682,
+    "p3": -140.30690174788398,
+    "p4": 26152.212067607164,
+    "p5": 45.17210320628618,
+    "p6": -46.42075165193835,
+    "p7": -0.000503252161146933
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.05336610379621968,
+      "pulse_s": 0.1663149901953269,
+      "t": -0.04695168201688124,
+      "t120": 0.012349545236025595,
+      "t60": -0.0014830283197475307,
+      "u10": 0.1512624391404782,
+      "u120": 0.14972687223558984,
+      "u60": 0.15039173369764594
+    },
+    "mean": 8.609817162878876e-05,
+    "p90_abs": 0.001012307383685139,
+    "std": 0.0006975624521239875
+  },
+  "rule_id": "controls-v2--P100-049--symbolic_control-rule-3",
+  "rule_sha256": "44ab059b1d2a0e7931df825b74a5831181b521d9bf9604e8e7d9ec74f8a21458",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.00013597932783320906 + 140.37444951928677 * (u120 * pulse_s) + -26023.916457767682 * u120 + -140.30690174788398 * (u60 * pulse_s) + 26152.212067607164 * u60 + 45.17210320628618 * (t120 * u120) + -46.42075165193835 * (t120 * u60) + -0.000503252161146933 * (u10 * pulse_s)",
+    "expression_bytes": 102,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "nodes": 79,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-049.compact.v2",
+  "train_error": 0.0006445521377763154,
+  "units": {
+    "inputs": {
+      "current": "A",
+      "pulse_s": "s",
+      "t": "s",
+      "t120": "s",
+      "t60": "s",
+      "u10": "V",
+      "u120": "V",
+      "u60": "V"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "description": "evoked_spike_count",
+  "domain": "Cellular neuroscience",
+  "independent_unit": "complete culture dish within recording date",
+  "input_units": {
+    "cal_last": "spikes per stimulus",
+    "cal_mean": "spikes per stimulus",
+    "current": "pA",
+    "kd": "binary",
+    "soft": "binary"
+  },
+  "limitations": [
+    "Predict higher-current evoked spike counts after the lower-current prefix for that cell. No future rheobase or peak-response calibration.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text",
+    "video"
+  ],
+  "output_units": "spikes per stimulus",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 70,
+    "test": 266,
+    "train": 210
+  },
+  "scenario_id": "P100-076",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 69554,
+    "limit_bytes": 10000000,
+    "public_bytes": 20942
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Supplementary_Information_Methods_1__Buffers_and_Media.docx",
+        "source_sha256": "d40ac90c366d80c4ee8d8ebcd55955fd1e013f41238fd4fd894e5d97780c4532"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Supplementary_Information_Videos.docx",
+        "source_sha256": "a220016ba65886ba9ddab3964230a3adadd1b1e1718093cc03df8b260c2adf05"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Video4--Calcium_imaging_P1KD_stiff_gel_DIV7.mov",
+        "source_sha256": "784265c3e669812a91a10519fdec539f975d099116d68fc8af833d512ca3c8ad"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Video2--Calcium_imaging_CTRL_stiff_gel_DIV7.mov",
+        "source_sha256": "e68cd599305ff88b8b3e77c97d4f74f4d110ecdf5851f3809560b3b9520027b7"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Video3--Calcium_imaging_P1KD_soft_gel_DIV7.mov",
+        "source_sha256": "e4d03139ef8e9bd8ed7fe53165c46b4b1073520ba710efa0d648875670659af9"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Video1--Calcium_imaging_CTRL_soft_gel_DIV7.mov",
+        "source_sha256": "f4eeea2cc2617db86cdd6ef79e7e10833365e45a9bc6ac8c52a3e0ce87e9571d"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Supplementary_Information_Data_2__Key_resources.ods",
+        "source_sha256": "f74a284c3bb9f96ba3b0add0f79b2d73df23b2066307c8150fdae760fb6b49f5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/Supplementary_Information_Data_1__RNA_seq_analysis.csv",
+        "source_sha256": "012ccf346a18bd15da2e7f98a8678a8e0eaea7a86eb5d8924bd51bbce8f60239"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/raw/20250611_data.zip",
+        "source_sha256": "93d349e7f4cae2e0b6432a637a7ae029ef7d29864f308ff8a03caf40b4b81d36"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/12802682",
+        "license": "CC-BY-4.0 (proposed release terms for curator documentation; pending owner acceptance)",
+        "rights_url": "https://zenodo.org/records/12802682",
+        "source": "scenarios/76_neuroscience_neuronal_maturation/context/SOURCE_FACTS.json",
+        "source_sha256": "fc248ed62f6bd05e0ed27d417b1b954304ed52695cde845ed113d816481d80e9"
+      }
+    ],
+    "historical_case": "P100-076",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/12802682",
+    "version": "12802682"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "d58dfa72cb10557d73db309e15ce3b7936f1e1adc77470da964a57e4136fa94c",
+        "groups": 2,
+        "rows": 70,
+        "sample_ids_sha256": "5a927782e248ecc6715be4310d7e3cdee82bcc657571367e48e0abfc0809a680"
+      },
+      "test": {
+        "group_ids_sha256": "43280aa356c952df6eb9e6e90ac9b217e191e11b1d776a0cb1d980d2466d0da4",
+        "groups": 8,
+        "rows": 266,
+        "sample_ids_sha256": "e7b911e30465924bef5a5dc90464be034c2ea9cf0aef2acbedf21ceaabb78be2"
+      },
+      "train": {
+        "group_ids_sha256": "e7a4977521e1b6365fc157fff64f4e8b9c634fcb82bc06581ffe19a81c6f6860",
+        "groups": 7,
+        "rows": 210,
+        "sample_ids_sha256": "d9f8341281be4ec20cd1f66a45d29d4a407b4ced6259003f05ef9ee5bfef976c"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Dataset accompanying the paper \"Environmental stiffness regulates neuronal maturation via Piezo1-mediated TTR activity\"",
+  "version": "1.0.0rc2"
+}

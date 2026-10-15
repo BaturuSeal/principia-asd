@@ -1,0 +1,6596 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-13T02:16:49.565223+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "fitting_attempts_scope": "Discovery-rule fitting only; local calibration, detrending and scaling are itemized in native validation",
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 129226326,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "CW injection veto not required; inspect the explicit source mask counts",
+        "Single calibrated detector interval, shared history and retrospective quality selection limit independence",
+        "Final scientific contract and source notice/rights review pending"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-003/reconstruction.json",
+      "candidate_receipt_sha256": "fd215b8d777323dcffc9c5e7552365347a83864d403d6a96b4e8020bd176e60c",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 188
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 64
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 60,
+            "reconstructed_rows": 60,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 64,
+            "reconstructed_rows": 64,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 128,
+            "reconstructed_rows": 128,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_compiler_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_gwosc_validation": {
+        "all_source_injection_bit_counts": [
+          4096,
+          4096,
+          4096,
+          0,
+          4096
+        ],
+        "all_source_quality_bit_counts": [
+          4096,
+          4096,
+          4096,
+          4096,
+          4096,
+          4087,
+          4087,
+          4096,
+          4096
+        ],
+        "causal_input_ranges": true,
+        "cross_partition_observed_history": [
+          {
+            "input_block_split": "train",
+            "input_window": 159,
+            "split": "dev",
+            "window_index": 160
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 158,
+            "split": "dev",
+            "window_index": 160
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 157,
+            "split": "dev",
+            "window_index": 160
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 156,
+            "split": "dev",
+            "window_index": 160
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 159,
+            "split": "dev",
+            "window_index": 161
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 158,
+            "split": "dev",
+            "window_index": 161
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 157,
+            "split": "dev",
+            "window_index": 161
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 159,
+            "split": "dev",
+            "window_index": 162
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 158,
+            "split": "dev",
+            "window_index": 162
+          },
+          {
+            "input_block_split": "train",
+            "input_window": 159,
+            "split": "dev",
+            "window_index": 163
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 191,
+            "split": "test",
+            "window_index": 192
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 190,
+            "split": "test",
+            "window_index": 192
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 189,
+            "split": "test",
+            "window_index": 192
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 188,
+            "split": "test",
+            "window_index": 192
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 191,
+            "split": "test",
+            "window_index": 193
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 190,
+            "split": "test",
+            "window_index": 193
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 189,
+            "split": "test",
+            "window_index": 193
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 191,
+            "split": "test",
+            "window_index": 194
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 190,
+            "split": "test",
+            "window_index": 194
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 191,
+            "split": "test",
+            "window_index": 195
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 31,
+            "split": "train",
+            "window_index": 32
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 30,
+            "split": "train",
+            "window_index": 32
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 29,
+            "split": "train",
+            "window_index": 32
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 28,
+            "split": "train",
+            "window_index": 32
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 31,
+            "split": "train",
+            "window_index": 33
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 30,
+            "split": "train",
+            "window_index": 33
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 29,
+            "split": "train",
+            "window_index": 33
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 31,
+            "split": "train",
+            "window_index": 34
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 30,
+            "split": "train",
+            "window_index": 34
+          },
+          {
+            "input_block_split": "dev",
+            "input_window": 31,
+            "split": "train",
+            "window_index": 35
+          }
+        ],
+        "dev_blocks": [
+          "block0",
+          "block5"
+        ],
+        "discovery_rule_fits": 0,
+        "duration_seconds": 4096,
+        "eligible_forecasts": 252,
+        "eligible_windows": 256,
+        "independence_scope": "Adjacent blocks and overlapping observed history in one H1 interval; development is not guaranteed forward ordered",
+        "injection_bit_names": [
+          "NO_CBC_HW_INJ",
+          "NO_BURST_HW_INJ",
+          "NO_DETCHAR_HW_INJ",
+          "NO_CW_HW_INJ",
+          "NO_STOCH_HW_INJ"
+        ],
+        "local_mean_detrend_fits": 3840,
+        "mask_failure_counts": {},
+        "native_inventory": [
+          {
+            "dataset": "strain/Strain",
+            "dtype": "float64",
+            "filters": [
+              1,
+              3
+            ],
+            "gps_start": 1388511232,
+            "shape": [
+              16777216
+            ],
+            "spacing_seconds": 0.000244140625,
+            "values": 16777216
+          },
+          {
+            "dataset": "quality/simple/DQmask",
+            "dtype": "uint32",
+            "filters": [
+              1,
+              3
+            ],
+            "gps_start": 1388511232,
+            "shape": [
+              4096
+            ],
+            "spacing_seconds": 1.0,
+            "values": 4096
+          },
+          {
+            "dataset": "quality/injections/Injmask",
+            "dtype": "uint32",
+            "filters": [
+              1,
+              3
+            ],
+            "gps_start": 1388511232,
+            "shape": [
+              4096
+            ],
+            "spacing_seconds": 1.0,
+            "values": 4096
+          }
+        ],
+        "quality_bit_names": [
+          "DATA",
+          "CBC_CAT1",
+          "CBC_CAT2",
+          "CBC_CAT3",
+          "BURST_CAT1",
+          "BURST_CAT2",
+          "BURST_CAT3",
+          "STOCH_CAT1",
+          "CW_CAT1"
+        ],
+        "quality_scope": "Retrospective full-window availability/veto screening; not guaranteed all-category science-quality or injection-free strain",
+        "response_scope": "Next-window noise-summary prediction with online measured history, not astrophysical source or detector-transfer evidence",
+        "sample_count": 16777216,
+        "sample_rate_hz": 4096,
+        "source_gps_start": 1388511232,
+        "source_utc_start": "2024-01-05T17:33:34",
+        "test_blocks": [
+          "block6",
+          "block7"
+        ],
+        "train_blocks": [
+          "block1",
+          "block2",
+          "block3",
+          "block4"
+        ],
+        "used_windows": 256,
+        "welch": {
+          "average": "mean",
+          "band_bounds_inclusive_hz": [
+            [
+              30,
+              80
+            ],
+            [
+              10,
+              30
+            ],
+            [
+              80,
+              200
+            ],
+            [
+              59,
+              61
+            ]
+          ],
+          "detrend": "constant mean per segment",
+          "frequency_spacing_hz": 0.5,
+          "fs_hz": 4096,
+          "integrator": "trapezoid",
+          "noverlap": 4096,
+          "nperseg": 8192,
+          "one_sided": true,
+          "output": "square root of integrated PSD",
+          "scale": 1e+21,
+          "scaling": "density",
+          "segments_per_window": 15,
+          "window": "periodic Hann"
+        },
+        "windows": [
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 0
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 1
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 2
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 3
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 4
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 5
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 6
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 7
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 8
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 9
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 10
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 11
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 12
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 13
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 14
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 15
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 16
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 17
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 18
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 19
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 20
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 21
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 22
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 23
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 24
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 25
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 26
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 27
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 28
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 29
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 30
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 31
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 32
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 33
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 34
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 35
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 36
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 37
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 38
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 39
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 40
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 41
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 42
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 43
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 44
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 45
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 46
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 47
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 48
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 49
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 50
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 51
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 52
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 53
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 54
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 55
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 56
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 57
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 58
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 59
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 60
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 61
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 62
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 63
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 64
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 65
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 66
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 67
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 68
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 69
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 70
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 71
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              12,
+              12,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 415,
+            "window_index": 72
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 73
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 74
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 75
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 76
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 77
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 78
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 79
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 80
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 81
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 82
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 83
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 84
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 85
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 86
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 87
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 88
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 89
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 90
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 91
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 92
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 93
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 94
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 95
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 96
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 97
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 98
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 99
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 100
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 101
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 102
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 103
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 104
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 105
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 106
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 107
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 108
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 109
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 110
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 111
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 112
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 113
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 114
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 115
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 116
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 117
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 118
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 119
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 120
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 121
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 122
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 123
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 124
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 125
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 126
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 127
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 128
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 129
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 130
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 131
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 132
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 133
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 134
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 135
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              11,
+              11,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 415,
+            "window_index": 136
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 137
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 138
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 139
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 140
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 141
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 142
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 143
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 144
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 145
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 146
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 147
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 148
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 149
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 150
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 151
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 152
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 153
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 154
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 155
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 156
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 157
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 158
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 159
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 160
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 161
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 162
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 163
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 164
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 165
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 166
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 167
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 168
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 169
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 170
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 171
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 172
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 173
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 174
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 175
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 176
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 177
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 178
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 179
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 180
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 181
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 182
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 183
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 184
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 185
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 186
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 187
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 188
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 189
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 190
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 191
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 192
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 193
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 194
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 195
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 196
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 197
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 198
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 199
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 200
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 201
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 202
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 203
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 204
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 205
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 206
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 207
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 208
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 209
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 210
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 211
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 212
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 213
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 214
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 215
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 216
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 217
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 218
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 219
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 220
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 221
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 222
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 223
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 224
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 225
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 226
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 227
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 228
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 229
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 230
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 231
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 232
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 233
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 234
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 235
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 236
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 237
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 238
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 239
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 240
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 241
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 242
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 243
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 244
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 245
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 246
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 247
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 248
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 249
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 250
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 251
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 252
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 253
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 254
+          },
+          {
+            "exclusion_reasons": [],
+            "injection_bit_counts": [
+              16,
+              16,
+              16,
+              0,
+              16
+            ],
+            "injection_bitwise_and": 23,
+            "quality_bit_counts": [
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16,
+              16
+            ],
+            "quality_bitwise_and": 511,
+            "window_index": 255
+          }
+        ]
+      },
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_microscopy_validation": null,
+      "native_microwave_validation": null,
+      "native_ppg_validation": null,
+      "native_screw_validation": null,
+      "native_slag_validation": null,
+      "native_spectral_validation": null,
+      "native_storm_validation": null,
+      "native_tomato_validation": null,
+      "native_trace_validation": null,
+      "native_xas_validation": null,
+      "native_yeast_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "91931dd3e5913d1e30ca9c9a23b7275c3586a3035203ebab76dbbcaaff16143b",
+      "recipe_sha256": "a40725247ef6599c4faff7601fabde3a03cf30f91cd4770463c78738c5ffe8b4",
+      "rows": {
+        "dev": 60,
+        "test": 64,
+        "train": 128
+      },
+      "runtime_binding_sha256": "cc3c6a09f49fcd3a2b75f175adc92798a92c936d117b9df35789ecf26f2ffa6e",
+      "scenario_id": "P100-003",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "block0",
+            "block5"
+          ],
+          "test": [
+            "block6",
+            "block7"
+          ],
+          "train": [
+            "block1",
+            "block2",
+            "block3",
+            "block4"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

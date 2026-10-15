@@ -1,0 +1,60 @@
+{
+  "dev_error": 0.011334583333333335,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.04541166666666666
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.11909877925710718,
+      "highspeed_cof": 0.1190987792571072,
+      "speed_mm_s": 0.9205251548927269
+    },
+    "mean": -0.0007175000000000043,
+    "p90_abs": 0.017844666666666665,
+    "std": 0.012979422148368377
+  },
+  "rule_id": "full-comparison-v5--P100-030--mean_control-rule-1",
+  "rule_sha256": "4248d08a91fffa8c39165c431e5082aee00dda324076bf6a5b4475458ef2528f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.04541166666666666",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.02136180555555555,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

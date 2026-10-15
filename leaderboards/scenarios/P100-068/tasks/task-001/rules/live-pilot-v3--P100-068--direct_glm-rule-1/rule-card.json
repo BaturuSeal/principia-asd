@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.13978460116661512,
+  "execution_status": "complete",
+  "expression": "y3 + p0*(y3 - y2) + p1*(y3 - 2*y2 + y1) + p2*(y3 - 3*y2 + 3*y1 - y0) + p3*offset + p4",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.6767576990581357,
+    "p1": 3.697921685242107,
+    "p2": -1.5902623482835896,
+    "p3": 0.9926642361698895,
+    "p4": -0.00020231007675933612
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": -0.002044592359180105,
+      "t": 0.004177148125320397,
+      "y0": 0.08403667913544441,
+      "y1": 0.11699542837947223,
+      "y2": 0.1360860963455889,
+      "y3": 0.13214747878818348
+    },
+    "mean": 3.952529986448648e-05,
+    "p90_abs": 0.2883024208162126,
+    "std": 0.17616537863537451
+  },
+  "rule_id": "live-pilot-v3--P100-068--direct_glm-rule-1",
+  "rule_sha256": "b31cee5d6f4c63c870764c9c543e496a7b2cc439b748c9ab86c8ed48abb51a1a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "y3 + -2.6767576990581357 * (y3 - y2) + 3.697921685242107 * (y3 - 2 * y2 + y1) + -1.5902623482835896 * (y3 - 3 * y2 + 3 * y1 - y0) + 0.9926642361698895 * offset + -0.00020231007675933612",
+    "expression_bytes": 85,
+    "free_parameters": 5,
+    "learned_state_bytes": 136,
+    "literal_state_bytes": 3,
+    "nodes": 72,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 18
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.14420025338056486,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

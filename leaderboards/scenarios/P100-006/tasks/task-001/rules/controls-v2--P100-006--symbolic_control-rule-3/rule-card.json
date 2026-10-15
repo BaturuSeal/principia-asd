@@ -1,0 +1,55 @@
+{
+  "dev_error": 0.17527089502612256,
+  "execution_status": "complete",
+  "expression": "p0+p1*(log1p(abs((detuning_MHz-0.5192834103625016)/34.64571111436306)))+p2*(tanh((rabi_MHz-2.859368176327778)/1.6170877212865005))",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.39835988249101195,
+    "p1": 0.10980738723163871,
+    "p2": 0.042352867388621186
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.1864297245932284,
+      "rabi_MHz": 0.13464178519871078
+    },
+    "mean": 0.025901358120374595,
+    "p90_abs": 0.41013895092313213,
+    "std": 0.21458211768192095
+  },
+  "rule_id": "controls-v2--P100-006--symbolic_control-rule-3",
+  "rule_sha256": "56f65136434be804eeb7d99a62082cf49a4e9c9606e548fc20ea0efe20dc6105",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.39835988249101195 + 0.10980738723163871 * log1p(abs((detuning_MHz - 0.5192834103625016) / 34.64571111436306)) + 0.042352867388621186 * tanh((rabi_MHz - 2.859368176327778) / 1.6170877212865005)",
+    "expression_bytes": 130,
+    "free_parameters": 3,
+    "learned_state_bytes": 82,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.10696176855146333,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

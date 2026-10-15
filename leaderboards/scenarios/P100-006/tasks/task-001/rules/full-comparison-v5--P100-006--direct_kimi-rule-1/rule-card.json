@@ -1,0 +1,64 @@
+{
+  "dev_error": 0.09307157684386805,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * (rabi_MHz - p2) / ((detuning_MHz - p3) ** 2 + p4 * rabi_MHz ** 2 + p5) + p6 * rabi_MHz + p7 * detuning_MHz",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.2763024528566454,
+    "p1": -38.60027268628994,
+    "p2": 2.168453845258424,
+    "p3": -2.4758350845498254,
+    "p4": -1.4918633062052111,
+    "p5": 214.29589976562667,
+    "p6": 0.08083708387455174,
+    "p7": 0.0004024618590757639
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.07911616131844149,
+      "rabi_MHz": 0.20447402794610947
+    },
+    "mean": 0.017708656777129874,
+    "p90_abs": 0.18201694889833417,
+    "std": 0.11851572619464332
+  },
+  "rule_id": "full-comparison-v5--P100-006--direct_kimi-rule-1",
+  "rule_sha256": "b5edcb1849401d59732f46a5e4b7a98ba3ef2b022fa96bfe0e32459757a7e0d2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.2763024528566454 + -38.60027268628994 * (rabi_MHz - 2.168453845258424) / ((detuning_MHz - -2.4758350845498254) ** 2 + -1.4918633062052111 * rabi_MHz ** 2 + 214.29589976562667) + 0.08083708387455174 * rabi_MHz + 0.0004024618590757639 * detuning_MHz",
+    "expression_bytes": 116,
+    "free_parameters": 8,
+    "learned_state_bytes": 213,
+    "literal_state_bytes": 2,
+    "nodes": 57,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.06278066058007524,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

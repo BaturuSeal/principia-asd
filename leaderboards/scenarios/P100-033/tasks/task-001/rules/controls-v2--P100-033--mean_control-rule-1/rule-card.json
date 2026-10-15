@@ -1,0 +1,69 @@
+{
+  "dev_error": 9.718926412889967,
+  "execution_status": "complete",
+  "expression": "79.44644387317909",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.21229720772324914,
+      "agreement": 0.15798420112862924,
+      "ear": -0.16768864269035189,
+      "fft_bpm": 0.21481522087939642,
+      "half_bpm": 0.20302411244467064,
+      "half_strength": -0.15455210553528725,
+      "motion": -0.0613145376346833,
+      "spectral_quality": -0.07284979890652803
+    },
+    "mean": 6.427646880697888,
+    "p90_abs": 21.446443873179092,
+    "std": 11.074407605643328
+  },
+  "rule_id": "controls-v2--P100-033--mean_control-rule-1",
+  "rule_sha256": "317efcf02789537aac4038a0ec1c1b9091b714be9491c69fdbc28d12dd2b7f4f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "79.44644387317909",
+    "expression_bytes": 17,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 11.889213975818418,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

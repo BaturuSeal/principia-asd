@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.03147067233321116,
+  "execution_status": "complete",
+  "expression": "p0+p1*early+p2*finding+p3*gradient_proxy+p4*roughness+p5*usage+p6*left+p7*has_history",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.19691932900345896,
+    "p1": 1.3392581540309167,
+    "p2": -0.011075672702891514,
+    "p3": 0.24752560713684868,
+    "p4": -0.10745765673880989,
+    "p5": -0.0038294953472047645,
+    "p6": -0.019094730348865288,
+    "p7": -0.14033549510553536
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.02796313970508189,
+      "finding": -0.04486156524623805,
+      "first_y": -0.009132716616856522,
+      "gradient_proxy": -0.003564301579976048,
+      "has_history": 0.032634556460291925,
+      "history_gap": -0.010700755856619374,
+      "left": -0.0012589332975372109,
+      "mean_past_y": -0.25220453866392467,
+      "prev_early": -0.24928343689259866,
+      "prev_gradient": -0.17647318137462026,
+      "prev_y": -0.38814857211728826,
+      "roughness": -0.057018339435246666,
+      "usage": 0.01813228504142486
+    },
+    "mean": -0.0005039853519268636,
+    "p90_abs": 0.06611625768304022,
+    "std": 0.04233903196259551
+  },
+  "rule_id": "full-comparison-v5--P100-053--tool_agent-rule-1",
+  "rule_sha256": "9a9757a3d2fcbf469c12d1e14b749ede5d7afff1ad8e7ab2f7ef05c589209dd6",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.19691932900345896 + 1.3392581540309167 * early + -0.011075672702891514 * finding + 0.24752560713684868 * gradient_proxy + -0.10745765673880989 * roughness + -0.0038294953472047645 * usage + -0.019094730348865288 * left + -0.14033549510553536 * has_history",
+    "expression_bytes": 85,
+    "free_parameters": 8,
+    "learned_state_bytes": 224,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.030666378620390088,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

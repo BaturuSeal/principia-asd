@@ -1,0 +1,161 @@
+{
+  "api_cap_cny": 3000,
+  "campaign_id": "agent-laboratory-pilot-v1",
+  "capabilities_sha256": "b17c83feb3c8cd4834cc7e9bdaaa6fbd8b0196dc00d96ca3fbd46ad768b34bf5",
+  "created": "2026-10-11T14:46:53.994113+00:00",
+  "data_edition_sha256": "ca76fa714454751fb13f2422a15cc32c42aa74130f51b23a8434745ff2c1a110",
+  "driver_sha256": "38c5a858fbe6b88eeee944c6272283c93353d455b3fd28e2fc1c43aa774ad433",
+  "engineering_exposed_scenarios": [
+    "P100-002",
+    "P100-017",
+    "P100-043",
+    "P100-051",
+    "P100-054",
+    "P100-068",
+    "P100-087",
+    "P100-090"
+  ],
+  "jobs": [
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-002--agent_laboratory",
+      "scenario_id": "P100-002"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-017--agent_laboratory",
+      "scenario_id": "P100-017"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-043--agent_laboratory",
+      "scenario_id": "P100-043"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-051--agent_laboratory",
+      "scenario_id": "P100-051"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-054--agent_laboratory",
+      "scenario_id": "P100-054"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-068--agent_laboratory",
+      "scenario_id": "P100-068"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-087--agent_laboratory",
+      "scenario_id": "P100-087"
+    },
+    {
+      "method_id": "agent_laboratory",
+      "run_id": "agent-laboratory-pilot-v1--P100-090--agent_laboratory",
+      "scenario_id": "P100-090"
+    }
+  ],
+  "max_workers": 4,
+  "methods": [
+    "agent_laboratory"
+  ],
+  "price_snapshot": {
+    "models": {
+      "Pro/moonshotai/Kimi-K2.6": {
+        "input_rate": 6.5,
+        "options": {
+          "enable_thinking": false
+        },
+        "output_rate": 27,
+        "reasoning_bound": 0
+      },
+      "Qwen/Qwen3.8-27B": {
+        "input_rate": 3,
+        "options": {
+          "enable_thinking": false
+        },
+        "output_rate": 12,
+        "reasoning_bound": 0
+      },
+      "deepseek-ai/DeepSeek-V4-Flash": {
+        "input_rate": 3,
+        "options": {
+          "enable_thinking": false
+        },
+        "output_rate": 9,
+        "reasoning_bound": 0
+      },
+      "zai-org/GLM-5.3": {
+        "input_rate": 8,
+        "options": {
+          "enable_thinking": true,
+          "reasoning_effort": "high",
+          "thinking_budget": 1024
+        },
+        "output_rate": 28,
+        "reasoning_bound": 1024
+      }
+    },
+    "source": {
+      "currency": "CNY",
+      "date": "2026-10-11",
+      "policy": "highest daily input/output rates; cache discounts not assumed",
+      "unit": "per million tokens",
+      "url": "https://www.siliconflow.cn/pricing"
+    }
+  },
+  "roles": {
+    "coder": "deepseek-ai/DeepSeek-V4-Flash",
+    "critic": "Qwen/Qwen3.8-27B",
+    "planner": "zai-org/GLM-5.3",
+    "reporter": "Pro/moonshotai/Kimi-K2.6"
+  },
+  "scenarios": [
+    "P100-002",
+    "P100-017",
+    "P100-043",
+    "P100-051",
+    "P100-054",
+    "P100-068",
+    "P100-087",
+    "P100-090"
+  ],
+  "source_hashes": {
+    "__init__.py": "3643b04307c4757c301be72677d03e212ffe7e182ac1130004a094b14238e6d1",
+    "campaign.py": "04a6c3395607006a54a73b042a144b297aed9dd9a6e31c238b23dac4bd65acb3",
+    "catalog/__init__.py": "e2485e1d24725cf7e463e4256759aff9d09b3419ee6bf55576cda22121633b9b",
+    "catalog/audit.py": "bd622248e5727f9504f5b9b34ed09993017563889f592283c38a35f8420439bc",
+    "cli.py": "d14cba489d3cd6facaaaf004eb79d26de6509c122792cf4b9f3008eaa160f0e3",
+    "contracts/__init__.py": "68cfc583c9ee21ab0caa63c26e569aa2685323681f1e94266a584177c66c0c35",
+    "contracts/schema.py": "738b3ff9a3d81a055fc0cae9a5c01aabd84197034998c07b0d3f95eb7eb49a19",
+    "engine/__init__.py": "511dc811b017430620be666ef9eb312da9d87e8eb2b8510ab56741fab39bfd55",
+    "engine/expression.py": "00abcddb54d4ba76af10bfd6f1b115d0cd7b7089b7cf4b98689af599e8103422",
+    "engine/laboratory.py": "5728ff19ecf641f23bf49ed9d9da9cb256918d076b40e5e7e9784a2013b6f0b8",
+    "engine/search.py": "599173060f11234175d986bcd9b606f51cd9e79a0834ec312c013fcc7f062131",
+    "evaluate/__init__.py": "ea4cbe52d9395104741641950a44155aac07b4bd409fa124c51f742a9ee89785",
+    "evaluate/metrics.py": "6e1f1d10151cfa4c2dfdf5a0536c7013f35b226b98f4336c9837b2595c387af1",
+    "hashing.py": "1df06ccd6199764e76faf6339cf3921f2253cbe623117d76451397424c803351",
+    "io.py": "cae9d80c3520693bc1ccd9e3f7750ec9a658f200d4cbd04e89be5a4322c4a87d",
+    "llm/__init__.py": "dd70a9045d34c3df7b69490f90d5e7b45d54b948acab90f1b71e12056c0a93f1",
+    "llm/siliconflow.py": "51f46da2e2b8d861c31ed76f972f1545c9d895016c8cdf53e5b4d7b3764f16ff",
+    "methods/__init__.py": "ff32a661e63385c6110906eaf127f076a4e4e790ba8da56bb311a7b12ee63b5a",
+    "methods/cards.py": "5e729bd85704282640e2d4dabd673b66f80858443eede9b6969660b1f00a8ec3",
+    "methods/registry.py": "a17b566898965d9c54cce5364eef99fcf3c80b311b57d5672f208823fc0252d1",
+    "records.py": "5fd2376ccd0b12ac4513c6c3b714463c530b4e1ac8fa3b157e88c91249e5ee7d",
+    "report_html.py": "e6b8176a63ac243400d3dc9b6f0f1cf908dc37128390503f267717d4c9eb3c99",
+    "reports.py": "6ec3f9c94616817dede8c567614dc158dbc9be7c08df3b79058d1030b7f40451",
+    "runtime.py": "f8208f1cc41d78c7cef45fa34c43fa40c6d6cfd98aed2612b088a5161d8281fe",
+    "sandbox/__init__.py": "7ea4b4438dc9aec2fab621a39a006653f063b2b5edd9c53c5e40efaf717019d6",
+    "store/__init__.py": "dfd1b6fcf7ead9a15feadc5bb83af3cada0f6b7168fdb3c5d2300b6fb4959210",
+    "store/json_store.py": "5468b7a9c8469dc4a233129860248bbaa2d14b7eae39348f9d2eb8a60420bed3",
+    "store/ledger.py": "c83ab5a7f512d7b761286b53eb875865af29a26872e8703ba4b4cb2955f75419",
+    "store/snapshot.py": "1dcbeeba8c86e965577fd2a0aba224b8b0bcf562ef86ee368890ea7d056e3912",
+    "store/worker_limits.py": "1d05f8a7de1543cad63e4a42c7d35d1ee0e287d06df5a473f59170cdf5151c13",
+    "web/__init__.py": "4139123a9906c4b12d2fd893582fd05e385d2bbf595409ead43574d2942bdf6e",
+    "web/server.py": "07e7bfa9beca9edcc50e08fb4d9ce009753f6767ff00059ed79060f5cef50a4a"
+  },
+  "track": "engineering",
+  "version": "1.0.0rc2"
+}

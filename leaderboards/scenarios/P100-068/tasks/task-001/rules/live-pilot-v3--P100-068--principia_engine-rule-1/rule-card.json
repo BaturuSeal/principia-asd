@@ -1,0 +1,77 @@
+{
+  "dev_error": 0.11550374822061638,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * y3 + p2 * (y3 - y2) + p3 * (y2 - y1) + p4 * (y3 - y0) + p5 * offset",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.008036848202928056,
+    "p1": 0.0764365771266764,
+    "p2": 0.9465970572680549,
+    "p3": 1.0366561924052544,
+    "p4": -1.0904051181061678,
+    "p5": 0.059331572817522715
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.02182466173739451,
+      "t": -0.047503483505124414,
+      "y0": -0.054896020377569986,
+      "y1": -0.03298565014621086,
+      "y2": -0.004415550566687965,
+      "y3": 0.015493785862624124
+    },
+    "mean": 0.005397343031532391,
+    "p90_abs": 0.2390392147245552,
+    "std": 0.14553767835398135
+  },
+  "rule_id": "live-pilot-v3--P100-068--principia_engine-rule-1",
+  "rule_sha256": "ff710ea9c2a846d837bb441c045f933101aa96eb5231f37b14566d3ac7e58fb9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.008036848202928056 + 0.0764365771266764 * y3 + 0.9465970572680549 * (y3 - y2) + 1.0366561924052544 * (y2 - y1) + -1.0904051181061678 * (y3 - y0) + 0.059331572817522715 * offset",
+    "expression_bytes": 77,
+    "free_parameters": 6,
+    "learned_state_bytes": 161,
+    "literal_state_bytes": 0,
+    "nodes": 55,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.11236692851919225,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

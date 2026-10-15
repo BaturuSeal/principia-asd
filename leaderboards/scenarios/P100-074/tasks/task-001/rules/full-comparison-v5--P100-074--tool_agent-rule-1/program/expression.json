@@ -1,0 +1,12 @@
+{
+  "expression": "calibration_F6 + p0 * (time_min - 6.0) + p1 * (time_min - 6.0) * (time_min - 6.0) + p2 * concentration_uM * (time_min - 6.0) + p3 * concentration_uM * (time_min - 6.0) * (time_min - 6.0)",
+  "parameters": {
+    "p0": 11.078700023049059,
+    "p1": -0.21524887576725737,
+    "p2": 0.3090558803942934,
+    "p3": 0.016256859354972602
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

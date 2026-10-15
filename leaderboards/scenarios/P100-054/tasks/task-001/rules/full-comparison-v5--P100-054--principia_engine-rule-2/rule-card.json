@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.01780593611194012,
+  "execution_status": "complete",
+  "expression": "p0+p1*(notch_depth_um)",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.2002657523068207,
+    "p1": -0.1096229929171683
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": 0.3317283183603866,
+      "notch_depth_um": -0.010565863719969726,
+      "notch_width_um": 0.4254747945411189,
+      "thickness_um": -0.016960105953802856,
+      "width_um": 0.0720732021314667
+    },
+    "mean": -0.00026869699769983824,
+    "p90_abs": 0.03237183443015587,
+    "std": 0.021766395164912168
+  },
+  "rule_id": "full-comparison-v5--P100-054--principia_engine-rule-2",
+  "rule_sha256": "ea4b204285f94f4b4888a5def842ecdc6039b7411d4c4031765d7e4372f7e5a2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.2002657523068207 + -0.1096229929171683 * notch_depth_um",
+    "expression_bytes": 22,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.021548466640656926,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

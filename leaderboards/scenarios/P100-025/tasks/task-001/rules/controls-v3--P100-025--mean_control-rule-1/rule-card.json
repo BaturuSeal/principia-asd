@@ -1,0 +1,79 @@
+{
+  "dev_error": 0.533380845151999,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 4.283952075702075
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": 0.14011406107645136,
+      "dL": 0.3630710225310301,
+      "discharge": -0.054937741084961356,
+      "e": -0.812891138453174,
+      "f": -0.004067763335951096,
+      "jump": -0.0610453871578533,
+      "pre": -0.06485150581855292,
+      "rF": -0.9908512755171796,
+      "rL": -0.901563830707204,
+      "rest": -0.054937741084961356
+    },
+    "mean": 0.05399186350048351,
+    "p90_abs": 0.743952075702075,
+    "std": 0.5636925634681007
+  },
+  "rule_id": "controls-v3--P100-025--mean_control-rule-1",
+  "rule_sha256": "6229e84f3acfdf606bdda7c53f95f63884cca3a5689d382ffc4795edecea34c7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "4.283952075702075",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.546939081692287,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "description": "Upper three country-specific hourly-earnings deciles, excluding bonuses",
+  "domain": "sociology and labor economics",
+  "independent_unit": "Respondents nested in country and deterministic ten hashblocks; not10 independent samples from plausible values. Repeated respondent information stays linked. Survey clustering not publicly fully reconstructible.",
+  "input_units": {
+    "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+    "education": "source derived years of formal education",
+    "japan": "country indicator"
+  },
+  "limitations": [
+    "Contemporaneous cross-sectional earnings association using age/education/country. All10 plausible numeracy values are excluded: conditioned on background and unsuitable individual prediction scores. This is not future earnings or causal education return.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "binary EARNHRDCLC2>=8",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 886,
+    "test": 1054,
+    "train": 3350
+  },
+  "scenario_id": "P100-039",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 466500,
+    "limit_bytes": 10000000,
+    "public_bytes": 108012
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+        "rights_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "source": "scenarios/39_sociology_oecd_piaac/context/3639d1e2-en.pdf",
+        "source_sha256": "0f213ff4034c1fae94b06d334a7eb11be94a82d2fff782e507f39cb58994076f"
+      },
+      {
+        "citation_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+        "rights_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "source": "scenarios/39_sociology_oecd_piaac/context/NCES_technical_notes.html",
+        "source_sha256": "3a6039ff5e0aa87fe8660e91a8b3e0945682cc056fe15fd7b5fc7c2b928f414a"
+      },
+      {
+        "citation_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+        "rights_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "source": "scenarios/39_sociology_oecd_piaac/context/piaac-cy2-codebook-and-sql-codes-for-derived-variables.pdf",
+        "source_sha256": "19043c850365611d715da279b9fba12d53a5decb7b845042df50350ee51d67d1"
+      },
+      {
+        "citation_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+        "rights_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "source": "scenarios/39_sociology_oecd_piaac/context/piaac-cy2-international-codebook.xlsx",
+        "source_sha256": "02bb30f84763ba27871daee7ee1133c3c98e26d716173272e313e596ce7908d2"
+      },
+      {
+        "citation_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+        "rights_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "source": "scenarios/39_sociology_oecd_piaac/raw/prgjpnp2.csv",
+        "source_sha256": "498bd1372de027006a424f26d9a1209a5c4437bb978144f7b9e8c0228e91729b"
+      },
+      {
+        "citation_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+        "rights_url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+        "source": "scenarios/39_sociology_oecd_piaac/raw/prgusap2.csv",
+        "source_sha256": "f20a4677d9c4b03638f77e61bdf307fc282561bd129334ccf2179ef2b960641e"
+      }
+    ],
+    "historical_case": "P100-039",
+    "license": "OECD data terms with attribution and pass-through acknowledgment; Reader Companion CC BY 4.0, third-party cover credit retained",
+    "url": "https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html",
+    "version": "Cycle 2 public-use files; December 2024 release"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "f771c38789ceffa7df9a6e6f912782f6b5f5883f9e0948d306b197639a00b051",
+        "groups": 3,
+        "rows": 886,
+        "sample_ids_sha256": "77e03e8e4c46bf31a939c727c1eb4a9868d2317ad4fd2830c73b937674c4aa52"
+      },
+      "test": {
+        "group_ids_sha256": "d6886f8a7efca94d26b3702b37d3630fb7ad0c370d159506619d410d004188b0",
+        "groups": 4,
+        "rows": 1054,
+        "sample_ids_sha256": "58763910ee07d9626d1864b7b22929aa61bdae6dd8b4faf00aa465cf029b0261"
+      },
+      "train": {
+        "group_ids_sha256": "e8345fb61570902591b13f8b66578558e22b0b8b99a74f2c1deac977e64486b4",
+        "groups": 13,
+        "rows": 3350,
+        "sample_ids_sha256": "d50c7796ff5a3a3edb7e6d751fff18dbdf76b2a8887280179ee668ebfe196cc3"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Adult skills, workplace use and earnings in USA and Japan",
+  "version": "1.0.0rc2"
+}

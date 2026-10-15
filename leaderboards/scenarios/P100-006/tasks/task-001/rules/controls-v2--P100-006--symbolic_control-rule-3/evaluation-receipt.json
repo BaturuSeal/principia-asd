@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.19796535194280812,
+    "primary": "mae",
+    "primary_error": 0.19796535194280812,
+    "rmse": 0.23954639084399842
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.23307961305015756,
+  "by_group": [
+    {
+      "error": 0.16754653187778654,
+      "group": "group-2d4be703bac713893e380306",
+      "rows": 2400
+    },
+    {
+      "error": 0.2283841720078297,
+      "group": "group-a5093bf7ea537f01bcf93bca",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-006--symbolic_control-rule-3",
+  "rule_sha256": "56f65136434be804eeb7d99a62082cf49a4e9c9606e548fc20ea0efe20dc6105",
+  "run_id": "controls-v2--P100-006--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.39835988249101195 + 0.10980738723163871 * log1p(abs((detuning_MHz - 0.5192834103625016) / 34.64571111436306)) + 0.042352867388621186 * tanh((rabi_MHz - 2.859368176327778) / 1.6170877212865005)",
+    "expression_bytes": 130,
+    "free_parameters": 3,
+    "learned_state_bytes": 82,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.013113227199995282,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

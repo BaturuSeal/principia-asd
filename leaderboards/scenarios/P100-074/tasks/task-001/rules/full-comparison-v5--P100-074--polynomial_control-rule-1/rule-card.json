@@ -1,0 +1,69 @@
+{
+  "dev_error": 758.325589547739,
+  "execution_status": "complete",
+  "expression": "p0+p1*(concentration_uM)+p2*(time_min)+p3*(calibration_F6)+p4*(calibration_v6)+p5*(calibration_curvature)",
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -188.90912432695916,
+    "p1": 48.47962484134602,
+    "p2": 7.4378250832578985,
+    "p3": 45.64939226480922,
+    "p4": -212.4505360189568,
+    "p5": 384.1276600853889
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "calibration_F6": 0.6914156530045619,
+      "calibration_curvature": -0.6914156530045616,
+      "calibration_v6": 0.6914156530045616,
+      "concentration_uM": 0.6914156530045619,
+      "time_min": -0.5665998780295673
+    },
+    "mean": 758.325589547739,
+    "p90_abs": 1079.4699522081323,
+    "std": 183.90599618519914
+  },
+  "rule_id": "full-comparison-v5--P100-074--polynomial_control-rule-1",
+  "rule_sha256": "c8924740b24d78b93a53866c80b13499db874a08b698086682433a5694facd37",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-188.90912432695916 + 48.47962484134602 * concentration_uM + 7.4378250832578985 * time_min + 45.64939226480922 * calibration_F6 + -212.4505360189568 * calibration_v6 + 384.1276600853889 * calibration_curvature",
+    "expression_bytes": 105,
+    "free_parameters": 6,
+    "learned_state_bytes": 154,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-074.compact.v2",
+  "train_error": 67.71385676120057,
+  "units": {
+    "inputs": {
+      "calibration_F6": "source fluorescence units",
+      "calibration_curvature": "source fluorescence units/min^2",
+      "calibration_v6": "source fluorescence units/min",
+      "concentration_uM": "uM",
+      "time_min": "min"
+    },
+    "output": "source fluorescence units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

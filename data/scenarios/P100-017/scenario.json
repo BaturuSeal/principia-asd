@@ -1,0 +1,103 @@
+{
+  "description": "Author-reported origin depth uncertainty",
+  "domain": "geography",
+  "independent_unit": "Transitive clusters within100km great-circle chord and7days; complete cluster hashfolds. Distant events may still share network/systematic velocity model errors.",
+  "input_units": {
+    "depth_km": "km below network reference (may negative)",
+    "dmin_km": "minimum angular station distance*111.195km/degree",
+    "gap_deg": "largest azimuthal gap degrees",
+    "phases": "used phase count",
+    "rms_s": "seconds phase residual standardError",
+    "stations": "used station count"
+  },
+  "limitations": [
+    "Contemporaneous reported location-quality diagnostics, never pre-event earthquake forecast or independent true depth error.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "spatial_or_georeferenced",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "km",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1080,
+    "test": 271,
+    "train": 1194
+  },
+  "scenario_id": "P100-017",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 359983,
+    "limit_bytes": 10000000,
+    "public_bytes": 116217
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "license": "U.S. Government public domain",
+        "rights_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "source": "scenarios/17_geography_usgs_comcat_2026_07/context/count.txt",
+        "source_sha256": "5dec2555aa54ac568f403b140af7d6fcd39f041a3b7f2b69e283fd7d29a73a1c"
+      },
+      {
+        "citation_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "license": "U.S. Government public domain",
+        "rights_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "source": "scenarios/17_geography_usgs_comcat_2026_07/context/service_version.txt",
+        "source_sha256": "f972084131b8c2eba9339f5bc95cf6d85183eb1b1af87c723f12c48542f84445"
+      },
+      {
+        "citation_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "license": "U.S. Government public domain",
+        "rights_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "source": "scenarios/17_geography_usgs_comcat_2026_07/raw/usgs_2026-07_m2.5.geojson",
+        "source_sha256": "310528f127785a084eea2fc8799605de83e4d3c7fc5d26ca2982a9088d706e38"
+      },
+      {
+        "citation_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "license": "U.S. Government public domain",
+        "rights_url": "https://earthquake.usgs.gov/fdsnws/event/1",
+        "source": "scenarios/17_geography_usgs_comcat_2026_07/raw/usgs_2026-07_m2.5.quakeml",
+        "source_sha256": "16bc9bcf4ebcfca1a2334260f4982cf639babb98f47c8277866fb46bc1d363da"
+      }
+    ],
+    "historical_case": "P100-017",
+    "license": "U.S. Government public domain",
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1",
+    "version": "FDSN Event service snapshot"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "03f86edcd57bb729d9fc9b44d08e12981fc1e9d8e017ec85aa5e1492287b6222",
+        "groups": 103,
+        "rows": 1080,
+        "sample_ids_sha256": "71ac84a6c18897e177f9d666bd6971064edbca46dc4ec5eb0d728d598f194bdf"
+      },
+      "test": {
+        "group_ids_sha256": "a511c6f949804edfce908fbda60a7306523294bb85eabf6c469c02ee81f80561",
+        "groups": 130,
+        "rows": 271,
+        "sample_ids_sha256": "11e8b89afeb958fd594d445a24e4d3ee4529a00fc835d1472da45d50088b06fa"
+      },
+      "train": {
+        "group_ids_sha256": "75cb54ccedb4c253da4b522ded2ebb9ff804eacc9f26f3c6d078235c876b381f",
+        "groups": 413,
+        "rows": 1194,
+        "sample_ids_sha256": "ecea0d12d3ef6ea71926da5066c99993c19134fc1d43ffc31dbd231168930b07"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "USGS ComCat July 2026 global M2.5+ earthquakes",
+  "version": "1.0.0rc2"
+}

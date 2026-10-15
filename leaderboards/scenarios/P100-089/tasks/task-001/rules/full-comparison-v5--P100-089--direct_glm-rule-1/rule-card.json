@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.12634945113009055,
+  "execution_status": "complete",
+  "expression": "0.5*(1 + tanh(p0 + p1*(reward*probability) + p2*(history_mean - 0.5) + p3*(lag_choice - 0.5) + p4*child + p5*trial_progress + p6*multi + p7*description))",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.5005496277627237,
+    "p1": 0.7570317301400727,
+    "p2": 1.5787416162955994,
+    "p3": 0.633024793346678,
+    "p4": 0.3942761037149126,
+    "p5": -0.14497275159198234,
+    "p6": 0.0693908655057992,
+    "p7": -0.09350017790017545
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": 0.03940510776736004,
+      "child": 0.040819333672708034,
+      "description": 0.01946246534671856,
+      "has_history": 0.04848546322171508,
+      "history_mean": 0.009392293731229942,
+      "lag_choice": -0.010918973582333865,
+      "multi": -0.0008219599592600624,
+      "probability": 0.0019391007771315397,
+      "reward": 0.004967860346392809,
+      "trial_progress": 0.00434382674185436
+    },
+    "mean": 0.024119349823195014,
+    "p90_abs": 0.6383774127842584,
+    "std": 0.35134064963078493
+  },
+  "rule_id": "full-comparison-v5--P100-089--direct_glm-rule-1",
+  "rule_sha256": "dd0355522a3c36cb13169181923013375f0bdd3f96f061a006f1afd497b1cd8d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5 * (1 + tanh(-1.5005496277627237 + 0.7570317301400727 * (reward * probability) + 1.5787416162955994 * (history_mean - 0.5) + 0.633024793346678 * (lag_choice - 0.5) + 0.3942761037149126 * child + -0.14497275159198234 * trial_progress + 0.0693908655057992 * multi + -0.09350017790017545 * description))",
+    "expression_bytes": 153,
+    "free_parameters": 8,
+    "learned_state_bytes": 212,
+    "literal_state_bytes": 10,
+    "nodes": 78,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.13597163888907224,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

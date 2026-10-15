@@ -1,0 +1,404 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-13T03:13:22.997100+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "fitting_attempts_scope": "Discovery-rule fitting only; local calibration, detrending and scaling are itemized in native validation",
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 15017874,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Single already processed daily map; upstream climatology and calibration remain external state",
+        "Retrospective target quality selection and spatial dependence limit inference",
+        "Final scientific contract, source citation/notice and rights review pending"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-020/reconstruction.json",
+      "candidate_receipt_sha256": "49e1d610b2d722eeea526ac025c75dc14845ef916b95b444cee558c3ea128dc1",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 6081
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1338
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 1277,
+            "reconstructed_rows": 1277,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 1338,
+            "reconstructed_rows": 1338,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 4804,
+            "reconstructed_rows": 4804,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_compiler_validation": null,
+      "native_coral_validation": {
+        "candidate_centers": 10800,
+        "candidate_stencil_mask_counts": {
+          "0": 100664,
+          "1": 37289,
+          "2": 1771,
+          "4": 676
+        },
+        "cross_tile_input_references": 0,
+        "discovery_rule_fits": 0,
+        "eligible_centers": 7419,
+        "excluded_centers": 3381,
+        "exclusion_reason_counts": {
+          "invalid_or_fill_stencil": 3381,
+          "non_water_stencil": 3381
+        },
+        "grid_spacing_degrees": 0.05,
+        "groups": 116,
+        "groups_by_partition": {
+          "dev": 18,
+          "test": 23,
+          "train": 75
+        },
+        "independence_scope": "Whole 20-degree tiles within one spatially dependent daily map; no independent temporal replicates",
+        "lineage_recipe": {
+          "input_coordinates": "response_pixel plus each ordered offset",
+          "response_and_inputs_dataset": "sea_surface_temperature_anomaly",
+          "scale_factor": 0.01,
+          "stencil_id": "coral-native-ssta-stencil-v1",
+          "time_index": 0
+        },
+        "local_preprocessing_fits": 0,
+        "native_inventory": [
+          {
+            "dataset": "sea_surface_temperature_anomaly",
+            "dtype": "int16",
+            "expanded_bytes": 51840000,
+            "filters": [
+              2,
+              1
+            ],
+            "shape": [
+              1,
+              3600,
+              7200
+            ]
+          },
+          {
+            "dataset": "mask",
+            "dtype": "uint8",
+            "expanded_bytes": 25920000,
+            "filters": [
+              2,
+              1
+            ],
+            "shape": [
+              1,
+              3600,
+              7200
+            ]
+          },
+          {
+            "dataset": "lat",
+            "dtype": "float32",
+            "expanded_bytes": 14400,
+            "filters": [
+              2,
+              1
+            ],
+            "shape": [
+              3600
+            ]
+          },
+          {
+            "dataset": "lon",
+            "dtype": "float32",
+            "expanded_bytes": 28800,
+            "filters": [
+              2,
+              1
+            ],
+            "shape": [
+              7200
+            ]
+          },
+          {
+            "dataset": "time",
+            "dtype": "int32",
+            "expanded_bytes": 4,
+            "filters": [
+              2,
+              1
+            ],
+            "shape": [
+              1
+            ]
+          },
+          {
+            "dataset": "crs",
+            "dtype": "int16",
+            "expanded_bytes": 2,
+            "filters": [],
+            "shape": []
+          }
+        ],
+        "observation_reference_seconds_since_1981": 1439726400,
+        "offsets": [
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            -4,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            -8
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            -8,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            -4,
+            -4
+          ],
+          [
+            -4,
+            4
+          ],
+          [
+            4,
+            -4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "response_scope": "Same-date anomaly interpolation, not temperature forecasting, bleaching prediction or causal discovery",
+        "reused_input_pixels": 0,
+        "sampling_stride_pixels": 40,
+        "selection_scope": "Retrospective target-and-neighbor quality/range eligibility; missing centers are not imputed",
+        "source_identity": {
+          "id": "Satellite_Daily_Global_5km_SST_Anomaly",
+          "processing_level": "Derived from L4 satellite sea surface temperaure analysis",
+          "product_version": "3.1",
+          "source": "Coral Reef Watch Daily Global 5km Satellite Sea Surface Temperature v3.1 (CoralTemp v3.1)",
+          "time_coverage_end": "20260817T000000Z",
+          "time_coverage_start": "20260816T000000Z"
+        },
+        "target_input_pixel_intersection": 0,
+        "upstream_preprocessing": "Source L4 SST analysis and 1991-2020 climatology are inherited; upstream fitting, calibration and spatial dependence are not reproduced or counted as zero"
+      },
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_gwosc_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_microscopy_validation": null,
+      "native_microwave_validation": null,
+      "native_ppg_validation": null,
+      "native_screw_validation": null,
+      "native_slag_validation": null,
+      "native_spectral_validation": null,
+      "native_storm_validation": null,
+      "native_tomato_validation": null,
+      "native_trace_validation": null,
+      "native_xas_validation": null,
+      "native_yeast_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "9dee27d4a60d913dd185c018311c71feb0527a4a36bb09e86b509ac9ab3daf45",
+      "recipe_sha256": "c87c4802601fcdc8deb2c9379e79984b03b667920740acbcc378187a614b95a4",
+      "rows": {
+        "dev": 1277,
+        "test": 1338,
+        "train": 4804
+      },
+      "runtime_binding_sha256": "0594cd1ac1fea869a87ba45cfb19ca91891737c14c52cc3efce8ed5d51e8cb34",
+      "scenario_id": "P100-020",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "01-08",
+            "01-09",
+            "02-03",
+            "02-07",
+            "02-11",
+            "03-12",
+            "03-13",
+            "04-02",
+            "04-04",
+            "04-06",
+            "04-08",
+            "04-09",
+            "04-15",
+            "05-03",
+            "05-17",
+            "06-07",
+            "07-08",
+            "07-15"
+          ],
+          "test": [
+            "01-04",
+            "01-11",
+            "01-12",
+            "01-13",
+            "01-15",
+            "02-13",
+            "03-05",
+            "03-07",
+            "03-10",
+            "03-15",
+            "04-00",
+            "04-07",
+            "04-11",
+            "04-16",
+            "05-01",
+            "05-02",
+            "06-01",
+            "06-04",
+            "06-06",
+            "06-17",
+            "07-02",
+            "07-05",
+            "07-09"
+          ],
+          "train": [
+            "01-00",
+            "01-01",
+            "01-02",
+            "01-03",
+            "01-05",
+            "01-06",
+            "01-07",
+            "01-10",
+            "01-14",
+            "01-16",
+            "01-17",
+            "02-00",
+            "02-01",
+            "02-02",
+            "02-04",
+            "02-05",
+            "02-06",
+            "02-08",
+            "02-09",
+            "02-10",
+            "02-12",
+            "02-14",
+            "02-15",
+            "02-16",
+            "02-17",
+            "03-00",
+            "03-01",
+            "03-02",
+            "03-03",
+            "03-04",
+            "03-06",
+            "03-08",
+            "03-09",
+            "03-11",
+            "03-14",
+            "03-16",
+            "03-17",
+            "04-01",
+            "04-03",
+            "04-05",
+            "04-12",
+            "04-13",
+            "04-14",
+            "04-17",
+            "05-00",
+            "05-04",
+            "05-05",
+            "05-06",
+            "05-07",
+            "05-08",
+            "05-10",
+            "05-11",
+            "05-12",
+            "05-13",
+            "05-14",
+            "05-15",
+            "05-16",
+            "06-00",
+            "06-02",
+            "06-03",
+            "06-05",
+            "06-08",
+            "06-09",
+            "06-10",
+            "06-11",
+            "06-15",
+            "06-16",
+            "07-00",
+            "07-01",
+            "07-04",
+            "07-06",
+            "07-07",
+            "07-10",
+            "07-16",
+            "07-17"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

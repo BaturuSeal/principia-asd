@@ -1,0 +1,69 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.4418653805022321,
+    "primary": "brier",
+    "primary_error": 0.21862448052450872,
+    "rmse": 0.4675729681285144
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.21862448052450872,
+  "by_group": [
+    {
+      "error": 0.24441765538300889,
+      "group": "group-0b95827d139695ee703b2a32",
+      "rows": 349
+    },
+    {
+      "error": 0.18898334465278266,
+      "group": "group-7e220f1f688288ccb15fd312",
+      "rows": 164
+    },
+    {
+      "error": 0.2242893731847662,
+      "group": "group-973f07eeb68ad5339919fe62",
+      "rows": 159
+    },
+    {
+      "error": 0.21680754887747716,
+      "group": "group-f92d57ee06910585315b543a",
+      "rows": 382
+    }
+  ],
+  "coverage": {
+    "eligible": 1054,
+    "fraction": 1.0,
+    "predicted": 1054
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "mean_control",
+  "rule_id": "controls-v2--P100-039--mean_control-rule-1",
+  "rule_sha256": "1b862d4add7d2c6fd89fc4ea49b1d49ca0b768d0d0fd2c82d1f52d14c3765a77",
+  "run_id": "controls-v2--P100-039--mean_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.3364179104477612",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 1054,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

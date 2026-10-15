@@ -1,0 +1,14 @@
+{
+  "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)",
+  "parameters": {
+    "p0": 83.07052668063501,
+    "p1": -2.1133765431751703,
+    "p2": 0.034732104895453114,
+    "p3": -0.14716842676212108,
+    "p4": 3.0873140716975063,
+    "p5": -0.3441231714446851
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,87 @@
+{
+  "description": "second bridge failure load Pb2",
+  "domain": "Fracture mechanics",
+  "independent_unit": "Cantilever specimen; one source wafer and manufacturing campaign",
+  "input_units": {
+    "length_um": "um",
+    "notch_depth_um": "um",
+    "notch_width_um": "um",
+    "thickness_um": "um",
+    "width_um": "um"
+  },
+  "limitations": [
+    "Predict measured second-bridge failure load conditional on reported SEM geometry; geometry may be measured post-test, so this is retrospective geometry-conditioned response, not pre-test control.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "mN",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 17,
+    "test": 23,
+    "train": 67
+  },
+  "scenario_id": "P100-054",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 25292,
+    "limit_bytes": 10000000,
+    "public_bytes": 13153
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/15581944",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/15581944",
+        "source": "scenarios/54_materials_microfracture/raw/Data for publication.zip",
+        "source_sha256": "6981c22d36dc139ee7e53aa6f12a2a16cb80a875b0a9a546250ae261765b55df"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15581944",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/54_materials_microfracture/context/source_record.json",
+        "source_sha256": "21b0b6de717efe2569368200363bec814485ee6309c7a1be23e087b9a2928f18"
+      }
+    ],
+    "historical_case": "P100-054",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/15581944",
+    "version": "15581944"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "6d1407109d7b9711dc669819e3532af5b01949a0d36418c45ec657d57aee87dd",
+        "groups": 16,
+        "rows": 17,
+        "sample_ids_sha256": "63fb9bad0bc0e788d35e2ed40ce0c5924add47fa632e811e9a2c9fa64e81542d"
+      },
+      "test": {
+        "group_ids_sha256": "ee7dc3e661e4c21715275ee16a95f026b4ec49eb681faa06f3eed1682dfd355f",
+        "groups": 22,
+        "rows": 23,
+        "sample_ids_sha256": "4f5ed92b1fb7441d5eaf09c658600bcdc2287c4b7c67a46394691185ae12d6e0"
+      },
+      "train": {
+        "group_ids_sha256": "06a8c788e293789b0436bee3a9d62187fb125a7b87e502ab7aa88f618ffb29e5",
+        "groups": 65,
+        "rows": 67,
+        "sample_ids_sha256": "51416f8e786c31f928594f08ede21913f2859b04e27ce205f92f3b4eba2fa03d"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Data set: Enhanced crack stability in micro scale fracture testing via optimized bridge notches",
+  "version": "1.0.0rc2"
+}

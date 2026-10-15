@@ -1,0 +1,14 @@
+{
+  "expression": "maximum(0, p0 + p1*log1p(length_km) + p2*log1p(1000*width_km) + p3*log1p(duration_min + 1) + p4*abs(sin(0.5235987755982988*month)) + p5*(latitude - 37.8)/10)",
+  "parameters": {
+    "p0": -1.161878524768387,
+    "p1": 1.2604453412240313,
+    "p2": 1.3409849483310519,
+    "p3": -1.1651639415667134,
+    "p4": 1.3713724316499236,
+    "p5": -2.018507296851969
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

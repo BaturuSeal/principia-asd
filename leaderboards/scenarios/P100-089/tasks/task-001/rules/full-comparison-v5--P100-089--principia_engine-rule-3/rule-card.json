@@ -1,0 +1,86 @@
+{
+  "dev_error": 0.13959651890840502,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(reward*probability/7)+p2*(lag_choice*history_mean)))",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.029618582873527727,
+    "p1": 1.0669040616472083,
+    "p2": 0.5292368232205733
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": -0.06914594591307292,
+      "child": -0.06813059915989247,
+      "description": 0.053693628050338366,
+      "has_history": 0.048774771730847585,
+      "history_mean": -0.07900545591660194,
+      "lag_choice": -0.05583852795792871,
+      "multi": -0.02281807607384936,
+      "probability": -0.12140335505672595,
+      "reward": -0.1076928241871132,
+      "trial_progress": 0.0408187721482692
+    },
+    "mean": 0.024284830348803216,
+    "p90_abs": 0.5827501853010607,
+    "std": 0.37061433447206465
+  },
+  "rule_id": "full-comparison-v5--P100-089--principia_engine-rule-3",
+  "rule_sha256": "c31e3e3c7b2169d72d3da29471ec32a9d75aced960446ca6975f22581723cc2f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.029618582873527727 + 1.0669040616472083 * (reward * probability / 7) + 0.5292368232205733 * (lag_choice * history_mean)))",
+    "expression_bytes": 79,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "literal_state_bytes": 3,
+    "nodes": 38,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 9
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.14916064278115593,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

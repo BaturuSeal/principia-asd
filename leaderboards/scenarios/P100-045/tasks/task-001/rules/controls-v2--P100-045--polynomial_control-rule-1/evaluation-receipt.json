@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 23.47025467898648,
+    "primary": "mae",
+    "primary_error": 23.47025467898648,
+    "rmse": 33.239615727453085
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 47.81561608986473,
+  "by_group": [
+    {
+      "error": 25.181690709908008,
+      "group": "group-6d2d7feaad91042c2561194e",
+      "rows": 100
+    },
+    {
+      "error": 21.758818648064945,
+      "group": "group-7b6c3d5f3df37880ee96c84a",
+      "rows": 100
+    }
+  ],
+  "coverage": {
+    "eligible": 200,
+    "fraction": 1.0,
+    "predicted": 200
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "controls-v2--P100-045--polynomial_control-rule-1",
+  "rule_sha256": "bc02115325b31d4a1072bb1383cb1fec3e4a8fe8b47d2de298ba96fd223a046b",
+  "run_id": "controls-v2--P100-045--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-84.5778456465311 + 0.44851755643984703 * low + 0.01997325498957791 * low_lag + -0.25039084278013635 * background_low + 0.13405355421785273 * background_high + -0.05934705904196725 * time_s + 15.773987431304375 * channel_low_keV + -5.033095302921069 * channel_high_keV",
+    "expression_bytes": 120,
+    "free_parameters": 8,
+    "learned_state_bytes": 214,
+    "nodes": 59,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.07387762552306847,
+    "perturbation_labels_available": false,
+    "population_rows": 200,
+    "ranking": false,
+    "samples": 200,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

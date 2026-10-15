@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.18674083438575054,
+  "execution_status": "complete",
+  "expression": "0.34064832087868335",
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "H": -0.7312068753424774,
+      "area": -0.1605617909296195,
+      "hydration": -0.1605617909296195,
+      "load": -0.22530532934540765,
+      "speed": 0.4363898459140712,
+      "viscosity": -0.6898057145041873
+    },
+    "mean": -0.10959590436213353,
+    "p90_abs": 0.40490896301102824,
+    "std": 0.24683760262230395
+  },
+  "rule_id": "controls-v2--P100-023--mean_control-rule-1",
+  "rule_sha256": "60e7ad8e83b774ff834968de92405bb7771e822719cf6fb661974bf935155ede",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.34064832087868335",
+    "expression_bytes": 19,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-023.compact.v2",
+  "train_error": 0.2044131709291977,
+  "units": {
+    "inputs": {
+      "H": "dimensionless; author Hersey calibration",
+      "area": "cm^2",
+      "hydration": "corneometer instrument units",
+      "load": "N",
+      "speed": "m/s",
+      "viscosity": "Pa s at 500 s^-1; author rheology fit"
+    },
+    "output": "1",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

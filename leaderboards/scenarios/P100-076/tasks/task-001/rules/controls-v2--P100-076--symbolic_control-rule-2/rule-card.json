@@ -1,0 +1,61 @@
+{
+  "dev_error": 0.7210967196872362,
+  "execution_status": "complete",
+  "expression": "p0+p1*(log1p(abs((kd-0.6)/0.4898979485566356)))+p2*(tanh((current-40.0)/16.1245154965971))",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.8378938215450877,
+    "p1": -2.7599110174212487,
+    "p2": 0.402768867829001
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.07633374323163893,
+      "soft": -0.510928014229622
+    },
+    "mean": 0.2595238095238095,
+    "p90_abs": 1.3292854550523552,
+    "std": 0.8332771621681296
+  },
+  "rule_id": "controls-v2--P100-076--symbolic_control-rule-2",
+  "rule_sha256": "280f908900791824d1f72293b888b12782c875205fd738c015c185eaceeb9fca",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.8378938215450877 + -2.7599110174212487 * log1p(abs((kd - 0.6) / 0.4898979485566356)) + 0.402768867829001 * tanh((current - 40.0) / 16.1245154965971)",
+    "expression_bytes": 90,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7785335927626448,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

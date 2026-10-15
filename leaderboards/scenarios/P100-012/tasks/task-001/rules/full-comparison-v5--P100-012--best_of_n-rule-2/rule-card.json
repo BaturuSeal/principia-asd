@@ -1,0 +1,70 @@
+{
+  "dev_error": 16331.091298283527,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * I0 + p2 * q + p3 * outer + p4 * I0 * q + p5 * I0 * outer + p6 * q * outer + p7 * I0 * q * outer",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 126197.10515210967,
+    "p1": -0.021720876909018156,
+    "p2": -480373.21568364976,
+    "p3": 52077.29510556432,
+    "p4": 0.09064137668711572,
+    "p5": -0.026770478723399323,
+    "p6": -194398.73982053905,
+    "p7": 0.09969917707705465
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": -0.04505669434231895,
+      "outer": 0.009718466282701154,
+      "q": -0.047166134890897174,
+      "q0": -8.748043007367467e-18
+    },
+    "mean": 599.6698245970439,
+    "p90_abs": 32533.752155297727,
+    "std": 21100.82114258372
+  },
+  "rule_id": "full-comparison-v5--P100-012--best_of_n-rule-2",
+  "rule_sha256": "1fbad08f48c26c0e5f069baf7afc449e3d3aa797c86f2b655f644bab7c3df1c1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "126197.10515210967 + -0.021720876909018156 * I0 + -480373.21568364976 * q + 52077.29510556432 * outer + 0.09064137668711572 * I0 * q + -0.026770478723399323 * I0 * outer + -194398.73982053905 * q * outer + 0.09969917707705465 * I0 * q * outer",
+    "expression_bytes": 105,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 0,
+    "nodes": 79,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 18993.93956348765,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

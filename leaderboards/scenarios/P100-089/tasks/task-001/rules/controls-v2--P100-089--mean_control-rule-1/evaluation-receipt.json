@@ -1,0 +1,109 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.49584138289473567,
+    "primary": "brier",
+    "primary_error": 0.24756319527925527,
+    "rmse": 0.4975572281449193
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.24756319527925527,
+  "by_group": [
+    {
+      "error": 0.2551028642295788,
+      "group": "group-013c228d3602222ecd84876a",
+      "rows": 540
+    },
+    {
+      "error": 0.2602137565535054,
+      "group": "group-36ab9113afaf1a272a291eb5",
+      "rows": 430
+    },
+    {
+      "error": 0.23994316069625893,
+      "group": "group-4936635db931a97bb6d209f3",
+      "rows": 539
+    },
+    {
+      "error": 0.26217233626924796,
+      "group": "group-512ca13f0617abc81d2b6658",
+      "rows": 540
+    },
+    {
+      "error": 0.24901983014893317,
+      "group": "group-6417b4407f40adeaee9213b0",
+      "rows": 430
+    },
+    {
+      "error": 0.23589591643322777,
+      "group": "group-7220376568b33ddcdcf7589c",
+      "rows": 430
+    },
+    {
+      "error": 0.23450918480967284,
+      "group": "group-91986d80daf8f1021accc9dd",
+      "rows": 540
+    },
+    {
+      "error": 0.24217802513096615,
+      "group": "group-acffd88ab9fbf6166f845234",
+      "rows": 400
+    },
+    {
+      "error": 0.23763362114954112,
+      "group": "group-b3f6f586950bd9dc9d7bb961",
+      "rows": 539
+    },
+    {
+      "error": 0.23911971005293536,
+      "group": "group-b4600adeb3ff0811d2dcd214",
+      "rows": 540
+    },
+    {
+      "error": 0.2523365490836212,
+      "group": "group-d4bd366bf1a6c1abc8421f99",
+      "rows": 540
+    },
+    {
+      "error": 0.26263338879357423,
+      "group": "group-f1df054a67de9e5df31711fb",
+      "rows": 540
+    }
+  ],
+  "coverage": {
+    "eligible": 6008,
+    "fraction": 1.0,
+    "predicted": 6008
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "mean_control",
+  "rule_id": "controls-v2--P100-089--mean_control-rule-1",
+  "rule_sha256": "17be65a1d08133c9efc667130a6771bf23a27a114cc754878dcb1bfd3b72ddce",
+  "run_id": "controls-v2--P100-089--mean_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5414947271893626",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 6008,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

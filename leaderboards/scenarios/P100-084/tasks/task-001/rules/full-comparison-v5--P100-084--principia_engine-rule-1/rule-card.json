@@ -1,0 +1,68 @@
+{
+  "dev_error": 1.550263386681233,
+  "execution_status": "complete",
+  "expression": "p0+p1*(base)+p2*(amp*exp(-abs(x)))",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.48316685116024466,
+    "p1": 0.9686217727056841,
+    "p2": -0.19330030838720688
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": -0.01602401714255975,
+      "base": -0.01602401714255975,
+      "progress": 0.033299134224445505,
+      "x": -0.019598908199673984
+    },
+    "mean": -0.09878681570972965,
+    "p90_abs": 3.907385376635062,
+    "std": 3.0879262176897315
+  },
+  "rule_id": "full-comparison-v5--P100-084--principia_engine-rule-1",
+  "rule_sha256": "c38f4ea6eade5622b12d4d106ed041ddfc290cfa6b0e5d287be4d033686cf408",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.48316685116024466 + 0.9686217727056841 * base + -0.19330030838720688 * (amp * exp(-abs(x)))",
+    "expression_bytes": 34,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "literal_state_bytes": 0,
+    "nodes": 31,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 1.6304670049093146,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.08672854176744751,
+  "execution_status": "complete",
+  "expression": "1/(1+exp(-(p0 + p1*income_proxy + p2*household_size + p3*shock + p4*age + p5*income_proxy*shock + p6*income_proxy/household_size + p7*age*shock)))",
+  "inputs": [
+    "income_proxy",
+    "household_size",
+    "shock",
+    "age"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.09713271691361672,
+    "p1": -0.018347328780868723,
+    "p2": 0.03935192815960221,
+    "p3": 1.313712010664562,
+    "p4": -0.011339014344322417,
+    "p5": -0.0070015616569019815,
+    "p6": -0.010822390200725833,
+    "p7": -0.011989302755826506
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.09002095160363933,
+      "household_size": -0.0904708178134542,
+      "income_proxy": 0.059624630641409354,
+      "shock": -0.006047069657067606
+    },
+    "mean": -0.02658943758677439,
+    "p90_abs": 0.6431947701070176,
+    "std": 0.3059996392253027
+  },
+  "rule_id": "full-comparison-v5--P100-015--direct_kimi-rule-1",
+  "rule_sha256": "2b13893a0089e469a99b39142f11a82bbe55e7d2836b5a4b3825dfd688b37688",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(-0.09713271691361672 + -0.018347328780868723 * income_proxy + 0.03935192815960221 * household_size + 1.313712010664562 * shock + -0.011339014344322417 * age + -0.0070015616569019815 * income_proxy * shock + -0.010822390200725833 * income_proxy / household_size + -0.011989302755826506 * age * shock)))",
+    "expression_bytes": 146,
+    "free_parameters": 8,
+    "learned_state_bytes": 226,
+    "literal_state_bytes": 2,
+    "nodes": 82,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "task_id": "P100-015.compact.v2",
+  "train_error": 0.08078484710249487,
+  "units": {
+    "inputs": {
+      "age": "years",
+      "household_size": "persons",
+      "income_proxy": "thousands USD/year bracket proxy",
+      "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+    },
+    "output": "binary EF3_h",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

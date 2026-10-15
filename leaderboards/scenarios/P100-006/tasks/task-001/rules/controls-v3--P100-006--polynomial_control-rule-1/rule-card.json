@@ -1,0 +1,60 @@
+{
+  "dev_error": 0.1923930971669708,
+  "execution_status": "complete",
+  "expression": "p0+p1*(detuning_MHz)+p2*(rabi_MHz)+p3*(detuning_MHz*detuning_MHz)+p4*(detuning_MHz*rabi_MHz)+p5*(rabi_MHz*rabi_MHz)",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.312786493177207,
+    "p1": -0.00015885684851079372,
+    "p2": 0.08753916589632751,
+    "p3": 1.0958503650444425e-05,
+    "p4": 0.00022764828529440884,
+    "p5": -0.010788536112724512
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.009295274344670331,
+      "rabi_MHz": -0.03940743616624825
+    },
+    "mean": -0.002558696013704556,
+    "p90_abs": 0.38982555261217205,
+    "std": 0.22567715334063895
+  },
+  "rule_id": "controls-v3--P100-006--polynomial_control-rule-1",
+  "rule_sha256": "9953ab3154ab419b9d407c380df9e726d64cb37c84e5e574e197cf4dca420e5d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.312786493177207 + -0.00015885684851079372 * detuning_MHz + 0.08753916589632751 * rabi_MHz + 1.0958503650444425e-05 * (detuning_MHz * detuning_MHz) + 0.00022764828529440884 * (detuning_MHz * rabi_MHz) + -0.010788536112724512 * (rabi_MHz * rabi_MHz)",
+    "expression_bytes": 115,
+    "free_parameters": 6,
+    "learned_state_bytes": 172,
+    "literal_state_bytes": 0,
+    "nodes": 55,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.09938902964133021,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "dev_error": 0.1703745153934494,
+  "execution_status": "complete",
+  "expression": "p0+p1*(log1p(abs((detuning_MHz-0.5192834103625016)/34.64571111436306)))+p2*(tanh((rabi_MHz-2.859368176327778)/1.6170877212865005))+p3*(rabi_MHz)+p4*((rabi_MHz)**2)+p5*((detuning_MHz)**2)",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.1017937815172978,
+    "p1": 0.5039033754383252,
+    "p2": -0.04519863195867005,
+    "p3": 0.11374177706675877,
+    "p4": -0.012087061388165468,
+    "p5": -0.0001117820695378633
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.22003124366467006,
+      "rabi_MHz": -0.008487201726222771
+    },
+    "mean": -0.002410812548657481,
+    "p90_abs": 0.32385480680961454,
+    "std": 0.20009255985379037
+  },
+  "rule_id": "controls-v2--P100-006--symbolic_control-rule-2",
+  "rule_sha256": "7a70ddfae2146101c404ff7b7a82f0bcde72509254be8dbd9ee3937d002215b4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.1017937815172978 + 0.5039033754383252 * log1p(abs((detuning_MHz - 0.5192834103625016) / 34.64571111436306)) + -0.04519863195867005 * tanh((rabi_MHz - 2.859368176327778) / 1.6170877212865005) + 0.11374177706675877 * rabi_MHz + -0.012087061388165468 * rabi_MHz ** 2 + -0.0001117820695378633 * detuning_MHz ** 2",
+    "expression_bytes": 186,
+    "free_parameters": 6,
+    "learned_state_bytes": 166,
+    "nodes": 70,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.09783228979715046,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

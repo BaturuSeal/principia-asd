@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.130107596682584,
+    "primary": "mae",
+    "primary_error": 1.130107596682584,
+    "rmse": 1.3161440243334068
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 13.908091790069633,
+  "by_group": [
+    {
+      "error": 0.8304681969713532,
+      "group": "group-4e35dcda9a447a6811081934",
+      "rows": 120
+    },
+    {
+      "error": 1.429746996393815,
+      "group": "group-b70cac56b3a53ee7c0a3a849",
+      "rows": 113
+    }
+  ],
+  "coverage": {
+    "eligible": 233,
+    "fraction": 1.0,
+    "predicted": 233
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-026--best_of_n-rule-1",
+  "rule_sha256": "12702f571ebf1c492629c9185265f05c463b3ca4b808f3ee3b6bf44def4db0eb",
+  "run_id": "full-comparison-v5--P100-026--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.31755453631977815 + 0.004478154743039109 * elapsed_min + 0.9899046066272351 * anchor_selectivity_pct + 45.26794515789579 * prefix_slope_pct_min + 0.07942405953389634 * ag_wt_pct + -2.5594870484484986e-05 * elapsed_min * anchor_selectivity_pct + 0.26030406195955674 * elapsed_min * prefix_slope_pct_min + -0.00010069023948691711 * elapsed_min * ag_wt_pct",
+    "expression_bytes": 213,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.5382818403420354,
+    "perturbation_labels_available": false,
+    "population_rows": 233,
+    "ranking": false,
+    "samples": 233,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

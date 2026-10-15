@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.0005281612034378211,
+  "execution_status": "complete",
+  "expression": "p0+p1*(u120*pulse_s)+p2*(u120)+p3*(u60*pulse_s)+p4*(u60)+p5*(t120*u120)",
+  "inputs": [
+    "t",
+    "t60",
+    "t120",
+    "u60",
+    "u120",
+    "u10",
+    "pulse_s",
+    "current"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.00012034046127108607,
+    "p1": 66.00662395190928,
+    "p2": -9758.171277793006,
+    "p3": -65.87470939281836,
+    "p4": 9880.013331211963,
+    "p5": -1.278446089061732
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.03411155629009349,
+      "pulse_s": 0.17681376651969904,
+      "t": -0.04710611299131134,
+      "t120": 0.011147653334554496,
+      "t60": -0.018978986519010522,
+      "u10": 0.13851378467316472,
+      "u120": 0.1365266841928684,
+      "u60": 0.13727089759802732
+    },
+    "mean": 8.637305431472447e-05,
+    "p90_abs": 0.0010070590889043856,
+    "std": 0.00069527561144276
+  },
+  "rule_id": "controls-v3--P100-049--symbolic_control-rule-1",
+  "rule_sha256": "801de64ce325dc1176e601622eae7646824eb1aa6ffbd731a6b3361ae2e9f52b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.00012034046127108607 + 66.00662395190928 * (u120 * pulse_s) + -9758.171277793006 * u120 + -65.87470939281836 * (u60 * pulse_s) + 9880.013331211963 * u60 + -1.278446089061732 * (t120 * u120)",
+    "expression_bytes": 71,
+    "free_parameters": 6,
+    "learned_state_bytes": 159,
+    "literal_state_bytes": 0,
+    "nodes": 55,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-049.compact.v2",
+  "train_error": 0.0006454494103416827,
+  "units": {
+    "inputs": {
+      "current": "A",
+      "pulse_s": "s",
+      "t": "s",
+      "t120": "s",
+      "t60": "s",
+      "u10": "V",
+      "u120": "V",
+      "u60": "V"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

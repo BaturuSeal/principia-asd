@@ -1,0 +1,74 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 10.40294730316524,
+    "primary": "log_mae",
+    "primary_error": 2.0671726242428266,
+    "rmse": 21.992694046386653
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 3.1050585623183578,
+  "by_group": [
+    {
+      "error": 1.885423326554607,
+      "group": "group-031a845daa743222fe1334ab",
+      "rows": 3
+    },
+    {
+      "error": 1.9270877203007457,
+      "group": "group-394e53c1befe4fb5f9520837",
+      "rows": 3
+    },
+    {
+      "error": 2.3852999329696085,
+      "group": "group-806602dcacbfc28d265ffab1",
+      "rows": 3
+    },
+    {
+      "error": 1.7730289153324827,
+      "group": "group-bb6632c6ca018948aeed4ace",
+      "rows": 26
+    },
+    {
+      "error": 2.3650232260566906,
+      "group": "group-d3d460c2a9a133cb2bc21638",
+      "rows": 2
+    }
+  ],
+  "coverage": {
+    "eligible": 37,
+    "fraction": 1.0,
+    "predicted": 37
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-031--symbolic_control-rule-3",
+  "rule_sha256": "bb75d4b1d2cbfca312fe5f72c9a4c6694ae44cc14c75918125a0aff0cb3c0e1c",
+  "run_id": "controls-v2--P100-031--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.5159283761712317 + 0.07190829300705186 * (pilot_depth * is_bqskit)",
+    "expression_bytes": 29,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "nodes": 15,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.24807782726551403,
+    "perturbation_labels_available": false,
+    "population_rows": 37,
+    "ranking": false,
+    "samples": 37,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

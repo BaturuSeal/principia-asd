@@ -1,0 +1,60 @@
+{
+  "dev_error": 194.3979774725284,
+  "execution_status": "complete",
+  "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -413.8873380024568,
+    "p1": 1459.137080020031,
+    "p2": 266.7138697190242,
+    "p3": 105.5311688455716
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": 0.01528951467183367,
+      "voltage_V": -0.07423543426815994
+    },
+    "mean": -23.043046708731307,
+    "p90_abs": 394.8073838071554,
+    "std": 235.8136986488023
+  },
+  "rule_id": "full-comparison-v5--P100-022--best_of_n-rule-2",
+  "rule_sha256": "01d1d9f62b368a769b90e8ca50f043eb5bdf3577141514259a46c1458555c15a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-413.8873380024568 + 1459.137080020031 * voltage_V + 266.7138697190242 * bromine_rich + 105.5311688455716 * voltage_V * bromine_rich",
+    "expression_bytes": 63,
+    "free_parameters": 4,
+    "learned_state_bytes": 101,
+    "literal_state_bytes": 0,
+    "nodes": 31,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 203.64923798935638,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

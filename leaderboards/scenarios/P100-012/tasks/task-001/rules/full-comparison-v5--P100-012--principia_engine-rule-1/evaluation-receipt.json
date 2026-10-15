@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 10139.025375669402,
+    "primary": "mae",
+    "primary_error": 10139.025375669402,
+    "rmse": 14143.58262450535
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 23255.824680341728,
+  "by_group": [
+    {
+      "error": 9225.18755453915,
+      "group": "group-7a1f1b604ba0642d89f62acc",
+      "rows": 430
+    },
+    {
+      "error": 8829.519429280988,
+      "group": "group-999276b104705b2c5ec6f11a",
+      "rows": 172
+    },
+    {
+      "error": 12362.369143188065,
+      "group": "group-de819024b53df83268ad9144",
+      "rows": 172
+    }
+  ],
+  "coverage": {
+    "eligible": 774,
+    "fraction": 1.0,
+    "predicted": 774
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-012--principia_engine-rule-1",
+  "rule_sha256": "51f77b6a7866726bcec9400fb7a7e8cde4fe703563fb28fa4c5b2ced168959a2",
+  "run_id": "full-comparison-v5--P100-012--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-61317.13814083102 + -11745367.450505298 * (q0 / q) ** 4 + 1048740.875149602 * (log1p(I0) * (q0 / q) ** 4) + -2.559906101429216 * (I0 * (q0 / q) ** 4) + 0.6443116644713631 * (I0 * (q0 / q) ** 2) + 0.0031790190256812 * (outer * I0 * (q0 / q) ** 4) + 90840.4270792243 * tanh((q - 0.22062855995994404) / 0.0706543746807153) + -0.12774112590519393 * (q * I0)",
+    "expression_bytes": 166,
+    "free_parameters": 8,
+    "learned_state_bytes": 208,
+    "literal_state_bytes": 42,
+    "nodes": 130,
+    "numeric_literal_count": 7,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 36
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0382881714064051,
+    "perturbation_labels_available": false,
+    "population_rows": 774,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

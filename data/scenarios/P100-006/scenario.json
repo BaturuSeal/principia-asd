@@ -1,0 +1,182 @@
+{
+  "description": "Ion-readout amplitude",
+  "domain": "atomic physics",
+  "independent_unit": "Entire contiguous probe-Rabi blocks; one vapor cell. No independent atomic-cell replication.",
+  "input_units": {
+    "detuning_MHz": "MHz",
+    "rabi_MHz": "MHz"
+  },
+  "limitations": [
+    "Eight contiguous 30-condition Rabi blocks were used for leave-block-out development; blocks 06 and 09 were reserved. Frequencies and nearby Rabi coordinates are dependent. The task covers only the fixed ±60 MHz spectral neighborhood on one cesium cell.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "arbitrary units",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 4800,
+    "test": 4800,
+    "train": 14400
+  },
+  "scenario_id": "P100-006",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 3105990,
+    "limit_bytes": 10000000,
+    "public_bytes": 618068
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/context/mds2-3951_nerdm.json",
+        "source_sha256": "861c7adee1fa7a8081854b6c17e8a38e1d91f662609ebcdba3fd09c61a89e377"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/3951_README.txt",
+        "source_sha256": "5b9ef6b21f27c52dfb61921ff0246a410f441b238ff88e326a53079d8ca2ea68"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG1c_ExampleSpectraEIT_AT_Ion.csv",
+        "source_sha256": "8c0c74359a57ef77a94143473a40a6fc3b894af65d46352c422ee9932152ee82"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG2a_EITSpectra_with_CouplingRabiFrequency.csv",
+        "source_sha256": "1bcd9985cdd180780fd335f717ed23d201ccd038a9e8f474f4a91f3459dbad02"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG2b_EITSpectra_with_ProbeRabiFrequency.csv",
+        "source_sha256": "6dc0d63de4c627b013560753a5e47591576e88655677633cad7a914b001a0f62"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG3a_IonSpectra_with_CouplingRabiFrequency.csv",
+        "source_sha256": "ada0718afdefd4a056c70ba7c7bd150e3c5db5f45f0fc42f3a80bc7c115abdf4"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG3b_IonSpectra_with_ProbeRabiFrequency.csv",
+        "source_sha256": "284dbd4ac1f2e42ba10a24a7d8a74107ab6bdba34e1fa55fe82976c8dad322ff"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG4a_EIT_ION_WidthandAmplitude_with_CouplingRabiFrequency.csv",
+        "source_sha256": "10a39ce31e8aeae652eff09e564e46b2fd8928eb1f3dd7544140499646875d79"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG4b_EIT_ION_WidthandAmplitude_with_ProbeRabiFrequency.csv",
+        "source_sha256": "8ad0582b1f2ea1486f4beb7defdfdfa14bb6986aa704ed0bde004a299d624318"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG5a_Measured_Efield_vs_AppliedSignalRFPower_for_EIT_ION.csv",
+        "source_sha256": "c0dff10f6bf391fe26d127acaaf94d6e6c1e088fb0498637229a1e8917f0186a"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG5b_BeatnoteAmp_vs_AppliedSignalRFPower_EIT.csv",
+        "source_sha256": "3d5cda40414d08315b63181cac5bf7dad62b09ba7a6b6078e5ac767253c33fde"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG5c_BeatnoteAmp_vs_AppliedSignalRFPower_Ion.csv",
+        "source_sha256": "0b8aa167f1301e88bd9cfeb436cc298cb8a3266332d67ee28a4bc3c5fd0d4a84"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG5d_NoiseSpectra_EIT.csv",
+        "source_sha256": "e5cc994806955c309d864bc20a989af3c0db06389b3d20f2e745ff86e2434ba0"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG5e_NoiseSpectra_Ion.csv",
+        "source_sha256": "56240d66cc249021989cd6b40196ab6a0532c4db94737f03050ec12440d66b04"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG6a_Sensitivity_with_CouplingRabiFrequency.csv",
+        "source_sha256": "53635eb37588da11a55009d069c61e3fe19d17304bd797f28dee9022c6fa197f"
+      },
+      {
+        "citation_url": "https://data.nist.gov/od/id/mds2-3951",
+        "license": "NIST public data license",
+        "rights_url": "https://data.nist.gov/od/id/mds2-3951",
+        "source": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG6b_Sensitivity_with_ProbeRabiFrequency.csv",
+        "source_sha256": "5253038ae29277950b56c10a5f96b3a6790f594bc7c98af8b9cafe47634da3b4"
+      }
+    ],
+    "historical_case": "P100-006",
+    "license": "NIST public data license",
+    "url": "https://data.nist.gov/od/id/mds2-3951",
+    "version": "1.0.3"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "6af804babde8290e071d5ed29cb5aed3cb9385f3daf7cee711d3d3a42add197d",
+        "groups": 2,
+        "rows": 4800,
+        "sample_ids_sha256": "383189da2b065f3359458af5e82bec0d27aacdf899d23e1553605b5160388a08"
+      },
+      "test": {
+        "group_ids_sha256": "3d794841f2d06e5e6debf671d6eb006d0c34836cd523831b52682f22394091ec",
+        "groups": 2,
+        "rows": 4800,
+        "sample_ids_sha256": "abfff455cb753789c065f1b58b3b6ed12df24a9107a7ff22d4e8324ebc15faa5"
+      },
+      "train": {
+        "group_ids_sha256": "276507227b8c170f9ae5e9a610088391d2d8f963ca08f47d2625c49466c725d9",
+        "groups": 6,
+        "rows": 14400,
+        "sample_ids_sha256": "b0c4c4eb933bd83a8b894b67e279c20e80ba7ccb3fe9a38bb0ee8e007d1bd91a"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "NIST Rydberg atom RF sensing: ionization-current versus optical readout",
+  "version": "1.0.0rc2"
+}

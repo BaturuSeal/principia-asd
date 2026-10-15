@@ -1,0 +1,60 @@
+{
+  "dev_error": 0.19046354972680046,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * (sin(p2 * rabi_MHz)**2) / (1.0 + (detuning_MHz / p3)**2)",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.48858966544946153,
+    "p1": -0.1372829788145819,
+    "p2": 0.8008140210068165,
+    "p3": 15.262791782813297
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.1814165396273225,
+      "rabi_MHz": 0.04624680911326518
+    },
+    "mean": -0.005290058282519396,
+    "p90_abs": 0.3719350697840483,
+    "std": 0.21909712021880165
+  },
+  "rule_id": "full-comparison-v5--P100-006--direct_glm-rule-1",
+  "rule_sha256": "8b56df62b07f8ca6250f7f59ea190c0bde3af81c526e259a2a8529581fcc089b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.48858966544946153 + -0.1372829788145819 * sin(0.8008140210068165 * rabi_MHz) ** 2 / (1.0 + (detuning_MHz / 15.262791782813297) ** 2)",
+    "expression_bytes": 66,
+    "free_parameters": 4,
+    "learned_state_bytes": 106,
+    "literal_state_bytes": 5,
+    "nodes": 35,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.11379463083040575,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

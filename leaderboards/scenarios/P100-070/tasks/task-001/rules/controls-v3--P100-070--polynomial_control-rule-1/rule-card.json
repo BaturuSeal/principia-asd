@@ -1,0 +1,85 @@
+{
+  "dev_error": 2.5661099923758087e-06,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hx)+p2*(hy)+p3*(ox)+p4*(oy)+p5*(dg)+p6*(gx)+p7*(gy)+p8*(lo)+p9*(hi)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 6.913096274749683e-07,
+    "p1": 0.5778430253094696,
+    "p2": 0.7136455018496605,
+    "p3": -0.02431610262168515,
+    "p4": -0.1962326888437273,
+    "p5": 0.2689002512826177,
+    "p6": -4.7489046016873014e-07,
+    "p7": -5.151147776055369e-08,
+    "p8": -0.11409392871217638,
+    "p9": -0.14601125829651865
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.013408757056646436,
+      "gx": -0.05735206440302309,
+      "gy": 0.01366559768506614,
+      "hi": -0.1223346680845991,
+      "hx": 0.01485240705758325,
+      "hy": -0.0034078525310927443,
+      "lo": 0.05745817547328066,
+      "ox": -0.05661243107968959,
+      "oy": -0.05564152020435633
+    },
+    "mean": -1.0768783792671451e-07,
+    "p90_abs": 5.631356578367562e-06,
+    "std": 7.137891962067645e-06
+  },
+  "rule_id": "controls-v3--P100-070--polynomial_control-rule-1",
+  "rule_sha256": "1fd44bcec6c6ab1307988cc6e1dd877fbcaa641a66b312f5419c8ebf6133bc9f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "6.913096274749683e-07 + 0.5778430253094696 * hx + 0.7136455018496605 * hy + -0.02431610262168515 * ox + -0.1962326888437273 * oy + 0.2689002512826177 * dg + -4.7489046016873014e-07 * gx + -5.151147776055369e-08 * gy + -0.11409392871217638 * lo + -0.14601125829651865 * hi",
+    "expression_bytes": 74,
+    "free_parameters": 10,
+    "learned_state_bytes": 279,
+    "literal_state_bytes": 0,
+    "nodes": 75,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 18
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 3.31034167918646e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

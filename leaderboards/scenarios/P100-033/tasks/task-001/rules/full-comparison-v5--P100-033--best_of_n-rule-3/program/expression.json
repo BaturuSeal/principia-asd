@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1 * (fft_bpm + acf_bpm) / 2 + p2 * (half_bpm - (fft_bpm + acf_bpm) / 2) + p3 * half_strength + p4 * spectral_quality + p5 * agreement + p6 * motion + p7 * ear",
+  "parameters": {
+    "p0": 83.99070174522882,
+    "p1": -0.042750674821773,
+    "p2": -0.11053706196682456,
+    "p3": -1.905837985927702,
+    "p4": -3.113375346259061,
+    "p5": -0.0290537093538381,
+    "p6": 2.2634184620456708,
+    "p7": -2.0732524115351625
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

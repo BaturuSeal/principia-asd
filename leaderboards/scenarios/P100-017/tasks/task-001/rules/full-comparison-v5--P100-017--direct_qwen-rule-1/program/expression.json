@@ -1,0 +1,14 @@
+{
+  "expression": "p0 * rms_s + p1 * (gap_deg / 360.0) + p2 * (1.0 / (stations + 1.0)) + p3 * (1.0 / (phases + 1.0)) + p4 * (dmin_km / 5000.0) + p5 * (depth_km / 700.0)",
+  "parameters": {
+    "p0": 1.4241741352345803,
+    "p1": 1.7325336959332027,
+    "p2": -8.271278314431513,
+    "p3": 24.99850824378587,
+    "p4": 0.11060866949136697,
+    "p5": 14.095790406641742
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

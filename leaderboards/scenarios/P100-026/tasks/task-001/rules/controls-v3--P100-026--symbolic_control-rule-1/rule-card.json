@@ -1,0 +1,67 @@
+{
+  "dev_error": 4.893740356131565,
+  "execution_status": "complete",
+  "expression": "p0+p1*(anchor_selectivity_pct*ag_wt_pct)+p2*(tanh((anchor_selectivity_pct-52.39578511669138)/11.10643976277952))+p3*(elapsed_min*anchor_selectivity_pct)+p4*(anchor_selectivity_pct)+p5*(log1p(abs((anchor_selectivity_pct-52.39578511669138)/11.10643976277952)))+p6*((anchor_selectivity_pct)**2)+p7*(anchor_selectivity_pct*prefix_slope_pct_min)",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.7310217019335248,
+    "p1": -0.00010567337594612437,
+    "p2": -3.889640784145585,
+    "p3": 0.00011913802559583793,
+    "p4": 0.66582548585217,
+    "p5": 0.15760516527893798,
+    "p6": 0.005106488015488571,
+    "p7": 3.618509025473919
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": 0.720112487658686,
+      "elapsed_min": -0.5738904870494419,
+      "prefix_slope_pct_min": -0.7201124876586857
+    },
+    "mean": -3.2662940498715374,
+    "p90_abs": 11.678487360405688,
+    "std": 5.716436046441146
+  },
+  "rule_id": "controls-v3--P100-026--symbolic_control-rule-1",
+  "rule_sha256": "54dd23f37e8f8948f745dec362235804a01deabf64b9d4a4d02413c9cc896448",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.7310217019335248 + -0.00010567337594612437 * (anchor_selectivity_pct * ag_wt_pct) + -3.889640784145585 * tanh((anchor_selectivity_pct - 52.39578511669138) / 11.10643976277952) + 0.00011913802559583793 * (elapsed_min * anchor_selectivity_pct) + 0.66582548585217 * anchor_selectivity_pct + 0.15760516527893798 * log1p(abs((anchor_selectivity_pct - 52.39578511669138) / 11.10643976277952)) + 0.005106488015488571 * anchor_selectivity_pct ** 2 + 3.618509025473919 * (anchor_selectivity_pct * prefix_slope_pct_min)",
+    "expression_bytes": 340,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 69,
+    "nodes": 95,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 27
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 1.6463710240514917,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

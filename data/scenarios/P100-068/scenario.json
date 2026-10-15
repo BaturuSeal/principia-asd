@@ -1,0 +1,103 @@
+{
+  "description": "raw LDV voltage5ms ahead",
+  "domain": "Nonlinear dynamics",
+  "independent_unit": "Complete acquisitiontrace, with raw/denoised pair linked; sixmetadata-hashselectedtracesconfirm. Alltraces shareone levitator/object setup.",
+  "input_units": {
+    "offset": "V; first20samplemean",
+    "t": "s; storedtimestamp",
+    "y0": "V; currentrawminusinitialoffset",
+    "y1": "V;5mslagminusoffset",
+    "y2": "V;10mslagminusoffset",
+    "y3": "V;15mslagminusoffset"
+  },
+  "limitations": [
+    "Predict raw voltage5ms ahead using up to15ms of causal delay samples and a fixed initial20sampleoffset. Issue every5ms after50ms; no future filtering.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "scientific_arrays_or_events",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "V",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 445,
+    "test": 534,
+    "train": 1880
+  },
+  "scenario_id": "P100-068",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 607521,
+    "limit_bytes": 10000000,
+    "public_bytes": 100850
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/16033764",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16033764",
+        "source": "scenarios/68_physics_acoustic_levitation/raw/MATLAB Code PSD AND TIME SERIES DATA.txt",
+        "source_sha256": "898e7d3a30d0046d96c8f8892a0ff3c4c2cb46e5a5faa53392d7e4c877b3502c"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16033764",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16033764",
+        "source": "scenarios/68_physics_acoustic_levitation/raw/MATLAB Code SINDy.txt",
+        "source_sha256": "4950ffb628cc9b30dd13a9219938db22d0295159efeae6caae9659b452abb82e"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16033764",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16033764",
+        "source": "scenarios/68_physics_acoustic_levitation/raw/Data.rar",
+        "source_sha256": "38f849ce6973bf140cf3975c2826e71607df346935419fde36ab668c7c66cbe1"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16033764",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/68_physics_acoustic_levitation/context/source_record.json",
+        "source_sha256": "a24dee7058d93c244833f7ae26a2763d06540cdf810fc4a0193df7c96262c775"
+      }
+    ],
+    "historical_case": "P100-068",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/16033764",
+    "version": "16033764"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "634670273924a5072bdc60e3b9d683712bf28121459f3339a48485cb33e7bd61",
+        "groups": 5,
+        "rows": 445,
+        "sample_ids_sha256": "dbd1c041f91017e028ba19209d2f9f8745b1c676c40ef12cffb1b02ec7136bd9"
+      },
+      "test": {
+        "group_ids_sha256": "5144c073f7117fad4cb0c4ccd2517840553b24a8d768f284b3283f7c196f77d8",
+        "groups": 6,
+        "rows": 534,
+        "sample_ids_sha256": "35a8ff385770e0aa265cfb93cebe4a96844bc02eec46aa7c87159410fd74d443"
+      },
+      "train": {
+        "group_ids_sha256": "07d10d265e0e037148f5d9abce1f0e54ef4500dbfda46b4435d23c3ee6bc477e",
+        "groups": 20,
+        "rows": 1880,
+        "sample_ids_sha256": "e8a9807aae4cb612a86d9c1d0e7afda4de6f9c70d5bd3da567b27cf1928238db"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Sparse identification of nonlinear dynamics applied to the levitation of acoustically large objects",
+  "version": "1.0.0rc2"
+}

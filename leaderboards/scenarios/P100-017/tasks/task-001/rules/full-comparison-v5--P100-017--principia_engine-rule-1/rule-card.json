@@ -1,0 +1,75 @@
+{
+  "dev_error": 0.3954234928673534,
+  "execution_status": "complete",
+  "expression": "p0+p1*tanh((depth_km-68.00584003311745)/126.79665427654581)+p2*(depth_km*gap_deg)+p3*(depth_km)",
+  "inputs": [
+    "depth_km",
+    "rms_s",
+    "phases",
+    "stations",
+    "gap_deg",
+    "dmin_km"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.47780473097646,
+    "p1": 4.139159246840648,
+    "p2": 0.00021903726359140394,
+    "p3": -0.015653907915419714
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "depth_km": 0.1180862410134294,
+      "dmin_km": 0.12197462785408707,
+      "gap_deg": -0.19094247097199019,
+      "phases": 0.09138479921646792,
+      "rms_s": 0.09704958230619702,
+      "stations": 0.10844753396890405
+    },
+    "mean": -1.8501946417756256,
+    "p90_abs": 7.320094893162566,
+    "std": 4.6615791844698355
+  },
+  "rule_id": "full-comparison-v5--P100-017--principia_engine-rule-1",
+  "rule_sha256": "a414a4812468609e52ad3b7a624108e59b734d528b81b711e96aca768adb8235",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.47780473097646 + 4.139159246840648 * tanh((depth_km - 68.00584003311745) / 126.79665427654581) + 0.00021903726359140394 * (depth_km * gap_deg) + -0.015653907915419714 * depth_km",
+    "expression_bytes": 95,
+    "free_parameters": 4,
+    "learned_state_bytes": 108,
+    "literal_state_bytes": 35,
+    "nodes": 40,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-017.compact.v2",
+  "train_error": 0.3374866975788901,
+  "units": {
+    "inputs": {
+      "depth_km": "km below network reference (may negative)",
+      "dmin_km": "minimum angular station distance*111.195km/degree",
+      "gap_deg": "largest azimuthal gap degrees",
+      "phases": "used phase count",
+      "rms_s": "seconds phase residual standardError",
+      "stations": "used station count"
+    },
+    "output": "km",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.17612678566952658,
+  "execution_status": "complete",
+  "expression": "p0 + p1*ratio + p2*water + p3*age_min + p4*time_s + p5*ratio*water + p6*ratio*age_min + p7*water*time_s",
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.5182617654109194,
+    "p1": -0.3079483356179832,
+    "p2": -0.7294326377829353,
+    "p3": 0.008848164894568052,
+    "p4": 0.0012887407495930506,
+    "p5": 0.8737974871873488,
+    "p6": -0.0017408096938993198,
+    "p7": -0.003556049672836791
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_min": -0.19004567144148687,
+      "ratio": 0.8101037351406309,
+      "time_s": -0.1551258036796435,
+      "water": 0.8101037351406308
+    },
+    "mean": -0.04878625755641541,
+    "p90_abs": 0.3292890550389206,
+    "std": 0.20939687112754024
+  },
+  "rule_id": "full-comparison-v5--P100-055--feedback_refinement-rule-1",
+  "rule_sha256": "129ff44962bb818ddfcb05687fae8c63c898612ee8e098e176e705f4003faa66",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5182617654109194 + -0.3079483356179832 * ratio + -0.7294326377829353 * water + 0.008848164894568052 * age_min + 0.0012887407495930506 * time_s + 0.8737974871873488 * ratio * water + -0.0017408096938993198 * ratio * age_min + -0.003556049672836791 * water * time_s",
+    "expression_bytes": 103,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-055.compact.v2",
+  "train_error": 0.044998725964293926,
+  "units": {
+    "inputs": {
+      "age_min": "min since mixing; 0 or 30",
+      "ratio": "mix-design ratio encoded in author mixture label",
+      "time_s": "native penetration clock index; unit unspecified",
+      "water": "water ratio encoded in author mixture label"
+    },
+    "output": "N",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

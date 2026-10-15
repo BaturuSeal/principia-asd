@@ -1,0 +1,214 @@
+{
+  "assigned": 8,
+  "attempt_cap_cny": 12,
+  "campaign_id": "explicit-state-data-to-paper-pilot-v1",
+  "capabilities_sha256": "b17c83feb3c8cd4834cc7e9bdaaa6fbd8b0196dc00d96ca3fbd46ad768b34bf5",
+  "created_at": "2026-10-13T22:23:17.747154+00:00",
+  "fixed_nomination_slots": 24,
+  "frozen_before_dispatch": true,
+  "global_cap_cny": 3000,
+  "global_capabilities_sha256": "b17c83feb3c8cd4834cc7e9bdaaa6fbd8b0196dc00d96ca3fbd46ad768b34bf5",
+  "inputs": {
+    "data/scenarios/P100-002/public/dev.csv.gz": "d2e956fd5135addcd15b6bb834fe8b8cee3595ae79a6fc09b000d7897345761b",
+    "data/scenarios/P100-002/public/train.csv.gz": "0e69bb209255f2315b60eddba993cf72343a40fd33c41bbd424f4e50f4a3630c",
+    "data/scenarios/P100-002/task-contracts/task-001.json": "a3f315506c6df62708f7a2b7611d66bdbc5352c5b2fce77bf07548f126c0ec9f",
+    "data/scenarios/P100-017/public/dev.csv.gz": "ddaf9078b16000828cf51133ed238cde956147d74c71619bd7baaa90cf753b64",
+    "data/scenarios/P100-017/public/train.csv.gz": "5810ca98f050a1137ed16976e8dad5641861d7404beda941ac7418e11b157a3b",
+    "data/scenarios/P100-017/task-contracts/task-001.json": "302a6259bad23bdcc7ce1fc7ddf3c2d23fb608c7974c6fe91b328aed47c26537",
+    "data/scenarios/P100-043/public/dev.csv.gz": "6a28ad78ccb4fe3a27e39356376828524f5df7bddcd1a42eddd0ccfcbd925484",
+    "data/scenarios/P100-043/public/train.csv.gz": "5de2c2ff64ff12764572f6a295b8ff3d80f06cb92c62a211a80b0bf38b9bd764",
+    "data/scenarios/P100-043/task-contracts/task-001.json": "d2059f7340928444372321d93af0617cdbb491d1d8b10f6460efa01588f26dab",
+    "data/scenarios/P100-051/public/dev.csv.gz": "9a0c2065d0c5d7429a4698334ce9c2cebe8da57e2e33b22e15b7558da4edfc3f",
+    "data/scenarios/P100-051/public/train.csv.gz": "9712dc6b341acfd3a68487f33d449d70260164c03616532f0b3110465a2e8239",
+    "data/scenarios/P100-051/task-contracts/task-001.json": "9e6ef4015bc1d92b9f102256042d0ed44d8037eab04e155c3a7cd1fe227ebb73",
+    "data/scenarios/P100-054/public/dev.csv.gz": "a2fa4e42ba79ee264405f54526930918f4dda680b5afdb6b3192bcf03300799b",
+    "data/scenarios/P100-054/public/train.csv.gz": "8edeaa29cd95b165708d4e9b33b497aed457ab27f770c8fc93cc12b3c2430709",
+    "data/scenarios/P100-054/task-contracts/task-001.json": "9360e20e67975eefcc1bcfa6835ca57ce718fe698850a5c570ef044346020596",
+    "data/scenarios/P100-068/public/dev.csv.gz": "a47b46665be75ea0d94d3d4a5162fb6a816ca139e3c54c565d62651fdfc23d7f",
+    "data/scenarios/P100-068/public/train.csv.gz": "74df15d382afdd167adda204608a03ae1a315468b4d6a743cadbd8633f1b768c",
+    "data/scenarios/P100-068/task-contracts/task-001.json": "cd78259dbbfe61dfc1a6b662538ca2539e54fd8a641f26cb2a5a9c8a000f2551",
+    "data/scenarios/P100-087/public/dev.csv.gz": "cfbf481eb003b4c70306d01509517ec2794ee5f9317c1df32dd71f3be4755282",
+    "data/scenarios/P100-087/public/train.csv.gz": "60ecf50065478290fe67d727a5564c1a334314a309d77977c166193a31405c22",
+    "data/scenarios/P100-087/task-contracts/task-001.json": "aaceda258df8195c12fabc01ef26f6bc691fa0d8181597e8d572a8f876546db3",
+    "data/scenarios/P100-090/public/dev.csv.gz": "42e63df14721241c86141e3bf07af79c5f8decda64d2eddb5dad62551c72341e",
+    "data/scenarios/P100-090/public/train.csv.gz": "dc4714dc274d2360fbbdab3ed3fec3f6d75b1f5c5d9bfb1444cfa0ee719d08bb",
+    "data/scenarios/P100-090/task-contracts/task-001.json": "4302a8f993d66700590481404825d889c43b639ca6affd459d0e260c3f98b69d"
+  },
+  "jobs": [
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 10,
+      "nomination_slots": 3,
+      "run_id": null,
+      "scenario_id": "P100-002",
+      "supported": false,
+      "task_id": "P100-002.compact.v2"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 6,
+      "launch_sha256": "2ee7bf8ff2cbabb9d5ea131936af19d9b53012d231e669f08d875a7ad0ac4a59",
+      "nomination_slots": 3,
+      "request_sha256": "ba5e5460dde09bb25b3004aa216ff715c7bdf68bd59e6351cf92658f9d4df261",
+      "run_id": "paper-4331c5a815e04f59",
+      "scenario_id": "P100-017",
+      "supported": true,
+      "task_id": "P100-017.compact.v2",
+      "ui_sha256": "e7606633391b3296081e66d4c4f2044fa201d389e24bd99657e55c9d1de220e5"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 8,
+      "launch_sha256": "a24368b5fcf54a49acb04b1164418ccb164125edcbe307890d85cf7ff82f9241",
+      "nomination_slots": 3,
+      "request_sha256": "782e0c6f8b19bb5f98f85748e4075ed4f2de71f806ed65cd17104087477674d3",
+      "run_id": "paper-2a81c4f8fadf45ab",
+      "scenario_id": "P100-043",
+      "supported": true,
+      "task_id": "P100-043.compact.v2",
+      "ui_sha256": "5442aef6a0e9d200ec4153c86d83971fe18af3ae65ef97affca1072256bf6c67"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 4,
+      "launch_sha256": "918ecbbde3e6511fd2952cabf6ba13b135a26447b71130eee2627f95743f52bd",
+      "nomination_slots": 3,
+      "request_sha256": "a87c3426f0e6c586a8594413b3e03bf2060c9a305fef9a51b6ed4cea599bc92a",
+      "run_id": "paper-82dac6bb0f474a88",
+      "scenario_id": "P100-051",
+      "supported": true,
+      "task_id": "P100-051.compact.v2",
+      "ui_sha256": "31ff190c38a437a0163fb66bd2b80f2a6a86b86e867ce4071c6ad4888ef0ca0c"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 5,
+      "launch_sha256": "27838717a01edfcacc54e4f38f23853ad0bd93de0eef822b2c7394a540dae270",
+      "nomination_slots": 3,
+      "request_sha256": "e967021dbfec2205486a04219a12c531d767134d08980740ed455ffc24212271",
+      "run_id": "paper-844b44317b8e41e7",
+      "scenario_id": "P100-054",
+      "supported": true,
+      "task_id": "P100-054.compact.v2",
+      "ui_sha256": "d483b7cfbcad4f623220ca59659b4a853ff3ddc413fbf62ae0819dea2622a911"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 6,
+      "launch_sha256": "032f0f1d4fd3a745aa6320ac4a0779de3327ff9810015951f55358273e5fe464",
+      "nomination_slots": 3,
+      "request_sha256": "2ad5dab98cac5114b710995254bb623291f3e43e7041d1642b5899d6896f6ed8",
+      "run_id": "paper-1f1840b1b22e4236",
+      "scenario_id": "P100-068",
+      "supported": true,
+      "task_id": "P100-068.compact.v2",
+      "ui_sha256": "d796acb956f2cbd3b577a58cb0ef6c7109fab5c9ddc4e0e8f02e9a306a6c9ed6"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 14,
+      "nomination_slots": 3,
+      "run_id": null,
+      "scenario_id": "P100-087",
+      "supported": false,
+      "task_id": "P100-087.compact.v2"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 7,
+      "launch_sha256": "c58c4d0e675c9f60f132fa9e3b21aa72a774318499e4c7cfb2a3194cc1de0ffd",
+      "nomination_slots": 3,
+      "request_sha256": "83a7df1b0fc45d0257d64bdcc613ddf03fe7da10e4e0edb5bda6a5efe800d8f7",
+      "run_id": "paper-f61c4e65365e495d",
+      "scenario_id": "P100-090",
+      "supported": true,
+      "task_id": "P100-090.compact.v2",
+      "ui_sha256": "8fa0db66ca091ab66c266fb37c9741a4ea1bd70aebc97c6d34ea96d69b0e555c"
+    }
+  ],
+  "maximum_additional_cny": 80,
+  "policy": "explicit-state-data-to-paper-pilot-v1",
+  "price_rechecked": {
+    "checked_at": "2026-10-13T22:19:52.586670+00:00",
+    "rates": {
+      "Pro/moonshotai/Kimi-K2.6": {
+        "input_rate": 6.5,
+        "output_rate": 27
+      },
+      "Qwen/Qwen3.8-27B": {
+        "input_rate": 3,
+        "output_rate": 12
+      },
+      "deepseek-ai/DeepSeek-V4-Flash": {
+        "input_rate": 3,
+        "output_rate": 9
+      },
+      "zai-org/GLM-5.3": {
+        "input_rate": 8,
+        "output_rate": 28
+      }
+    },
+    "url": "https://www.siliconflow.cn/pricing",
+    "verification": "Official pricing page read this turn; highest daily rates, cache and off-peak discounts not assumed."
+  },
+  "price_source": {
+    "currency": "CNY",
+    "date": "2026-10-11",
+    "policy": "highest daily input/output rates; cache discounts not assumed",
+    "unit": "per million tokens",
+    "url": "https://www.siliconflow.cn/pricing"
+  },
+  "private_manifest_sha256": "a0b27d0a8659992088de7d581c00787f70180e8f7e50069e7460c2372bf595e7",
+  "probe_cap_cny": 8,
+  "profiles": {
+    "Pro/moonshotai/Kimi-K2.6": {
+      "input_rate": 6.5,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 27,
+      "reasoning_bound": 0
+    },
+    "Qwen/Qwen3.8-27B": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 12,
+      "reasoning_bound": 0
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 9,
+      "reasoning_bound": 0
+    },
+    "zai-org/GLM-5.3": {
+      "input_rate": 8,
+      "options": {
+        "enable_thinking": true,
+        "reasoning_effort": "high",
+        "thinking_budget": 1024
+      },
+      "output_rate": 28,
+      "reasoning_bound": 1024
+    }
+  },
+  "protocol_revision": "paper-v1",
+  "ranking_authorized": false,
+  "retry_policy": "No automatic replay of ambiguous calls or sealed attempts",
+  "roles": {
+    "coder": "deepseek-ai/DeepSeek-V4-Flash",
+    "critic": "Qwen/Qwen3.8-27B",
+    "planner": "zai-org/GLM-5.3",
+    "reporter": "Pro/moonshotai/Kimi-K2.6"
+  },
+  "runtime_binding_sha256": "07a83f1bca555fb314b5691fa9de56a3a2be492cdd8f00e2f705a889d30b7d04",
+  "scientific_review": "not_assessed",
+  "scope": "Eight previously engineering-exposed cases; all 24 slots retained; no private-test assessment or public ranking.",
+  "selection": "guarded statistical analysis, conditional repairs, traced report and three fixed slots",
+  "settings_sha256": "cf9c1b8a843c170e399bd83f52e3914b1891aed4e4fd6203d2043d27f03e4036",
+  "workers": 4
+}

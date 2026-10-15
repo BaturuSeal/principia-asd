@@ -1,0 +1,51 @@
+{
+  "dev_error": 492.99282374715676,
+  "execution_status": "complete",
+  "expression": "509.76378541340716",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": -0.3044894548966297,
+      "voltage_V": -0.8373400334538346
+    },
+    "mean": -38.725434975133176,
+    "p90_abs": 640.2362145865928,
+    "std": 517.2600001206317
+  },
+  "rule_id": "controls-v2--P100-022--mean_control-rule-1",
+  "rule_sha256": "8c0ca43983f37f8889261211db1247ea9adeeac4e16e8a790e0f2403db9e4bd2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "509.76378541340716",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 483.4984503269281,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

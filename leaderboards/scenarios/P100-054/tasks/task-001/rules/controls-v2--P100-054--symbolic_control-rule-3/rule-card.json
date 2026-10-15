@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.014318267988813381,
+  "execution_status": "complete",
+  "expression": "p0+p1*(length_um*notch_depth_um)+p2*(notch_depth_um*notch_width_um)+p3*(width_um*notch_depth_um)+p4*(thickness_um*notch_depth_um)+p5*((notch_depth_um)**2)",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.05583100859742522,
+    "p1": 0.01459082116191039,
+    "p2": -0.40076579218519703,
+    "p3": 0.42912557489834696,
+    "p4": 0.012340112550229279,
+    "p5": -0.3279569142588926
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": -0.01790407564376013,
+      "notch_depth_um": -0.16601472000880757,
+      "notch_width_um": 0.23233906447295288,
+      "thickness_um": -0.4566895187404312,
+      "width_um": 0.41645315923475246
+    },
+    "mean": 0.0073917594489674625,
+    "p90_abs": 0.03557963597272794,
+    "std": 0.018843295161136246
+  },
+  "rule_id": "controls-v2--P100-054--symbolic_control-rule-3",
+  "rule_sha256": "ae2bf453101f58bfc9da50dc45c508865dfa56722a98c5aafa1f8ac60d437d75",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.05583100859742522 + 0.01459082116191039 * (length_um * notch_depth_um) + -0.40076579218519703 * (notch_depth_um * notch_width_um) + 0.42912557489834696 * (width_um * notch_depth_um) + 0.012340112550229279 * (thickness_um * notch_depth_um) + -0.3279569142588926 * notch_depth_um ** 2",
+    "expression_bytes": 154,
+    "free_parameters": 6,
+    "learned_state_bytes": 164,
+    "nodes": 62,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.014161019506662754,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

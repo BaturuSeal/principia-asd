@@ -1,0 +1,15 @@
+{
+  "expression": "p0 + p1 * pilot_seconds + p2 * (pilot_gates / maximum(pilot_depth, 1.0)) + p3 * qubits + p4 * load_seconds + p5 * is_tket + p6 * is_bqskit",
+  "parameters": {
+    "p0": 0.00590547010185616,
+    "p1": 0.2208322411557514,
+    "p2": -5.282326884846286e-05,
+    "p3": -0.0010630913024897012,
+    "p4": 0.2537323126097792,
+    "p5": 0.2548362612402751,
+    "p6": 3.0665377512102316
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

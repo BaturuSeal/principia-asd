@@ -1,0 +1,54 @@
+{
+  "dev_error": 2157.8124008220875,
+  "execution_status": "complete",
+  "expression": "7059.553210233279",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.9994700918700125,
+      "slope6": 0.2931668141218199,
+      "time_h": -0.9903660457468055
+    },
+    "mean": 4.758997065283989,
+    "p90_abs": 3829.178715906688,
+    "std": 2493.258606415841
+  },
+  "rule_id": "controls-v2--P100-086--mean_control-rule-1",
+  "rule_sha256": "bf06cb6a766decdf646281c9efa3176becab748957c55498b35533da2e3750b4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "7059.553210233279",
+    "expression_bytes": 17,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 2213.365956247614,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "dev_error": 1.7420296065857208,
+  "execution_status": "complete",
+  "expression": "base + amp * p0 * exp(-p1 * progress) * exp(p2 * x)",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.16298639601026013,
+    "p1": 0.7464503631917133,
+    "p2": 1.0528426816081182
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": 0.008641614735863962,
+      "base": 0.008641614735863945,
+      "progress": -0.03270683689270887,
+      "x": 0.042238010706860014
+    },
+    "mean": -0.22140092550622997,
+    "p90_abs": 5.019136338457894,
+    "std": 3.5598568313133288
+  },
+  "rule_id": "full-comparison-v5--P100-084--direct_glm-rule-1",
+  "rule_sha256": "83f1092b04bbcee5eefde92e0bfcbe6a9f368c0ac183cbf6ad2fd159e7e607bb",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "base + amp * -0.16298639601026013 * exp(-0.7464503631917133 * progress) * exp(1.0528426816081182 * x)",
+    "expression_bytes": 51,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 1.3984625385264708,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

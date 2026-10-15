@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.631100013043831,
+    "primary": "mae",
+    "primary_error": 1.631100013043831,
+    "rmse": 3.0871995505684344
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 4.34565325561756,
+  "by_group": [
+    {
+      "error": 1.7562137093539587,
+      "group": "group-786711129c001bc1ddfa75a8",
+      "rows": 112
+    },
+    {
+      "error": 1.3524018740829316,
+      "group": "group-830490fea5060b8d8676fde8",
+      "rows": 112
+    },
+    {
+      "error": 1.7846844556946024,
+      "group": "group-e91ef2e4099644cda96dd56e",
+      "rows": 112
+    }
+  ],
+  "coverage": {
+    "eligible": 336,
+    "fraction": 1.0,
+    "predicted": 336
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_deepseek",
+  "rule_id": "full-comparison-v5--P100-084--direct_deepseek-rule-1",
+  "rule_sha256": "33199969ce8fffc9e6aa62fbc331fb519a1bac43412296b1df2bf49f2d2e7287",
+  "run_id": "full-comparison-v5--P100-084--direct_deepseek",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "base + amp * (1 - progress) * (1 - tanh(4.886150586669382 * (x + 8.311273454831175))) + -6.090557896001072 * (1 - progress) + -3.0822018101193964 * x * (1 - progress) + -1.912303994316434 * progress * (1 - progress)",
+    "expression_bytes": 136,
+    "free_parameters": 5,
+    "learned_state_bytes": 129,
+    "literal_state_bytes": 5,
+    "nodes": 73,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.02226632318399201,
+    "perturbation_labels_available": false,
+    "population_rows": 336,
+    "ranking": false,
+    "samples": 336,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

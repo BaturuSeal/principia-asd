@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.21130748608614947,
+    "primary": "mae",
+    "primary_error": 0.21130748608614947,
+    "rmse": 0.251779247694521
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.25530277777777777,
+  "by_group": [
+    {
+      "error": 0.30762400867431744,
+      "group": "group-68ac150dbaf3e5acadd8ed34",
+      "rows": 2400
+    },
+    {
+      "error": 0.1149909634979815,
+      "group": "group-88a9b273a766ea99e85f6114",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-055--principia_engine-rule-1",
+  "rule_sha256": "9cb032e438eab6a1ded1378a6367e985cab802c7b1e57c77ba5364c55932a5b1",
+  "run_id": "full-comparison-v5--P100-055--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.5119892510304936 + 0.22471000000006655 * (age_min / 30) + -0.05113673217931471 * ratio + -1.0820206315508942 * water + 0.2128377170891968 * log1p(time_s) / log1p(600)",
+    "expression_bytes": 72,
+    "free_parameters": 5,
+    "learned_state_bytes": 134,
+    "literal_state_bytes": 5,
+    "nodes": 47,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.018498730622805083,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

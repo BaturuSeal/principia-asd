@@ -1,0 +1,67 @@
+{
+  "dev_error": 4.293679155189545,
+  "execution_status": "complete",
+  "expression": "offset + p0 * (1 - exp(-t / p1)) * (drive ** p2) * (1 + p3 * high) + p4 * t",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 19.84155725955474,
+    "p1": 3680.985595582068,
+    "p2": 0.5055884818778028,
+    "p3": 0.613606906787016,
+    "p4": 0.00014119735268915912
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": 0.9713380716191822,
+      "high": 0.9713380716191822,
+      "offset": 0.9713380716191824,
+      "t": 0.3231005661737958
+    },
+    "mean": 1.5827764809833365,
+    "p90_abs": 8.605539610837369,
+    "std": 4.129503042986214
+  },
+  "rule_id": "full-comparison-v5--P100-062--best_of_n-rule-2",
+  "rule_sha256": "e31a682b685b4b18262da1ef0e0058c1e6a1d9b2ace2ee0e0241a5beef7d672a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + 19.84155725955474 * (1 - exp(-t / 3680.985595582068)) * drive ** 0.5055884818778028 * (1 + 0.613606906787016 * high) + 0.00014119735268915912 * t",
+    "expression_bytes": 75,
+    "free_parameters": 5,
+    "learned_state_bytes": 131,
+    "literal_state_bytes": 2,
+    "nodes": 50,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 1.7649167760910032,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

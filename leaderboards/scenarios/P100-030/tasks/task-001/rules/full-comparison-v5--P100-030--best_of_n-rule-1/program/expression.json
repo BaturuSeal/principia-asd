@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1 * boundary_cof + p2 * highspeed_cof + p3 * concentration_wt_pct + p4 * speed_mm_s + p5 * log(speed_mm_s) + p6 * boundary_cof * log(speed_mm_s) + p7 * concentration_wt_pct * speed_mm_s",
+  "parameters": {
+    "p0": 0.016204645718794937,
+    "p1": 0.5292646519149015,
+    "p2": -0.35759471149819055,
+    "p3": 0.0004526779082510628,
+    "p4": -0.00016577080934621752,
+    "p5": 0.006784889746679951,
+    "p6": -0.2950635549006206,
+    "p7": 6.710560503319806e-05
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

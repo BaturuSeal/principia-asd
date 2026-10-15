@@ -1,0 +1,16 @@
+{
+  "expression": "minimum(maximum(0, own_previous + p0 * (required_contribution - own_previous) + p1 * (peer_previous - own_previous) + p2 * (own_history_mean - own_previous) + p3 * (peer_history_mean - own_previous) + p4 * (previous_success - 0.5) + p5 * (round - 11.5) + p6 * (productivity - peer_productivity) + p7 * (endowment - peer_endowment)), endowment)",
+  "parameters": {
+    "p0": 0.010190600727340954,
+    "p1": 0.12090995481349943,
+    "p2": 0.40521970530130463,
+    "p3": -0.08720157674766718,
+    "p4": -0.3330343472528845,
+    "p5": 0.005029544260913709,
+    "p6": -0.005932270725888924,
+    "p7": 0.014469066568558094
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

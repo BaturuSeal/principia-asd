@@ -1,0 +1,67 @@
+{
+  "dev_error": 22.81978428554978,
+  "execution_status": "complete",
+  "expression": "minimum(100, maximum(0, p0 + p1 * p22_pct + p2 * p72_pct + p3 * time_h + p4 * p22_pct * p72_pct + p5 * p22_pct * time_h + p6 * p72_pct * time_h + p7 * p22_pct * p72_pct * time_h))",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 38.54390193728602,
+    "p1": 0.3281268736873735,
+    "p2": 0.7202029091557163,
+    "p3": -0.34546692194312095,
+    "p4": -0.004556546626169212,
+    "p5": 0.001610334169515979,
+    "p6": 0.0023635297724943567,
+    "p7": -4.450889083734828e-06
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": 0.3296259821390445,
+      "p72_pct": -0.3894491940253172,
+      "time_h": -0.9013163537830258
+    },
+    "mean": -12.965468673260428,
+    "p90_abs": 35.249672345907726,
+    "std": 20.66153409585364
+  },
+  "rule_id": "full-comparison-v5--P100-072--feedback_refinement-rule-1",
+  "rule_sha256": "5b62f77cff1ed7a381cd7821b1b7d93a76c0ceaa093a9453c673c4f4cbb4141c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(100, maximum(0, 38.54390193728602 + 0.3281268736873735 * p22_pct + 0.7202029091557163 * p72_pct + -0.34546692194312095 * time_h + -0.004556546626169212 * p22_pct * p72_pct + 0.001610334169515979 * p22_pct * time_h + 0.0023635297724943567 * p72_pct * time_h + -4.450889083734828e-06 * p22_pct * p72_pct * time_h))",
+    "expression_bytes": 179,
+    "free_parameters": 8,
+    "learned_state_bytes": 221,
+    "literal_state_bytes": 4,
+    "nodes": 87,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 1.8369359631796263,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

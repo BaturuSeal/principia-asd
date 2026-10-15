@@ -1,0 +1,64 @@
+{
+  "dev_error": 0.1888985007654405,
+  "execution_status": "complete",
+  "expression": "p0+p1*rabi_MHz+p2*detuning_MHz+p3*rabi_MHz*detuning_MHz+p4*rabi_MHz**2+p5*detuning_MHz**2+p6*rabi_MHz**3+p7*detuning_MHz**3",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.28794950900162514,
+    "p1": 0.12248650343913253,
+    "p2": 0.0008469424617653745,
+    "p3": 0.00022764828527274835,
+    "p4": -0.023677682969493557,
+    "p5": 1.1684139528561182e-05,
+    "p6": 0.0013105031027753561,
+    "p7": -4.657930917249002e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.009396401025513599,
+      "rabi_MHz": 0.023317621692062196
+    },
+    "mean": 0.0029312636273109995,
+    "p90_abs": 0.3936993700929671,
+    "std": 0.22324835350015393
+  },
+  "rule_id": "full-comparison-v5--P100-006--best_of_n-rule-1",
+  "rule_sha256": "a6a966439723acbe992e730b6db6540a7aebf308a22e60b9f9e9894b7db87baa",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.28794950900162514 + 0.12248650343913253 * rabi_MHz + 0.0008469424617653745 * detuning_MHz + 0.00022764828527274835 * rabi_MHz * detuning_MHz + -0.023677682969493557 * rabi_MHz ** 2 + 1.1684139528561182e-05 * detuning_MHz ** 2 + 0.0013105031027753561 * rabi_MHz ** 3 + -4.657930917249002e-07 * detuning_MHz ** 3",
+    "expression_bytes": 123,
+    "free_parameters": 8,
+    "learned_state_bytes": 231,
+    "literal_state_bytes": 4,
+    "nodes": 75,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.09898765125916953,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 2.0475187004129434,
+    "primary": "mae",
+    "primary_error": 2.0475187004129434,
+    "rmse": 3.3256508345819
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 4.34565325561756,
+  "by_group": [
+    {
+      "error": 2.0533037388486934,
+      "group": "group-786711129c001bc1ddfa75a8",
+      "rows": 112
+    },
+    {
+      "error": 1.859231173998559,
+      "group": "group-830490fea5060b8d8676fde8",
+      "rows": 112
+    },
+    {
+      "error": 2.2300211883915773,
+      "group": "group-e91ef2e4099644cda96dd56e",
+      "rows": 112
+    }
+  ],
+  "coverage": {
+    "eligible": 336,
+    "fraction": 1.0,
+    "predicted": 336
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "controls-v2--P100-084--polynomial_control-rule-1",
+  "rule_sha256": "a6a63451c9d2b321e22010ffa37a31e628d177ce85170f1964def086c9297ecb",
+  "run_id": "controls-v2--P100-084--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.93979817303009 + 0.44239072894459514 * x + 1.0191329413410768 * base + -0.2374126587704716 * amp + 9.084593333997185 * progress",
+    "expression_bytes": 42,
+    "free_parameters": 5,
+    "learned_state_bytes": 129,
+    "nodes": 35,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.020565633088789885,
+    "perturbation_labels_available": false,
+    "population_rows": 336,
+    "ranking": false,
+    "samples": 336,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

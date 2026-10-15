@@ -1,0 +1,69 @@
+{
+  "dev_error": 2.03650179968072,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * anchor_selectivity_pct + p2 * elapsed_min + p3 * prefix_slope_pct_min + p4 * ag_wt_pct + p5 * elapsed_min * prefix_slope_pct_min + p6 * ag_wt_pct * prefix_slope_pct_min + p7 * anchor_selectivity_pct * elapsed_min",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.12646497882148247,
+    "p1": 1.0238756684143615,
+    "p2": 0.00561901847149663,
+    "p3": 4.780588427463255,
+    "p4": -0.021448490481659165,
+    "p5": 0.2574012655248374,
+    "p6": 2.123420542462258,
+    "p7": -7.333077083922671e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": -0.12473152181766305,
+      "elapsed_min": 0.6344673753439686,
+      "prefix_slope_pct_min": 0.12473152181766296
+    },
+    "mean": 1.051878107455596,
+    "p90_abs": 4.494816971501377,
+    "std": 2.599801307244091
+  },
+  "rule_id": "full-comparison-v5--P100-026--best_of_n-rule-2",
+  "rule_sha256": "278756818a247a139d67dd5d30d20adc28581daac14e2a96b5feee9e529615c8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.12646497882148247 + 1.0238756684143615 * anchor_selectivity_pct + 0.00561901847149663 * elapsed_min + 4.780588427463255 * prefix_slope_pct_min + -0.021448490481659165 * ag_wt_pct + 0.2574012655248374 * elapsed_min * prefix_slope_pct_min + 2.123420542462258 * ag_wt_pct * prefix_slope_pct_min + -7.333077083922671e-05 * anchor_selectivity_pct * elapsed_min",
+    "expression_bytes": 222,
+    "free_parameters": 8,
+    "learned_state_bytes": 215,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 0.864075170184379,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

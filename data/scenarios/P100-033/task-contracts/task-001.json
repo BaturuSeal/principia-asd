@@ -1,0 +1,77 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "acf_bpm": "bpm",
+    "agreement": "bpm",
+    "ear": "dimensionless",
+    "fft_bpm": "bpm",
+    "half_bpm": "bpm",
+    "half_strength": "dimensionless",
+    "motion": "dimensionless",
+    "spectral_quality": "dimensionless"
+  },
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "After the complete ten-second PPG segment; simultaneous ECG supplies the target but is never an input. Known recording motion/contact conditions are allowed. No human quality annotation is a predictor.",
+  "output": "target",
+  "output_description": "ECG reference heart rate",
+  "output_units": "bpm",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-033",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "f31776901d4dddb93db0942b71548b7aee6c022d9ad7af477eb940f5a9390754",
+  "source_task": "P100-033.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Person; every recording from one person linked",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-033.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "ECG reference heart rate",
+  "version": "1.0.0rc2"
+}

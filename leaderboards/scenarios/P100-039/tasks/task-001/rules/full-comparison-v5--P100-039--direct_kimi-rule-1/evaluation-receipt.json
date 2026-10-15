@@ -1,0 +1,71 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.37104415510271027,
+    "primary": "brier",
+    "primary_error": 0.18560238346924332,
+    "rmse": 0.4308159508064242
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.21862448052450872,
+  "by_group": [
+    {
+      "error": 0.21874285640198016,
+      "group": "group-0b95827d139695ee703b2a32",
+      "rows": 349
+    },
+    {
+      "error": 0.14690345793455684,
+      "group": "group-7e220f1f688288ccb15fd312",
+      "rows": 164
+    },
+    {
+      "error": 0.17422806770016078,
+      "group": "group-973f07eeb68ad5339919fe62",
+      "rows": 159
+    },
+    {
+      "error": 0.20253515184027548,
+      "group": "group-f92d57ee06910585315b543a",
+      "rows": 382
+    }
+  ],
+  "coverage": {
+    "eligible": 1054,
+    "fraction": 1.0,
+    "predicted": 1054
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-039--direct_kimi-rule-1",
+  "rule_sha256": "965728fa8f16d85649df2d0518040a8a0b9ade63afa83f70d4558bd093c60c6e",
+  "run_id": "full-comparison-v5--P100-039--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(-7.9160755586728095 + 0.40876873301071137 * education + 0.027979413798132572 * age + 6.39058729456279 * japan + -0.0001570325021462599 * education * age + -0.44178110492514056 * education * japan + -0.10706403263156114 * age * japan + 0.007827478300503421 * education * age * japan)))",
+    "expression_bytes": 117,
+    "free_parameters": 8,
+    "learned_state_bytes": 220,
+    "literal_state_bytes": 2,
+    "nodes": 90,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 25
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.022985142140438054,
+    "perturbation_labels_available": false,
+    "population_rows": 1054,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

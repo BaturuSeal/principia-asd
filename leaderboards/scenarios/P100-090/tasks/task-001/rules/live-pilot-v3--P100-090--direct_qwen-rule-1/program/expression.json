@@ -1,0 +1,15 @@
+{
+  "expression": "maximum(-1, minimum(1, p0 * p_now + p1 * (p_now - p_past) + p2 * (p_now - p_initial) + p3 * (density - 0.5174) + p4 * (speed - 1.1583) + p5 * (radius90 - 4.0145) + p6 * (polarization_variance - 0.6212)))",
+  "parameters": {
+    "p0": 0.928900815947456,
+    "p1": 0.12275980145545937,
+    "p2": -0.04525496020338773,
+    "p3": -0.013924717152711754,
+    "p4": 0.06318376659392448,
+    "p5": -0.0021256995172414597,
+    "p6": 0.06590010993135652
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

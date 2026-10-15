@@ -1,0 +1,65 @@
+{
+  "dev_error": 0.11848138021946289,
+  "execution_status": "complete",
+  "expression": "cal_minus20_uA + (cal_plus20_uA - cal_minus20_uA) * (0.5 + 0.5 * tanh((gate_V - p0) / p1)) + p2 * (cal_zero_uA - (cal_minus20_uA + cal_plus20_uA) / 2) * (1 - (gate_V / 20) ** 2)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.12430139928303927,
+    "p1": 25.603383791187596,
+    "p2": 1.0078798047646294
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.09267216812168036,
+      "cal_plus20_uA": 0.030077266021482654,
+      "cal_zero_uA": -0.07418049207605786,
+      "gate_V": -0.06568008456045421
+    },
+    "mean": 0.009749120487651187,
+    "p90_abs": 0.22246426206837952,
+    "std": 0.1380869110959156
+  },
+  "rule_id": "full-comparison-v5--P100-051--feedback_refinement-rule-1",
+  "rule_sha256": "c4f4323513de89f84ab635e3721096f7a46425de74a584263746516ad6c81141",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "cal_minus20_uA + (cal_plus20_uA - cal_minus20_uA) * (0.5 + 0.5 * tanh((gate_V - 0.12430139928303927) / 25.603383791187596)) + 1.0078798047646294 * (cal_zero_uA - (cal_minus20_uA + cal_plus20_uA) / 2) * (1 - (gate_V / 20) ** 2)",
+    "expression_bytes": 177,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "literal_state_bytes": 11,
+    "nodes": 64,
+    "numeric_literal_count": 6,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.11069359824051625,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

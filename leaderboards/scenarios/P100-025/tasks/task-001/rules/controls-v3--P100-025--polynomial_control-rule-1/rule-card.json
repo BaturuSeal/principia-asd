@@ -1,0 +1,89 @@
+{
+  "dev_error": 0.06313524133956297,
+  "execution_status": "complete",
+  "expression": "p0+p1*(pre)+p2*(jump)+p3*(rL)+p4*(rF)+p5*(dL)+p6*(d2L)+p7*(f)+p8*(discharge)+p9*(rest)+p10*(e)",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.0767230542245356,
+    "p1": 1.0888724058241919,
+    "p10": 0.0010978813548611212,
+    "p2": 0.8233341690877771,
+    "p3": -0.3460988691976155,
+    "p4": 1.2978823152306664,
+    "p5": 0.5169664157899165,
+    "p6": 0.5311662453816051,
+    "p7": -0.0069899680479576995,
+    "p8": 0.006877363894458282,
+    "p9": 0.0033695367732073183
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": 0.4804167367652967,
+      "dL": 0.03592023457016468,
+      "discharge": -0.020293221084431507,
+      "e": 0.05784549299602311,
+      "f": 0.011074734949974784,
+      "jump": -0.016497118417737468,
+      "pre": -0.013298805433669418,
+      "rF": 0.019911325858689842,
+      "rL": -0.19896127473743078,
+      "rest": -0.020293221084431507
+    },
+    "mean": -0.0021860721399891924,
+    "p90_abs": 0.13555224363305307,
+    "std": 0.08764323584608376
+  },
+  "rule_id": "controls-v3--P100-025--polynomial_control-rule-1",
+  "rule_sha256": "45658fd9703f47f69cc899ad2a329d079aa88e36701f1c7e75b4eda0d5bb405b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-1.0767230542245356 + 1.0888724058241919 * pre + 0.8233341690877771 * jump + -0.3460988691976155 * rL + 1.2978823152306664 * rF + 0.5169664157899165 * dL + 0.5311662453816051 * d2L + -0.0069899680479576995 * f + 0.006877363894458282 * discharge + 0.0033695367732073183 * rest + 0.0010978813548611212 * e",
+    "expression_bytes": 94,
+    "free_parameters": 11,
+    "learned_state_bytes": 301,
+    "literal_state_bytes": 0,
+    "nodes": 83,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.05798554455650346,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

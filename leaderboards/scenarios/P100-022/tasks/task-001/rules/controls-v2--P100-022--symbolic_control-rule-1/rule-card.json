@@ -1,0 +1,55 @@
+{
+  "dev_error": 171.36268471944803,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((voltage_V-0.5260379884868421)/0.2741732549285368))+p2*(log1p(abs((bromine_rich-0.484375)/0.49975579974123363)))",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -6633.825987477202,
+    "p1": 620.6130579098557,
+    "p2": 10311.41766174726
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": 0.01653023882583557,
+      "voltage_V": -0.08357503778276835
+    },
+    "mean": -23.01933843814166,
+    "p90_abs": 360.72627201867016,
+    "std": 217.7368779368962
+  },
+  "rule_id": "controls-v2--P100-022--symbolic_control-rule-1",
+  "rule_sha256": "df6be9367902c2eab37eb92e3b95755056b892add06569de31fda2b9adf62dc7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-6633.825987477202 + 620.6130579098557 * tanh((voltage_V - 0.5260379884868421) / 0.2741732549285368) + 10311.41766174726 * log1p(abs((bromine_rich - 0.484375) / 0.49975579974123363))",
+    "expression_bytes": 124,
+    "free_parameters": 3,
+    "learned_state_bytes": 76,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 186.45766854681614,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

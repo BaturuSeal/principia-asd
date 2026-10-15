@@ -1,0 +1,54 @@
+{
+  "dev_error": 49.5243683179155,
+  "execution_status": "complete",
+  "expression": "78.516126191644",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": 0.5894616510102351,
+      "p72_pct": -0.8092350042390629,
+      "time_h": -0.09801606335890545
+    },
+    "mean": 49.524368317915496,
+    "p90_abs": 67.15312703653574,
+    "std": 15.953123720893428
+  },
+  "rule_id": "controls-v2--P100-072--mean_control-rule-1",
+  "rule_sha256": "d41f673a9d5bd2a2c000a4805b8ecd016bcf6bee0f40a31671e59655e7745dcb",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "78.516126191644",
+    "expression_bytes": 15,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 20.93943964031142,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

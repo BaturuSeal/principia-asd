@@ -1,0 +1,58 @@
+{
+  "dev_error": 40.165909889895175,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current)+p2*(current*slope6)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 488.3755796208668,
+    "p1": 0.9579200856134555,
+    "p2": 0.0004778144121801677
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.03555170103592376,
+      "slope6": 0.010130122235052249,
+      "time_h": -0.04122768517571945
+    },
+    "mean": 0.06812998635963764,
+    "p90_abs": 81.3314614459822,
+    "std": 65.13076820410494
+  },
+  "rule_id": "controls-v2--P100-086--symbolic_control-rule-1",
+  "rule_sha256": "86e7d2767595d37599eb1e00326525abb6465bb48096008e21ebfabe21edbd79",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "488.3755796208668 + 0.9579200856134555 * current + 0.0004778144121801677 * (current * slope6)",
+    "expression_bytes": 35,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "nodes": 23,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 40.16981844530703,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

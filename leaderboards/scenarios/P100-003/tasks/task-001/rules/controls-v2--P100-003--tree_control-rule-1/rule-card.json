@@ -1,0 +1,79 @@
+{
+  "dev_error": 0.01406945701312812,
+  "execution_status": "complete",
+  "expression": "Decision tree; see complete node arrays",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "median4",
+    "mad4",
+    "low1",
+    "high1",
+    "line1"
+  ],
+  "method_id": "tree_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "tree_reference",
+  "output": "target",
+  "parameters": {},
+  "representation": "tree",
+  "rule_id": "controls-v2--P100-003--tree_control-rule-1",
+  "rule_sha256": "5fed006d8688a4f6bf03dfa8b8327e74701a4079c84f6f48ee8f3e702ee86183",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "free_parameters": 5,
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-003.compact.v2",
+  "tree": {
+    "feature": [
+      0,
+      6,
+      -2,
+      -2,
+      -2
+    ],
+    "features": [
+      "lag1",
+      "lag2",
+      "lag3",
+      "lag4",
+      "median4",
+      "mad4",
+      "low1",
+      "high1",
+      "line1"
+    ],
+    "left": [
+      1,
+      2,
+      -1,
+      -1,
+      -1
+    ],
+    "right": [
+      4,
+      3,
+      -1,
+      -1,
+      -1
+    ],
+    "threshold": [
+      0.13466431200504303,
+      23.57865810394287,
+      -2.0,
+      -2.0,
+      -2.0
+    ],
+    "value": [
+      0.09398603399614762,
+      0.09117387415089358,
+      0.09412031165624055,
+      0.08849529460057817,
+      0.27115210424715075
+    ]
+  }
+}

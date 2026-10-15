@@ -1,0 +1,65 @@
+{
+  "dev_error": 0.19398576431482184,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(education)+p3*(tanh((education-14.146865671641791)/2.5552837906214267))+p4*(education*age)+p5*(log1p(abs((age-44.5544776119403)/11.315902267609763)))+p6*(log1p(abs((education-14.146865671641791)/2.5552837906214267)))+p7*(tanh((age-44.5544776119403)/11.315902267609763))))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.015554869255853511,
+    "p1": 0.0005531419672838992,
+    "p2": 0.0037879161774590723,
+    "p3": 0.10791086727280672,
+    "p4": 0.00034761797748116756,
+    "p5": -0.2081636586748809,
+    "p6": 0.15751638385677266,
+    "p7": 0.025932259182887427
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.04429959496865411,
+      "education": 0.031003481852430983,
+      "japan": -0.013995329546909355
+    },
+    "mean": 0.006254495239973162,
+    "p90_abs": 0.718182742353406,
+    "std": 0.444402217857932
+  },
+  "rule_id": "controls-v3--P100-039--symbolic_control-rule-1",
+  "rule_sha256": "f0d10054932da1ffaaac9d9975ba8bd0e494d007611f3419903c4a66d2ad341f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.015554869255853511 + 0.0005531419672838992 * education ** 2 + 0.0037879161774590723 * education + 0.10791086727280672 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00034761797748116756 * (education * age) + -0.2081636586748809 * log1p(abs((age - 44.5544776119403) / 11.315902267609763)) + 0.15751638385677266 * log1p(abs((education - 14.146865671641791) / 2.5552837906214267)) + 0.025932259182887427 * tanh((age - 44.5544776119403) / 11.315902267609763)))",
+    "expression_bytes": 318,
+    "free_parameters": 8,
+    "learned_state_bytes": 226,
+    "literal_state_bytes": 143,
+    "nodes": 116,
+    "numeric_literal_count": 11,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 36
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.18596204062275168,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

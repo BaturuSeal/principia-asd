@@ -1,0 +1,151 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T16:18:22.428736+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 34912181,
+  "registered_source_files": 6,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Methods PDF and repository metadata conflict on source license; no redistribution authorization inferred",
+        "Mixture 0.7_0.30 is source-flagged Incomplete; reason and affected measurements require clarification",
+        "Workbook mixture 1.0_0.25 is absent from the source methods appendix",
+        "Native clock unit and sampling interval are not established; no physical-rate claims",
+        "Mixture labels omit varying admixtures and effective/total water distinctions; no causal identification",
+        "Independent replication, valid perturbations and final scientific admission remain unassessed"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-055/reconstruction.json",
+      "candidate_receipt_sha256": "87f1d2b5380acb86f497e57fb163dac263fe1a262f4b5f1f7db7442401364088",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 16800
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 4800
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 4800,
+            "reconstructed_rows": 4800,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 4800,
+            "reconstructed_rows": 4800,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 12000,
+            "reconstructed_rows": 12000,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_slag_validation": {
+        "eligible_rows": 21600,
+        "excluded_average_cells": 10800,
+        "fit_count": 0,
+        "group_counts": {
+          "dev": 2,
+          "test": 2,
+          "train": 5
+        },
+        "independence_scope": "Nine mixture formulations; repeated time points and batches remain within mixture, not 21600 independent experiments",
+        "individual_traces": 36,
+        "label_alias": {
+          "Mix-0.5_035": "0.5_0.35"
+        },
+        "learned_transformations": [],
+        "mixtures": 9,
+        "rights_evidence": {
+          "metadata": "CC BY 4.0",
+          "methods_pdf_page_1": "CC BY-NC-SA 4.0",
+          "status": "conflict_requires_review"
+        },
+        "samples_per_trace": 600,
+        "source_quality_flags": [
+          {
+            "cell": "AA604",
+            "mixture": "0.7_0.30",
+            "rows_retained": 2400,
+            "scope": "Merged AA604:AF607 spans both ages and batches; reason unspecified",
+            "text": "Incomplete"
+          }
+        ],
+        "time_unit": "unresolved native index; historical field name time_s retained",
+        "workbook_mixture_missing_from_pdf_appendix": "1.0_0.25"
+      },
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "c2b9e97aa5e1fc0ab30f7cb035b9442501c382e074f4d78a130132c8df1bbb4b",
+      "recipe_sha256": "4aba9528ae866d6c2314f6a2cef5afe7738c7a21431526253252f1e78cc20246",
+      "rows": {
+        "dev": 4800,
+        "test": 4800,
+        "train": 12000
+      },
+      "runtime_binding_sha256": "3d48e8109182297805b0afcf7656fe528bc07ee16d5676dff7854b37c4706a97",
+      "scenario_id": "P100-055",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "0.5_0.25",
+            "1.0_0.30"
+          ],
+          "test": [
+            "0.5_0.30",
+            "0.7_0.30"
+          ],
+          "train": [
+            "0.5_0.35",
+            "0.7_0.25",
+            "0.7_0.35",
+            "1.0_0.25",
+            "1.0_0.35"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

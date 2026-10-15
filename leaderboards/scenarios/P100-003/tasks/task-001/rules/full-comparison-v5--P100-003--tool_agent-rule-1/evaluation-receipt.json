@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.009866574885938706,
+    "primary": "mae",
+    "primary_error": 0.009866574885938706,
+    "rmse": 0.012663494408904541
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.011003542604276611,
+  "by_group": [
+    {
+      "error": 0.011993065517779627,
+      "group": "group-2d4a3f44ac9fdd8d0d4bbce8",
+      "rows": 32
+    },
+    {
+      "error": 0.007740084254097784,
+      "group": "group-f1263395f4d4af8c39623846",
+      "rows": 32
+    }
+  ],
+  "coverage": {
+    "eligible": 64,
+    "fraction": 1.0,
+    "predicted": 64
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tool_agent",
+  "rule_id": "full-comparison-v5--P100-003--tool_agent-rule-1",
+  "rule_sha256": "2412cc3eef591878700afe954fc497c899e6cabd9d91f0483273c1cfdf6af6bc",
+  "run_id": "full-comparison-v5--P100-003--tool_agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0854620056759466 + 0.15990104397053628 * lag1 + 0.10423100704786206 * lag2 + 0.014179323989978185 * lag3 + 0.03183178197390655 * lag4 + -0.08180184943144167 * median4 + -1.3111331120130694 * mad4 + -0.00023548983046735306 * low1",
+    "expression_bytes": 89,
+    "free_parameters": 8,
+    "learned_state_bytes": 221,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.017430645004977575,
+    "perturbation_labels_available": false,
+    "population_rows": 64,
+    "ranking": false,
+    "samples": 64,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

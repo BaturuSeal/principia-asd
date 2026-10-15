@@ -1,0 +1,62 @@
+{
+  "dev_error": 0.192393097166756,
+  "execution_status": "complete",
+  "expression": "p0 + p1*detuning_MHz + p2*rabi_MHz + p3*detuning_MHz*rabi_MHz + p4*detuning_MHz**2 + p5*rabi_MHz**2",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.3127864931837959,
+    "p1": -0.00015885684855423154,
+    "p2": 0.087539165891447,
+    "p3": 0.00022764828530627467,
+    "p4": 1.0958503650465144e-05,
+    "p5": -0.010788536112045896
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.009295274341406206,
+      "rabi_MHz": -0.039407436154164775
+    },
+    "mean": -0.002558696012718939,
+    "p90_abs": 0.3898255526148694,
+    "std": 0.22567715334049648
+  },
+  "rule_id": "full-comparison-v5--P100-006--tool_agent-rule-1",
+  "rule_sha256": "53cda5a6b64d9b2c5536c2cdb2aba1dfb4d24282a282191ddb5bd5b48d20a0f0",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.3127864931837959 + -0.00015885684855423154 * detuning_MHz + 0.087539165891447 * rabi_MHz + 0.00022764828530627467 * detuning_MHz * rabi_MHz + 1.0958503650465144e-05 * detuning_MHz ** 2 + -0.010788536112045896 * rabi_MHz ** 2",
+    "expression_bytes": 99,
+    "free_parameters": 6,
+    "learned_state_bytes": 171,
+    "literal_state_bytes": 2,
+    "nodes": 53,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.09938902964159631,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

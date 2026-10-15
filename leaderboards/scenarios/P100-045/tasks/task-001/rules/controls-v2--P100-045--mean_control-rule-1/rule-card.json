@@ -1,0 +1,66 @@
+{
+  "dev_error": 35.09259592295644,
+  "execution_status": "complete",
+  "expression": "138.2020678634609",
+  "inputs": [
+    "low",
+    "low_lag",
+    "background_low",
+    "background_high",
+    "time_s",
+    "channel_low_keV",
+    "channel_high_keV"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "background_high": -0.2254601595193741,
+      "background_low": -0.22546015951937406,
+      "channel_high_keV": -0.2254601595193741,
+      "channel_low_keV": 0.22546015951937412,
+      "low": -0.8744333640998662,
+      "low_lag": -0.7281096740037901,
+      "time_s": 0.4933436550192988
+    },
+    "mean": -24.284280361286946,
+    "p90_abs": 105.16258025871764,
+    "std": 57.10884668876383
+  },
+  "rule_id": "controls-v2--P100-045--mean_control-rule-1",
+  "rule_sha256": "6e1cf87bc057ac6aa4965e5336e81452ffdf88004c1ab2b9833c7e097820c72f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "138.2020678634609",
+    "expression_bytes": 17,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-045.compact.v2",
+  "train_error": 18.677332140607046,
+  "units": {
+    "inputs": {
+      "background_high": "counts/s in pretrigger channel 4",
+      "background_low": "counts/s in pretrigger channels 2+3",
+      "channel_high_keV": "keV",
+      "channel_low_keV": "keV",
+      "low": "counts/s in channels 2+3",
+      "low_lag": "counts/s in preceding bin, channels 2+3",
+      "time_s": "s after trigger"
+    },
+    "output": "counts/s",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

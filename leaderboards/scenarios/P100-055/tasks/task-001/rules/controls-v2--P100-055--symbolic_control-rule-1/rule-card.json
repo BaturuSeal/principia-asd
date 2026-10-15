@@ -1,0 +1,64 @@
+{
+  "dev_error": 0.19671365684933767,
+  "execution_status": "complete",
+  "expression": "p0+p1*(ratio*water)+p2*(log1p(abs((water-0.31)/0.04898979485566355)))+p3*(tanh((age_min-15.0)/15.0))+p4*((age_min)**2)+p5*(age_min)",
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.03969966187411501,
+    "p1": -0.13924338864893612,
+    "p2": 0.47395542974061433,
+    "p3": 0.014423988592020405,
+    "p4": 0.00011263308286971598,
+    "p5": 0.0033789924860914786
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_min": -0.24359536174683957,
+      "ratio": 0.38407567731560954,
+      "time_s": -0.5181843595668904,
+      "water": 0.38407567731560943
+    },
+    "mean": -0.18271986682143995,
+    "p90_abs": 0.4149862034932189,
+    "std": 0.16658089481812577
+  },
+  "rule_id": "controls-v2--P100-055--symbolic_control-rule-1",
+  "rule_sha256": "966743c20e8e9ee4bdc2f03cef60a37d4395d042961375abe66c1cf0d9cdbcfb",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.03969966187411501 + -0.13924338864893612 * (ratio * water) + 0.47395542974061433 * log1p(abs((water - 0.31) / 0.04898979485566355)) + 0.014423988592020405 * tanh((age_min - 15.0) / 15.0) + 0.00011263308286971598 * age_min ** 2 + 0.0033789924860914786 * age_min",
+    "expression_bytes": 131,
+    "free_parameters": 6,
+    "learned_state_bytes": 169,
+    "nodes": 71,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-055.compact.v2",
+  "train_error": 0.0552191279889368,
+  "units": {
+    "inputs": {
+      "age_min": "min since mixing; 0 or 30",
+      "ratio": "mix-design ratio encoded in author mixture label",
+      "time_s": "native penetration clock index; unit unspecified",
+      "water": "water ratio encoded in author mixture label"
+    },
+    "output": "N",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

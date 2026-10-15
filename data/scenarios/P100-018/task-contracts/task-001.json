@@ -1,0 +1,71 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "duration_min": "minutes event duration",
+    "latitude": "degrees north",
+    "length_km": "km path length",
+    "month": "calendar1–12",
+    "width_km": "km maximum path width"
+  },
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Post-event path and timing diagnostic of reported loss. EF damage-derived scale, casualty counts, narratives, monetary/crop losses excluded from predictors.",
+  "output": "target",
+  "output_description": "Log transformed reported tornado property-damage estimate",
+  "output_units": "ln(1+property damage in USD)",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-018",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "ebae6be52fa1d493dd0fbfb0e25da4e96c142ae633685768b96896a6dcfc77a1",
+  "source_task": "P100-018.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "NOAA EPISODE_ID outbreak groups; nearby episodes may still be correlated or linked across offices. Not individual property samples.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-018.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Log transformed reported tornado property-damage estimate",
+  "version": "1.0.0rc2"
+}

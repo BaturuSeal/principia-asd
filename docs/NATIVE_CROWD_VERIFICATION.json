@@ -1,0 +1,144 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T05:08:14.781646+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 64734795,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "admission_blockers": [
+        "Confirm tracking/preprocessing provenance, participant reuse and experiment-to-recording correspondence",
+        "Complete source rights, notices and scientific contract admission"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-090/reconstruction.json",
+      "candidate_receipt_sha256": "eff3317f7cee1762e9f59b88d6ba6a5115af46832ad71ab37093c2c85216afd6",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1158
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 270
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 172,
+            "reconstructed_rows": 172,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 270,
+            "reconstructed_rows": 270,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 986,
+            "reconstructed_rows": 986,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_choice_validation": null,
+      "native_crowd_validation": {
+        "conditions": 26,
+        "duplicate_track_timestamps": 0,
+        "excluded_origins": 0,
+        "file_qualified_tracks": 2660,
+        "forecast_scope": "Conditional next-two-second order from observed trajectory prefix, not causal identification or free-running crowd simulation",
+        "future_track_membership_used_in_predictors": false,
+        "independence_scope": "Whole country/condition groups and all recording repeats kept together; track IDs are recording-local and do not establish participant independence across conditions; one teen condition has no held-teen generalization",
+        "recordings": 123,
+        "recordings_without_eligible_windows": [
+          "ExperimentalData/Kids/D1/2.csv",
+          "ExperimentalData/Kids/D1/3.csv",
+          "ExperimentalData/Kids/D1/4.csv",
+          "ExperimentalData/Kids/D1/5.csv",
+          "ExperimentalData/Kids/D2/2.csv",
+          "ExperimentalData/Kids/D3/3.csv",
+          "ExperimentalData/Kids/D4/1.csv"
+        ],
+        "selected_future_measurements": 0,
+        "source_position_rows": 1842039,
+        "source_position_scope": "Author-released tracking coordinates, not independent video decoding; smoothing/annotation latency unverified",
+        "source_unit_counts": {
+          "cm": 59,
+          "m": 64
+        },
+        "supplied_velocity_polarization_or_summary_used": false
+      },
+      "native_curve_validation": null,
+      "native_game_validation": null,
+      "native_trace_validation": null,
+      "reader_source_sha256": "c7cfef2009fd7eebe9fa68fcd34acc717a4b80aaf80457775cf6aeb3c24f6abb",
+      "recipe_sha256": "04a4eeec65e25074fb4f05caf7bbb13c20656c4f7f3d01c6536f578275c84d3f",
+      "rows": {
+        "dev": 172,
+        "test": 270,
+        "train": 986
+      },
+      "runtime_binding_sha256": "91306042c92cd803e8b4998419dc46f89aed62ef52464e926d33d0ed5c8d97cd",
+      "scenario_id": "P100-090",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "Japan/C4",
+            "Kids/D4",
+            "Spain/A11",
+            "Spain/A8"
+          ],
+          "test": [
+            "Japan/C1",
+            "Japan/C6",
+            "Kids/D1",
+            "Spain/A1",
+            "Spain/A5"
+          ],
+          "train": [
+            "Japan/C10",
+            "Japan/C2",
+            "Japan/C3",
+            "Japan/C5",
+            "Japan/C7",
+            "Japan/C8",
+            "Japan/C9",
+            "Kids/D2",
+            "Kids/D3",
+            "Spain/A10",
+            "Spain/A2",
+            "Spain/A3",
+            "Spain/A4",
+            "Spain/A6",
+            "Spain/A7",
+            "Spain/A9",
+            "Teenagers/B1"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

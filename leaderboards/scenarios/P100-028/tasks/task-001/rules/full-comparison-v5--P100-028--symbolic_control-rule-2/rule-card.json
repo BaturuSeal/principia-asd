@@ -1,0 +1,73 @@
+{
+  "dev_error": 2.1739964269645993e-05,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hi)",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.387614694957101e-07,
+    "p1": 0.953723538724788
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": 0.31033332544025205,
+      "glo": 3.736483319271907e-17,
+      "hi": 0.0822865958278419,
+      "lo": 0.09306948201412824,
+      "noise": -0.06240272308474939,
+      "r": 0.31033332544025216,
+      "sep": -0.26526340546410837
+    },
+    "mean": 2.1128411017631735e-06,
+    "p90_abs": 5.0712486967349276e-05,
+    "std": 2.9760663521627768e-05
+  },
+  "rule_id": "full-comparison-v5--P100-028--symbolic_control-rule-2",
+  "rule_sha256": "965ec0c1ed10795e7749b2d5645b0e582ce34fecd43ab1a4f1b0ffd8b3f53086",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.387614694957101e-07 + 0.953723538724788 * hi",
+    "expression_bytes": 10,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 1.896957782267931e-05,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

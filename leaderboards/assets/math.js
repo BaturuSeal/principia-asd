@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-latex]').forEach(el=>{try{katex.render(el.dataset.latex,el,{output:'mathml',displayMode:el.classList.contains('math-panel'),trust:false,throwOnError:true});}catch{el.textContent=el.dataset.latex;}});

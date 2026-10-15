@@ -1,0 +1,136 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T10:03:52.401304+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 19599288,
+  "registered_source_files": 3,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Physical repetitions, preprocessing and source uncertainty model need contract review",
+        "Different table temperatures and repeated controls limit independence claims",
+        "Final rights, attribution and admission remain pending; retrospective exposed responses"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-030/reconstruction.json",
+      "candidate_receipt_sha256": "165b7daaf309a7da7c8a413331f2bc5f5a4d58b905798e3c7d87e9e3ee9b5870",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 84
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 24
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 24,
+            "reconstructed_rows": 24,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 24,
+            "reconstructed_rows": 24,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 60,
+            "reconstructed_rows": 60,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_battery_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": {
+        "calibration_separate_from_scored_responses": true,
+        "curve_counts": {
+          "dev": 2,
+          "test": 2,
+          "train": 5
+        },
+        "distinct_curves": 9,
+        "duplicate_aliases": {
+          "functionalization:PEG": "concentration:PEG",
+          "suppliers:P5": "concentration:P5",
+          "suppliers:PEG": "concentration:PEG"
+        },
+        "fitting_performed": false,
+        "formulations": 8,
+        "group_counts": {
+          "dev": 2,
+          "test": 2,
+          "train": 4
+        },
+        "scored_speed_range_mm_s": [
+          0.28,
+          10
+        ],
+        "scored_speed_rows_per_curve": 12,
+        "stored_curves": 12,
+        "stored_response_cells_including_duplicates": 300,
+        "unrepresented_highspeed_interior_rows_per_curve": 11
+      },
+      "native_memristor_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "reader_source_sha256": "d11cbcc2aaf2c117bf80af627e159a587fd039685241d01499372bebb3ec9817",
+      "recipe_sha256": "0b6f6c4eb4c1779f374b6c17536ae7132b1ae0a848defcc9f83453a5fd4b2953",
+      "rows": {
+        "dev": 24,
+        "test": 24,
+        "train": 60
+      },
+      "runtime_binding_sha256": "dd6011763d215dc3bebf3fc283634503172bf9dd16db7041c447762d4e7adaae",
+      "scenario_id": "P100-030",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "N",
+            "PCH"
+          ],
+          "test": [
+            "NG",
+            "NS"
+          ],
+          "train": [
+            "P1",
+            "P2",
+            "P5",
+            "PEG"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

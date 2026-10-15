@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.00023787236437795107,
+  "execution_status": "complete",
+  "expression": "0.0002703872381483173",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": 0.022776870155849522,
+      "glo": 6.513168181158818e-18,
+      "hi": -0.9973212468515485,
+      "lo": -0.9961967050205743,
+      "noise": -0.011625585270259859,
+      "r": 0.02277687015584953,
+      "sep": 0.3179268171923235
+    },
+    "mean": 2.112841101763266e-06,
+    "p90_abs": 0.00024150785465516296,
+    "std": 0.000405487040790951
+  },
+  "rule_id": "controls-v2--P100-028--mean_control-rule-1",
+  "rule_sha256": "8a92a11ea4ae511d26ec9a282615a32e3764c5cc8648023aa59c24a114907057",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0002703872381483173",
+    "expression_bytes": 21,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 0.0002381081702910794,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

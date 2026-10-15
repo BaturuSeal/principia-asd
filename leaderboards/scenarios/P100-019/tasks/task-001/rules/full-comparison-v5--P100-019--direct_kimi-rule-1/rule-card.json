@@ -1,0 +1,68 @@
+{
+  "dev_error": 4.539023292149434,
+  "execution_status": "complete",
+  "expression": "p0 * lag1 + p1 * lag3 + p2 * lag6 + p3 * sin(month * p4) + p5",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6140857932492368,
+    "p1": 0.0921635625572919,
+    "p2": 0.25047928197173364,
+    "p3": 1.1000529841070557,
+    "p4": 0.4310578572696068,
+    "p5": 1.0072831796290587
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.006314607230596224,
+      "lag3": -0.0548667242843222,
+      "lag6": -0.11211692282127371,
+      "month": 0.1471298330425428
+    },
+    "mean": 1.0339542147245941,
+    "p90_abs": 8.94537579269918,
+    "std": 8.163329312077554
+  },
+  "rule_id": "full-comparison-v5--P100-019--direct_kimi-rule-1",
+  "rule_sha256": "9f5e707fe29f9e038f3ac9abc886810f5e7e9454c21959ea4cc79b71ba04785b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6140857932492368 * lag1 + 0.0921635625572919 * lag3 + 0.25047928197173364 * lag6 + 1.1000529841070557 * sin(month * 0.4310578572696068) + 1.0072831796290587",
+    "expression_bytes": 61,
+    "free_parameters": 6,
+    "learned_state_bytes": 157,
+    "literal_state_bytes": 0,
+    "nodes": 42,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.142597895326319,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

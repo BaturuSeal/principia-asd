@@ -1,0 +1,66 @@
+{
+  "dev_error": 3.975121442322565,
+  "execution_status": "complete",
+  "expression": "offset + drive * (p0 + p1 * high) * (1 - exp(-t / (p2 + p3 * high)))",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 33.12380763515693,
+    "p1": -19.236833620883115,
+    "p2": 4696.718831637412,
+    "p3": -1294.8155480141004
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": 0.9739939679291697,
+      "high": 0.9739939679291699,
+      "offset": 0.9739939679291699,
+      "t": 0.33399005952474925
+    },
+    "mean": 1.1003621601190405,
+    "p90_abs": 7.560852825697503,
+    "std": 3.8127009878196505
+  },
+  "rule_id": "full-comparison-v5--P100-062--direct_kimi-rule-1",
+  "rule_sha256": "6b46e777927717d7fa698abc68cd3a0e2d171d6cf32636152ebf32d057d591ce",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + drive * (33.12380763515693 + -19.236833620883115 * high) * (1 - exp(-t / (4696.718831637412 + -1294.8155480141004 * high)))",
+    "expression_bytes": 68,
+    "free_parameters": 4,
+    "learned_state_bytes": 104,
+    "literal_state_bytes": 1,
+    "nodes": 43,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 1.7180222701979735,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

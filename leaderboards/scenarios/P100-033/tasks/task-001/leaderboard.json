@@ -1,0 +1,3442 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.008899434003978968
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.01146740501280874
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.02199724898673594
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.3811159569304436
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 91,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 91,
+        "wall_seconds": 0.4717972530052066
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-033--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 3.6534314970485866
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-033--direct_deepseek",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 14.169376524048857
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-033--direct_glm",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 8.479106319951825
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 81,
+        "structures": 1,
+        "wall_seconds": 18.807156049995683
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 83,
+        "structures": 3,
+        "wall_seconds": 23.97463276993949
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-033--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 3,
+        "optimizer_evaluations": 21,
+        "structures": 3,
+        "wall_seconds": 17.357617271016352
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 2,
+        "optimizer_evaluations": 75,
+        "structures": 1,
+        "wall_seconds": 4.635156822041608
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-033--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 231,
+        "model_calls": 4,
+        "optimizer_evaluations": 73,
+        "structures": 103,
+        "wall_seconds": 51.56272935401648
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-033--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-033--tree_control-rule-1",
+    "full-comparison-v5--P100-033--tool_agent-rule-1",
+    "full-comparison-v5--P100-033--symbolic_control-rule-2",
+    "full-comparison-v5--P100-033--principia_engine-rule-2",
+    "full-comparison-v5--P100-033--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 9.191367107667618,
+        "primary": "mae",
+        "primary_error": 9.191367107667618,
+        "rmse": 11.469728542919274
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 10.655414061507178,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 10.988522361311842,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.237828203606606,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.8533721499147027,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.054136908472405,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.234146044917393,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 9.046419987809777,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 7.053703703703704,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.235990746960189,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 12.554136908472405,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.349747964644337,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-033--tree_control-rule-1",
+        "rule_sha256": "512bde0389db007bae1108f4e4f970eddc2f09f2e832c4dd6e2114fd3e32516f",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 13,
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-033.compact.v2",
+        "tree": {
+          "feature": [
+            2,
+            0,
+            6,
+            -2,
+            -2,
+            2,
+            -2,
+            -2,
+            4,
+            4,
+            -2,
+            -2,
+            -2
+          ],
+          "features": [
+            "fft_bpm",
+            "acf_bpm",
+            "half_bpm",
+            "half_strength",
+            "spectral_quality",
+            "agreement",
+            "motion",
+            "ear"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            -1,
+            -1,
+            6,
+            -1,
+            -1,
+            9,
+            10,
+            -1,
+            -1,
+            -1
+          ],
+          "right": [
+            8,
+            5,
+            4,
+            -1,
+            -1,
+            7,
+            -1,
+            -1,
+            12,
+            11,
+            -1,
+            -1,
+            -1
+          ],
+          "threshold": [
+            54.38232421875,
+            85.0341796875,
+            0.5,
+            -2.0,
+            -2.0,
+            50.537109375,
+            -2.0,
+            -2.0,
+            0.5231657326221466,
+            0.3353784680366516,
+            -2.0,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            79.44644387317909,
+            79.99316317228806,
+            79.42595272551857,
+            78.66483516483517,
+            81.22204213938411,
+            89.7107438016529,
+            87.43617021276596,
+            97.62962962962963,
+            70.87857142857143,
+            76.56435643564356,
+            73.67857142857143,
+            80.15555555555555,
+            56.15384615384615
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--tree_control-rule-1",
+      "rule_sha256": "512bde0389db007bae1108f4e4f970eddc2f09f2e832c4dd6e2114fd3e32516f",
+      "run_id": "full-comparison-v5--P100-033--tree_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 19,
+        "learned_state_bytes": 694,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0028067784277242755,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 9.941270428917584,
+        "primary": "mae",
+        "primary_error": 9.941270428917584,
+        "rmse": 12.12130281093969
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.295899337188493,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.372325213112141,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.071980786127733,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.151661426695419,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.872697286177797,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.649682758294453,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.616956759240134,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 12.669263076352266,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.029416634558142,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.682821011429262,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.72559262985698,
+        "execution_status": "complete",
+        "expression": "p0 + p1*fft_bpm + p2*acf_bpm + p3*half_bpm + p4*half_strength + p5*spectral_quality + p6*agreement + p7*motion",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 81.15169740389766,
+          "p1": 0.07863204038415447,
+          "p2": 0.027513811073678618,
+          "p3": -0.1742128650198472,
+          "p4": 0.4804226695226035,
+          "p5": -2.8022937709592117,
+          "p6": -0.022205043511617256,
+          "p7": 2.28660104385561
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.268640313568742,
+            "agreement": 0.18360920205449455,
+            "ear": -0.17890117983532902,
+            "fft_bpm": 0.25197318857910544,
+            "half_bpm": 0.1619366961074872,
+            "half_strength": -0.23741769183141892,
+            "motion": 0.040666723585280284,
+            "spectral_quality": -0.13472836061132765
+          },
+          "mean": 6.133581636889115,
+          "p90_abs": 21.1385974616805,
+          "std": 11.28241306521117
+        },
+        "rule_id": "full-comparison-v5--P100-033--tool_agent-rule-1",
+        "rule_sha256": "3304bc44a85fdb69b7fe1d81ae419e8ff9ef2e487f50bd9aa099fc640d5e1dc1",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "81.15169740389766 + 0.07863204038415447 * fft_bpm + 0.027513811073678618 * acf_bpm + -0.1742128650198472 * half_bpm + 0.4804226695226035 * half_strength + -2.8022937709592117 * spectral_quality + -0.022205043511617256 * agreement + 2.28660104385561 * motion",
+          "expression_bytes": 110,
+          "free_parameters": 8,
+          "learned_state_bytes": 213,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.470425089057564,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*fft_bpm + p2*acf_bpm + p3*half_bpm + p4*half_strength + p5*spectral_quality + p6*agreement + p7*motion",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--tool_agent-rule-1",
+      "rule_sha256": "3304bc44a85fdb69b7fe1d81ae419e8ff9ef2e487f50bd9aa099fc640d5e1dc1",
+      "run_id": "full-comparison-v5--P100-033--tool_agent",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "81.15169740389766 + 0.07863204038415447 * fft_bpm + 0.027513811073678618 * acf_bpm + -0.1742128650198472 * half_bpm + 0.4804226695226035 * half_strength + -2.8022937709592117 * spectral_quality + -0.022205043511617256 * agreement + 2.28660104385561 * motion",
+        "expression_bytes": 110,
+        "free_parameters": 8,
+        "learned_state_bytes": 213,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.011805188821813896,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 9.941270456565585,
+        "primary": "mae",
+        "primary_error": 9.941270456565585,
+        "rmse": 12.12130284904577
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.295899322256933,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.372325220970401,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.071980839761716,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.151661409243133,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.872697319114486,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.649682763380904,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.616956773247976,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 12.669263099483693,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.029416677475924,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.68282114072069,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.72559263411707,
+        "execution_status": "complete",
+        "expression": "p0+p1*fft_bpm+p2*acf_bpm+p3*half_bpm+p4*half_strength+p5*spectral_quality+p6*agreement+p7*motion",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 81.15169907231197,
+          "p1": 0.07863203242619259,
+          "p2": 0.02751380664140997,
+          "p3": -0.17421286544824832,
+          "p4": 0.4804218695927963,
+          "p5": -2.8022945661056458,
+          "p6": -0.022205041029370765,
+          "p7": 2.2866009315089504
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2686403067814311,
+            "agreement": 0.18360919880181922,
+            "ear": -0.17890118036847907,
+            "fft_bpm": 0.2519731790842886,
+            "half_bpm": 0.1619366817695451,
+            "half_strength": -0.23741769384566205,
+            "motion": 0.04066671926755747,
+            "spectral_quality": -0.13472837030172322
+          },
+          "mean": 6.133581664466258,
+          "p90_abs": 21.138597704962354,
+          "std": 11.2824130529191
+        },
+        "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-1",
+        "rule_sha256": "d8d585e5e42abe4119d3015543fd6a8c6f0b4d34e953b3224557145c79604fdc",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "81.15169907231197 + 0.07863203242619259 * fft_bpm + 0.02751380664140997 * acf_bpm + -0.17421286544824832 * half_bpm + 0.4804218695927963 * half_strength + -2.8022945661056458 * spectral_quality + -0.022205041029370765 * agreement + 2.2866009315089504 * motion",
+          "expression_bytes": 96,
+          "free_parameters": 8,
+          "learned_state_bytes": 215,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.470425118237827,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*fft_bpm+p2*acf_bpm+p3*half_bpm+p4*half_strength+p5*spectral_quality+p6*agreement+p7*motion",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-1",
+      "rule_sha256": "d8d585e5e42abe4119d3015543fd6a8c6f0b4d34e953b3224557145c79604fdc",
+      "run_id": "full-comparison-v5--P100-033--best_of_n",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "81.15169907231197 + 0.07863203242619259 * fft_bpm + 0.02751380664140997 * acf_bpm + -0.17421286544824832 * half_bpm + 0.4804218695927963 * half_strength + -2.8022945661056458 * spectral_quality + -0.022205041029370765 * agreement + 2.2866009315089504 * motion",
+        "expression_bytes": 96,
+        "free_parameters": 8,
+        "learned_state_bytes": 215,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.011805188255537676,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 9.941270487859397,
+        "primary": "mae",
+        "primary_error": 9.941270487859397,
+        "rmse": 12.121302888375318
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.295899338513689,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.372325234595374,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.0719807515680815,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.1516614156455445,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.87269761924955,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.64968273561191,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.616956713318595,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 12.669263227573936,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.029416596899136,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.682821245618157,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.72559260650106,
+        "execution_status": "complete",
+        "expression": "p0 + p1*fft_bpm + p2*acf_bpm + p3*half_bpm + p4*half_strength + p5*spectral_quality + p6*agreement + p7*motion",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 81.15169782991876,
+          "p1": 0.07863202903585409,
+          "p2": 0.02751380635036399,
+          "p3": -0.17421285168438533,
+          "p4": 0.48042193514315357,
+          "p5": -2.8022929472736724,
+          "p6": -0.022205035726136912,
+          "p7": 2.2866010936066226
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.26864031361267826,
+            "agreement": 0.18360920625263522,
+            "ear": -0.17890117756328988,
+            "fft_bpm": 0.2519731860089037,
+            "half_bpm": 0.16193669485215717,
+            "half_strength": -0.23741769451334552,
+            "motion": 0.04066672445267653,
+            "spectral_quality": -0.13472834852093327
+          },
+          "mean": 6.13358159975456,
+          "p90_abs": 21.138597493086316,
+          "std": 11.282413045660924
+        },
+        "rule_id": "full-comparison-v5--P100-033--feedback_refinement-rule-1",
+        "rule_sha256": "3e933ba1c05ddbfd7e45e5bb5198021797b9a5c86fb11a24e060451d71deb0fc",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "81.15169782991876 + 0.07863202903585409 * fft_bpm + 0.02751380635036399 * acf_bpm + -0.17421285168438533 * half_bpm + 0.48042193514315357 * half_strength + -2.8022929472736724 * spectral_quality + -0.022205035726136912 * agreement + 2.2866010936066226 * motion",
+          "expression_bytes": 110,
+          "free_parameters": 8,
+          "learned_state_bytes": 216,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.47042512046405,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*fft_bpm + p2*acf_bpm + p3*half_bpm + p4*half_strength + p5*spectral_quality + p6*agreement + p7*motion",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--feedback_refinement-rule-1",
+      "rule_sha256": "3e933ba1c05ddbfd7e45e5bb5198021797b9a5c86fb11a24e060451d71deb0fc",
+      "run_id": "full-comparison-v5--P100-033--feedback_refinement",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "81.15169782991876 + 0.07863202903585409 * fft_bpm + 0.02751380635036399 * acf_bpm + -0.17421285168438533 * half_bpm + 0.48042193514315357 * half_strength + -2.8022929472736724 * spectral_quality + -0.022205035726136912 * agreement + 2.2866010936066226 * motion",
+        "expression_bytes": 110,
+        "free_parameters": 8,
+        "learned_state_bytes": 216,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.011805187404003024,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.030999642147691,
+        "primary": "mae",
+        "primary_error": 10.030999642147691,
+        "rmse": 12.120621249194077
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.221699592455556,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 10.889821039921074,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.095104635182823,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.8491049577749243,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.097483192213101,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.200635532143789,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.972802378024696,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 15.152516807786899,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.233345093760944,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 12.597483192213101,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.666373553584883,
+        "execution_status": "complete",
+        "expression": "p0+p1*(motion)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 78.83872938301775,
+          "p1": 2.0350152367814105
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2153558402012865,
+            "agreement": 0.15844236845695184,
+            "ear": -0.1669368160273494,
+            "fft_bpm": 0.21653626789888517,
+            "half_bpm": 0.20301401369231323,
+            "half_strength": -0.15616970497591004,
+            "motion": 0.022991488306348284,
+            "spectral_quality": -0.07713612234774063
+          },
+          "mean": 6.4319670482151645,
+          "p90_abs": 20.873744619799155,
+          "std": 11.05649370276687
+        },
+        "rule_id": "full-comparison-v5--P100-033--symbolic_control-rule-2",
+        "rule_sha256": "de8304b361e0589f150571771e017968fcea1edef7f13cd31f43a1f61e31e8d8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "78.83872938301775 + 2.0350152367814105 * motion",
+          "expression_bytes": 14,
+          "free_parameters": 2,
+          "learned_state_bytes": 51,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.881926239669282,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(motion)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--symbolic_control-rule-2",
+      "rule_sha256": "de8304b361e0589f150571771e017968fcea1edef7f13cd31f43a1f61e31e8d8",
+      "run_id": "full-comparison-v5--P100-033--symbolic_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "78.83872938301775 + 2.0350152367814105 * motion",
+        "expression_bytes": 14,
+        "free_parameters": 2,
+        "learned_state_bytes": 51,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0005582383242676034,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.030999642147691,
+        "primary": "mae",
+        "primary_error": 10.030999642147691,
+        "rmse": 12.120621249194077
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.221699592455556,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 10.889821039921074,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.095104635182823,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.8491049577749243,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.097483192213101,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.200635532143789,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.972802378024696,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 15.152516807786899,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.233345093760944,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 12.597483192213101,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.666373553584883,
+        "execution_status": "complete",
+        "expression": "p0+p1*(motion)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 78.83872938301775,
+          "p1": 2.0350152367814105
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2153558402012865,
+            "agreement": 0.15844236845695184,
+            "ear": -0.1669368160273494,
+            "fft_bpm": 0.21653626789888517,
+            "half_bpm": 0.20301401369231323,
+            "half_strength": -0.15616970497591004,
+            "motion": 0.022991488306348284,
+            "spectral_quality": -0.07713612234774063
+          },
+          "mean": 6.4319670482151645,
+          "p90_abs": 20.873744619799155,
+          "std": 11.05649370276687
+        },
+        "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-2",
+        "rule_sha256": "2c1dbc17e43f13b9291a8217db75b56a8b7a6b826f0e16c650e3a7ee7bf55cea",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "78.83872938301775 + 2.0350152367814105 * motion",
+          "expression_bytes": 14,
+          "free_parameters": 2,
+          "learned_state_bytes": 51,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.881926239669282,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(motion)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-2",
+      "rule_sha256": "2c1dbc17e43f13b9291a8217db75b56a8b7a6b826f0e16c650e3a7ee7bf55cea",
+      "run_id": "full-comparison-v5--P100-033--principia_engine",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "78.83872938301775 + 2.0350152367814105 * motion",
+        "expression_bytes": 14,
+        "free_parameters": 2,
+        "learned_state_bytes": 51,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0005582383242676034,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.096878669586468,
+        "primary": "mae",
+        "primary_error": 10.096878669586468,
+        "rmse": 12.195240100311935
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.251975626011616,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 10.888222412644007,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.204044876067155,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.720563965851027,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.196443873179092,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.481822653844935,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 9.093758926021136,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 15.053556126820908,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.381954362245708,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 12.696443873179092,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.718926412889967,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 79.44644387317909
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.21229720772324914,
+            "agreement": 0.15798420112862924,
+            "ear": -0.16768864269035189,
+            "fft_bpm": 0.21481522087939642,
+            "half_bpm": 0.20302411244467064,
+            "half_strength": -0.15455210553528725,
+            "motion": -0.0613145376346833,
+            "spectral_quality": -0.07284979890652803
+          },
+          "mean": 6.427646880697888,
+          "p90_abs": 21.446443873179092,
+          "std": 11.074407605643328
+        },
+        "rule_id": "full-comparison-v5--P100-033--mean_control-rule-1",
+        "rule_sha256": "f6a59d930328a1fe61e4ee1d5f3b594cf654fe9786652801dc815b80d42d4900",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "79.44644387317909",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 25,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.889213975818418,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--mean_control-rule-1",
+      "rule_sha256": "f6a59d930328a1fe61e4ee1d5f3b594cf654fe9786652801dc815b80d42d4900",
+      "run_id": "full-comparison-v5--P100-033--mean_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "79.44644387317909",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 25,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.154614579758555,
+        "primary": "mae",
+        "primary_error": 10.154614579758555,
+        "rmse": 13.02070787817453
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 13.29148684706879,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 13.896613573926077,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 6.227713353455979,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 5.363237619215901,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 14.005954073969878,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.470934935263115,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 10.081284482888266,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 11.358179599477996,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.835988894522325,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 9.014752417797233,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 10.483953586664256,
+        "execution_status": "complete",
+        "expression": "fft_bpm + p0 * acf_bpm + p1 * half_bpm + p2 * half_strength + p3 * spectral_quality + p4 * agreement + p5 * motion + p6 * ear + p7",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.06046533722812384,
+          "p1": -1.575986359781622,
+          "p2": 47.26913265337146,
+          "p3": 12.53668119506674,
+          "p4": -0.08673358443608006,
+          "p5": 3.244208884033519,
+          "p6": -1.4843786801351777,
+          "p7": 43.804712192663814
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2108306877512208,
+            "agreement": 0.14652011013973257,
+            "ear": -0.23260064580214448,
+            "fft_bpm": 0.3881478346481568,
+            "half_bpm": 0.1355268741745459,
+            "half_strength": -0.23455981530437053,
+            "motion": 0.0773944680241237,
+            "spectral_quality": -0.09842546109856516
+          },
+          "mean": 5.411009261887664,
+          "p90_abs": 21.93335891857636,
+          "std": 13.25405564973443
+        },
+        "rule_id": "full-comparison-v5--P100-033--direct_kimi-rule-1",
+        "rule_sha256": "4038a5a4254c7cfa7146b97142d5cc3b979034f6a797e7cbc3f248cf81539d38",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "fft_bpm + 0.06046533722812384 * acf_bpm + -1.575986359781622 * half_bpm + 47.26913265337146 * half_strength + 12.53668119506674 * spectral_quality + -0.08673358443608006 * agreement + 3.244208884033519 * motion + -1.4843786801351777 * ear + 43.804712192663814",
+          "expression_bytes": 130,
+          "free_parameters": 8,
+          "learned_state_bytes": 209,
+          "literal_state_bytes": 0,
+          "nodes": 63,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 15
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 12.378552671007263,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "fft_bpm + p0 * acf_bpm + p1 * half_bpm + p2 * half_strength + p3 * spectral_quality + p4 * agreement + p5 * motion + p6 * ear + p7",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--direct_kimi-rule-1",
+      "rule_sha256": "4038a5a4254c7cfa7146b97142d5cc3b979034f6a797e7cbc3f248cf81539d38",
+      "run_id": "full-comparison-v5--P100-033--direct_kimi",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "fft_bpm + 0.06046533722812384 * acf_bpm + -1.575986359781622 * half_bpm + 47.26913265337146 * half_strength + 12.53668119506674 * spectral_quality + -0.08673358443608006 * agreement + 3.244208884033519 * motion + -1.4843786801351777 * ear + 43.804712192663814",
+        "expression_bytes": 130,
+        "free_parameters": 8,
+        "learned_state_bytes": 209,
+        "literal_state_bytes": 0,
+        "nodes": 63,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 15
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11983932884565968,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.26469465603673,
+        "primary": "mae",
+        "primary_error": 10.26469465603673,
+        "rmse": 12.378106464929633
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.803975926932269,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.707345039286295,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.8522144832331655,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.8254754498796393,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.408054134157684,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.413400767514762,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 9.322450166608744,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.329061961365305,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.79303421376884,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.191934417620587,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 10.11562639776314,
+        "execution_status": "complete",
+        "expression": "p0+p1*(fft_bpm)+p2*(acf_bpm)+p3*(half_bpm)+p4*(half_strength)+p5*(spectral_quality)+p6*(agreement)+p7*(motion)+p8*(ear)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 82.74140729345514,
+          "p1": 0.07373683327100353,
+          "p2": 0.02791429843985638,
+          "p3": -0.16731805552540388,
+          "p4": -0.14403575102657748,
+          "p5": -2.4870111523552323,
+          "p6": -0.026142495282063756,
+          "p7": 2.2982062502528904,
+          "p8": -2.0461578987544367
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2713665486481941,
+            "agreement": 0.18543568705844915,
+            "ear": -0.25895481141361054,
+            "fft_bpm": 0.2527856228627536,
+            "half_bpm": 0.16059843333746404,
+            "half_strength": -0.23755657994352727,
+            "motion": 0.039122843457492694,
+            "spectral_quality": -0.1413537450616162
+          },
+          "mean": 6.501451432121746,
+          "p90_abs": 21.466083043173118,
+          "std": 11.494638819695238
+        },
+        "rule_id": "full-comparison-v5--P100-033--linear_control-rule-1",
+        "rule_sha256": "764e610105594c9a582e9b9b7e3014832a2c5083c1dc81128cea3793930e2c07",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "82.74140729345514 + 0.07373683327100353 * fft_bpm + 0.02791429843985638 * acf_bpm + -0.16731805552540388 * half_bpm + -0.14403575102657748 * half_strength + -2.4870111523552323 * spectral_quality + -0.026142495282063756 * agreement + 2.2982062502528904 * motion + -2.0461578987544367 * ear",
+          "expression_bytes": 119,
+          "free_parameters": 9,
+          "learned_state_bytes": 244,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.586127094151932,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(fft_bpm)+p2*(acf_bpm)+p3*(half_bpm)+p4*(half_strength)+p5*(spectral_quality)+p6*(agreement)+p7*(motion)+p8*(ear)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--linear_control-rule-1",
+      "rule_sha256": "764e610105594c9a582e9b9b7e3014832a2c5083c1dc81128cea3793930e2c07",
+      "run_id": "full-comparison-v5--P100-033--linear_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "82.74140729345514 + 0.07373683327100353 * fft_bpm + 0.02791429843985638 * acf_bpm + -0.16731805552540388 * half_bpm + -0.14403575102657748 * half_strength + -2.4870111523552323 * spectral_quality + -0.026142495282063756 * agreement + 2.2982062502528904 * motion + -2.0461578987544367 * ear",
+        "expression_bytes": 119,
+        "free_parameters": 9,
+        "learned_state_bytes": 244,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01133289883301582,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.26469465603673,
+        "primary": "mae",
+        "primary_error": 10.26469465603673,
+        "rmse": 12.378106464929633
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.803975926932269,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.707345039286295,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.8522144832331655,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.8254754498796393,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.408054134157684,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.413400767514762,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 9.322450166608744,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.329061961365305,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.79303421376884,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.191934417620587,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 10.11562639776314,
+        "execution_status": "complete",
+        "expression": "p0+p1*(fft_bpm)+p2*(acf_bpm)+p3*(half_bpm)+p4*(half_strength)+p5*(spectral_quality)+p6*(agreement)+p7*(motion)+p8*(ear)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 82.74140729345514,
+          "p1": 0.07373683327100353,
+          "p2": 0.02791429843985638,
+          "p3": -0.16731805552540388,
+          "p4": -0.14403575102657748,
+          "p5": -2.4870111523552323,
+          "p6": -0.026142495282063756,
+          "p7": 2.2982062502528904,
+          "p8": -2.0461578987544367
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2713665486481941,
+            "agreement": 0.18543568705844915,
+            "ear": -0.25895481141361054,
+            "fft_bpm": 0.2527856228627536,
+            "half_bpm": 0.16059843333746404,
+            "half_strength": -0.23755657994352727,
+            "motion": 0.039122843457492694,
+            "spectral_quality": -0.1413537450616162
+          },
+          "mean": 6.501451432121746,
+          "p90_abs": 21.466083043173118,
+          "std": 11.494638819695238
+        },
+        "rule_id": "full-comparison-v5--P100-033--polynomial_control-rule-1",
+        "rule_sha256": "e4dd67a1b32ee9cd67d4efcc2c2430ac1388ad946319c30edeed55cd37a518a2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "82.74140729345514 + 0.07373683327100353 * fft_bpm + 0.02791429843985638 * acf_bpm + -0.16731805552540388 * half_bpm + -0.14403575102657748 * half_strength + -2.4870111523552323 * spectral_quality + -0.026142495282063756 * agreement + 2.2982062502528904 * motion + -2.0461578987544367 * ear",
+          "expression_bytes": 119,
+          "free_parameters": 9,
+          "learned_state_bytes": 244,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.586127094151932,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(fft_bpm)+p2*(acf_bpm)+p3*(half_bpm)+p4*(half_strength)+p5*(spectral_quality)+p6*(agreement)+p7*(motion)+p8*(ear)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--polynomial_control-rule-1",
+      "rule_sha256": "e4dd67a1b32ee9cd67d4efcc2c2430ac1388ad946319c30edeed55cd37a518a2",
+      "run_id": "full-comparison-v5--P100-033--polynomial_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "82.74140729345514 + 0.07373683327100353 * fft_bpm + 0.02791429843985638 * acf_bpm + -0.16731805552540388 * half_bpm + -0.14403575102657748 * half_strength + -2.4870111523552323 * spectral_quality + -0.026142495282063756 * agreement + 2.2982062502528904 * motion + -2.0461578987544367 * ear",
+        "expression_bytes": 119,
+        "free_parameters": 9,
+        "learned_state_bytes": 244,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01133289883301582,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.29469192145811,
+        "primary": "mae",
+        "primary_error": 10.29469192145811,
+        "rmse": 12.431735824021876
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.787902525234866,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.633874356634806,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.82756352270985,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.814103768558149,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.448440076922562,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.492712748054757,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 9.322845815227659,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.477852402083617,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.793597196632469,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.348026802522366,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 10.146735098790689,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * (fft_bpm + acf_bpm) / 2 + p2 * (half_bpm - (fft_bpm + acf_bpm) / 2) + p3 * half_strength + p4 * spectral_quality + p5 * agreement + p6 * motion + p7 * ear",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 83.99070174522882,
+          "p1": -0.042750674821773,
+          "p2": -0.11053706196682456,
+          "p3": -1.905837985927702,
+          "p4": -3.113375346259061,
+          "p5": -0.0290537093538381,
+          "p6": 2.2634184620456708,
+          "p7": -2.0732524115351625
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.27878073089343175,
+            "agreement": 0.1865791520946651,
+            "ear": -0.25880359819910115,
+            "fft_bpm": 0.24173950618725285,
+            "half_bpm": 0.15889034385022527,
+            "half_strength": -0.2345766614089632,
+            "motion": 0.03768661480115892,
+            "spectral_quality": -0.1427825914400706
+          },
+          "mean": 6.550843594031144,
+          "p90_abs": 21.605762691617237,
+          "std": 11.51996123650457
+        },
+        "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-3",
+        "rule_sha256": "1b7176747f5a2b221111f13060a75b06ec225b884edf4c496ad261c3bf9f63a5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "83.99070174522882 + -0.042750674821773 * (fft_bpm + acf_bpm) / 2 + -0.11053706196682456 * (half_bpm - (fft_bpm + acf_bpm) / 2) + -1.905837985927702 * half_strength + -3.113375346259061 * spectral_quality + -0.0290537093538381 * agreement + 2.2634184620456708 * motion + -2.0732524115351625 * ear",
+          "expression_bytes": 164,
+          "free_parameters": 8,
+          "learned_state_bytes": 211,
+          "literal_state_bytes": 2,
+          "nodes": 77,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 19
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.595218353176296,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * (fft_bpm + acf_bpm) / 2 + p2 * (half_bpm - (fft_bpm + acf_bpm) / 2) + p3 * half_strength + p4 * spectral_quality + p5 * agreement + p6 * motion + p7 * ear",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-3",
+      "rule_sha256": "1b7176747f5a2b221111f13060a75b06ec225b884edf4c496ad261c3bf9f63a5",
+      "run_id": "full-comparison-v5--P100-033--best_of_n",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "83.99070174522882 + -0.042750674821773 * (fft_bpm + acf_bpm) / 2 + -0.11053706196682456 * (half_bpm - (fft_bpm + acf_bpm) / 2) + -1.905837985927702 * half_strength + -3.113375346259061 * spectral_quality + -0.0290537093538381 * agreement + 2.2634184620456708 * motion + -2.0732524115351625 * ear",
+        "expression_bytes": 164,
+        "free_parameters": 8,
+        "learned_state_bytes": 211,
+        "literal_state_bytes": 2,
+        "nodes": 77,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 19
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.007758060449789297,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.294691945031978,
+        "primary": "mae",
+        "primary_error": 10.294691945031978,
+        "rmse": 12.431735852768503
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.787902478074418,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.633874323785225,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.827563433894882,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 3.8141037329459664,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 15.448440386918453,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 9.492712730467687,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 9.322845758237344,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.477852549946665,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.79359712511231,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 13.348026930936836,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 10.146735036818885,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * (0.5 * (fft_bpm + acf_bpm)) + p2 * (half_bpm - 0.5 * (fft_bpm + acf_bpm)) + p3 * (half_strength - 0.5) + p4 * (spectral_quality - 0.5) + p5 * (agreement - 10) + p6 * motion + p7 * ear",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 81.19055773135685,
+          "p1": -0.04275067204989865,
+          "p2": -0.11053706093697492,
+          "p3": -1.905837546568246,
+          "p4": -3.113373936060982,
+          "p5": -0.02905370724787665,
+          "p6": 2.2634184024310944,
+          "p7": -2.073252251096876
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.27878073186063584,
+            "agreement": 0.18657915268330288,
+            "ear": -0.2588035898941706,
+            "fft_bpm": 0.24173950623040377,
+            "half_bpm": 0.1588903491823522,
+            "half_strength": -0.23457665848845077,
+            "motion": 0.037686611601223746,
+            "spectral_quality": -0.14278257204919845
+          },
+          "mean": 6.550843549379167,
+          "p90_abs": 21.60576283101756,
+          "std": 11.519961181895154
+        },
+        "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-2",
+        "rule_sha256": "8ab07f2e08b24f1a17a7f71313c87de5a25b5c545ec6d9f21b775e88f6626349",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "81.19055773135685 + -0.04275067204989865 * (0.5 * (fft_bpm + acf_bpm)) + -0.11053706093697492 * (half_bpm - 0.5 * (fft_bpm + acf_bpm)) + -1.905837546568246 * (half_strength - 0.5) + -3.113373936060982 * (spectral_quality - 0.5) + -0.02905370724787665 * (agreement - 10) + 2.2634184024310944 * motion + -2.073252251096876 * ear",
+          "expression_bytes": 193,
+          "free_parameters": 8,
+          "learned_state_bytes": 213,
+          "literal_state_bytes": 14,
+          "nodes": 86,
+          "numeric_literal_count": 5,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 22
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.595218356220718,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * (0.5 * (fft_bpm + acf_bpm)) + p2 * (half_bpm - 0.5 * (fft_bpm + acf_bpm)) + p3 * (half_strength - 0.5) + p4 * (spectral_quality - 0.5) + p5 * (agreement - 10) + p6 * motion + p7 * ear",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-2",
+      "rule_sha256": "8ab07f2e08b24f1a17a7f71313c87de5a25b5c545ec6d9f21b775e88f6626349",
+      "run_id": "full-comparison-v5--P100-033--best_of_n",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "81.19055773135685 + -0.04275067204989865 * (0.5 * (fft_bpm + acf_bpm)) + -0.11053706093697492 * (half_bpm - 0.5 * (fft_bpm + acf_bpm)) + -1.905837546568246 * (half_strength - 0.5) + -3.113373936060982 * (spectral_quality - 0.5) + -0.02905370724787665 * (agreement - 10) + 2.2634184024310944 * motion + -2.073252251096876 * ear",
+        "expression_bytes": 193,
+        "free_parameters": 8,
+        "learned_state_bytes": 213,
+        "literal_state_bytes": 14,
+        "nodes": 86,
+        "numeric_literal_count": 5,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 22
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.00775806022312551,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.344866491904792,
+        "primary": "mae",
+        "primary_error": 10.344866491904792,
+        "rmse": 12.699402441566608
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.221612632193704,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.596590278676347,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.124383183671524,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.067931568465671,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 17.466590216754394,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.33186762036847,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.56195328364065,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.820731924744113,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.116355040574739,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 15.14064916995833,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.499256065351682,
+        "execution_status": "complete",
+        "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 83.07052668063501,
+          "p1": -2.1133765431751703,
+          "p2": 0.034732104895453114,
+          "p3": -0.14716842676212108,
+          "p4": 3.0873140716975063,
+          "p5": -0.3441231714446851
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.21340197257213156,
+            "agreement": 0.1548565721538642,
+            "ear": -0.1705418469777004,
+            "fft_bpm": 0.19793574547682455,
+            "half_bpm": 0.10329681932770567,
+            "half_strength": -0.2293247833845895,
+            "motion": 0.04966985401897526,
+            "spectral_quality": -0.08169666666630261
+          },
+          "mean": 5.915700737317857,
+          "p90_abs": 20.570486504727068,
+          "std": 10.995454047101942
+        },
+        "rule_id": "full-comparison-v5--P100-033--symbolic_control-rule-3",
+        "rule_sha256": "86425631e74ab081fc475f5348291b157e141725892aae39df1ae1b85ba335f4",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "83.07052668063501 + -2.1133765431751703 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.034732104895453114 * (fft_bpm * half_strength) + -0.14716842676212108 * (half_bpm * half_strength) + 3.0873140716975063 * (half_strength * motion) + -0.3441231714446851 * (spectral_quality * motion)",
+          "expression_bytes": 177,
+          "free_parameters": 6,
+          "learned_state_bytes": 161,
+          "literal_state_bytes": 35,
+          "nodes": 71,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 20
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.726092848741299,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--symbolic_control-rule-3",
+      "rule_sha256": "86425631e74ab081fc475f5348291b157e141725892aae39df1ae1b85ba335f4",
+      "run_id": "full-comparison-v5--P100-033--symbolic_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "83.07052668063501 + -2.1133765431751703 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.034732104895453114 * (fft_bpm * half_strength) + -0.14716842676212108 * (half_bpm * half_strength) + 3.0873140716975063 * (half_strength * motion) + -0.3441231714446851 * (spectral_quality * motion)",
+        "expression_bytes": 177,
+        "free_parameters": 6,
+        "learned_state_bytes": 161,
+        "literal_state_bytes": 35,
+        "nodes": 71,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 20
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.006920543349027922,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.344866491904792,
+        "primary": "mae",
+        "primary_error": 10.344866491904792,
+        "rmse": 12.699402441566608
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.221612632193704,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.596590278676347,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.124383183671524,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.067931568465671,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 17.466590216754394,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.33186762036847,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.56195328364065,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.820731924744113,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.116355040574739,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 15.14064916995833,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.499256065351682,
+        "execution_status": "complete",
+        "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 83.07052668063501,
+          "p1": -2.1133765431751703,
+          "p2": 0.034732104895453114,
+          "p3": -0.14716842676212108,
+          "p4": 3.0873140716975063,
+          "p5": -0.3441231714446851
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.21340197257213156,
+            "agreement": 0.1548565721538642,
+            "ear": -0.1705418469777004,
+            "fft_bpm": 0.19793574547682455,
+            "half_bpm": 0.10329681932770567,
+            "half_strength": -0.2293247833845895,
+            "motion": 0.04966985401897526,
+            "spectral_quality": -0.08169666666630261
+          },
+          "mean": 5.915700737317857,
+          "p90_abs": 20.570486504727068,
+          "std": 10.995454047101942
+        },
+        "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-3",
+        "rule_sha256": "a5fb2e8595238aa0137ccb67b14b6ab907a48c48adc62aa12bf75eb91e412963",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "83.07052668063501 + -2.1133765431751703 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.034732104895453114 * (fft_bpm * half_strength) + -0.14716842676212108 * (half_bpm * half_strength) + 3.0873140716975063 * (half_strength * motion) + -0.3441231714446851 * (spectral_quality * motion)",
+          "expression_bytes": 177,
+          "free_parameters": 6,
+          "learned_state_bytes": 161,
+          "literal_state_bytes": 35,
+          "nodes": 71,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 20
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.726092848741299,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-3",
+      "rule_sha256": "a5fb2e8595238aa0137ccb67b14b6ab907a48c48adc62aa12bf75eb91e412963",
+      "run_id": "full-comparison-v5--P100-033--principia_engine",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "83.07052668063501 + -2.1133765431751703 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.034732104895453114 * (fft_bpm * half_strength) + -0.14716842676212108 * (half_bpm * half_strength) + 3.0873140716975063 * (half_strength * motion) + -0.3441231714446851 * (spectral_quality * motion)",
+        "expression_bytes": 177,
+        "free_parameters": 6,
+        "learned_state_bytes": 161,
+        "literal_state_bytes": 35,
+        "nodes": 71,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 20
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.006920543349027922,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.38891012371491,
+        "primary": "mae",
+        "primary_error": 10.38891012371491,
+        "rmse": 12.77864493465973
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.185064597779009,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.592700174130274,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.139151302629468,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.071453714258529,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 17.836977765271143,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.254139390191124,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.571686865396318,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.746983252801321,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.105432100190265,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 15.385512074501648,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.485539759484116,
+        "execution_status": "complete",
+        "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)+p6*(log1p(abs((motion-0.2986289631533848)/0.45765675513349435)))+p7*((motion)**2)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 19.655767095618533,
+          "p1": -1.9719535910344679,
+          "p2": 0.03842507420011581,
+          "p3": -0.15814211135023412,
+          "p4": 4.681413687128311,
+          "p5": 1.6258737388490991,
+          "p6": 126.59822937287274,
+          "p7": -56.36827238124814
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2104709769684955,
+            "agreement": 0.15380521412285422,
+            "ear": -0.1691443195982067,
+            "fft_bpm": 0.1968064385763798,
+            "half_bpm": 0.10327944337918132,
+            "half_strength": -0.22711442980756308,
+            "motion": 0.04491871125193086,
+            "spectral_quality": -0.07585678593750114
+          },
+          "mean": 5.894559765638833,
+          "p90_abs": 20.502449164188462,
+          "std": 10.979264836660375
+        },
+        "rule_id": "full-comparison-v5--P100-033--symbolic_control-rule-1",
+        "rule_sha256": "e6fc9e512aab63c731a52414a15e5a1a39737e1fd2ec81004c8929bfe42488b5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "19.655767095618533 + -1.9719535910344679 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.03842507420011581 * (fft_bpm * half_strength) + -0.15814211135023412 * (half_bpm * half_strength) + 4.681413687128311 * (half_strength * motion) + 1.6258737388490991 * (spectral_quality * motion) + 126.59822937287274 * log1p(abs((motion - 0.2986289631533848) / 0.45765675513349435)) + -56.36827238124814 * motion ** 2",
+          "expression_bytes": 259,
+          "free_parameters": 8,
+          "learned_state_bytes": 211,
+          "literal_state_bytes": 73,
+          "nodes": 102,
+          "numeric_literal_count": 5,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 31
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.72689166435044,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)+p6*(log1p(abs((motion-0.2986289631533848)/0.45765675513349435)))+p7*((motion)**2)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-033--symbolic_control-rule-1",
+      "rule_sha256": "e6fc9e512aab63c731a52414a15e5a1a39737e1fd2ec81004c8929bfe42488b5",
+      "run_id": "full-comparison-v5--P100-033--symbolic_control",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "19.655767095618533 + -1.9719535910344679 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.03842507420011581 * (fft_bpm * half_strength) + -0.15814211135023412 * (half_bpm * half_strength) + 4.681413687128311 * (half_strength * motion) + 1.6258737388490991 * (spectral_quality * motion) + 126.59822937287274 * log1p(abs((motion - 0.2986289631533848) / 0.45765675513349435)) + -56.36827238124814 * motion ** 2",
+        "expression_bytes": 259,
+        "free_parameters": 8,
+        "learned_state_bytes": 211,
+        "literal_state_bytes": 73,
+        "nodes": 102,
+        "numeric_literal_count": 5,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 31
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03487385717169224,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 10.38891012371491,
+        "primary": "mae",
+        "primary_error": 10.38891012371491,
+        "rmse": 12.77864493465973
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 11.185064597779009,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 11.592700174130274,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 4.139151302629468,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 4.071453714258529,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 17.836977765271143,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 8.254139390191124,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 8.571686865396318,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 13.746983252801321,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 9.105432100190265,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 15.385512074501648,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 9.485539759484116,
+        "execution_status": "complete",
+        "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)+p6*(log1p(abs((motion-0.2986289631533848)/0.45765675513349435)))+p7*((motion)**2)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 19.655767095618533,
+          "p1": -1.9719535910344679,
+          "p2": 0.03842507420011581,
+          "p3": -0.15814211135023412,
+          "p4": 4.681413687128311,
+          "p5": 1.6258737388490991,
+          "p6": 126.59822937287274,
+          "p7": -56.36827238124814
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.2104709769684955,
+            "agreement": 0.15380521412285422,
+            "ear": -0.1691443195982067,
+            "fft_bpm": 0.1968064385763798,
+            "half_bpm": 0.10327944337918132,
+            "half_strength": -0.22711442980756308,
+            "motion": 0.04491871125193086,
+            "spectral_quality": -0.07585678593750114
+          },
+          "mean": 5.894559765638833,
+          "p90_abs": 20.502449164188462,
+          "std": 10.979264836660375
+        },
+        "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-1",
+        "rule_sha256": "daa2fbcdd1b8866e04901837cb3ae7cfff117b66aa31400c5676200e3dd2798d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "19.655767095618533 + -1.9719535910344679 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.03842507420011581 * (fft_bpm * half_strength) + -0.15814211135023412 * (half_bpm * half_strength) + 4.681413687128311 * (half_strength * motion) + 1.6258737388490991 * (spectral_quality * motion) + 126.59822937287274 * log1p(abs((motion - 0.2986289631533848) / 0.45765675513349435)) + -56.36827238124814 * motion ** 2",
+          "expression_bytes": 259,
+          "free_parameters": 8,
+          "learned_state_bytes": 211,
+          "literal_state_bytes": 73,
+          "nodes": 102,
+          "numeric_literal_count": 5,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 31
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 11.72689166435044,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(fft_bpm*half_strength)+p3*(half_bpm*half_strength)+p4*(half_strength*motion)+p5*(spectral_quality*motion)+p6*(log1p(abs((motion-0.2986289631533848)/0.45765675513349435)))+p7*((motion)**2)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--principia_engine-rule-1",
+      "rule_sha256": "daa2fbcdd1b8866e04901837cb3ae7cfff117b66aa31400c5676200e3dd2798d",
+      "run_id": "full-comparison-v5--P100-033--principia_engine",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "19.655767095618533 + -1.9719535910344679 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 0.03842507420011581 * (fft_bpm * half_strength) + -0.15814211135023412 * (half_bpm * half_strength) + 4.681413687128311 * (half_strength * motion) + 1.6258737388490991 * (spectral_quality * motion) + 126.59822937287274 * log1p(abs((motion - 0.2986289631533848) / 0.45765675513349435)) + -56.36827238124814 * motion ** 2",
+        "expression_bytes": 259,
+        "free_parameters": 8,
+        "learned_state_bytes": 211,
+        "literal_state_bytes": 73,
+        "nodes": 102,
+        "numeric_literal_count": 5,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 31
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03487385717169224,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 12.208919949001736,
+        "primary": "mae",
+        "primary_error": 12.208919949001736,
+        "rmse": 17.511748178306227
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 10.096878669586468,
+      "by_group": [
+        {
+          "error": 18.709581163194443,
+          "group": "group-04dbf2956bf5e22ef266acbb",
+          "rows": 108
+        },
+        {
+          "error": 16.140209056712962,
+          "group": "group-300537a1bd171a7b60ca5515",
+          "rows": 108
+        },
+        {
+          "error": 14.406611689814815,
+          "group": "group-4607ea431ee2fb5521e7169c",
+          "rows": 108
+        },
+        {
+          "error": 17.03826678240741,
+          "group": "group-52223673c1f734ffbc828161",
+          "rows": 108
+        },
+        {
+          "error": 1.11865234375,
+          "group": "group-6037163e47b0fd4ee840500c",
+          "rows": 4
+        },
+        {
+          "error": 17.94654224537037,
+          "group": "group-67ae81ee9f997517e0acad56",
+          "rows": 108
+        },
+        {
+          "error": 13.594950358072916,
+          "group": "group-8aacba2fc66c95abd49225fd",
+          "rows": 96
+        },
+        {
+          "error": 8.45849609375,
+          "group": "group-998fb8913ba5162ed2b6914e",
+          "rows": 4
+        },
+        {
+          "error": 13.376573350694445,
+          "group": "group-c5c23b1a6428ea75d2c125bb",
+          "rows": 108
+        },
+        {
+          "error": 1.29931640625,
+          "group": "group-d704dfdb1cb6d836e5257ed3",
+          "rows": 4
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 18.06144431785301,
+        "execution_status": "complete",
+        "expression": "where(fft_bpm > 2 * half_bpm, fft_bpm, 2 * half_bpm)",
+        "inputs": [
+          "fft_bpm",
+          "acf_bpm",
+          "half_bpm",
+          "half_strength",
+          "spectral_quality",
+          "agreement",
+          "motion",
+          "ear"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {},
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "acf_bpm": 0.34315301556462585,
+            "agreement": 0.2724217808409628,
+            "ear": -0.09611432146503976,
+            "fft_bpm": 0.7444806797984355,
+            "half_bpm": 0.9164970672844188,
+            "half_strength": -0.18500612562210075,
+            "motion": -0.02839828331054338,
+            "spectral_quality": 0.030202050692564198
+          },
+          "mean": 2.6249632871240602,
+          "p90_abs": 40.20234375000001,
+          "std": 27.10661686754968
+        },
+        "rule_id": "full-comparison-v5--P100-033--direct_qwen-rule-1",
+        "rule_sha256": "83d1d165652f1db7d8bf4a67d78e6f49519f40ee573bab1905ae406843e1aa0b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "where(fft_bpm > 2 * half_bpm, fft_bpm, 2 * half_bpm)",
+          "expression_bytes": 52,
+          "free_parameters": 0,
+          "learned_state_bytes": 2,
+          "literal_state_bytes": 2,
+          "nodes": 20,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-033.compact.v2",
+        "train_error": 16.39032957288954,
+        "units": {
+          "inputs": {
+            "acf_bpm": "bpm",
+            "agreement": "bpm",
+            "ear": "dimensionless",
+            "fft_bpm": "bpm",
+            "half_bpm": "bpm",
+            "half_strength": "dimensionless",
+            "motion": "dimensionless",
+            "spectral_quality": "dimensionless"
+          },
+          "output": "bpm",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 756,
+        "fraction": 1.0,
+        "predicted": 756
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "where(fft_bpm > 2 * half_bpm, fft_bpm, 2 * half_bpm)",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-033--direct_qwen-rule-1",
+      "rule_sha256": "83d1d165652f1db7d8bf4a67d78e6f49519f40ee573bab1905ae406843e1aa0b",
+      "run_id": "full-comparison-v5--P100-033--direct_qwen",
+      "scenario_id": "P100-033",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "where(fft_bpm > 2 * half_bpm, fft_bpm, 2 * half_bpm)",
+        "expression_bytes": 52,
+        "free_parameters": 0,
+        "learned_state_bytes": 2,
+        "literal_state_bytes": 2,
+        "nodes": 20,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0880601668167591,
+        "perturbation_labels_available": false,
+        "population_rows": 756,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-033.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-033",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-033.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

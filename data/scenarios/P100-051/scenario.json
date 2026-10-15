@@ -1,0 +1,324 @@
+{
+  "description": "measured drain current between three disclosed gate-voltage calibration anchors",
+  "domain": "Semiconductor memories",
+  "independent_unit": "complete source FET column/device",
+  "input_units": {
+    "cal_minus20_uA": "uA",
+    "cal_plus20_uA": "uA",
+    "cal_zero_uA": "uA",
+    "gate_V": "V"
+  },
+  "limitations": [
+    "offline sparse-characterization task: three responses at -20,0,20 V are obtained before reconstructing other gate points; not an uncalibrated or causal sweep forecast",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "uA",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 990,
+    "test": 1782,
+    "train": 4356
+  },
+  "scenario_id": "P100-051",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1215400,
+    "limit_bytes": 10000000,
+    "public_bytes": 197532
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 3f-Retention time.csv",
+        "source_sha256": "c9bf7314a08fb9942c658f06fcd4ade51e8c50106e093b33241d3b81440e156f"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 2-XPS NbS2.csv",
+        "source_sha256": "b6f989a841039a4020f8197e411270e6f3c27a426b9bd86c385e18f4e235ba8d"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 11-TLM-Rc of heterostructure and MoS2.csv",
+        "source_sha256": "37474a3ad18a8223bffdbcd0106e39730f8c6fe05bdb339b5f28c6015f4ac4e1"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 2d-G-T of HT.csv",
+        "source_sha256": "9934060eb81d64d87968469742cea3297c843ae258c1fe7ebba0635da5b062b7"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 1e-MoS2 Raman.csv",
+        "source_sha256": "e7c90c58b0511662c3d1f11e379dec824dfcfda08134c7b043bab04dd40cd42c"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 15-MoS2 and HT memory comparision.csv",
+        "source_sha256": "4e1c9faf457554d67da35f1eaadd9ac7326c9c83b37b4c1ae334894e33c43435"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 14b-Vg sweep under different Vds of MoS2.csv",
+        "source_sha256": "ca0ad9f1b6fbbcb228edc85367e027d2fe0c2a34fa822c68d040423b99b6a8a4"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 16a-Vg sweep-different sweep rate.csv",
+        "source_sha256": "52636afa47ff33358794f8fb0edbf9b861f5ed363d154adc5a52058e8f5e5730"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 2c-Ids-Vg of HT and MoS2.csv",
+        "source_sha256": "e320dab795d1001a5ef5e6f57189206704ddc8bc93433e22faa5fb589de7145a"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 16b-Vg sweep-different T.csv",
+        "source_sha256": "6feaae6fb99660fe685e8d5fa99c7ed8dbc16cda50927f8912108577a2a55892"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 5-XPS MoS2.csv",
+        "source_sha256": "028e2aef134ab620d5b008c1685ada35e2f8c91bf79efc0785a9a097ec7d7900"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 13a-SBH analysis-Ids-T under various Vg.csv",
+        "source_sha256": "811ff89783166f093af4fc932dde55920d8d1bcb3ade97ccc388cd6e75f32e67"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 2e-Vg sweep of 36 FET.csv",
+        "source_sha256": "d085783652415cca892f51c5e5db06f0ac4777a9fa30bf2b9f7ed30892fb9cfa"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 10-I-V NbS2.csv",
+        "source_sha256": "3dce28a259128ea651d5b7fa819c7d206b53e81dd083dac72a531985d44a80d9"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 9-Voltage potential of probes.csv",
+        "source_sha256": "da79103dc354280455af20864110ebc672e109c3cae5d7a9cf31ea83f54a2680"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 6b-Raman line scans of NbS2.csv",
+        "source_sha256": "7c21c1eec9e6c4a0d54c8a0a592cd8673efb936d41b8de31a9373d991dc44a60"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 6a-Raman line scans of MoS2.csv",
+        "source_sha256": "0afd6b2880b807e2ef051d25d474adb30f82c50a83ae3fffc54ec36e1f9df45f"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 3e-Gds-pulses.csv",
+        "source_sha256": "8d624310ae5cf861bce1b116676fe84dd238ce56211baaf57a7b2bdba1a34019"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 13b-SBH-Vg.csv",
+        "source_sha256": "2d6d83c0cc73dc3c04b909741e9f1adc93d2ebb0cbf337535d3826aed9f1b0b5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 3c-Ids-Vds under different Vg of FGFET.csv",
+        "source_sha256": "8d98579c733802b172065ccbe062af5737c67a847b27dd424e466f00bd5adf27"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 3d-Ids-t.csv",
+        "source_sha256": "c6f3015d91c1553fd351e1b2e3ba4b44ab6b2cdcd4b0a82f019b396464d5b4b5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 3g-Endurance.csv",
+        "source_sha256": "e51632166c817f396d12f7ffc60630cf8e0f3601b595c07d6c74d08d7bc15769"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 1d-NbS2 Raman.csv",
+        "source_sha256": "d08cc864d6822b938a965939adfcac47362384ab58bca9746db7c83c47b3169f"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 14a-Vg sweep under different Vds of heterostructure.csv",
+        "source_sha256": "03dac9bb5103b42e5f7e9db3f60e030fce934c69b0f550def5da15d1cb316762"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 3b-memory of heterostructure FGFET.csv",
+        "source_sha256": "18846882e8924faa6cd4f04c6b74f81dd61c78cc3f3d616be1603a0f3e1da4b5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 17a-Vg sweep-different Vmax.csv",
+        "source_sha256": "45302a42c80dd81b318c147eb838331454d57c5b03b2ef180090c15f165b16de"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 2g-Distribution of mobility and SS.csv",
+        "source_sha256": "e4fcbc78059592c530948c76bcf9deda895fa329b9273052167bedc55d2a4e31"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 17b-Vg sweep-different Vds.csv",
+        "source_sha256": "d97e5d678a8acd3a801aa5c2b4749441f0a4354c13cf09b319a297c7f9d1b87b"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 4-Raman NbS2 under different T.csv",
+        "source_sha256": "05c87522b775e0bd10fa385909b9e745fdba83c47bf85ca3f9c810d38e6b24c0"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 4a&b-Ids-Vg with scaling down.csv",
+        "source_sha256": "cd2767dfb6a78851764188664d6c870c50ad22ecb69d07c2dd084eda16fb6905"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 4c-PW with different tcg.csv",
+        "source_sha256": "676ee59b012cc4c98b56b6dc4870f717e30f06d36185bc63ecf7b6ed70e05bbe"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 2f-distribution of Ids.csv",
+        "source_sha256": "a4b415669bf995e423a3c368bb301a9336c81834c46f2bda8592b08f1ed866db"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 12-Ea vs Vg.csv",
+        "source_sha256": "dbd6032503abf249588773c3597d464e9c10d72c41235e492a7c73b1ef03d5a8"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 14c-Vds sweep under different Vg of heterostructure.csv",
+        "source_sha256": "1bb8e2df59147def1fc01de59a95ef2dde79da9b0dbdcdb33496b7ede67c4c51"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19003428",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/raw/Supplementary Figure 14d-Vds sweep under different Vg of MoS2.csv",
+        "source_sha256": "232275f909dd183bda4726d5651490c1883c716194467c40aab49d80bc8287cd"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19003428",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/51_semiconductor_heterostructure_memories/context/source_record.json",
+        "source_sha256": "5ee5955cfad64ab0bcb16a758a14d0e521714ed3ba3257e2ed86edcf683cdda1"
+      }
+    ],
+    "historical_case": "P100-051",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/19003428",
+    "version": "19003428"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "20f53d5dc51a09e7688762cf4cad78d34637f97656314e28f6359f32d645cdaa",
+        "groups": 5,
+        "rows": 990,
+        "sample_ids_sha256": "32e0bc8ad73f40f06a6dd1e86d2e15133e0ec4051cf67e685bf0a39e43befb34"
+      },
+      "test": {
+        "group_ids_sha256": "dc522170da023e15e5ccdd8cb7449327735a9edfc7cb5767692eee0d79903163",
+        "groups": 9,
+        "rows": 1782,
+        "sample_ids_sha256": "4e8533f92ff07b1af1048f4fee7fd5330b2a538d9df235efaf4761b960f61ea2"
+      },
+      "train": {
+        "group_ids_sha256": "c252dab6ca30e7c10bd5c8835e9443bad0cbb4f334ceebdadb59208ae2dd6557",
+        "groups": 22,
+        "rows": 4356,
+        "sample_ids_sha256": "3f8f43770fedc463223679a6e226b467ba558269c2f2b9a4862b340b2a71d228"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Data set for \"Non-volatile memories based on patterned metal–semiconductor heterostructures of niobium disulfide and molybdenum disulfide\"",
+  "version": "1.0.0rc2"
+}

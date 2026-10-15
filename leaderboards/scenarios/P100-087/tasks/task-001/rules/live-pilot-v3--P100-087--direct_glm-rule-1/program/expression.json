@@ -1,0 +1,13 @@
+{
+  "expression": "minimum(endowment, maximum(0, p0*own_previous + p1*peer_previous + p2*own_history_mean + p3*peer_history_mean + p4*required_contribution))",
+  "parameters": {
+    "p0": 0.5377434932181088,
+    "p1": 0.11857199529272773,
+    "p2": 0.42196321115549495,
+    "p3": -0.1120112413718387,
+    "p4": 0.02583143650844895
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

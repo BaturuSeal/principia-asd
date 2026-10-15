@@ -1,0 +1,72 @@
+{
+  "dev_error": 0.00025086716807799536,
+  "execution_status": "complete",
+  "expression": "abs(hi - lo) + noise",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": 0.023487738459045455,
+      "glo": -9.968618049443343e-17,
+      "hi": -0.9968076353023158,
+      "lo": -0.9954672271952549,
+      "noise": -0.006406840685638646,
+      "r": 0.023487738459045455,
+      "sep": 0.3164646059643552
+    },
+    "mean": -0.0002508499600427652,
+    "p90_abs": 0.0003806596521580636,
+    "std": 0.0003932147700843604
+  },
+  "rule_id": "full-comparison-v5--P100-028--direct_qwen-rule-1",
+  "rule_sha256": "e9aa5c0f8ad1f42a875f84b4cedfaf4d684395dda4864ce9c19d9031928a0390",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "abs(hi - lo) + noise",
+    "expression_bytes": 20,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 0,
+    "nodes": 14,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 0.0002529958481859371,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

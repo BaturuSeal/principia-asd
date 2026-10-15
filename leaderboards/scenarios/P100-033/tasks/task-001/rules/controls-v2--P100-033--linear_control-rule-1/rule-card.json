@@ -1,0 +1,79 @@
+{
+  "dev_error": 10.11562639776314,
+  "execution_status": "complete",
+  "expression": "p0+p1*(fft_bpm)+p2*(acf_bpm)+p3*(half_bpm)+p4*(half_strength)+p5*(spectral_quality)+p6*(agreement)+p7*(motion)+p8*(ear)",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 82.74140729345514,
+    "p1": 0.07373683327100353,
+    "p2": 0.02791429843985638,
+    "p3": -0.16731805552540388,
+    "p4": -0.14403575102657748,
+    "p5": -2.4870111523552323,
+    "p6": -0.026142495282063756,
+    "p7": 2.2982062502528904,
+    "p8": -2.0461578987544367
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.2713665486481941,
+      "agreement": 0.18543568705844915,
+      "ear": -0.25895481141361054,
+      "fft_bpm": 0.2527856228627536,
+      "half_bpm": 0.16059843333746404,
+      "half_strength": -0.23755657994352727,
+      "motion": 0.039122843457492694,
+      "spectral_quality": -0.1413537450616162
+    },
+    "mean": 6.501451432121746,
+    "p90_abs": 21.466083043173118,
+    "std": 11.494638819695238
+  },
+  "rule_id": "controls-v2--P100-033--linear_control-rule-1",
+  "rule_sha256": "50cd0f2da4ce20a98817ee839bc9b4127d7e7b5d2657a98daed3e6ecfcdd4d97",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "82.74140729345514 + 0.07373683327100353 * fft_bpm + 0.02791429843985638 * acf_bpm + -0.16731805552540388 * half_bpm + -0.14403575102657748 * half_strength + -2.4870111523552323 * spectral_quality + -0.026142495282063756 * agreement + 2.2982062502528904 * motion + -2.0461578987544367 * ear",
+    "expression_bytes": 119,
+    "free_parameters": 9,
+    "learned_state_bytes": 244,
+    "nodes": 67,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 11.586127094151932,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

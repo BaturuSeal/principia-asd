@@ -1,0 +1,77 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "clat": "dimensionless cosine latitude",
+    "dg": "degree C",
+    "gx": "degree C",
+    "gy": "degree C",
+    "hx": "degree C",
+    "hy": "degree C",
+    "ox": "degree C",
+    "oy": "degree C"
+  },
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Retrospective reconstruction of one daily map, using twelve fixed neighboring pixels from the same date. Not a future forecast.",
+  "output": "target",
+  "output_description": "SST anomaly at a withheld pixel",
+  "output_units": "degree C",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-020",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "090703d53c04f1509949425e7110df848405989a07e90f9b3893a31ed706b588",
+  "source_task": "P100-020.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Complete20degree geographic tile for scoring; all tiles belong to one dependent global map, not independent temporal replicates.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-020.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "SST anomaly at a withheld pixel",
+  "version": "1.0.0rc2"
+}

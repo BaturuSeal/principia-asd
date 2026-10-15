@@ -1,0 +1,9 @@
+{
+  "expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+  "parameters": {
+    "p0": 1.0
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

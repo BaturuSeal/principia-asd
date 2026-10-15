@@ -1,0 +1,14 @@
+{
+  "expression": "p_now + p0 * (p_past - p_now) + p1 * (p_initial - p_now) + p2 * (density - 0.5) + p3 * (speed - 1.0) + p4 * (radius90 - 4.0) + p5 * (polarization_variance - 0.6)",
+  "parameters": {
+    "p0": -0.07204142851394156,
+    "p1": 0.06087810065599252,
+    "p2": -0.0318164123989452,
+    "p3": 0.005933077749428012,
+    "p4": -0.0016872222966964417,
+    "p5": 0.0691258281438985
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

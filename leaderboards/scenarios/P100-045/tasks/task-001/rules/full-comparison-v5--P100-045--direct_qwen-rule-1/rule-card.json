@@ -1,0 +1,73 @@
+{
+  "dev_error": 19.7493986317284,
+  "execution_status": "complete",
+  "expression": "maximum(0, p0 * background_high + p1 * (low - background_low))",
+  "inputs": [
+    "low",
+    "low_lag",
+    "background_low",
+    "background_high",
+    "time_s",
+    "channel_low_keV",
+    "channel_high_keV"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.033686582031957,
+    "p1": 0.4496584307882786
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "background_high": -0.1555933325557593,
+      "background_low": -0.15559333255575933,
+      "channel_high_keV": -0.1555933325557593,
+      "channel_low_keV": 0.15559333255575933,
+      "low": -0.4761509724247081,
+      "low_lag": -0.4065044154768639,
+      "time_s": 0.30795513352985376
+    },
+    "mean": 5.707651520837062,
+    "p90_abs": 38.5631457255229,
+    "std": 26.78516902848403
+  },
+  "rule_id": "full-comparison-v5--P100-045--direct_qwen-rule-1",
+  "rule_sha256": "d53af3f4039220c1294b097b940a7f36a9d7de4437593a052141ede5694eb794",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "maximum(0, 1.033686582031957 * background_high + 0.4496584307882786 * (low - background_low))",
+    "expression_bytes": 62,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 1,
+    "nodes": 23,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-045.compact.v2",
+  "train_error": 14.681417945601286,
+  "units": {
+    "inputs": {
+      "background_high": "counts/s in pretrigger channel 4",
+      "background_low": "counts/s in pretrigger channels 2+3",
+      "channel_high_keV": "keV",
+      "channel_low_keV": "keV",
+      "low": "counts/s in channels 2+3",
+      "low_lag": "counts/s in preceding bin, channels 2+3",
+      "time_s": "s after trigger"
+    },
+    "output": "counts/s",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

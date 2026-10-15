@@ -1,0 +1,71 @@
+{
+  "dev_error": 5.114074907468626,
+  "execution_status": "complete",
+  "expression": "p0+p1*length_km+p2*width_km+p3*duration_min+p4*latitude+p5*month",
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 14.374170362563392,
+    "p1": 0.14816715966004174,
+    "p2": 2.0696939048729432,
+    "p3": -0.0350653460715714,
+    "p4": -0.2023188740269158,
+    "p5": -0.4301025507395384
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "duration_min": 0.07471106412819933,
+      "latitude": -0.40905421179146934,
+      "length_km": -0.03268449864435652,
+      "month": -0.16634350682918356,
+      "width_km": 0.2631075844742607
+    },
+    "mean": 0.5499317379815125,
+    "p90_abs": 8.862366512748991,
+    "std": 6.145030308983782
+  },
+  "rule_id": "full-comparison-v5--P100-018--tool_agent-rule-2",
+  "rule_sha256": "dd3e7ca0a4692c7375427fad079fa0e4da0380d794cf540f5c79a52a480b4a74",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "14.374170362563392 + 0.14816715966004174 * length_km + 2.0696939048729432 * width_km + -0.0350653460715714 * duration_min + -0.2023188740269158 * latitude + -0.4301025507395384 * month",
+    "expression_bytes": 64,
+    "free_parameters": 6,
+    "learned_state_bytes": 160,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-018.compact.v2",
+  "train_error": 4.785947492002448,
+  "units": {
+    "inputs": {
+      "duration_min": "minutes event duration",
+      "latitude": "degrees north",
+      "length_km": "km path length",
+      "month": "calendar1–12",
+      "width_km": "km maximum path width"
+    },
+    "output": "ln(1+property damage in USD)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

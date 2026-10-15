@@ -1,0 +1,62 @@
+{
+  "dev_error": 17.80549417733902,
+  "execution_status": "complete",
+  "expression": "anchor_selectivity_pct + elapsed_min * prefix_slope_pct_min + p0 * (ag_wt_pct / 20.0) * (1 - exp(-elapsed_min / 300.0))",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -9.681075850565797
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": -0.3440809468266258,
+      "elapsed_min": 0.8897281905537244,
+      "prefix_slope_pct_min": 0.3440809468266258
+    },
+    "mean": 17.525198943940786,
+    "p90_abs": 44.305561983283745,
+    "std": 17.157416962124937
+  },
+  "rule_id": "full-comparison-v5--P100-026--direct_deepseek-rule-1",
+  "rule_sha256": "79e00b65657ac4dd8b3a3af03305e598ad3120b5cd618f28219315f68517db93",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "anchor_selectivity_pct + elapsed_min * prefix_slope_pct_min + -9.681075850565797 * (ag_wt_pct / 20.0) * (1 - exp(-elapsed_min / 300.0))",
+    "expression_bytes": 119,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 10,
+    "nodes": 37,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 6.138564015128905,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

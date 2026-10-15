@@ -1,0 +1,85 @@
+{
+  "dev_error": 0.011511670686089815,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * lag1 + p2 * lag2 + p3 * lag3 + p4 * lag4 + p5 * median4 + p6 * mad4 + p7 * (low1 / 1000)",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "median4",
+    "mad4",
+    "low1",
+    "high1",
+    "line1"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.0854620166876205,
+    "p1": 0.15990101522584038,
+    "p2": 0.10423097544487596,
+    "p3": 0.014179298021145105,
+    "p4": 0.03183176065102348,
+    "p5": -0.08180191159439638,
+    "p6": -1.3111323810978104,
+    "p7": -0.2354898029260268
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "high1": -0.013601581691808091,
+      "lag1": -0.13006468402682136,
+      "lag2": -0.156978401358378,
+      "lag3": -0.19277240248239674,
+      "lag4": -0.12422333364540929,
+      "line1": -0.1753253881659587,
+      "low1": -0.03848733079805944,
+      "mad4": -0.22415775954493186,
+      "median4": -0.23347996998221
+    },
+    "mean": 0.0017335986165052729,
+    "p90_abs": 0.02381873253895975,
+    "std": 0.014608430786219952
+  },
+  "rule_id": "full-comparison-v5--P100-003--best_of_n-rule-2",
+  "rule_sha256": "db75f0334be3c81f428e1abd0ba417fc43a1a2cd887073bbba56af169a0668a8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0854620166876205 + 0.15990101522584038 * lag1 + 0.10423097544487596 * lag2 + 0.014179298021145105 * lag3 + 0.03183176065102348 * lag4 + -0.08180191159439638 * median4 + -1.3111323810978104 * mad4 + -0.2354898029260268 * (low1 / 1000)",
+    "expression_bytes": 98,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 4,
+    "nodes": 62,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-003.compact.v2",
+  "train_error": 0.013187090157997247,
+  "units": {
+    "inputs": {
+      "high1": "RMS strain in units of 1e-21",
+      "lag1": "RMS strain in units of 1e-21",
+      "lag2": "RMS strain in units of 1e-21",
+      "lag3": "RMS strain in units of 1e-21",
+      "lag4": "RMS strain in units of 1e-21",
+      "line1": "RMS strain in units of 1e-21",
+      "low1": "RMS strain in units of 1e-21",
+      "mad4": "RMS strain in units of 1e-21",
+      "median4": "RMS strain in units of 1e-21"
+    },
+    "output": "10^-21 strain",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

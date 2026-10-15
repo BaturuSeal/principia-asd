@@ -1,0 +1,80 @@
+{
+  "dev_error": 0.002750302312560642,
+  "execution_status": "complete",
+  "expression": "p0+p1*(rfd/npq)+p2*(tanh((rfd-2.2161338628189617)/0.7298525550595808))",
+  "inputs": [
+    "npq",
+    "rfd",
+    "ngrdi",
+    "area",
+    "tiny",
+    "salt",
+    "drought",
+    "high_stress"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8749448008483439,
+    "p1": -0.015726779386907547,
+    "p2": -0.0045014347937925156
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "area": -0.07614598418783272,
+      "drought": 0.11189438751741941,
+      "high_stress": -0.025893863645767515,
+      "ngrdi": 0.04748044725571298,
+      "npq": -0.0924661589460918,
+      "rfd": -0.08985674372745647,
+      "salt": -0.0318944098705844,
+      "tiny": 0.024219823325342928
+    },
+    "mean": -2.2784742197991326e-05,
+    "p90_abs": 0.006704674817954781,
+    "std": 0.004284081427802444
+  },
+  "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-1",
+  "rule_sha256": "0727c8ce59894c9d87f5a7dc0e19c822dd32c0d2f0889d2363882068ebe1db76",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.8749448008483439 + -0.015726779386907547 * (rfd / npq) + -0.0045014347937925156 * tanh((rfd - 2.2161338628189617) / 0.7298525550595808)",
+    "expression_bytes": 70,
+    "free_parameters": 3,
+    "learned_state_bytes": 85,
+    "literal_state_bytes": 36,
+    "nodes": 32,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-036.compact.v2",
+  "train_error": 0.0053188909818704866,
+  "units": {
+    "inputs": {
+      "area": "source AREA_MM scale; only relative/log descriptor used",
+      "drought": "drought-treatment indicator",
+      "high_stress": "source second stress-level indicator; no invented dose units",
+      "ngrdi": "dimensionless RGB index",
+      "npq": "dimensionless author NPQ_Lss",
+      "rfd": "dimensionless author Rfd_Lss",
+      "salt": "salt-treatment indicator",
+      "tiny": "cultivar indicator"
+    },
+    "output": "dimensionless quantum yield",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

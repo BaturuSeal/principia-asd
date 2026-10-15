@@ -1,0 +1,72 @@
+{
+  "dev_error": 0.00023787236437795107,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.0002703872381483173
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": 0.022776870155849522,
+      "glo": 6.513168181158818e-18,
+      "hi": -0.9973212468515485,
+      "lo": -0.9961967050205743,
+      "noise": -0.011625585270259859,
+      "r": 0.02277687015584953,
+      "sep": 0.3179268171923235
+    },
+    "mean": 2.112841101763266e-06,
+    "p90_abs": 0.00024150785465516296,
+    "std": 0.000405487040790951
+  },
+  "rule_id": "controls-v3--P100-028--mean_control-rule-1",
+  "rule_sha256": "ed80268ad94803677a853601cf66ef5ca3ccdc299728b9422e28f6d9c67c1eab",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0002703872381483173",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 29,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 0.0002381081702910794,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

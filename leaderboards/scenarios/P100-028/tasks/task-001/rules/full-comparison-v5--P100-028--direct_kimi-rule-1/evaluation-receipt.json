@@ -1,0 +1,101 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 3.598166046916314e-05,
+    "primary": "mae",
+    "primary_error": 3.598166046916314e-05,
+    "rmse": 4.4687813222520514e-05
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.0002368376710295621,
+  "by_group": [
+    {
+      "error": 2.913245441441133e-05,
+      "group": "group-063c9f47d39f582fb9d83dfd",
+      "rows": 156
+    },
+    {
+      "error": 4.337202389143186e-05,
+      "group": "group-1b643105aaa28c532a04bf27",
+      "rows": 156
+    },
+    {
+      "error": 3.599938027945081e-05,
+      "group": "group-259eb0a4a9be72caa53c0afb",
+      "rows": 156
+    },
+    {
+      "error": 4.5231290577349245e-05,
+      "group": "group-5385e61a16ea7c120bd82d95",
+      "rows": 156
+    },
+    {
+      "error": 3.077764684730301e-05,
+      "group": "group-5a5005d21adf71fd42f6b65a",
+      "rows": 156
+    },
+    {
+      "error": 3.234911775734293e-05,
+      "group": "group-5b29b6506eb605aadc3a892c",
+      "rows": 156
+    },
+    {
+      "error": 3.377498278692663e-05,
+      "group": "group-67f3ca1fdf7023b3e6772cdc",
+      "rows": 156
+    },
+    {
+      "error": 3.874479359570641e-05,
+      "group": "group-978aa369ec293326942a3b78",
+      "rows": 156
+    },
+    {
+      "error": 2.967073188546142e-05,
+      "group": "group-9d589e78dbd38c442b2a57b5",
+      "rows": 156
+    },
+    {
+      "error": 4.0764182656247696e-05,
+      "group": "group-c6565d7a985670a18ed38007",
+      "rows": 156
+    }
+  ],
+  "coverage": {
+    "eligible": 1560,
+    "fraction": 1.0,
+    "predicted": 1560
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-028--direct_kimi-rule-1",
+  "rule_sha256": "8834ed8179b8f45587152b08280c0835da87df2fbcae66b139011e5407874ff0",
+  "run_id": "full-comparison-v5--P100-028--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "lo + (hi - lo) * (g - glo) / (ghi - glo) + 0.0637319836647702 * noise + -0.010451000712828605 * (g - glo) * (g - ghi) + 3.1965993313244706e-08 * sep + 8.964842232672767e-07 * r",
+    "expression_bytes": 102,
+    "free_parameters": 4,
+    "learned_state_bytes": 114,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.15305987320088282,
+    "perturbation_labels_available": false,
+    "population_rows": 1560,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

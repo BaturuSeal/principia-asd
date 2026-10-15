@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.01878184823535187,
+  "execution_status": "complete",
+  "expression": "p0 * (width_um - notch_depth_um) * thickness_um / (1 + p1 * notch_depth_um / notch_width_um) + p2",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.03900401772398232,
+    "p1": -0.374463502678283,
+    "p2": -0.04653072736454494
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": 0.4291019081599539,
+      "notch_depth_um": 0.1846528470528447,
+      "notch_width_um": 0.6833559314492456,
+      "thickness_um": -0.07695666205465515,
+      "width_um": 0.42562815034802237
+    },
+    "mean": 0.00032598254732734355,
+    "p90_abs": 0.03989104242792556,
+    "std": 0.024928464982632303
+  },
+  "rule_id": "full-comparison-v5--P100-054--direct_glm-rule-1",
+  "rule_sha256": "7e490df07c05c1e8b5fa228677976e28bb170cb3f258d0abdb0d496062dc35b2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.03900401772398232 * (width_um - notch_depth_um) * thickness_um / (1 + -0.374463502678283 * notch_depth_um / notch_width_um) + -0.04653072736454494",
+    "expression_bytes": 97,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "literal_state_bytes": 1,
+    "nodes": 34,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.019876680473652174,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

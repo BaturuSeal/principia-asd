@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 10698.458876868019,
+    "primary": "mae",
+    "primary_error": 10698.458876868019,
+    "rmse": 22065.66447386378
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 23255.824680341728,
+  "by_group": [
+    {
+      "error": 10334.335770956932,
+      "group": "group-7a1f1b604ba0642d89f62acc",
+      "rows": 430
+    },
+    {
+      "error": 10291.28604896499,
+      "group": "group-999276b104705b2c5ec6f11a",
+      "rows": 172
+    },
+    {
+      "error": 11469.754810682134,
+      "group": "group-de819024b53df83268ad9144",
+      "rows": 172
+    }
+  ],
+  "coverage": {
+    "eligible": 774,
+    "fraction": 1.0,
+    "predicted": 774
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-012--direct_kimi-rule-1",
+  "rule_sha256": "4aaa74b85cb8f25b8bd15402f3fef18e4e1557b5abb71133fdf1bcdc1cb95ade",
+  "run_id": "full-comparison-v5--P100-012--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "I0 * exp(-2.0512060947225805 * (q / q0) ** 0.8755818600258113) * (1 + -0.16169681620311097 * outer) + -2155.0838261154745",
+    "expression_bytes": 50,
+    "free_parameters": 4,
+    "learned_state_bytes": 107,
+    "literal_state_bytes": 1,
+    "nodes": 39,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.027777082676870513,
+    "perturbation_labels_available": false,
+    "population_rows": 774,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

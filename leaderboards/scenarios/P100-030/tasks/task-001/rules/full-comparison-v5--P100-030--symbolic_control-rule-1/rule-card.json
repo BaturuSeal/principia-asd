@@ -1,0 +1,62 @@
+{
+  "dev_error": 0.004633724207266829,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((speed_mm_s-2.935)/2.960302630925877))+p2*(speed_mm_s*highspeed_cof)",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.045804645608176764,
+    "p1": -0.02159592396318806,
+    "p2": -0.10031556524143202
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.09713667043261813,
+      "highspeed_cof": 0.09713667043261816,
+      "speed_mm_s": -0.6584646557172977
+    },
+    "mean": -0.0005761754316878275,
+    "p90_abs": 0.009576846952597194,
+    "std": 0.005608430939240295
+  },
+  "rule_id": "full-comparison-v5--P100-030--symbolic_control-rule-1",
+  "rule_sha256": "c7b949e35f1e3945cea33f332f0d025a58bb1e1ae0cdb6940d258c527a8db3b4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.045804645608176764 + -0.02159592396318806 * tanh((speed_mm_s - 2.935) / 2.960302630925877) + -0.10031556524143202 * (speed_mm_s * highspeed_cof)",
+    "expression_bytes": 80,
+    "free_parameters": 3,
+    "learned_state_bytes": 84,
+    "literal_state_bytes": 22,
+    "nodes": 32,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.013210487899070754,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

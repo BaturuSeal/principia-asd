@@ -1,0 +1,61 @@
+{
+  "dev_error": 12.325231907930917,
+  "execution_status": "complete",
+  "expression": "maximum(0, minimum(100, p72_pct + p0 * (p22_pct - p72_pct) + p1 * (time_h - 96)))",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.3167286855326844,
+    "p1": -0.11184537310192937
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": -0.4894829112434006,
+      "p72_pct": 0.45175132652598926,
+      "time_h": -0.526377313690768
+    },
+    "mean": -8.19212395455121,
+    "p90_abs": 23.80589853189937,
+    "std": 12.647518534625956
+  },
+  "rule_id": "full-comparison-v5--P100-072--direct_qwen-rule-1",
+  "rule_sha256": "c660c5c4df8b1ae7abf51c2eb63d44a8eda097e8b9faf76f0343994a9aa9c477",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "maximum(0, minimum(100, p72_pct + -0.3167286855326844 * (p22_pct - p72_pct) + -0.11184537310192937 * (time_h - 96)))",
+    "expression_bytes": 81,
+    "free_parameters": 2,
+    "learned_state_bytes": 55,
+    "literal_state_bytes": 6,
+    "nodes": 34,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 4.182296604118331,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

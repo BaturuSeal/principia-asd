@@ -1,0 +1,66 @@
+{
+  "dev_error": 5.629301853699115,
+  "execution_status": "complete",
+  "expression": "log1p(length_km * width_km * duration_min)",
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.0
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "duration_min": 0.13927465190143087,
+      "latitude": -0.28784064071108906,
+      "length_km": -0.005327770509217256,
+      "month": -0.028259685722925025,
+      "width_km": 0.2688579240671907
+    },
+    "mean": -4.24642251649277,
+    "p90_abs": 11.087013220181444,
+    "std": 5.959677096325029
+  },
+  "rule_id": "full-comparison-v5--P100-018--direct_qwen-rule-1",
+  "rule_sha256": "a036d336054977b718dce07975b61f18188b408bbfd513210d2f20c0af8bb5f1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "log1p(length_km * width_km * duration_min)",
+    "expression_bytes": 42,
+    "free_parameters": 1,
+    "learned_state_bytes": 11,
+    "literal_state_bytes": 0,
+    "nodes": 14,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-018.compact.v2",
+  "train_error": 5.0600782805130455,
+  "units": {
+    "inputs": {
+      "duration_min": "minutes event duration",
+      "latitude": "degrees north",
+      "length_km": "km path length",
+      "month": "calendar1–12",
+      "width_km": "km maximum path width"
+    },
+    "output": "ln(1+property damage in USD)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

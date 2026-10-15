@@ -1,0 +1,69 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "I0": "counts; mean at2theta1.0±0.008deg",
+    "outer": "binary noncenter measurement position",
+    "q": "Å⁻¹;4πsin(theta)/lambda",
+    "q0": "Å⁻¹; calibration mean wavevector"
+  },
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Predict higher-angle intensity after measuring a fixed low-angle calibration band of the same spectrum. Position and angle are known acquisition settings.",
+  "output": "target",
+  "output_description": "native higher-angle XRR intensity",
+  "output_units": "counts",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-012",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "0cc248199324bf6f256781e5c92e97de12fe78ccdacbd9f06f926f2a3c3984e9",
+  "source_task": "P100-012.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Complete deposition batch is the split unit; wafer is the primary aggregation unit. All positions on a wafer stay together. Three deposition batches develop; fourth confirms.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-012.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "native higher-angle XRR intensity",
+  "version": "1.0.0rc2"
+}

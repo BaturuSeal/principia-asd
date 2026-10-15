@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.2543222775846216,
+    "primary": "mae",
+    "primary_error": 0.2543222775846216,
+    "rmse": 0.3397856921370888
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.22018773842447356,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.28845681674476964,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_deepseek",
+  "rule_id": "full-comparison-v5--P100-023--direct_deepseek-rule-1",
+  "rule_sha256": "3f9a1bf243575ddd78587b23325e11d1f9176bb8e06a15b9463fd1c75c666cbc",
+  "run_id": "full-comparison-v5--P100-023--direct_deepseek",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "5.183506843391065 * (H * viscosity * speed / load) / (1 + 5.05641879734404 * (H * viscosity * speed / load) + -0.010013981418909022 * hydration + 0.02819568287830788 * area)",
+    "expression_bytes": 108,
+    "free_parameters": 4,
+    "learned_state_bytes": 105,
+    "literal_state_bytes": 1,
+    "nodes": 58,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.13681999195625633,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

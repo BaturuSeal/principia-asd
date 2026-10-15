@@ -1,0 +1,71 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.37307461169733325,
+    "primary": "brier",
+    "primary_error": 0.18289049968388185,
+    "rmse": 0.42765698834916965
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.21862448052450872,
+  "by_group": [
+    {
+      "error": 0.21151501825352806,
+      "group": "group-0b95827d139695ee703b2a32",
+      "rows": 349
+    },
+    {
+      "error": 0.14792427379650433,
+      "group": "group-7e220f1f688288ccb15fd312",
+      "rows": 164
+    },
+    {
+      "error": 0.17226101191533116,
+      "group": "group-973f07eeb68ad5339919fe62",
+      "rows": 159
+    },
+    {
+      "error": 0.19986169477016394,
+      "group": "group-f92d57ee06910585315b543a",
+      "rows": 382
+    }
+  ],
+  "coverage": {
+    "eligible": 1054,
+    "fraction": 1.0,
+    "predicted": 1054
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-1",
+  "rule_sha256": "30f75f4e4ea454111f9214a3e5276082627c53d4053f3de75fac179c1ea3dabd",
+  "run_id": "full-comparison-v5--P100-039--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.015554869255853511 + 0.0005531419672838992 * education ** 2 + 0.0037879161774590723 * education + 0.10791086727280672 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00034761797748116756 * (education * age) + -0.2081636586748809 * log1p(abs((age - 44.5544776119403) / 11.315902267609763)) + 0.15751638385677266 * log1p(abs((education - 14.146865671641791) / 2.5552837906214267)) + 0.025932259182887427 * tanh((age - 44.5544776119403) / 11.315902267609763)))",
+    "expression_bytes": 318,
+    "free_parameters": 8,
+    "learned_state_bytes": 226,
+    "literal_state_bytes": 143,
+    "nodes": 116,
+    "numeric_literal_count": 11,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 36
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.019705718240102213,
+    "perturbation_labels_available": false,
+    "population_rows": 1054,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

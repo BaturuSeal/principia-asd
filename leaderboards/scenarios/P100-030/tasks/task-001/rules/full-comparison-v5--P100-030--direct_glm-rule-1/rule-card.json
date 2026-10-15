@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.013420738142736458,
+  "execution_status": "complete",
+  "expression": "highspeed_cof + (boundary_cof - highspeed_cof) * (1.0 + speed_mm_s / p0) ** (-p1)",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 4.759481591207116,
+    "p1": 2.130120517880741
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.802474689940624,
+      "highspeed_cof": 0.8024746899406241,
+      "speed_mm_s": 0.04689165259338689
+    },
+    "mean": -0.013420738142736458,
+    "p90_abs": 0.027150967107631357,
+    "std": 0.009010277900747765
+  },
+  "rule_id": "full-comparison-v5--P100-030--direct_glm-rule-1",
+  "rule_sha256": "a88265229a8d200f28ae55159729949b9b7f260b4ff1aee157a10b3fd03df048",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "highspeed_cof + (boundary_cof - highspeed_cof) * (1.0 + speed_mm_s / 4.759481591207116) ** (-2.130120517880741)",
+    "expression_bytes": 81,
+    "free_parameters": 2,
+    "learned_state_bytes": 50,
+    "literal_state_bytes": 3,
+    "nodes": 28,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.004759395484699582,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

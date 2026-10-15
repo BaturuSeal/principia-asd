@@ -1,0 +1,4540 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.009761804016306996
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.010852765990421176
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.0206050620181486
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.4136906900675967
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 40,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 40,
+        "wall_seconds": 0.30111848597880453
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-022--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 189,
+        "structures": 1,
+        "wall_seconds": 2.172178243054077
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 158,
+        "structures": 1,
+        "wall_seconds": 13.513663178076968
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 42,
+        "structures": 1,
+        "wall_seconds": 5.6716300420230255
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 266,
+        "structures": 1,
+        "wall_seconds": 7.836678344057873
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 230,
+        "structures": 3,
+        "wall_seconds": 69.37333251407836
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 2,
+      "run_id": "full-comparison-v5--P100-022--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 1026,
+        "structures": 3,
+        "wall_seconds": 9.758861795067787
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 4,
+        "optimizer_evaluations": 156,
+        "structures": 1,
+        "wall_seconds": 15.522969407960773
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-022--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 79,
+        "model_calls": 4,
+        "optimizer_evaluations": 94,
+        "structures": 53,
+        "wall_seconds": 84.02926130197011
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-022--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-022--tree_control-rule-1",
+    "full-comparison-v5--P100-022--direct_glm-rule-1",
+    "full-comparison-v5--P100-022--symbolic_control-rule-3",
+    "full-comparison-v5--P100-022--linear_control-rule-1",
+    "full-comparison-v5--P100-022--symbolic_control-rule-2",
+    "full-comparison-v5--P100-022--principia_engine-rule-2",
+    "full-comparison-v5--P100-022--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 75.14003226302778,
+        "primary": "mae",
+        "primary_error": 75.14003226302778,
+        "rmse": 143.79133076147775
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 74.45676624162088,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 92.62182427995373,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 41.22338645509037,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 54.77077894704313,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 31.550243893635784,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 45.260412401664084,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 132.3871461467688,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 99.03094151649837,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 97.94185419677567,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 36.01421011998861,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 97.10938653950315,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 64.6954765551781,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 86.00920042030933,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 103.74818424331072,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 45.839069253091175,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 84.0867971764268,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 81.93620267801883,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 163.43819964473428,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 47.13918062051142,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 23.541383930432072,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 72.38287162524695,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-022--tree_control-rule-1",
+        "rule_sha256": "4955897279343c7d990d64876f9d3ecd9f836d793065fc65a086324da69e6581",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 83,
+          "weighted_operator_count": 83
+        },
+        "task_id": "P100-022.compact.v2",
+        "tree": {
+          "feature": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            -2,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            -2,
+            0,
+            1,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            -2,
+            1,
+            0,
+            0,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            0,
+            -2,
+            -2
+          ],
+          "features": [
+            "voltage_V",
+            "bromine_rich"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            -1,
+            -1,
+            9,
+            -1,
+            -1,
+            12,
+            13,
+            -1,
+            -1,
+            -1,
+            17,
+            18,
+            -1,
+            -1,
+            -1,
+            22,
+            23,
+            24,
+            25,
+            -1,
+            -1,
+            28,
+            -1,
+            -1,
+            31,
+            32,
+            -1,
+            -1,
+            35,
+            -1,
+            -1,
+            38,
+            39,
+            40,
+            -1,
+            -1,
+            -1,
+            44,
+            45,
+            -1,
+            -1,
+            -1,
+            49,
+            50,
+            51,
+            52,
+            -1,
+            -1,
+            55,
+            -1,
+            -1,
+            58,
+            -1,
+            60,
+            -1,
+            -1,
+            63,
+            64,
+            65,
+            -1,
+            67,
+            -1,
+            -1,
+            70,
+            71,
+            -1,
+            -1,
+            74,
+            -1,
+            -1,
+            77,
+            -1,
+            79,
+            -1,
+            81,
+            -1,
+            -1
+          ],
+          "right": [
+            48,
+            21,
+            16,
+            11,
+            8,
+            7,
+            -1,
+            -1,
+            10,
+            -1,
+            -1,
+            15,
+            14,
+            -1,
+            -1,
+            -1,
+            20,
+            19,
+            -1,
+            -1,
+            -1,
+            37,
+            30,
+            27,
+            26,
+            -1,
+            -1,
+            29,
+            -1,
+            -1,
+            34,
+            33,
+            -1,
+            -1,
+            36,
+            -1,
+            -1,
+            43,
+            42,
+            41,
+            -1,
+            -1,
+            -1,
+            47,
+            46,
+            -1,
+            -1,
+            -1,
+            62,
+            57,
+            54,
+            53,
+            -1,
+            -1,
+            56,
+            -1,
+            -1,
+            59,
+            -1,
+            61,
+            -1,
+            -1,
+            76,
+            69,
+            66,
+            -1,
+            68,
+            -1,
+            -1,
+            73,
+            72,
+            -1,
+            -1,
+            75,
+            -1,
+            -1,
+            78,
+            -1,
+            80,
+            -1,
+            82,
+            -1,
+            -1
+          ],
+          "threshold": [
+            0.6062949895858765,
+            0.5,
+            0.54578498005867,
+            0.4857749938964844,
+            0.42582499980926514,
+            0.34590500593185425,
+            -2.0,
+            -2.0,
+            0.4554450064897537,
+            -2.0,
+            -2.0,
+            0.5256550014019012,
+            0.5054150223731995,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.5861600041389465,
+            0.5611349940299988,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.4465249925851822,
+            0.3164149969816208,
+            0.1961899995803833,
+            0.12639499455690384,
+            -2.0,
+            -2.0,
+            0.2666050046682358,
+            -2.0,
+            -2.0,
+            0.4063349962234497,
+            0.35637499392032623,
+            -2.0,
+            -2.0,
+            0.4261949956417084,
+            -2.0,
+            -2.0,
+            0.5162850022315979,
+            0.4864349961280823,
+            0.4662199914455414,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.5664900243282318,
+            0.5366650223731995,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.7160899937152863,
+            0.5,
+            0.6658450067043304,
+            0.635934978723526,
+            -2.0,
+            -2.0,
+            0.6904850006103516,
+            -2.0,
+            -2.0,
+            0.636264979839325,
+            -2.0,
+            0.6759699881076813,
+            -2.0,
+            -2.0,
+            0.5,
+            0.8155049979686737,
+            0.7557650208473206,
+            -2.0,
+            0.7858150005340576,
+            -2.0,
+            -2.0,
+            0.8855849802494049,
+            0.8557650148868561,
+            -2.0,
+            -2.0,
+            0.9059849977493286,
+            -2.0,
+            -2.0,
+            0.7460349798202515,
+            -2.0,
+            0.7663500010967255,
+            -2.0,
+            0.7860350012779236,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            509.763785413406,
+            175.81359739374858,
+            18.988687854315987,
+            6.638302894236091,
+            3.0119571326704118,
+            1.8087541261264164,
+            1.2052930173210623,
+            4.1141641433593765,
+            10.867790519312168,
+            8.658130217241377,
+            12.752500776960783,
+            33.10132863120001,
+            26.153482506077516,
+            20.48981425453125,
+            31.730017399907698,
+            46.6812096939394,
+            105.8709611821826,
+            79.8111724123333,
+            67.11237789910767,
+            91.11831821178083,
+            144.96064433695648,
+            345.59240983011125,
+            179.82051523654147,
+            110.71474563035484,
+            70.11597805309731,
+            49.14307763948495,
+            92.42961182648398,
+            160.99047972602742,
+            139.43871772727272,
+            193.6897048275863,
+            317.8630916870417,
+            277.0003053191488,
+            240.13684573643408,
+            308.08126143790855,
+            408.59778267716524,
+            379.72198360655733,
+            435.2860212121212,
+            768.1211889812884,
+            599.6260559090905,
+            533.7160359375,
+            499.75925238095243,
+            566.6279953846155,
+            691.3269532608696,
+            910.1477379310344,
+            846.9565823129252,
+            809.9437873015871,
+            874.7161785714284,
+            991.6310701754386,
+            979.9391986450453,
+            732.263462843158,
+            397.3375437430854,
+            269.64046309005084,
+            193.4129585070329,
+            335.08105664716993,
+            548.8816695783133,
+            469.22895477611934,
+            602.7880523232323,
+            1089.8461352941176,
+            1037.355873873874,
+            1115.2890131004365,
+            1095.8123818181818,
+            1133.2926218487394,
+            1075.5023392974754,
+            1004.913416883117,
+            832.2978288343556,
+            725.6642647619047,
+            882.9608343891404,
+            848.0856161290321,
+            927.5435876288659,
+            1099.0148913043479,
+            1024.256029411765,
+            1004.4006363636363,
+            1060.6575833333334,
+            1137.7225253807105,
+            1109.769188888889,
+            1145.9981842105262,
+            1148.1350389755012,
+            1136.3689803921568,
+            1149.64275,
+            1145.9943787878788,
+            1149.972602739726,
+            1149.6666666666667,
+            1150.0
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--tree_control-rule-1",
+      "rule_sha256": "4955897279343c7d990d64876f9d3ecd9f836d793065fc65a086324da69e6581",
+      "run_id": "full-comparison-v5--P100-022--tree_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 124,
+        "learned_state_bytes": 3666,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 83
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0195357165150302,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 88.75370440671426,
+        "primary": "mae",
+        "primary_error": 88.75370440671426,
+        "rmse": 144.16077550369175
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 109.31491440899094,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 110.92278000533601,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 47.366005065714525,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 50.771471183712016,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 28.533599396280525,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 49.99203418796439,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 147.38792832084889,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 119.73803806167454,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 112.60287368521757,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 53.58515825202864,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 117.83821004638573,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 92.04897528012589,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 100.17975063565908,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 116.01912984349298,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 81.52509466252079,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 75.97734536268477,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 102.20228307453148,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 188.39164735126087,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 46.20627431884729,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 24.47057499100858,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 85.40222167087913,
+        "execution_status": "complete",
+        "expression": "minimum(p3, p0 * exp(p1 * (voltage_V + p2 * bromine_rich)))",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 3.8779007793141105,
+          "p1": 6.86046114044837,
+          "p2": 0.24565551629619528,
+          "p3": 1119.3735802484111
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": -0.09618006926609907,
+            "voltage_V": -0.13964483099436922
+          },
+          "mean": -18.76131800924386,
+          "p90_abs": 216.89783815526698,
+          "std": 151.46843729909153
+        },
+        "rule_id": "full-comparison-v5--P100-022--direct_glm-rule-1",
+        "rule_sha256": "dd2575f2cb32c7eafc76a0877eea141735124fb7f24802547de18d9c0cca6673",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1119.3735802484111, 3.8779007793141105 * exp(6.86046114044837 * (voltage_V + 0.24565551629619528 * bromine_rich)))",
+          "expression_bytes": 59,
+          "free_parameters": 4,
+          "learned_state_bytes": 103,
+          "literal_state_bytes": 0,
+          "nodes": 27,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 107.39250047954445,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(p3, p0 * exp(p1 * (voltage_V + p2 * bromine_rich)))",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--direct_glm-rule-1",
+      "rule_sha256": "dd2575f2cb32c7eafc76a0877eea141735124fb7f24802547de18d9c0cca6673",
+      "run_id": "full-comparison-v5--P100-022--direct_glm",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1119.3735802484111, 3.8779007793141105 * exp(6.86046114044837 * (voltage_V + 0.24565551629619528 * bromine_rich)))",
+        "expression_bytes": 59,
+        "free_parameters": 4,
+        "learned_state_bytes": 103,
+        "literal_state_bytes": 0,
+        "nodes": 27,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01768912512258035,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 114.59868850822382,
+        "primary": "mae",
+        "primary_error": 114.59868850822382,
+        "rmse": 163.62432473653845
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 129.3958058344286,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 125.37148572648967,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 84.39682063447472,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 87.77175223652999,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 77.01275060908706,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 83.38577490310529,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 166.54358953177646,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 131.12670630387717,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 134.5311199575298,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 79.8591381393371,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 127.06434828951934,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 116.9760789049926,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 128.25904741897287,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 135.23768544427486,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 103.35298790014632,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 130.2360456462628,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 115.46842315956486,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 181.52845161996456,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 83.09557607860862,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 71.36018182553335,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 114.99946472883374,
+        "execution_status": "complete",
+        "expression": "p0+p1*voltage_V**2+p2*voltage_V**3+p3*voltage_V**4+p4*bromine_rich*voltage_V**2+p5*bromine_rich*voltage_V**3",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 53.01395089057541,
+          "p1": -4359.345988976307,
+          "p2": 12378.858167169392,
+          "p3": -6796.698385027089,
+          "p4": 4770.397646407431,
+          "p5": -5117.483000399138
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.03371025603585794,
+            "voltage_V": -0.10597596205756142
+          },
+          "mean": -22.826708209382435,
+          "p90_abs": 294.3491757358594,
+          "std": 171.35170320992137
+        },
+        "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-1",
+        "rule_sha256": "0b7f77f09a915c07d8e38b4d97ad255a4fdfbea33ff23c6cc52ae21af8ad939f",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "53.01395089057541 + -4359.345988976307 * voltage_V ** 2 + 12378.858167169392 * voltage_V ** 3 + -6796.698385027089 * voltage_V ** 4 + 4770.397646407431 * bromine_rich * voltage_V ** 2 + -5117.483000399138 * bromine_rich * voltage_V ** 3",
+          "expression_bytes": 108,
+          "free_parameters": 6,
+          "learned_state_bytes": 154,
+          "literal_state_bytes": 5,
+          "nodes": 66,
+          "numeric_literal_count": 5,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 129.43322541199123,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*voltage_V**2+p2*voltage_V**3+p3*voltage_V**4+p4*bromine_rich*voltage_V**2+p5*bromine_rich*voltage_V**3",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-1",
+      "rule_sha256": "0b7f77f09a915c07d8e38b4d97ad255a4fdfbea33ff23c6cc52ae21af8ad939f",
+      "run_id": "full-comparison-v5--P100-022--principia_engine",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "53.01395089057541 + -4359.345988976307 * voltage_V ** 2 + 12378.858167169392 * voltage_V ** 3 + -6796.698385027089 * voltage_V ** 4 + 4770.397646407431 * bromine_rich * voltage_V ** 2 + -5117.483000399138 * bromine_rich * voltage_V ** 3",
+        "expression_bytes": 108,
+        "free_parameters": 6,
+        "learned_state_bytes": 154,
+        "literal_state_bytes": 5,
+        "nodes": 66,
+        "numeric_literal_count": 5,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.023050796063518574,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 127.08762686257924,
+        "primary": "mae",
+        "primary_error": 127.08762686257924,
+        "rmse": 171.47631768288056
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 161.79572412206275,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 149.80314469336955,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 85.85588217684949,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 91.98350737527511,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 83.82632659760797,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 90.92517973642799,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 153.04599708183392,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 155.0163694476541,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 160.36185634534297,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 81.90430589680075,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 149.67446811521998,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 149.2240349030873,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 157.33198041631218,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 121.68800373731628,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 135.46710895550737,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 114.79833964959877,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 138.54637137189613,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 194.82830863817733,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 88.79905665467672,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 76.87657133656839,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 127.09204480039799,
+        "execution_status": "complete",
+        "expression": "p0 + p1*voltage_V**3 + p2*voltage_V**4 + p3*bromine_rich*voltage_V**2 + p4*bromine_rich*voltage_V**3",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -77.4524383124593,
+          "p1": 2394.9515080665815,
+          "p2": -938.640206341461,
+          "p3": 4531.860438691662,
+          "p4": -4839.827868462597
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.0030551521220499823,
+            "voltage_V": -0.047069056497901544
+          },
+          "mean": -23.3563402046374,
+          "p90_abs": 311.55425284432295,
+          "std": 180.29254601375877
+        },
+        "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-3",
+        "rule_sha256": "d1e18a36f3f700d907a99de575756ce72ee33be91e5b20ad1abb3fe849713072",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-77.4524383124593 + 2394.9515080665815 * voltage_V ** 3 + -938.640206341461 * voltage_V ** 4 + 4531.860438691662 * bromine_rich * voltage_V ** 2 + -4839.827868462597 * bromine_rich * voltage_V ** 3",
+          "expression_bytes": 100,
+          "free_parameters": 5,
+          "learned_state_bytes": 127,
+          "literal_state_bytes": 4,
+          "nodes": 55,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 141.19149112059026,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*voltage_V**3 + p2*voltage_V**4 + p3*bromine_rich*voltage_V**2 + p4*bromine_rich*voltage_V**3",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-3",
+      "rule_sha256": "d1e18a36f3f700d907a99de575756ce72ee33be91e5b20ad1abb3fe849713072",
+      "run_id": "full-comparison-v5--P100-022--principia_engine",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-77.4524383124593 + 2394.9515080665815 * voltage_V ** 3 + -938.640206341461 * voltage_V ** 4 + 4531.860438691662 * bromine_rich * voltage_V ** 2 + -4839.827868462597 * bromine_rich * voltage_V ** 3",
+        "expression_bytes": 100,
+        "free_parameters": 5,
+        "learned_state_bytes": 127,
+        "literal_state_bytes": 4,
+        "nodes": 55,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.021961950489174452,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 174.04956383432346,
+        "primary": "mae",
+        "primary_error": 174.04956383432346,
+        "rmse": 225.18993159284614
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 175.24886138838644,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 199.68320170826536,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 156.50995048350157,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 129.71450567505744,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 129.9906613309202,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 121.46455234729214,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 212.97396013896494,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 205.7857581324063,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 197.59950814421455,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 143.80412359509845,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 201.95222387653675,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 175.96235277239776,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 197.62920577556582,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 190.99642467482184,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 150.93579039801756,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 203.0636565809881,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 190.22467454811044,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 243.6696748719985,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 123.70596161649699,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 130.0762286274275,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 170.22383531408278,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * voltage_V + p2 * bromine_rich + p3 * voltage_V * bromine_rich + p4 * voltage_V**2 + p5 * voltage_V**3 + p6 * exp(voltage_V) + p7 * tanh(voltage_V)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -457495.16356302315,
+          "p1": -176519.28393680256,
+          "p2": 266.91490198539867,
+          "p3": 105.3462951764596,
+          "p4": -237257.7478274773,
+          "p5": -158393.2040179993,
+          "p6": 457277.93734908383,
+          "p7": -278867.55641795375
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.016764866357541614,
+            "voltage_V": -0.08165855015459543
+          },
+          "mean": -23.024239793715417,
+          "p90_abs": 377.21484390663244,
+          "std": 214.5929022730825
+        },
+        "rule_id": "full-comparison-v5--P100-022--best_of_n-rule-1",
+        "rule_sha256": "bdf7fffafc87ee53028e18298cc099d8bb4ad8db238171122f642e35d2d04b9e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-457495.16356302315 + -176519.28393680256 * voltage_V + 266.91490198539867 * bromine_rich + 105.3462951764596 * voltage_V * bromine_rich + -237257.7478274773 * voltage_V ** 2 + -158393.2040179993 * voltage_V ** 3 + 457277.93734908383 * exp(voltage_V) + -278867.55641795375 * tanh(voltage_V)",
+          "expression_bytes": 156,
+          "free_parameters": 8,
+          "learned_state_bytes": 210,
+          "literal_state_bytes": 2,
+          "nodes": 75,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 176.95641300049328,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * voltage_V + p2 * bromine_rich + p3 * voltage_V * bromine_rich + p4 * voltage_V**2 + p5 * voltage_V**3 + p6 * exp(voltage_V) + p7 * tanh(voltage_V)",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--best_of_n-rule-1",
+      "rule_sha256": "bdf7fffafc87ee53028e18298cc099d8bb4ad8db238171122f642e35d2d04b9e",
+      "run_id": "full-comparison-v5--P100-022--best_of_n",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-457495.16356302315 + -176519.28393680256 * voltage_V + 266.91490198539867 * bromine_rich + 105.3462951764596 * voltage_V * bromine_rich + -237257.7478274773 * voltage_V ** 2 + -158393.2040179993 * voltage_V ** 3 + 457277.93734908383 * exp(voltage_V) + -278867.55641795375 * tanh(voltage_V)",
+        "expression_bytes": 156,
+        "free_parameters": 8,
+        "learned_state_bytes": 210,
+        "literal_state_bytes": 2,
+        "nodes": 75,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018652930643146406,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 174.0496718213227,
+        "primary": "mae",
+        "primary_error": 174.0496718213227,
+        "rmse": 225.18991683019436
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 175.24905097095493,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 199.68341044434143,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 156.50998457226956,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 129.7146419763787,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 129.99075952881836,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 121.46470517928495,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 212.97365806079546,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 205.78596222476443,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 197.59973235458804,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 143.80408471542964,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 201.9524218971321,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 175.96256367790215,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 197.62942347260181,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 190.9962406892128,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 150.9359845564402,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 203.06371451871536,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 190.22487855878927,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 243.66980724599685,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 123.70610631723581,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 130.0763054648025,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 170.22394676992775,
+        "execution_status": "complete",
+        "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*exp(voltage_V) + p7*tanh(voltage_V)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -457507.2388785865,
+          "p1": -176525.69580944188,
+          "p2": 266.917307205238,
+          "p3": 105.34320961141323,
+          "p4": -237263.85663067573,
+          "p5": -158397.12848324422,
+          "p6": 457290.0103361448,
+          "p7": -278873.19662738155
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.01676668946845367,
+            "voltage_V": -0.08165875391772112
+          },
+          "mean": -23.024201744910357,
+          "p90_abs": 377.214897829901,
+          "std": 214.59287587145928
+        },
+        "rule_id": "full-comparison-v5--P100-022--direct_deepseek-rule-1",
+        "rule_sha256": "2e534621b3d33e127a8170432cd8b86f775828e5f611cb2e389ff315c6bf6cd7",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-457507.2388785865 + -176525.69580944188 * voltage_V + 266.917307205238 * bromine_rich + 105.34320961141323 * voltage_V * bromine_rich + -237263.85663067573 * voltage_V ** 2 + -158397.12848324422 * voltage_V ** 3 + 457290.0103361448 * exp(voltage_V) + -278873.19662738155 * tanh(voltage_V)",
+          "expression_bytes": 140,
+          "free_parameters": 8,
+          "learned_state_bytes": 209,
+          "literal_state_bytes": 2,
+          "nodes": 75,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 176.9565424961632,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*exp(voltage_V) + p7*tanh(voltage_V)",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--direct_deepseek-rule-1",
+      "rule_sha256": "2e534621b3d33e127a8170432cd8b86f775828e5f611cb2e389ff315c6bf6cd7",
+      "run_id": "full-comparison-v5--P100-022--direct_deepseek",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-457507.2388785865 + -176525.69580944188 * voltage_V + 266.917307205238 * bromine_rich + 105.34320961141323 * voltage_V * bromine_rich + -237263.85663067573 * voltage_V ** 2 + -158397.12848324422 * voltage_V ** 3 + 457290.0103361448 * exp(voltage_V) + -278873.19662738155 * tanh(voltage_V)",
+        "expression_bytes": 140,
+        "free_parameters": 8,
+        "learned_state_bytes": 209,
+        "literal_state_bytes": 2,
+        "nodes": 75,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018652925033671993,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 174.34222290364963,
+        "primary": "mae",
+        "primary_error": 174.34222290364963,
+        "rmse": 224.91569777899429
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 176.09054115243757,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 199.60698377157226,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 156.43436331837077,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 130.25895851983574,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 130.16631876879498,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 122.16880322886425,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 213.7001752043146,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 205.70249910419508,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 197.54086911222066,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 144.02572307760812,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 201.8784290941846,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 176.37949015384808,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 197.7247498137487,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 191.71858071479633,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 151.69832471049958,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 202.97732747828744,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 190.14366108046895,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 244.20773965016997,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 124.33623306133141,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 130.08468705744355,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 170.6493874677821,
+        "execution_status": "complete",
+        "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*voltage_V**4 + p7*voltage_V**5",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -259.9807764544266,
+          "p1": 2964.981924802168,
+          "p2": 266.88658889699917,
+          "p3": 105.40640358717377,
+          "p4": -17565.88616268262,
+          "p5": 43968.73406295471,
+          "p6": -40239.528984683115,
+          "p7": 12080.027052164363
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.016750008433119697,
+            "voltage_V": -0.08158432994830331
+          },
+          "mean": -23.023955399915938,
+          "p90_abs": 377.345587351038,
+          "std": 214.7519059234899
+        },
+        "rule_id": "full-comparison-v5--P100-022--tool_agent-rule-1",
+        "rule_sha256": "fc56de54bba7854652c0e0da0722a64e04b3d4b788960e87385293b3972a4333",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-259.9807764544266 + 2964.981924802168 * voltage_V + 266.88658889699917 * bromine_rich + 105.40640358717377 * voltage_V * bromine_rich + -17565.88616268262 * voltage_V ** 2 + 43968.73406295471 * voltage_V ** 3 + -40239.528984683115 * voltage_V ** 4 + 12080.027052164363 * voltage_V ** 5",
+          "expression_bytes": 135,
+          "free_parameters": 8,
+          "learned_state_bytes": 207,
+          "literal_state_bytes": 4,
+          "nodes": 75,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 19
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 177.42520542184366,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*voltage_V**4 + p7*voltage_V**5",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--tool_agent-rule-1",
+      "rule_sha256": "fc56de54bba7854652c0e0da0722a64e04b3d4b788960e87385293b3972a4333",
+      "run_id": "full-comparison-v5--P100-022--tool_agent",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-259.9807764544266 + 2964.981924802168 * voltage_V + 266.88658889699917 * bromine_rich + 105.40640358717377 * voltage_V * bromine_rich + -17565.88616268262 * voltage_V ** 2 + 43968.73406295471 * voltage_V ** 3 + -40239.528984683115 * voltage_V ** 4 + 12080.027052164363 * voltage_V ** 5",
+        "expression_bytes": 135,
+        "free_parameters": 8,
+        "learned_state_bytes": 207,
+        "literal_state_bytes": 4,
+        "nodes": 75,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 19
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018991696165849163,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 177.38261383185596,
+        "primary": "mae",
+        "primary_error": 177.38261383185596,
+        "rmse": 225.6089806879698
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 192.0738292333085,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 208.50404251898684,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 144.87737281216823,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 128.7960939729915,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 125.16160340169502,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 122.02597586455693,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 216.2953754338544,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 214.1910246219882,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 207.84239982903156,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 135.64801519498812,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 209.76078871800487,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 190.74587038137932,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 209.45307401941326,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 190.86727979867163,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 167.43067231487433,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 192.45500097825615,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 198.2716004907444,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 248.02036485317575,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 122.9883088596671,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 122.24358333936325,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 172.9302346590702,
+        "execution_status": "complete",
+        "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*exp(p7*voltage_V)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -1960.6652388547582,
+          "p1": -2117.500782482456,
+          "p2": 267.1803402967888,
+          "p3": 104.89222409169221,
+          "p4": 7624.844296169606,
+          "p5": -4244.11010273096,
+          "p6": 2055.621275353803,
+          "p7": -0.18608638083321213
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.016605328305337563,
+            "voltage_V": -0.08070845128544417
+          },
+          "mean": -22.956400940446365,
+          "p90_abs": 380.5078817090908,
+          "std": 216.8895431482384
+        },
+        "rule_id": "full-comparison-v5--P100-022--feedback_refinement-rule-1",
+        "rule_sha256": "f722b941d71ee6026d9cc88e774a161d47ac02bf546dfc7b71771e9d610f4323",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-1960.6652388547582 + -2117.500782482456 * voltage_V + 267.1803402967888 * bromine_rich + 104.89222409169221 * voltage_V * bromine_rich + 7624.844296169606 * voltage_V ** 2 + -4244.11010273096 * voltage_V ** 3 + 2055.621275353803 * exp(-0.18608638083321213 * voltage_V)",
+          "expression_bytes": 122,
+          "free_parameters": 8,
+          "learned_state_bytes": 207,
+          "literal_state_bytes": 2,
+          "nodes": 68,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 19
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 181.59908647748082,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich + p4*voltage_V**2 + p5*voltage_V**3 + p6*exp(p7*voltage_V)",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--feedback_refinement-rule-1",
+      "rule_sha256": "f722b941d71ee6026d9cc88e774a161d47ac02bf546dfc7b71771e9d610f4323",
+      "run_id": "full-comparison-v5--P100-022--feedback_refinement",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-1960.6652388547582 + -2117.500782482456 * voltage_V + 267.1803402967888 * bromine_rich + 104.89222409169221 * voltage_V * bromine_rich + 7624.844296169606 * voltage_V ** 2 + -4244.11010273096 * voltage_V ** 3 + 2055.621275353803 * exp(-0.18608638083321213 * voltage_V)",
+        "expression_bytes": 122,
+        "free_parameters": 8,
+        "learned_state_bytes": 207,
+        "literal_state_bytes": 2,
+        "nodes": 68,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 19
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.020845392593191257,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 182.89752354500314,
+        "primary": "mae",
+        "primary_error": 182.89752354500314,
+        "rmse": 237.64791938783927
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 234.89269563283045,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 260.90535494804703,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 103.59637439555121,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 102.51016261121794,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 93.81565492512829,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 97.50865373030639,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 163.29029996879413,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 266.61907610024406,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 258.66895835953875,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 87.99785649838702,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 262.00030547983926,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 239.46682167628225,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 261.1737437422983,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 134.4586246858683,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 211.6030802320711,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 149.80547595508932,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 250.5779164462381,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 293.85300049192256,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 96.40296924828645,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 88.80344577212205,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 171.36268471944808,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tanh((voltage_V-0.5260379884868421)/0.2741732549285368))+p2*(bromine_rich)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 353.59520082729375,
+          "p1": 620.6130579098559,
+          "p2": 322.3367565980367
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.01653023882583893,
+            "voltage_V": -0.08357503778276769
+          },
+          "mean": -23.01933843814871,
+          "p90_abs": 360.7262720186765,
+          "std": 217.73687793689618
+        },
+        "rule_id": "full-comparison-v5--P100-022--symbolic_control-rule-3",
+        "rule_sha256": "98f5164e5a1f6e2e9faabb1ec3be44d9d6ba9029cf9917ec30f0f70a42e388ac",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "353.59520082729375 + 620.6130579098559 * tanh((voltage_V - 0.5260379884868421) / 0.2741732549285368) + 322.3367565980367 * bromine_rich",
+          "expression_bytes": 81,
+          "free_parameters": 3,
+          "learned_state_bytes": 76,
+          "literal_state_bytes": 36,
+          "nodes": 28,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 7
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 186.45766854681622,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tanh((voltage_V-0.5260379884868421)/0.2741732549285368))+p2*(bromine_rich)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--symbolic_control-rule-3",
+      "rule_sha256": "98f5164e5a1f6e2e9faabb1ec3be44d9d6ba9029cf9917ec30f0f70a42e388ac",
+      "run_id": "full-comparison-v5--P100-022--symbolic_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "353.59520082729375 + 620.6130579098559 * tanh((voltage_V - 0.5260379884868421) / 0.2741732549285368) + 322.3367565980367 * bromine_rich",
+        "expression_bytes": 81,
+        "free_parameters": 3,
+        "learned_state_bytes": 76,
+        "literal_state_bytes": 36,
+        "nodes": 28,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 7
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018822801135627627,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 182.89752354500337,
+        "primary": "mae",
+        "primary_error": 182.89752354500337,
+        "rmse": 237.6479193878398
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 234.89269563282807,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 260.90535494804675,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 103.5963743955528,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 102.51016261122074,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 93.81565492513067,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 97.50865373030943,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 163.29029996879078,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 266.61907610024383,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 258.6689583595384,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 87.9978564983886,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 262.0003054798392,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 239.46682167628066,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 261.17374374229735,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 134.45862468586566,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 211.60308023206886,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 149.8054759550905,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 250.5779164462379,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 293.85300049192364,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 96.40296924828954,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 88.8034457721243,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 171.36268471944803,
+        "execution_status": "complete",
+        "expression": "p0+p1*(tanh((voltage_V-0.5260379884868421)/0.2741732549285368))+p2*(log1p(abs((bromine_rich-0.484375)/0.49975579974123363)))",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -6633.825987477202,
+          "p1": 620.6130579098557,
+          "p2": 10311.41766174726
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.01653023882583557,
+            "voltage_V": -0.08357503778276835
+          },
+          "mean": -23.01933843814166,
+          "p90_abs": 360.72627201867016,
+          "std": 217.7368779368962
+        },
+        "rule_id": "full-comparison-v5--P100-022--symbolic_control-rule-1",
+        "rule_sha256": "0192d682112e3160d3ad26e10da11632eaeb314ae26d7ec19e9c74eccfc94a8a",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-6633.825987477202 + 620.6130579098557 * tanh((voltage_V - 0.5260379884868421) / 0.2741732549285368) + 10311.41766174726 * log1p(abs((bromine_rich - 0.484375) / 0.49975579974123363))",
+          "expression_bytes": 124,
+          "free_parameters": 3,
+          "learned_state_bytes": 76,
+          "literal_state_bytes": 63,
+          "nodes": 40,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 186.45766854681614,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(tanh((voltage_V-0.5260379884868421)/0.2741732549285368))+p2*(log1p(abs((bromine_rich-0.484375)/0.49975579974123363)))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--symbolic_control-rule-1",
+      "rule_sha256": "0192d682112e3160d3ad26e10da11632eaeb314ae26d7ec19e9c74eccfc94a8a",
+      "run_id": "full-comparison-v5--P100-022--symbolic_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-6633.825987477202 + 620.6130579098557 * tanh((voltage_V - 0.5260379884868421) / 0.2741732549285368) + 10311.41766174726 * log1p(abs((bromine_rich - 0.484375) / 0.49975579974123363))",
+        "expression_bytes": 124,
+        "free_parameters": 3,
+        "learned_state_bytes": 76,
+        "literal_state_bytes": 63,
+        "nodes": 40,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.09251050497424171,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 184.75572085674787,
+        "primary": "mae",
+        "primary_error": 184.75572085674787,
+        "rmse": 229.5270983668786
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 199.33769136698217,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 194.7584175513612,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 171.649498100594,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 162.52038399955703,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 157.90152837376533,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 155.5784722842048,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 211.36667599878857,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 199.7135894288805,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 203.0221328462601,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 156.02437499666087,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 194.3302256421533,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 191.04925003930202,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 202.15331517716683,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 183.65863450096103,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 173.19504419320893,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 217.92647406861124,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 182.93133298655482,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 227.14807978640516,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 156.62314922074253,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 154.22614657279732,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 188.11189645755132,
+        "execution_status": "complete",
+        "expression": "p0+p1*(voltage_V)+p2*(bromine_rich)+p3*(voltage_V*voltage_V)+p4*(voltage_V*bromine_rich)+p5*(bromine_rich*bromine_rich)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -220.73762939665994,
+          "p1": 450.10503589905346,
+          "p2": 133.54787404573887,
+          "p3": 959.537262931488,
+          "p4": 104.76960230557616,
+          "p5": 133.54787404573918
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.015401142383322873,
+            "voltage_V": -0.07477746036050341
+          },
+          "mean": -23.04819723688967,
+          "p90_abs": 402.60364727019015,
+          "std": 234.69172484012572
+        },
+        "rule_id": "full-comparison-v5--P100-022--polynomial_control-rule-1",
+        "rule_sha256": "824830a04644c2d6f6f2786b7984a2b751de8c35710b894d5625ae0f25095880",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-220.73762939665994 + 450.10503589905346 * voltage_V + 133.54787404573887 * bromine_rich + 959.537262931488 * (voltage_V * voltage_V) + 104.76960230557616 * (voltage_V * bromine_rich) + 133.54787404573918 * (bromine_rich * bromine_rich)",
+          "expression_bytes": 119,
+          "free_parameters": 6,
+          "learned_state_bytes": 155,
+          "literal_state_bytes": 0,
+          "nodes": 55,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 190.6764533032017,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(voltage_V)+p2*(bromine_rich)+p3*(voltage_V*voltage_V)+p4*(voltage_V*bromine_rich)+p5*(bromine_rich*bromine_rich)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--polynomial_control-rule-1",
+      "rule_sha256": "824830a04644c2d6f6f2786b7984a2b751de8c35710b894d5625ae0f25095880",
+      "run_id": "full-comparison-v5--P100-022--polynomial_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-220.73762939665994 + 450.10503589905346 * voltage_V + 133.54787404573887 * bromine_rich + 959.537262931488 * (voltage_V * voltage_V) + 104.76960230557616 * (voltage_V * bromine_rich) + 133.54787404573918 * (bromine_rich * bromine_rich)",
+        "expression_bytes": 119,
+        "free_parameters": 6,
+        "learned_state_bytes": 155,
+        "literal_state_bytes": 0,
+        "nodes": 55,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022318894669800297,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 190.21726684822445,
+        "primary": "mae",
+        "primary_error": 190.21726684822445,
+        "rmse": 252.02888399954838
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 219.7868335667022,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 245.10537922814396,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 151.08995461672234,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 80.39101071044627,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 119.42046425659883,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 81.36124884952613,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 250.89734347630733,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 250.80911510872784,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 242.2932342675557,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 157.08587023842793,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 246.06604176737878,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 224.36629342655505,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 245.65627397723097,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 219.52052900322784,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 196.01007483502153,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 167.10565097889742,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 234.63739828579506,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 276.08652837109406,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 83.16521008285333,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 113.49088191727644,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 181.70302750486377,
+        "execution_status": "complete",
+        "expression": "p0 * voltage_V ** p1 * (1 + p2 * bromine_rich) * exp(p3 * voltage_V) / (1 + exp(p4 * (voltage_V - p5)))",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 3.0369898179297077,
+          "p1": -0.573444222754509,
+          "p2": 0.49062696973109016,
+          "p3": 9.083602161353273,
+          "p4": 8.740414612601555,
+          "p5": 0.6153898744100272
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": -0.23069384872786153,
+            "voltage_V": -0.10069935930569776
+          },
+          "mean": -17.489760930957182,
+          "p90_abs": 405.0714568882293,
+          "std": 235.04243262800009
+        },
+        "rule_id": "full-comparison-v5--P100-022--direct_kimi-rule-1",
+        "rule_sha256": "f335c0515b4006c3626de32a2f29ba11767618022bc6e48b3086aa65c9e09855",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "3.0369898179297077 * voltage_V ** -0.573444222754509 * (1 + 0.49062696973109016 * bromine_rich) * exp(9.083602161353273 * voltage_V) / (1 + exp(8.740414612601555 * (voltage_V - 0.6153898744100272)))",
+          "expression_bytes": 103,
+          "free_parameters": 6,
+          "learned_state_bytes": 155,
+          "literal_state_bytes": 2,
+          "nodes": 51,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 189.79793022703439,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 * voltage_V ** p1 * (1 + p2 * bromine_rich) * exp(p3 * voltage_V) / (1 + exp(p4 * (voltage_V - p5)))",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--direct_kimi-rule-1",
+      "rule_sha256": "f335c0515b4006c3626de32a2f29ba11767618022bc6e48b3086aa65c9e09855",
+      "run_id": "full-comparison-v5--P100-022--direct_kimi",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "3.0369898179297077 * voltage_V ** -0.573444222754509 * (1 + 0.49062696973109016 * bromine_rich) * exp(9.083602161353273 * voltage_V) / (1 + exp(8.740414612601555 * (voltage_V - 0.6153898744100272)))",
+        "expression_bytes": 103,
+        "free_parameters": 6,
+        "learned_state_bytes": 155,
+        "literal_state_bytes": 2,
+        "nodes": 51,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01725376126882071,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 197.2172770335788,
+        "primary": "mae",
+        "primary_error": 197.2172770335788,
+        "rmse": 239.75255213702312
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 245.7177252546415,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 248.75209495398775,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 141.89017264655664,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 142.25070675378953,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 135.5620661813811,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 137.82654554214264,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 183.44040332007253,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 253.66479501772403,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 249.72114951090785,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 130.39311141028884,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 248.2603190583254,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 241.72345661046657,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 255.35975692139368,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 152.58922019661546,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 220.4025807759965,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 180.08660475192124,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 236.75184238800867,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 274.0558761856058,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 136.22654726995128,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 129.6705659217989,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 194.3979774725284,
+        "execution_status": "complete",
+        "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -413.8873380024568,
+          "p1": 1459.137080020031,
+          "p2": 266.7138697190242,
+          "p3": 105.5311688455716
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.01528951467183367,
+            "voltage_V": -0.07423543426815994
+          },
+          "mean": -23.043046708731307,
+          "p90_abs": 394.8073838071554,
+          "std": 235.8136986488023
+        },
+        "rule_id": "full-comparison-v5--P100-022--best_of_n-rule-2",
+        "rule_sha256": "01d1d9f62b368a769b90e8ca50f043eb5bdf3577141514259a46c1458555c15a",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-413.8873380024568 + 1459.137080020031 * voltage_V + 266.7138697190242 * bromine_rich + 105.5311688455716 * voltage_V * bromine_rich",
+          "expression_bytes": 63,
+          "free_parameters": 4,
+          "learned_state_bytes": 101,
+          "literal_state_bytes": 0,
+          "nodes": 31,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 7
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 203.64923798935638,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*voltage_V + p2*bromine_rich + p3*voltage_V*bromine_rich",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--best_of_n-rule-2",
+      "rule_sha256": "01d1d9f62b368a769b90e8ca50f043eb5bdf3577141514259a46c1458555c15a",
+      "run_id": "full-comparison-v5--P100-022--best_of_n",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-413.8873380024568 + 1459.137080020031 * voltage_V + 266.7138697190242 * bromine_rich + 105.5311688455716 * voltage_V * bromine_rich",
+        "expression_bytes": 63,
+        "free_parameters": 4,
+        "learned_state_bytes": 101,
+        "literal_state_bytes": 0,
+        "nodes": 31,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 7
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02313421659567031,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 197.54749187262917,
+        "primary": "mae",
+        "primary_error": 197.54749187262917,
+        "rmse": 240.97702475862914
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 244.0100903678033,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 249.78282496551753,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 143.0617821264247,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 144.46081982762212,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 137.00560449735704,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 139.69850324145366,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 175.97609209088685,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 254.99518622457475,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 251.41760203387014,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 130.21738462946604,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 249.5878148838929,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 240.7269143795096,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 255.2997982479609,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 147.58617631247407,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 218.70082354299976,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 182.21699441301163,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 238.03360076317082,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 278.56851777635325,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 138.3634332640812,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 131.2398738641532,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 194.66013728595857,
+        "execution_status": "complete",
+        "expression": "p0+p1*(voltage_V)+p2*(bromine_rich)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -440.77013404629156,
+          "p1": 1510.2605719609166,
+          "p2": 322.2286164529346
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": 0.015303223001185534,
+            "voltage_V": -0.08022385065908019
+          },
+          "mean": -23.04425277430693,
+          "p90_abs": 389.8169682652586,
+          "std": 235.89047045408765
+        },
+        "rule_id": "full-comparison-v5--P100-022--linear_control-rule-1",
+        "rule_sha256": "0859dcb4e7ba10bc661be6a47627b5b58726376c4621045db707aae4563891e5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-440.77013404629156 + 1510.2605719609166 * voltage_V + 322.2286164529346 * bromine_rich",
+          "expression_bytes": 35,
+          "free_parameters": 3,
+          "learned_state_bytes": 78,
+          "literal_state_bytes": 0,
+          "nodes": 19,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 203.59498977370592,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(voltage_V)+p2*(bromine_rich)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--linear_control-rule-1",
+      "rule_sha256": "0859dcb4e7ba10bc661be6a47627b5b58726376c4621045db707aae4563891e5",
+      "run_id": "full-comparison-v5--P100-022--linear_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-440.77013404629156 + 1510.2605719609166 * voltage_V + 322.2286164529346 * bromine_rich",
+        "expression_bytes": 35,
+        "free_parameters": 3,
+        "learned_state_bytes": 78,
+        "literal_state_bytes": 0,
+        "nodes": 19,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.023099852981359102,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 204.20704475304768,
+        "primary": "mae",
+        "primary_error": 204.20704475304768,
+        "rmse": 258.12578276580143
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 238.63173053910853,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 240.33092746443967,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 162.04064974211505,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 138.81650419233023,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 140.1078437904492,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 131.37544107264029,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 255.01266208267228,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 245.05323368328757,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 242.21110014175872,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 161.24985851875215,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 239.71238526100583,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 234.51383188147733,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 247.430635577825,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 223.6530571650201,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 213.13140453913684,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 206.42651206080293,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 228.2670741825605,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 265.4026941694047,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 133.0201986210117,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 137.7531503751553,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 201.4343412489411,
+        "execution_status": "complete",
+        "expression": "p0 * voltage_V ** p1 * (1 + p2 * bromine_rich)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1073.6010634913348,
+          "p1": 1.626233587956072,
+          "p2": 0.4783059707728635
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": -0.2112115843439738,
+            "voltage_V": -0.15530697489701192
+          },
+          "mean": -7.205916942450159,
+          "p90_abs": 437.0972567179694,
+          "std": 256.9161583726388
+        },
+        "rule_id": "full-comparison-v5--P100-022--direct_qwen-rule-1",
+        "rule_sha256": "995551168433cc500aa5a4fa0a05dbdbf4ebfe866d3aeaa6bb34988b382360a5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1073.6010634913348 * voltage_V ** 1.626233587956072 * (1 + 0.4783059707728635 * bromine_rich)",
+          "expression_bytes": 46,
+          "free_parameters": 3,
+          "learned_state_bytes": 77,
+          "literal_state_bytes": 1,
+          "nodes": 22,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 5
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 207.6232895472292,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 * voltage_V ** p1 * (1 + p2 * bromine_rich)",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--direct_qwen-rule-1",
+      "rule_sha256": "995551168433cc500aa5a4fa0a05dbdbf4ebfe866d3aeaa6bb34988b382360a5",
+      "run_id": "full-comparison-v5--P100-022--direct_qwen",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1073.6010634913348 * voltage_V ** 1.626233587956072 * (1 + 0.4783059707728635 * bromine_rich)",
+        "expression_bytes": 46,
+        "free_parameters": 3,
+        "learned_state_bytes": 77,
+        "literal_state_bytes": 1,
+        "nodes": 22,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 5
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.020525661392774282,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 239.32890352005452,
+        "primary": "mae",
+        "primary_error": 239.32890352005452,
+        "rmse": 310.30715716452306
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 237.08186440884077,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 285.77179380594487,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 204.97266194719344,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 155.76720908140268,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 174.88439872476823,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 150.6822343580236,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 304.9440576680577,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 292.54195907440493,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 292.3501656357707,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 211.0680426367786,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 289.855998001848,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 249.88940054290472,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 278.29743020625375,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 273.6433764571022,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 216.75066568201072,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 224.84347508928616,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 276.7886572081611,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 346.98600907873356,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 150.23922620451913,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 169.21944458908507,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 223.31219921070928,
+        "execution_status": "complete",
+        "expression": "p0+p1*(voltage_V)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -284.9204175367535,
+          "p1": 1510.6973647209093
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": -0.5544812531242467,
+            "voltage_V": -0.06683521822753877
+          },
+          "mean": -38.82005614627034,
+          "p90_abs": 503.6449024663893,
+          "std": 283.4106472042605
+        },
+        "rule_id": "full-comparison-v5--P100-022--symbolic_control-rule-2",
+        "rule_sha256": "29f457c31687e5a8bf6ae09ebd2320a4fa26b5c0aa39ab1f75a712b5a5a340ee",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-284.9204175367535 + 1510.6973647209093 * voltage_V",
+          "expression_bytes": 17,
+          "free_parameters": 2,
+          "learned_state_bytes": 52,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 231.22386074439905,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(voltage_V)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--symbolic_control-rule-2",
+      "rule_sha256": "29f457c31687e5a8bf6ae09ebd2320a4fa26b5c0aa39ab1f75a712b5a5a340ee",
+      "run_id": "full-comparison-v5--P100-022--symbolic_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-284.9204175367535 + 1510.6973647209093 * voltage_V",
+        "expression_bytes": 17,
+        "free_parameters": 2,
+        "learned_state_bytes": 52,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022965036251407812,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 239.32890352005452,
+        "primary": "mae",
+        "primary_error": 239.32890352005452,
+        "rmse": 310.30715716452306
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 237.08186440884077,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 285.77179380594487,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 204.97266194719344,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 155.76720908140268,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 174.88439872476823,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 150.6822343580236,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 304.9440576680577,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 292.54195907440493,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 292.3501656357707,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 211.0680426367786,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 289.855998001848,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 249.88940054290472,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 278.29743020625375,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 273.6433764571022,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 216.75066568201072,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 224.84347508928616,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 276.7886572081611,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 346.98600907873356,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 150.23922620451913,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 169.21944458908507,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 223.31219921070928,
+        "execution_status": "complete",
+        "expression": "p0+p1*(voltage_V)",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -284.9204175367535,
+          "p1": 1510.6973647209093
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": -0.5544812531242467,
+            "voltage_V": -0.06683521822753877
+          },
+          "mean": -38.82005614627034,
+          "p90_abs": 503.6449024663893,
+          "std": 283.4106472042605
+        },
+        "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-2",
+        "rule_sha256": "d92dae0e7c4768fddd4b783b9eb069a78db0fc109caec557408ab72028073fff",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-284.9204175367535 + 1510.6973647209093 * voltage_V",
+          "expression_bytes": 17,
+          "free_parameters": 2,
+          "learned_state_bytes": 52,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 231.22386074439905,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(voltage_V)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-2",
+      "rule_sha256": "d92dae0e7c4768fddd4b783b9eb069a78db0fc109caec557408ab72028073fff",
+      "run_id": "full-comparison-v5--P100-022--principia_engine",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-284.9204175367535 + 1510.6973647209093 * voltage_V",
+        "expression_bytes": 17,
+        "free_parameters": 2,
+        "learned_state_bytes": 52,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022965036251407812,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 480.7508739703988,
+        "primary": "mae",
+        "primary_error": 480.7508739703988,
+        "rmse": 507.1404164388542
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 480.7508739703988,
+      "by_group": [
+        {
+          "error": 523.8064815209348,
+          "group": "group-0576a6e1314aeacfa7a21a4c",
+          "rows": 95
+        },
+        {
+          "error": 492.28080042375734,
+          "group": "group-16e743c9289e5e7d82e76945",
+          "rows": 95
+        },
+        {
+          "error": 472.2874731365481,
+          "group": "group-1eaa554a04b362c2f28f8340",
+          "rows": 95
+        },
+        {
+          "error": 460.3877070835048,
+          "group": "group-27309180063bdea86c072240",
+          "rows": 95
+        },
+        {
+          "error": 458.6736371713613,
+          "group": "group-2e51a7c40adfca2eaa995a2e",
+          "rows": 95
+        },
+        {
+          "error": 451.3262191009113,
+          "group": "group-365ecb9b6e95dc08f708208c",
+          "rows": 95
+        },
+        {
+          "error": 454.6026225231992,
+          "group": "group-3ddfbb2f103885e018b8eb98",
+          "rows": 95
+        },
+        {
+          "error": 493.248700019829,
+          "group": "group-41b07c8e06d8e68c64dfbb3c",
+          "rows": 95
+        },
+        {
+          "error": 491.9493502219343,
+          "group": "group-6417f7a8f8cab55fb5428f64",
+          "rows": 95
+        },
+        {
+          "error": 456.73120892602174,
+          "group": "group-78608521104ffdaa59acdf62",
+          "rows": 95
+        },
+        {
+          "error": 487.14083228614487,
+          "group": "group-78b7875b2a657d221dcb2fad",
+          "rows": 95
+        },
+        {
+          "error": 512.874678274413,
+          "group": "group-7b1dab4794a88e0a921f0694",
+          "rows": 95
+        },
+        {
+          "error": 512.7495649496034,
+          "group": "group-82284f2777b212069fd277d3",
+          "rows": 95
+        },
+        {
+          "error": 465.08545287380196,
+          "group": "group-8d4b3a530ca6e2984541b54e",
+          "rows": 95
+        },
+        {
+          "error": 497.2247901243749,
+          "group": "group-9622a56f49cfe299b4cc3e9b",
+          "rows": 95
+        },
+        {
+          "error": 516.3662705928257,
+          "group": "group-9bf13164f0ec12297b1705d5",
+          "rows": 95
+        },
+        {
+          "error": 483.7219615469152,
+          "group": "group-d2ebdc89b60293d722bfa817",
+          "rows": 95
+        },
+        {
+          "error": 474.7880093331015,
+          "group": "group-ead28e6246afc5a0e60a8bf0",
+          "rows": 95
+        },
+        {
+          "error": 454.2205407677153,
+          "group": "group-f1c5b97ca98a1fe9c26688a5",
+          "rows": 95
+        },
+        {
+          "error": 455.55117853107913,
+          "group": "group-f444649d419902c1622e00da",
+          "rows": 95
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 492.99282374715676,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "voltage_V",
+          "bromine_rich"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 509.76378541340716
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "bromine_rich": -0.3044894548966297,
+            "voltage_V": -0.8373400334538346
+          },
+          "mean": -38.725434975133176,
+          "p90_abs": 640.2362145865928,
+          "std": 517.2600001206317
+        },
+        "rule_id": "full-comparison-v5--P100-022--mean_control-rule-1",
+        "rule_sha256": "627651a01e74e141c0a56bd709f6fb608c9842aa20f405f2b90d4f971c1456aa",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "509.76378541340716",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-022.compact.v2",
+        "train_error": 483.4984503269281,
+        "units": {
+          "inputs": {
+            "bromine_rich": "indicator",
+            "voltage_V": "V"
+          },
+          "output": "microampere",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1900,
+        "fraction": 1.0,
+        "predicted": 1900
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-022--mean_control-rule-1",
+      "rule_sha256": "627651a01e74e141c0a56bd709f6fb608c9842aa20f405f2b90d4f971c1456aa",
+      "run_id": "full-comparison-v5--P100-022--mean_control",
+      "scenario_id": "P100-022",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "509.76378541340716",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 1900,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-022.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-022",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-022.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

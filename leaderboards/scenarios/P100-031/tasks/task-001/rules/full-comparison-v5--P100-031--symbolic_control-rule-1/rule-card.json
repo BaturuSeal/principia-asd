@@ -1,0 +1,72 @@
+{
+  "dev_error": 2.0016160162022687,
+  "execution_status": "complete",
+  "expression": "p0+p1*(pilot_depth*is_bqskit)+p2*(tanh((pilot_depth-9591.858974358975)/52024.561805156736))",
+  "inputs": [
+    "pilot_seconds",
+    "qubits",
+    "pilot_gates",
+    "pilot_depth",
+    "load_seconds",
+    "is_tket",
+    "is_bqskit"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 4.612418966046488,
+    "p1": 0.07155226871366116,
+    "p2": 23.90033270643865
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "is_bqskit": 0.47523222136249377,
+      "is_tket": -0.46953938697434877,
+      "load_seconds": -0.25874793061514545,
+      "pilot_depth": -0.4916621297233987,
+      "pilot_gates": -0.4606028467068378,
+      "pilot_seconds": -0.462918492647893,
+      "qubits": 0.05448248187089648
+    },
+    "mean": 0.41726362458688165,
+    "p90_abs": 7.380267208234257,
+    "std": 4.672298026982027
+  },
+  "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-1",
+  "rule_sha256": "e711801050d5f3ecb06ec15cfefd989f3b208eb00c80ccd9c87f3708f0c90dea",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "4.612418966046488 + 0.07155226871366116 * (pilot_depth * is_bqskit) + 23.90033270643865 * tanh((pilot_depth - 9591.858974358975) / 52024.561805156736)",
+    "expression_bytes": 91,
+    "free_parameters": 3,
+    "learned_state_bytes": 77,
+    "literal_state_bytes": 35,
+    "nodes": 32,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-031.compact.v2",
+  "train_error": 1.9246007543414994,
+  "units": {
+    "inputs": {
+      "is_bqskit": "SDK indicator,elseStaq",
+      "is_tket": "SDK indicator",
+      "load_seconds": "Qiskit QASM loading seconds",
+      "pilot_depth": "Qiskit output two-qubit depth",
+      "pilot_gates": "Qiskit output two-qubit gate count",
+      "pilot_seconds": "seconds Qiskit calibration cost",
+      "qubits": "input qubit count"
+    },
+    "output": "seconds",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

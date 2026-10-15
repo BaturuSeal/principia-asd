@@ -1,0 +1,77 @@
+{
+  "dev_error": 0.11468539242738722,
+  "execution_status": "complete",
+  "expression": "p0+p1*(y0-y1)+p2*(tanh((y2--0.1895795469574468)/0.6537253017058364))+p3*(y2)+p4*(y2*t)+p5*(tanh((y3--0.17837458605319145)/0.6499621028877535))",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.032990659803031126,
+    "p1": 1.0673427006122653,
+    "p2": -0.025169730501380404,
+    "p3": 0.14038832668575796,
+    "p4": 0.022064543339726597,
+    "p5": -0.1084415812040124
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.0031876684828460876,
+      "t": -0.050676583943969136,
+      "y0": -0.09179404360818356,
+      "y1": -0.06860566122399038,
+      "y2": -0.007785709313144273,
+      "y3": 0.04410127847033947
+    },
+    "mean": 0.007192442225887664,
+    "p90_abs": 0.24371340738415784,
+    "std": 0.14652341544106165
+  },
+  "rule_id": "full-comparison-v5--P100-068--principia_engine-rule-1",
+  "rule_sha256": "4f251dd4a8ebdfd70d94eee4bb45c189d30ff440fadec4ff409eeea9cb653749",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.032990659803031126 + 1.0673427006122653 * (y0 - y1) + -0.025169730501380404 * tanh((y2 - -0.1895795469574468) / 0.6537253017058364) + 0.14038832668575796 * y2 + 0.022064543339726597 * (y2 * t) + -0.1084415812040124 * tanh((y3 - -0.17837458605319145) / 0.6499621028877535)",
+    "expression_bytes": 142,
+    "free_parameters": 6,
+    "learned_state_bytes": 165,
+    "literal_state_bytes": 73,
+    "nodes": 73,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.11335014149840394,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

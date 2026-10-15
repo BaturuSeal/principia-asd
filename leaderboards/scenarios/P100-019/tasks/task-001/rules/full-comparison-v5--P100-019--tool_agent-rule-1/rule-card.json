@@ -1,0 +1,67 @@
+{
+  "dev_error": 4.215296397875719,
+  "execution_status": "complete",
+  "expression": "p0 + p1*lag1 + p2*lag3 + p3*lag6 + p4*month",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.7258228000002662,
+    "p1": 0.6172112026331243,
+    "p2": 0.08679275922214372,
+    "p3": 0.25267067971038365,
+    "p4": -0.1414131261506403
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.00633538666050774,
+      "lag3": -0.05544875648080434,
+      "lag6": -0.11248186174087588,
+      "month": 0.13689128607441886
+    },
+    "mean": 0.18438983746933738,
+    "p90_abs": 8.940372735802637,
+    "std": 8.152558431109556
+  },
+  "rule_id": "full-comparison-v5--P100-019--tool_agent-rule-1",
+  "rule_sha256": "c583860926ba39e536209a119aceea59f8b6be5787f9a26a3f223d4d6ace3947",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.7258228000002662 + 0.6172112026331243 * lag1 + 0.08679275922214372 * lag3 + 0.25267067971038365 * lag6 + -0.1414131261506403 * month",
+    "expression_bytes": 43,
+    "free_parameters": 5,
+    "learned_state_bytes": 133,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.139298708936346,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

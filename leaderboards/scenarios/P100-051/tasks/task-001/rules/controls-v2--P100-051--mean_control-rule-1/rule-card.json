@@ -1,0 +1,57 @@
+{
+  "dev_error": 0.3890113972773862,
+  "execution_status": "complete",
+  "expression": "0.300731850840208",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.03274593755860625,
+      "cal_plus20_uA": -0.012934558635061235,
+      "cal_zero_uA": -0.029572006638235587,
+      "gate_V": -0.7892552068174248
+    },
+    "mean": 0.0013147980539882826,
+    "p90_abs": 0.8724221491597922,
+    "std": 0.49927409369975767
+  },
+  "rule_id": "controls-v2--P100-051--mean_control-rule-1",
+  "rule_sha256": "7badcd72a7d3c169c999df7f4ba58396ddf5debc2dd6eb06a94be63d9fc895e1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.300731850840208",
+    "expression_bytes": 17,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.38541717010737303,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

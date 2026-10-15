@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.11559071025642811,
+    "primary": "mae",
+    "primary_error": 0.11559071025642811,
+    "rmse": 0.1902460787857149
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.09004911821129045,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.14113230230156576,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_glm",
+  "rule_id": "full-comparison-v5--P100-023--direct_glm-rule-1",
+  "rule_sha256": "e6161bad7aa1d38ecf655dea376ec0c38c9760c3abc65e069edc5b971a569c0f",
+  "run_id": "full-comparison-v5--P100-023--direct_glm",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.06359347309681225 * H ** (-0.2470118016580986) + 0.8118681198057943 * H ** 0.7205651244229048 * (hydration / 50.0) ** 0.36213693024968635 + -0.141601345521039 * load / area",
+    "expression_bytes": 72,
+    "free_parameters": 6,
+    "learned_state_bytes": 158,
+    "literal_state_bytes": 4,
+    "nodes": 48,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.48114998849746243,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

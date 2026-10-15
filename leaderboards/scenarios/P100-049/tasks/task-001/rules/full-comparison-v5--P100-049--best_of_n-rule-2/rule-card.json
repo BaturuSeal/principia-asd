@@ -1,0 +1,80 @@
+{
+  "dev_error": 0.0005072820895772081,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * u120 + p2 * (u120 - u60) + p3 * log1p(t - 120) + p4 * current + p5 * (u10 - u120)",
+  "inputs": [
+    "t",
+    "t60",
+    "t120",
+    "u60",
+    "u120",
+    "u10",
+    "pulse_s",
+    "current"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.00020899374334273937,
+    "p1": 1.00119257103556,
+    "p2": 1.347825003289582,
+    "p3": 2.2178282710211937e-05,
+    "p4": 0.7943383913138977,
+    "p5": -0.35287908614808067
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.0268698271096177,
+      "pulse_s": 0.15661382315900224,
+      "t": -0.02161912852897603,
+      "t120": 0.05304175617439474,
+      "t60": 0.006241059420717754,
+      "u10": 0.125627536502666,
+      "u120": 0.12209224677777569,
+      "u60": 0.12331318691944075
+    },
+    "mean": 8.290734878819056e-05,
+    "p90_abs": 0.0010083686857642383,
+    "std": 0.000680560516471187
+  },
+  "rule_id": "full-comparison-v5--P100-049--best_of_n-rule-2",
+  "rule_sha256": "db3ef9902dfdcaf9d52df6d1622392b8615685771505906b9600e8c0f273053b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.00020899374334273937 + 1.00119257103556 * u120 + 1.347825003289582 * (u120 - u60) + 2.2178282710211937e-05 * log1p(t - 120) + 0.7943383913138977 * current + -0.35287908614808067 * (u10 - u120)",
+    "expression_bytes": 91,
+    "free_parameters": 6,
+    "learned_state_bytes": 164,
+    "literal_state_bytes": 3,
+    "nodes": 57,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-049.compact.v2",
+  "train_error": 0.0006190928733944639,
+  "units": {
+    "inputs": {
+      "current": "A",
+      "pulse_s": "s",
+      "t": "s",
+      "t120": "s",
+      "t60": "s",
+      "u10": "V",
+      "u120": "V",
+      "u60": "V"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

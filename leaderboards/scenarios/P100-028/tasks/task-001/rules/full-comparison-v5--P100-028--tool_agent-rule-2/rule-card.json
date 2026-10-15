@@ -1,0 +1,80 @@
+{
+  "dev_error": 1.933060902798024e-05,
+  "execution_status": "complete",
+  "expression": "p0 + p1*lo + p2*hi + p3*noise + p4*r + p5*g + p6*sep",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.4393255717119917,
+    "p1": -0.8831800665084005,
+    "p2": 1.8652932848362955,
+    "p3": 0.24570002267407726,
+    "p4": -0.03449593396393613,
+    "p5": 3.379574010571472,
+    "p6": 8.845073458283047e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": -0.0033961865632401323,
+      "glo": -3.8516025132526625e-17,
+      "hi": 0.09693908188253138,
+      "lo": 0.09841814500903036,
+      "noise": -0.0057909813748909245,
+      "r": -0.0033961865632401206,
+      "sep": -0.07493659210190229
+    },
+    "mean": 3.3914949856050033e-07,
+    "p90_abs": 4.3210616159932986e-05,
+    "std": 2.526226281965898e-05
+  },
+  "rule_id": "full-comparison-v5--P100-028--tool_agent-rule-2",
+  "rule_sha256": "64e99ed81d42383c527eb90d78cd1168add44238ed47b3b5f040597b023dc135",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.4393255717119917 + -0.8831800665084005 * lo + 1.8652932848362955 * hi + 0.24570002267407726 * noise + -0.03449593396393613 * r + 3.379574010571472 * g + 8.845073458283047e-07 * sep",
+    "expression_bytes": 52,
+    "free_parameters": 7,
+    "learned_state_bytes": 189,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 1.6924646524394072e-05,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

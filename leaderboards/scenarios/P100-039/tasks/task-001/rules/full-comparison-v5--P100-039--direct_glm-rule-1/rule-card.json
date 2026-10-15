@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.19382849341860262,
+  "execution_status": "complete",
+  "expression": "1/(1+exp(-(p0 + p1*education + p2*age + p3*japan + p4*education*japan + p5*age*japan + p6*age**2)))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -13.949024980990934,
+    "p1": 0.40707214287321036,
+    "p2": 0.31297421445744733,
+    "p3": 0.8088691733502613,
+    "p4": -0.08182487956899959,
+    "p5": 0.012303049876461905,
+    "p6": -0.003191012395930067
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.049906659536310974,
+      "education": 0.03972726055914516,
+      "japan": 0.010280525450151099
+    },
+    "mean": 0.00972236311344694,
+    "p90_abs": 0.726027879000074,
+    "std": 0.4443780718785432
+  },
+  "rule_id": "full-comparison-v5--P100-039--direct_glm-rule-1",
+  "rule_sha256": "5667306840569da0d5cb46358af6850f2b44eeda2163ef0bd52133fe604815af",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(-13.949024980990934 + 0.40707214287321036 * education + 0.31297421445744733 * age + 0.8088691733502613 * japan + -0.08182487956899959 * education * japan + 0.012303049876461905 * age * japan + -0.003191012395930067 * age ** 2)))",
+    "expression_bytes": 99,
+    "free_parameters": 7,
+    "learned_state_bytes": 192,
+    "literal_state_bytes": 3,
+    "nodes": 73,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.185214827641091,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "dev_error": 23.65329786005039,
+  "execution_status": "complete",
+  "expression": "p0+p1*(p22_pct)",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 5.72605695795906,
+    "p1": 1.1958012139592047
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": 0.8506600245105711,
+      "p72_pct": -0.893435315147306,
+      "time_h": -0.1507458664084291
+    },
+    "mean": 12.325775245651853,
+    "p90_abs": 39.89612365995853,
+    "std": 24.512988767078568
+  },
+  "rule_id": "full-comparison-v5--P100-072--principia_engine-rule-2",
+  "rule_sha256": "cd5f5d5ca4bfb9a20f8e6e8dae4917e4644a0963ef1458e9225ae222b4e70d5c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "5.72605695795906 + 1.1958012139592047 * p22_pct",
+    "expression_bytes": 15,
+    "free_parameters": 2,
+    "learned_state_bytes": 50,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 12.878305212497036,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

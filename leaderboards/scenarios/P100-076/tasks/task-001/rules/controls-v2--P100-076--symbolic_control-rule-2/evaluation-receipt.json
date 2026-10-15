@@ -1,0 +1,89 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.7539130294200567,
+    "primary": "mae",
+    "primary_error": 0.7539130294200567,
+    "rmse": 0.877551008719306
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.8994047619047619,
+  "by_group": [
+    {
+      "error": 1.1190476190476197,
+      "group": "group-3bc9b13b0df5b5e40e01156a",
+      "rows": 28
+    },
+    {
+      "error": 0.8874002765356386,
+      "group": "group-4e423cf933c9f8ee95083391",
+      "rows": 14
+    },
+    {
+      "error": 0.6398617929925943,
+      "group": "group-542b6382cfd96d3e69f9b458",
+      "rows": 42
+    },
+    {
+      "error": 0.4944241138199619,
+      "group": "group-67afda1d9c6ec0a53e35ff79",
+      "rows": 14
+    },
+    {
+      "error": 0.5252113640974461,
+      "group": "group-83e44d487d51f0d15493a5b7",
+      "rows": 28
+    },
+    {
+      "error": 1.181913179229229,
+      "group": "group-92774768e9edadcf50d5ce11",
+      "rows": 42
+    },
+    {
+      "error": 0.6221023799835114,
+      "group": "group-b8c729f8f000f87411d7c9b0",
+      "rows": 84
+    },
+    {
+      "error": 0.5613435096544518,
+      "group": "group-f1599d60c8deb28dcee7aa19",
+      "rows": 14
+    }
+  ],
+  "coverage": {
+    "eligible": 266,
+    "fraction": 1.0,
+    "predicted": 266
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-076--symbolic_control-rule-2",
+  "rule_sha256": "280f908900791824d1f72293b888b12782c875205fd738c015c185eaceeb9fca",
+  "run_id": "controls-v2--P100-076--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.8378938215450877 + -2.7599110174212487 * log1p(abs((kd - 0.6) / 0.4898979485566356)) + 0.402768867829001 * tanh((current - 40.0) / 16.1245154965971)",
+    "expression_bytes": 90,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.013848344097822998,
+    "perturbation_labels_available": false,
+    "population_rows": 266,
+    "ranking": false,
+    "samples": 266,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.03304570277386881,
+    "primary": "mae",
+    "primary_error": 0.03304570277386881,
+    "rmse": 0.041971147035588366
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.06938069444444445,
+  "by_group": [
+    {
+      "error": 0.05605398360508539,
+      "group": "group-0a265a6180cfba94d3eb0666",
+      "rows": 12
+    },
+    {
+      "error": 0.010037421942652239,
+      "group": "group-191e001270476d8b8d4971b9",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-030--best_of_n-rule-2",
+  "rule_sha256": "e149b3218536a8fcb6ee1dcba9f4906012bdcf7ae39acc4eef545f7fea9de413",
+  "run_id": "full-comparison-v5--P100-030--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.01919172277270612 + 0.6061080523099298 * boundary_cof + -0.12817256447786562 * highspeed_cof + -0.0008399436959032392 * concentration_wt_pct + -5.8138123868551365e-06 * speed_mm_s + -0.0773979780783872 * speed_mm_s * boundary_cof + -0.07816767074800154 * speed_mm_s * highspeed_cof + 0.000507521837879226 * speed_mm_s * concentration_wt_pct",
+    "expression_bytes": 177,
+    "free_parameters": 8,
+    "learned_state_bytes": 225,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.7066916072738958,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

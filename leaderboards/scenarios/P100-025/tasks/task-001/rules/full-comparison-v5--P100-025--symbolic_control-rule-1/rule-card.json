@@ -1,0 +1,82 @@
+{
+  "dev_error": 0.06080307252772453,
+  "execution_status": "complete",
+  "expression": "p0+p1*(jump*rF)+p2*(pre*rF)+p3*(rF)",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.636404767328668,
+    "p1": 1.0055476266210044,
+    "p2": 0.9841980665133425,
+    "p3": -3.4935225563029864
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": -0.11319896211959314,
+      "dL": 0.377247618116269,
+      "discharge": -0.19993564047296075,
+      "e": -0.3505716192645177,
+      "f": 0.015482733087246698,
+      "jump": -0.20107435570507373,
+      "pre": -0.21215475615303514,
+      "rF": -0.3730445606674059,
+      "rL": -0.2842120677673641,
+      "rest": -0.19993564047296075
+    },
+    "mean": 0.020158795217998293,
+    "p90_abs": 0.11617006515254141,
+    "std": 0.07379402986484314
+  },
+  "rule_id": "full-comparison-v5--P100-025--symbolic_control-rule-1",
+  "rule_sha256": "664094f40fed6ab3c2fe2c89222c8cbc5b63fe954fe737651e0fd4d7f2144569",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.636404767328668 + 1.0055476266210044 * (jump * rF) + 0.9841980665133425 * (pre * rF) + -3.4935225563029864 * rF",
+    "expression_bytes": 35,
+    "free_parameters": 4,
+    "learned_state_bytes": 104,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.07026587289240224,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

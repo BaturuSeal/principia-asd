@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1*rms_s + p2*log1p(dmin_km) + p3*log1p(phases) + p4*log1p(stations) + p5*log1p(gap_deg) + p6*log1p(depth_km+2.19) + p7*minimum(1, depth_km)",
+  "parameters": {
+    "p0": 2.3337168039996445,
+    "p1": 0.6278117815661952,
+    "p2": 0.10737878612925547,
+    "p3": -1.1072230966361627,
+    "p4": 0.5302617167155045,
+    "p5": -0.05182928245179149,
+    "p6": 0.9421729134732026,
+    "p7": -0.9960770341309066
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

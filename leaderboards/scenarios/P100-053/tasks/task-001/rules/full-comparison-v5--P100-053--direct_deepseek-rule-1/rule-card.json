@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.025671491619738397,
+  "execution_status": "complete",
+  "expression": "p0 + p1*early + p2*finding + p3*roughness + p4*usage + p5*left + p6*has_history + p7*prev_y",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.19176369356634015,
+    "p1": 1.1422644765149887,
+    "p2": -0.16119280030065064,
+    "p3": -0.051137856276096905,
+    "p4": -0.0017035865642655735,
+    "p5": -0.012435268420753971,
+    "p6": -0.18485470524002337,
+    "p7": 0.2946169836026902
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.03337494687719664,
+      "finding": -0.05134813496043862,
+      "first_y": 0.022383161623715123,
+      "gradient_proxy": -0.07974225100621254,
+      "has_history": 0.04645052228195634,
+      "history_gap": 0.009778668997638112,
+      "left": -0.009459802178972762,
+      "mean_past_y": -0.039611657579939744,
+      "prev_early": 0.02334519922036495,
+      "prev_gradient": -0.057852176791191305,
+      "prev_y": -0.025363686195586245,
+      "roughness": -0.08626432437879182,
+      "usage": 0.021780544512232228
+    },
+    "mean": -0.0005116475495767672,
+    "p90_abs": 0.0555764599001338,
+    "std": 0.03640860997292277
+  },
+  "rule_id": "full-comparison-v5--P100-053--direct_deepseek-rule-1",
+  "rule_sha256": "95294e9d13377aca3d6e386ea8a7a19431962c31e84406652f521089b0578b27",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.19176369356634015 + 1.1422644765149887 * early + -0.16119280030065064 * finding + -0.051137856276096905 * roughness + -0.0017035865642655735 * usage + -0.012435268420753971 * left + -0.18485470524002337 * has_history + 0.2946169836026902 * prev_y",
+    "expression_bytes": 91,
+    "free_parameters": 8,
+    "learned_state_bytes": 223,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.0250694417890709,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

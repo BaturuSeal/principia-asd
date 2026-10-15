@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.25404934049092676,
+  "execution_status": "complete",
+  "expression": "p0+p1*(gate_V)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.30073185084020804,
+    "p1": 0.03406051094047151
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.05332561164221903,
+      "cal_plus20_uA": -0.02106347540980723,
+      "cal_zero_uA": -0.04815697637758498,
+      "gate_V": -0.005682633869052657
+    },
+    "mean": 0.0013147980539883401,
+    "p90_abs": 0.40700732576137505,
+    "std": 0.30659185696011754
+  },
+  "rule_id": "live-pilot-v3--P100-051--principia_engine-rule-2",
+  "rule_sha256": "7c36e4e7661ff55a4cd7d8d4f80b49d6c3f617eefc5de850ea03934f7edb0d1c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.30073185084020804 + 0.03406051094047151 * gate_V",
+    "expression_bytes": 14,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.24741323762893483,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

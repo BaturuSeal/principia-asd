@@ -1,0 +1,331 @@
+{
+  "additional_review_receipts": [
+    {
+      "path": "docs/data-reviews/P100-086-temporal-audit-v1.json",
+      "sha256": "6633a7fd42e965919e34c462d925e5f03d9a7369a0c430fa0030e6cae90db0d4"
+    }
+  ],
+  "advisories": [
+    {
+      "consequence": "Interpret this as online noise-summary prediction within one calibrated H1 recording, not injection-free astrophysical discovery or independent detector transfer. Target-window quality selection is retrospective; development blocks are not wholly forward ordered. Historical rule complexity excludes 3,840 local detrend fits and spectral processing. Original scores and outcomes remain unchanged.",
+      "contract_sha256": "9e832471efb864cfe545db154fdf5856ceefa0a9caff71d572494a2ed9a4940f",
+      "detail": "All 252 forecasts preserve their original blocks and earlier-only 16-second inputs. The filter requires DATA and injection bits 0/1/2/4; all 4,096 seconds lack the continuous-wave injection veto flag, and nine seconds lack burst CAT2/CAT3 flags. Thirty observed-history references cross partition boundaries.",
+      "review_id": "gwosc-native-quality-and-online-history-scope-v1",
+      "scenario_id": "P100-003",
+      "source_input_hashes": {
+        "dev": "c42c67e429ed08d42cf8f59cfcbe897b2a43cb638d21b20ac4a71b99b0b2da13",
+        "test": "202ab93142a29c5ba81c55d7086cd8a77ffe206838576953955cbac3eea83ad0",
+        "train": "a16260e61dbdef973a129c1a732481a5a6c28a6106ddea54d0150cfc1b8644e3"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-003.compact.v2",
+      "title": "One detector interval with limited quality vetoes"
+    },
+    {
+      "consequence": "Historical results are retained for audit, with unchanged metrics and denominators. A corrected edition and a new frozen comparison are required before release-quality claims.",
+      "contract_sha256": "c879e24fc5ee8f6ca81bf3e4cb194b5fe3216c1f95db5452382250a4b2f81763",
+      "detail": "Two deposition batches cross train/dev despite the contract declaring deposition batch as the split unit. Original test inputs remain separate.",
+      "review_id": "deposition-batch-separation-v1",
+      "scenario_id": "P100-012",
+      "source_input_hashes": {
+        "dev": "4c20cfa551a13d645a2b4ef951340bc230dcd55dc9613f1a2351a139bda02ad2",
+        "test": "79749df0b69e0bff5690269edd9d5eeaa9ab965cab755a47b6fb9b756c74b62b",
+        "train": "23ee027523cdd7b70833bc64d7188ff420fb2847c38991abbf3a2f09e8bc96e3"
+      },
+      "status": "preparation_defect",
+      "task_id": "P100-012.compact.v2",
+      "title": "Development split requires correction"
+    },
+    {
+      "consequence": "The unchanged scores are unweighted within-state Brier losses, not survey-population estimates or historical weighted parity. Upstream imputation scope, profile timing and household dependence remain unverified. This is retrospective association with a hypothetical expense response, not future distress, an income intervention or independent confirmation. Its parameter count is not full learned-state complexity; a versioned lineage/accounting correction and broader audit are required.",
+      "contract_sha256": "a0139d132280ecbc6f80c365f54cc8d6c8ae2dbda4a3e9f6a913487a55e631b3",
+      "detail": "All 12,934 respondents retain whole-state partitions. Source flags identify 85 imputed target answers (60 train, 13 dev, 12 test) and three imputed work-status inputs. Income uses fixed bracket proxies; the shock input means no paid work last month, not job loss. Engine rule 3 displays two final-stage free parameters but embeds three earlier fitted coefficients.",
+      "review_id": "shed-source-imputation-and-survey-estimand-v1",
+      "scenario_id": "P100-015",
+      "source_input_hashes": {
+        "dev": "e4fec3ced06dcf8c4a2dc103927c0dff818f13f84901552feab4efb530ead08c",
+        "test": "a79c48b59d044ec55c51948826f51960ba257413d0ae2751e6103ec2f7cd4ba6",
+        "train": "87c79f45712c6afe7e818c96dacdafa270a7c6aa41248b2c8001b83a264cd012"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-015.compact.v2",
+      "title": "Hypothetical expense answers include upstream imputation"
+    },
+    {
+      "consequence": "Interpret the unchanged results as post-event diagnosis of recorded property-loss estimates, not storm forecasting or confirmed tornado/outbreak-independent transfer. Source reporting completeness, exposure, revision history and notice packaging remain unresolved; final scientific admission is pending.",
+      "contract_sha256": "8d681db3a9f8e2474cf8fd10934d9691c40aa07729a62839cdeffe25b9732153",
+      "detail": "All 1,296 eligible reports preserve whole-episode partitions. The source has 295 unknown-loss exclusions and 620 retained zero-loss reports. Office/county/time matching finds 26 eligible continuation candidates across partitions; global tornado identities remain unadjudicated.",
+      "review_id": "storm-reported-loss-and-continuation-scope-v1",
+      "scenario_id": "P100-018",
+      "source_input_hashes": {
+        "dev": "14fc8ee4f6556652e8684d31d7711d1c3510a3d8ba80b313046d27fb39b024dd",
+        "test": "d29b7dbbfb2df671bcd0fe4f25ae5d7a8ad158449368bd0f37f3d3bc14ecc4d5",
+        "train": "4b4260bf55b57f112b5096a50182c7c5a5c778933cf3807982c81f6fe1535dcf"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-018.compact.v2",
+      "title": "Reported losses and linked tornado segments need review"
+    },
+    {
+      "consequence": "All historical rules, metrics and attempts remain unchanged for audit. A corrected data/evaluator edition and new frozen comparison are required before release-quality claims. Received complaints do not establish fleet-normalized risk, defect causality or verified as-issued forecasting.",
+      "contract_sha256": "84f28f03d337208feb0e28097d98d825478c25b69859a0d84de8a2db212020cf",
+      "detail": "Quote-aware parsing merges 29 spans and absorbs 176 complete source records, omitting 114 unique vehicle complaints after deduplication. Literal TSV decoding changes 81 vehicle-month counts in the scored cohort. Whole-month splits remain intact.",
+      "review_id": "nhtsa-quoted-narrative-record-loss-v1",
+      "scenario_id": "P100-019",
+      "source_input_hashes": {
+        "dev": "261c4809c1bbe2b63f9e0398963ec6c3bd998601169b79451fb32a4731277f92",
+        "test": "bffe3916d298252ff85d256c6e8bfef8a1c602c3d584dc9d2012858e7c6a1443",
+        "train": "03d846f6a28f3003245e5f6c7671cc95d2b6c2d56df0893fdf54216ab6b4a86c"
+      },
+      "status": "preparation_defect",
+      "task_id": "P100-019.compact.v2",
+      "title": "Historical parsing omits complaint records"
+    },
+    {
+      "consequence": "This is retrospective same-date interpolation, not temperature forecasting, coral-bleaching prediction or independent temporal validation. Target quality selection and shared upstream processing limit inference. Historical rule complexity excludes L4 processing and climatology; metrics and outcomes remain unchanged.",
+      "contract_sha256": "d597610f6fe373513a69ba54f0b2d2396cf7f35534ab8d20f3e71b612a529376",
+      "detail": "All 7,419 rows preserve 116 complete geographic tiles. No target appears in any predictor stencil and no stencil crosses a tile. The source is an L4 temperature analysis adjusted by a 1991–2020 climatology.",
+      "review_id": "coral-derived-map-and-spatial-scope-v1",
+      "scenario_id": "P100-020",
+      "source_input_hashes": {
+        "dev": "d37c2d939e5872d954de8cf303940edf993a43b4be548cd06cf5e0a6f4a89d78",
+        "test": "fe5f16dd722d1a401907cde13f9fa9378f2a3935f3217748edd284f6f4e5a16b",
+        "train": "668c0df828780b9b2bcee003a63d9ac13491c333a0caffd0c2e8097c16f79662"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-020.compact.v2",
+      "title": "One derived daily map supports spatial interpolation only"
+    },
+    {
+      "consequence": "Interpret the unchanged results as calibrated retrospective spectral reconstruction. Independent cell transfer, online state-of-charge prediction, detector-level reduction and full-pipeline complexity remain unassessed.",
+      "contract_sha256": "18bb3fbf902307fe931716f07e9b1e2a20d91994017fe3aab0a1ed6609393bcb",
+      "detail": "All partitions use acquisition triplets from one LFP cycle and shared measured reference spectra. Each spectrum supplies its own pre/post-edge calibration bands. Progress uses nominal 300-second acquisitions and retrospectively known cycle durations.",
+      "review_id": "xas-calibration-and-cycle-scope-v1",
+      "scenario_id": "P100-025",
+      "source_input_hashes": {
+        "dev": "1a9419bc13bc9cbf64f4377c488955966d1085e6de76f0631dada6f975213a9b",
+        "test": "5183013508e010caff443a8b4547d9ced9658cfb738136316bd150c9d4e40788",
+        "train": "3cbdbc77717d2d6e42dd87f82166c4017647009e543c25845fb1c33c33575bfd"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-025.compact.v2",
+      "title": "Single-cycle calibration limits transfer claims"
+    },
+    {
+      "consequence": "Interpret the unchanged results as response-magnitude extrapolation. Inverse pump design, complex phase recovery, independent-device transfer and full-pipeline simplicity remain unassessed.",
+      "contract_sha256": "32ebf65fce36707f8d0341cffa5467428203ca9d8c7873554d188f0e0cd0de1b",
+      "detail": "Whole pump-strength matrices remain together, but all conditions share one acquisition and measured low-pump calibration. The target retains complex-response magnitude only; native axis order is preserved without a reciprocity assumption.",
+      "review_id": "microwave-calibration-and-magnitude-scope-v1",
+      "scenario_id": "P100-028",
+      "source_input_hashes": {
+        "dev": "54c031439ae83745d69b0f7f56bea8138b7e2f4e1cfcf7f993714922620ccc3a",
+        "test": "071f1d565082fdd9407cec37d6eec02ea570fb864c5ff8b1e40d3de23e93e954",
+        "train": "6b3e49d5bfb37265bc167ee3af5f03e5dd60fc1646440a1b1c5d8a8bc1da92ed"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-028.compact.v2",
+      "title": "Calibrated magnitude extrapolation within one instrument"
+    },
+    {
+      "consequence": "Interpret the unchanged results as conditional software-runtime diagnostics. Pilot execution is not free. Failure prediction, pre-compilation prediction, independent hardware transfer and quantum-device performance remain unassessed.",
+      "contract_sha256": "f822339ec6fa5d5e803d68de5bf269a7d223fd1b9e3328552295190067605ca0",
+      "detail": "The 135 timing rows cover successful compiler runs. Fifteen additional compiler–circuit outcomes are unavailable. Inputs use recorded Qiskit runtime and output statistics; source dates and software revisions differ despite a common CPU model.",
+      "review_id": "compiler-successful-run-and-pilot-scope-v1",
+      "scenario_id": "P100-031",
+      "source_input_hashes": {
+        "dev": "ef3fa391085457110869b34ce95bffbe34e398e9f1eb7d18c064f9edc623ad4b",
+        "test": "84a45840c51ae8b447aaeacd98d5e343e56def95ff2f01099db1ae84e4015bae",
+        "train": "cdc90e400c3f16360a39118e45785ded9e056ae49a60897795101edf0a355293"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-031.compact.v2",
+      "title": "Runtime diagnostics require a completed Qiskit pilot"
+    },
+    {
+      "consequence": "Interpret this as prediction at nearby, varying horizons using online pressure history, not an exact 200 ms or physiological-identification result. Historical metrics and all assigned outcomes remain unchanged.",
+      "contract_sha256": "55b5fd500edb5ae04e5c7df1b3ca9f08720f46e43d353883aa108cac38cde963",
+      "detail": "The fixed sample-offset task has actual forecast intervals of 176–223 ms; the nominal 50 ms lag spans 25–76 ms. Participant separation and inputs at or before each forecast origin are verified.",
+      "review_id": "cpap-native-clock-scope-v1",
+      "review_receipt_sha256": "11c4c3f27f3bac78bcd3b0406cbe5909f2e94b3bfc2fed266454d4c6b131a96b",
+      "scenario_id": "P100-032",
+      "source_input_hashes": {
+        "dev": "8818663b6881f32d805d84d92fe4498aa8e8fb1f072d7e65f73544f241ba3771",
+        "test": "6ede12c19e16777c78b4885ab5ebd74262f87312e00e26186c6d8202b56673e6",
+        "train": "9b2e22680e1619d269df8fe682b6f677a9fb87f30e0dc96fc460fbec44cc3282"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-032.compact.v2",
+      "title": "Forecast timing is nominal, not exact"
+    },
+    {
+      "consequence": "This estimates simultaneous source ECG-reference heart rate after a full PPG segment. It does not establish clinical performance, future prediction or new-device transfer. Rule complexity excludes 3,888 segment detrend fits, scale estimates and spectral/autocorrelation processing. Source orientation and annotation provenance require review.",
+      "contract_sha256": "8ca505f3ec363b7b0f78acb00551d8e5d82a56c2461920af6a872e370b546221",
+      "detail": "All 3,888 recordings stay grouped by 50 participants, including 3,058 quality-0 records. Forty-eight source headers encode 300 scalar channels in one frame; their historical temporal interpretation is preserved and flagged. ECG references and human quality labels never enter predictors.",
+      "review_id": "ppg-source-orientation-and-processing-scope-v1",
+      "scenario_id": "P100-033",
+      "source_input_hashes": {
+        "dev": "cd7db330078fe88a3e2807935521676603dd015596ca135856dc34868c5f313a",
+        "test": "f90e1277a72127e39ef77a8d146ccce9c45bf5cf35a0803407735ead50bfe301",
+        "train": "5a1da1234548276182421be159606cd94c52c36ad179227d5f8da796209090b5"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-033.compact.v2",
+      "title": "PPG source orientation and processing require review"
+    },
+    {
+      "consequence": "This is a contemporaneous diagnostic using author-derived image and fluorescence indices. Image extraction, shared fluorescence quantities, calibration and experiment transfer remain unverified. It does not establish longitudinal stress forecasting, causal effects or a new biomarker. Original metrics and all outcomes remain unchanged.",
+      "contract_sha256": "124b7c84de5ba307692e5ed805a25f5a0d33d097c48f9dbf696ab66bb98d0fee",
+      "detail": "All 347 source rows remain grouped by 81 plants. The two acquisition experiments align with the two cultivars, and 81 rows have conflicting DAG age annotations between workbooks. Historical predictors do not use those ages.",
+      "review_id": "tomato-derived-phenotypes-and-acquisition-scope-v1",
+      "scenario_id": "P100-036",
+      "source_input_hashes": {
+        "dev": "37df2013bee4092427ec452f5ad6d1aac153740dde925723546436fd8242efc0",
+        "test": "4741a3ae435bf7bed7b3457f00573948d3c3272c57474cce28d3a0df7dfecd5c",
+        "train": "1250b36e3130e46ffb64e4fe1c2bb4c43cd9c968a2885c41a3fccb93df539a5e"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-036.compact.v2",
+      "title": "Derived imaging measurements share acquisition and calibration"
+    },
+    {
+      "consequence": "Current scores are unweighted within-block Brier losses with equal block aggregation; they do not reproduce historical survey-weighted losses or establish population estimates. Survey clusters, replicate-weight variance, prospective earnings, country transfer and causal returns are not established. All existing metrics and outcomes remain unchanged.",
+      "contract_sha256": "520574e64b4faa4fcc621a997ec61179bb95f6025d2c9f169a1d5f6cc6344746",
+      "detail": "All 5,290 eligible respondents preserve whole country/hash-block splits. Earnings are country-relative deciles, education is source-derived and ages are fixed bin midpoints. Positive survey weights affect eligibility but are absent from compact scoring; 3,640 source records are excluded.",
+      "review_id": "piaac-respondent-decile-and-weighting-scope-v1",
+      "scenario_id": "P100-039",
+      "source_input_hashes": {
+        "dev": "0c75ec5f94f4b73b7516f44572c6f93a7a1af48a48c41128952eeb0da07e8f84",
+        "test": "0dd899d6d383681d2ee41f822e03b5c9f4be3a2f8e84a05afd3537d22d672d4d",
+        "train": "e411edf3a828619064b7702395d8f513ac7d54ad3079a3551f151df890f870e2"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-039.compact.v2",
+      "title": "Sample earnings classification, not population or causal inference"
+    },
+    {
+      "consequence": "Earlier completed test-operation responses legitimately enter later prediction histories under this online contract. This does not establish one-shot unseen-workpiece prediction, unseen-condition transfer or anomaly detection. Source clock origin/timezone and full-pipeline simplicity remain unassessed.",
+      "contract_sha256": "e79f5ec15cff19803fa97152523f00231fd49db502177de8e9e8869db334ce54",
+      "detail": "The 12,368 eligible operations use the first sampled 250-degree prefix and completed earlier operations from the same hole. All 250 workpieces stay intact across splits. Another 132 source operations cannot supply the fixed torque window.",
+      "review_id": "screw-online-history-and-prefix-scope-v1",
+      "scenario_id": "P100-053",
+      "source_input_hashes": {
+        "dev": "70ae7937f51248019504f40927638ce8c4d8495370298513f0564dc1104212c2",
+        "test": "3cd06e37ada41a09fa3c0ad2b1c914a7b49032160a272301fc024b61b8d28696",
+        "train": "f2845e3b0e41ba1d3e92d63d00be1ac28e5dc3c5ca03be0fae32987a90146fb5"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-053.compact.v2",
+      "title": "Online torque prediction uses completed same-hole history"
+    },
+    {
+      "consequence": "All historical rows and results remain unchanged. Whole-mixture separation is verified, but source completeness, physical-rate interpretation, full formulation provenance and redistribution remain unresolved. No new scientific admission or publication authorization.",
+      "contract_sha256": "eb8305fb864739905d465860e546a6ed770b02dda032ee5c4d95612a06f0a748",
+      "detail": "The workbook marks mixture 0.7_0.30 Incomplete, while mixture 1.0_0.25 is absent from the methods appendix. The native clock unit is unspecified. The methods PDF states CC BY-NC-SA 4.0; repository metadata states CC BY 4.0.",
+      "review_id": "slag-source-quality-and-rights-v1",
+      "scenario_id": "P100-055",
+      "source_input_hashes": {
+        "dev": "cefe4dff0b467f28195b92b43be60f05b242262924a57f0c9cb5a0620bc378d8",
+        "test": "eed270e69a1d17bdbc382dec7a0d7f359d0d706c13160f57e556960269f54521",
+        "train": "a21b3711490a9064ca52847acd21989440f8064cc72a94c8baf420650f2d255d"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-055.compact.v2",
+      "title": "Source quality, time units and rights require clarification"
+    },
+    {
+      "consequence": "Historical results are retained for audit, with unchanged metrics and denominators. A corrected edition and a new frozen comparison are required before release-quality claims.",
+      "contract_sha256": "61707d25b44e440e668665a135f08fed4683c2ab87dd0b16febc791103e7cafb",
+      "detail": "The low-current stream contains training observations later than its development block. Original test inputs remain separate.",
+      "review_id": "per-stream-forward-block-separation-v1",
+      "scenario_id": "P100-062",
+      "source_input_hashes": {
+        "dev": "72092fb0535a60ed7fa051a66e75a39e835ebc85609359346e6a0ca7045ebde8",
+        "test": "97d04fce0023168f6664bd4b539ffb05eba6ed11cf955896bc6e3fd1c0d8c569",
+        "train": "639c31441face485b57244b53ca5f548d7bd6f8e91581bda6d804cc191bcb26e"
+      },
+      "status": "preparation_defect",
+      "task_id": "P100-062.compact.v2",
+      "title": "Development split requires correction"
+    },
+    {
+      "consequence": "Historical scores and all outcomes are retained unchanged. A reviewed split contract and new frozen comparison are required. This is interpolation in two stored magnetic maps, not earthquake forecasting or temperature inference; upstream processing, SI units and specimen-transfer uncertainty remain unresolved.",
+      "contract_sha256": "e481e917f924c3bc2e316f74a0db6429e158694bd3ee308f638fa08da634b35d",
+      "detail": "Five of six CSH 200-row strips span train/dev despite the task describing whole-strip development separation. CSL remains entirely test. All 11,210 target pixels and their twelve-neighbor inputs reconstruct exactly without target-pixel overlap.",
+      "review_id": "magnetic-map-development-strip-mismatch-v1",
+      "scenario_id": "P100-070",
+      "source_input_hashes": {
+        "dev": "42925498abb7f2fd553861dde84b917f74e4616e5235864f106e7bdd30705b6a",
+        "test": "5d229507e41c59e25038c7a2761b15748b8025e71aa0e577a2a373c7b6584a5f",
+        "train": "aaa81734c1e1027dbe5e32e27f096fe361f2427484b8091175c8a1a5e1bc7da2"
+      },
+      "status": "preparation_defect",
+      "task_id": "P100-070.compact.v2",
+      "title": "Development strips cross train and dev"
+    },
+    {
+      "consequence": "This retrospective task predicts later assay-derived percentages, not viable cell counts, competitive fitness or a causal mechanism. Small strain counts, shared conditions, assay calibration and audit exposure limit interpretation. Full-pipeline simplicity and scientific novelty remain unassessed.",
+      "contract_sha256": "d242722484c04892938f49a3ed8e6c714067b8f99ad31837c1dbd0d90540f154",
+      "detail": "The 61 eligible forecasts use each replicate’s 22h and 72h author-derived qPCR percentages. Eight strains stay intact across splits, with two held out. Three incomplete prefixes and three conflicting 500h/504h sample labels are explicitly excluded.",
+      "review_id": "yeast-qpcr-calibration-and-strain-scope-v1",
+      "scenario_id": "P100-072",
+      "source_input_hashes": {
+        "dev": "a75282888ce4966a70763cc7b64567f2b906b07201fb20e3218a8a3c88f41223",
+        "test": "a8e7e2232fcc712de95bf2f96109f9aabd70ad733f8354a8378969213e15e28b",
+        "train": "c158bda096f3f372c0d86e33f22e8398d733cfea2423496b55efe8be4cc9e8b4"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-072.compact.v2",
+      "title": "qPCR forecasting requires early biological calibration"
+    },
+    {
+      "consequence": "Original exported force values and numerical results are retained. This supports calibrated within-specimen curve prediction, not independently verified force calibration, batch transfer, modulus identification or cell-response discovery.",
+      "contract_sha256": "fa8e444e0f6264bdd9f3cfb92b79636ba0058708b506039a4bafd7b8315ef737",
+      "detail": "Paired instrument headers report deflection sensitivity of 66.70613 or 68.49950 nm/V; the source README reports 86.5 nm/V. All three surface types occur in both train and test; held-out curves are locations within these specimens.",
+      "review_id": "afm-calibration-and-specimen-scope-v1",
+      "scenario_id": "P100-084",
+      "source_input_hashes": {
+        "dev": "859e2cb93ad37e5ac19e60ed77f2d68e922d4b1acf7649b84c18e0b68f0a2aba",
+        "test": "a93df4a74cbe34f44c64d13d015403a3f0a53ee13496540f01aefd634e545208",
+        "train": "24ff74265c623146123cefd7f1d59309e194ce8665d694428aebfe1ac1662d1a"
+      },
+      "status": "scope_limitation",
+      "task_id": "P100-084.compact.v2",
+      "title": "Calibration provenance and specimen transfer remain unresolved"
+    },
+    {
+      "consequence": "Historical rules, scores and all assigned attempts remain unchanged. A separately reviewed timestamp-based contract and cohort are required before strict six-hour or prospective forecasting claims.",
+      "contract_sha256": "30dea8bda407312a2e10668ccf93c040caf3eabc50346e905477d50ef339f4c4",
+      "detail": "113 of 44,284 nominal six-hour forecasts have actual timestamp horizons of 5.25–6.5 hours. Train/dev production batches are interleaved in calendar time, and acquisition windows cross the test-period boundary.",
+      "review_id": "fermentation-acquisition-clock-v1",
+      "review_receipt_sha256": "6633a7fd42e965919e34c462d925e5f03d9a7369a0c430fa0030e6cae90db0d4",
+      "scenario_id": "P100-086",
+      "source_input_hashes": {
+        "dev": "bcbce89cf97d43b168afb4b5ebbe96f9dc83be059da36c072ea1e57384c07bd6",
+        "test": "a1fa4f92e9e440b01c90bb3d49c56325c4470e6316022c366173613838016f93",
+        "train": "b3b05f5f959110b364f78614278668d3ef80ca048997e6c67745ee16555f3626"
+      },
+      "status": "preparation_defect",
+      "task_id": "P100-086.compact.v2",
+      "title": "Forecast timing and development split require review"
+    },
+    {
+      "consequence": "All historical rows, rules, metrics and denominators remain unchanged. Source clarification and a separately reviewed identity/order contract are required before chronological prediction or participant-independence claims.",
+      "contract_sha256": "241c2ebd37677312b7635322b51be81c77b057f625e69bc79dc231e87f4d8767",
+      "detail": "1,765 trial-order keys are repeated, including 833 with conflicting choices. Two subject IDs contain multiple ages and five contain multiple sex codes. Source row order does not establish chronological precedence.",
+      "review_id": "risk-choice-identity-order-v1",
+      "review_receipt_sha256": "192224e75503024a67bb8d7f439376e6fa402b980f9d64f3d4b07722cf164a6b",
+      "scenario_id": "P100-089",
+      "source_input_hashes": {
+        "dev": "5173ecaf31525488bfe9b61572138d6b88c09b1173967dfcb0f03688cabb9c2b",
+        "test": "304e22c113fe593dd0a8385b29309775e411c660b939dd305e2fbbbf859df4fd",
+        "train": "dadf5fb3178a2abebad26dc8333a324a5acb7829fff36e0cb63cef762bc8068d"
+      },
+      "status": "preparation_defect",
+      "task_id": "P100-089.compact.v2",
+      "title": "Participant identity and prior-choice ordering require review"
+    }
+  ],
+  "review_receipt_sha256": "190a157c1889d51f5a99f2fb27d03dd38b9250f8922009ac9efd073538b847dc",
+  "schema_version": "principia-asd.review-advisory/1.0",
+  "scope": "Display-only, contract-bound advisories; never change scoring, selection or execution"
+}

@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 20.994595890117004,
+    "primary": "mae",
+    "primary_error": 20.994595890117004,
+    "rmse": 27.821088514906062
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 62.72231225017243,
+  "by_group": [
+    {
+      "error": 38.87051632910428,
+      "group": "group-1000ba85327fac63d060ca46",
+      "rows": 119
+    },
+    {
+      "error": 3.118675451129733,
+      "group": "group-4d7b9fc94e5faa5af1241873",
+      "rows": 251
+    }
+  ],
+  "coverage": {
+    "eligible": 370,
+    "fraction": 1.0,
+    "predicted": 370
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_deepseek",
+  "rule_id": "full-comparison-v5--P100-062--direct_deepseek-rule-1",
+  "rule_sha256": "88a1f730a907f218142719b8aa265b40c2b5b0beb56037f351f1a9b2424b4400",
+  "run_id": "full-comparison-v5--P100-062--direct_deepseek",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + 196.45341723012484 * drive * (1 - exp(-t / 69018.24134831727)) + -0.13439038769077966 * high * drive * (1 - exp(-t / 0.06342378499922174))",
+    "expression_bytes": 81,
+    "free_parameters": 4,
+    "learned_state_bytes": 106,
+    "literal_state_bytes": 2,
+    "nodes": 55,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.026509313538832083,
+    "perturbation_labels_available": false,
+    "population_rows": 370,
+    "ranking": false,
+    "samples": 370,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

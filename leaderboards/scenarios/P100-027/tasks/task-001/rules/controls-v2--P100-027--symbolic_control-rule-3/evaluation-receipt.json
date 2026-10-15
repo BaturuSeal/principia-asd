@@ -1,0 +1,64 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.2081515256924555,
+    "primary": "mae",
+    "primary_error": 0.2081515256924555,
+    "rmse": 0.23225612288759595
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.3762859391534392,
+  "by_group": [
+    {
+      "error": 0.20137815181385443,
+      "group": "group-0522f825b2b8c4c1c09ebb9e",
+      "rows": 12
+    },
+    {
+      "error": 0.14896776595921063,
+      "group": "group-534596b69994f4b087b4a96f",
+      "rows": 12
+    },
+    {
+      "error": 0.27410865930430145,
+      "group": "group-af575c48ba5f2d19941cad9a",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 36,
+    "fraction": 1.0,
+    "predicted": 36
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-027--symbolic_control-rule-3",
+  "rule_sha256": "0eadfa320c4dfb7c1eec8bef8106e1a5ecba0a8ad4a704f6b4a55889dfd459db",
+  "run_id": "controls-v2--P100-027--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.3271246789200175 + 0.003862643675348309 * (quality * rho_liquid) + -3.2941218170552036 * quality ** 2",
+    "expression_bytes": 44,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "nodes": 26,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.12391714473818409,
+    "perturbation_labels_available": false,
+    "population_rows": 36,
+    "ranking": false,
+    "samples": 36,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

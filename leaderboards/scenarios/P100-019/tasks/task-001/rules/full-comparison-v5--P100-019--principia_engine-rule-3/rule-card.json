@@ -1,0 +1,68 @@
+{
+  "dev_error": 4.0853214975653795,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lag6)+p2*(lag1)",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6638295042567018,
+    "p1": 0.30513118276463647,
+    "p2": 0.6511117209962537
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.012439400638813517,
+      "lag3": -0.06765159058123715,
+      "lag6": -0.11915458933888999,
+      "month": 0.14507383347830777
+    },
+    "mean": -0.4084493064191114,
+    "p90_abs": 9.126018576000478,
+    "std": 8.143649742852528
+  },
+  "rule_id": "full-comparison-v5--P100-019--principia_engine-rule-3",
+  "rule_sha256": "dde3a46651317c07f243d4318a692a1d8a7973371a19d09ddda15e9b1b819f08",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6638295042567018 + 0.30513118276463647 * lag6 + 0.6511117209962537 * lag1",
+    "expression_bytes": 22,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "literal_state_bytes": 0,
+    "nodes": 19,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.1479668251141195,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "dev_error": 6.557825838236904e-06,
+  "execution_status": "complete",
+  "expression": "hx * gx + hy * gy + ox + oy + dg + p0 * (hi - lo) + p1 * (hx + hy) + p2 * (ox + oy) + p3 * dg",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.018673686862829678,
+    "p1": -0.7373280960197285,
+    "p2": -0.9453856247825916,
+    "p3": 0.03656247642168564
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.1650206532144551,
+      "gx": 0.06901363351634457,
+      "gy": 0.06913516250072077,
+      "hi": 0.10045607493587909,
+      "hx": -0.11531419077871452,
+      "hy": -0.15454135587267837,
+      "lo": -0.15862985723841483,
+      "ox": -0.14648391003742428,
+      "oy": -0.07709034392655814
+    },
+    "mean": 9.590755914283079e-07,
+    "p90_abs": 1.7587812629661177e-05,
+    "std": 1.6850470741283603e-05
+  },
+  "rule_id": "full-comparison-v5--P100-070--direct_kimi-rule-1",
+  "rule_sha256": "f29d075dbc65987041965ca2c89d366d70c3e03d008f08ea9a6ab62b9a47f38d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "hx * gx + hy * gy + ox + oy + dg + 0.018673686862829678 * (hi - lo) + -0.7373280960197285 * (hx + hy) + -0.9453856247825916 * (ox + oy) + 0.03656247642168564 * dg",
+    "expression_bytes": 93,
+    "free_parameters": 4,
+    "learned_state_bytes": 109,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 8.118155693894706e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.008308723334843667,
+  "execution_status": "complete",
+  "expression": "boundary_cof * (p0 + p1 * exp(-p2 * speed_mm_s)) + p3 * speed_mm_s + p4",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.132289401650231,
+    "p1": 0.9957853373016509,
+    "p2": 0.36705429233744824,
+    "p3": 0.0018590238004610063,
+    "p4": 0.013014472706541073
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.5503784198669682,
+      "highspeed_cof": 0.5503784198669681,
+      "speed_mm_s": 0.226981578947783
+    },
+    "mean": -0.0073669754089206166,
+    "p90_abs": 0.019437576763382005,
+    "std": 0.008047146547137568
+  },
+  "rule_id": "full-comparison-v5--P100-030--tool_agent-rule-1",
+  "rule_sha256": "f7398052eabf46693f35c3ae31ac4c6b76e203f8f919b1fb4e7508016a9eb001",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "boundary_cof * (-0.132289401650231 + 0.9957853373016509 * exp(-0.36705429233744824 * speed_mm_s)) + 0.0018590238004610063 * speed_mm_s + 0.013014472706541073",
+    "expression_bytes": 71,
+    "free_parameters": 5,
+    "learned_state_bytes": 136,
+    "literal_state_bytes": 0,
+    "nodes": 36,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.0032470236244824926,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

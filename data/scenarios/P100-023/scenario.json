@@ -1,0 +1,151 @@
+{
+  "description": "Author-derived median coefficient of friction",
+  "domain": "tribology and biomechanics",
+  "independent_unit": "whole participant",
+  "input_units": {
+    "H": "dimensionless; author Hersey calibration",
+    "area": "cm^2",
+    "hydration": "corneometer instrument units",
+    "load": "N",
+    "speed": "m/s",
+    "viscosity": "Pa s at 500 s^-1; author rheology fit"
+  },
+  "limitations": [
+    "Conditional prediction at supplied trial-average speed/load. These trial summaries are not prospective controller inputs; no temporal forecasting claim.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "1",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 30,
+    "test": 30,
+    "train": 105
+  },
+  "scenario_id": "P100-023",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 42826,
+    "limit_bytes": 10000000,
+    "public_bytes": 21331
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/23_tribology_inm_finger_liquid/context/zenodo_record.json",
+        "source_sha256": "4092644f40e0177d0f205db51f317c264ef32e3dee4945d0c8a8a05ca488c5b3"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID04sample01.dat",
+        "source_sha256": "7c2cdb60402f05653ca9d7c4b0d059761ebcd516cea6986dac298a1e7fac1bcb"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID04sample12.dat",
+        "source_sha256": "35a2be20b59d092a74f024300d3360837cc31867a74e714218c70a0be8f412bd"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID08sample02.dat",
+        "source_sha256": "6faa69c437c70bcda0045de93f879656659d59fe3edad45be693b024da430893"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/HeightHerseyID10sample11.dat",
+        "source_sha256": "4609ab679f09245bdfcebf58f9d65ea7849db4a4a4d9829c0c85ddc43f0e882d"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/friction data.dat",
+        "source_sha256": "2ef9eee3e0f3c3ac04dcd7c550ded2e12f3584288e6a31f9bd6388932b173b06"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/participant_hydration_size.dat",
+        "source_sha256": "993754af15b720cb991ece2dc499fdc00c688034bf0cb59be655c0520c8a7eb6"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/power law fit parameter.dat",
+        "source_sha256": "f8299edd76a5f2c0ff95959cdbf4629971e759108943117f92ab4c173dc29aaf"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/raw_data_position_force.dat",
+        "source_sha256": "a8bc041b1d684652f08ce65f2c7213b000fa98970ff2eebcdb1b3236c0547d28"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/readme.txt",
+        "source_sha256": "9c2186fb1902962ea7342943e7a5992c72d6f25b705b8314723689e404b5ec85"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15365365",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15365365",
+        "source": "scenarios/23_tribology_inm_finger_liquid/raw/viscosity vs shear rate.dat",
+        "source_sha256": "ed3f2e9c6800b7c620b1cd707f04ae46f6ef27ff4a42086a32ec0dab833b9abb"
+      }
+    ],
+    "historical_case": "P100-023",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/15365365",
+    "version": "15365365"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "8f35b9a116531e39a87f90a9ea0b785cc2a3c5c438d52c4da00bf5c3e032947e",
+        "groups": 2,
+        "rows": 30,
+        "sample_ids_sha256": "cb5738feff06c8e3678b33b7171c1676cfc49c77eb34479ba86fa0a6fd80c31f"
+      },
+      "test": {
+        "group_ids_sha256": "1e4a1aff3945c707933fd64ccbbcbeeac3bc7bf09e18596dde37f8d4cbe5dab1",
+        "groups": 2,
+        "rows": 30,
+        "sample_ids_sha256": "2a56d1bdd85f6d6045133a8f187b8502f6e624a6e8b0ab8e2df1f18c9a6fdef4"
+      },
+      "train": {
+        "group_ids_sha256": "4a7589dda6999805579e9f82201201a33443b41789bff0eb2f0b798b71f27a06",
+        "groups": 7,
+        "rows": 105,
+        "sample_ids_sha256": "8db20abf7cb0589f1ac93fe3ba630d7f12d416fb6369c6963af04e0117afaf3e"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Finger-pad friction during viscous liquid spreading",
+  "version": "1.0.0rc2"
+}

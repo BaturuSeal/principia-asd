@@ -1,0 +1,76 @@
+{
+  "dev_error": 1.8620025779872867e-05,
+  "execution_status": "complete",
+  "expression": "sqrt((lo*hi) + (noise*noise)) * (1 + p0*(r-1) + p1*(g-glo) + p2*(sep-1))",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.014305114479724679,
+    "p1": -1.883262796279796,
+    "p2": 0.007832607603829688
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": 0.027350559672345974,
+      "glo": -3.640597236825647e-17,
+      "hi": -0.056563135741173505,
+      "lo": -0.045377021744526555,
+      "noise": 0.004764522825257917,
+      "r": 0.027350559672345988,
+      "sep": -0.0984888613195775
+    },
+    "mean": 2.407750438314494e-06,
+    "p90_abs": 4.50353354133059e-05,
+    "std": 2.4817406365785717e-05
+  },
+  "rule_id": "full-comparison-v5--P100-028--direct_deepseek-rule-1",
+  "rule_sha256": "e32f4b5e80e1710ba8eea0abbf324d47472113c7608960309c59792d8e774bd1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "sqrt(lo * hi + noise * noise) * (1 + -0.014305114479724679 * (r - 1) + -1.883262796279796 * (g - glo) + 0.007832607603829688 * (sep - 1))",
+    "expression_bytes": 72,
+    "free_parameters": 3,
+    "learned_state_bytes": 83,
+    "literal_state_bytes": 3,
+    "nodes": 55,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 1.6630645969515507e-05,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

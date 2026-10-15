@@ -1,0 +1,146 @@
+{
+  "description": "Next-round individual contribution",
+  "domain": "Experimental economics",
+  "independent_unit": "Complete first-session interacting pair;20% hash heldout in each treatment; remaining groups in5 deterministic whole-pair folds. Both players remain together.",
+  "input_units": {
+    "endowment": "experimental tokens",
+    "own_history_mean": "experimental tokens",
+    "own_lag2": "experimental tokens",
+    "own_previous": "experimental tokens",
+    "peer_endowment": "experimental tokens",
+    "peer_history_mean": "experimental tokens",
+    "peer_lag2": "experimental tokens",
+    "peer_previous": "experimental tokens",
+    "peer_productivity": "dimensionless",
+    "previous_success": "indicator",
+    "productivity": "dimensionless",
+    "required_contribution": "experimental tokens",
+    "round": "round",
+    "threshold": "productivity-weighted tokens"
+  },
+  "limitations": [
+    "One-step prediction before round3..20 using strictly prior own/peer contributions and publicly announced rules. Earlier confirmation responses are permitted causal online history, never fitted parameters. Surveys and session2 excluded.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "scientific_arrays_or_events",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "experimental tokens",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1584,
+    "test": 1980,
+    "train": 6408
+  },
+  "scenario_id": "P100-087",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1311381,
+    "limit_bytes": 10000000,
+    "public_bytes": 267487
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/LinearPGG_4P_ExperimentalData.mat",
+        "source_sha256": "dcdd23e709ce1c17fadddffb84d07b9cf2f37a0a206e4665317aed31fd4e790b"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/ThresholdPGG_4P_SurveyData.mat",
+        "source_sha256": "5a406f2b5e0978afd38f0e77c4ab64d81bffb129c30378eec3df93b4abc5ced0"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/LinearPGG_ExperimentalData.xlsx",
+        "source_sha256": "b423cda39bfd7d84f2edb7f56b4bccc0d03164743bb4df851d20f049725fb507"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/ThresholdPGG_ExperimentalData.xlsx",
+        "source_sha256": "825b1cd3226aeca7a19d76d9594f655114b12059648f9ca03b3291c3cf9ab200"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/code_thresholdPGG.zip",
+        "source_sha256": "fb0a6120dc3c3e2d1fe2698e1355cc8ce519d985ddfc7a2d5e38b3e9f3da576d"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/code_linearPGG.zip",
+        "source_sha256": "841d4f0eb56bdc92a798e7c5fd8428b7a6894c767943efe24dba5ac33ba874e3"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/LinearPGG_4P_SurveyData.mat",
+        "source_sha256": "e08b05c9276073671d07f74b8d240d63de5e47621c04ca24aa4655c179db6666"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16918146",
+        "source": "scenarios/87_economics_public_goods/raw/ThresholdPGG_4P_ExperimentalData.mat",
+        "source_sha256": "76b02d921d02ad652cb952a71173e84b206135e4deb7bfc6235b9387738a6b05"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16918146",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/87_economics_public_goods/context/source_record.json",
+        "source_sha256": "283f0dca9dd760c1ea8e6cedfd2310f1b8e68652ca4541db2b6344e86113cd73"
+      }
+    ],
+    "historical_case": "P100-087",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/16918146",
+    "version": "16918146"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "06e54502d1c80f8175db4df845f0d63774301878caf3fc5bf176d3e03f97b387",
+        "groups": 44,
+        "rows": 1584,
+        "sample_ids_sha256": "9b5ca2afc43ff6db2907d6b94e28bede9934b4e5991d407c97118038edcafbef"
+      },
+      "test": {
+        "group_ids_sha256": "8af46da2f99f2f2e00f55ccc12f49f5d29c9c8c4204b82187f3536d0a4b4e169",
+        "groups": 55,
+        "rows": 1980,
+        "sample_ids_sha256": "81eb403161650132abd59d77c00c82a58752cd9680415ca78369887c1e723501"
+      },
+      "train": {
+        "group_ids_sha256": "b7cea39ef604cb85228e2b6ee0737b21c3fcfe067d7ab104b18f6bc55f249153",
+        "groups": 178,
+        "rows": 6408,
+        "sample_ids_sha256": "3d6c9f7e351a3b77b6fbbdfad807f98803238317057f9ae7cab578126dfcef74"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Dataset and computer code for \"The dynamics of cooperation in asymmetric public goods games\"",
+  "version": "1.0.0rc2"
+}

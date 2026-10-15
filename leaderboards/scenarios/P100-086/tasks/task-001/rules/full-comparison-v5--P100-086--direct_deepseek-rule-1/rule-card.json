@@ -1,0 +1,58 @@
+{
+  "dev_error": 38.71611467047478,
+  "execution_status": "complete",
+  "expression": "current + slope6 * 6",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.1250565977903718,
+      "slope6": 0.3299177383048324,
+      "time_h": 0.0996685819195587
+    },
+    "mean": 4.7149394744611755,
+    "p90_abs": 91.0,
+    "std": 71.24000460620752
+  },
+  "rule_id": "full-comparison-v5--P100-086--direct_deepseek-rule-1",
+  "rule_sha256": "d3e18fa5253bfcca6c44c385df8885753faec391355b15fdf96b4ac2afe59466",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "current + slope6 * 6",
+    "expression_bytes": 20,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 1,
+    "nodes": 10,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 38.167912274219745,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

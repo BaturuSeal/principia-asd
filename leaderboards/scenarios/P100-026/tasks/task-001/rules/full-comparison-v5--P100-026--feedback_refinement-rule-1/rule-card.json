@@ -1,0 +1,69 @@
+{
+  "dev_error": 282.4955502756433,
+  "execution_status": "complete",
+  "expression": "anchor_selectivity_pct + prefix_slope_pct_min * elapsed_min + p0 * (ag_wt_pct - 10.0) + p1 * (elapsed_min / 600.0) * (ag_wt_pct - 10.0) + p2 * (anchor_selectivity_pct - 50.0) * (elapsed_min / 600.0) + p3 * (anchor_selectivity_pct - 50.0) * (ag_wt_pct - 10.0) + p4 * (elapsed_min / 600.0) ** 2 + p5 * (ag_wt_pct - 10.0) ** 2 + p6 * (anchor_selectivity_pct - 50.0) ** 2 + p7",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -1.169431130170622,
+    "p1": -0.24650016369347197,
+    "p2": 0.01769717141720089,
+    "p3": 1.345880759880656,
+    "p4": -3.0174985673971135,
+    "p5": -0.9092971277976691,
+    "p6": -0.31575836813655805,
+    "p7": 14.747801367175475
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": 0.9989135143154909,
+      "elapsed_min": 0.044056713241585506,
+      "prefix_slope_pct_min": -0.9989135143154909
+    },
+    "mean": -274.6339585053695,
+    "p90_abs": 573.8919656478722,
+    "std": 281.93236214893767
+  },
+  "rule_id": "full-comparison-v5--P100-026--feedback_refinement-rule-1",
+  "rule_sha256": "b8e153a3350652224b72ef3459ef5cb1895951a6b83911ff920173b95b77634c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "anchor_selectivity_pct + prefix_slope_pct_min * elapsed_min + -1.169431130170622 * (ag_wt_pct - 10.0) + -0.24650016369347197 * (elapsed_min / 600.0) * (ag_wt_pct - 10.0) + 0.01769717141720089 * (anchor_selectivity_pct - 50.0) * (elapsed_min / 600.0) + 1.345880759880656 * (anchor_selectivity_pct - 50.0) * (ag_wt_pct - 10.0) + -3.0174985673971135 * (elapsed_min / 600.0) ** 2 + -0.9092971277976691 * (ag_wt_pct - 10.0) ** 2 + -0.31575836813655805 * (anchor_selectivity_pct - 50.0) ** 2 + 14.747801367175475",
+    "expression_bytes": 372,
+    "free_parameters": 8,
+    "learned_state_bytes": 214,
+    "literal_state_bytes": 46,
+    "nodes": 122,
+    "numeric_literal_count": 13,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 33
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 3.2074117511659606,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

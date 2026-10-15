@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1*early + p2*finding + p3*(prev_y * has_history) + p4*((prev_y - prev_early) * has_history) + p5*(gradient_proxy + prev_gradient * has_history) + p6*(roughness * (usage + 1) / (history_gap + 1)) + p7*(mean_past_y * has_history)",
+  "parameters": {
+    "p0": 0.06239183303531541,
+    "p1": 1.5499136435786047,
+    "p2": 0.2257738045976443,
+    "p3": -0.09882296292967073,
+    "p4": 0.626753311091815,
+    "p5": 0.21451501305644377,
+    "p6": -0.23422469279093916,
+    "p7": -0.28737731047275666
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

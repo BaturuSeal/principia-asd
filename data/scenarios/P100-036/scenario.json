@@ -1,0 +1,105 @@
+{
+  "description": "Author QY_max",
+  "domain": "plant physiology and agriculture",
+  "independent_unit": "Plant; repeated sampling remains linked",
+  "input_units": {
+    "area": "source AREA_MM scale; only relative/log descriptor used",
+    "drought": "drought-treatment indicator",
+    "high_stress": "source second stress-level indicator; no invented dose units",
+    "ngrdi": "dimensionless RGB index",
+    "npq": "dimensionless author NPQ_Lss",
+    "rfd": "dimensionless author Rfd_Lss",
+    "salt": "salt-treatment indicator",
+    "tiny": "cultivar indicator"
+  },
+  "limitations": [
+    "Contemporaneous imaging diagnostic: source NPQ_Lss, Rfd_Lss, NGRDI, morphology and known cultivar/treatment predict separately reported maximum quantum yield. No QY_max-derived feature or future plant measurement is supplied.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "images",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "dimensionless quantum yield",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 61,
+    "test": 66,
+    "train": 220
+  },
+  "scenario_id": "P100-036",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 70071,
+    "limit_bytes": 10000000,
+    "public_bytes": 32957
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/20638584",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/36_plant_biology_tomato_stress/context/zenodo_record.json",
+        "source_sha256": "ab65ae7a72dc16e7dfbcb1b528ff89c7a84a626005012da4b4a44b72b438ffd2"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/20638584",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/20638584",
+        "source": "scenarios/36_plant_biology_tomato_stress/raw/Full_Dataset.xlsx",
+        "source_sha256": "77bcb77f1b003dba22b30ee562a145c9559fcc56c806290151623821d49c2001"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/20638584",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/20638584",
+        "source": "scenarios/36_plant_biology_tomato_stress/raw/Metadata.xlsx",
+        "source_sha256": "446f83d4be672267efdd0128b4657a13f5d0599fcaf2e8ccb51a885b6c9d2f41"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/20638584",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/20638584",
+        "source": "scenarios/36_plant_biology_tomato_stress/raw/Tiny Tim_NPQ.zip",
+        "source_sha256": "c799f563af849fd595ba54d46f601024303aa203a7feb68bb7cf6e059f58dd61"
+      }
+    ],
+    "historical_case": "P100-036",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/20638584",
+    "version": "20638584"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "797afd5d73c34c8ec4db6a788fd53bdfc0f1e1b9d669b471635ee63ac263aa5d",
+        "groups": 13,
+        "rows": 61,
+        "sample_ids_sha256": "0325b5c06d5b6c0709e24466ef02961edf3d76f1044cb63956de08a1684a7f68"
+      },
+      "test": {
+        "group_ids_sha256": "1dc98bfa4fd5b5f46623d249b4c0fdf2cc41f0016fe9e962da920c5949132e06",
+        "groups": 16,
+        "rows": 66,
+        "sample_ids_sha256": "664f71977e352128cb748f041380cde1d84dc7dfa84b482b51670e105429e835"
+      },
+      "train": {
+        "group_ids_sha256": "ccd62858f9bda53d403e57efeb769b2b70bd41bb9a483499995c55aea57f0788",
+        "groups": 52,
+        "rows": 220,
+        "sample_ids_sha256": "e7b6156027264d69a2e1db2ce936acb10fd9f263af2b2118d38717c3bb3bd5c7"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Dwarf tomato stress imaging and phenotypic measurements",
+  "version": "1.0.0rc2"
+}

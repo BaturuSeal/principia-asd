@@ -1,0 +1,75 @@
+{
+  "dev_error": 0.10377039672617491,
+  "execution_status": "complete",
+  "expression": "p0+p1*(gate_V)+p2*(cal_minus20_uA)+p3*(cal_zero_uA)+p4*(cal_plus20_uA)+p5*(gate_V*gate_V)+p6*(gate_V*cal_minus20_uA)+p7*(gate_V*cal_zero_uA)+p8*(gate_V*cal_plus20_uA)+p9*(cal_minus20_uA*cal_minus20_uA)+p10*(cal_minus20_uA*cal_zero_uA)+p11*(cal_minus20_uA*cal_plus20_uA)+p12*(cal_zero_uA*cal_zero_uA)+p13*(cal_zero_uA*cal_plus20_uA)+p14*(cal_plus20_uA*cal_plus20_uA)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.6195527372807553,
+    "p1": 0.007295918277663353,
+    "p10": 794706.0746612035,
+    "p11": -59.755019284354375,
+    "p12": -1235.92161087989,
+    "p13": -4.09246573352547,
+    "p14": -0.12037228773616226,
+    "p2": 7049.011122293935,
+    "p3": 18.414693939114343,
+    "p4": 0.5467690045058922,
+    "p5": 0.002325583615443797,
+    "p6": -316.005844969955,
+    "p7": 0.42570723786468134,
+    "p8": 0.014316771901319443,
+    "p9": -2564242717.1662555
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.08330006997877835,
+      "cal_plus20_uA": 0.02095592665422001,
+      "cal_zero_uA": -0.0476458410762401,
+      "gate_V": 0.021397479955176442
+    },
+    "mean": 0.00410740746646195,
+    "p90_abs": 0.18681662261548834,
+    "std": 0.12043160285979145
+  },
+  "rule_id": "controls-v3--P100-051--polynomial_control-rule-1",
+  "rule_sha256": "dc97db494d603057e1ba5f83874ab13352ec9c10695dc0cffe6a2e62e321ba6c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.6195527372807553 + 0.007295918277663353 * gate_V + 7049.011122293935 * cal_minus20_uA + 18.414693939114343 * cal_zero_uA + 0.5467690045058922 * cal_plus20_uA + 0.002325583615443797 * (gate_V * gate_V) + -316.005844969955 * (gate_V * cal_minus20_uA) + 0.42570723786468134 * (gate_V * cal_zero_uA) + 0.014316771901319443 * (gate_V * cal_plus20_uA) + -2564242717.1662555 * (cal_minus20_uA * cal_minus20_uA) + 794706.0746612035 * (cal_minus20_uA * cal_zero_uA) + -59.755019284354375 * (cal_minus20_uA * cal_plus20_uA) + -1235.92161087989 * (cal_zero_uA * cal_zero_uA) + -4.09246573352547 * (cal_zero_uA * cal_plus20_uA) + -0.12037228773616226 * (cal_plus20_uA * cal_plus20_uA)",
+    "expression_bytes": 365,
+    "free_parameters": 15,
+    "learned_state_bytes": 402,
+    "literal_state_bytes": 0,
+    "nodes": 155,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 38
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.09748276583261055,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

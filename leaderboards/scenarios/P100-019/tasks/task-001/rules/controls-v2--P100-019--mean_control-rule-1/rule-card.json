@@ -1,0 +1,57 @@
+{
+  "dev_error": 16.445358125039817,
+  "execution_status": "complete",
+  "expression": "13.950172811059907",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.9495232423849825,
+      "lag3": -0.9555574471542297,
+      "lag6": -0.9586041201842337,
+      "month": 0.022935757721061385
+    },
+    "mean": -1.0486751152073754,
+    "p90_abs": 26.949827188940297,
+    "std": 29.786664640033052
+  },
+  "rule_id": "controls-v2--P100-019--mean_control-rule-1",
+  "rule_sha256": "fc91897077bac114f41e71c34ecdcadb4fd56b3bc2af11837972879caba1d53c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "13.950172811059907",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 15.760975891397141,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "cap_cny": 3000,
+  "controls": "controls-v3",
+  "data_edition": "compact-v2",
+  "frozen_private_manifests": "workspace/campaigns/<campaign>/manifest.json",
+  "full_live_campaign": "full-comparison-v5",
+  "limits": {
+    "local_fits": 1000,
+    "memory_bytes": 4294967296,
+    "model_calls": 32,
+    "wall_seconds": 2400,
+    "workers": 4
+  },
+  "live_pilot": "live-pilot-v3",
+  "roles": {
+    "coder": "deepseek-ai/DeepSeek-V4-Flash",
+    "critic": "Qwen/Qwen3.8-27B",
+    "planner": "zai-org/GLM-5.3",
+    "reporter": "Pro/moonshotai/Kimi-K2.6"
+  },
+  "scientific_review": "not_assessed",
+  "version": "1.0.0rc2",
+  "primary_assigned_attempts": 520,
+  "repair_pilot": "interface-repair-pilot-v4",
+  "adapter_engineering_pilots": [
+    "agent-laboratory-pilot-v1",
+    "guarded-adapters-pilot-v2",
+    "data-to-paper-domain-pilot-v3"
+  ]
+}

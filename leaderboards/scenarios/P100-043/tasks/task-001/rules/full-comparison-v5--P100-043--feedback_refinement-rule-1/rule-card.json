@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.014345888422138527,
+  "execution_status": "complete",
+  "expression": "anchor_loss - p0 * (log1p(tokens_B - anchor_tokens_B) - log1p(anchor_tokens_B - early_tokens_B)) - p1 * log1p(params_B) - p2 * log1p(width) - p3 * log1p(depth)",
+  "inputs": [
+    "tokens_B",
+    "anchor_tokens_B",
+    "early_tokens_B",
+    "anchor_loss",
+    "early_loss",
+    "params_B",
+    "width",
+    "depth"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.05368717472383738,
+    "p1": 0.08543303506532979,
+    "p2": 0.002766335099519149,
+    "p3": 0.005797483059641172
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": -0.5251634204900311,
+      "anchor_tokens_B": 2.0063872727042222e-17,
+      "depth": 0.6301044069799541,
+      "early_loss": -0.5360266972756095,
+      "early_tokens_B": 1.8057485454338002e-17,
+      "params_B": 0.42316705539104915,
+      "tokens_B": -0.46199976746761906,
+      "width": 0.26042822016669587
+    },
+    "mean": -0.007326142986945776,
+    "p90_abs": 0.04024621801934779,
+    "std": 0.018444811057983346
+  },
+  "rule_id": "full-comparison-v5--P100-043--feedback_refinement-rule-1",
+  "rule_sha256": "483a068dab0c04af838e2e8c021ea8b1cd59a9873433c53d25f71edaa9727c91",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "anchor_loss - 0.05368717472383738 * (log1p(tokens_B - anchor_tokens_B) - log1p(anchor_tokens_B - early_tokens_B)) - 0.08543303506532979 * log1p(params_B) - 0.002766335099519149 * log1p(width) - 0.005797483059641172 * log1p(depth)",
+    "expression_bytes": 159,
+    "free_parameters": 4,
+    "learned_state_bytes": 110,
+    "literal_state_bytes": 0,
+    "nodes": 62,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 26
+  },
+  "task_id": "P100-043.compact.v2",
+  "train_error": 0.012777843801265598,
+  "units": {
+    "inputs": {
+      "anchor_loss": "nats per token",
+      "anchor_tokens_B": "billions of training tokens",
+      "depth": "layers",
+      "early_loss": "nats per token",
+      "early_tokens_B": "billions of training tokens",
+      "params_B": "billions of parameters",
+      "tokens_B": "billions of training tokens",
+      "width": "embedding dimensions"
+    },
+    "output": "nats per token",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

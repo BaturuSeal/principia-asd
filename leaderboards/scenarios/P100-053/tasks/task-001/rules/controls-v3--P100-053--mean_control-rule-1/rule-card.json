@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.0694516514838374,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "early",
+    "finding",
+    "gradient_proxy",
+    "roughness",
+    "usage",
+    "left",
+    "has_history",
+    "prev_y",
+    "prev_early",
+    "prev_gradient",
+    "first_y",
+    "mean_past_y",
+    "history_gap"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.17811843323810692
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "early": -0.8179514106720432,
+      "finding": -0.6071152856682974,
+      "first_y": 0.3555854649714462,
+      "gradient_proxy": -0.35174798354658215,
+      "has_history": 0.6931240404792173,
+      "history_gap": 0.5875052289081748,
+      "left": 0.2594517517939682,
+      "mean_past_y": -0.4999347720241248,
+      "prev_early": -0.7239832593730381,
+      "prev_gradient": -0.3610497026980217,
+      "prev_y": -0.6099935433732844,
+      "roughness": -0.4021152230046054,
+      "usage": 0.5449174799362538
+    },
+    "mean": -0.0008645839144987717,
+    "p90_abs": 0.12065257676334414,
+    "std": 0.09983272107835828
+  },
+  "rule_id": "controls-v3--P100-053--mean_control-rule-1",
+  "rule_sha256": "15d1bf7d1d056ba903d5acc3eeb9417684f541674678d9a296e78cb44489a974",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.17811843323810692",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-053.compact.v2",
+  "train_error": 0.06816763205007283,
+  "units": {
+    "inputs": {
+      "early": "Nm",
+      "finding": "Nm",
+      "first_y": "Nm",
+      "gradient_proxy": "Nm",
+      "has_history": "binary indicator",
+      "history_gap": "cycle count",
+      "left": "binary indicator",
+      "mean_past_y": "Nm",
+      "prev_early": "Nm",
+      "prev_gradient": "Nm",
+      "prev_y": "Nm",
+      "roughness": "Nm",
+      "usage": "cycle count"
+    },
+    "output": "Nm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

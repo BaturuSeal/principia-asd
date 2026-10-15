@@ -1,0 +1,57 @@
+{
+  "dev_error": 194.66013728595857,
+  "execution_status": "complete",
+  "expression": "p0+p1*(voltage_V)+p2*(bromine_rich)",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -440.77013404629156,
+    "p1": 1510.2605719609166,
+    "p2": 322.2286164529346
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": 0.015303223001185534,
+      "voltage_V": -0.08022385065908019
+    },
+    "mean": -23.04425277430693,
+    "p90_abs": 389.8169682652586,
+    "std": 235.89047045408765
+  },
+  "rule_id": "full-comparison-v5--P100-022--linear_control-rule-1",
+  "rule_sha256": "0859dcb4e7ba10bc661be6a47627b5b58726376c4621045db707aae4563891e5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-440.77013404629156 + 1510.2605719609166 * voltage_V + 322.2286164529346 * bromine_rich",
+    "expression_bytes": 35,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "literal_state_bytes": 0,
+    "nodes": 19,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 203.59498977370592,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

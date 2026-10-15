@@ -1,0 +1,101 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.15180214973137893,
+    "primary": "brier",
+    "primary_error": 0.07172348915530097,
+    "rmse": 0.2678124141172342
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.08981712628774777,
+  "by_group": [
+    {
+      "error": 0.05930108959529706,
+      "group": "group-1e6a6845ec383f15e78fb713",
+      "rows": 248
+    },
+    {
+      "error": 0.029594152844193828,
+      "group": "group-3a33d785605755f54649f40e",
+      "rows": 35
+    },
+    {
+      "error": 0.06844391113921147,
+      "group": "group-4cf91036817a436bf24331aa",
+      "rows": 404
+    },
+    {
+      "error": 0.040961679839776076,
+      "group": "group-5ca18f9ba583179700c726cc",
+      "rows": 24
+    },
+    {
+      "error": 0.11445171075589064,
+      "group": "group-83006a6a541dd2e2cd1b0940",
+      "rows": 1049
+    },
+    {
+      "error": 0.0034059945784999774,
+      "group": "group-86b2be79091861947f275023",
+      "rows": 16
+    },
+    {
+      "error": 0.07373009567248155,
+      "group": "group-a7ea1724c0a57512fdda6536",
+      "rows": 149
+    },
+    {
+      "error": 0.1169761147346626,
+      "group": "group-df77a96b90b8780d3474c8a7",
+      "rows": 68
+    },
+    {
+      "error": 0.08504567736043092,
+      "group": "group-e6e94c254bb4507cec340dd6",
+      "rows": 36
+    },
+    {
+      "error": 0.12532446503256559,
+      "group": "group-f3f4f42a17e832f861e49d7c",
+      "rows": 186
+    }
+  ],
+  "coverage": {
+    "eligible": 2215,
+    "fraction": 1.0,
+    "predicted": 2215
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "full-comparison-v5--P100-015--symbolic_control-rule-1",
+  "rule_sha256": "9ae978dbfb17330243997777cbed35891227c07e9fd69d555e2057d0e43f1baa",
+  "run_id": "full-comparison-v5--P100-015--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.872107106155222 + 1.9664782062621582e-05 * (income_proxy * age) + -0.00939287178444923 * income_proxy + 0.23328948457892731 * tanh((income_proxy - 99.73261606953572) / 57.75517552918137) + 1.8925517521009255e-05 * income_proxy ** 2 + 4.341860715685543e-05 * (income_proxy * household_size) + 0.017279687947732627 * (household_size * shock) + -0.00397865672963536 * age))",
+    "expression_bytes": 217,
+    "free_parameters": 8,
+    "learned_state_bytes": 225,
+    "literal_state_bytes": 37,
+    "nodes": 91,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.012068451017342679,
+    "perturbation_labels_available": false,
+    "population_rows": 2215,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

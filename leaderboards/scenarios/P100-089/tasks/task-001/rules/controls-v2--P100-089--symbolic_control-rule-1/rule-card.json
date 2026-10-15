@@ -1,0 +1,82 @@
+{
+  "dev_error": 0.13860978098003746,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)+p4*(probability*history_mean)+p5*(tanh((probability-0.5246893626776707)/0.26494115732924056))))",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.05445075169687456,
+    "p1": 0.15683580655996976,
+    "p2": -0.13587346387546528,
+    "p3": 0.6369793620842605,
+    "p4": -0.08036410611816851,
+    "p5": 0.04853080240413695
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": -0.06434967792784424,
+      "child": -0.06330200530300693,
+      "description": 0.05740275118409722,
+      "has_history": 0.04942940181298623,
+      "history_mean": -0.07192569695412412,
+      "lag_choice": -0.0648667591327683,
+      "multi": -0.018587237256256772,
+      "probability": -0.11256466759171574,
+      "reward": -0.10426840752387172,
+      "trial_progress": 0.034442828476024104
+    },
+    "mean": 0.024625346669983058,
+    "p90_abs": 0.586199149044321,
+    "std": 0.3692560894937847
+  },
+  "rule_id": "controls-v2--P100-089--symbolic_control-rule-1",
+  "rule_sha256": "7c2ac4c66898bb70a2846c01cd6ea009fa137d74fe37c43f30e14afbf559a3e7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.05445075169687456 + 0.15683580655996976 * (reward * probability) + -0.13587346387546528 * (probability * lag_choice) + 0.6369793620842605 * (lag_choice * history_mean) + -0.08036410611816851 * (probability * history_mean) + 0.04853080240413695 * tanh((probability - 0.5246893626776707) / 0.26494115732924056)))",
+    "expression_bytes": 199,
+    "free_parameters": 6,
+    "learned_state_bytes": 163,
+    "nodes": 76,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.14897471249151328,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

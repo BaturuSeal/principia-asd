@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.015269771556389875,
+  "execution_status": "complete",
+  "expression": "p0 * thickness_um * width_um * (1 - notch_depth_um / width_um) ** p1 * (1 - notch_width_um / length_um) ** p2 * (length_um / p3) ** p4",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.10094004783319888,
+    "p1": 1.5862068930120898,
+    "p2": 3.861343468412782,
+    "p3": 10.375946618605582,
+    "p4": -1.1457271490712857
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": 0.4057204368380826,
+      "notch_depth_um": -0.02927418112567869,
+      "notch_width_um": 0.3579398646915355,
+      "thickness_um": 0.17036923933516196,
+      "width_um": 0.03069650790548561
+    },
+    "mean": 0.0010730988526708803,
+    "p90_abs": 0.032354896199179244,
+    "std": 0.017929022230350408
+  },
+  "rule_id": "full-comparison-v5--P100-054--direct_qwen-rule-1",
+  "rule_sha256": "e38ffc91d0d7d95d0b26b8bf2aefebe0c65177fadbc1d6f50505e01e6fc5b390",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.10094004783319888 * thickness_um * width_um * (1 - notch_depth_um / width_um) ** 1.5862068930120898 * (1 - notch_width_um / length_um) ** 3.861343468412782 * (length_um / 10.375946618605582) ** -1.1457271490712857",
+    "expression_bytes": 134,
+    "free_parameters": 5,
+    "learned_state_bytes": 131,
+    "literal_state_bytes": 2,
+    "nodes": 53,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.018593408742621314,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

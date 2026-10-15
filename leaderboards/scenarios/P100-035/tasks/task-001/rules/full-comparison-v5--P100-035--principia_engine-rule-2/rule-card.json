@@ -1,0 +1,85 @@
+{
+  "dev_error": 0.22917508534434175,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(log_duration)))",
+  "inputs": [
+    "log_duration",
+    "log_centroid",
+    "log_peak",
+    "high_share",
+    "entropy",
+    "flatness",
+    "envelope_cv",
+    "log_modulation",
+    "log_rms",
+    "species_code"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.18708014522305777,
+    "p1": -0.23437208627530423
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "entropy": -0.01573626587684835,
+      "envelope_cv": 0.06697246023387403,
+      "flatness": 0.0035870665035402406,
+      "high_share": -0.14651435330228918,
+      "log_centroid": -0.05029803114307627,
+      "log_duration": 0.087022117283777,
+      "log_modulation": -0.0905479185331275,
+      "log_peak": -0.024819996810048813,
+      "log_rms": 0.12831571853740006,
+      "species_code": -0.11085298195645028
+    },
+    "mean": -0.07932109936722434,
+    "p90_abs": 0.8012699046873951,
+    "std": 0.4004304377862316
+  },
+  "rule_id": "full-comparison-v5--P100-035--principia_engine-rule-2",
+  "rule_sha256": "99ef3a2ca29c5fc5818e7aa596638764dc679896be11382cf94cb1afbd1cce18",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.18708014522305777 + -0.23437208627530423 * log_duration))",
+    "expression_bytes": 42,
+    "free_parameters": 2,
+    "learned_state_bytes": 55,
+    "literal_state_bytes": 2,
+    "nodes": 19,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-035.compact.v2",
+  "train_error": 0.1889182195795948,
+  "units": {
+    "inputs": {
+      "entropy": "dimensionless",
+      "envelope_cv": "dimensionless",
+      "flatness": "dimensionless",
+      "high_share": "dimensionless",
+      "log_centroid": "dimensionless",
+      "log_duration": "dimensionless",
+      "log_modulation": "dimensionless",
+      "log_peak": "dimensionless",
+      "log_rms": "dimensionless",
+      "species_code": "dimensionless"
+    },
+    "output": "probability",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

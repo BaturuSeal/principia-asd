@@ -1,0 +1,107 @@
+{
+  "assets": [
+    {
+      "bytes": 1185,
+      "path": "scenarios/43_ai_gemstones_training/raw/LICENSE",
+      "role": "source_documentation",
+      "sha256": "f16385e497f4ae54ab342e26d2540c3f17378907074301ad10793a3d1fb398eb"
+    },
+    {
+      "bytes": 6473,
+      "path": "scenarios/43_ai_gemstones_training/raw/README.md",
+      "role": "source_documentation",
+      "sha256": "298bc36844a44118157fe1b051fd7079ed88c94877c6d94b80f32cc3bc96110a"
+    },
+    {
+      "bytes": 15061,
+      "path": "scenarios/43_ai_gemstones_training/raw/wandb_data_extraction.py",
+      "role": "source_documentation",
+      "sha256": "91c2f175b3081351ca3cd864e4642c209614c150f91ec320b6b09796f27260ab"
+    },
+    {
+      "bytes": 7888198,
+      "path": "scenarios/43_ai_gemstones_training/raw/wandb_dfs/wandb_df_raw.jsonl",
+      "role": "training_histories",
+      "sha256": "9e883d4105ace4f739b4d440a9ad51257f775b7fd71e8243c0c0ee9d0130a18c"
+    }
+  ],
+  "group_assignments": {
+    "1024x28": "test",
+    "1280x15": "dev",
+    "1280x36": "test",
+    "1536x50": "test",
+    "1792x18": "train",
+    "1792x7": "train",
+    "2048x27": "train",
+    "2560x8": "train",
+    "256x23": "train",
+    "256x27": "train",
+    "256x71": "train",
+    "256x80": "train",
+    "3072x12": "train",
+    "384x13": "test",
+    "384x36": "train",
+    "512x11": "dev",
+    "512x12": "test",
+    "512x13": "train",
+    "512x14": "train",
+    "512x16": "train",
+    "768x3": "dev",
+    "768x45": "train"
+  },
+  "historical_contract_sha256": "edbe8f90cc8c148101dfdf4a62125525dbc76c42f68bba0acda8c51473dbd8ac",
+  "independent_units": "Complete model architecture (width x depth); shared training corpus and validation set do not establish independent data-generating experiments.",
+  "input_units": {
+    "anchor_loss": "nats per token",
+    "anchor_tokens_B": "billions of training tokens",
+    "depth": "layers",
+    "early_loss": "nats per token",
+    "early_tokens_B": "billions of training tokens",
+    "params_B": "billions of parameters",
+    "tokens_B": "billions of training tokens",
+    "width": "embedding dimensions"
+  },
+  "limitations": [
+    "Curator-only: acquisitions contain historical responses; never expose source-root to discovery workers",
+    "No test targets are exported and no evaluator vault is read or created",
+    "Reconstruction does not establish scientific admission, independent evidence or redistribution rights"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "nats per token",
+  "parser": "gemstones-hot-trajectories-v1",
+  "partition_provenance": {
+    "allocation": "Original confirmation groups retained; development groups sorted by canonical SHA256([compact-v2, case, opaque group]); first max(2, floor(n/5)) become dev. Explicit source identities, not numeric folder matching.",
+    "source_split_sha256": "0ef86ccd18465d15298f277297da8a2c04c6391c92b4e4e671b62f8e4a1b6f76"
+  },
+  "policy": {
+    "calibration": "Last observed positive finite checkpoint at or before 10B and at or before 20B tokens; distinct and earlier than all forecast points",
+    "excluded": "Global/final summary losses, fitted parameters, cooldown trajectories, future checkpoints and extra source fields cannot become inputs",
+    "forecast": "All recorded positive finite loss checkpoints with 20B < tokens <= 100B; missing checkpoints explicitly recorded, no interpolation",
+    "split": "Frozen complete-architecture assignments, identical to historical compact-v2 partitions",
+    "stage": "pretrain true, cooldown false; one hot history per architecture",
+    "tokens_per_step": 4194304
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-043/native.py",
+    "reuse": "Measurement and identity specification reimplemented; no upstream fitting, scientific formula, reference state or evaluator copied",
+    "sha256": "76598fa89ee9b623318208978812b890efe014c53985c11df9913152cf5357a2"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-043",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "historical_case": "P100-043",
+    "revision": "5f420478f6057b0cbb4d13405fb10ca64675bccb",
+    "url": "https://github.com/mcleish7/gemstone-scaling-laws"
+  },
+  "source_scenario_descriptor_sha256": "cddbc1c08577643a3a949a8ec68d5814e670d9cd7523053d4f59c162874b3220",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test",
+  "units_evidence": {
+    "loss": "Recorded val_loss; historical contract declares nats/token, not a new loss-function validation",
+    "tokens": "Registered wandb_data_extraction.py lines 201-207 and 407: optimizer_step * 2048 * 2048"
+  }
+}

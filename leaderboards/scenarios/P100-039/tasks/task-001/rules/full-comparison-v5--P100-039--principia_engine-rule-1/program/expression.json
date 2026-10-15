@@ -1,0 +1,16 @@
+{
+  "expression": "minimum(1,maximum(0,p0+p1*(education**2/441)+p2*((education)**2)+p3*(education)+p4*(tanh((education-14.146865671641791)/2.5552837906214267))+p5*(log1p(education))+p6*(education*age)+p7*((age-45)**2)))",
+  "parameters": {
+    "p0": 0.3595464483871894,
+    "p1": 0.9673908533348823,
+    "p2": 0.0021936300529135804,
+    "p3": -0.11828978807383486,
+    "p4": 0.09980497586107202,
+    "p5": 0.2031679452132284,
+    "p6": 0.0004219172120560283,
+    "p7": -0.0005352482654634898
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,58 @@
+{
+  "dev_error": 0.19756868256251417,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(log1p(abs((age-44.5544776119403)/11.315902267609763)))))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.002266529252435986,
+    "p1": 0.0021952282066518337,
+    "p2": -0.2039557516724753
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": -0.10334845921726678,
+      "education": 0.03640463298102253,
+      "japan": -0.01831817390867515
+    },
+    "mean": 0.004490305666067377,
+    "p90_abs": 0.7215266620165691,
+    "std": 0.4474410606479892
+  },
+  "rule_id": "controls-v2--P100-039--symbolic_control-rule-3",
+  "rule_sha256": "fa6582b2f4d82fac2382897726d621525ad283bafdda6469b0f2d08b1d067bef",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.002266529252435986 + 0.0021952282066518337 * education ** 2 + -0.2039557516724753 * log1p(abs((age - 44.5544776119403) / 11.315902267609763))))",
+    "expression_bytes": 103,
+    "free_parameters": 3,
+    "learned_state_bytes": 84,
+    "nodes": 42,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.191807935521884,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

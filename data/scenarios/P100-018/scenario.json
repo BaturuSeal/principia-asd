@@ -1,0 +1,101 @@
+{
+  "description": "Log transformed reported tornado property-damage estimate",
+  "domain": "climate",
+  "independent_unit": "NOAA EPISODE_ID outbreak groups; nearby episodes may still be correlated or linked across offices. Not individual property samples.",
+  "input_units": {
+    "duration_min": "minutes event duration",
+    "latitude": "degrees north",
+    "length_km": "km path length",
+    "month": "calendar1–12",
+    "width_km": "km maximum path width"
+  },
+  "limitations": [
+    "Post-event path and timing diagnostic of reported loss. EF damage-derived scale, casualty counts, narratives, monetary/crop losses excluded from predictors.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "ln(1+property damage in USD)",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 219,
+    "test": 224,
+    "train": 853
+  },
+  "scenario_id": "P100-018",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 193703,
+    "limit_bytes": 10000000,
+    "public_bytes": 61649
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "source": "scenarios/18_climate_noaa_storm_events_2025/context/Storm-Data-Bulk-csv-Format.pdf",
+        "source_sha256": "3bd18968d34da43e192f8a7fb8e5548c4fa7d24ede016d2d068d849ee1392df6"
+      },
+      {
+        "citation_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "source": "scenarios/18_climate_noaa_storm_events_2025/raw/StormEvents_details-ftp_v1.0_d2025_c20260819.csv.gz",
+        "source_sha256": "d9b46b4c6aae554723cadbb9691f3d5258371c02e530ba815d6fe41e4550149f"
+      },
+      {
+        "citation_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "source": "scenarios/18_climate_noaa_storm_events_2025/raw/StormEvents_fatalities-ftp_v1.0_d2025_c20260819.csv.gz",
+        "source_sha256": "00c2fad534b4702e8132621d582f181e7f1928bbe7d01752f3bf1d4ea42d1e81"
+      },
+      {
+        "citation_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+        "source": "scenarios/18_climate_noaa_storm_events_2025/raw/StormEvents_locations-ftp_v1.0_d2025_c20260819.csv.gz",
+        "source_sha256": "64847e91cf90e3bffbb8338f91b95bc6e527ff1f1b999b80336f24dc1187dc22"
+      }
+    ],
+    "historical_case": "P100-018",
+    "license": "U.S. Government public data",
+    "url": "https://www.ncei.noaa.gov/stormevents/ftp.jsp",
+    "version": "2025 files created 2026-08-19"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "6902dd094a7aca3b70b864acd39a9396af4f5e6899a78a69db37e11c857ed839",
+        "groups": 72,
+        "rows": 219,
+        "sample_ids_sha256": "298fca564183689f98d56995b6fefe942f4d3959f5234a2c6985c22d9b4569fc"
+      },
+      "test": {
+        "group_ids_sha256": "8aae6c64287bd0fabf293953c86ac4d1a6ce9c45944943774086ebd002a55e31",
+        "groups": 94,
+        "rows": 224,
+        "sample_ids_sha256": "5f5df31fcd73c47eda17ba035719810296096936ca152cf28ebffcda06bb7159"
+      },
+      "train": {
+        "group_ids_sha256": "bedf3d3370e006760dfc8fa8b690cfc70765e0e92eefcd4876c32572c130ed8d",
+        "groups": 291,
+        "rows": 853,
+        "sample_ids_sha256": "9847d29ff3126f8a66d1274220f19614f0390cb7da3767b6a9308863dde0133a"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "NOAA Storm Events 2025 details, fatalities, and locations",
+  "version": "1.0.0rc2"
+}

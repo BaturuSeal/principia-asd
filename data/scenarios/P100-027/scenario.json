@@ -1,0 +1,172 @@
+{
+  "description": "Measured local vapor void fraction",
+  "domain": "thermal-fluid engineering",
+  "independent_unit": "complete experimental run",
+  "input_units": {
+    "massflux_kg_m2_s": "kg m^-2 s^-1",
+    "pressure_Pa": "Pa, absolute",
+    "quality": "kg vapor per kg mixture",
+    "radial_fraction": "dimensionless native coordinate / maximum sampled coordinate",
+    "rho_liquid": "kg m^-3",
+    "rho_vapor": "kg m^-3"
+  },
+  "limitations": [
+    "Boundary pressure, mass flux, supplied thermodynamic quality, density properties and measurement coordinate only; no measured target-derived velocity, dynamic pressure, phase label or fitted per-run offset.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "dimensionless",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 24,
+    "test": 36,
+    "train": 84
+  },
+  "scenario_id": "P100-027",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 42306,
+    "limit_bytes": 10000000,
+    "public_bytes": 18173
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/context/zenodo_record.json",
+        "source_sha256": "93293c772264c741d13304f609f1ca2777936a57b0ddbe9bd14d72ec3a32ef49"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230630_Run_31.xml",
+        "source_sha256": "11da9acf56b29d3ebb663cf61ba4a160eb0edbe8b0bf9437db6e670c37053029"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230630_Run_32.xml",
+        "source_sha256": "a0208939e43d75a145423b58344d6081e6758cccd94bb0376d9dc64b33ec46aa"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230808_Run_02.xml",
+        "source_sha256": "8f3fd25212b5155b68408f7c81da6a5732d33330ce0db4e8792b37f82cc18253"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230808_Run_07.xml",
+        "source_sha256": "4dd6080296b4871392f9d1ffb9ab7c298ae2c5f7981c944434872f6a17ad4fa0"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_09.xml",
+        "source_sha256": "5afa379168fefdfc879b09e1bd74c0f3563e94ce24826b6d2e53a33db1d6546b"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_10.xml",
+        "source_sha256": "be3ef7afa5038564c85f426e77def6f7b9698a63b1e7d156500659d1b08829a8"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_13.xml",
+        "source_sha256": "3973af33c647a7572c8d896680c1e569ceb09a1bc58b543bf4a8c12281e2a708"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_16.xml",
+        "source_sha256": "2efa4c2ba02ea9801929eb047c55d9dd6bf0fad4c3cb4d5dc5c514e480feb66a"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_18.xml",
+        "source_sha256": "07d0b80bcd2b90fb9084511a14a178e531108930eb1748852a3fc5a999a554d5"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_20.xml",
+        "source_sha256": "93c4bf580cf5a8639e2754d84a38cf1908eedc7908f7a8700f906189f9ef3c32"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230810_Run_04.xml",
+        "source_sha256": "e0966e37be931742ec6fb57b8f5ec2a3e4dd155fec31dc6745686e42834e6cb4"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230810_Run_07.xml",
+        "source_sha256": "a818e3c3b9ba36224f127dcd0c3e40e2e9602950c6938cf8f95449e32d0e45e4"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14627088",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14627088",
+        "source": "scenarios/27_fluid_dynamics_kth_boiling/raw/readme.txt",
+        "source_sha256": "fe9e98bad2e91697ed5ad8ea7114e82735f3720ef056e29a6e7d8152883e4e70"
+      }
+    ],
+    "historical_case": "P100-027",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/14627088",
+    "version": "14627088"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "3329f8e3d390b45ce63fb7b8b48410b9a3d4abf6106a448c6a1e5e675fbdd63f",
+        "groups": 2,
+        "rows": 24,
+        "sample_ids_sha256": "e312685cf3db66e282ce69a19e6911d9be2e59b9ffd306ad477494f42b67cf1a"
+      },
+      "test": {
+        "group_ids_sha256": "e453068da2c8ff552cb359e860a549bd3d7136352a93838eabcaed97e8841c14",
+        "groups": 3,
+        "rows": 36,
+        "sample_ids_sha256": "14d1759bf836e48500bbee24381a5eb291e765321113d7ff9c568d358f1a47ac"
+      },
+      "train": {
+        "group_ids_sha256": "146c3e0d3322e20675930c5032c05ec8c936f6618014b9660f64e318e2cfd783",
+        "groups": 7,
+        "rows": 84,
+        "sample_ids_sha256": "4ae11b18cfa385f83cdb2e4b00ec054476348ea295ec7d672f2f16b28ab1a25b"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "KTH boiling two-phase water flow",
+  "version": "1.0.0rc2"
+}

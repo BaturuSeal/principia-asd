@@ -1,0 +1,66 @@
+{
+  "dev_error": 4.02366110775149,
+  "execution_status": "complete",
+  "expression": "offset + p0 * (1 - exp(-t / p1)) + p2 * high * (1 - exp(-t / p3))",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 16.48858523842744,
+    "p1": 4638.370496634713,
+    "p2": 54.21263040260822,
+    "p3": 3224.619312934103
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": 0.9735115279047065,
+      "high": 0.9735115279047066,
+      "offset": 0.9735115279047067,
+      "t": 0.3337460278573244
+    },
+    "mean": 1.1610434092105286,
+    "p90_abs": 7.708510501733726,
+    "std": 3.86116987919094
+  },
+  "rule_id": "full-comparison-v5--P100-062--tool_agent-rule-1",
+  "rule_sha256": "071fcfb0386588571d41f6a3d5de09ed83aac155e43f40707b03ad14930aec78",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + 16.48858523842744 * (1 - exp(-t / 4638.370496634713)) + 54.21263040260822 * high * (1 - exp(-t / 3224.619312934103))",
+    "expression_bytes": 65,
+    "free_parameters": 4,
+    "learned_state_bytes": 100,
+    "literal_state_bytes": 2,
+    "nodes": 47,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 1.7213096868900484,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

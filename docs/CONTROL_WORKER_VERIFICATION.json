@@ -1,0 +1,84 @@
+{
+  "api_calls": 0,
+  "cases": [
+    {
+      "api_calls": 0,
+      "fits": 1,
+      "method": "fitted_constant",
+      "nominations": 1,
+      "result_sha256": "ad1be58c33c4ce7a9a0f24ea7f7826b6b21b8eb4b86ca2524c709b0687fbe042",
+      "slots": 3,
+      "status": "complete"
+    },
+    {
+      "api_calls": 0,
+      "fits": 1,
+      "method": "affine",
+      "nominations": 1,
+      "result_sha256": "6afcf26f8a443fb8d3a9aac9dc20cbdffb85d32ac3c82e560470a089c8ce1d6f",
+      "slots": 3,
+      "status": "complete"
+    },
+    {
+      "api_calls": 0,
+      "fits": 1,
+      "method": "quadratic",
+      "nominations": 1,
+      "result_sha256": "173df8b8822055959e689b307d0519984624b06935eeb7b4438340c49d38a29a",
+      "slots": 3,
+      "status": "complete"
+    },
+    {
+      "api_calls": 0,
+      "fits": 10,
+      "method": "fixed_symbolic",
+      "nominations": 3,
+      "result_sha256": "27bca1992c54e2205f128bdc323e359691ba65dd2585c72e051f2825a3e42ce8",
+      "slots": 3,
+      "status": "complete"
+    }
+  ],
+  "checked_at": "2026-10-13T16:33:42.775935+00:00",
+  "fault_injection": "Test wrapper only; copied runtime and request were not edited",
+  "fixed_nomination_slots": 12,
+  "hard_exit_recovery": [
+    {
+      "boundary": "fixed-experiment-2",
+      "duplicate_completed_work": 0,
+      "kind": "commit",
+      "state": "complete"
+    },
+    {
+      "boundary": "nominate",
+      "duplicate_completed_work": 0,
+      "kind": "commit",
+      "state": "complete"
+    },
+    {
+      "boundary": "fixed-experiment-2",
+      "duplicate_completed_work": 0,
+      "kind": "intent",
+      "state": "recovery_required"
+    }
+  ],
+  "ledger_created": false,
+  "memory_limit_bytes": 4294967296,
+  "module_sha256": "dd5e17becce450b5b003b6824b1ae1ca6f40f49fd1b1b5084587b24376bcbea0",
+  "numerical_threads": 1,
+  "private_fixture_root": "/Users/zhengqipei/Desktop/ChipFlow/Principia/Principia-ASD/private-workspace/PrincipiaASD-dev-26Oct10/engineering-fixtures/control-worker-fixture-c30gwte3",
+  "ranking_authorized": false,
+  "sandbox_denials": {
+    "frozen_write_0": true,
+    "frozen_write_1": true,
+    "frozen_write_2": true,
+    "network": true,
+    "private_read_0": true,
+    "private_read_1": true,
+    "private_read_2": true
+  },
+  "scientific_review": "not_assessed",
+  "scope": "Synthetic host-authored control fixtures; not a scientific comparison or generated-Python execution",
+  "secrets_inherited": false,
+  "source_is_installed_distribution": true,
+  "status": "passed_installed_sandboxed_controls"
+}

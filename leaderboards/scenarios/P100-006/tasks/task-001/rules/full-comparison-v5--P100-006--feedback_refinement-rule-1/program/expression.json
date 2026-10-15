@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1 * (rabi_MHz / (p2 + p3 * (detuning_MHz - p4) * (detuning_MHz - p4))) + p5 * (detuning_MHz - p6) * (detuning_MHz - p6) / (p7 + (detuning_MHz - p6) * (detuning_MHz - p6))",
+  "parameters": {
+    "p0": 0.3016071382045757,
+    "p1": 0.048609324602421795,
+    "p2": 1.102383483396848,
+    "p3": 0.007419245641745113,
+    "p4": 30.06175065900571,
+    "p5": 0.16408779573094315,
+    "p6": -1.2081932903283785,
+    "p7": 104.77676234949367
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

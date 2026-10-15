@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.033619475053268205,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hx)+p2*(hy)+p3*(dg)+p4*(ox)+p5*(oy)+p6*(hx*clat)+p7*(hy*clat)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.001826953728411016,
+    "p1": 1.0785398910227662,
+    "p2": 0.5974574742509993,
+    "p3": -0.38342471248703003,
+    "p4": -0.2068864525277185,
+    "p5": -0.09845844790265078,
+    "p6": -0.06459697416304883,
+    "p7": 0.07667755967605341
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": 0.020540255298556152,
+      "dg": 0.013691626468465107,
+      "gx": 0.07040939053362308,
+      "gy": 0.005181270491193907,
+      "hx": 0.009813130534662998,
+      "hy": 0.007114693945316394,
+      "ox": 0.015944485299438666,
+      "oy": 0.011017942605876851
+    },
+    "mean": 0.0002824489581814244,
+    "p90_abs": 0.072814177880548,
+    "std": 0.04956748624418723
+  },
+  "rule_id": "controls-v2--P100-020--symbolic_control-rule-2",
+  "rule_sha256": "126be6dfe856341fea1873d47b3dbfbebcd9c8d3236b9590b83c042e202f5689",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.001826953728411016 + 1.0785398910227662 * hx + 0.5974574742509993 * hy + -0.38342471248703003 * dg + -0.2068864525277185 * ox + -0.09845844790265078 * oy + -0.06459697416304883 * (hx * clat) + 0.07667755967605341 * (hy * clat)",
+    "expression_bytes": 68,
+    "free_parameters": 8,
+    "learned_state_bytes": 218,
+    "nodes": 67,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.03607637894672122,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

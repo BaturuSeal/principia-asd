@@ -1,0 +1,75 @@
+{
+  "dev_error": 0.0029374184960581206,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tiny)+p2*((rfd)**2)",
+  "inputs": [
+    "npq",
+    "rfd",
+    "ngrdi",
+    "area",
+    "tiny",
+    "salt",
+    "drought",
+    "high_stress"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8519264263804567,
+    "p1": 0.006989463594331981,
+    "p2": -0.0025182894118444613
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "area": -0.2547679971933327,
+      "drought": 0.001900261126637868,
+      "high_stress": 0.0892246545751611,
+      "ngrdi": -0.16373599444636378,
+      "npq": -0.21065740378899311,
+      "rfd": 0.047485715591685684,
+      "salt": 0.03903173782463264,
+      "tiny": -0.16795195347037883
+    },
+    "mean": 0.0003754556729996878,
+    "p90_abs": 0.006040429203731601,
+    "std": 0.004511092292123425
+  },
+  "rule_id": "full-comparison-v5--P100-036--symbolic_control-rule-3",
+  "rule_sha256": "3fcc56a7bd779b43b56869e5a22115d5f7f9efcb97868da34951eaa060cd72d9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.8519264263804567 + 0.006989463594331981 * tiny + -0.0025182894118444613 * rfd ** 2",
+    "expression_bytes": 26,
+    "free_parameters": 3,
+    "learned_state_bytes": 84,
+    "literal_state_bytes": 1,
+    "nodes": 22,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-036.compact.v2",
+  "train_error": 0.006013000195889988,
+  "units": {
+    "inputs": {
+      "area": "source AREA_MM scale; only relative/log descriptor used",
+      "drought": "drought-treatment indicator",
+      "high_stress": "source second stress-level indicator; no invented dose units",
+      "ngrdi": "dimensionless RGB index",
+      "npq": "dimensionless author NPQ_Lss",
+      "rfd": "dimensionless author Rfd_Lss",
+      "salt": "salt-treatment indicator",
+      "tiny": "cultivar indicator"
+    },
+    "output": "dimensionless quantum yield",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

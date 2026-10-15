@@ -1,0 +1,82 @@
+{
+  "dev_error": 0.033457737084286315,
+  "execution_status": "complete",
+  "expression": "p0+p1*hx+p2*hy+p3*ox+p4*oy+p5*dg+p6*gx+p7*gy",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.0006018406246527303,
+    "p1": 1.0282205473899502,
+    "p2": 0.6575245138820882,
+    "p3": -0.205568932269252,
+    "p4": -0.09753421268569133,
+    "p5": -0.3852216183403991,
+    "p6": 0.007926300621467468,
+    "p7": 0.004015630701356953
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": -0.01999382354356152,
+      "dg": -0.02394944516897638,
+      "gx": 0.12119749812761578,
+      "gy": 0.04511095289407754,
+      "hx": -0.028081539925926196,
+      "hy": -0.03057088326172897,
+      "ox": -0.02142028965046749,
+      "oy": -0.02643310361430468
+    },
+    "mean": -0.0008691602654508993,
+    "p90_abs": 0.07226755406780984,
+    "std": 0.04975866844765239
+  },
+  "rule_id": "full-comparison-v5--P100-020--tool_agent-rule-1",
+  "rule_sha256": "5ee2e2c965728bc35bed390f2c8e06d62a5e01911e7a49ecc86a47023046c612",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.0006018406246527303 + 1.0282205473899502 * hx + 0.6575245138820882 * hy + -0.205568932269252 * ox + -0.09753421268569133 * oy + -0.3852216183403991 * dg + 0.007926300621467468 * gx + 0.004015630701356953 * gy",
+    "expression_bytes": 44,
+    "free_parameters": 8,
+    "learned_state_bytes": 219,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.035934310789969226,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

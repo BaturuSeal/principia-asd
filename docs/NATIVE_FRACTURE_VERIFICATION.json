@@ -1,0 +1,192 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-11T23:53:01.307289+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 36684810,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-054/reconstruction.json",
+      "candidate_receipt_sha256": "c0c39f3558876013bb1ca366d163a84f421a309e67d274286f781944d4ec98c9",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 84
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 23
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 17,
+            "reconstructed_rows": 17,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 23,
+            "reconstructed_rows": 23,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 67,
+            "reconstructed_rows": 67,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_trace_validation": {
+        "inventory_sha256": "526007467f145d39761628419db50600a7ae94ce52c2a854ab14059ae81416df",
+        "measurement_rows": 2458963,
+        "response_scope": "Author-reported second-bridge failure load; trace event identification remains unvalidated",
+        "trace_values_exported_as_model_inputs": false,
+        "traces": 107
+      },
+      "reader_source_sha256": "313f5e9308511ed43782211bb7a86c95d75b0b729fa147393f53a061722a3ff7",
+      "recipe_sha256": "ec3a5672faf0f8928b5fd4c2005655da21496d441d6cb8e66e875a8b98742c8d",
+      "rows": {
+        "dev": 17,
+        "test": 23,
+        "train": 67
+      },
+      "runtime_binding_sha256": "7b4cd3d73b7bd3583efd2520024c0041c67a78fee6fd1228055c36adbebd2acf",
+      "scenario_id": "P100-054",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "C13",
+            "C24",
+            "C32",
+            "C33",
+            "C36",
+            "D18",
+            "D20",
+            "D34",
+            "D48",
+            "E13",
+            "E22",
+            "E24",
+            "E3",
+            "E31",
+            "E40",
+            "E45"
+          ],
+          "test": [
+            "C16",
+            "C25",
+            "C27",
+            "C44",
+            "C45",
+            "D16",
+            "D19",
+            "D28",
+            "D45",
+            "E17",
+            "E20",
+            "E21",
+            "E25",
+            "E26",
+            "E27",
+            "E37",
+            "E38",
+            "E41",
+            "E43",
+            "E6",
+            "E8",
+            "E9"
+          ],
+          "train": [
+            "C1",
+            "C11",
+            "C12",
+            "C14",
+            "C15",
+            "C18",
+            "C2",
+            "C26",
+            "C28",
+            "C29",
+            "C3",
+            "C30",
+            "C31",
+            "C34",
+            "C35",
+            "C4",
+            "C41",
+            "C42",
+            "C43",
+            "C46",
+            "C48",
+            "C49",
+            "C5",
+            "C50",
+            "C6",
+            "C7",
+            "C8",
+            "C9",
+            "D15",
+            "D21",
+            "D22",
+            "D24",
+            "D26",
+            "D29",
+            "D30",
+            "D31",
+            "D36",
+            "D38",
+            "D41",
+            "D46",
+            "E1",
+            "E10",
+            "E11",
+            "E12",
+            "E14",
+            "E16",
+            "E18",
+            "E19",
+            "E2",
+            "E28",
+            "E29",
+            "E30",
+            "E32",
+            "E33",
+            "E34",
+            "E35",
+            "E36",
+            "E39",
+            "E4",
+            "E42",
+            "E44",
+            "E46",
+            "E47",
+            "E48",
+            "E7"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      }
+    }
+  ],
+  "scope": "Curator-only native reconstruction and corrected development partition drafts, not scientific admission",
+  "status": "passed",
+  "test_targets_exported": false
+}

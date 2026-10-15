@@ -1,0 +1,13 @@
+{
+  "expression": "base + amp * (1 - progress) * (1 - tanh(p0 * (x + p1))) + p2 * (1 - progress) + p3 * x * (1 - progress) + p4 * progress * (1 - progress)",
+  "parameters": {
+    "p0": 4.886150586669382,
+    "p1": 8.311273454831175,
+    "p2": -6.090557896001072,
+    "p3": -3.0822018101193964,
+    "p4": -1.912303994316434
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

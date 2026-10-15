@@ -1,0 +1,16 @@
+{
+  "expression": "anchor_selectivity_pct + prefix_slope_pct_min * elapsed_min + p0 * (ag_wt_pct - 10.0) + p1 * (elapsed_min / 600.0) * (ag_wt_pct - 10.0) + p2 * (anchor_selectivity_pct - 50.0) * (elapsed_min / 600.0) + p3 * (anchor_selectivity_pct - 50.0) * (ag_wt_pct - 10.0) + p4 * (elapsed_min / 600.0) ** 2 + p5 * (ag_wt_pct - 10.0) ** 2 + p6 * (anchor_selectivity_pct - 50.0) ** 2 + p7",
+  "parameters": {
+    "p0": -1.169431130170622,
+    "p1": -0.24650016369347197,
+    "p2": 0.01769717141720089,
+    "p3": 1.345880759880656,
+    "p4": -3.0174985673971135,
+    "p5": -0.9092971277976691,
+    "p6": -0.31575836813655805,
+    "p7": 14.747801367175475
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,69 @@
+{
+  "dev_error": 5.114074908301926,
+  "execution_status": "complete",
+  "expression": "p0+p1*(length_km)+p2*(width_km)+p3*(duration_min)+p4*(latitude)+p5*(month)",
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 14.374170249456826,
+    "p1": 0.14816715912159517,
+    "p2": 2.0696939476797236,
+    "p3": -0.035065345962626435,
+    "p4": -0.20231887158162873,
+    "p5": -0.43010254792125474
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "duration_min": 0.07471106477907563,
+      "latitude": -0.4090542108940546,
+      "length_km": -0.03268449821618201,
+      "month": -0.16634350596733172,
+      "width_km": 0.26310758608269347
+    },
+    "mean": 0.5499317341838125,
+    "p90_abs": 8.86236650203346,
+    "std": 6.145030308975316
+  },
+  "rule_id": "full-comparison-v5--P100-018--polynomial_control-rule-1",
+  "rule_sha256": "f5b9fdc3a0d4be5ac2bce9090a7ef2d97e8075d97ee351d59b4c2755beb62996",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "14.374170249456826 + 0.14816715912159517 * length_km + 2.0696939476797236 * width_km + -0.035065345962626435 * duration_min + -0.20231887158162873 * latitude + -0.43010254792125474 * month",
+    "expression_bytes": 74,
+    "free_parameters": 6,
+    "learned_state_bytes": 164,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-018.compact.v2",
+  "train_error": 4.785947493646124,
+  "units": {
+    "inputs": {
+      "duration_min": "minutes event duration",
+      "latitude": "degrees north",
+      "length_km": "km path length",
+      "month": "calendar1–12",
+      "width_km": "km maximum path width"
+    },
+    "output": "ln(1+property damage in USD)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

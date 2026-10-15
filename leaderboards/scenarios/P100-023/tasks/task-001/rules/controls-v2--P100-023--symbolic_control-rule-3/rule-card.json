@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.11869051846924883,
+  "execution_status": "complete",
+  "expression": "p0+p1*(H*area)+p2*(H)+p3*(H*viscosity)",
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.2549774111458258,
+    "p1": 0.0008095243205814267,
+    "p2": 0.34589289330717193,
+    "p3": 0.007009022526903331
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "H": 0.31276213970911565,
+      "area": -0.08413912881694079,
+      "hydration": -0.0841391288169408,
+      "load": 0.2598708479208618,
+      "speed": 0.11649699273166622,
+      "viscosity": 0.31070494024836853
+    },
+    "mean": -0.04438921573795041,
+    "p90_abs": 0.2781538488204748,
+    "std": 0.16750630048589973
+  },
+  "rule_id": "controls-v2--P100-023--symbolic_control-rule-3",
+  "rule_sha256": "cee6613dd19eaab3b383c314c065e47dcc65a503a503bbbe9cf63f3a743b0a0b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.2549774111458258 + 0.0008095243205814267 * (H * area) + 0.34589289330717193 * H + 0.007009022526903331 * (H * viscosity)",
+    "expression_bytes": 38,
+    "free_parameters": 4,
+    "learned_state_bytes": 110,
+    "nodes": 35,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-023.compact.v2",
+  "train_error": 0.12892994799660698,
+  "units": {
+    "inputs": {
+      "H": "dimensionless; author Hersey calibration",
+      "area": "cm^2",
+      "hydration": "corneometer instrument units",
+      "load": "N",
+      "speed": "m/s",
+      "viscosity": "Pa s at 500 s^-1; author rheology fit"
+    },
+    "output": "1",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

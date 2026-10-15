@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.03326927687454762,
+    "primary": "mae",
+    "primary_error": 0.03326927687454762,
+    "rmse": 0.044253241254126795
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.06938069444444445,
+  "by_group": [
+    {
+      "error": 0.056053983550025305,
+      "group": "group-0a265a6180cfba94d3eb0666",
+      "rows": 12
+    },
+    {
+      "error": 0.01048457019906994,
+      "group": "group-191e001270476d8b8d4971b9",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "controls-v2--P100-030--linear_control-rule-1",
+  "rule_sha256": "bd7e9af4367d9d8fcf8e0c41418484f1417d00fd68ff0923eb5a332383234435",
+  "run_id": "controls-v2--P100-030--linear_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.03428586484806385 + -0.005148622061283343 * speed_mm_s + 0.37894498710387986 * boundary_cof + -0.3575946681089541 * highspeed_cof + 0.0006496329003633934 * concentration_wt_pct",
+    "expression_bytes": 81,
+    "free_parameters": 5,
+    "learned_state_bytes": 139,
+    "nodes": 35,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.654816088223034,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

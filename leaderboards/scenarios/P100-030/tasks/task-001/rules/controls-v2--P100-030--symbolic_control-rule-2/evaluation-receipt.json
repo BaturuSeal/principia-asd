@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.06250093101972817,
+    "primary": "mae",
+    "primary_error": 0.06250093101972817,
+    "rmse": 0.08419540703212858
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.06938069444444445,
+  "by_group": [
+    {
+      "error": 0.11601502429756481,
+      "group": "group-0a265a6180cfba94d3eb0666",
+      "rows": 12
+    },
+    {
+      "error": 0.00898683774189154,
+      "group": "group-191e001270476d8b8d4971b9",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-030--symbolic_control-rule-2",
+  "rule_sha256": "7a9eeaac6c0232bcd7a77d7412e6dd941c17c7cb0c1dbefa0d5b41ea8c2e0a0b",
+  "run_id": "controls-v2--P100-030--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.03432341804726182 + -0.02603163709654181 * tanh((speed_mm_s - 2.935) / 2.960302630925877) + 0.01278289799318285 * log1p(abs((concentration_wt_pct - 2.6) / 2.0591260281974))",
+    "expression_bytes": 110,
+    "free_parameters": 3,
+    "learned_state_bytes": 82,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01884473093198939,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

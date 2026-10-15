@@ -1,0 +1,69 @@
+{
+  "dev_error": 0.7567496745743376,
+  "execution_status": "complete",
+  "expression": "p0 * (0.5 + 0.5*tanh((current - p1)/p2)) * (1 + p3*cal_last + p4*cal_mean) * (1 + p5*soft + p6*kd)",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8600795547347886,
+    "p1": 23.279860413496664,
+    "p2": 24.067972816625574,
+    "p3": -59.33501368028317,
+    "p4": 372.0450817656483,
+    "p5": -0.5377588586957418,
+    "p6": 1.2906864589398885
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.19845769063384947,
+      "soft": -0.6101790040080034
+    },
+    "mean": 0.12332823163246032,
+    "p90_abs": 1.6738333624954778,
+    "std": 0.9698916796933518
+  },
+  "rule_id": "full-comparison-v5--P100-076--direct_glm-rule-1",
+  "rule_sha256": "a7b40d4c00d53816d7a41438d2ef798615d6ef263832d72a7eb306c3b3977d25",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.8600795547347886 * (0.5 + 0.5 * tanh((current - 23.279860413496664) / 24.067972816625574)) * (1 + -59.33501368028317 * cal_last + 372.0450817656483 * cal_mean) * (1 + -0.5377588586957418 * soft + 1.2906864589398885 * kd)",
+    "expression_bytes": 98,
+    "free_parameters": 7,
+    "learned_state_bytes": 182,
+    "literal_state_bytes": 8,
+    "nodes": 62,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7232152338723737,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

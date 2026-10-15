@@ -1,0 +1,64 @@
+{
+  "dev_error": 0.07698869317972126,
+  "execution_status": "complete",
+  "expression": "cal_minus20_uA * exp(p0 * (gate_V + 20) / 40) * (1 + p1 * (gate_V / 20) ** 2)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 15.026890489450038,
+    "p1": -0.8926937166171951
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": 0.3014518566181622,
+      "cal_plus20_uA": 0.05174293514283106,
+      "cal_zero_uA": 0.26777627212675054,
+      "gate_V": -0.30335586926339597
+    },
+    "mean": -0.04270815767471768,
+    "p90_abs": 0.2558633645467181,
+    "std": 0.13784981417053013
+  },
+  "rule_id": "live-pilot-v3--P100-051--direct_qwen-rule-1",
+  "rule_sha256": "9974c181ccfc1d5ecf762a4623900632a1a9c7cd4b0a8f407e6da075717ba186",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "cal_minus20_uA * exp(15.026890489450038 * (gate_V + 20) / 40) * (1 + -0.8926937166171951 * (gate_V / 20) ** 2)",
+    "expression_bytes": 77,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "literal_state_bytes": 8,
+    "nodes": 37,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.12505792378286315,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

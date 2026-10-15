@@ -1,0 +1,98 @@
+{
+  "description": "SST anomaly at a withheld pixel",
+  "domain": "oceanography",
+  "independent_unit": "Complete20degree geographic tile for scoring; all tiles belong to one dependent global map, not independent temporal replicates.",
+  "input_units": {
+    "clat": "dimensionless cosine latitude",
+    "dg": "degree C",
+    "gx": "degree C",
+    "gy": "degree C",
+    "hx": "degree C",
+    "hy": "degree C",
+    "ox": "degree C",
+    "oy": "degree C"
+  },
+  "limitations": [
+    "Retrospective reconstruction of one daily map, using twelve fixed neighboring pixels from the same date. Not a future forecast.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "images",
+    "scientific_arrays_or_events"
+  ],
+  "output_units": "degree C",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1277,
+    "test": 1338,
+    "train": 4804
+  },
+  "scenario_id": "P100-020",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1728106,
+    "limit_bytes": 10000000,
+    "public_bytes": 315926
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+        "license": "U.S. Government public data",
+        "rights_url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+        "source": "scenarios/20_ocean_noaa_coral_ssta_20260816/context/official_product_page.html",
+        "source_sha256": "114a52e9e07a40d9501dde9181153c30178b1185250c68df84b3c8c3f0930806"
+      },
+      {
+        "citation_url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+        "license": "U.S. Government public data",
+        "rights_url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+        "source": "scenarios/20_ocean_noaa_coral_ssta_20260816/raw/ct5km_ssta_v3.1-clim19912020-v1_20260816.nc",
+        "source_sha256": "a72401223bebfb8d8df5ffadfc46db3ebc17ccb40160f802daaf26c411ef8267"
+      },
+      {
+        "citation_url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+        "license": "U.S. Government public data",
+        "rights_url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+        "source": "scenarios/20_ocean_noaa_coral_ssta_20260816/raw/ct5km_ssta_v3.1-clim19912020-v1_20260816.png",
+        "source_sha256": "f3c8bdd4030749dc6376e4d28e07f0cf9809e932a04026505a96c77be9fff412"
+      }
+    ],
+    "historical_case": "P100-020",
+    "license": "U.S. Government public data",
+    "url": "https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta_clim19912020.php",
+    "version": "v3.1 climatology 1991-2020 v1; 2026-08-16"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "4fd45c7acdb93532790b56757f96f0cf48bc591be269b6dee310e89c83baeb48",
+        "groups": 18,
+        "rows": 1277,
+        "sample_ids_sha256": "0ce14878b205e80d80768269dd99fb017ffab2c32317ec782a68954120e54ac9"
+      },
+      "test": {
+        "group_ids_sha256": "7cbc7ec84512098bdbac4cfed25c54722e480c95e11741a2ba9a77037b69a5ed",
+        "groups": 23,
+        "rows": 1338,
+        "sample_ids_sha256": "07f413735d4ab5ac992b0bedf131bc963c4c06ef59a03273986bf49f6dfc63f8"
+      },
+      "train": {
+        "group_ids_sha256": "47000faca269860d4dc3c16dc832f10670f6d4eafb5ad1017e74ebc11d829089",
+        "groups": 75,
+        "rows": 4804,
+        "sample_ids_sha256": "544a04d07e40e026855edf8537172fd7a967926f296b35cb102a00706cc3a306"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "NOAA Coral Reef Watch global 5 km sea-surface temperature anomaly",
+  "version": "1.0.0rc2"
+}

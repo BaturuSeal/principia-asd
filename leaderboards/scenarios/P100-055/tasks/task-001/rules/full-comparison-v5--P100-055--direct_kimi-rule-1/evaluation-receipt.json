@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.20520354696507037,
+    "primary": "mae",
+    "primary_error": 0.20520354696507037,
+    "rmse": 0.24566341779648893
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.25530277777777777,
+  "by_group": [
+    {
+      "error": 0.29901328566253565,
+      "group": "group-68ac150dbaf3e5acadd8ed34",
+      "rows": 2400
+    },
+    {
+      "error": 0.1113938082676051,
+      "group": "group-88a9b273a766ea99e85f6114",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-055--direct_kimi-rule-1",
+  "rule_sha256": "c518f4b17f6f8349ef14b3f36b6afd11a39c808e985b5a1608dcf99f9e83a0e1",
+  "run_id": "full-comparison-v5--P100-055--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.518261776688788 + -0.3079483550323928 * ratio + -0.7294326744208987 * water + 0.008848164916908638 * age_min + 0.0012887407609369964 * time_s + 0.8737975508265414 * ratio * water + -0.0017408097223141413 * ratio * age_min + -0.003556049709343832 * water * time_s",
+    "expression_bytes": 123,
+    "free_parameters": 8,
+    "learned_state_bytes": 221,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.014285140610513761,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

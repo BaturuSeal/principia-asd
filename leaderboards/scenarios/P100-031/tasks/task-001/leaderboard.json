@@ -1,0 +1,2784 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.003171958029270172
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0020717690931633115
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-031--linear_control",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.0061911470256745815
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-031--polynomial_control",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.3572927080094814
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 80,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 80,
+        "wall_seconds": 0.16864214499946684
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-031--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 244,
+        "structures": 1,
+        "wall_seconds": 2.106108229025267
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 49,
+        "structures": 1,
+        "wall_seconds": 13.193556500016712
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 166,
+        "structures": 1,
+        "wall_seconds": 11.476351774996147
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 348,
+        "structures": 1,
+        "wall_seconds": 9.598077007918619
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-031--direct_kimi",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 825,
+        "structures": 3,
+        "wall_seconds": 19.520053350017406
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 2,
+      "run_id": "full-comparison-v5--P100-031--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 278,
+        "structures": 3,
+        "wall_seconds": 8.16595170495566
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 5,
+        "optimizer_evaluations": 180,
+        "structures": 1,
+        "wall_seconds": 21.467856597038917
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-031--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 200,
+        "model_calls": 4,
+        "optimizer_evaluations": 77,
+        "structures": 94,
+        "wall_seconds": 99.16465025697835
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-031--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-031--direct_glm-rule-1",
+    "full-comparison-v5--P100-031--principia_engine-rule-1",
+    "full-comparison-v5--P100-031--principia_engine-rule-3",
+    "full-comparison-v5--P100-031--symbolic_control-rule-1",
+    "full-comparison-v5--P100-031--symbolic_control-rule-3",
+    "full-comparison-v5--P100-031--symbolic_control-rule-2",
+    "full-comparison-v5--P100-031--principia_engine-rule-2",
+    "full-comparison-v5--P100-031--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.08867711335185,
+        "primary": "log_mae",
+        "primary_error": 0.40492069626137467,
+        "rmse": 57.906919126670246
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 0.4918879533128145,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 0.391457554878708,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.32218583157772646,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 0.47438736443918833,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 0.34468477709843626,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.3529197802293097,
+        "execution_status": "complete",
+        "expression": "pilot_seconds ** (p0 + p1 * is_tket + p2 * is_bqskit) * (p3 + p4 * is_tket + p5 * is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8142823788948608,
+          "p1": 0.4223013349767588,
+          "p2": 0.3678676123872503,
+          "p3": 0.12626117907822573,
+          "p4": 12.016392389397536,
+          "p5": 76.2929037816644
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.11230770489099642,
+            "is_tket": 0.1194659686555695,
+            "load_seconds": 0.42276692652961495,
+            "pilot_depth": 0.4687905609032917,
+            "pilot_gates": 0.5148864454809678,
+            "pilot_seconds": 0.508959111034513,
+            "qubits": 0.44996330930592987
+          },
+          "mean": 0.8749037693652226,
+          "p90_abs": 1.327741504925779,
+          "std": 2.774985059364548
+        },
+        "rule_id": "full-comparison-v5--P100-031--direct_glm-rule-1",
+        "rule_sha256": "3edb90b46476c19f26837e2c1c6a8d559188f4939fef3ca3d0b132b9034a182d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "pilot_seconds ** (0.8142823788948608 + 0.4223013349767588 * is_tket + 0.3678676123872503 * is_bqskit) * (0.12626117907822573 + 12.016392389397536 * is_tket + 76.2929037816644 * is_bqskit)",
+          "expression_bytes": 92,
+          "free_parameters": 6,
+          "learned_state_bytes": 155,
+          "literal_state_bytes": 0,
+          "nodes": 43,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 10
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.3727857883416079,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "pilot_seconds ** (p0 + p1 * is_tket + p2 * is_bqskit) * (p3 + p4 * is_tket + p5 * is_bqskit)",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--direct_glm-rule-1",
+      "rule_sha256": "3edb90b46476c19f26837e2c1c6a8d559188f4939fef3ca3d0b132b9034a182d",
+      "run_id": "full-comparison-v5--P100-031--direct_glm",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "pilot_seconds ** (0.8142823788948608 + 0.4223013349767588 * is_tket + 0.3678676123872503 * is_bqskit) * (0.12626117907822573 + 12.016392389397536 * is_tket + 76.2929037816644 * is_bqskit)",
+        "expression_bytes": 92,
+        "free_parameters": 6,
+        "learned_state_bytes": 155,
+        "literal_state_bytes": 0,
+        "nodes": 43,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 10
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.41828470076884744,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 5.409747188367943,
+        "primary": "log_mae",
+        "primary_error": 0.5139372544899707,
+        "rmse": 28.934960778593553
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 0.45851261810815763,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 0.41265897719050787,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.26387988928057965,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 0.7439711202419397,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 0.6906636676286686,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.5300075209742947,
+        "execution_status": "complete",
+        "expression": "exp(p0 + p1*log1p(pilot_gates) + p2*log1p(pilot_depth) + p3*is_tket + p4*is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -7.377735032437264,
+          "p1": 0.30421217420140995,
+          "p2": 0.42390184526399016,
+          "p3": 3.3487191168560444,
+          "p4": 5.367497480681057
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.1754994749721887,
+            "is_tket": -0.3534092669163397,
+            "load_seconds": -0.47428539619246124,
+            "pilot_depth": -0.6737613326256185,
+            "pilot_gates": -0.6703039663276565,
+            "pilot_seconds": -0.6709331888531862,
+            "qubits": -0.2653233821404513
+          },
+          "mean": -0.5094184062226255,
+          "p90_abs": 0.29327063631399997,
+          "std": 2.1240019971348967
+        },
+        "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-1",
+        "rule_sha256": "8813e31f2cf7e6b52d5eae78b17e5a4c56d9fb7be8d98009597a92fa99d0d21e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "exp(-7.377735032437264 + 0.30421217420140995 * log1p(pilot_gates) + 0.42390184526399016 * log1p(pilot_depth) + 3.3487191168560444 * is_tket + 5.367497480681057 * is_bqskit)",
+          "expression_bytes": 83,
+          "free_parameters": 5,
+          "learned_state_bytes": 131,
+          "literal_state_bytes": 0,
+          "nodes": 44,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 17
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.5299927300295502,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "exp(p0 + p1*log1p(pilot_gates) + p2*log1p(pilot_depth) + p3*is_tket + p4*is_bqskit)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-1",
+      "rule_sha256": "8813e31f2cf7e6b52d5eae78b17e5a4c56d9fb7be8d98009597a92fa99d0d21e",
+      "run_id": "full-comparison-v5--P100-031--principia_engine",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "exp(-7.377735032437264 + 0.30421217420140995 * log1p(pilot_gates) + 0.42390184526399016 * log1p(pilot_depth) + 3.3487191168560444 * is_tket + 5.367497480681057 * is_bqskit)",
+        "expression_bytes": 83,
+        "free_parameters": 5,
+        "learned_state_bytes": 131,
+        "literal_state_bytes": 0,
+        "nodes": 44,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 17
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.04964882914750744,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 7.386890514067446,
+        "primary": "log_mae",
+        "primary_error": 0.7499303345410888,
+        "rmse": 36.25083287113539
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 0.3718631486461447,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 0.37874629545152416,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.10433181377318379,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.2682420401276626,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 1.6264683747069286,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.6337018249296346,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-031--tree_control-rule-1",
+        "rule_sha256": "c679d637162c309761659e3c3be18a6c141c9cccbfe917e01dda7fa509a8bd2d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 41,
+          "weighted_operator_count": 41
+        },
+        "task_id": "P100-031.compact.v2",
+        "tree": {
+          "feature": [
+            3,
+            6,
+            5,
+            0,
+            3,
+            0,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            -2,
+            0,
+            2,
+            2,
+            -2,
+            -2,
+            0,
+            -2,
+            -2,
+            0,
+            1,
+            -2,
+            -2,
+            -2,
+            4,
+            0,
+            0,
+            -2,
+            -2,
+            1,
+            -2,
+            2,
+            -2,
+            -2,
+            4,
+            -2,
+            -2,
+            0,
+            -2,
+            -2
+          ],
+          "features": [
+            "pilot_seconds",
+            "qubits",
+            "pilot_gates",
+            "pilot_depth",
+            "load_seconds",
+            "is_tket",
+            "is_bqskit"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            -1,
+            -1,
+            9,
+            -1,
+            -1,
+            -1,
+            13,
+            14,
+            15,
+            -1,
+            -1,
+            18,
+            -1,
+            -1,
+            21,
+            22,
+            -1,
+            -1,
+            -1,
+            26,
+            27,
+            28,
+            -1,
+            -1,
+            31,
+            -1,
+            33,
+            -1,
+            -1,
+            36,
+            -1,
+            -1,
+            39,
+            -1,
+            -1
+          ],
+          "right": [
+            38,
+            25,
+            12,
+            11,
+            8,
+            7,
+            -1,
+            -1,
+            10,
+            -1,
+            -1,
+            -1,
+            20,
+            17,
+            16,
+            -1,
+            -1,
+            19,
+            -1,
+            -1,
+            24,
+            23,
+            -1,
+            -1,
+            -1,
+            35,
+            30,
+            29,
+            -1,
+            -1,
+            32,
+            -1,
+            34,
+            -1,
+            -1,
+            37,
+            -1,
+            -1,
+            40,
+            -1,
+            -1
+          ],
+          "threshold": [
+            7632.5,
+            0.5,
+            0.5,
+            0.21914343535900116,
+            87.0,
+            0.0432432834059,
+            -2.0,
+            -2.0,
+            0.10871332883834839,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.10871332883834839,
+            92.0,
+            27.0,
+            -2.0,
+            -2.0,
+            0.07736652716994286,
+            -2.0,
+            -2.0,
+            0.2227054312825203,
+            21.5,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.003745741443708539,
+            0.02920213993638754,
+            0.014210553374141455,
+            -2.0,
+            -2.0,
+            6.0,
+            -2.0,
+            201.0,
+            -2.0,
+            -2.0,
+            0.003932768013328314,
+            -2.0,
+            -2.0,
+            20.547885417938232,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            17.4528342891572,
+            1.5067679929767863,
+            0.33278442222698473,
+            0.011204012978798234,
+            0.009018904869353939,
+            0.006232483452788377,
+            0.005714742929760462,
+            0.007958285196214757,
+            0.012641252710889173,
+            0.011037242801225366,
+            0.01504726757538488,
+            0.027956508484537856,
+            0.6543648314751712,
+            0.30266586697021575,
+            0.10531721974432716,
+            0.041736876077106994,
+            0.2324779070787675,
+            0.6409778336431675,
+            0.46157716900213724,
+            0.7755283321239403,
+            1.6089763065600502,
+            1.2930322921893094,
+            1.0614437494950835,
+            1.44742465398546,
+            2.398836342486902,
+            4.559125276926272,
+            2.710497208965419,
+            0.36722026909960226,
+            0.16160746383388028,
+            0.6756394769981853,
+            4.012317731113096,
+            2.879219929338433,
+            4.578866632000427,
+            4.25148497850023,
+            5.233629939000821,
+            8.872590768834925,
+            7.251324658340309,
+            10.493856879329542,
+            208.8056298433221,
+            401.3679701363241,
+            16.24328955032009
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-031--tree_control-rule-1",
+      "rule_sha256": "c679d637162c309761659e3c3be18a6c141c9cccbfe917e01dda7fa509a8bd2d",
+      "run_id": "full-comparison-v5--P100-031--tree_control",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 61,
+        "learned_state_bytes": 1869,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 41
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.19026972707478434,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 6.883862925010533,
+        "primary": "log_mae",
+        "primary_error": 1.1752780037034596,
+        "rmse": 23.1378585970803
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 0.9768593056807052,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.399726562947724,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.22468851082428076,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.564416125412791,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 1.7106995136517968,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.2614008033222341,
+        "execution_status": "complete",
+        "expression": "exp(p0 + p1*log1p(pilot_seconds) + p2*is_tket + p3*is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -4.90924482808863,
+          "p1": 1.859389833943501,
+          "p2": 3.5607211303490782,
+          "p3": 5.796529723820838
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.006780754833282776,
+            "is_tket": -0.2446336711266333,
+            "load_seconds": -0.5117255255319507,
+            "pilot_depth": -0.5934031618225178,
+            "pilot_gates": -0.6234859360471534,
+            "pilot_seconds": -0.6219111406008506,
+            "qubits": -0.5119003614925969
+          },
+          "mean": -1.2764751144839634,
+          "p90_abs": 3.5168827754165277,
+          "std": 3.8885785994758275
+        },
+        "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-3",
+        "rule_sha256": "dc7088b144ee4c4f4082636f59f23505b454b9f4e1869fef926cb48b3c10f642",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "exp(-4.90924482808863 + 1.859389833943501 * log1p(pilot_seconds) + 3.5607211303490782 * is_tket + 5.796529723820838 * is_bqskit)",
+          "expression_bytes": 61,
+          "free_parameters": 4,
+          "learned_state_bytes": 101,
+          "literal_state_bytes": 0,
+          "nodes": 33,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 12
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.9523746195720534,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "exp(p0 + p1*log1p(pilot_seconds) + p2*is_tket + p3*is_bqskit)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-3",
+      "rule_sha256": "dc7088b144ee4c4f4082636f59f23505b454b9f4e1869fef926cb48b3c10f642",
+      "run_id": "full-comparison-v5--P100-031--principia_engine",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "exp(-4.90924482808863 + 1.859389833943501 * log1p(pilot_seconds) + 3.5607211303490782 * is_tket + 5.796529723820838 * is_bqskit)",
+        "expression_bytes": 61,
+        "free_parameters": 4,
+        "learned_state_bytes": 101,
+        "literal_state_bytes": 0,
+        "nodes": 33,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 12
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.062411008993370376,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.706686674562153,
+        "primary": "log_mae",
+        "primary_error": 1.336075152061472,
+        "rmse": 37.10149958511075
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.1590363641639978,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.585467417082244,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.2064004453288899,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.667450820781563,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.0620207129506656,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.4326720168593983,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * pilot_seconds + p2 * (pilot_gates / maximum(pilot_depth, 1.0)) + p3 * qubits + p4 * load_seconds + p5 * is_tket + p6 * is_bqskit",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.00590547010185616,
+          "p1": 0.2208322411557514,
+          "p2": -5.282326884846286e-05,
+          "p3": -0.0010630913024897012,
+          "p4": 0.2537323126097792,
+          "p5": 0.2548362612402751,
+          "p6": 3.0665377512102316
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.032168489359468366,
+            "is_tket": -0.256832678240808,
+            "load_seconds": -0.5029118552881234,
+            "pilot_depth": -0.5758565398233831,
+            "pilot_gates": -0.6080630482804374,
+            "pilot_seconds": -0.6061912006948891,
+            "qubits": -0.5153994965032993
+          },
+          "mean": -1.27754882719629,
+          "p90_abs": 3.5873910659564006,
+          "std": 4.282345676519508
+        },
+        "rule_id": "full-comparison-v5--P100-031--direct_qwen-rule-1",
+        "rule_sha256": "44e9fb61f8f10a53d6fe734ccbcff7f9e2e4b7c10d1d8a417c9be8b4a1ca930e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.00590547010185616 + 0.2208322411557514 * pilot_seconds + -5.282326884846286e-05 * (pilot_gates / maximum(pilot_depth, 1.0)) + -0.0010630913024897012 * qubits + 0.2537323126097792 * load_seconds + 0.2548362612402751 * is_tket + 3.0665377512102316 * is_bqskit",
+          "expression_bytes": 138,
+          "free_parameters": 7,
+          "learned_state_bytes": 191,
+          "literal_state_bytes": 3,
+          "nodes": 59,
+          "numeric_literal_count": 1,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 1.006072192259532,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * pilot_seconds + p2 * (pilot_gates / maximum(pilot_depth, 1.0)) + p3 * qubits + p4 * load_seconds + p5 * is_tket + p6 * is_bqskit",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--direct_qwen-rule-1",
+      "rule_sha256": "44e9fb61f8f10a53d6fe734ccbcff7f9e2e4b7c10d1d8a417c9be8b4a1ca930e",
+      "run_id": "full-comparison-v5--P100-031--direct_qwen",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.00590547010185616 + 0.2208322411557514 * pilot_seconds + -5.282326884846286e-05 * (pilot_gates / maximum(pilot_depth, 1.0)) + -0.0010630913024897012 * qubits + 0.2537323126097792 * load_seconds + 0.2548362612402751 * is_tket + 3.0665377512102316 * is_bqskit",
+        "expression_bytes": 138,
+        "free_parameters": 7,
+        "learned_state_bytes": 191,
+        "literal_state_bytes": 3,
+        "nodes": 59,
+        "numeric_literal_count": 1,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.00237521981124803,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.741212418686043,
+        "primary": "log_mae",
+        "primary_error": 1.3858638550828937,
+        "rmse": 37.20522145806326
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.148002294354139,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.6574599870014444,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.24797073985053628,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.7708436324720098,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.1050426217363394,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.4507189482019989,
+        "execution_status": "complete",
+        "expression": "(p0 + p1*pilot_seconds + p2*qubits + p3*pilot_gates + p4*pilot_depth + p5*load_seconds + p6*is_tket + p7*is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.007682886532277533,
+          "p1": -0.08694630990733708,
+          "p2": -0.0006075466762378285,
+          "p3": 0.00010041093000610714,
+          "p4": 2.0564881183162227e-05,
+          "p5": -0.06368132174483329,
+          "p6": 0.25060785444074235,
+          "p7": 3.005445651453229
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.02580963953046729,
+            "is_tket": -0.2542435997865277,
+            "load_seconds": -0.501834688100486,
+            "pilot_depth": -0.5744086325137391,
+            "pilot_gates": -0.6065831127217481,
+            "pilot_seconds": -0.6047176310233944,
+            "qubits": -0.5146691686801289
+          },
+          "mean": -1.297451910735656,
+          "p90_abs": 3.563144491382803,
+          "std": 4.280515910794092
+        },
+        "rule_id": "full-comparison-v5--P100-031--feedback_refinement-rule-1",
+        "rule_sha256": "3e711b5fc163a3bd1f2043144f5638e4801f6cfbc0f6d2f582dd64e7055b2190",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.007682886532277533 + -0.08694630990733708 * pilot_seconds + -0.0006075466762378285 * qubits + 0.00010041093000610714 * pilot_gates + 2.0564881183162227e-05 * pilot_depth + -0.06368132174483329 * load_seconds + 0.25060785444074235 * is_tket + 3.005445651453229 * is_bqskit",
+          "expression_bytes": 115,
+          "free_parameters": 8,
+          "learned_state_bytes": 226,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.9842952490833202,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "(p0 + p1*pilot_seconds + p2*qubits + p3*pilot_gates + p4*pilot_depth + p5*load_seconds + p6*is_tket + p7*is_bqskit)",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--feedback_refinement-rule-1",
+      "rule_sha256": "3e711b5fc163a3bd1f2043144f5638e4801f6cfbc0f6d2f582dd64e7055b2190",
+      "run_id": "full-comparison-v5--P100-031--feedback_refinement",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.007682886532277533 + -0.08694630990733708 * pilot_seconds + -0.0006075466762378285 * qubits + 0.00010041093000610714 * pilot_gates + 2.0564881183162227e-05 * pilot_depth + -0.06368132174483329 * load_seconds + 0.25060785444074235 * is_tket + 3.005445651453229 * is_bqskit",
+        "expression_bytes": 115,
+        "free_parameters": 8,
+        "learned_state_bytes": 226,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0031876420022562356,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.74122200476631,
+        "primary": "log_mae",
+        "primary_error": 1.3858756374276817,
+        "rmse": 37.2052205314924
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.1480181786493076,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.657476175024205,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.24797822029740688,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.7708516477018783,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.1050539654656117,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.4507288766053197,
+        "execution_status": "complete",
+        "expression": "p0 + p1*pilot_seconds + p2*qubits + p3*pilot_gates + p4*pilot_depth + p5*load_seconds + p6*is_tket + p7*is_bqskit",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.0076830296492070285,
+          "p1": -0.08695622340571789,
+          "p2": -0.0006075873723121606,
+          "p3": 0.0001004194401011461,
+          "p4": 2.0562928123565108e-05,
+          "p5": -0.06364983821361732,
+          "p6": 0.25060448772764127,
+          "p7": 3.005405476164763
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.025805301898882905,
+            "is_tket": -0.25424197023121237,
+            "load_seconds": -0.5018336213006492,
+            "pilot_depth": -0.5744070391779202,
+            "pilot_gates": -0.6065815452865415,
+            "pilot_seconds": -0.6047160618108377,
+            "qubits": -0.5146687257443027
+          },
+          "mean": -1.2974631969716222,
+          "p90_abs": 3.563184636494924,
+          "std": 4.2805129797516415
+        },
+        "rule_id": "full-comparison-v5--P100-031--best_of_n-rule-1",
+        "rule_sha256": "286cf283516fbd9722baa3b922b375fc989141ec2049a61dde535789acdb0e7b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.0076830296492070285 + -0.08695622340571789 * pilot_seconds + -0.0006075873723121606 * qubits + 0.0001004194401011461 * pilot_gates + 2.0562928123565108e-05 * pilot_depth + -0.06364983821361732 * load_seconds + 0.25060448772764127 * is_tket + 3.005405476164763 * is_bqskit",
+          "expression_bytes": 113,
+          "free_parameters": 8,
+          "learned_state_bytes": 226,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.9843007142134456,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*pilot_seconds + p2*qubits + p3*pilot_gates + p4*pilot_depth + p5*load_seconds + p6*is_tket + p7*is_bqskit",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--best_of_n-rule-1",
+      "rule_sha256": "286cf283516fbd9722baa3b922b375fc989141ec2049a61dde535789acdb0e7b",
+      "run_id": "full-comparison-v5--P100-031--best_of_n",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.0076830296492070285 + -0.08695622340571789 * pilot_seconds + -0.0006075873723121606 * qubits + 0.0001004194401011461 * pilot_gates + 2.0562928123565108e-05 * pilot_depth + -0.06364983821361732 * load_seconds + 0.25060448772764127 * is_tket + 3.005405476164763 * is_bqskit",
+        "expression_bytes": 113,
+        "free_parameters": 8,
+        "learned_state_bytes": 226,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.003187889676860572,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.74122199968475,
+        "primary": "log_mae",
+        "primary_error": 1.3858757104820103,
+        "rmse": 37.20522054488641
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.1480182066869036,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.6574761800906626,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.24797851031991933,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.7708516833378416,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.1050539719747254,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.4507288480069827,
+        "execution_status": "complete",
+        "expression": "p0 * pilot_seconds + p1 * pilot_gates + p2 * pilot_depth + p3 * qubits + p4 * load_seconds + p5 * is_tket + p6 * is_bqskit + p7",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.08695629064250655,
+          "p1": 0.00010041946514683524,
+          "p2": 2.0562927660599105e-05,
+          "p3": -0.0006075871933271399,
+          "p4": -0.06365251961044285,
+          "p5": 0.25060448341630825,
+          "p6": 3.0054055100817116,
+          "p7": 0.007683038250477684
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.02580530591537037,
+            "is_tket": -0.2542419723743547,
+            "load_seconds": -0.5018336225051868,
+            "pilot_depth": -0.5744070404304111,
+            "pilot_gates": -0.6065815464802761,
+            "pilot_seconds": -0.6047160630122167,
+            "qubits": -0.514668725983711
+          },
+          "mean": -1.2974631885276247,
+          "p90_abs": 3.5631846028894087,
+          "std": 4.280512982510215
+        },
+        "rule_id": "full-comparison-v5--P100-031--direct_deepseek-rule-1",
+        "rule_sha256": "e8d6181f1292385ccae3791c503c72153f3ff94cb2416a89371ebb001bbfd357",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-0.08695629064250655 * pilot_seconds + 0.00010041946514683524 * pilot_gates + 2.0562927660599105e-05 * pilot_depth + -0.0006075871933271399 * qubits + -0.06365251961044285 * load_seconds + 0.25060448341630825 * is_tket + 3.0054055100817116 * is_bqskit + 0.007683038250477684",
+          "expression_bytes": 127,
+          "free_parameters": 8,
+          "learned_state_bytes": 227,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.9843007248789235,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 * pilot_seconds + p1 * pilot_gates + p2 * pilot_depth + p3 * qubits + p4 * load_seconds + p5 * is_tket + p6 * is_bqskit + p7",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--direct_deepseek-rule-1",
+      "rule_sha256": "e8d6181f1292385ccae3791c503c72153f3ff94cb2416a89371ebb001bbfd357",
+      "run_id": "full-comparison-v5--P100-031--direct_deepseek",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-0.08695629064250655 * pilot_seconds + 0.00010041946514683524 * pilot_gates + 2.0562927660599105e-05 * pilot_depth + -0.0006075871933271399 * qubits + -0.06365251961044285 * load_seconds + 0.25060448341630825 * is_tket + 3.0054055100817116 * is_bqskit + 0.007683038250477684",
+        "expression_bytes": 127,
+        "free_parameters": 8,
+        "learned_state_bytes": 227,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0031878906146715676,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.741223320449754,
+        "primary": "log_mae",
+        "primary_error": 1.3858774712236333,
+        "rmse": 37.20522107378362
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.1480202919597027,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.6574782680838929,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.24798030682492,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.7708531402135295,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.1050553490361206,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.450729481134387,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * pilot_seconds + p2 * pilot_gates + p3 * pilot_depth + p4 * qubits + p5 * load_seconds + p6 * is_tket + p7 * is_bqskit",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.00768305568788419,
+          "p1": -0.08695771918657584,
+          "p2": 0.00010042017851894648,
+          "p3": 2.0563208887128666e-05,
+          "p4": -0.0006075885414182128,
+          "p5": -0.06365338539792356,
+          "p6": 0.2506040623587375,
+          "p7": 3.0054006001273117
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.025804777157781317,
+            "is_tket": -0.25424177309473794,
+            "load_seconds": -0.5018334956428593,
+            "pilot_depth": -0.5744068475984816,
+            "pilot_gates": -0.6065813581246003,
+            "pilot_seconds": -0.6047158742003456,
+            "qubits": -0.5146686767397449
+          },
+          "mean": -1.2974645864909793,
+          "p90_abs": 3.563189471327381,
+          "std": 4.280512652650614
+        },
+        "rule_id": "full-comparison-v5--P100-031--best_of_n-rule-2",
+        "rule_sha256": "69cdb63119e6525c03f264961d88f50d184b387971d150005f2085ac911ee013",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.00768305568788419 + -0.08695771918657584 * pilot_seconds + 0.00010042017851894648 * pilot_gates + 2.0563208887128666e-05 * pilot_depth + -0.0006075885414182128 * qubits + -0.06365338539792356 * load_seconds + 0.2506040623587375 * is_tket + 3.0054006001273117 * is_bqskit",
+          "expression_bytes": 127,
+          "free_parameters": 8,
+          "learned_state_bytes": 225,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.9843013196974022,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * pilot_seconds + p2 * pilot_gates + p3 * pilot_depth + p4 * qubits + p5 * load_seconds + p6 * is_tket + p7 * is_bqskit",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--best_of_n-rule-2",
+      "rule_sha256": "69cdb63119e6525c03f264961d88f50d184b387971d150005f2085ac911ee013",
+      "run_id": "full-comparison-v5--P100-031--best_of_n",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.00768305568788419 + -0.08695771918657584 * pilot_seconds + 0.00010042017851894648 * pilot_gates + 2.0563208887128666e-05 * pilot_depth + -0.0006075885414182128 * qubits + -0.06365338539792356 * load_seconds + 0.2506040623587375 * is_tket + 3.0054006001273117 * is_bqskit",
+        "expression_bytes": 127,
+        "free_parameters": 8,
+        "learned_state_bytes": 225,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.003187916831214308,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 8.741232970318825,
+        "primary": "log_mae",
+        "primary_error": 1.385889687949305,
+        "rmse": 37.205220990314444
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.1480362781996292,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.6574944672171739,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 0.24798930975762046,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.7708617770250359,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.105066607547066,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 1.450738495308047,
+        "execution_status": "complete",
+        "expression": "p0 + p1*is_bqskit + p2*pilot_seconds + p3*pilot_gates + p4*pilot_depth + p5*qubits + p6*load_seconds + p7*is_tket",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-3",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.0076832064146030235,
+          "p1": 3.0053610371485866,
+          "p2": -0.08696787565640322,
+          "p3": 0.0001004281921526617,
+          "p4": 2.056196181790772e-05,
+          "p5": -0.0006076235751216433,
+          "p6": -0.06363175824462576,
+          "p7": 0.25060067014281334
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.025800509858676383,
+            "is_tket": -0.25424017519334113,
+            "load_seconds": -0.5018324476687723,
+            "pilot_depth": -0.5744052776850195,
+            "pilot_gates": -0.6065798153512671,
+            "pilot_seconds": -0.6047143293743175,
+            "qubits": -0.5146682451727743
+          },
+          "mean": -1.297475736072744,
+          "p90_abs": 3.5632289507113297,
+          "std": 4.280509798057816
+        },
+        "rule_id": "full-comparison-v5--P100-031--tool_agent-rule-1",
+        "rule_sha256": "b1af6bf1617284b96cb3aaae899bcbced9237025065f481995f76cff9d71909b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.0076832064146030235 + 3.0053610371485866 * is_bqskit + -0.08696787565640322 * pilot_seconds + 0.0001004281921526617 * pilot_gates + 2.056196181790772e-05 * pilot_depth + -0.0006076235751216433 * qubits + -0.06363175824462576 * load_seconds + 0.25060067014281334 * is_tket",
+          "expression_bytes": 113,
+          "free_parameters": 8,
+          "learned_state_bytes": 226,
+          "literal_state_bytes": 0,
+          "nodes": 59,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 14
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 0.9843066612673708,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*is_bqskit + p2*pilot_seconds + p3*pilot_gates + p4*pilot_depth + p5*qubits + p6*load_seconds + p7*is_tket",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--tool_agent-rule-1",
+      "rule_sha256": "b1af6bf1617284b96cb3aaae899bcbced9237025065f481995f76cff9d71909b",
+      "run_id": "full-comparison-v5--P100-031--tool_agent",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.0076832064146030235 + 3.0053610371485866 * is_bqskit + -0.08696787565640322 * pilot_seconds + 0.0001004281921526617 * pilot_gates + 2.056196181790772e-05 * pilot_depth + -0.0006076235751216433 * qubits + -0.06363175824462576 * load_seconds + 0.25060067014281334 * is_tket",
+        "expression_bytes": 113,
+        "free_parameters": 8,
+        "learned_state_bytes": 226,
+        "literal_state_bytes": 0,
+        "nodes": 59,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 14
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.003188157452077679,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 9.932825580212286,
+        "primary": "log_mae",
+        "primary_error": 1.8600455527686435,
+        "rmse": 21.635125367127205
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.8734034793900285,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.9215875119140786,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 1.4549659132581312,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.685247633224288,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.3650232260566906,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.0016160162022687,
+        "execution_status": "complete",
+        "expression": "p0+p1*(pilot_depth*is_bqskit)+p2*(tanh((pilot_depth-9591.858974358975)/52024.561805156736))",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 4.612418966046488,
+          "p1": 0.07155226871366116,
+          "p2": 23.90033270643865
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.47523222136249377,
+            "is_tket": -0.46953938697434877,
+            "load_seconds": -0.25874793061514545,
+            "pilot_depth": -0.4916621297233987,
+            "pilot_gates": -0.4606028467068378,
+            "pilot_seconds": -0.462918492647893,
+            "qubits": 0.05448248187089648
+          },
+          "mean": 0.41726362458688165,
+          "p90_abs": 7.380267208234257,
+          "std": 4.672298026982027
+        },
+        "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-1",
+        "rule_sha256": "e711801050d5f3ecb06ec15cfefd989f3b208eb00c80ccd9c87f3708f0c90dea",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "4.612418966046488 + 0.07155226871366116 * (pilot_depth * is_bqskit) + 23.90033270643865 * tanh((pilot_depth - 9591.858974358975) / 52024.561805156736)",
+          "expression_bytes": 91,
+          "free_parameters": 3,
+          "learned_state_bytes": 77,
+          "literal_state_bytes": 35,
+          "nodes": 32,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 1.9246007543414994,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(pilot_depth*is_bqskit)+p2*(tanh((pilot_depth-9591.858974358975)/52024.561805156736))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-1",
+      "rule_sha256": "e711801050d5f3ecb06ec15cfefd989f3b208eb00c80ccd9c87f3708f0c90dea",
+      "run_id": "full-comparison-v5--P100-031--symbolic_control",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "4.612418966046488 + 0.07155226871366116 * (pilot_depth * is_bqskit) + 23.90033270643865 * tanh((pilot_depth - 9591.858974358975) / 52024.561805156736)",
+        "expression_bytes": 91,
+        "free_parameters": 3,
+        "learned_state_bytes": 77,
+        "literal_state_bytes": 35,
+        "nodes": 32,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.2530454568626801,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 15.444086763539199,
+        "primary": "log_mae",
+        "primary_error": 1.9842243878236439,
+        "rmse": 56.33721959554488
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 1.8525878586707194,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.9041758456740938,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 1.8675495470320378,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 1.9317854616846786,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.3650232260566906,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 2.4118864434952076,
+        "execution_status": "complete",
+        "expression": "p0+p1*(pilot_gates*is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.7391827661641772,
+          "p1": 0.052914917351684625
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.4301516298706825,
+            "is_tket": -0.3290573218446345,
+            "load_seconds": -0.09387230620624296,
+            "pilot_depth": -0.3097312468917554,
+            "pilot_gates": -0.24999900440348202,
+            "pilot_seconds": -0.2571012978946264,
+            "qubits": 0.23340683604534368
+          },
+          "mean": 1.7662755306675089,
+          "p90_abs": 5.976546352329115,
+          "std": 9.20745987389754
+        },
+        "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-3",
+        "rule_sha256": "bd62e352afc3be7ccf6221f235f84088884129017275ecb766d91d44c040fa5b",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.7391827661641772 + 0.052914917351684625 * (pilot_gates * is_bqskit)",
+          "expression_bytes": 29,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 0,
+          "nodes": 15,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 3
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 2.4140958548244,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(pilot_gates*is_bqskit)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-3",
+      "rule_sha256": "bd62e352afc3be7ccf6221f235f84088884129017275ecb766d91d44c040fa5b",
+      "run_id": "full-comparison-v5--P100-031--symbolic_control",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.7391827661641772 + 0.052914917351684625 * (pilot_gates * is_bqskit)",
+        "expression_bytes": 29,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 0,
+        "nodes": 15,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 3
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.2584107953894666,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 17.800313036165058,
+        "primary": "log_mae",
+        "primary_error": 2.535261843307831,
+        "rmse": 38.92824034015835
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 2.5842317693012338,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.924002553859243,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 3.652796331017948,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 2.15025533630404,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.365023226056691,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 3.543911868362298,
+        "execution_status": "complete",
+        "expression": "p0+p1*(is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 3.5739213608202185,
+          "p1": 51.55024801953734
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.9814900749101771,
+            "is_tket": -0.5207950866168836,
+            "load_seconds": -0.24069571788365313,
+            "pilot_depth": -0.3243856723990987,
+            "pilot_gates": -0.32638820615066316,
+            "pilot_seconds": -0.326592943705365,
+            "qubits": -0.1644971233787893
+          },
+          "mean": 16.69805404175003,
+          "p90_abs": 53.08975757686428,
+          "std": 22.862317353969868
+        },
+        "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-2",
+        "rule_sha256": "bfbfb1f5b424cad6f09d566f05fa6198cfabf1c4fbeff15edd55a142dc8c4ebe",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "3.5739213608202185 + 51.55024801953734 * is_bqskit",
+          "expression_bytes": 17,
+          "free_parameters": 2,
+          "learned_state_bytes": 51,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 3.93112113215516,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(is_bqskit)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-031--symbolic_control-rule-2",
+      "rule_sha256": "bfbfb1f5b424cad6f09d566f05fa6198cfabf1c4fbeff15edd55a142dc8c4ebe",
+      "run_id": "full-comparison-v5--P100-031--symbolic_control",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "3.5739213608202185 + 51.55024801953734 * is_bqskit",
+        "expression_bytes": 17,
+        "free_parameters": 2,
+        "learned_state_bytes": 51,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0022936982882470125,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 17.800313036165058,
+        "primary": "log_mae",
+        "primary_error": 2.535261843307831,
+        "rmse": 38.92824034015835
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 2.5842317693012338,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 1.924002553859243,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 3.652796331017948,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 2.15025533630404,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.365023226056691,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 3.543911868362298,
+        "execution_status": "complete",
+        "expression": "p0+p1*(is_bqskit)",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 3.5739213608202185,
+          "p1": 51.55024801953734
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": 0.9814900749101771,
+            "is_tket": -0.5207950866168836,
+            "load_seconds": -0.24069571788365313,
+            "pilot_depth": -0.3243856723990987,
+            "pilot_gates": -0.32638820615066316,
+            "pilot_seconds": -0.326592943705365,
+            "qubits": -0.1644971233787893
+          },
+          "mean": 16.69805404175003,
+          "p90_abs": 53.08975757686428,
+          "std": 22.862317353969868
+        },
+        "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-2",
+        "rule_sha256": "00f1ab201ac7be49381ace14302c03956d4b23f32b437d394922bd049922bfb8",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "3.5739213608202185 + 51.55024801953734 * is_bqskit",
+          "expression_bytes": 17,
+          "free_parameters": 2,
+          "learned_state_bytes": 51,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 3.93112113215516,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(is_bqskit)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-2",
+      "rule_sha256": "00f1ab201ac7be49381ace14302c03956d4b23f32b437d394922bd049922bfb8",
+      "run_id": "full-comparison-v5--P100-031--principia_engine",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "3.5739213608202185 + 51.55024801953734 * is_bqskit",
+        "expression_bytes": 17,
+        "free_parameters": 2,
+        "learned_state_bytes": 51,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0022936982882470125,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 16.926818452407993,
+        "primary": "log_mae",
+        "primary_error": 3.1050585623183578,
+        "rmse": 37.39317979907545
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 3.1050585623183578,
+      "by_group": [
+        {
+          "error": 3.2580954640552733,
+          "group": "group-031a845daa743222fe1334ab",
+          "rows": 3
+        },
+        {
+          "error": 2.6283343525723177,
+          "group": "group-394e53c1befe4fb5f9520837",
+          "rows": 3
+        },
+        {
+          "error": 4.3266600257719885,
+          "group": "group-806602dcacbfc28d265ffab1",
+          "rows": 3
+        },
+        {
+          "error": 2.7281085438361474,
+          "group": "group-bb6632c6ca018948aeed4ace",
+          "rows": 26
+        },
+        {
+          "error": 2.584094425356062,
+          "group": "group-d3d460c2a9a133cb2bc21638",
+          "rows": 2
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 4.0511546171637836,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "pilot_seconds",
+          "qubits",
+          "pilot_gates",
+          "pilot_depth",
+          "load_seconds",
+          "is_tket",
+          "is_bqskit"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 17.4528342891572
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "is_bqskit": -0.26107216071677397,
+            "is_tket": -0.12309374563257636,
+            "load_seconds": -0.44947335050320575,
+            "pilot_depth": -0.504689053509291,
+            "pilot_gates": -0.5363200997142796,
+            "pilot_seconds": -0.5343943912269208,
+            "qubits": -0.4773610350474638
+          },
+          "mean": 15.111892564225803,
+          "p90_abs": 17.4464868134491,
+          "std": 4.5357336787978335
+        },
+        "rule_id": "full-comparison-v5--P100-031--mean_control-rule-1",
+        "rule_sha256": "dbb7f83ff37a4b4e771b598ce745ffe9084a5ef0f0103cae7bf96eda14584a10",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "17.4528342891572",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 24,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-031.compact.v2",
+        "train_error": 4.780829549544551,
+        "units": {
+          "inputs": {
+            "is_bqskit": "SDK indicator,elseStaq",
+            "is_tket": "SDK indicator",
+            "load_seconds": "Qiskit QASM loading seconds",
+            "pilot_depth": "Qiskit output two-qubit depth",
+            "pilot_gates": "Qiskit output two-qubit gate count",
+            "pilot_seconds": "seconds Qiskit calibration cost",
+            "qubits": "input qubit count"
+          },
+          "output": "seconds",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 37,
+        "fraction": 1.0,
+        "predicted": 37
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-031--mean_control-rule-1",
+      "rule_sha256": "dbb7f83ff37a4b4e771b598ce745ffe9084a5ef0f0103cae7bf96eda14584a10",
+      "run_id": "full-comparison-v5--P100-031--mean_control",
+      "scenario_id": "P100-031",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "17.4528342891572",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 24,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 37,
+        "ranking": false,
+        "samples": 37,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-031.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-031",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-031.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

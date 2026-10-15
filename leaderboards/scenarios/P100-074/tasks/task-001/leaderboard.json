@@ -1,0 +1,3393 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.003540075966157019
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.004198882961645722
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.007278766017407179
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.3658265710109845
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 61,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 61,
+        "wall_seconds": 0.15548304293770343
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-074--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 1,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 3.7489906549453735
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 224,
+        "structures": 1,
+        "wall_seconds": 19.536816754029132
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 2,
+        "structures": 1,
+        "wall_seconds": 5.671341122011654
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--direct_qwen",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 25,
+        "structures": 1,
+        "wall_seconds": 10.856766074080952
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 207,
+        "structures": 2,
+        "wall_seconds": 7.5728234549751505
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": null,
+      "rule_count": 2,
+      "run_id": "full-comparison-v5--P100-074--best_of_n",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 117,
+        "structures": 2,
+        "wall_seconds": 6.241569856065325
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-074--feedback_refinement",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 6,
+        "optimizer_evaluations": 40,
+        "structures": 2,
+        "wall_seconds": 13.061329365009442
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": null,
+      "rule_count": 2,
+      "run_id": "full-comparison-v5--P100-074--tool_agent",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 148,
+        "model_calls": 4,
+        "optimizer_evaluations": 131,
+        "structures": 77,
+        "wall_seconds": 78.29004983894993
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-074--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-074--tool_agent-rule-2",
+    "full-comparison-v5--P100-074--best_of_n-rule-1",
+    "full-comparison-v5--P100-074--direct_deepseek-rule-1",
+    "full-comparison-v5--P100-074--symbolic_control-rule-1",
+    "full-comparison-v5--P100-074--principia_engine-rule-3",
+    "full-comparison-v5--P100-074--symbolic_control-rule-3",
+    "full-comparison-v5--P100-074--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 57.07692416630799,
+        "primary": "mae",
+        "primary_error": 57.07692416630799,
+        "rmse": 84.79851433941913
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 19.04998028288744,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 95.10386804972855,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 193.1696159124778,
+        "execution_status": "complete",
+        "expression": "calibration_F6 + p0 * (time_min - 6.0) + p1 * (time_min - 6.0) * (time_min - 6.0) + p2 * concentration_uM * (time_min - 6.0) + p3 * concentration_uM * (time_min - 6.0) * (time_min - 6.0) + p4 * calibration_curvature * (time_min - 6.0) * (time_min - 6.0)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-4",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 11.078699903636275,
+          "p1": -0.4027720343809026,
+          "p2": 0.30905588480129237,
+          "p3": 0.10392224947467953,
+          "p4": 0.11486585932833895
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.6285690305243878,
+            "calibration_curvature": 0.6285690305243878,
+            "calibration_v6": -0.6285690305243877,
+            "concentration_uM": -0.6285690305243877,
+            "time_min": 0.6602435176512981
+          },
+          "mean": 93.56832324274664,
+          "p90_abs": 407.8905841660625,
+          "std": 218.94650797152522
+        },
+        "rule_id": "full-comparison-v5--P100-074--tool_agent-rule-2",
+        "rule_sha256": "71ad14babc29adbe431bab7297df4c06235d8873e742e979d6985b3e05b394a5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "calibration_F6 + 11.078699903636275 * (time_min - 6.0) + -0.4027720343809026 * (time_min - 6.0) * (time_min - 6.0) + 0.30905588480129237 * concentration_uM * (time_min - 6.0) + 0.10392224947467953 * concentration_uM * (time_min - 6.0) * (time_min - 6.0) + 0.11486585932833895 * calibration_curvature * (time_min - 6.0) * (time_min - 6.0)",
+          "expression_bytes": 253,
+          "free_parameters": 5,
+          "learned_state_bytes": 134,
+          "literal_state_bytes": 24,
+          "nodes": 91,
+          "numeric_literal_count": 8,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 24
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 74.66869468017029,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "calibration_F6 + p0 * (time_min - 6.0) + p1 * (time_min - 6.0) * (time_min - 6.0) + p2 * concentration_uM * (time_min - 6.0) + p3 * concentration_uM * (time_min - 6.0) * (time_min - 6.0) + p4 * calibration_curvature * (time_min - 6.0) * (time_min - 6.0)",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--tool_agent-rule-2",
+      "rule_sha256": "71ad14babc29adbe431bab7297df4c06235d8873e742e979d6985b3e05b394a5",
+      "run_id": "full-comparison-v5--P100-074--tool_agent",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "calibration_F6 + 11.078699903636275 * (time_min - 6.0) + -0.4027720343809026 * (time_min - 6.0) * (time_min - 6.0) + 0.30905588480129237 * concentration_uM * (time_min - 6.0) + 0.10392224947467953 * concentration_uM * (time_min - 6.0) * (time_min - 6.0) + 0.11486585932833895 * calibration_curvature * (time_min - 6.0) * (time_min - 6.0)",
+        "expression_bytes": 253,
+        "free_parameters": 5,
+        "learned_state_bytes": 134,
+        "literal_state_bytes": 24,
+        "nodes": 91,
+        "numeric_literal_count": 8,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 24
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.04644948076029898,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 114.15316052042314,
+        "primary": "mae",
+        "primary_error": 114.15316052042314,
+        "rmse": 140.64947157404228
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 131.45587535810327,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 96.85044568274303,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 77.6653520369582,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * calibration_F6 + p2 * time_min + p3 * concentration_uM + p4 * calibration_v6 + p5 * calibration_curvature + p6 * calibration_F6 * time_min + p7 * calibration_F6 * concentration_uM",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -77.9047505836928,
+          "p1": 4.963689056301417,
+          "p2": 2.9013352389608276,
+          "p3": 7.416782150877677,
+          "p4": 15.428015893601975,
+          "p5": -74.16102204390151,
+          "p6": 0.06292777150401004,
+          "p7": -0.5296463651798201
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.06194035546282815,
+            "calibration_curvature": 0.06194035546282815,
+            "calibration_v6": -0.06194035546282815,
+            "concentration_uM": -0.06194035546282815,
+            "time_min": -0.8196526524326068
+          },
+          "mean": 14.712568988192874,
+          "p90_abs": 138.34638576371057,
+          "std": 96.97635764312066
+        },
+        "rule_id": "full-comparison-v5--P100-074--best_of_n-rule-1",
+        "rule_sha256": "9ef230b3a21db26ad2dee574871295684de0dada77916cc669be5c7e3f31a82e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-77.9047505836928 + 4.963689056301417 * calibration_F6 + 2.9013352389608276 * time_min + 7.416782150877677 * concentration_uM + 15.428015893601975 * calibration_v6 + -74.16102204390151 * calibration_curvature + 0.06292777150401004 * calibration_F6 * time_min + -0.5296463651798201 * calibration_F6 * concentration_uM",
+          "expression_bytes": 189,
+          "free_parameters": 8,
+          "learned_state_bytes": 207,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 41.215201526833695,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * calibration_F6 + p2 * time_min + p3 * concentration_uM + p4 * calibration_v6 + p5 * calibration_curvature + p6 * calibration_F6 * time_min + p7 * calibration_F6 * concentration_uM",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--best_of_n-rule-1",
+      "rule_sha256": "9ef230b3a21db26ad2dee574871295684de0dada77916cc669be5c7e3f31a82e",
+      "run_id": "full-comparison-v5--P100-074--best_of_n",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-77.9047505836928 + 4.963689056301417 * calibration_F6 + 2.9013352389608276 * time_min + 7.416782150877677 * concentration_uM + 15.428015893601975 * calibration_v6 + -74.16102204390151 * calibration_curvature + 0.06292777150401004 * calibration_F6 * time_min + -0.5296463651798201 * calibration_F6 * concentration_uM",
+        "expression_bytes": 189,
+        "free_parameters": 8,
+        "learned_state_bytes": 207,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.05522918389819818,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 125.84075290697638,
+        "primary": "mae",
+        "primary_error": 125.84075290697638,
+        "rmse": 216.45762790575927
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 34.692715116278706,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 216.98879069767403,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 108.12716279069404,
+        "execution_status": "complete",
+        "expression": "calibration_F6 + calibration_v6*(time_min-6) + 0.5*calibration_curvature*(time_min-6)**2",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {},
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": 0.17304674811138573,
+            "calibration_curvature": -0.17304674811138576,
+            "calibration_v6": 0.1730467481113858,
+            "concentration_uM": 0.17304674811138576,
+            "time_min": 0.8218970006357195
+          },
+          "mean": 106.82748837208887,
+          "p90_abs": 294.7839374999862,
+          "std": 138.43526975953816
+        },
+        "rule_id": "full-comparison-v5--P100-074--direct_deepseek-rule-1",
+        "rule_sha256": "47148723c54b86a6d9223084e1b917c7b0139de1ba5d2c24fc5d69b5f3ad5280",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6) + 0.5 * calibration_curvature * (time_min - 6) ** 2",
+          "expression_bytes": 88,
+          "free_parameters": 0,
+          "learned_state_bytes": 2,
+          "literal_state_bytes": 6,
+          "nodes": 31,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 685.4463076395353,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "calibration_F6 + calibration_v6*(time_min-6) + 0.5*calibration_curvature*(time_min-6)**2",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--direct_deepseek-rule-1",
+      "rule_sha256": "47148723c54b86a6d9223084e1b917c7b0139de1ba5d2c24fc5d69b5f3ad5280",
+      "run_id": "full-comparison-v5--P100-074--direct_deepseek",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6) + 0.5 * calibration_curvature * (time_min - 6) ** 2",
+        "expression_bytes": 88,
+        "free_parameters": 0,
+        "learned_state_bytes": 2,
+        "literal_state_bytes": 6,
+        "nodes": 31,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11996416692717665,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 125.84075290697638,
+        "primary": "mae",
+        "primary_error": 125.84075290697638,
+        "rmse": 216.45762790575927
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 34.692715116278706,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 216.98879069767403,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 108.12716279069404,
+        "execution_status": "complete",
+        "expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "direct_qwen",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Qwen/Qwen3.8-27B"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 1.0
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": 0.17304674811138573,
+            "calibration_curvature": -0.17304674811138576,
+            "calibration_v6": 0.1730467481113858,
+            "concentration_uM": 0.17304674811138576,
+            "time_min": 0.8218970006357195
+          },
+          "mean": 106.82748837208887,
+          "p90_abs": 294.7839374999862,
+          "std": 138.43526975953816
+        },
+        "rule_id": "full-comparison-v5--P100-074--direct_qwen-rule-1",
+        "rule_sha256": "dcd039eb12395c342676d27601cb8b5162d16dc0df75756aa11fc35476024edd",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+          "expression_bytes": 104,
+          "free_parameters": 1,
+          "learned_state_bytes": 11,
+          "literal_state_bytes": 10,
+          "nodes": 31,
+          "numeric_literal_count": 4,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 685.4463076395353,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+      "method_id": "direct_qwen",
+      "model_ids": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--direct_qwen-rule-1",
+      "rule_sha256": "dcd039eb12395c342676d27601cb8b5162d16dc0df75756aa11fc35476024edd",
+      "run_id": "full-comparison-v5--P100-074--direct_qwen",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+        "expression_bytes": 104,
+        "free_parameters": 1,
+        "learned_state_bytes": 11,
+        "literal_state_bytes": 10,
+        "nodes": 31,
+        "numeric_literal_count": 4,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.11996416692717665,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 129.22135106027923,
+        "primary": "mae",
+        "primary_error": 129.22135106027923,
+        "rmse": 165.50132751384635
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 167.45085381814505,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 90.99184830241342,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 72.71909182612261,
+        "execution_status": "complete",
+        "expression": "p0+p1*(time_min*calibration_v6)+p2*(time_min*calibration_F6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 29.93626194938292,
+          "p1": 0.9486359322305254,
+          "p2": -0.03124566597238829
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.37401230176408184,
+            "calibration_curvature": 0.3740123017640818,
+            "calibration_v6": -0.3740123017640818,
+            "concentration_uM": -0.37401230176408173,
+            "time_min": -0.27440040373897984
+          },
+          "mean": -67.24301508254948,
+          "p90_abs": 160.86408837318186,
+          "std": 60.8915872168927
+        },
+        "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-1",
+        "rule_sha256": "c2ffb47d9f2d01ddd00f8f7ded2822610a1fa8809304ae82a8a614800956b28f",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "29.93626194938292 + 0.9486359322305254 * (time_min * calibration_v6) + -0.03124566597238829 * (time_min * calibration_F6)",
+          "expression_bytes": 60,
+          "free_parameters": 3,
+          "learned_state_bytes": 79,
+          "literal_state_bytes": 0,
+          "nodes": 27,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 49.274802919859816,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(time_min*calibration_v6)+p2*(time_min*calibration_F6)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-1",
+      "rule_sha256": "c2ffb47d9f2d01ddd00f8f7ded2822610a1fa8809304ae82a8a614800956b28f",
+      "run_id": "full-comparison-v5--P100-074--symbolic_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "29.93626194938292 + 0.9486359322305254 * (time_min * calibration_v6) + -0.03124566597238829 * (time_min * calibration_F6)",
+        "expression_bytes": 60,
+        "free_parameters": 3,
+        "learned_state_bytes": 79,
+        "literal_state_bytes": 0,
+        "nodes": 27,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.024544616569262104,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 129.22135106027923,
+        "primary": "mae",
+        "primary_error": 129.22135106027923,
+        "rmse": 165.50132751384635
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 167.45085381814505,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 90.99184830241342,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 72.71909182612261,
+        "execution_status": "complete",
+        "expression": "p0+p1*(time_min*calibration_v6)+p2*(time_min*calibration_F6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 29.93626194938292,
+          "p1": 0.9486359322305254,
+          "p2": -0.03124566597238829
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.37401230176408184,
+            "calibration_curvature": 0.3740123017640818,
+            "calibration_v6": -0.3740123017640818,
+            "concentration_uM": -0.37401230176408173,
+            "time_min": -0.27440040373897984
+          },
+          "mean": -67.24301508254948,
+          "p90_abs": 160.86408837318186,
+          "std": 60.8915872168927
+        },
+        "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-3",
+        "rule_sha256": "45bba560f4c5ec05b455cde5302177688392f90e4392127b2281f2bc41410586",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "29.93626194938292 + 0.9486359322305254 * (time_min * calibration_v6) + -0.03124566597238829 * (time_min * calibration_F6)",
+          "expression_bytes": 60,
+          "free_parameters": 3,
+          "learned_state_bytes": 79,
+          "literal_state_bytes": 0,
+          "nodes": 27,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 6
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 49.274802919859816,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(time_min*calibration_v6)+p2*(time_min*calibration_F6)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-3",
+      "rule_sha256": "45bba560f4c5ec05b455cde5302177688392f90e4392127b2281f2bc41410586",
+      "run_id": "full-comparison-v5--P100-074--principia_engine",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "29.93626194938292 + 0.9486359322305254 * (time_min * calibration_v6) + -0.03124566597238829 * (time_min * calibration_F6)",
+        "expression_bytes": 60,
+        "free_parameters": 3,
+        "learned_state_bytes": 79,
+        "literal_state_bytes": 0,
+        "nodes": 27,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 6
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.024544616569262104,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 129.5476342112707,
+        "primary": "mae",
+        "primary_error": 129.5476342112707,
+        "rmse": 166.3028818053776
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 168.25101602805685,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 90.84425239448454,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 67.04606706404024,
+        "execution_status": "complete",
+        "expression": "p0 + p1 * (time_min * calibration_v6) + p2 * (calibration_F6 * (time_min - 6) / 6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "engine-round-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 24.02511768146325,
+          "p1": 1.005635196060403,
+          "p2": -0.2967783873180357
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.24841771251116881,
+            "calibration_curvature": 0.24841771251116884,
+            "calibration_v6": -0.24841771251116881,
+            "concentration_uM": -0.24841771251116881,
+            "time_min": -0.4157285724076547
+          },
+          "mean": -59.773374093661005,
+          "p90_abs": 146.38816848643768,
+          "std": 59.349008323766036
+        },
+        "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-1",
+        "rule_sha256": "7bf6d847747e490812701436a6395d2b5f1701b84492678f92e08aeb7030ef87",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "24.02511768146325 + 1.005635196060403 * (time_min * calibration_v6) + -0.2967783873180357 * (calibration_F6 * (time_min - 6) / 6)",
+          "expression_bytes": 82,
+          "free_parameters": 3,
+          "learned_state_bytes": 77,
+          "literal_state_bytes": 2,
+          "nodes": 33,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 45.80501631883335,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1 * (time_min * calibration_v6) + p2 * (calibration_F6 * (time_min - 6) / 6)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-1",
+      "rule_sha256": "7bf6d847747e490812701436a6395d2b5f1701b84492678f92e08aeb7030ef87",
+      "run_id": "full-comparison-v5--P100-074--principia_engine",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "24.02511768146325 + 1.005635196060403 * (time_min * calibration_v6) + -0.2967783873180357 * (calibration_F6 * (time_min - 6) / 6)",
+        "expression_bytes": 82,
+        "free_parameters": 3,
+        "learned_state_bytes": 77,
+        "literal_state_bytes": 2,
+        "nodes": 33,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.026151725359689786,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 139.15503709768237,
+        "primary": "mae",
+        "primary_error": 139.15503709768237,
+        "rmse": 176.22923710225083
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 175.14541415545492,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 103.16466003990982,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 88.26705471430859,
+        "execution_status": "complete",
+        "expression": "p0+p1*(time_min*calibration_v6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 36.09038400969086,
+          "p1": 0.7345991726692022
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.5501765169153957,
+            "calibration_curvature": 0.5501765169153957,
+            "calibration_v6": -0.5501765169153956,
+            "concentration_uM": -0.5501765169153957,
+            "time_min": -0.3807494764653931
+          },
+          "mean": -85.90175240550961,
+          "p90_abs": 196.42538360064617,
+          "std": 69.15612947161928
+        },
+        "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-3",
+        "rule_sha256": "d0c6498f24968520baf756ce9e7858f17e888908ab076ae1904f9e035f67f213",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "36.09038400969086 + 0.7345991726692022 * (time_min * calibration_v6)",
+          "expression_bytes": 31,
+          "free_parameters": 2,
+          "learned_state_bytes": 51,
+          "literal_state_bytes": 0,
+          "nodes": 15,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 3
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 55.81509896098205,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(time_min*calibration_v6)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-3",
+      "rule_sha256": "d0c6498f24968520baf756ce9e7858f17e888908ab076ae1904f9e035f67f213",
+      "run_id": "full-comparison-v5--P100-074--symbolic_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "36.09038400969086 + 0.7345991726692022 * (time_min * calibration_v6)",
+        "expression_bytes": 31,
+        "free_parameters": 2,
+        "learned_state_bytes": 51,
+        "literal_state_bytes": 0,
+        "nodes": 15,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 3
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.019106679926785757,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 143.575596745492,
+        "primary": "mae",
+        "primary_error": 143.575596745492,
+        "rmse": 183.01559929805086
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 160.72053772531362,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 126.43065576567037,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 183.96656070544273,
+        "execution_status": "complete",
+        "expression": "calibration_F6 + p0 * (time_min - 6.0) + p1 * (time_min - 6.0) * (time_min - 6.0) + p2 * concentration_uM * (time_min - 6.0) + p3 * concentration_uM * (time_min - 6.0) * (time_min - 6.0)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "tool_agent",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "tool-3",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 11.078700023049059,
+          "p1": -0.21524887576725737,
+          "p2": 0.3090558803942934,
+          "p3": 0.016256859354972602
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.8731752638793082,
+            "calibration_curvature": 0.8731752638793083,
+            "calibration_v6": -0.8731752638793082,
+            "concentration_uM": -0.8731752638793083,
+            "time_min": -0.3368702351080955
+          },
+          "mean": -168.89379202729106,
+          "p90_abs": 471.3378732336047,
+          "std": 206.6238999292789
+        },
+        "rule_id": "full-comparison-v5--P100-074--tool_agent-rule-1",
+        "rule_sha256": "4f4271f9caf2a3ea9f5bdcfdca541fd23fca2659ce358c6f3c9da0d23fc01921",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "calibration_F6 + 11.078700023049059 * (time_min - 6.0) + -0.21524887576725737 * (time_min - 6.0) * (time_min - 6.0) + 0.3090558803942934 * concentration_uM * (time_min - 6.0) + 0.016256859354972602 * concentration_uM * (time_min - 6.0) * (time_min - 6.0)",
+          "expression_bytes": 186,
+          "free_parameters": 4,
+          "learned_state_bytes": 108,
+          "literal_state_bytes": 18,
+          "nodes": 69,
+          "numeric_literal_count": 6,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 18
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 119.53787286062334,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "calibration_F6 + p0 * (time_min - 6.0) + p1 * (time_min - 6.0) * (time_min - 6.0) + p2 * concentration_uM * (time_min - 6.0) + p3 * concentration_uM * (time_min - 6.0) * (time_min - 6.0)",
+      "method_id": "tool_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--tool_agent-rule-1",
+      "rule_sha256": "4f4271f9caf2a3ea9f5bdcfdca541fd23fca2659ce358c6f3c9da0d23fc01921",
+      "run_id": "full-comparison-v5--P100-074--tool_agent",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "calibration_F6 + 11.078700023049059 * (time_min - 6.0) + -0.21524887576725737 * (time_min - 6.0) * (time_min - 6.0) + 0.3090558803942934 * concentration_uM * (time_min - 6.0) + 0.016256859354972602 * concentration_uM * (time_min - 6.0) * (time_min - 6.0)",
+        "expression_bytes": 186,
+        "free_parameters": 4,
+        "learned_state_bytes": 108,
+        "literal_state_bytes": 18,
+        "nodes": 69,
+        "numeric_literal_count": 6,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 18
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01427118652243597,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 154.00343052072333,
+        "primary": "mae",
+        "primary_error": 154.00343052072333,
+        "rmse": 193.92111049727853
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 203.21831401372435,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 104.78854702772232,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 88.52368750600269,
+        "execution_status": "complete",
+        "expression": "calibration_F6 + p0 * calibration_v6 * (time_min - 6.0) + p1 * calibration_curvature * (time_min - 6.0) ** 2 + p2 * calibration_v6 * (time_min - 6.0) ** 2 / (p3 + concentration_uM) + p4 * (time_min - 6.0) ** 2 * sqrt(calibration_F6 + p5)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.8954499882933211,
+          "p1": 0.01273799853835839,
+          "p2": 0.005369287919589638,
+          "p3": -0.42125692320134694,
+          "p4": -0.013586113417822794,
+          "p5": -1.4406399796718445
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.11289422717409045,
+            "calibration_curvature": 0.11289422717409042,
+            "calibration_v6": -0.11289422717409042,
+            "concentration_uM": -0.11289422717409042,
+            "time_min": -0.5748115631849863
+          },
+          "mean": -88.5236875060027,
+          "p90_abs": 170.21157512220083,
+          "std": 58.31592159404666
+        },
+        "rule_id": "full-comparison-v5--P100-074--direct_glm-rule-1",
+        "rule_sha256": "3763543773fa8aaaa9e4158f7126eae798f76bb053eba8bc5159ab40e97cedbb",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "calibration_F6 + 0.8954499882933211 * calibration_v6 * (time_min - 6.0) + 0.01273799853835839 * calibration_curvature * (time_min - 6.0) ** 2 + 0.005369287919589638 * calibration_v6 * (time_min - 6.0) ** 2 / (-0.42125692320134694 + concentration_uM) + -0.013586113417822794 * (time_min - 6.0) ** 2 * sqrt(calibration_F6 + -1.4406399796718445)",
+          "expression_bytes": 237,
+          "free_parameters": 6,
+          "learned_state_bytes": 165,
+          "literal_state_bytes": 15,
+          "nodes": 87,
+          "numeric_literal_count": 7,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 23
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 46.950359438055926,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "calibration_F6 + p0 * calibration_v6 * (time_min - 6.0) + p1 * calibration_curvature * (time_min - 6.0) ** 2 + p2 * calibration_v6 * (time_min - 6.0) ** 2 / (p3 + concentration_uM) + p4 * (time_min - 6.0) ** 2 * sqrt(calibration_F6 + p5)",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--direct_glm-rule-1",
+      "rule_sha256": "3763543773fa8aaaa9e4158f7126eae798f76bb053eba8bc5159ab40e97cedbb",
+      "run_id": "full-comparison-v5--P100-074--direct_glm",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "calibration_F6 + 0.8954499882933211 * calibration_v6 * (time_min - 6.0) + 0.01273799853835839 * calibration_curvature * (time_min - 6.0) ** 2 + 0.005369287919589638 * calibration_v6 * (time_min - 6.0) ** 2 / (-0.42125692320134694 + concentration_uM) + -0.013586113417822794 * (time_min - 6.0) ** 2 * sqrt(calibration_F6 + -1.4406399796718445)",
+        "expression_bytes": 237,
+        "free_parameters": 6,
+        "learned_state_bytes": 165,
+        "literal_state_bytes": 15,
+        "nodes": 87,
+        "numeric_literal_count": 7,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 23
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.04179585622758125,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 158.41744805624666,
+        "primary": "mae",
+        "primary_error": 158.41744805624666,
+        "rmse": 197.66914917392901
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 195.45812311844244,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 121.37677299405085,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 306.5976329356409,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 242.75339446511626
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.8072086175688812,
+            "calibration_curvature": 0.8072086175688812,
+            "calibration_v6": -0.8072086175688814,
+            "concentration_uM": -0.8072086175688812,
+            "time_min": -0.533109647778698
+          },
+          "mean": -258.54461716279076,
+          "p90_abs": 758.2956055348837,
+          "std": 325.31178561380784
+        },
+        "rule_id": "full-comparison-v5--P100-074--mean_control-rule-1",
+        "rule_sha256": "e358aabbd5d62be42108ddc2b12f04951e7878e670d981d08d6225fe4e7529af",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "242.75339446511626",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 251.41194463558676,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--mean_control-rule-1",
+      "rule_sha256": "e358aabbd5d62be42108ddc2b12f04951e7878e670d981d08d6225fe4e7529af",
+      "run_id": "full-comparison-v5--P100-074--mean_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "242.75339446511626",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 175.97920439593446,
+        "primary": "mae",
+        "primary_error": 175.97920439593446,
+        "rmse": 221.1108286652528
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 211.65235540098078,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 140.3060533908881,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 170.9173084150906,
+        "execution_status": "complete",
+        "expression": "p0+p1*(calibration_v6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 23.40781657234669,
+          "p1": 18.71232743898469
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.125385095481869,
+            "calibration_curvature": 0.125385095481869,
+            "calibration_v6": -0.12538509548186896,
+            "concentration_uM": -0.12538509548186896,
+            "time_min": -0.8960404293522997
+          },
+          "mean": -75.30694509076402,
+          "p90_abs": 347.3125,
+          "std": 193.54802056442637
+        },
+        "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-2",
+        "rule_sha256": "7f495f930a8ef51b1e3423278428c603241daf2da2de31ceda013a59fc451c8d",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "23.40781657234669 + 18.71232743898469 * calibration_v6",
+          "expression_bytes": 22,
+          "free_parameters": 2,
+          "learned_state_bytes": 50,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 78.35661948778579,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(calibration_v6)",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--symbolic_control-rule-2",
+      "rule_sha256": "7f495f930a8ef51b1e3423278428c603241daf2da2de31ceda013a59fc451c8d",
+      "run_id": "full-comparison-v5--P100-074--symbolic_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "23.40781657234669 + 18.71232743898469 * calibration_v6",
+        "expression_bytes": 22,
+        "free_parameters": 2,
+        "learned_state_bytes": 50,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018283633105910455,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 175.97920439593446,
+        "primary": "mae",
+        "primary_error": 175.97920439593446,
+        "rmse": 221.1108286652528
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 211.65235540098078,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 140.3060533908881,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 170.9173084150906,
+        "execution_status": "complete",
+        "expression": "p0+p1*(calibration_v6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 23.40781657234669,
+          "p1": 18.71232743898469
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.125385095481869,
+            "calibration_curvature": 0.125385095481869,
+            "calibration_v6": -0.12538509548186896,
+            "concentration_uM": -0.12538509548186896,
+            "time_min": -0.8960404293522997
+          },
+          "mean": -75.30694509076402,
+          "p90_abs": 347.3125,
+          "std": 193.54802056442637
+        },
+        "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-2",
+        "rule_sha256": "61878b47940a3242ef87cececf0e7643f29eebd54c9c4594f73ef48ac1d75cde",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "23.40781657234669 + 18.71232743898469 * calibration_v6",
+          "expression_bytes": 22,
+          "free_parameters": 2,
+          "learned_state_bytes": 50,
+          "literal_state_bytes": 0,
+          "nodes": 11,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 2
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 78.35661948778579,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(calibration_v6)",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-2",
+      "rule_sha256": "61878b47940a3242ef87cececf0e7643f29eebd54c9c4594f73ef48ac1d75cde",
+      "run_id": "full-comparison-v5--P100-074--principia_engine",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "23.40781657234669 + 18.71232743898469 * calibration_v6",
+        "expression_bytes": 22,
+        "free_parameters": 2,
+        "learned_state_bytes": 50,
+        "literal_state_bytes": 0,
+        "nodes": 11,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 2
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.018283633105910455,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 192.3503046511628,
+        "primary": "mae",
+        "primary_error": 192.3503046511628,
+        "rmse": 210.180277497016
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 174.33423255813955,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 210.36637674418603,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 233.66386046511633,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-074--tree_control-rule-1",
+        "rule_sha256": "dc99c4cecf00d3efd768d400b432c01e33dce9d78dd2bc3b1434eac4d15f3b54",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 121,
+          "weighted_operator_count": 121
+        },
+        "task_id": "P100-074.compact.v2",
+        "tree": {
+          "feature": [
+            2,
+            4,
+            0,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            0,
+            1,
+            1,
+            -2,
+            -2,
+            -2,
+            1,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            0,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            4,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            3,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            1,
+            -2,
+            -2,
+            1,
+            -2,
+            -2
+          ],
+          "features": [
+            "concentration_uM",
+            "time_min",
+            "calibration_F6",
+            "calibration_v6",
+            "calibration_curvature"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            -1,
+            -1,
+            9,
+            -1,
+            -1,
+            12,
+            13,
+            -1,
+            -1,
+            -1,
+            17,
+            18,
+            19,
+            -1,
+            -1,
+            22,
+            -1,
+            -1,
+            25,
+            26,
+            -1,
+            -1,
+            29,
+            -1,
+            -1,
+            32,
+            33,
+            34,
+            35,
+            -1,
+            -1,
+            38,
+            -1,
+            -1,
+            41,
+            42,
+            -1,
+            -1,
+            45,
+            -1,
+            -1,
+            48,
+            49,
+            50,
+            -1,
+            -1,
+            53,
+            -1,
+            -1,
+            56,
+            57,
+            -1,
+            -1,
+            60,
+            -1,
+            -1,
+            63,
+            64,
+            65,
+            66,
+            67,
+            -1,
+            -1,
+            -1,
+            71,
+            -1,
+            73,
+            -1,
+            -1,
+            76,
+            77,
+            78,
+            -1,
+            -1,
+            81,
+            -1,
+            -1,
+            84,
+            85,
+            -1,
+            -1,
+            88,
+            -1,
+            -1,
+            91,
+            92,
+            93,
+            94,
+            -1,
+            -1,
+            97,
+            -1,
+            -1,
+            100,
+            101,
+            -1,
+            -1,
+            104,
+            -1,
+            -1,
+            107,
+            108,
+            109,
+            -1,
+            -1,
+            112,
+            -1,
+            -1,
+            115,
+            116,
+            -1,
+            -1,
+            119,
+            -1,
+            -1
+          ],
+          "right": [
+            62,
+            31,
+            16,
+            11,
+            8,
+            7,
+            -1,
+            -1,
+            10,
+            -1,
+            -1,
+            15,
+            14,
+            -1,
+            -1,
+            -1,
+            24,
+            21,
+            20,
+            -1,
+            -1,
+            23,
+            -1,
+            -1,
+            28,
+            27,
+            -1,
+            -1,
+            30,
+            -1,
+            -1,
+            47,
+            40,
+            37,
+            36,
+            -1,
+            -1,
+            39,
+            -1,
+            -1,
+            44,
+            43,
+            -1,
+            -1,
+            46,
+            -1,
+            -1,
+            55,
+            52,
+            51,
+            -1,
+            -1,
+            54,
+            -1,
+            -1,
+            59,
+            58,
+            -1,
+            -1,
+            61,
+            -1,
+            -1,
+            90,
+            75,
+            70,
+            69,
+            68,
+            -1,
+            -1,
+            -1,
+            72,
+            -1,
+            74,
+            -1,
+            -1,
+            83,
+            80,
+            79,
+            -1,
+            -1,
+            82,
+            -1,
+            -1,
+            87,
+            86,
+            -1,
+            -1,
+            89,
+            -1,
+            -1,
+            106,
+            99,
+            96,
+            95,
+            -1,
+            -1,
+            98,
+            -1,
+            -1,
+            103,
+            102,
+            -1,
+            -1,
+            105,
+            -1,
+            -1,
+            114,
+            111,
+            110,
+            -1,
+            -1,
+            113,
+            -1,
+            -1,
+            118,
+            117,
+            -1,
+            -1,
+            120,
+            -1,
+            -1
+          ],
+          "threshold": [
+            45.58644962310791,
+            0.0415111118927598,
+            0.5,
+            14.625,
+            11.625,
+            9.375,
+            -2.0,
+            -2.0,
+            13.125,
+            -2.0,
+            -2.0,
+            38.625,
+            17.625,
+            -2.0,
+            -2.0,
+            -2.0,
+            25.125,
+            17.625,
+            13.125,
+            -2.0,
+            -2.0,
+            21.375,
+            -2.0,
+            -2.0,
+            32.625,
+            28.875,
+            -2.0,
+            -2.0,
+            36.375,
+            -2.0,
+            -2.0,
+            25.125,
+            16.875,
+            13.125,
+            10.875,
+            -2.0,
+            -2.0,
+            15.375,
+            -2.0,
+            -2.0,
+            20.625,
+            19.125,
+            -2.0,
+            -2.0,
+            22.875,
+            -2.0,
+            -2.0,
+            32.625,
+            28.875,
+            27.375,
+            -2.0,
+            -2.0,
+            30.375,
+            -2.0,
+            -2.0,
+            36.375,
+            34.875,
+            -2.0,
+            -2.0,
+            37.875,
+            -2.0,
+            -2.0,
+            23.625,
+            13.125,
+            11.25,
+            10.875,
+            9.375,
+            -2.0,
+            -2.0,
+            -2.0,
+            9.375,
+            -2.0,
+            10.875,
+            -2.0,
+            -2.0,
+            18.375,
+            11.25,
+            15.375,
+            -2.0,
+            -2.0,
+            16.875,
+            -2.0,
+            -2.0,
+            -5.131555557250977,
+            22.125,
+            -2.0,
+            -2.0,
+            20.625,
+            -2.0,
+            -2.0,
+            27.8973331451416,
+            32.625,
+            26.625,
+            25.125,
+            -2.0,
+            -2.0,
+            31.125,
+            -2.0,
+            -2.0,
+            37.125,
+            34.125,
+            -2.0,
+            -2.0,
+            38.625,
+            -2.0,
+            -2.0,
+            31.125,
+            27.375,
+            25.125,
+            -2.0,
+            -2.0,
+            29.625,
+            -2.0,
+            -2.0,
+            35.625,
+            32.625,
+            -2.0,
+            -2.0,
+            37.875,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            242.75339446511626,
+            35.26051790697673,
+            17.108674534883722,
+            5.979007209302325,
+            3.5158433333333328,
+            2.8489899999999997,
+            2.3978599999999997,
+            3.1497433333333333,
+            4.34941,
+            3.99786,
+            4.70096,
+            6.631021176470589,
+            6.763738125000001,
+            5.685135000000001,
+            6.917824285714285,
+            4.50755,
+            28.23834186046511,
+            16.136186956521737,
+            10.712723076923076,
+            7.8745714285714286,
+            14.023900000000003,
+            23.18669,
+            20.13314,
+            26.24024,
+            42.15582,
+            35.80127,
+            32.56026,
+            39.04228,
+            48.51037000000001,
+            45.4732,
+            51.547540000000005,
+            71.56420465116278,
+            41.048382608695654,
+            26.026600000000002,
+            19.65174285714286,
+            16.526600000000002,
+            23.8186,
+            34.9514,
+            32.306266666666666,
+            38.9191,
+            57.43578181818182,
+            48.293000000000006,
+            45.37426666666667,
+            52.6711,
+            65.05476666666667,
+            60.48760000000001,
+            69.62193333333333,
+            106.65740000000001,
+            90.7871,
+            82.39239999999998,
+            79.17093333333332,
+            87.22460000000001,
+            99.1818,
+            94.43209999999999,
+            102.34826666666667,
+            122.52769999999998,
+            114.82560000000001,
+            111.66726666666666,
+            119.56309999999999,
+            130.22979999999998,
+            125.6151,
+            133.30626666666666,
+            553.9927093023256,
+            420.63957142857146,
+            315.1025,
+            214.82899999999998,
+            178.7825,
+            155.40550000000002,
+            202.1595,
+            262.891,
+            415.3759999999999,
+            347.06600000000003,
+            442.69999999999993,
+            414.78099999999995,
+            461.3126666666667,
+            473.40810714285715,
+            439.9573571428572,
+            382.63442857142854,
+            335.19166666666666,
+            418.2165,
+            497.2802857142857,
+            500.25200000000007,
+            489.851,
+            506.8588571428572,
+            475.846,
+            472.3759999999999,
+            484.52099999999996,
+            537.8717142857142,
+            496.26133333333337,
+            569.0795,
+            681.284340909091,
+            624.7381363636364,
+            692.6154166666666,
+            645.1032500000001,
+            626.7135000000001,
+            663.4929999999999,
+            716.3715,
+            727.1065,
+            684.1665,
+            543.2854,
+            514.057,
+            528.827,
+            506.672,
+            587.1279999999999,
+            566.6755,
+            607.5805,
+            737.8305454545454,
+            590.078,
+            532.332,
+            496.491,
+            556.226,
+            647.824,
+            620.2959999999999,
+            689.116,
+            860.9576666666667,
+            792.7876666666667,
+            748.046,
+            815.1585,
+            929.1276666666666,
+            901.256,
+            956.9993333333333
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--tree_control-rule-1",
+      "rule_sha256": "dc99c4cecf00d3efd768d400b432c01e33dce9d78dd2bc3b1434eac4d15f3b54",
+      "run_id": "full-comparison-v5--P100-074--tree_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 181,
+        "learned_state_bytes": 4358,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 121
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.03240062509089323,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 196.76103695045143,
+        "primary": "mae",
+        "primary_error": 196.76103695045143,
+        "rmse": 257.8167398157618
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 333.4411274514557,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 60.08094644944712,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 758.325589547739,
+        "execution_status": "complete",
+        "expression": "p0+p1*(concentration_uM)+p2*(time_min)+p3*(calibration_F6)+p4*(calibration_v6)+p5*(calibration_curvature)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -188.90912432695916,
+          "p1": 48.47962484134602,
+          "p2": 7.4378250832578985,
+          "p3": 45.64939226480922,
+          "p4": -212.4505360189568,
+          "p5": 384.1276600853889
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": 0.6914156530045619,
+            "calibration_curvature": -0.6914156530045616,
+            "calibration_v6": 0.6914156530045616,
+            "concentration_uM": 0.6914156530045619,
+            "time_min": -0.5665998780295673
+          },
+          "mean": 758.325589547739,
+          "p90_abs": 1079.4699522081323,
+          "std": 183.90599618519914
+        },
+        "rule_id": "full-comparison-v5--P100-074--linear_control-rule-1",
+        "rule_sha256": "feb4029376b38172ebfcd6cc44e271334a8f4e8db0f64985cbb4d15542d005a5",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-188.90912432695916 + 48.47962484134602 * concentration_uM + 7.4378250832578985 * time_min + 45.64939226480922 * calibration_F6 + -212.4505360189568 * calibration_v6 + 384.1276600853889 * calibration_curvature",
+          "expression_bytes": 105,
+          "free_parameters": 6,
+          "learned_state_bytes": 154,
+          "literal_state_bytes": 0,
+          "nodes": 43,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 10
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 67.71385676120057,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(concentration_uM)+p2*(time_min)+p3*(calibration_F6)+p4*(calibration_v6)+p5*(calibration_curvature)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--linear_control-rule-1",
+      "rule_sha256": "feb4029376b38172ebfcd6cc44e271334a8f4e8db0f64985cbb4d15542d005a5",
+      "run_id": "full-comparison-v5--P100-074--linear_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-188.90912432695916 + 48.47962484134602 * concentration_uM + 7.4378250832578985 * time_min + 45.64939226480922 * calibration_F6 + -212.4505360189568 * calibration_v6 + 384.1276600853889 * calibration_curvature",
+        "expression_bytes": 105,
+        "free_parameters": 6,
+        "learned_state_bytes": 154,
+        "literal_state_bytes": 0,
+        "nodes": 43,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 10
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.49360588085746804,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 196.76103695045143,
+        "primary": "mae",
+        "primary_error": 196.76103695045143,
+        "rmse": 257.8167398157618
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 333.4411274514557,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 60.08094644944712,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 758.325589547739,
+        "execution_status": "complete",
+        "expression": "p0+p1*(concentration_uM)+p2*(time_min)+p3*(calibration_F6)+p4*(calibration_v6)+p5*(calibration_curvature)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -188.90912432695916,
+          "p1": 48.47962484134602,
+          "p2": 7.4378250832578985,
+          "p3": 45.64939226480922,
+          "p4": -212.4505360189568,
+          "p5": 384.1276600853889
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": 0.6914156530045619,
+            "calibration_curvature": -0.6914156530045616,
+            "calibration_v6": 0.6914156530045616,
+            "concentration_uM": 0.6914156530045619,
+            "time_min": -0.5665998780295673
+          },
+          "mean": 758.325589547739,
+          "p90_abs": 1079.4699522081323,
+          "std": 183.90599618519914
+        },
+        "rule_id": "full-comparison-v5--P100-074--polynomial_control-rule-1",
+        "rule_sha256": "c8924740b24d78b93a53866c80b13499db874a08b698086682433a5694facd37",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-188.90912432695916 + 48.47962484134602 * concentration_uM + 7.4378250832578985 * time_min + 45.64939226480922 * calibration_F6 + -212.4505360189568 * calibration_v6 + 384.1276600853889 * calibration_curvature",
+          "expression_bytes": 105,
+          "free_parameters": 6,
+          "learned_state_bytes": 154,
+          "literal_state_bytes": 0,
+          "nodes": 43,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 10
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 67.71385676120057,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(concentration_uM)+p2*(time_min)+p3*(calibration_F6)+p4*(calibration_v6)+p5*(calibration_curvature)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-074--polynomial_control-rule-1",
+      "rule_sha256": "c8924740b24d78b93a53866c80b13499db874a08b698086682433a5694facd37",
+      "run_id": "full-comparison-v5--P100-074--polynomial_control",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-188.90912432695916 + 48.47962484134602 * concentration_uM + 7.4378250832578985 * time_min + 45.64939226480922 * calibration_F6 + -212.4505360189568 * calibration_v6 + 384.1276600853889 * calibration_curvature",
+        "expression_bytes": 105,
+        "free_parameters": 6,
+        "learned_state_bytes": 154,
+        "literal_state_bytes": 0,
+        "nodes": 43,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 10
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.49360588085746804,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 202.46966325193472,
+        "primary": "mae",
+        "primary_error": 202.46966325193472,
+        "rmse": 261.5526744411336
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 333.4410721124732,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 71.49825439139624,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 758.3255045929889,
+        "execution_status": "complete",
+        "expression": "p0 + p1*calibration_F6 + p2*calibration_v6 + p3*calibration_curvature + p4*time_min + p5*concentration_uM + p6*time_min*calibration_v6 + p7*time_min*calibration_curvature",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "feedback_refinement",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "revision-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -43.37796370382664,
+          "p1": 45.64938829242133,
+          "p2": -225.1875130376389,
+          "p3": 382.27037577580944,
+          "p4": 1.3740268727883111,
+          "p5": 48.47961656154666,
+          "p6": 0.530708260380865,
+          "p7": 0.07738533377119032
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": 0.8700658974148152,
+            "calibration_curvature": -0.8700658974148152,
+            "calibration_v6": 0.8700658974148151,
+            "concentration_uM": 0.8700658974148152,
+            "time_min": -0.36946849847275837
+          },
+          "mean": 758.325504592989,
+          "p90_abs": 965.564796606445,
+          "std": 146.1446551355349
+        },
+        "rule_id": "full-comparison-v5--P100-074--feedback_refinement-rule-1",
+        "rule_sha256": "25fa17e93b382ff4fd8f5e58441cdbfc9c07190562be4b11b22da93be523d63e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-43.37796370382664 + 45.64938829242133 * calibration_F6 + -225.1875130376389 * calibration_v6 + 382.27037577580944 * calibration_curvature + 1.3740268727883111 * time_min + 48.47961656154666 * concentration_uM + 0.530708260380865 * time_min * calibration_v6 + 0.07738533377119032 * time_min * calibration_curvature",
+          "expression_bytes": 170,
+          "free_parameters": 8,
+          "learned_state_bytes": 206,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 37.41510327915837,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*calibration_F6 + p2*calibration_v6 + p3*calibration_curvature + p4*time_min + p5*concentration_uM + p6*time_min*calibration_v6 + p7*time_min*calibration_curvature",
+      "method_id": "feedback_refinement",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--feedback_refinement-rule-1",
+      "rule_sha256": "25fa17e93b382ff4fd8f5e58441cdbfc9c07190562be4b11b22da93be523d63e",
+      "run_id": "full-comparison-v5--P100-074--feedback_refinement",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-43.37796370382664 + 45.64938829242133 * calibration_F6 + -225.1875130376389 * calibration_v6 + 382.27037577580944 * calibration_curvature + 1.3740268727883111 * time_min + 48.47961656154666 * concentration_uM + 0.530708260380865 * time_min * calibration_v6 + 0.07738533377119032 * time_min * calibration_curvature",
+        "expression_bytes": 170,
+        "free_parameters": 8,
+        "learned_state_bytes": 206,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.49289982902524343,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 202.5888327620228,
+        "primary": "mae",
+        "primary_error": 202.5888327620228,
+        "rmse": 261.79144825673177
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 333.441140188164,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 71.7365253358816,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 758.3256075408111,
+        "execution_status": "complete",
+        "expression": "p0 + p1*calibration_F6 + p2*calibration_v6 + p3*calibration_curvature + p4*time_min + p5*concentration_uM + p6*calibration_F6*time_min + p7*calibration_v6*time_min",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "best_of_n",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "independent-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -43.48883810876807,
+          "p1": 45.895381200782126,
+          "p2": -226.3691483954877,
+          "p3": 384.1276665436986,
+          "p4": 1.3786464518361428,
+          "p5": 48.479627598008015,
+          "p6": -0.010249515652608366,
+          "p7": 0.5799420417886371
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": 0.8669215006191414,
+            "calibration_curvature": -0.8669215006191414,
+            "calibration_v6": 0.8669215006191414,
+            "concentration_uM": 0.8669215006191413,
+            "time_min": -0.3775062897601707
+          },
+          "mean": 758.3256075408111,
+          "p90_abs": 967.4633794942492,
+          "std": 146.67473583511648
+        },
+        "rule_id": "full-comparison-v5--P100-074--best_of_n-rule-2",
+        "rule_sha256": "f101d83640271d870690aa525ea7e52d5cf4fc1711b5f7b54b00bf9ccf658c95",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-43.48883810876807 + 45.895381200782126 * calibration_F6 + -226.3691483954877 * calibration_v6 + 384.1276665436986 * calibration_curvature + 1.3786464518361428 * time_min + 48.479627598008015 * concentration_uM + -0.010249515652608366 * calibration_F6 * time_min + 0.5799420417886371 * calibration_v6 * time_min",
+          "expression_bytes": 163,
+          "free_parameters": 8,
+          "learned_state_bytes": 210,
+          "literal_state_bytes": 0,
+          "nodes": 67,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 16
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 37.441480217073,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0 + p1*calibration_F6 + p2*calibration_v6 + p3*calibration_curvature + p4*time_min + p5*concentration_uM + p6*calibration_F6*time_min + p7*calibration_v6*time_min",
+      "method_id": "best_of_n",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--best_of_n-rule-2",
+      "rule_sha256": "f101d83640271d870690aa525ea7e52d5cf4fc1711b5f7b54b00bf9ccf658c95",
+      "run_id": "full-comparison-v5--P100-074--best_of_n",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-43.48883810876807 + 45.895381200782126 * calibration_F6 + -226.3691483954877 * calibration_v6 + 384.1276665436986 * calibration_curvature + 1.3786464518361428 * time_min + 48.479627598008015 * concentration_uM + -0.010249515652608366 * calibration_F6 * time_min + 0.5799420417886371 * calibration_v6 * time_min",
+        "expression_bytes": 163,
+        "free_parameters": 8,
+        "learned_state_bytes": 210,
+        "literal_state_bytes": 0,
+        "nodes": 67,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 16
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.4928105273317906,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 288.65818220045503,
+        "primary": "mae",
+        "primary_error": 288.65818220045503,
+        "rmse": 405.7540922601858
+      },
+      "accuracy_gate": false,
+      "baseline_loss": 158.41744805624666,
+      "by_group": [
+        {
+          "error": 278.3710096181257,
+          "group": "group-32f65e8bcf958b45c6c92eb1",
+          "rows": 43
+        },
+        {
+          "error": 298.9453547827844,
+          "group": "group-9325ce927d38c901d5f70925",
+          "rows": 43
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 3856.2659002569935,
+        "execution_status": "complete",
+        "expression": "calibration_F6 + calibration_v6 * (time_min - 6) + calibration_curvature * (time_min - 6)**2 + p0 * concentration_uM * (time_min - 6) + p1 * concentration_uM * calibration_v6 * (time_min - 6) + p2 * concentration_uM * calibration_F6 + p3 * concentration_uM**2 * (time_min - 6)",
+        "inputs": [
+          "concentration_uM",
+          "time_min",
+          "calibration_F6",
+          "calibration_v6",
+          "calibration_curvature"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.8469097121842861,
+          "p1": -2.120232879121312,
+          "p2": -0.6185211132107358,
+          "p3": 4.770023846253039
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "calibration_F6": -0.9073146205702197,
+            "calibration_curvature": 0.9073146205702196,
+            "calibration_v6": -0.9073146205702197,
+            "concentration_uM": -0.9073146205702197,
+            "time_min": -0.10089306353688418
+          },
+          "mean": -1674.3868155294267,
+          "p90_abs": 7702.163056927922,
+          "std": 4250.1970240857
+        },
+        "rule_id": "full-comparison-v5--P100-074--direct_kimi-rule-1",
+        "rule_sha256": "b55accad0abff35030dc5fd297f437ff6be4ce23f27389bc0ff4572ebd48ae97",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6) + calibration_curvature * (time_min - 6) ** 2 + -0.8469097121842861 * concentration_uM * (time_min - 6) + -2.120232879121312 * concentration_uM * calibration_v6 * (time_min - 6) + -0.6185211132107358 * concentration_uM * calibration_F6 + 4.770023846253039 * concentration_uM ** 2 * (time_min - 6)",
+          "expression_bytes": 276,
+          "free_parameters": 4,
+          "learned_state_bytes": 105,
+          "literal_state_bytes": 7,
+          "nodes": 92,
+          "numeric_literal_count": 7,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 24
+        },
+        "task_id": "P100-074.compact.v2",
+        "train_error": 334.92168144230584,
+        "units": {
+          "inputs": {
+            "calibration_F6": "source fluorescence units",
+            "calibration_curvature": "source fluorescence units/min^2",
+            "calibration_v6": "source fluorescence units/min",
+            "concentration_uM": "uM",
+            "time_min": "min"
+          },
+          "output": "source fluorescence units",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 86,
+        "fraction": 1.0,
+        "predicted": 86
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "calibration_F6 + calibration_v6 * (time_min - 6) + calibration_curvature * (time_min - 6)**2 + p0 * concentration_uM * (time_min - 6) + p1 * concentration_uM * calibration_v6 * (time_min - 6) + p2 * concentration_uM * calibration_F6 + p3 * concentration_uM**2 * (time_min - 6)",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-074--direct_kimi-rule-1",
+      "rule_sha256": "b55accad0abff35030dc5fd297f437ff6be4ce23f27389bc0ff4572ebd48ae97",
+      "run_id": "full-comparison-v5--P100-074--direct_kimi",
+      "scenario_id": "P100-074",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6) + calibration_curvature * (time_min - 6) ** 2 + -0.8469097121842861 * concentration_uM * (time_min - 6) + -2.120232879121312 * concentration_uM * calibration_v6 * (time_min - 6) + -0.6185211132107358 * concentration_uM * calibration_F6 + 4.770023846253039 * concentration_uM ** 2 * (time_min - 6)",
+        "expression_bytes": 276,
+        "free_parameters": 4,
+        "learned_state_bytes": 105,
+        "literal_state_bytes": 7,
+        "nodes": 92,
+        "numeric_literal_count": 7,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 24
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.35302848175827645,
+        "perturbation_labels_available": false,
+        "population_rows": 86,
+        "ranking": false,
+        "samples": 86,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-074.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-074",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-074.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

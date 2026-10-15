@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.12259755858332803,
+  "execution_status": "complete",
+  "expression": "cal_plus20_uA / (1 + exp(-p0 * (gate_V - log(cal_plus20_uA / cal_zero_uA - 1) / p0)))",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.49997296581070316
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": 0.3889254994219033,
+      "cal_plus20_uA": 0.16369338468415695,
+      "cal_zero_uA": 0.4629190459548507,
+      "gate_V": -0.2129157888584555
+    },
+    "mean": -0.047942658032564284,
+    "p90_abs": 0.46707395948634794,
+    "std": 0.24578977177881015
+  },
+  "rule_id": "full-comparison-v5--P100-051--direct_glm-rule-1",
+  "rule_sha256": "e40c32d4775821fa6e1c4e185a4a8b417e363744c684cd8fcdf4a4cfa863f736",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "cal_plus20_uA / (1 + exp(-0.49997296581070316 * (gate_V - log(cal_plus20_uA / cal_zero_uA - 1) / 0.49997296581070316)))",
+    "expression_bytes": 85,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 2,
+    "nodes": 37,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.09559016493029295,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "expression": "minimum(1,maximum(0,p0+p1*(log(income_proxy) - log1p(household_size))+p2*(log(income_proxy))+p3*(income_proxy*age)+p4*(income_proxy)+p5*(tanh((income_proxy-99.73261606953572)/57.75517552918137))+p6*(income_proxy / household_size)+p7*(shock / income_proxy)))",
+  "parameters": {
+    "p0": 0.4982148827972597,
+    "p1": -0.12980193530750944,
+    "p2": 0.0013613050163205124,
+    "p3": -8.26264277898087e-06,
+    "p4": -3.413095862489888e-05,
+    "p5": 0.0075632964305117414,
+    "p6": 0.0010116010186287324,
+    "p7": 0.804811330645213
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

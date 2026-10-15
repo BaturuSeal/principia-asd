@@ -1,0 +1,83 @@
+{
+  "dev_error": 2.272031201823184e-06,
+  "execution_status": "complete",
+  "expression": "p0+p1*((hx+hy)/2)+p2*((hx+hy+ox+oy+dg)/5)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.462148033744308e-07,
+    "p1": 1.5878553007313132,
+    "p2": -0.5728102457768827
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.0916187519530744,
+      "gx": 0.021036639122779564,
+      "gy": 0.03350849490021185,
+      "hi": -0.038327269146664726,
+      "hx": -0.007964499444516538,
+      "hy": -0.03259067159202201,
+      "lo": 0.00787965537688423,
+      "ox": -0.10674978709399462,
+      "oy": -0.023300226626361196
+    },
+    "mean": -3.291389966803589e-07,
+    "p90_abs": 4.246387759979877e-06,
+    "std": 7.293853764136671e-06
+  },
+  "rule_id": "full-comparison-v5--P100-070--principia_engine-rule-1",
+  "rule_sha256": "6f03cc28f63938b6a0dbb897f46924e134db802ba89bf3388091339bd8fd8b09",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.462148033744308e-07 + 1.5878553007313132 * ((hx + hy) / 2) + -0.5728102457768827 * ((hx + hy + ox + oy + dg) / 5)",
+    "expression_bytes": 41,
+    "free_parameters": 3,
+    "learned_state_bytes": 83,
+    "literal_state_bytes": 2,
+    "nodes": 45,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 3.0791341379399084e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

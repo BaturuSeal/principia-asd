@@ -1,0 +1,61 @@
+{
+  "dev_error": 46.5830305074425,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current)+p2*(time_h)+p3*(tanh((current-6620.781379942208)/2567.5502008232106))+p4*(tanh((time_h-96.6647755303404)/33.49123523771944))+p5*((current)**2)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 505.2640001649814,
+    "p1": 1.060774287190686,
+    "p2": -1.5670260161959868,
+    "p3": 203.51707206423157,
+    "p4": -98.03543142900001,
+    "p5": -6.314373904452851e-06
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.04626653200050455,
+      "slope6": -0.33064728676839544,
+      "time_h": -0.04653950971515983
+    },
+    "mean": 0.25978345170298994,
+    "p90_abs": 96.84686393531263,
+    "std": 71.6172552793553
+  },
+  "rule_id": "controls-v2--P100-086--symbolic_control-rule-3",
+  "rule_sha256": "a899b71bf67c76031233eaa1d8611e3d1a10deaf0e3794711b991da61cdd4639",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "505.2640001649814 + 1.060774287190686 * current + -1.5670260161959868 * time_h + 203.51707206423157 * tanh((current - 6620.781379942208) / 2567.5502008232106) + -98.03543142900001 * tanh((time_h - 96.6647755303404) / 33.49123523771944) + -6.314373904452851e-06 * current ** 2",
+    "expression_bytes": 158,
+    "free_parameters": 6,
+    "learned_state_bytes": 159,
+    "nodes": 64,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 47.51699577779228,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

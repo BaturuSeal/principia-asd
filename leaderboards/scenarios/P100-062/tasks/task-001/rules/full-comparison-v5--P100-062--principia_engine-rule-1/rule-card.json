@@ -1,0 +1,71 @@
+{
+  "dev_error": 2.764186596230277,
+  "execution_status": "complete",
+  "expression": "p0+p1*(high*(1 - exp(-t/1000)))+p2*(log1p(abs((drive-1.9474393530997305)/2.1019981941112653)))+p3*(log1p(abs((high-0.3216531895777179)/0.4671107098025034)))+p4*((offset)**2)+p5*(tanh((high-0.3216531895777179)/0.4671107098025034))",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.5625374569950524,
+    "p1": 60.93657701684489,
+    "p2": 37.15365721723566,
+    "p3": 37.15365721723566,
+    "p4": 0.0014135780451599936,
+    "p5": 12.398068511005107
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": -0.8081223152731921,
+      "high": -0.8081223152731922,
+      "offset": -0.8081223152731922,
+      "t": -0.7758497324902945
+    },
+    "mean": -2.023376987874588,
+    "p90_abs": 4.2507881201435715,
+    "std": 1.7743236076442865
+  },
+  "rule_id": "full-comparison-v5--P100-062--principia_engine-rule-1",
+  "rule_sha256": "0f49b1977bed451dea4b2a05afa14d1ff8131c0b39fb15902f50f229e7137066",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.5625374569950524 + 60.93657701684489 * (high * (1 - exp(-t / 1000))) + 37.15365721723566 * log1p(abs((drive - 1.9474393530997305) / 2.1019981941112653)) + 37.15365721723566 * log1p(abs((high - 0.3216531895777179) / 0.4671107098025034)) + 0.0014135780451599936 * offset ** 2 + 12.398068511005107 * tanh((high - 0.3216531895777179) / 0.4671107098025034)",
+    "expression_bytes": 229,
+    "free_parameters": 6,
+    "learned_state_bytes": 157,
+    "literal_state_bytes": 114,
+    "nodes": 94,
+    "numeric_literal_count": 9,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 33
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 4.135398523317842,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

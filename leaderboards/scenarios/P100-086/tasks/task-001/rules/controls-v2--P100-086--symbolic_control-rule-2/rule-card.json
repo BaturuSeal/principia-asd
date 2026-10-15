@@ -1,0 +1,63 @@
+{
+  "dev_error": 46.381354072151666,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current)+p2*(time_h)+p3*(tanh((current-6620.781379942208)/2567.5502008232106))+p4*(tanh((time_h-96.6647755303404)/33.49123523771944))+p5*((current)**2)+p6*(time_h*current)+p7*((time_h)**2)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 481.99816268087983,
+    "p1": 0.9997685227068733,
+    "p2": 3.131007504619951,
+    "p3": 232.96615714296115,
+    "p4": -121.59342559322053,
+    "p5": -3.721889682212885e-05,
+    "p6": 0.004731561697743504,
+    "p7": -0.18162517732339792
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.04571742157569259,
+      "slope6": -0.3194854839243315,
+      "time_h": -0.049509755460967884
+    },
+    "mean": 0.11206495625677466,
+    "p90_abs": 94.75778985203759,
+    "std": 70.84480625117304
+  },
+  "rule_id": "controls-v2--P100-086--symbolic_control-rule-2",
+  "rule_sha256": "9d5a527ef1994d7eac02bca7437797683b654781bf9ebc3bd7d9235effb22cc1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "481.99816268087983 + 0.9997685227068733 * current + 3.131007504619951 * time_h + 232.96615714296115 * tanh((current - 6620.781379942208) / 2567.5502008232106) + -121.59342559322053 * tanh((time_h - 96.6647755303404) / 33.49123523771944) + -3.721889682212885e-05 * current ** 2 + 0.004731561697743504 * (time_h * current) + -0.18162517732339792 * time_h ** 2",
+    "expression_bytes": 195,
+    "free_parameters": 8,
+    "learned_state_bytes": 216,
+    "nodes": 87,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 47.49199630345554,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

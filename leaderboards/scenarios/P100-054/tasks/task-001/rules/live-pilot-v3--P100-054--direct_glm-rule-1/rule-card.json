@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.016580511643679754,
+  "execution_status": "complete",
+  "expression": "p0 * thickness_um * (width_um - p1 * notch_depth_um) / length_um + p2",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.3780097319478745,
+    "p1": 1.2069333334564616,
+    "p2": -0.0007921831798558373
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": 0.22238202853148592,
+      "notch_depth_um": 0.06460480165484281,
+      "notch_width_um": 0.6990389265627951,
+      "thickness_um": -0.21436151650204083,
+      "width_um": 0.440509131562764
+    },
+    "mean": 0.0012301536002547774,
+    "p90_abs": 0.04119009735444135,
+    "std": 0.022804082674870784
+  },
+  "rule_id": "live-pilot-v3--P100-054--direct_glm-rule-1",
+  "rule_sha256": "4fd3ddce5bb8f2e8005edb430881fa63e7f8f3ea155d9620872415f6acea284f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.3780097319478745 * thickness_um * (width_um - 1.2069333334564616 * notch_depth_um) / length_um + -0.0007921831798558373",
+    "expression_bytes": 69,
+    "free_parameters": 3,
+    "learned_state_bytes": 82,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.01983668672008681,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

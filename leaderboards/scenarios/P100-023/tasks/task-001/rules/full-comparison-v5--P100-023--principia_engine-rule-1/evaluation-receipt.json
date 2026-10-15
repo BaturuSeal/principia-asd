@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.09528212817293043,
+    "primary": "mae",
+    "primary_error": 0.09528212817293043,
+    "rmse": 0.14012305865898517
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.07674173094815193,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.11382252539770893,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-023--principia_engine-rule-1",
+  "rule_sha256": "ba42f3e7774b88db671d41b17ec4eab94bbf789c60ee6484658ea7d1a8d3bfe9",
+  "run_id": "full-comparison-v5--P100-023--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.17303151298499894 + 0.0035046454430202423 * (1 / sqrt(H)) + 1.0961773855760213 * log1p(H) + -0.01004046374216859 * log1p(viscosity) + -0.13247722218027427 * (load / area)",
+    "expression_bytes": 72,
+    "free_parameters": 5,
+    "learned_state_bytes": 138,
+    "literal_state_bytes": 1,
+    "nodes": 51,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.5785136345658088,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

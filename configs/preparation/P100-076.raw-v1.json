@@ -1,0 +1,101 @@
+{
+  "archive_member": "20250611_data/Patch-clamp/figure-2h-FI-curve-data.csv",
+  "assets": [
+    {
+      "bytes": 1831257,
+      "path": "scenarios/76_neuroscience_neuronal_maturation/raw/20250611_data.zip",
+      "role": "neuronal_archive",
+      "sha256": "93d349e7f4cae2e0b6432a637a7ae029ef7d29864f308ff8a03caf40b4b81d36"
+    },
+    {
+      "bytes": 6310,
+      "path": "scenarios/76_neuroscience_neuronal_maturation/context/SOURCE_FACTS.json",
+      "role": "source_documentation",
+      "sha256": "fc248ed62f6bd05e0ed27d417b1b954304ed52695cde845ed113d816481d80e9"
+    }
+  ],
+  "group_assignments": {
+    "20250416:D2S2": "train",
+    "20250416:D2S3": "train",
+    "20250416:D2S5": "train",
+    "20250416:D2S6": "train",
+    "20250417:D3S1": "dev",
+    "20250417:D3S3": "train",
+    "20250417:D3S4": "train",
+    "20250417:D3S5": "dev",
+    "20250417:D3S7": "train",
+    "20250418:D4S1": "test",
+    "20250418:D4S3": "test",
+    "20250418:D4S4": "test",
+    "20250418:D4S5": "test",
+    "20250418:D4S6": "test",
+    "20250418:D4S7": "test",
+    "20250418:D4S8": "test",
+    "20250418:D4S9": "test"
+  },
+  "historical_contract_sha256": "784891f55fb43fbadb6bb44204c425061a6eaedab0d84e86958bc5e893d0c8b8",
+  "independent_units": "Complete date:dish units, retaining cells, repeated recordings and repeated sweeps; source filename identifies a recording, not necessarily a distinct cell.",
+  "input_units": {
+    "cal_last": "spike count",
+    "cal_mean": "spike count",
+    "current": "pA",
+    "kd": "indicator",
+    "soft": "indicator"
+  },
+  "limitations": [
+    "Curator-only: registered source acquisitions include historical responses; discovery workers must not receive the source root",
+    "No test targets exported and no evaluator vault accessed",
+    "Reconstruction parity does not establish scientific admission, independent evidence or redistribution rights"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "spike count",
+  "parser": "neuronal-prefix-curves-v1",
+  "partition_provenance": {
+    "allocation": "Original final-date confirmation groups retained; development groups sorted by canonical SHA256([compact-v2, case, opaque group]); first max(2, floor(n/5)) become dev. Registered source identities, not numeric folder matching.",
+    "source_split_sha256": "ea823d033cf54da151ffbb1484256b150d89e20cfeac559203887c1b12fdfcad"
+  },
+  "policy": {
+    "calibration": "All <=10 pA sweeps in the same recording, manually approved y and strictly preceding every selected higher-current sweep; mean and last count only",
+    "response": "Every >10 pA sweep with author quality y, preserving source lineage; no filtering on count magnitude",
+    "scope": "Conditional prediction of author-derived counts, not independently decoded voltage recordings or causal mechanism",
+    "split": "Original final acquisition date retained for test; two full development dishes selected by compact-v2 hash rule"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-076/native.py",
+    "reuse": "Measurement and identity specification reimplemented; no upstream fitting, reference state, scientific formula or evaluator copied",
+    "sha256": "a8aa7ec222f14896af6c84f4ea5987edb5330e2c80f1ea50a8fb3d25452ce73e"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-076",
+  "schema_version": "native-reconstruction/1",
+  "source_columns": [
+    "filename",
+    "sweep",
+    "applied current",
+    "spike count",
+    "stimulus range",
+    "Measurement ID",
+    "date",
+    "Stiffness",
+    "div",
+    "Condition",
+    "dish",
+    "cell",
+    "frequency",
+    "use for FI (manually confirmed)"
+  ],
+  "source_identity": {
+    "historical_case": "P100-076",
+    "revision": "12802682",
+    "url": "https://zenodo.org/records/12802682"
+  },
+  "source_scenario_descriptor_sha256": "793a67c9f1b2a5475b70749fe6487b3f7d8975ba9135f38f8c15fc08be6e6580",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test",
+  "units_evidence": {
+    "basis": "Stiffness 0.1kPa/10kPa encoded in CSV values; pA for applied current is inherited from the historical contract and still requires source protocol review."
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 197.2172770335788,
+    "primary": "mae",
+    "primary_error": 197.2172770335788,
+    "rmse": 239.75255213702312
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 480.7508739703988,
+  "by_group": [
+    {
+      "error": 245.7177252546415,
+      "group": "group-0576a6e1314aeacfa7a21a4c",
+      "rows": 95
+    },
+    {
+      "error": 248.75209495398775,
+      "group": "group-16e743c9289e5e7d82e76945",
+      "rows": 95
+    },
+    {
+      "error": 141.89017264655664,
+      "group": "group-1eaa554a04b362c2f28f8340",
+      "rows": 95
+    },
+    {
+      "error": 142.25070675378953,
+      "group": "group-27309180063bdea86c072240",
+      "rows": 95
+    },
+    {
+      "error": 135.5620661813811,
+      "group": "group-2e51a7c40adfca2eaa995a2e",
+      "rows": 95
+    },
+    {
+      "error": 137.82654554214264,
+      "group": "group-365ecb9b6e95dc08f708208c",
+      "rows": 95
+    },
+    {
+      "error": 183.44040332007253,
+      "group": "group-3ddfbb2f103885e018b8eb98",
+      "rows": 95
+    },
+    {
+      "error": 253.66479501772403,
+      "group": "group-41b07c8e06d8e68c64dfbb3c",
+      "rows": 95
+    },
+    {
+      "error": 249.72114951090785,
+      "group": "group-6417f7a8f8cab55fb5428f64",
+      "rows": 95
+    },
+    {
+      "error": 130.39311141028884,
+      "group": "group-78608521104ffdaa59acdf62",
+      "rows": 95
+    },
+    {
+      "error": 248.2603190583254,
+      "group": "group-78b7875b2a657d221dcb2fad",
+      "rows": 95
+    },
+    {
+      "error": 241.72345661046657,
+      "group": "group-7b1dab4794a88e0a921f0694",
+      "rows": 95
+    },
+    {
+      "error": 255.35975692139368,
+      "group": "group-82284f2777b212069fd277d3",
+      "rows": 95
+    },
+    {
+      "error": 152.58922019661546,
+      "group": "group-8d4b3a530ca6e2984541b54e",
+      "rows": 95
+    },
+    {
+      "error": 220.4025807759965,
+      "group": "group-9622a56f49cfe299b4cc3e9b",
+      "rows": 95
+    },
+    {
+      "error": 180.08660475192124,
+      "group": "group-9bf13164f0ec12297b1705d5",
+      "rows": 95
+    },
+    {
+      "error": 236.75184238800867,
+      "group": "group-d2ebdc89b60293d722bfa817",
+      "rows": 95
+    },
+    {
+      "error": 274.0558761856058,
+      "group": "group-ead28e6246afc5a0e60a8bf0",
+      "rows": 95
+    },
+    {
+      "error": 136.22654726995128,
+      "group": "group-f1c5b97ca98a1fe9c26688a5",
+      "rows": 95
+    },
+    {
+      "error": 129.6705659217989,
+      "group": "group-f444649d419902c1622e00da",
+      "rows": 95
+    }
+  ],
+  "coverage": {
+    "eligible": 1900,
+    "fraction": 1.0,
+    "predicted": 1900
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-022--best_of_n-rule-2",
+  "rule_sha256": "01d1d9f62b368a769b90e8ca50f043eb5bdf3577141514259a46c1458555c15a",
+  "run_id": "full-comparison-v5--P100-022--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-413.8873380024568 + 1459.137080020031 * voltage_V + 266.7138697190242 * bromine_rich + 105.5311688455716 * voltage_V * bromine_rich",
+    "expression_bytes": 63,
+    "free_parameters": 4,
+    "learned_state_bytes": 101,
+    "literal_state_bytes": 0,
+    "nodes": 31,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.02313421659567031,
+    "perturbation_labels_available": false,
+    "population_rows": 1900,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

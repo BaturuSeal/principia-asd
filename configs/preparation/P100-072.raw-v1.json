@@ -1,0 +1,63 @@
+{
+  "assets": [
+    {
+      "bytes": 269041,
+      "path": "scenarios/72_biotechnology_yeast_competition/raw/dataset competencias.xlsx",
+      "role": "qpcr_workbook",
+      "sha256": "3c1bf733f9bf117bd945ab3f7eb5a1913f88cb85d5eeec4c70211dd00a90918a"
+    },
+    {
+      "bytes": 6370,
+      "path": "scenarios/72_biotechnology_yeast_competition/context/source_record.json",
+      "role": "source_metadata",
+      "sha256": "759ad6dbb0d30ab0839bf5797d479e76e1c5eca5254ae619ac02542f7c6afcbf"
+    }
+  ],
+  "group_assignments": {
+    "Chr96,2": "train",
+    "Clos": "train",
+    "D245": "test",
+    "Ec1118": "train",
+    "GRE": "dev",
+    "NCAIM": "train",
+    "QA23": "dev",
+    "T73": "test"
+  },
+  "historical_contract_sha256": "d242722484c04892938f49a3ed8e6c714067b8f99ad31837c1dbd0d90540f154",
+  "input_units": {
+    "p22_pct": "percentage points; own replicate at22h",
+    "p72_pct": "percentage points; own replicate at72h",
+    "time_h": "h since inoculation"
+  },
+  "limitations": [
+    "Retrospective audit-exposed evidence only",
+    "Two held-out strain groups, early biological calibration required",
+    "qPCR percentage is author-derived abundance, not viable cell count or causal fitness",
+    "Workbook external reference never followed; local percentage formulas only",
+    "Stale headers and unresolved nitrogen unit require source review",
+    "No protected evaluator access or test-target export"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "inputs": "Own replicate percentages at22h/72h and forecast time only",
+    "learned_transformations": [],
+    "missingness": "Three missing-prefix replicates and three source time-conflict rows explicitly retained in audit; no interpolation or imputation",
+    "response": "Preserve cached same-row qPCR percentage after exact formula and ratio consistency checks"
+  },
+  "output_units": "percentage points",
+  "parser": "yeast-native-calibrated-qpcr-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/ports/batch3.py",
+    "reuse": "Historical source indexing and sample identity specification independently implemented; no legacy runtime, fitted states or reference equations",
+    "sha256": "abe9f3b7b0375c75b5b12d9dff2dd372e3f972fe196add490c76eae62ffc956e"
+  },
+  "rights_status": "metadata_cc_by_4.0_notices_pending",
+  "scenario_id": "P100-072",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.18757697",
+    "url": "https://zenodo.org/records/18757697",
+    "version": "18757697"
+  },
+  "source_scenario_descriptor_sha256": "9a2352280f15358c68b420cfe9f4c7b8e10cd19649c5d3a9f7eceffdd022f1aa"
+}

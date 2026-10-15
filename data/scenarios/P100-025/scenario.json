@@ -1,0 +1,92 @@
+{
+  "description": "raw measured FeK-edge μ(E)",
+  "domain": "battery electrochemistry",
+  "independent_unit": "Complete three-acquisitionblock linked to the source3×binnedrepresentation; oneLFPcycleonly. Fivecontiguouschronologicaldevelopmentfolds holdout wholeblocks, withfuturedevelopmentsegments allowed for thisretrospectivecompressiontask.",
+  "input_units": {
+    "d2L": "eV⁻²",
+    "dL": "eV⁻¹",
+    "discharge": "binarydischarge/rest2branch",
+    "e": "eVrelative7112",
+    "f": "dimensionlessnominalprotocolprogress",
+    "jump": "rawμ(E),dimensionless",
+    "pre": "rawμ(E),dimensionless",
+    "rF": "normalizedmeasuredFePO4reference",
+    "rL": "normalizedmeasuredLiFePO4reference",
+    "rest": "binaryrestsegment"
+  },
+  "limitations": [
+    "Retrospective spectral-shape reconstruction after pre/post-edge calibration bands and experimental segment durations are known. This is not an online state-of-charge forecast.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "dimensionless μ(E)",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 754,
+    "test": 1014,
+    "train": 3276
+  },
+  "scenario_id": "P100-025",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1286928,
+    "limit_bytes": 10000000,
+    "public_bytes": 147007
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/14922524",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/25_electrochemistry_operando_xas/context/zenodo_record.json",
+        "source_sha256": "36bd8be731f6b418b275476402dedb1ac0e1600a230dd9d717633adef1b65ed8"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14922524",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14922524",
+        "source": "scenarios/25_electrochemistry_operando_xas/raw/data.zip",
+        "source_sha256": "b8f4ecabcdbc033e16b2fd2fa431ce81c8a446c2cbb5ac401aca6656b0ee53de"
+      }
+    ],
+    "historical_case": "P100-025",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/14922524",
+    "version": "14922524"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "da1d491f32bc3e26693f34a40fa95bc264a0073298683375d931b485eed0127f",
+        "groups": 10,
+        "rows": 754,
+        "sample_ids_sha256": "60092a02bd2c9a70222c3795e5bed49acc4f29830e98325e10283c63ff1b56bb"
+      },
+      "test": {
+        "group_ids_sha256": "f78d5609633eb7fdd6853ce64ff89ec574b6470f083fca5e6d57cdf4cb147457",
+        "groups": 13,
+        "rows": 1014,
+        "sample_ids_sha256": "f912dbae94c3443cbed016f2cc0f1a38f3d113af98f7f69068219be6ca16f1f4"
+      },
+      "train": {
+        "group_ids_sha256": "ae795c31ac72a3c73aca2db18952e09a2adfea877dee7c090ca5f4cf0daf7957",
+        "groups": 42,
+        "rows": 3276,
+        "sample_ids_sha256": "3dcb84b4b99e1d10312b01523d73aeff9babd68717f54121bc67fd61c3c330f6"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Operando XAS and battery electrochemistry",
+  "version": "1.0.0rc2"
+}

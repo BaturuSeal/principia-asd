@@ -1,0 +1,14 @@
+{
+  "expression": "p0 + p1 * (quality * rho_liquid / (quality * rho_liquid + (1 - quality) * rho_vapor)) + p2 * radial_fraction + p3 * radial_fraction**2 + p4 * (quality * rho_liquid / (quality * rho_liquid + (1 - quality) * rho_vapor)) * radial_fraction + p5 * log1p(massflux_kg_m2_s)",
+  "parameters": {
+    "p0": 0.3794055182962479,
+    "p1": 0.47268252736416905,
+    "p2": -0.19359796478351862,
+    "p3": -0.8801385692613173,
+    "p4": 0.9022264746718279,
+    "p5": 0.013534249266376332
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

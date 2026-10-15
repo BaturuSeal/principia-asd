@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.5634141267415826,
+    "primary": "mae",
+    "primary_error": 1.5634141267415826,
+    "rmse": 3.0582010253682177
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 4.34565325561756,
+  "by_group": [
+    {
+      "error": 1.7478358539216028,
+      "group": "group-786711129c001bc1ddfa75a8",
+      "rows": 112
+    },
+    {
+      "error": 1.2891288804239356,
+      "group": "group-830490fea5060b8d8676fde8",
+      "rows": 112
+    },
+    {
+      "error": 1.65327764587921,
+      "group": "group-e91ef2e4099644cda96dd56e",
+      "rows": 112
+    }
+  ],
+  "coverage": {
+    "eligible": 336,
+    "fraction": 1.0,
+    "predicted": 336
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "feedback_refinement",
+  "rule_id": "full-comparison-v5--P100-084--feedback_refinement-rule-1",
+  "rule_sha256": "6294dadf9c84ec89ee973c2924180952b99fd91f8399db7a9879fa58602cd72d",
+  "run_id": "full-comparison-v5--P100-084--feedback_refinement",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "base + amp * (0.04318383528482004 + -1.7473908235538214 * progress + 4.4530484364381016 * progress ** 2 + -2.830838198363621 * progress ** 3 + -0.36055223260601926 * x + -0.0003035231867605472 * x ** 2 + 0.9711585763877618 * x * progress + -0.6294723534965663 * x * progress ** 2)",
+    "expression_bytes": 135,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 4,
+    "nodes": 87,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.029992279410025663,
+    "perturbation_labels_available": false,
+    "population_rows": 336,
+    "ranking": false,
+    "samples": 336,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

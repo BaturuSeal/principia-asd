@@ -1,0 +1,111 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.32811110494244966,
+    "primary": "brier",
+    "primary_error": 0.15794804673979204,
+    "rmse": 0.39742678160862793
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.24756319527925527,
+  "by_group": [
+    {
+      "error": 0.1356080685898513,
+      "group": "group-013c228d3602222ecd84876a",
+      "rows": 540
+    },
+    {
+      "error": 0.21565656791454885,
+      "group": "group-36ab9113afaf1a272a291eb5",
+      "rows": 430
+    },
+    {
+      "error": 0.14671876572657092,
+      "group": "group-4936635db931a97bb6d209f3",
+      "rows": 539
+    },
+    {
+      "error": 0.11711597030355295,
+      "group": "group-512ca13f0617abc81d2b6658",
+      "rows": 540
+    },
+    {
+      "error": 0.19304279730714663,
+      "group": "group-6417b4407f40adeaee9213b0",
+      "rows": 430
+    },
+    {
+      "error": 0.18696393676927175,
+      "group": "group-7220376568b33ddcdcf7589c",
+      "rows": 430
+    },
+    {
+      "error": 0.18964335685298508,
+      "group": "group-91986d80daf8f1021accc9dd",
+      "rows": 540
+    },
+    {
+      "error": 0.1900037397751288,
+      "group": "group-acffd88ab9fbf6166f845234",
+      "rows": 400
+    },
+    {
+      "error": 0.14075092138789314,
+      "group": "group-b3f6f586950bd9dc9d7bb961",
+      "rows": 539
+    },
+    {
+      "error": 0.12761596896706817,
+      "group": "group-b4600adeb3ff0811d2dcd214",
+      "rows": 540
+    },
+    {
+      "error": 0.15189221888586787,
+      "group": "group-d4bd366bf1a6c1abc8421f99",
+      "rows": 540
+    },
+    {
+      "error": 0.10036424839761907,
+      "group": "group-f1df054a67de9e5df31711fb",
+      "rows": 540
+    }
+  ],
+  "coverage": {
+    "eligible": 6008,
+    "fraction": 1.0,
+    "predicted": 6008
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v3--P100-089--symbolic_control-rule-1",
+  "rule_sha256": "a5e13d3f4fea1b7e95797024a5c5d6802e08c66efd587387df42bf6084023035",
+  "run_id": "controls-v3--P100-089--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.05445075169687456 + 0.15683580655996976 * (reward * probability) + -0.13587346387546528 * (probability * lag_choice) + 0.6369793620842605 * (lag_choice * history_mean) + -0.08036410611816851 * (probability * history_mean) + 0.04853080240413695 * tanh((probability - 0.5246893626776707) / 0.26494115732924056)))",
+    "expression_bytes": 199,
+    "free_parameters": 6,
+    "learned_state_bytes": 163,
+    "literal_state_bytes": 39,
+    "nodes": 76,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.011115536578536875,
+    "perturbation_labels_available": false,
+    "population_rows": 6008,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "dev_error": 4.215296408226937,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lag1)+p2*(lag3)+p3*(lag6)+p4*(month)",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.7258228607947659,
+    "p1": 0.6172112059447168,
+    "p2": 0.08679275529780606,
+    "p3": 0.2526706802549056,
+    "p4": -0.14141313400536087
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.006335385898958211,
+      "lag3": -0.055448756332702596,
+      "lag6": -0.11248186157690636,
+      "month": 0.13689128562757064
+    },
+    "mean": 0.18438987126231976,
+    "p90_abs": 8.940372703351578,
+    "std": 8.152558434589135
+  },
+  "rule_id": "controls-v3--P100-019--linear_control-rule-1",
+  "rule_sha256": "5f8589572257d8dd4ed18deccb592c34885e6a3c9eeb3176feafbf8939b79cf5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.7258228607947659 + 0.6172112059447168 * lag1 + 0.08679275529780606 * lag3 + 0.2526706802549056 * lag6 + -0.14141313400536087 * month",
+    "expression_bytes": 43,
+    "free_parameters": 5,
+    "learned_state_bytes": 133,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.139298711947131,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

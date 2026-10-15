@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.660863758160041,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6179537885095753
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": -0.29835882623662807,
+      "dg": -0.9951691582455179,
+      "gx": 0.10501973547637346,
+      "gy": 0.02794824193904034,
+      "hx": -0.9978979470036072,
+      "hy": -0.9965575831844175,
+      "ox": -0.9899785721139955,
+      "oy": -0.9839976142861223
+    },
+    "mean": -0.3425630478255852,
+    "p90_abs": 1.7895907577019154,
+    "std": 1.1294900336047875
+  },
+  "rule_id": "full-comparison-v5--P100-020--mean_control-rule-1",
+  "rule_sha256": "6edc0bd63d757b644bd9ea3a55bac3af48f4573dbad0971378d2b38a7b2b3be5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6179537885095753",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.6830530319121106,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

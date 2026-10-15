@@ -1,0 +1,82 @@
+{
+  "dev_error": 0.03344552458236143,
+  "execution_status": "complete",
+  "expression": "p0*hx + p1*hy + p2*ox + p3*oy + p4*dg + p5*gx + p6*gy + p7*clat",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.0282559859160176,
+    "p1": 0.6576250513403573,
+    "p2": -0.2057210398512164,
+    "p3": -0.09771416010045743,
+    "p4": -0.3851967551354898,
+    "p5": 0.007439599538686135,
+    "p6": 0.003553422581696645,
+    "p7": -9.887383763733178e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": -0.02049293334283063,
+      "dg": -0.027503812065733255,
+      "gx": 0.11832826223326784,
+      "gy": 0.04187521248017452,
+      "hx": -0.031567692623471276,
+      "hy": -0.034102093364960645,
+      "ox": -0.02499009048567153,
+      "oy": -0.030052974285031703
+    },
+    "mean": -0.0006993327345676066,
+    "p90_abs": 0.0721329951484973,
+    "std": 0.04974516179183313
+  },
+  "rule_id": "full-comparison-v5--P100-020--direct_deepseek-rule-1",
+  "rule_sha256": "716a9960620923b9a07ca974305f399a3cc2e4a59011413a21369fc5a3465c6c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.0282559859160176 * hx + 0.6576250513403573 * hy + -0.2057210398512164 * ox + -0.09771416010045743 * oy + -0.3851967551354898 * dg + 0.007439599538686135 * gx + 0.003553422581696645 * gy + -9.887383763733178e-05 * clat",
+    "expression_bytes": 63,
+    "free_parameters": 8,
+    "learned_state_bytes": 220,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.035952416890314635,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

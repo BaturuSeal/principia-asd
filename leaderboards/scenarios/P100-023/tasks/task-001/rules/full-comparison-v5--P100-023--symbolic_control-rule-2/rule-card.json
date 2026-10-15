@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.12297491061806495,
+  "execution_status": "complete",
+  "expression": "p0+p1*(H)",
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.24310885403768967,
+    "p1": 0.5390082817008768
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "H": 0.3091947763647172,
+      "area": -0.05863247711257364,
+      "hydration": -0.05863247711257364,
+      "load": 0.1763734230481847,
+      "speed": 0.12354169324085675,
+      "viscosity": 0.23850206249448772
+    },
+    "mean": -0.02745374551422274,
+    "p90_abs": 0.3192211772415604,
+    "std": 0.17705775097579177
+  },
+  "rule_id": "full-comparison-v5--P100-023--symbolic_control-rule-2",
+  "rule_sha256": "27566002bb44dc79129429e8bd567b67feab34ba26db93322e9fc7dfebd0162e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.24310885403768967 + 0.5390082817008768 * H",
+    "expression_bytes": 9,
+    "free_parameters": 2,
+    "learned_state_bytes": 53,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-023.compact.v2",
+  "train_error": 0.12755298042819116,
+  "units": {
+    "inputs": {
+      "H": "dimensionless; author Hersey calibration",
+      "area": "cm^2",
+      "hydration": "corneometer instrument units",
+      "load": "N",
+      "speed": "m/s",
+      "viscosity": "Pa s at 500 s^-1; author rheology fit"
+    },
+    "output": "1",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

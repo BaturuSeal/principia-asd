@@ -1,0 +1,60 @@
+{
+  "dev_error": 85.40222167087913,
+  "execution_status": "complete",
+  "expression": "minimum(p3, p0 * exp(p1 * (voltage_V + p2 * bromine_rich)))",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.8779007793141105,
+    "p1": 6.86046114044837,
+    "p2": 0.24565551629619528,
+    "p3": 1119.3735802484111
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": -0.09618006926609907,
+      "voltage_V": -0.13964483099436922
+    },
+    "mean": -18.76131800924386,
+    "p90_abs": 216.89783815526698,
+    "std": 151.46843729909153
+  },
+  "rule_id": "full-comparison-v5--P100-022--direct_glm-rule-1",
+  "rule_sha256": "dd2575f2cb32c7eafc76a0877eea141735124fb7f24802547de18d9c0cca6673",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1119.3735802484111, 3.8779007793141105 * exp(6.86046114044837 * (voltage_V + 0.24565551629619528 * bromine_rich)))",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 103,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 107.39250047954445,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

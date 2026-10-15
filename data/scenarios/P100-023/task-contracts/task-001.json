@@ -1,0 +1,73 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "H": "dimensionless; author Hersey calibration",
+    "area": "cm^2",
+    "hydration": "corneometer instrument units",
+    "load": "N",
+    "speed": "m/s",
+    "viscosity": "Pa s at 500 s^-1; author rheology fit"
+  },
+  "inputs": [
+    "H",
+    "viscosity",
+    "speed",
+    "load",
+    "hydration",
+    "area"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Conditional prediction at supplied trial-average speed/load. These trial summaries are not prospective controller inputs; no temporal forecasting claim.",
+  "output": "target",
+  "output_description": "Author-derived median coefficient of friction",
+  "output_units": "1",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-023",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "fb13c96277668b369df80fd34cfce43355bf4713c59377e457631d32ca44bfcf",
+  "source_task": "P100-023.continuation.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "whole participant",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-023.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Author-derived median coefficient of friction",
+  "version": "1.0.0rc2"
+}

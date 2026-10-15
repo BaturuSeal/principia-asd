@@ -1,0 +1,90 @@
+{
+  "description": "Author-benchmarked mean compilation wall time after matched Qiskit pilot",
+  "domain": "quantum computing",
+  "independent_unit": "Circuit family after stripping numeric size suffixes; compiler observations on each family stay linked. One local CPU family; no independent hardware transfer.",
+  "input_units": {
+    "is_bqskit": "SDK indicator,elseStaq",
+    "is_tket": "SDK indicator",
+    "load_seconds": "Qiskit QASM loading seconds",
+    "pilot_depth": "Qiskit output two-qubit depth",
+    "pilot_gates": "Qiskit output two-qubit gate count",
+    "pilot_seconds": "seconds Qiskit calibration cost",
+    "qubits": "input qubit count"
+  },
+  "limitations": [
+    "Must execute the complete Qiskit pilot first; its runtime and resulting circuit statistics are known only afterward. Candidate SDK timing is withheld. Pilot cost is not free. This is runtime diagnostics, not pre-compilation prediction or quantum-device performance.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "computational_or_mathematical_records",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "seconds",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 20,
+    "test": 37,
+    "train": 78
+  },
+  "scenario_id": "P100-031",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 29769,
+    "limit_bytes": 10000000,
+    "public_bytes": 14134
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/14977295",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/31_quantum_computing_ibm_benchpress/context/zenodo_record.json",
+        "source_sha256": "015362979c2f28669bf79772437911081ea1b64e616b84f16f8553390ebfabee"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14977295",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14977295",
+        "source": "scenarios/31_quantum_computing_ibm_benchpress/raw/published_results.zip",
+        "source_sha256": "df77a8c7b297601469777559c5d9d84254e463e8cfb1a150e9d92c186629a7e8"
+      }
+    ],
+    "historical_case": "P100-031",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/14977295",
+    "version": "14977295"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "594fe389cb355e1e723586251c7b40a1916acd79743019ff74f8191f21923dcc",
+        "groups": 4,
+        "rows": 20,
+        "sample_ids_sha256": "d61a3757ce2197899c60221590dedd060287a39f6f8c1ef0d2f9f52075c1ddb5"
+      },
+      "test": {
+        "group_ids_sha256": "3e4b9275cf9694dfa5bb2141b90dfe08dc70d881409bd08de1bfb46b3917af9c",
+        "groups": 5,
+        "rows": 37,
+        "sample_ids_sha256": "0110916b5f23f904121f07c9df24512bada7a35829687607950b80194005b708"
+      },
+      "train": {
+        "group_ids_sha256": "507309e169631803db7291f8df7f01d9472a36286a8d879d1ee9a4f05bdb2d45",
+        "groups": 20,
+        "rows": 78,
+        "sample_ids_sha256": "dd5a8aff93478928923dd98c76c4d83fb0f33d9fbd689dbfdc69c882dd2f1c7d"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Quantum circuit compilation benchmark experiments",
+  "version": "1.0.0rc2"
+}

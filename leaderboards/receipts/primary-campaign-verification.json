@@ -1,0 +1,141 @@
+{
+  "assigned_attempts": 520,
+  "attempt_statuses": {
+    "complete": 483,
+    "failed": 37
+  },
+  "campaign_id": "full-comparison-v5",
+  "checked_at": "2026-10-11T14:36:08.770274+00:00",
+  "engineering_exposed_scenarios": [
+    "P100-002",
+    "P100-017",
+    "P100-043",
+    "P100-051",
+    "P100-054",
+    "P100-068",
+    "P100-087",
+    "P100-090"
+  ],
+  "evaluation_freeze_sha256": "978055aed38697fae94f240d4911e9c2aa06df51267e3329a8fe8c4ddbfde7bc",
+  "ledger_unchanged": true,
+  "methods": {
+    "best_of_n": {
+      "attempts": 40,
+      "completed": 35,
+      "failed": 5,
+      "invalid_rules": 3,
+      "rules": 73,
+      "scenarios_with_accuracy_gate_rule": 34
+    },
+    "direct_deepseek": {
+      "attempts": 40,
+      "completed": 36,
+      "failed": 4,
+      "invalid_rules": 0,
+      "rules": 36,
+      "scenarios_with_accuracy_gate_rule": 36
+    },
+    "direct_glm": {
+      "attempts": 40,
+      "completed": 36,
+      "failed": 4,
+      "invalid_rules": 1,
+      "rules": 36,
+      "scenarios_with_accuracy_gate_rule": 35
+    },
+    "direct_kimi": {
+      "attempts": 40,
+      "completed": 33,
+      "failed": 7,
+      "invalid_rules": 0,
+      "rules": 33,
+      "scenarios_with_accuracy_gate_rule": 30
+    },
+    "direct_qwen": {
+      "attempts": 40,
+      "completed": 37,
+      "failed": 3,
+      "invalid_rules": 0,
+      "rules": 37,
+      "scenarios_with_accuracy_gate_rule": 33
+    },
+    "feedback_refinement": {
+      "attempts": 40,
+      "completed": 37,
+      "failed": 3,
+      "invalid_rules": 0,
+      "rules": 37,
+      "scenarios_with_accuracy_gate_rule": 35
+    },
+    "linear_control": {
+      "attempts": 40,
+      "completed": 37,
+      "failed": 3,
+      "invalid_rules": 1,
+      "rules": 37,
+      "scenarios_with_accuracy_gate_rule": 29
+    },
+    "mean_control": {
+      "attempts": 40,
+      "completed": 40,
+      "failed": 0,
+      "invalid_rules": 0,
+      "rules": 40,
+      "scenarios_with_accuracy_gate_rule": 40
+    },
+    "polynomial_control": {
+      "attempts": 40,
+      "completed": 37,
+      "failed": 3,
+      "invalid_rules": 1,
+      "rules": 37,
+      "scenarios_with_accuracy_gate_rule": 29
+    },
+    "principia_engine": {
+      "attempts": 40,
+      "completed": 40,
+      "failed": 0,
+      "invalid_rules": 1,
+      "rules": 120,
+      "scenarios_with_accuracy_gate_rule": 40
+    },
+    "symbolic_control": {
+      "attempts": 40,
+      "completed": 40,
+      "failed": 0,
+      "invalid_rules": 0,
+      "rules": 120,
+      "scenarios_with_accuracy_gate_rule": 40
+    },
+    "tool_agent": {
+      "attempts": 40,
+      "completed": 35,
+      "failed": 5,
+      "invalid_rules": 2,
+      "rules": 47,
+      "scenarios_with_accuracy_gate_rule": 34
+    },
+    "tree_control": {
+      "attempts": 40,
+      "completed": 40,
+      "failed": 0,
+      "invalid_rules": 0,
+      "rules": 40,
+      "scenarios_with_accuracy_gate_rule": 38
+    }
+  },
+  "release_ready": false,
+  "replayed_attempts": 520,
+  "rule_evidence_profile": {
+    "accuracy_gate_passed": 643,
+    "complete": 684,
+    "invalid": 9
+  },
+  "rules": 693,
+  "runtime_sha256": "d9efc79d9a6b8ffa9e39b0403ebe7c581ce0f930d7edaded0c622cd4147aa566",
+  "scientific_review": "not_assessed",
+  "scope": "Frozen source/config/data integrity, complete fixed denominator, global freeze timing, exact deterministic receipt replay and canonical export parity; not source-rights or scientific-validity approval",
+  "status": "passed",
+  "submission_freeze_sha256": "e3a55395db717fc183050a38f857836ffb143e16c24e1d60766a5e8404ee41f0",
+  "zero_api_assessment_and_replay": true
+}

@@ -1,0 +1,61 @@
+{
+  "dev_error": 0.19466648193372682,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(education)+p3*(tanh((education-14.146865671641791)/2.5552837906214267))+p4*(education*age)+p5*(log1p(abs((age-44.5544776119403)/11.315902267609763)))))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.5138214810103168,
+    "p1": 0.00348078822887641,
+    "p2": -0.07458248687676569,
+    "p3": 0.08080453243273543,
+    "p4": 0.00044541764251344846,
+    "p5": -0.20506674984087678
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.04325475031752998,
+      "education": 0.03780382463977615,
+      "japan": -0.011681627528586157
+    },
+    "mean": 0.006371509426326057,
+    "p90_abs": 0.724266374078437,
+    "std": 0.4451206833367085
+  },
+  "rule_id": "controls-v2--P100-039--symbolic_control-rule-2",
+  "rule_sha256": "f7953863927097c8560f3576f57132410001c82488b7c6a961e88a5edab4a2f9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.5138214810103168 + 0.00348078822887641 * education ** 2 + -0.07458248687676569 * education + 0.08080453243273543 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00044541764251344846 * (education * age) + -0.20506674984087678 * log1p(abs((age - 44.5544776119403) / 11.315902267609763))))",
+    "expression_bytes": 198,
+    "free_parameters": 6,
+    "learned_state_bytes": 166,
+    "nodes": 79,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.18647578729528236,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

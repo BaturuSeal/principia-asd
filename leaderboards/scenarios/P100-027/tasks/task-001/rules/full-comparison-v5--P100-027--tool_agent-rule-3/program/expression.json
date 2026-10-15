@@ -1,0 +1,14 @@
+{
+  "expression": "p0+p1*(massflux_kg_m2_s*quality)+p2*(quality*rho_liquid)+p3*(quality)+p4*(pressure_Pa*quality)+p5*(tanh((quality-0.27977514285714294)/0.17081476267367907))",
+  "parameters": {
+    "p0": -0.2765180286572098,
+    "p1": 0.0011275490944178867,
+    "p2": -4.803488231372768,
+    "p3": 4157.308053549068,
+    "p4": -8.570767823910111e-05,
+    "p5": -0.6044617220173885
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

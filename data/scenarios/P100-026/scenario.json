@@ -1,0 +1,86 @@
+{
+  "description": "Dimethoxymethane selectivity",
+  "domain": "catalysis",
+  "independent_unit": "Complete reactor run. Diagnostic forecast after 300 min with fixed prefix calibration; no future conversion/selectivity predictors.",
+  "input_units": {
+    "ag_wt_pct": "wt percent",
+    "anchor_selectivity_pct": "percent",
+    "elapsed_min": "min",
+    "prefix_slope_pct_min": "percent/min"
+  },
+  "limitations": [
+    "Six complete reactor runs were developed with leave-run-out validation; the 220°C-labelled and calcined-catalyst runs were reserved. All models receive the same fixed 300-minute calibration prefix. The long-term figure duplicated in the source is counted once. No instantaneous conversion or other selectivity enters the predictor.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "percentage points",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 240,
+    "test": 233,
+    "train": 389
+  },
+  "scenario_id": "P100-026",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 133487,
+    "limit_bytes": 10000000,
+    "public_bytes": 31692
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/15691695",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/26_chemistry_ag_zeolite_catalysis/context/zenodo_record.json",
+        "source_sha256": "11b41bf7ded47daf6c53e277ab9e1d83d78315dce26a30c6d6484ce028e3e9e4"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15691695",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/15691695",
+        "source": "scenarios/26_chemistry_ag_zeolite_catalysis/raw/zenodo raw data.7z",
+        "source_sha256": "9bd3bd5b551d5d82d2e287b1bc002c92097b36a66ad8066a9d2133f7006a3502"
+      }
+    ],
+    "historical_case": "P100-026",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/15691695",
+    "version": "15691695"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "4caa0c90fde494dbe6093b470c7e716ff34a5ead9b176b58b8c5b3680a145450",
+        "groups": 2,
+        "rows": 240,
+        "sample_ids_sha256": "7708a91feb8a83515ea51ec32ddfb48b8ddd33d8a54ca276ff9c67f30db28c50"
+      },
+      "test": {
+        "group_ids_sha256": "a6dc323804140305d01be82a19f7b56f8dc0dcd8ee91b79f8a68a6157f310fcc",
+        "groups": 2,
+        "rows": 233,
+        "sample_ids_sha256": "3b30b7e4d59507432a6b1a0df49ab58c7722c6a538fcc46a4e6050322be700f7"
+      },
+      "train": {
+        "group_ids_sha256": "eb6d280d784edfd7abfbfd01cf59b1382ae969aa223af4ac889f13f71178982f",
+        "groups": 4,
+        "rows": 389,
+        "sample_ids_sha256": "be11bcbb9433714de0466cafd412fa0084f82005c0b827dd933575c07f0d7940"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Silver zeolite methanol dehydrogenation experiments",
+  "version": "1.0.0rc2"
+}

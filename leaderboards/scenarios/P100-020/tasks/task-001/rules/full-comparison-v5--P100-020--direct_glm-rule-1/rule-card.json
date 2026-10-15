@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.08089870245943713,
+  "execution_status": "complete",
+  "expression": "(hx + hy + ox + oy + dg) / 5 + p0 * gy * (1 - clat) + p1 * gx * (1 - clat)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "clat"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.024420096898875754,
+    "p1": -0.07128865183353181
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "clat": -0.023006363624096228,
+      "dg": -0.15836881498445976,
+      "gx": 0.18029250340243888,
+      "gy": 0.12277380356902029,
+      "hx": -0.2033908477549635,
+      "hy": -0.18202306877079344,
+      "ox": -0.13800931762599175,
+      "oy": -0.09784612433866237
+    },
+    "mean": 0.0013973769366247594,
+    "p90_abs": 0.1493081866604423,
+    "std": 0.10995097118351298
+  },
+  "rule_id": "full-comparison-v5--P100-020--direct_glm-rule-1",
+  "rule_sha256": "c5090227b4b0d4b86ca263821a00716f7e59ee87a43b10877721a180d971e717",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "(hx + hy + ox + oy + dg) / 5 + 0.024420096898875754 * gy * (1 - clat) + -0.07128865183353181 * gx * (1 - clat)",
+    "expression_bytes": 74,
+    "free_parameters": 2,
+    "learned_state_bytes": 56,
+    "literal_state_bytes": 3,
+    "nodes": 52,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-020.compact.v2",
+  "train_error": 0.0836856952847365,
+  "units": {
+    "inputs": {
+      "clat": "dimensionless cosine latitude",
+      "dg": "degree C",
+      "gx": "degree C",
+      "gy": "degree C",
+      "hx": "degree C",
+      "hy": "degree C",
+      "ox": "degree C",
+      "oy": "degree C"
+    },
+    "output": "degree C",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

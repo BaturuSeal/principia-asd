@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.44847659160192405,
+    "primary": "mae",
+    "primary_error": 0.44847659160192405,
+    "rmse": 0.4763738697685486
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.25530277777777777,
+  "by_group": [
+    {
+      "error": 0.5536745218523209,
+      "group": "group-68ac150dbaf3e5acadd8ed34",
+      "rows": 2400
+    },
+    {
+      "error": 0.3432786613515272,
+      "group": "group-88a9b273a766ea99e85f6114",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "full-comparison-v5--P100-055--symbolic_control-rule-1",
+  "rule_sha256": "c0059c7f1fad4b06a1ec4b3dcbe67b5ebeee3fd4265c21cdce845d566f69498c",
+  "run_id": "full-comparison-v5--P100-055--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.03969966187411501 + -0.13924338864893612 * (ratio * water) + 0.47395542974061433 * log1p(abs((water - 0.31) / 0.04898979485566355)) + 0.014423988592020405 * tanh((age_min - 15.0) / 15.0) + 0.00011263308286971598 * age_min ** 2 + 0.0033789924860914786 * age_min",
+    "expression_bytes": 131,
+    "free_parameters": 6,
+    "learned_state_bytes": 169,
+    "literal_state_bytes": 32,
+    "nodes": 71,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.047099701497128846,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

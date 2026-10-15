@@ -1,0 +1,90 @@
+{
+  "assets": [
+    {
+      "bytes": 28844,
+      "path": "scenarios/06_physics_nist_rydberg_rf_sensing/context/mds2-3951_nerdm.json",
+      "role": "nist_source_record",
+      "sha256": "861c7adee1fa7a8081854b6c17e8a38e1d91f662609ebcdba3fd09c61a89e377"
+    },
+    {
+      "bytes": 12816,
+      "path": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/3951_README.txt",
+      "role": "source_documentation",
+      "sha256": "5b9ef6b21f27c52dfb61921ff0246a410f441b238ff88e326a53079d8ca2ea68"
+    },
+    {
+      "bytes": 11199193,
+      "path": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG3b_IonSpectra_with_ProbeRabiFrequency.csv",
+      "role": "ion_spectral_grid",
+      "sha256": "284dbd4ac1f2e42ba10a24a7d8a74107ab6bdba34e1fa55fe82976c8dad322ff"
+    },
+    {
+      "bytes": 1111,
+      "path": "scenarios/06_physics_nist_rydberg_rf_sensing/raw/FIG4b_EIT_ION_WidthandAmplitude_with_ProbeRabiFrequency.csv",
+      "role": "excluded_fitted_summary_documentation",
+      "sha256": "8ad0582b1f2ea1486f4beb7defdfdfa14bb6986aa704ed0bde004a299d624318"
+    }
+  ],
+  "group_assignments": {
+    "rabi-block-00": "train",
+    "rabi-block-01": "train",
+    "rabi-block-02": "train",
+    "rabi-block-03": "train",
+    "rabi-block-04": "train",
+    "rabi-block-05": "dev",
+    "rabi-block-06": "test",
+    "rabi-block-07": "train",
+    "rabi-block-08": "dev",
+    "rabi-block-09": "test"
+  },
+  "historical_contract_sha256": "5cb8611058ccac43af87909ca5fbea0413f0fa0aa900a75419e863d46f669752",
+  "input_units": {
+    "detuning_MHz": "MHz",
+    "rabi_MHz": "MHz"
+  },
+  "limitations": [
+    "Curator-only: original sources include historically exposed responses; discovery workers must not read this source root",
+    "No evaluator vault is accessed and no test targets are exported",
+    "NIST record revision and README version differ and are bound separately",
+    "Reconstruction does not establish scientific admission, independence or redistribution approval"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "arbitrary units",
+  "parser": "rydberg-ion-source-grid-v1",
+  "partition_provenance": {
+    "allocation": "Original Rabi blocks 06/09 are test; other whole blocks are sorted by canonical SHA256([compact-v2, case, opaque group]) and the first two are dev. Coordinates in one cell are not independent apparatus replications.",
+    "source_split_sha256": "a8e16baabeffb2dca400027d5347a938b8b3d8a0272abaeb3ffdbe2e42d44633"
+  },
+  "policy": {
+    "coordinates": "Original physical CSV rows and exact stored delta_c/(2*pi), Omega_p/(2*pi) in MHz; no interpolation or normalization",
+    "domain": "All finite stored ion amplitudes with abs(detuning_MHz) <= 60; retain zero/negative signals and explicit missingness",
+    "excluded": "Optical/EIT signals, fitted widths/amplitudes, RF calibration, noise, sensitivity and alternate spectra cannot be predictors",
+    "group": "Contiguous blocks of 30 sorted Rabi grid coordinates; all detuning samples stay with their block",
+    "source_processing": "The dense exported grid has not been verified as independent native acquisitions; relationship to original measured scans and interpolation remains an admission gate"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-006/native.py",
+    "reuse": "Measurement/identity specification independently reimplemented; no fitting, scientific rule, reference state or evaluator copied",
+    "sha256": "9239061460879dbd6fe5ff723cb2259f82b10103d575a9eb2243ee14374b6006"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-006",
+  "schema_version": "native-reconstruction/1",
+  "source_grid_shape": [
+    1000,
+    300
+  ],
+  "source_identity": {
+    "doi": "10.18434/mds2-3951",
+    "readme_version": "1.0.0",
+    "record_version": "1.0.3",
+    "url": "https://data.nist.gov/od/id/mds2-3951"
+  },
+  "source_scenario_descriptor_sha256": "454ce45309a4e22e10ed85e5f5d6622bddd1d56391c0f672b2b806742bfc8879",
+  "source_version": "1.0.3",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test"
+}

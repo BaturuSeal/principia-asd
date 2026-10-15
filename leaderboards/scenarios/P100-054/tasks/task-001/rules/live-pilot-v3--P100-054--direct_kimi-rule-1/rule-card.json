@@ -1,0 +1,69 @@
+{
+  "dev_error": 0.011083311135987501,
+  "execution_status": "complete",
+  "expression": "p0 * width_um * thickness_um ** 2 / length_um * (1 - p1 * notch_depth_um / thickness_um) * (1 + p2 * notch_width_um / width_um) + p3",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.9234026592408068,
+    "p1": 1.2372397059774263,
+    "p2": -0.900819615813254,
+    "p3": 0.012335147360862775
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": -0.11370892399414503,
+      "notch_depth_um": 0.23813555671544784,
+      "notch_width_um": -0.20112998128711107,
+      "thickness_um": 0.24976343454325542,
+      "width_um": -0.1221485771225835
+    },
+    "mean": 0.004454196484459576,
+    "p90_abs": 0.021892314455218456,
+    "std": 0.013211469542541024
+  },
+  "rule_id": "live-pilot-v3--P100-054--direct_kimi-rule-1",
+  "rule_sha256": "7bd7ffd103c20aa700db2a595589fe38006f273fba479d6486b6d722fcf22106",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.9234026592408068 * width_um * thickness_um ** 2 / length_um * (1 - 1.2372397059774263 * notch_depth_um / thickness_um) * (1 + -0.900819615813254 * notch_width_um / width_um) + 0.012335147360862775",
+    "expression_bytes": 132,
+    "free_parameters": 4,
+    "learned_state_bytes": 106,
+    "literal_state_bytes": 3,
+    "nodes": 52,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.016288652739772574,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "high1": "RMS strain in units of 1e-21",
+    "lag1": "RMS strain in units of 1e-21",
+    "lag2": "RMS strain in units of 1e-21",
+    "lag3": "RMS strain in units of 1e-21",
+    "lag4": "RMS strain in units of 1e-21",
+    "line1": "RMS strain in units of 1e-21",
+    "low1": "RMS strain in units of 1e-21",
+    "mad4": "RMS strain in units of 1e-21",
+    "median4": "RMS strain in units of 1e-21"
+  },
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "median4",
+    "mad4",
+    "low1",
+    "high1",
+    "line1"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": true,
+  "observation_window": "Only earlier16-second strain summaries used. Quality masks applied to entire predictor and target windows; no centered filters or future PSD.",
+  "output": "target",
+  "output_description": "Next nonoverlapping16-second recorded 30–80Hz strain RMS",
+  "output_units": "10^-21 strain",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-003",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "a882655827bc79abad99c43b4d4cac4940b2df9ae2df74dc5fa241cf08faac35",
+  "source_task": "P100-003.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Contiguous512-second block in one detector segment; blocks not independent experiments",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-003.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Next nonoverlapping16-second recorded 30–80Hz strain RMS",
+  "version": "1.0.0rc2"
+}

@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.009690370874913838,
+  "execution_status": "complete",
+  "expression": "p0 + p1*(lag1 - median6) + p2*(lag2 - median6) + p3*(lag3 - median6) + p4*(lag4 - median6) + p5*(lag6 - median6) + p6*(lag12 - median24) + p7*(lag24 - median24)",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "lag6",
+    "lag12",
+    "lag24",
+    "median6",
+    "median24",
+    "mad6"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.9999133731684207,
+    "p1": 0.022279899499542524,
+    "p2": -0.024938669877523554,
+    "p3": -0.039662433505297155,
+    "p4": -0.07346668389104437,
+    "p5": -0.08108509847295975,
+    "p6": 0.04311430771301624,
+    "p7": -0.08055789472391572
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.6915219096760427,
+      "lag12": -0.5192203774417977,
+      "lag2": -0.7029653999325404,
+      "lag24": -0.21883823065068828,
+      "lag3": -0.7084998441539159,
+      "lag4": -0.6570565231091362,
+      "lag6": -0.6677982501379595,
+      "mad6": 0.03948602071230937,
+      "median24": -0.6645268086365955,
+      "median6": -0.7786992624519102
+    },
+    "mean": 0.0009965429199922022,
+    "p90_abs": 0.02587087472877772,
+    "std": 0.014679656334404994
+  },
+  "rule_id": "full-comparison-v5--P100-002--direct_deepseek-rule-1",
+  "rule_sha256": "0a6cac92be5c5ecf2abb243ea484572b23ef84413b4bbeb3a2e7594da7e667e2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.9999133731684207 + 0.022279899499542524 * (lag1 - median6) + -0.024938669877523554 * (lag2 - median6) + -0.039662433505297155 * (lag3 - median6) + -0.07346668389104437 * (lag4 - median6) + -0.08108509847295975 * (lag6 - median6) + 0.04311430771301624 * (lag12 - median24) + -0.08055789472391572 * (lag24 - median24)",
+    "expression_bytes": 160,
+    "free_parameters": 8,
+    "learned_state_bytes": 223,
+    "literal_state_bytes": 0,
+    "nodes": 87,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-002.compact.v2",
+  "train_error": 0.0013793097371036266,
+  "units": {
+    "inputs": {
+      "lag1": "author-normalized relative flux",
+      "lag12": "author-normalized relative flux",
+      "lag2": "author-normalized relative flux",
+      "lag24": "author-normalized relative flux",
+      "lag3": "author-normalized relative flux",
+      "lag4": "author-normalized relative flux",
+      "lag6": "author-normalized relative flux",
+      "mad6": "author-normalized relative flux",
+      "median24": "author-normalized relative flux",
+      "median6": "author-normalized relative flux"
+    },
+    "output": "relative flux (native normalization)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

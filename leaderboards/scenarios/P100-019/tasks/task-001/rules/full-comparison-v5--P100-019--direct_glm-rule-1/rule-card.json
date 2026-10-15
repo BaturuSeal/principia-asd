@@ -1,0 +1,70 @@
+{
+  "dev_error": 5.0487121705987015,
+  "execution_status": "complete",
+  "expression": "p0*lag1 + p1*lag3 + p2*lag6 + p3 + p4*sin(p5*month) + p6*cos(p7*month)",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6142488797235037,
+    "p1": 0.09238626394216755,
+    "p2": 0.25016336766994707,
+    "p3": 10.772751744370835,
+    "p4": 3.324680119780347,
+    "p5": 0.4161663812177065,
+    "p6": -11.354549376723769,
+    "p7": 0.07509612773389975
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.005413947744478105,
+      "lag3": -0.054001185033001,
+      "lag6": -0.1113013979065339,
+      "month": 0.1679394292495764
+    },
+    "mean": 2.00312300304946,
+    "p90_abs": 9.57722469792149,
+    "std": 8.1913818679721
+  },
+  "rule_id": "full-comparison-v5--P100-019--direct_glm-rule-1",
+  "rule_sha256": "cb44fe01ec5fcd71269c475e36c9fbcb14653882c23fd430a68f35d135dfb1c8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.6142488797235037 * lag1 + 0.09238626394216755 * lag3 + 0.25016336766994707 * lag6 + 10.772751744370835 + 3.324680119780347 * sin(0.4161663812177065 * month) + -11.354549376723769 * cos(0.07509612773389975 * month)",
+    "expression_bytes": 70,
+    "free_parameters": 8,
+    "learned_state_bytes": 211,
+    "literal_state_bytes": 0,
+    "nodes": 57,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 18
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.152442865973441,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

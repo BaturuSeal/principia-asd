@@ -1,0 +1,16 @@
+{
+  "expression": "p0+p1*cal_plus20_uA*tanh(p2*(gate_V-p3))+p4*cal_zero_uA*exp(-p5*(gate_V-p3))+p6*cal_minus20_uA*exp(p7*(gate_V+20))",
+  "parameters": {
+    "p0": 0.9173564988242362,
+    "p1": 0.4779576516812611,
+    "p2": 0.16919689381202202,
+    "p3": 14.075056926146605,
+    "p4": -1.8805732246706657,
+    "p5": 0.09296951283817739,
+    "p6": -9.257780390063653,
+    "p7": -5.937554747035599
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

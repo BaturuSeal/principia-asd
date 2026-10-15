@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.5257237246276596,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.014973806117021277
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.014559533509965077,
+      "t": 0.018226009877322508,
+      "y0": -0.5250976337011017,
+      "y1": 0.33963273217027623,
+      "y2": 0.8612685793810784,
+      "y3": 0.6072130611112014
+    },
+    "mean": 0.00228112746533587,
+    "p90_abs": 0.9096492938829788,
+    "std": 0.6061567622650246
+  },
+  "rule_id": "full-comparison-v5--P100-068--mean_control-rule-1",
+  "rule_sha256": "3fc30d6fb3b6393726b8016d3b0fe45f71a06006a94dd456e0451939026a51a5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.014973806117021277",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 28,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.5338893007896759,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

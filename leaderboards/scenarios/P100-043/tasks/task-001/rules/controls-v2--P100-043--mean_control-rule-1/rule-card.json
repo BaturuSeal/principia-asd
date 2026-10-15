@@ -1,0 +1,69 @@
+{
+  "dev_error": 0.24818290213060656,
+  "execution_status": "complete",
+  "expression": "3.0392633312714286",
+  "inputs": [
+    "tokens_B",
+    "anchor_tokens_B",
+    "early_tokens_B",
+    "anchor_loss",
+    "early_loss",
+    "params_B",
+    "width",
+    "depth"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": -0.9886974039469348,
+      "anchor_tokens_B": 4.1060487602607496e-17,
+      "depth": 0.8887837399309947,
+      "early_loss": -0.988778083184674,
+      "early_tokens_B": -7.31389935421446e-17,
+      "params_B": 0.9549747883997458,
+      "tokens_B": 0.1524070569082072,
+      "width": 0.8329061171014575
+    },
+    "mean": -0.11938761248777141,
+    "p90_abs": 0.35664130508857145,
+    "std": 0.23073041010030215
+  },
+  "rule_id": "controls-v2--P100-043--mean_control-rule-1",
+  "rule_sha256": "22e194802a38ee7346e1248492e009dcc04237dfbeb02dca7cb7c2e1c83fad7e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.0392633312714286",
+    "expression_bytes": 18,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-043.compact.v2",
+  "train_error": 0.2409309815382228,
+  "units": {
+    "inputs": {
+      "anchor_loss": "nats per token",
+      "anchor_tokens_B": "billions of training tokens",
+      "depth": "layers",
+      "early_loss": "nats per token",
+      "early_tokens_B": "billions of training tokens",
+      "params_B": "billions of parameters",
+      "tokens_B": "billions of training tokens",
+      "width": "embedding dimensions"
+    },
+    "output": "nats per token",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

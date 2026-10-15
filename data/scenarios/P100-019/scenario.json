@@ -1,0 +1,114 @@
+{
+  "description": "Next-month unique received vehicle complaints per known make/model",
+  "domain": "transportation",
+  "independent_unit": "Whole target months; same known vehicle cohorts repeat, lag windows overlap. Three held months are not independent fleets or defect experiments.",
+  "input_units": {
+    "lag1": "prior calendar month unique ODINO count",
+    "lag3": "mean prior3monthly counts",
+    "lag6": "mean prior6monthly counts",
+    "month": "target calendar month1–12"
+  },
+  "limitations": [
+    "Only prior-month LDATE received counts predict next month. Retrospective snapshot may revise product labels and records; historical DATEA/report publication lag means calendar causality is not verified as-issued availability. No incident-date future information used.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "complaints/month",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 868,
+    "test": 1302,
+    "train": 3472
+  },
+  "scenario_id": "P100-019",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 640593,
+    "limit_bytes": 10000000,
+    "public_bytes": 143257
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "source": "scenarios/19_transport_nhtsa_safety_2025_2026/context/CMPL.txt",
+        "source_sha256": "84585b4ded99b0c45abc4a5dc86f85332ba0a6969d2d7d9b1247f10fc53e8f45"
+      },
+      {
+        "citation_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "source": "scenarios/19_transport_nhtsa_safety_2025_2026/context/RCL.txt",
+        "source_sha256": "3438cc7e4131efa401dfe6437dbe035607e092c129155dfb411d459d58802203"
+      },
+      {
+        "citation_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "source": "scenarios/19_transport_nhtsa_safety_2025_2026/context/TSBS.txt",
+        "source_sha256": "cae527673072d467b741f129086b468ee236e614270901a693bb5f15c096bbab"
+      },
+      {
+        "citation_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "source": "scenarios/19_transport_nhtsa_safety_2025_2026/raw/COMPLAINTS_RECEIVED_2025-2026.zip",
+        "source_sha256": "e7a1f8f6ae2122a8a370f1e7231813b5f119d480e91a67da194656e856eced15"
+      },
+      {
+        "citation_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "source": "scenarios/19_transport_nhtsa_safety_2025_2026/raw/MFR_COMMS_RECEIVED_2025-2026.zip",
+        "source_sha256": "73ad193326c5af8978278b4667c64b608f1c590566639c3df6bbed346380a216"
+      },
+      {
+        "citation_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "license": "U.S. Government public data",
+        "rights_url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+        "source": "scenarios/19_transport_nhtsa_safety_2025_2026/raw/RCL_FROM_2025_2026.zip",
+        "source_sha256": "46cd58c85495ba3164eda0884b91e02c255507759cc15c0c68fef166ea43f09f"
+      }
+    ],
+    "historical_case": "P100-019",
+    "license": "U.S. Government public data",
+    "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+    "version": "2025-2026 rolling files frozen at retrieval; benchmark selection revision 2 (three complete date-scoped archives)"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "826cd61c13fd70640eed22bd555b4d4916f9035fd5d613c12792b1b4609a876a",
+        "groups": 2,
+        "rows": 868,
+        "sample_ids_sha256": "74e87fb908f422d138597b07129125d3a3377ec84a1b9ce27eddbb8885081a78"
+      },
+      "test": {
+        "group_ids_sha256": "2238fca2294d53d47002a2dd76d6f2c0ad6e8697c6e190f1cddde091d506fdd4",
+        "groups": 3,
+        "rows": 1302,
+        "sample_ids_sha256": "3d25d12a16349f65c1be1f5d40c05ce94f0f2f03a017bf06c8c4d6310565ef28"
+      },
+      "train": {
+        "group_ids_sha256": "93183d97c2612771c58e28809b2964058ef403b4c86f21ea6af9e79de7344fea",
+        "groups": 8,
+        "rows": 3472,
+        "sample_ids_sha256": "36fb7e3d0ca36ba470f7b159a2f7912a364e735e960a63f16fafdf142f81c646"
+      }
+    },
+    "policy": "latest complete development time blocks; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "NHTSA complaints, recalls, investigations, and manufacturer communications",
+  "version": "1.0.0rc2"
+}

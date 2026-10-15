@@ -1,0 +1,91 @@
+{
+  "dev_error": 0.21420794775680377,
+  "execution_status": "complete",
+  "expression": "Decision tree; see complete node arrays",
+  "inputs": [
+    "log_duration",
+    "log_centroid",
+    "log_peak",
+    "high_share",
+    "entropy",
+    "flatness",
+    "envelope_cv",
+    "log_modulation",
+    "log_rms",
+    "species_code"
+  ],
+  "method_id": "tree_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "tree_reference",
+  "output": "target",
+  "parameters": {},
+  "representation": "tree",
+  "rule_id": "full-comparison-v5--P100-035--tree_control-rule-1",
+  "rule_sha256": "d4585a0bcac73d2c6d209a97b15748e3a4be54aa6abc24cf37b1074d139d1637",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "free_parameters": 7,
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-035.compact.v2",
+  "tree": {
+    "feature": [
+      0,
+      1,
+      -2,
+      -2,
+      9,
+      -2,
+      -2
+    ],
+    "features": [
+      "log_duration",
+      "log_centroid",
+      "log_peak",
+      "high_share",
+      "entropy",
+      "flatness",
+      "envelope_cv",
+      "log_modulation",
+      "log_rms",
+      "species_code"
+    ],
+    "left": [
+      1,
+      2,
+      -1,
+      -1,
+      5,
+      -1,
+      -1
+    ],
+    "right": [
+      4,
+      3,
+      -1,
+      -1,
+      6,
+      -1,
+      -1
+    ],
+    "threshold": [
+      -1.0878878831863403,
+      -1.1975029706954956,
+      -2.0,
+      -2.0,
+      0.5,
+      -2.0,
+      -2.0
+    ],
+    "value": [
+      0.18583671628326567,
+      0.7112299465240641,
+      0.39215686274509803,
+      0.8308823529411765,
+      0.1374384236453202,
+      0.056025369978858354,
+      0.20848708487084872
+    ]
+  }
+}

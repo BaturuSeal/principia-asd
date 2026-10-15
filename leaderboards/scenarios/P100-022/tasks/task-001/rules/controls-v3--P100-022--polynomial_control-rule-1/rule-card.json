@@ -1,0 +1,60 @@
+{
+  "dev_error": 188.11189645755132,
+  "execution_status": "complete",
+  "expression": "p0+p1*(voltage_V)+p2*(bromine_rich)+p3*(voltage_V*voltage_V)+p4*(voltage_V*bromine_rich)+p5*(bromine_rich*bromine_rich)",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -220.73762939665994,
+    "p1": 450.10503589905346,
+    "p2": 133.54787404573887,
+    "p3": 959.537262931488,
+    "p4": 104.76960230557616,
+    "p5": 133.54787404573918
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": 0.015401142383322873,
+      "voltage_V": -0.07477746036050341
+    },
+    "mean": -23.04819723688967,
+    "p90_abs": 402.60364727019015,
+    "std": 234.69172484012572
+  },
+  "rule_id": "controls-v3--P100-022--polynomial_control-rule-1",
+  "rule_sha256": "fbc8a421712cc07e12e57a2c16505ab19d08532d79e30f2779794cd2bd1f94d1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-220.73762939665994 + 450.10503589905346 * voltage_V + 133.54787404573887 * bromine_rich + 959.537262931488 * (voltage_V * voltage_V) + 104.76960230557616 * (voltage_V * bromine_rich) + 133.54787404573918 * (bromine_rich * bromine_rich)",
+    "expression_bytes": 119,
+    "free_parameters": 6,
+    "learned_state_bytes": 155,
+    "literal_state_bytes": 0,
+    "nodes": 55,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 190.6764533032017,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "description": "native Bz map ordinate at a withheld pixel",
+  "domain": "Laboratory geophysics",
+  "independent_unit": "Two specimens: CSH/119DOA development and CSL/129DOA confirmation. Spatial blocks balance errors but are not independent specimens; development folds are entire200row strips.",
+  "input_units": {
+    "dg": "source-native Bz unit",
+    "gx": "dimensionless local contrast",
+    "gy": "dimensionless local contrast",
+    "hi": "source-native Bz unit",
+    "hx": "source-native Bz unit",
+    "hy": "source-native Bz unit",
+    "lo": "source-native Bz unit",
+    "ox": "source-native Bz unit",
+    "oy": "source-native Bz unit"
+  },
+  "limitations": [
+    "Retrospective reconstruction at one microscopy acquisition; all neighboring measurements are available. No prediction of an earthquake or temperature history.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "scientific_arrays_or_events",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "source-native Bz unit (SI conversion unresolved)",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1104,
+    "test": 5605,
+    "train": 4501
+  },
+  "scenario_id": "P100-070",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 3617864,
+    "limit_bytes": 10000000,
+    "public_bytes": 1324564
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH 1-D diffusion mcmc.csv",
+        "source_sha256": "9e958da523db4a8a61446d9246a8170f5ad714a499bee780e691a8718bd0c48a"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSHmaxT.mat",
+        "source_sha256": "6207c1458e1cd9d8baa6212325271ee352ba37afc0084c19b2cc417afcedb57e"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL 1-D diffusion mcmc.csv",
+        "source_sha256": "3dd0b4f5fde376c82e9f5e5968aa2ffc8c6b5043c2156b74247855c69011a14a"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/IRM acquisition data.csv",
+        "source_sha256": "ef888b8d43a0f8e15fa18c28b0246a50b3f0d56fbd0ff9cba27d90608c268195"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_QDMtemps.csv",
+        "source_sha256": "d05316247d5084cf36e87783490fe2b2e9aad7b23197fb44e3a51792abbb7c99"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_deconvo.csv",
+        "source_sha256": "cceb33f7ee8000e671a5cd0352b0b51123151eb6f2facdfc4fe923c4cf0cbace"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_QDMtemps.csv",
+        "source_sha256": "c12d47e90d7278ebec4769b6cde1dc251c3eb76a169d32505bb0e3c8151c750b"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSLmaxT.mat",
+        "source_sha256": "1b5c84f254f7f782aa5fedcc1dc0fe61d7de3f64c224270f325bab417fd3ea1d"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_all.csv",
+        "source_sha256": "956da4269bc29636761bf3a204674c2919ca79722ae3ab748bdf152f8fd8f320"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_deconvo.csv",
+        "source_sha256": "1fa0b63260ba75d25f59f986d54d8513c1cbb10bf8d6b070c33b25986a3a57ff"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_all.csv",
+        "source_sha256": "7bcf2c371e1f190a29cdb383630ad3187fc73661b71e5fef9388b5241c618c03"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_Bz_uc0.mat",
+        "source_sha256": "38574d68b3536acca8d4cc74f0e1fc33493be859bd32cbdd1448bb0b0ec0b8ff"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_Bz_uc0.mat",
+        "source_sha256": "60f0899261d293349c81ab8614bd0499b020e932a50a2f32d1329ff7ecf4e662"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSLbulkdemag.csv",
+        "source_sha256": "713c8bfc08cb89d8d396855ae63aedef56684cbe3e3404cea7c7555cf46d0957"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_temp6.csv",
+        "source_sha256": "f8de21752d3f9fed33d54579ad0e5dfb32eed49a17bc8190d67f3dee7a6a3b58"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp2.csv",
+        "source_sha256": "210cb260e1633f36317ae17cc765859084edcd54312a2b148d1204ca8d3aaa6e"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_temp9.csv",
+        "source_sha256": "902ed3b0c26579892372cc2910c714ac92fbfd89688a6439688ce8b754873315"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp11.csv",
+        "source_sha256": "117069c28c6b8084cc515c3592b504653d2a9cf5835b3edb888e52178456790e"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp3.csv",
+        "source_sha256": "e2ab91961ef94c2ca7cd7a14eb3118facd7ae022254e4a559caf84dd62c49798"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp4.csv",
+        "source_sha256": "47ed082bc800a09723b55131fb5bf1f42d249cd984c1b83e76100a5ea3a37243"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp9.csv",
+        "source_sha256": "aeeeb4e2b3251e2e41a6e49941cd2a7404a09459a2cff68715c95992d58a1a0c"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp12.csv",
+        "source_sha256": "46bb0c4afe8f1f73ea0ca9a52a25ed20148db8d99e442c02cc4239d913474850"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSH_FOV5_temp6.csv",
+        "source_sha256": "bfb2242c4091efa6a7f123ab1a402be7c8816ad37cfc9820cf072fc787bf16f6"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/read-me.docx",
+        "source_sha256": "9fc7f036cd936c4478b3e3be312e26dc47745f36c9b7d47403f718bb3941560b"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_temp2.csv",
+        "source_sha256": "c5b46226fe0cda22f329647c68149d291a265413eb38abc093ef900020ec0a22"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_temp4.csv",
+        "source_sha256": "2cba19827c1f68153a256e3e51d99738c6446cecec6a796dd6f228bd896d1996"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/14776881",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/raw/CSL_FOV4_temp5.csv",
+        "source_sha256": "458126668b17a22a5cbca1628b5fb1bda29def1756b3d9f1bf61b25ae5b7ba85"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14776881",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/70_geophysics_earthquake_microscopy/context/source_record.json",
+        "source_sha256": "ed8cb85e1c31cefe4e54c8a1349af28160f1f968212361fabab1fd833769fd34"
+      }
+    ],
+    "historical_case": "P100-070",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/14776881",
+    "version": "14776881"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "a14bc1710145124effed553d5393c8cff8f4c60fe9042a7805eef8122081d8fd",
+        "groups": 7,
+        "rows": 1104,
+        "sample_ids_sha256": "928b41df02fadc91dc54dd0f428ecf0eb6da1d7a3a87b93abc90df2965593c8f"
+      },
+      "test": {
+        "group_ids_sha256": "db302194f741d62f5ba79a9f26b754c73197807de074edf39818e70e55461827",
+        "groups": 36,
+        "rows": 5605,
+        "sample_ids_sha256": "45aa9a5f1cb0f8dd65265641c1aee2355c09c30dd2ecea3b15de70d430fb136e"
+      },
+      "train": {
+        "group_ids_sha256": "0e6555f8c17ee7cefafc907df35a8b68b77be35c857803944f14f60354c93ac4",
+        "groups": 29,
+        "rows": 4501,
+        "sample_ids_sha256": "92c2351751a2159947310cd23924682fb08bd64ef522f898e1e45838401da2ab"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Imaging Localized Slip-induced Frictional Heating during Laboratory Earthquakes Using Magnetic Microscopy",
+  "version": "1.0.0rc2"
+}

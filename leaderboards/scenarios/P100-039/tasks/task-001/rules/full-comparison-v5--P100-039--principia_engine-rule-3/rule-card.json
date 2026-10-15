@@ -1,0 +1,65 @@
+{
+  "dev_error": 0.19639766922608395,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*((age-45)**2)))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.044699272213229495,
+    "p1": 0.0021966960893464163,
+    "p2": -0.0005681115329812959
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": -0.09802576045259762,
+      "education": 0.033385234734606944,
+      "japan": -0.018129492455069136
+    },
+    "mean": 0.005840674389606137,
+    "p90_abs": 0.7012950982297687,
+    "std": 0.4463224860186262
+  },
+  "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-3",
+  "rule_sha256": "afc6397fc54b3d6b7afd77ee83933fad601469b0b8609fd69b193feefec088be",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.044699272213229495 + 0.0021966960893464163 * education ** 2 + -0.0005681115329812959 * (age - 45) ** 2))",
+    "expression_bytes": 61,
+    "free_parameters": 3,
+    "learned_state_bytes": 88,
+    "literal_state_bytes": 6,
+    "nodes": 36,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 9
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.1908169523231944,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

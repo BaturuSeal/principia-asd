@@ -1,0 +1,131 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.0055262979474825225,
+    "primary": "mae",
+    "primary_error": 0.0055262979474825225,
+    "rmse": 0.009424003250637887
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.011311287489068005,
+  "by_group": [
+    {
+      "error": 0.003378495105458623,
+      "group": "group-10ec5526d6f8cc588c9488dd",
+      "rows": 3
+    },
+    {
+      "error": 0.005029330651716579,
+      "group": "group-17ba1f77acf23ebf05ce5d8b",
+      "rows": 5
+    },
+    {
+      "error": 0.0010748871214278921,
+      "group": "group-2d1090a9aa63f6250f25d751",
+      "rows": 5
+    },
+    {
+      "error": 0.0027934742595059348,
+      "group": "group-3b0f40531f77f5733a7fa338",
+      "rows": 5
+    },
+    {
+      "error": 0.011311010151503886,
+      "group": "group-50b332ada0d3a695bd24d3a0",
+      "rows": 5
+    },
+    {
+      "error": 0.003486506435686265,
+      "group": "group-56d85a26de23e77df9bf4058",
+      "rows": 5
+    },
+    {
+      "error": 0.006971165830322645,
+      "group": "group-5a5a1755c4370fe5ea94d984",
+      "rows": 5
+    },
+    {
+      "error": 0.002589113759432027,
+      "group": "group-600a39b382c885474598f16f",
+      "rows": 5
+    },
+    {
+      "error": 0.0024079695692516,
+      "group": "group-9a15e7e3f4a86b84ce9b77e8",
+      "rows": 5
+    },
+    {
+      "error": 0.002728782683072173,
+      "group": "group-ae03b2bcc06af6684f987435",
+      "rows": 5
+    },
+    {
+      "error": 0.01801259271033573,
+      "group": "group-b8b61ad7ad799b8a86da2954",
+      "rows": 3
+    },
+    {
+      "error": 0.0019700067514334617,
+      "group": "group-b8d10d01ba8b48458cfc06ac",
+      "rows": 5
+    },
+    {
+      "error": 0.012184380991129395,
+      "group": "group-cf64c9791d552f035ac3d5e0",
+      "rows": 3
+    },
+    {
+      "error": 0.0030575073718140944,
+      "group": "group-d849ea6eafaddf8ee085af7e",
+      "rows": 3
+    },
+    {
+      "error": 0.0059622620284564,
+      "group": "group-dc0b5b625344ce9e33d90ed1",
+      "rows": 1
+    },
+    {
+      "error": 0.005463281739173653,
+      "group": "group-f3ba965cf83cfcf98967f12f",
+      "rows": 3
+    }
+  ],
+  "coverage": {
+    "eligible": 66,
+    "fraction": 1.0,
+    "predicted": 66
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_deepseek",
+  "rule_id": "full-comparison-v5--P100-036--direct_deepseek-rule-1",
+  "rule_sha256": "1c178f9e74a516eeba4ae7f2dfe7f7887e2caf0f142d174ffd171a402b8328cd",
+  "run_id": "full-comparison-v5--P100-036--direct_deepseek",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.894851801016102 + 0.0339306886775094 * npq + -0.019562159284742895 * rfd + -0.25889954822331684 * ngrdi + -0.0008213663271646823 * log(area) + 0.005482987978740627 * tiny + -0.004266400883530152 * salt + -0.0030146988546938787 * drought",
+    "expression_bytes": 79,
+    "free_parameters": 8,
+    "learned_state_bytes": 225,
+    "literal_state_bytes": 0,
+    "nodes": 62,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.06464322700832059,
+    "perturbation_labels_available": false,
+    "population_rows": 66,
+    "ranking": false,
+    "samples": 66,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

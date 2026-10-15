@@ -1,0 +1,128 @@
+{
+  "archive_members": {
+    "zenodo raw data/Figure1_longterm-reaction_Ag20-Hbeta.txt": {
+      "bytes": 56114,
+      "rows": 514,
+      "sha256": "b9977d5208e5d156ee4aea301151eb81bff68aa03d6ac2b56d7e0a7a3280d587"
+    },
+    "zenodo raw data/FigureS12a_reaction_Ag1-Hbeta.txt": {
+      "bytes": 8466,
+      "rows": 151,
+      "sha256": "88ef45ecb55d1945c64ce06ca7c2c3167149d81f403544428384324c8922c6f1"
+    },
+    "zenodo raw data/FigureS12b_reaction_Ag5-Hbeta.txt": {
+      "bytes": 22641,
+      "rows": 446,
+      "sha256": "ede3369aa55ebaca0a5e086dfd737f8491d5c20b17d3ede18ee65252de664c15"
+    },
+    "zenodo raw data/FigureS12c_FigureS13a_reaction_Ag20-Hbeta.txt": {
+      "bytes": 16859,
+      "rows": 151,
+      "sha256": "1b4d2d9d4b16ab7b1a60c3fb1bc4d0903594997908366271c2b40752db7a4e24"
+    },
+    "zenodo raw data/FigureS13b_reaction_Ag20-Hbeta_T220.txt": {
+      "bytes": 15831,
+      "rows": 144,
+      "sha256": "1098f48b4d8c02e85a2d1a384ab70bc9b4881193e0c1b10a6c0189e151f8e810"
+    },
+    "zenodo raw data/FigureS13c_reaction_Ag20-Hbeta_T240.txt": {
+      "bytes": 16696,
+      "rows": 152,
+      "sha256": "07d72017be8983f5e8c21876867c8175d95788f8c50b93fc51e15b28b6e7e465"
+    },
+    "zenodo raw data/FigureS13c_reaction_Ag20-Hbeta_T280.txt": {
+      "bytes": 16606,
+      "rows": 151,
+      "sha256": "7602206b7120130a1c5dd49cdc96464e5053ecff58b27156c56b9de895b2ade3"
+    },
+    "zenodo raw data/FigureS14a_reaction_Ag20-Hbeta-calc.txt": {
+      "bytes": 38572,
+      "rows": 352,
+      "sha256": "3eae3660f8ed9a3f104cc80889d83f9cc26a059d86dfb8e9c9e7b02c6e78d77a"
+    },
+    "zenodo raw data/FigureS14b_reaction_Ag20-Hbeta-red.txt": {
+      "bytes": 56112,
+      "rows": 514,
+      "sha256": "13398a315859605d823b4040d33abd0afc98ac89740a99490cacaff06791c6a0"
+    }
+  },
+  "assets": [
+    {
+      "bytes": 7889,
+      "path": "scenarios/26_chemistry_ag_zeolite_catalysis/context/zenodo_record.json",
+      "role": "zenodo_record",
+      "sha256": "11b41bf7ded47daf6c53e277ab9e1d83d78315dce26a30c6d6484ce028e3e9e4"
+    },
+    {
+      "bytes": 24974731,
+      "path": "scenarios/26_chemistry_ag_zeolite_catalysis/raw/zenodo raw data.7z",
+      "role": "reactor_archive",
+      "sha256": "9bd3bd5b551d5d82d2e287b1bc002c92097b36a66ad8066a9d2133f7006a3502"
+    }
+  ],
+  "decoder_binding": {
+    "executable": "/usr/bin/bsdtar",
+    "sha256": "465aa6ae11e635dea208c0a24f16d1a1236a71fc4e143dbf1967426e649758d9",
+    "version": "bsdtar 3.5.3 - libarchive 3.7.4 zlib/1.2.12 liblzma/5.4.3 bz2lib/1.0.8"
+  },
+  "group_assignments": {
+    "FigureS12a_reaction_Ag1-Hbeta": "train",
+    "FigureS12b_reaction_Ag5-Hbeta": "train",
+    "FigureS12c_FigureS13a_reaction_Ag20-Hbeta": "train",
+    "FigureS13b_reaction_Ag20-Hbeta_T220": "test",
+    "FigureS13c_reaction_Ag20-Hbeta_T240": "dev",
+    "FigureS13c_reaction_Ag20-Hbeta_T280": "dev",
+    "FigureS14a_reaction_Ag20-Hbeta-calc": "test",
+    "FigureS14b_reaction_Ag20-Hbeta-red": "train"
+  },
+  "historical_contract_sha256": "240015cc2982395a6ff2b87905d63d809c54d40996ad3c5f3793b1b56254746e",
+  "input_units": {
+    "ag_wt_pct": "wt percent",
+    "anchor_selectivity_pct": "percent",
+    "elapsed_min": "min",
+    "prefix_slope_pct_min": "percent/min"
+  },
+  "limitations": [
+    "Retrospective acquisitions; curator reconstruction only",
+    "Eight prefix-calibrated trajectories, not unmeasured-catalyst transfer",
+    "Raw chromatogram recalculation and physical batch independence not established",
+    "102.7 MB expanded archive remains outside package; no raw-data size exception granted"
+  ],
+  "numerical_policy": {
+    "analytical_prefix_calibrations": 8,
+    "free_calibration_coefficients_per_slope": 2,
+    "learned_transformations": [
+      "Per-run OLS slope on permitted 120..300 min prefix; expanded formula and source rows recorded"
+    ],
+    "rule_fit_count": 0
+  },
+  "output_units": "percentage points",
+  "parser": "zeolite-fixed-prefix-reactors-v1",
+  "partition_provenance": {
+    "allocation": "Original T220-labelled and calcined runs held out; compact-v2 group hash selects two development runs; all segments of a run stay together",
+    "source_split_sha256": "d64192c7ff16b4b52991db50e114009e4631b069a06fa62712886c66d1f96293"
+  },
+  "policy": {
+    "duplicates": "Figure1 long-term export checked against FigureS14b and counted once; fixed alias",
+    "measurement": "Stored columns A time and G DMM selectivity, units min and percent; missing measurements retained as exclusions",
+    "predictors": "Elapsed from last <=300 min observation, its selectivity, analytical 120..300 min slope and source-label Ag loading only",
+    "restarts": "Each zero-clock restart calibrated separately within original complete-run split",
+    "source_formulas": "Column H and conversion/other-selectivity channels excluded and never executed",
+    "targets": "All finite DMM responses at 300<t<=1500 min; test targets never exported"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-026/native.py",
+    "reuse": "Only measured-column, prefix calibration and identity specification reimplemented; no source formula, fitted rule, evaluator or legacy runtime copied",
+    "sha256": "9239061460879dbd6fe5ff723cb2259f82b10103d575a9eb2243ee14374b6006"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-026",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.15691695",
+    "paper_doi": "10.1039/d5cy00544b",
+    "url": "https://zenodo.org/records/15691695",
+    "version": "15691695"
+  },
+  "source_scenario_descriptor_sha256": "18393173e26fc530cf1d9b20026c375cf06a61da7ec903252156bd904858953a"
+}

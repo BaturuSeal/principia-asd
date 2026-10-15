@@ -1,0 +1,80 @@
+{
+  "dev_error": 0.00023787236437795113,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lo)+p2*(hi)+p3*(noise)+p4*(r)+p5*(g)+p6*(glo)+p7*(ghi)+p8*(sep)",
+  "inputs": [
+    "lo",
+    "hi",
+    "noise",
+    "r",
+    "g",
+    "glo",
+    "ghi",
+    "sep"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 7.396281792449567e-27,
+    "p1": 1.1135697980438598e-23,
+    "p2": 1.1516781024478056e-23,
+    "p3": 4.763526306056418e-21,
+    "p4": 2.7024693196617156e-26,
+    "p5": 1.6304083993911882e-23,
+    "p6": 0.000961516633018444,
+    "p7": 0.0010369888962067043,
+    "p8": 4.034335523154359e-27
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "g": 0.022776870155849515,
+      "glo": -1.7825512916855712e-17,
+      "hi": -0.9973212468515485,
+      "lo": -0.9961967050205741,
+      "noise": -0.011625585270259859,
+      "r": 0.02277687015584953,
+      "sep": 0.31792681719232346
+    },
+    "mean": 2.112841101763324e-06,
+    "p90_abs": 0.000241507854655163,
+    "std": 0.000405487040790951
+  },
+  "rule_id": "controls-v3--P100-028--polynomial_control-rule-1",
+  "rule_sha256": "a0c10e73e7623bbaf374f6772cf8243f7bd9ca16f09878067ca68721e7cb6f31",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "7.396281792449567e-27 + 1.1135697980438598e-23 * lo + 1.1516781024478056e-23 * hi + 4.763526306056418e-21 * noise + 2.7024693196617156e-26 * r + 1.6304083993911882e-23 * g + 0.000961516633018444 * glo + 0.0010369888962067043 * ghi + 4.034335523154359e-27 * sep",
+    "expression_bytes": 70,
+    "free_parameters": 9,
+    "learned_state_bytes": 264,
+    "literal_state_bytes": 0,
+    "nodes": 67,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "task_id": "P100-028.compact.v2",
+  "train_error": 0.00023810817029107942,
+  "units": {
+    "inputs": {
+      "g": "fsu;pumpamplitudecontrol",
+      "ghi": "fsu;highcalibrationpumpcontrol",
+      "glo": "fsu;lowpumpcontrol",
+      "hi": "fsu;secondcalibrationresponse",
+      "lo": "fsu;lowpumpamplituderesponse",
+      "noise": "fsu;zero-pumpresponse",
+      "r": "dimensionless normalizedpumpincrement",
+      "sep": "integer frequency-bin separation;100kHzbins"
+    },
+    "output": "fsu; instrument full-scale units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

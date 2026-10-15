@@ -1,0 +1,71 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "calibration_F6": "source fluorescence units",
+    "calibration_curvature": "source fluorescence units/min^2",
+    "calibration_v6": "source fluorescence units/min",
+    "concentration_uM": "uM",
+    "time_min": "min"
+  },
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Predict all t>7.5 min from source dose and same-curve measurements at 3,4.5,6 min. Calibration fixed at6 min; no later response access.",
+  "output": "target",
+  "output_description": "Src kinetic fluorescence in source instrument units",
+  "output_units": "source fluorescence units",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-074",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "81817df73f9a952b9a2f86436fc78cade63a669fba7e9ca92ee86a3091cdbe13",
+  "source_task": "P100-074.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Complete dose curves; seven development and two hash-selected confirmation doses; leave-one-dose-out validation. No biological replicate identifiers.",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-074.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Src kinetic fluorescence in source instrument units",
+  "version": "1.0.0rc2"
+}

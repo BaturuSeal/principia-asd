@@ -1,0 +1,86 @@
+{
+  "dev_error": 0.0064294125740329226,
+  "execution_status": "complete",
+  "expression": "p0+p1*(median6)+p2*(0.5 * (lag1 + median6))",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "lag6",
+    "lag12",
+    "lag24",
+    "median6",
+    "median24",
+    "mad6"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.27629846782768175,
+    "p1": 0.5248007824535553,
+    "p2": 0.19886625880295633
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.23170418975789595,
+      "lag12": -0.219464576386046,
+      "lag2": -0.25998952450684254,
+      "lag24": 0.03527146131713974,
+      "lag3": -0.23420965752031364,
+      "lag4": -0.14271740373092526,
+      "lag6": -0.17985679868385832,
+      "mad6": 0.07754737395468954,
+      "median24": -0.19223318284388627,
+      "median6": -0.23060567320262582
+    },
+    "mean": 0.00048105672725582034,
+    "p90_abs": 0.016994989882822206,
+    "std": 0.009557350803446977
+  },
+  "rule_id": "live-pilot-v3--P100-002--principia_engine-rule-1",
+  "rule_sha256": "ab776993c678a5ec8bf7a90d0bda8bd8728a24e0d15b48aea647a6d01bc96f31",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.27629846782768175 + 0.5248007824535553 * median6 + 0.19886625880295633 * (0.5 * (lag1 + median6))",
+    "expression_bytes": 43,
+    "free_parameters": 3,
+    "learned_state_bytes": 80,
+    "literal_state_bytes": 3,
+    "nodes": 26,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-002.compact.v2",
+  "train_error": 0.001198085812140947,
+  "units": {
+    "inputs": {
+      "lag1": "author-normalized relative flux",
+      "lag12": "author-normalized relative flux",
+      "lag2": "author-normalized relative flux",
+      "lag24": "author-normalized relative flux",
+      "lag3": "author-normalized relative flux",
+      "lag4": "author-normalized relative flux",
+      "lag6": "author-normalized relative flux",
+      "mad6": "author-normalized relative flux",
+      "median24": "author-normalized relative flux",
+      "median6": "author-normalized relative flux"
+    },
+    "output": "relative flux (native normalization)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

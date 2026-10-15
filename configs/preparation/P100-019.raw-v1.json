@@ -1,0 +1,68 @@
+{
+  "assets": [
+    {
+      "bytes": 37400118,
+      "path": "scenarios/19_transport_nhtsa_safety_2025_2026/raw/COMPLAINTS_RECEIVED_2025-2026.zip",
+      "role": "complaints_archive",
+      "sha256": "e7a1f8f6ae2122a8a370f1e7231813b5f119d480e91a67da194656e856eced15"
+    },
+    {
+      "bytes": 9982,
+      "path": "scenarios/19_transport_nhtsa_safety_2025_2026/context/CMPL.txt",
+      "role": "complaints_layout",
+      "sha256": "84585b4ded99b0c45abc4a5dc86f85332ba0a6969d2d7d9b1247f10fc53e8f45"
+    }
+  ],
+  "group_assignments": {
+    "2025-07": "train",
+    "2025-08": "train",
+    "2025-09": "train",
+    "2025-10": "train",
+    "2025-11": "train",
+    "2025-12": "train",
+    "2026-01": "train",
+    "2026-02": "train",
+    "2026-03": "dev",
+    "2026-04": "dev",
+    "2026-05": "test",
+    "2026-06": "test",
+    "2026-07": "test"
+  },
+  "historical_contract_sha256": "84f28f03d337208feb0e28097d98d825478c25b69859a0d84de8a2db212020cf",
+  "input_units": {
+    "lag1": "prior calendar month unique ODINO count",
+    "lag3": "mean prior3monthly counts",
+    "lag6": "mean prior6monthly counts",
+    "month": "target calendar month1–12"
+  },
+  "limitations": [
+    "Historical quote parsing merges complete physical source records; exact replay does not validate counts",
+    "No as-issued publication or product-label revision history is reconstructed",
+    "Received reports are not incidents, defect probabilities or fleet-normalized risk",
+    "Whole month groups share vehicles and overlapping observed histories; online test history permitted",
+    "Only complaint payload/layout are needed; other archives and personal/narrative fields are excluded"
+  ],
+  "numerical_policy": {
+    "discovery_rule_fits": 0,
+    "local_preprocessing_fits": 0,
+    "source_record_mode": "historical quote-aware decoder; literal record mismatch explicitly blocks admission",
+    "split_policy": "original latest whole development months and final three confirmation months unchanged"
+  },
+  "output_units": "complaints/month",
+  "parser": "nhtsa-historical-counts-record-audit-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-019/native.py",
+    "reuse": "Quote-aware historical counts and sample/cohort identities preserved for diagnosis; literal TSV record-boundary audit independently implemented; no evaluator or reference state copied",
+    "sha256": "c79f8db50156c1ae45026f16e94b8a8e371e87501aa439ad05ef2eaced0e706c"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-019",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "layout_revision": "2026-04-30",
+    "retrieved_utc": "2026-08-23T14:14:09.390874Z",
+    "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+    "version": "2025-2026 rolling snapshot"
+  },
+  "source_scenario_descriptor_sha256": "4e114646e0b03690259605eff2ef125405a8eed6df3ea6dcabbef96a64af2405"
+}

@@ -1,0 +1,64 @@
+{
+  "dev_error": 127.09204480039799,
+  "execution_status": "complete",
+  "expression": "p0 + p1*voltage_V**3 + p2*voltage_V**4 + p3*bromine_rich*voltage_V**2 + p4*bromine_rich*voltage_V**3",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -77.4524383124593,
+    "p1": 2394.9515080665815,
+    "p2": -938.640206341461,
+    "p3": 4531.860438691662,
+    "p4": -4839.827868462597
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": 0.0030551521220499823,
+      "voltage_V": -0.047069056497901544
+    },
+    "mean": -23.3563402046374,
+    "p90_abs": 311.55425284432295,
+    "std": 180.29254601375877
+  },
+  "rule_id": "full-comparison-v5--P100-022--principia_engine-rule-3",
+  "rule_sha256": "d1e18a36f3f700d907a99de575756ce72ee33be91e5b20ad1abb3fe849713072",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-77.4524383124593 + 2394.9515080665815 * voltage_V ** 3 + -938.640206341461 * voltage_V ** 4 + 4531.860438691662 * bromine_rich * voltage_V ** 2 + -4839.827868462597 * bromine_rich * voltage_V ** 3",
+    "expression_bytes": 100,
+    "free_parameters": 5,
+    "learned_state_bytes": 127,
+    "literal_state_bytes": 4,
+    "nodes": 55,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 141.19149112059026,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

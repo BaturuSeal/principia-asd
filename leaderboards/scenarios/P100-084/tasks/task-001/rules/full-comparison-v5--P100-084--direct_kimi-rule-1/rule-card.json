@@ -1,0 +1,68 @@
+{
+  "dev_error": 1.8090485869207507,
+  "execution_status": "complete",
+  "expression": "base + amp * (p0 + p1 * progress + p2 * progress**2) * exp(p3 * x) + p4 * x + p5 * x**2",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.4049111412397346,
+    "p1": -4.144010425313677,
+    "p2": 7.049595308531463,
+    "p3": 2.700962400489766,
+    "p4": 0.5948147051795769,
+    "p5": 0.1330918460493761
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": 0.0159409014557741,
+      "base": 0.015940901455774096,
+      "progress": -0.23393232341190748,
+      "x": 0.24264136885990611
+    },
+    "mean": 0.04152277005908848,
+    "p90_abs": 4.970524468060191,
+    "std": 3.22746661241526
+  },
+  "rule_id": "full-comparison-v5--P100-084--direct_kimi-rule-1",
+  "rule_sha256": "21b69de8b69b01fe32c25ae1fa631648d8f96b85f7194750689af98a36ac4689",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "base + amp * (0.4049111412397346 + -4.144010425313677 * progress + 7.049595308531463 * progress ** 2) * exp(2.700962400489766 * x) + 0.5948147051795769 * x + 0.1330918460493761 * x ** 2",
+    "expression_bytes": 87,
+    "free_parameters": 6,
+    "learned_state_bytes": 154,
+    "literal_state_bytes": 2,
+    "nodes": 60,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 1.3542739826604984,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

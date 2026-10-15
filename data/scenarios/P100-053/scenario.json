@@ -1,0 +1,95 @@
+{
+  "description": "Angle-mean thread-forming torque, 700–1300 degrees",
+  "domain": "Industrial manufacturing",
+  "independent_unit": "workpiece (both locations and every reuse cycle)",
+  "input_units": {
+    "early": "Nm",
+    "finding": "Nm",
+    "first_y": "Nm",
+    "gradient_proxy": "Nm",
+    "has_history": "binary indicator",
+    "history_gap": "cycle count",
+    "left": "binary indicator",
+    "mean_past_y": "Nm",
+    "prev_early": "Nm",
+    "prev_gradient": "Nm",
+    "prev_y": "Nm",
+    "roughness": "Nm",
+    "usage": "cycle count"
+  },
+  "limitations": [
+    "Current measurements stop at the frozen first-forward-crossing prefix (first sampled angle at/above 250 degrees); prior responses only from completed same-hole operations. Both holes and every reuse of a workpiece stay together.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "Nm",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 1972,
+    "test": 2473,
+    "train": 7923
+  },
+  "scenario_id": "P100-053",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 3568484,
+    "limit_bytes": 10000000,
+    "public_bytes": 999997
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/16031381",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/16031381",
+        "source": "scenarios/53_manufacturing_screw_friction/raw/s02_variations-in-surface-friction.zip",
+        "source_sha256": "098322d9cc5ab9969d17ac49d317c2fe398fc906205cb681938d7b9481e7bcae"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/16031381",
+        "license": "CC-BY-4.0 (proposed release terms for curator documentation; pending owner acceptance)",
+        "rights_url": "https://zenodo.org/records/16031381",
+        "source": "scenarios/53_manufacturing_screw_friction/context/SOURCE_FACTS.json",
+        "source_sha256": "222d8f155ded63ca0802cd37e72fc4d70942ac216650b6f8b32717fd3091e7bc"
+      }
+    ],
+    "historical_case": "P100-053",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/16031381",
+    "version": "16031381"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "b29de12826a2a472f370cd32ff493231ad6b428cc0f29abbddb19f4df0dc32f8",
+        "groups": 40,
+        "rows": 1972,
+        "sample_ids_sha256": "0a6968d98fb9522f657cf12c1f8d8fb48c1e712314382a6ac58ad452401a3054"
+      },
+      "test": {
+        "group_ids_sha256": "f5176a75aa5ffb52b1cf45946976ecd3774f5927b8771d08e72d1d6a1e52ccec",
+        "groups": 50,
+        "rows": 2473,
+        "sample_ids_sha256": "934011adbd0395e7bcc97b9f3437fa4b445fa120c1c5ad3a339eab261b1ace9b"
+      },
+      "train": {
+        "group_ids_sha256": "e6897ee5dae687d4cc4ddba630fc2ab3572aa0c40941b102c8088ca5cd1e471e",
+        "groups": 160,
+        "rows": 7923,
+        "sample_ids_sha256": "054728e08e40225956da866833df744f0e0effc6d638b88c4a18dbf8e1574c6d"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Industrial screw driving dataset collection: Time series data for process monitoring and anomaly detection",
+  "version": "1.0.0rc2"
+}

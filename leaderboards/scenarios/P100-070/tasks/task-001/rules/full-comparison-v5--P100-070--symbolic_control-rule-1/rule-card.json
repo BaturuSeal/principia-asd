@@ -1,0 +1,83 @@
+{
+  "dev_error": 2.453262386674131e-06,
+  "execution_status": "complete",
+  "expression": "p0+p1*(hy)+p2*(hx)+p3*(dg)+p4*(tanh((hy--1.0491897849756604e-07)/1.919590015446636e-05))+p5*(tanh((hx-7.44206320750713e-08)/1.829847352183075e-05))+p6*(hy*gx)+p7*(ox)",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.1382938280031234e-07,
+    "p1": 0.5975608487144669,
+    "p2": 0.554339800783343,
+    "p3": 0.06460486094871941,
+    "p4": -6.4046690298388685e-06,
+    "p5": 3.9513642021585e-06,
+    "p6": 0.019499824497607267,
+    "p7": -0.09906109950324622
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.03405239483362923,
+      "gx": 0.024078983544173045,
+      "gy": 0.026591559672622386,
+      "hi": -0.012578330805533037,
+      "hx": -0.006451901472002787,
+      "hy": -0.03571037526291442,
+      "lo": 0.04772740468237846,
+      "ox": -0.05222884060057043,
+      "oy": 0.06777216722944
+    },
+    "mean": -3.614643314395906e-07,
+    "p90_abs": 5.256761836854359e-06,
+    "std": 7.2905584787474656e-06
+  },
+  "rule_id": "full-comparison-v5--P100-070--symbolic_control-rule-1",
+  "rule_sha256": "6e4a4a04a1adc2e03ddd20141229ebb74b69feb4060cf2d166e677b057aa9db5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.1382938280031234e-07 + 0.5975608487144669 * hy + 0.554339800783343 * hx + 0.06460486094871941 * dg + -6.4046690298388685e-06 * tanh((hy - -1.0491897849756604e-07) / 1.919590015446636e-05) + 3.9513642021585e-06 * tanh((hx - 7.44206320750713e-08) / 1.829847352183075e-05) + 0.019499824497607267 * (hy * gx) + -0.09906109950324622 * ox",
+    "expression_bytes": 166,
+    "free_parameters": 8,
+    "learned_state_bytes": 223,
+    "literal_state_bytes": 84,
+    "nodes": 83,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 3.259846139878852e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

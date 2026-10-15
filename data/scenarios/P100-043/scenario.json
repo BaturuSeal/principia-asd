@@ -1,0 +1,119 @@
+{
+  "description": "hot-run validation log-perplexity at20–100B tokens",
+  "domain": "AI training dynamics",
+  "independent_unit": "complete architecture",
+  "input_units": {
+    "anchor_loss": "nats per token",
+    "anchor_tokens_B": "billions of training tokens",
+    "depth": "layers",
+    "early_loss": "nats per token",
+    "early_tokens_B": "billions of training tokens",
+    "params_B": "billions of parameters",
+    "tokens_B": "billions of training tokens",
+    "width": "embedding dimensions"
+  },
+  "limitations": [
+    "Only checkpoints at or before10B/20B tokens may calibrate the20–100B forecast",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "computational_or_mathematical_records",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "nats per token",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 125,
+    "test": 221,
+    "train": 616
+  },
+  "scenario_id": "P100-043",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 209972,
+    "limit_bytes": 10000000,
+    "public_bytes": 37964
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "license": "MIT",
+        "rights_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "source": "scenarios/43_ai_gemstones_training/context/source_git_tree.json",
+        "source_sha256": "b2fcf232af5d4529a021140de9fffe4376e23eac17f2c2bd17c80bdaa4e646cd"
+      },
+      {
+        "citation_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "license": "MIT",
+        "rights_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "source": "scenarios/43_ai_gemstones_training/raw/LICENSE",
+        "source_sha256": "f16385e497f4ae54ab342e26d2540c3f17378907074301ad10793a3d1fb398eb"
+      },
+      {
+        "citation_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "license": "MIT",
+        "rights_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "source": "scenarios/43_ai_gemstones_training/raw/README.md",
+        "source_sha256": "298bc36844a44118157fe1b051fd7079ed88c94877c6d94b80f32cc3bc96110a"
+      },
+      {
+        "citation_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "license": "MIT",
+        "rights_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "source": "scenarios/43_ai_gemstones_training/raw/wandb_data_extraction.py",
+        "source_sha256": "91c2f175b3081351ca3cd864e4642c209614c150f91ec320b6b09796f27260ab"
+      },
+      {
+        "citation_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "license": "MIT",
+        "rights_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "source": "scenarios/43_ai_gemstones_training/raw/wandb_dfs/summary_df.jsonl",
+        "source_sha256": "b5aa126dd0140d11f4f629e4f653ebcd9944a8e2bb36333a662fa7b1dc0dbc79"
+      },
+      {
+        "citation_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "license": "MIT",
+        "rights_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+        "source": "scenarios/43_ai_gemstones_training/raw/wandb_dfs/wandb_df_raw.jsonl",
+        "source_sha256": "9e883d4105ace4f739b4d440a9ad51257f775b7fd71e8243c0c0ee9d0130a18c"
+      }
+    ],
+    "historical_case": "P100-043",
+    "license": "MIT",
+    "url": "https://github.com/mcleish7/gemstone-scaling-laws",
+    "version": "5f420478f6057b0cbb4d13405fb10ca64675bccb"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "753a501a5f3f66c970195026086ff489e463bc72be32ef57178ab9ac99877b70",
+        "groups": 3,
+        "rows": 125,
+        "sample_ids_sha256": "a2736f9b6f4f5d3ec9de7e9cc30baef1f62df91c3214eee7676f4942e8f5b3f1"
+      },
+      "test": {
+        "group_ids_sha256": "c72670c5734793447f8b523dbd1e5ee74509a26433f2db61061827a26de77610",
+        "groups": 5,
+        "rows": 221,
+        "sample_ids_sha256": "d58ab08a625e405fa4b8b1abe75152217206db9670b91fdb3f376c7135dc24e2"
+      },
+      "train": {
+        "group_ids_sha256": "78d3b85512a9807e74b688869ff506e1309a5eb25daad1e8bdf82bd7dfb99e96",
+        "groups": 14,
+        "rows": 616,
+        "sample_ids_sha256": "c7fee6063cf9f2acac9aaf6f154db12ebc2244e24f2c6ace66156ffe9f83f53f"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Gemstones language-model training trajectories",
+  "version": "1.0.0rc2"
+}

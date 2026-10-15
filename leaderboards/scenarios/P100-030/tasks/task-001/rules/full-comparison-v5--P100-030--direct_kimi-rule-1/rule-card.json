@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.009082876835696892,
+  "execution_status": "complete",
+  "expression": "boundary_cof * (highspeed_cof / boundary_cof) ** (speed_mm_s / (p0 + p1 * concentration_wt_pct))",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 8.210857034158252,
+    "p1": 1.3165057285253021
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.8937039171035223,
+      "highspeed_cof": 0.8937039171035225,
+      "speed_mm_s": 0.004809576230605844
+    },
+    "mean": -0.005159009422428581,
+    "p90_abs": 0.019115097698860224,
+    "std": 0.00979408768351926
+  },
+  "rule_id": "full-comparison-v5--P100-030--direct_kimi-rule-1",
+  "rule_sha256": "500414e9526c8787efc9858ce8c2c1d08c808f26a79fead9961c9276a9da6eac",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "boundary_cof * (highspeed_cof / boundary_cof) ** (speed_mm_s / (8.210857034158252 + 1.3165057285253021 * concentration_wt_pct))",
+    "expression_bytes": 96,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.005629088574507675,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

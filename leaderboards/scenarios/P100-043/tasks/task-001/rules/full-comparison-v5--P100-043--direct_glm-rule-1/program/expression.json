@@ -1,0 +1,9 @@
+{
+  "expression": "anchor_loss + ((anchor_loss - early_loss) / (anchor_tokens_B**(-p0) - early_tokens_B**(-p0))) * (tokens_B**(-p0) - anchor_tokens_B**(-p0))",
+  "parameters": {
+    "p0": 0.6238408668231715
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

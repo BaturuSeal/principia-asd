@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.4172900354275215,
+    "primary": "mae",
+    "primary_error": 0.4172900354275215,
+    "rmse": 0.549606976122132
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.3762859391534392,
+  "by_group": [
+    {
+      "error": 0.059397943681684114,
+      "group": "group-0522f825b2b8c4c1c09ebb9e",
+      "rows": 12
+    },
+    {
+      "error": 0.29063966260088053,
+      "group": "group-534596b69994f4b087b4a96f",
+      "rows": 12
+    },
+    {
+      "error": 0.9018324999999999,
+      "group": "group-af575c48ba5f2d19941cad9a",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 36,
+    "fraction": 1.0,
+    "predicted": 36
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-027--direct_kimi-rule-1",
+  "rule_sha256": "6221738f458a46de9554498caf0cc3312ad9e81abe88c9eb549022c003e88534",
+  "run_id": "full-comparison-v5--P100-027--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 19.595104593309248 + -0.11744455111356034 * quality + -0.36578221257420424 * radial_fraction + -5.548546818357605 * quality * radial_fraction + 991.7487735399659 * (rho_vapor / rho_liquid) + -97.45917672012305 * (pressure_Pa / 10000000.0) + 0.5117369188082073 * (massflux_kg_m2_s / 1000) + 133.4340295206412 * quality * (rho_vapor / rho_liquid)))",
+    "expression_bytes": 231,
+    "free_parameters": 8,
+    "learned_state_bytes": 210,
+    "literal_state_bytes": 16,
+    "nodes": 89,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 1.5144923790387825,
+    "perturbation_labels_available": false,
+    "population_rows": 36,
+    "ranking": false,
+    "samples": 36,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

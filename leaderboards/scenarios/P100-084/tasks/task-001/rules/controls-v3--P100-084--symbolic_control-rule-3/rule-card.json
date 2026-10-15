@@ -1,0 +1,63 @@
+{
+  "dev_error": 1.8909778610047607,
+  "execution_status": "complete",
+  "expression": "p0+p1*((base)**2)+p2*(x)",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -4.936415019875714,
+    "p1": -0.08028153460699954,
+    "p2": -1.0283528188602866
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": 0.047646728409233716,
+      "base": 0.047646728409233716,
+      "progress": -0.14868993652526746,
+      "x": 0.14909103616182917
+    },
+    "mean": 0.620513252542101,
+    "p90_abs": 6.0472441504757635,
+    "std": 3.5642213258798936
+  },
+  "rule_id": "controls-v3--P100-084--symbolic_control-rule-3",
+  "rule_sha256": "86b6bfd406b7c766e4e258cf8d3f4d3cfdda43854e88128398de516c83a77929",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-4.936415019875714 + -0.08028153460699954 * base ** 2 + -1.0283528188602866 * x",
+    "expression_bytes": 24,
+    "free_parameters": 3,
+    "learned_state_bytes": 81,
+    "literal_state_bytes": 1,
+    "nodes": 22,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 2.154336574237117,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "delivery": "principia-asd-1.0.0rc3-cloud-preparation-20261015",
+  "verified_at": "2026-10-15T04:46:59.778568+00:00",
+  "status": "software_acceptance_passed_pending_publication_clearance",
+  "scope": "UI feedback, static hosting preparation and private local companion; no research campaign or public deployment",
+  "versions": {
+    "software_version": "1.0.0rc3",
+    "data_version": "1.0.0rc2",
+    "leaderboard_version": "1.0.0rc2",
+    "policy": "UI and hosting release; original scientific editions and campaign runtime stay immutable. No metric or ranking changes.",
+    "data_edition_sha256": "ca76fa714454751fb13f2422a15cc32c42aa74130f51b23a8434745ff2c1a110",
+    "leaderboard_edition_sha256": "375fdcade544595c551570cca114517bd334b2d7875d47e1a43f886ef6f28f42"
+  },
+  "tests": {
+    "status": "passed",
+    "count": 1719,
+    "seconds": 391.99,
+    "log_sha256": "73253685a95f6d473ed2c60836f00f5995ccb5a12a83cc3533ca6353ba6b6fc4",
+    "ruff": "passed",
+    "javascript_syntax": "passed",
+    "isolated_install": {
+      "version": "1.0.0rc3",
+      "status": "passed",
+      "source_is_installed_distribution": true,
+      "cli_help_commands": 14,
+      "numerical_fixture": "passed",
+      "packaged_ui_assets": "passed",
+      "localhost_server": "passed",
+      "host_origin_csrf_denials": "passed",
+      "api_calls": 0
+    },
+    "focused_recovery_and_privacy_tests": {
+      "passed": 109,
+      "seconds": 98.25
+    },
+    "intermediate_verification": "One durability check correctly rejected a source edit during an earlier test run. The complete stable-source rerun passed."
+  },
+  "wheel": {
+    "status": "passed",
+    "files_checked": 112,
+    "mismatches": [],
+    "wheel": "principia_asd-1.0.0rc3-py3-none-any.whl",
+    "sha256": "3dcca898b8cb399f738d6da1aad4da3e036fb4eba150583b690dea7827dd185c",
+    "bytes": 476906
+  },
+  "browser": {
+    "status": "passed",
+    "surfaces": [
+      "installed local companion at 8150",
+      "isolated visitor companion at 8152",
+      "static website with deployment CSP at 8154"
+    ],
+    "checks": [
+      "Scenario library first and default; readable scenario filters",
+      "Consistent Try it yourself buttons and default View explored rules",
+      "Per-task six-column leaderboard and complete failed-attempt coverage",
+      "Compact selected task card; full variable definitions in modal",
+      "Missing-key setup gate before LLM run; no charge on save; fixture key disconnected",
+      "Existing private credential remains masked and configured after upgrade",
+      "Keyless numerical example run completed; absent target assessment stays pending",
+      "Synthetic private CSV import and linear run completed with private test assessment",
+      "Static site has no key form, folder picker, run API or personal history",
+      "Ordinary link opened correct scenario/task in local companion; no cross-origin API bridge",
+      "Formula, parameter and task tables render under the deployment CSP",
+      "No browser console errors in static rule view"
+    ],
+    "api_calls": 0,
+    "screenshots": {
+      "task_dialog": "6b70b131d7dd0f6a55aa633299321ebfb1ce0841fba73546b89ea76963131a56"
+    }
+  },
+  "privacy": {
+    "architecture": "read-only public site plus per-visitor local companion",
+    "public_mutation_api": false,
+    "public_receives_private_folders": false,
+    "public_receives_keys_or_private_results": false,
+    "provider_gateway": "local; permitted selected development context sent directly to SiliconFlow",
+    "key_storage": "plaintext owner-only file, mode 0600; private directory mode 0700; not OS keychain encryption",
+    "two_workspace_isolation": "passed",
+    "security_http_checks": {
+      "status": "passed",
+      "checks": [
+        {
+          "check": "foreign_origin",
+          "status_code": 400
+        },
+        {
+          "check": "foreign_host",
+          "status_code": 400
+        },
+        {
+          "check": "key_without_csrf",
+          "status_code": 403
+        },
+        {
+          "check": "credential_file",
+          "status_code": 404
+        },
+        {
+          "check": "public_api_read",
+          "status_code": 404
+        },
+        {
+          "check": "public_api_write",
+          "status_code": 501
+        }
+      ]
+    }
+  },
+  "primary_collection": {
+    "scenarios": 40,
+    "tasks": 40,
+    "assigned_attempts": 520,
+    "complete": 483,
+    "failed": 37,
+    "rules": 693,
+    "valid_assessments": 684,
+    "invalid": 9,
+    "engineering_cohorts": "preserved separately, excluded from primary ranking"
+  },
+  "preservation": {
+    "prior_archive_sha256": "c41c592d18ec3de8320c0f1225d9dbfb565b39cb7f953469b14951c42ca45d55",
+    "files_checked": 5726,
+    "mismatches": []
+  },
+  "costs": {
+    "cap_cny": 3000.0,
+    "requests": 1783,
+    "accounted_cny": 60.9629845,
+    "remaining_cny": 2939.0370155,
+    "states": {
+      "unknown": 4,
+      "completed": 1779
+    },
+    "unknown_usage_reserved": 24.0,
+    "new_api_requests_this_delivery": 0,
+    "pending_reservations": 0
+  },
+  "deployment": {
+    "performed": false,
+    "nginx_template": "deploy/nginx.conf",
+    "nginx_target_syntax_validation": "required on destination; nginx not installed locally",
+    "browser_with_matching_csp": "passed",
+    "static_artifact": "preview_only",
+    "public_release_allowed": false
+  },
+  "limitations": [
+    "Data-containing edition remains publication_authorized=false; obtain source-rights clearance through a reviewed successor edition before hosting.",
+    "Six historical preparation defects and three remaining source-specific reviews remain disclosed.",
+    "Historical complexity accounting is incomplete for at least 65 rules; primary metrics and provisional Pareto labels remain unchanged.",
+    "Windows support is not claimed; generated-code development workers require the supported macOS sandbox.",
+    "Private discovery requires installing and running the local companion; the public catalog does not execute visitor jobs.",
+    "Remaining methods, scientific contract review and independent novelty/value assessment remain separate research work."
+  ],
+  "evidence_files": {
+    "docs/cloud-preparation-evidence/browser-checks.json": "50830323ab84650457b1db82919810cbd05922447a6a40cd94d1773f8d6d2d83",
+    "docs/cloud-preparation-evidence/cold-install.json": "e2278ad6a5cde7202ec12db8b3d348eb7d42d3584d73f3f2e332216fad7dbec0",
+    "docs/cloud-preparation-evidence/custody-and-costs.json": "afde399b8ddd1c262f32996fc986c9ee9cdf494b0dd4e2bb10388f535473a3b5",
+    "docs/cloud-preparation-evidence/historical-preservation.json": "21f4f02c67732506056d7413e9b2fcfc3c2b76dc8f47b363f4950f874ec5eca4",
+    "docs/cloud-preparation-evidence/http-boundaries.json": "b189b58338be237cb3fa7f93f8f80c5f727c37a14389cb59f040c5229a6c3840",
+    "docs/cloud-preparation-evidence/wheel-source-parity.json": "388fbf5a0b47e373afaa55693c10d39a3075a290c09a8db642055010db60ac37"
+  },
+  "user_acceptance": "pending"
+}

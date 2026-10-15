@@ -1,0 +1,69 @@
+{
+  "dev_error": 0.4706935450927863,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((depth_km-68.00584003311745)/126.79665427654581))+p2*(tanh((gap_deg-118.65242881072027)/67.56141667708066))",
+  "inputs": [
+    "depth_km",
+    "rms_s",
+    "phases",
+    "stations",
+    "gap_deg",
+    "dmin_km"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 4.943682534241545,
+    "p1": 4.522108143058914,
+    "p2": 2.103321570385367
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "depth_km": -0.09518138298925796,
+      "dmin_km": 0.06642231321208548,
+      "gap_deg": -0.013781692229255644,
+      "phases": 0.008051156878712403,
+      "rms_s": 0.0877190112207944,
+      "stations": 0.019755675485850333
+    },
+    "mean": -0.13566175658783236,
+    "p90_abs": 5.226774383371743,
+    "std": 4.632045901761757
+  },
+  "rule_id": "full-comparison-v5--P100-017--symbolic_control-rule-3",
+  "rule_sha256": "4f82170b74c7173b9f814d8175fedd7f8d7fd551918f4025a7abfb5bbaa7ebf3",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "4.943682534241545 + 4.522108143058914 * tanh((depth_km - 68.00584003311745) / 126.79665427654581) + 2.103321570385367 * tanh((gap_deg - 118.65242881072027) / 67.56141667708066)",
+    "expression_bytes": 119,
+    "free_parameters": 3,
+    "learned_state_bytes": 75,
+    "literal_state_bytes": 70,
+    "nodes": 37,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-017.compact.v2",
+  "train_error": 0.45518066607842755,
+  "units": {
+    "inputs": {
+      "depth_km": "km below network reference (may negative)",
+      "dmin_km": "minimum angular station distance*111.195km/degree",
+      "gap_deg": "largest azimuthal gap degrees",
+      "phases": "used phase count",
+      "rms_s": "seconds phase residual standardError",
+      "stations": "used station count"
+    },
+    "output": "km",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "expression": "background_high + p0*(low - background_low) + p1*(low_lag - background_low) + p2*(time_s - 50) + p3*(channel_low_keV - 101.9) + p4*(channel_high_keV - 294.9)",
+  "parameters": {
+    "p0": 0.45065329311916713,
+    "p1": 0.023681854575556622,
+    "p2": -0.056259034281307525,
+    "p3": 5.25505479093481,
+    "p4": -1.3608455990916013
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

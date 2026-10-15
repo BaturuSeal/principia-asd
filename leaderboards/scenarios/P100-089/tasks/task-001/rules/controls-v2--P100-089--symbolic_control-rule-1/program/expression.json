@@ -1,0 +1,14 @@
+{
+  "expression": "minimum(1,maximum(0,p0+p1*(reward*probability)+p2*(probability*lag_choice)+p3*(lag_choice*history_mean)+p4*(probability*history_mean)+p5*(tanh((probability-0.5246893626776707)/0.26494115732924056))))",
+  "parameters": {
+    "p0": 0.05445075169687456,
+    "p1": 0.15683580655996976,
+    "p2": -0.13587346387546528,
+    "p3": 0.6369793620842605,
+    "p4": -0.08036410611816851,
+    "p5": 0.04853080240413695
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,142 @@
+{
+  "assets": [
+    {
+      "bytes": 87396,
+      "path": "scenarios/51_semiconductor_heterostructure_memories/raw/Figure 2e-Vg sweep of 36 FET.csv",
+      "role": "fet_sweeps",
+      "sha256": "d085783652415cca892f51c5e5db06f0ac4777a9fa30bf2b9f7ed30892fb9cfa"
+    },
+    {
+      "bytes": 17412,
+      "path": "scenarios/51_semiconductor_heterostructure_memories/context/source_record.json",
+      "role": "source_documentation",
+      "sha256": "5ee5955cfad64ab0bcb16a758a14d0e521714ed3ba3257e2ed86edcf683cdda1"
+    }
+  ],
+  "group_assignments": {
+    "device-01": "train",
+    "device-02": "train",
+    "device-03": "train",
+    "device-04": "train",
+    "device-05": "train",
+    "device-06": "test",
+    "device-07": "train",
+    "device-08": "train",
+    "device-09": "dev",
+    "device-10": "test",
+    "device-11": "train",
+    "device-12": "test",
+    "device-13": "train",
+    "device-14": "dev",
+    "device-15": "test",
+    "device-16": "test",
+    "device-17": "train",
+    "device-18": "dev",
+    "device-19": "train",
+    "device-20": "train",
+    "device-21": "train",
+    "device-22": "test",
+    "device-23": "train",
+    "device-24": "test",
+    "device-25": "dev",
+    "device-26": "train",
+    "device-27": "dev",
+    "device-28": "train",
+    "device-29": "test",
+    "device-30": "train",
+    "device-31": "train",
+    "device-32": "train",
+    "device-33": "train",
+    "device-34": "train",
+    "device-35": "train",
+    "device-36": "test"
+  },
+  "historical_contract_sha256": "c4adc3f16cd0cb8355bb77873ad38a808db678f17007628d01ff4fc4be5c1b26",
+  "independent_units": "Complete CSV source column labelled wave1..wave36; independent device or fabrication-batch identity not established by anonymous column headers.",
+  "input_units": {
+    "cal_minus20_uA": "uA",
+    "cal_plus20_uA": "uA",
+    "cal_zero_uA": "uA",
+    "gate_V": "V"
+  },
+  "limitations": [
+    "Curator-only: acquisitions contain historical responses; never expose source-root to discovery workers",
+    "No test targets are exported and no evaluator vault is read or created",
+    "Reconstruction does not establish scientific admission, independent evidence or redistribution rights"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "uA",
+  "parser": "fet-calibrated-sweeps-v1",
+  "partition_provenance": {
+    "allocation": "Original confirmation groups retained; development groups sorted by canonical SHA256([compact-v2, case, opaque group]); first max(2, floor(n/5)) become dev. Explicit source identities, not numeric folder matching.",
+    "source_split_sha256": "13ec52e8744ae0f3ad0dbef82fd957c9a710c4ff890b71599f4088fca108b95c"
+  },
+  "policy": {
+    "calibration": "Three same-column responses at -20,0,20 V, excluded from scored responses; offline characterization, not causal sweep forecasting",
+    "current_conversion": "Stored A multiplied by 1e6 -> uA; no fitting or normalization",
+    "input": "Stored wave0 gate voltage; strictly increasing within [-20,20] V",
+    "response": "Every other finite stored same-column current",
+    "split": "Frozen complete-column assignments, identical to historical compact-v2 partitions"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-051/native.py",
+    "reuse": "Measurement and identity specification reimplemented; no upstream fitting, scientific formula, reference state or evaluator copied",
+    "sha256": "d4c73068e6bc2bb94db67b3af094d2859539af51b167fbbd6b89a982d27b8370"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-051",
+  "schema_version": "native-reconstruction/1",
+  "source_columns": [
+    "wave0",
+    "wave1",
+    "wave2",
+    "wave3",
+    "wave4",
+    "wave5",
+    "wave6",
+    "wave7",
+    "wave8",
+    "wave9",
+    "wave10",
+    "wave11",
+    "wave12",
+    "wave13",
+    "wave14",
+    "wave15",
+    "wave16",
+    "wave17",
+    "wave18",
+    "wave19",
+    "wave20",
+    "wave21",
+    "wave22",
+    "wave23",
+    "wave24",
+    "wave25",
+    "wave26",
+    "wave27",
+    "wave28",
+    "wave29",
+    "wave30",
+    "wave31",
+    "wave32",
+    "wave33",
+    "wave34",
+    "wave35",
+    "wave36"
+  ],
+  "source_identity": {
+    "historical_case": "P100-051",
+    "revision": "19003428",
+    "url": "https://zenodo.org/records/19003428"
+  },
+  "source_scenario_descriptor_sha256": "9b1beefe985fa002de46224701316c63894948db375230aec0510bb44eae96eb",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test",
+  "units_evidence": {
+    "basis": "Source task contract declares V/A; source CSV headers are anonymous wave labels. Independent source unit and specimen-identity review remains required."
+  }
+}

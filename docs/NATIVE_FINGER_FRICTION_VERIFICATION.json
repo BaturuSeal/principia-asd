@@ -1,0 +1,131 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T11:02:33.026418+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 12681726,
+  "registered_source_files": 11,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Resolve fitted-parameter unit conflict and provenance of author Hersey calibration",
+        "Published speed/CoF preprocessing is not independently reconstructed; raw clock gaps and repeats remain",
+        "Same fluid panel and substrate; no new material/system or causal-physics claim",
+        "Rights/notices, scientific contract and perturbation standard remain pending"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-023/reconstruction.json",
+      "candidate_receipt_sha256": "5ceba3703fd9db1e677adc596f57201fe80fb25177e90e318febf501227ab10d",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 9.020562075079397e-17,
+            "nonidentical_float_values": 12,
+            "rows": 135
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 6.982261990806649e-17,
+            "nonidentical_float_values": 3,
+            "rows": 30
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 30,
+            "reconstructed_rows": 30,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 30,
+            "reconstructed_rows": 30,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 105,
+            "reconstructed_rows": 105,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_battery_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": {
+        "author_viscosity_transform_max_difference": 3.907985046680551e-14,
+        "fitting_performed": false,
+        "fluids_per_participant": 15,
+        "group_counts": {
+          "dev": 2,
+          "test": 2,
+          "train": 7
+        },
+        "missing_clock_position_rows": 6161,
+        "native_force_median_max_difference": 8.881784197001252e-16,
+        "native_force_position_rows": 159859,
+        "participants": 11,
+        "raw_trials": 165,
+        "repeated_finite_clocks": 44,
+        "summary_rows": 165,
+        "trials_with_repeated_clocks": 13,
+        "unit_header_conflict": "Rheology fit K header says mPa s^n; identical prefactors in friction summary say Pa s^n. Raw rheology viscosities say mPa s. No silent conversion or refitting."
+      },
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "reader_source_sha256": "b47efbe99c2f617dd87136f56be9d67115d8a1ad965bcd92c3a8aecd5ee1710f",
+      "recipe_sha256": "d0bdc2d0611a80ddeb6c18fa6bd0915bfa6270f8103bee314c4d212a3f84d6ab",
+      "rows": {
+        "dev": 30,
+        "test": 30,
+        "train": 105
+      },
+      "runtime_binding_sha256": "e9cbc65d4aa25a5244ad34b2042fa319d0feedd541b342ab537e107911652dd1",
+      "scenario_id": "P100-023",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "ID02",
+            "ID11"
+          ],
+          "test": [
+            "ID03",
+            "ID06"
+          ],
+          "train": [
+            "ID01",
+            "ID04",
+            "ID05",
+            "ID07",
+            "ID08",
+            "ID09",
+            "ID10"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

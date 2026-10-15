@@ -1,0 +1,151 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 190.21726684822445,
+    "primary": "mae",
+    "primary_error": 190.21726684822445,
+    "rmse": 252.02888399954838
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 480.7508739703988,
+  "by_group": [
+    {
+      "error": 219.7868335667022,
+      "group": "group-0576a6e1314aeacfa7a21a4c",
+      "rows": 95
+    },
+    {
+      "error": 245.10537922814396,
+      "group": "group-16e743c9289e5e7d82e76945",
+      "rows": 95
+    },
+    {
+      "error": 151.08995461672234,
+      "group": "group-1eaa554a04b362c2f28f8340",
+      "rows": 95
+    },
+    {
+      "error": 80.39101071044627,
+      "group": "group-27309180063bdea86c072240",
+      "rows": 95
+    },
+    {
+      "error": 119.42046425659883,
+      "group": "group-2e51a7c40adfca2eaa995a2e",
+      "rows": 95
+    },
+    {
+      "error": 81.36124884952613,
+      "group": "group-365ecb9b6e95dc08f708208c",
+      "rows": 95
+    },
+    {
+      "error": 250.89734347630733,
+      "group": "group-3ddfbb2f103885e018b8eb98",
+      "rows": 95
+    },
+    {
+      "error": 250.80911510872784,
+      "group": "group-41b07c8e06d8e68c64dfbb3c",
+      "rows": 95
+    },
+    {
+      "error": 242.2932342675557,
+      "group": "group-6417f7a8f8cab55fb5428f64",
+      "rows": 95
+    },
+    {
+      "error": 157.08587023842793,
+      "group": "group-78608521104ffdaa59acdf62",
+      "rows": 95
+    },
+    {
+      "error": 246.06604176737878,
+      "group": "group-78b7875b2a657d221dcb2fad",
+      "rows": 95
+    },
+    {
+      "error": 224.36629342655505,
+      "group": "group-7b1dab4794a88e0a921f0694",
+      "rows": 95
+    },
+    {
+      "error": 245.65627397723097,
+      "group": "group-82284f2777b212069fd277d3",
+      "rows": 95
+    },
+    {
+      "error": 219.52052900322784,
+      "group": "group-8d4b3a530ca6e2984541b54e",
+      "rows": 95
+    },
+    {
+      "error": 196.01007483502153,
+      "group": "group-9622a56f49cfe299b4cc3e9b",
+      "rows": 95
+    },
+    {
+      "error": 167.10565097889742,
+      "group": "group-9bf13164f0ec12297b1705d5",
+      "rows": 95
+    },
+    {
+      "error": 234.63739828579506,
+      "group": "group-d2ebdc89b60293d722bfa817",
+      "rows": 95
+    },
+    {
+      "error": 276.08652837109406,
+      "group": "group-ead28e6246afc5a0e60a8bf0",
+      "rows": 95
+    },
+    {
+      "error": 83.16521008285333,
+      "group": "group-f1c5b97ca98a1fe9c26688a5",
+      "rows": 95
+    },
+    {
+      "error": 113.49088191727644,
+      "group": "group-f444649d419902c1622e00da",
+      "rows": 95
+    }
+  ],
+  "coverage": {
+    "eligible": 1900,
+    "fraction": 1.0,
+    "predicted": 1900
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-022--direct_kimi-rule-1",
+  "rule_sha256": "f335c0515b4006c3626de32a2f29ba11767618022bc6e48b3086aa65c9e09855",
+  "run_id": "full-comparison-v5--P100-022--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.0369898179297077 * voltage_V ** -0.573444222754509 * (1 + 0.49062696973109016 * bromine_rich) * exp(9.083602161353273 * voltage_V) / (1 + exp(8.740414612601555 * (voltage_V - 0.6153898744100272)))",
+    "expression_bytes": 103,
+    "free_parameters": 6,
+    "learned_state_bytes": 155,
+    "literal_state_bytes": 2,
+    "nodes": 51,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01725376126882071,
+    "perturbation_labels_available": false,
+    "population_rows": 1900,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

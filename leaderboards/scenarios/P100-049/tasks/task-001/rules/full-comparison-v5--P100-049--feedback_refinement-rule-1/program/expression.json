@@ -1,0 +1,12 @@
+{
+  "expression": "u120 + p0 * (u120 - u60) * log1p((t - t120) / t120) + p1 * (u120 - u10) * (t - t120) / t120 + p2 * current * (t - t120) / t120 + p3 * (u120 - u60) * (t - t120) / t120",
+  "parameters": {
+    "p0": 1.3742634101216302,
+    "p1": 0.03995199407066035,
+    "p2": 0.08801613355908433,
+    "p3": -0.1499872255540532
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

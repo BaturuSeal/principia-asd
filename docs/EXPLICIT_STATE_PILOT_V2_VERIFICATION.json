@@ -1,0 +1,474 @@
+{
+  "assessment": "not_assessed",
+  "assigned": 8,
+  "campaign_id": "explicit-state-engineering-pilot-v2",
+  "checked_at": "2026-10-13T13:28:55.242082+00:00",
+  "completion_sha256": "fe7a3d9d78685697ed88b267bc5ccef8eaf3c9512012944e6313ee925c52ab2d",
+  "costs": {
+    "accounted_cny": 2.132957,
+    "maximum_additional_cny": 80,
+    "pending_cny": 0,
+    "requests": 46,
+    "states": {
+      "completed": 46
+    },
+    "unknown_cny": 0
+  },
+  "elapsed_seconds": 196.866271,
+  "failed_experiments_by_reason": {
+    "Log fitting requires positive predictions and targets": 3
+  },
+  "finished_at": "2026-10-13T13:24:39.434054+00:00",
+  "fixed_nomination_slots": 24,
+  "global_costs": {
+    "accounted_cny": 57.041285,
+    "cap_cny": 3000.0,
+    "remaining_cny": 2942.958715,
+    "requests": 1700,
+    "states": {
+      "completed": 1696,
+      "unknown": 4
+    },
+    "unknown_usage_reserved": 24.0
+  },
+  "kernel_rejections_by_reason": {
+    "Unbound literal state: use a trusted fixed or train-state binding": 1
+  },
+  "ledger_unchanged": true,
+  "limits": [
+    "All six supported assignments execute the defining protocol; these development-exposed, single-run cases cannot establish comparative scientific performance.",
+    "Two wider-input assignments remain unsupported with their six slots unfilled.",
+    "Model reports remain unreviewed interpretations. No scientific novelty, practical impact, external review or private-test claim."
+  ],
+  "nominated_slots": 18,
+  "optimizer_evaluations": 647,
+  "outcomes": [
+    {
+      "candidate_count": null,
+      "conformance": null,
+      "model_requests": null,
+      "nominated": 0,
+      "nomination_slots": 3,
+      "outcome_sha256": "875bced7d626cfbbee6044602afca8e20c70676d82e924aa4db47c1ca09bbf54",
+      "reason": "Development protocol supports one to eight inputs",
+      "scenario_id": "P100-002",
+      "status": "unsupported"
+    },
+    {
+      "candidate_count": 7,
+      "conformance": {
+        "kernel_search_executed": true,
+        "report_links_frozen_nominations": true,
+        "two_executed_rounds": true
+      },
+      "failed_experiments": 3,
+      "fitting_attempts": 10,
+      "model_requests": 7,
+      "nominated": 3,
+      "nomination_slots": 3,
+      "optimizer_evaluations": 230,
+      "outcome_sha256": "9c95b245550ff287ceffc3c366606062e8c4b08773f9ba5a98063e77821b64c9",
+      "reason": null,
+      "rejected_patches": 0,
+      "scenario_id": "P100-017",
+      "status": "complete"
+    },
+    {
+      "candidate_count": 9,
+      "conformance": {
+        "kernel_search_executed": true,
+        "report_links_frozen_nominations": true,
+        "two_executed_rounds": true
+      },
+      "failed_experiments": 0,
+      "fitting_attempts": 9,
+      "model_requests": 7,
+      "nominated": 3,
+      "nomination_slots": 3,
+      "optimizer_evaluations": 100,
+      "outcome_sha256": "3092c8ddadae41f156c745de3b6348f2fc8cbe323d88bf7ac20f871d61660b7a",
+      "reason": null,
+      "rejected_patches": 0,
+      "scenario_id": "P100-043",
+      "status": "complete"
+    },
+    {
+      "candidate_count": 10,
+      "conformance": {
+        "kernel_search_executed": true,
+        "report_links_frozen_nominations": true,
+        "two_executed_rounds": true
+      },
+      "failed_experiments": 0,
+      "fitting_attempts": 10,
+      "model_requests": 7,
+      "nominated": 3,
+      "nomination_slots": 3,
+      "optimizer_evaluations": 92,
+      "outcome_sha256": "6c1105970e0eb675df866fd135cb16ffeae13a7706cd8a644e6e6b0fc2ebf6fe",
+      "reason": null,
+      "rejected_patches": 0,
+      "scenario_id": "P100-051",
+      "status": "complete"
+    },
+    {
+      "candidate_count": 9,
+      "conformance": {
+        "kernel_search_executed": true,
+        "report_links_frozen_nominations": true,
+        "two_executed_rounds": true
+      },
+      "failed_experiments": 0,
+      "fitting_attempts": 9,
+      "model_requests": 7,
+      "nominated": 3,
+      "nomination_slots": 3,
+      "optimizer_evaluations": 89,
+      "outcome_sha256": "863476af8a7e70e6d97254a88116bc2655ca06ddca9ab5edac7e45822ea1da04",
+      "reason": null,
+      "rejected_patches": 1,
+      "scenario_id": "P100-054",
+      "status": "complete"
+    },
+    {
+      "candidate_count": 8,
+      "conformance": {
+        "kernel_search_executed": true,
+        "report_links_frozen_nominations": true,
+        "two_executed_rounds": true
+      },
+      "failed_experiments": 0,
+      "fitting_attempts": 8,
+      "model_requests": 7,
+      "nominated": 3,
+      "nomination_slots": 3,
+      "optimizer_evaluations": 56,
+      "outcome_sha256": "51c756fe1f152a7fb5ec9f2c73ac08555b26c7cd36b3ec7f57addacff0ffca70",
+      "reason": null,
+      "rejected_patches": 0,
+      "scenario_id": "P100-068",
+      "status": "complete"
+    },
+    {
+      "candidate_count": null,
+      "conformance": null,
+      "model_requests": null,
+      "nominated": 0,
+      "nomination_slots": 3,
+      "outcome_sha256": "e1c804efb3437a835b6396384ce72b653ca1e7aa49ee9e917d1fc523e3eeef5e",
+      "reason": "Development protocol supports one to eight inputs",
+      "scenario_id": "P100-087",
+      "status": "unsupported"
+    },
+    {
+      "candidate_count": 10,
+      "conformance": {
+        "kernel_search_executed": true,
+        "report_links_frozen_nominations": true,
+        "two_executed_rounds": true
+      },
+      "failed_experiments": 0,
+      "fitting_attempts": 10,
+      "model_requests": 7,
+      "nominated": 3,
+      "nomination_slots": 3,
+      "optimizer_evaluations": 80,
+      "outcome_sha256": "3fd16b11da6a87360cf943675455638a5b82a58f58d39f334cb1d7abe99bc5ac",
+      "reason": null,
+      "rejected_patches": 0,
+      "scenario_id": "P100-090",
+      "status": "complete"
+    }
+  ],
+  "private_manifest_sha256": "ac679b0bf5f67b3aedf8b62edf8681286dbb0aab7dde162e8423286355b4ae5f",
+  "provider_receipts": [
+    {
+      "actual_cny": 0.075552,
+      "payload_sha256": "62e47278fa1441dd79fc8cd32ea3bb89cc086dbf60c00270a9df196632766b29",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--reporter--7",
+      "response_sha256": "c1a78913b3b985c6f0b7b6ae8802a97f60750e348fe6f686020167442323db8b"
+    },
+    {
+      "actual_cny": 0.12026,
+      "payload_sha256": "71aa07b5d4ab2b93a2eda831f14e0f031aadfe40d7397099f10bbade817015fe",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--planner--4",
+      "response_sha256": "d0a9883a61ff0fe32367cfbfd432cc4bab006cd23b9d8e7e526e09bacdb57072"
+    },
+    {
+      "actual_cny": 0.07448,
+      "payload_sha256": "18b86d7220a48f06954b8b582d35893a959da52c7ff3a5e72d1b33b70092867c",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--planner--1",
+      "response_sha256": "f66f1877fe66107dfca230421d19274ac757882cb7db012699c655bb823578a4"
+    },
+    {
+      "actual_cny": 0.041673,
+      "payload_sha256": "6656349a4f7c2e89adb79d76c239a80ded96a8c5f0ff3e0b055bcd9d660933fb",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--critic--3",
+      "response_sha256": "a966f9e9b1e7c37a10e2056882443c6e0406993c76eecf36e2a501955afeb9e8"
+    },
+    {
+      "actual_cny": 0.029412,
+      "payload_sha256": "b7277881bc1083cd7fae1513a6dc90cf5ea72cb954be60c672cba6d62733dcea",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--coder--5",
+      "response_sha256": "7b366f9a4269731be6ba70e841768a75e023be036687bed173baae204adc060e"
+    },
+    {
+      "actual_cny": 0.052833,
+      "payload_sha256": "38732899ac5dbe5e966ac5ec27edfb9b94192cb64215e531388b2a7f0d29a249",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--critic--6",
+      "response_sha256": "d67ebb5c5ed25dbec159ded1f11023f22920d67c42760204a852f59d6f080692"
+    },
+    {
+      "actual_cny": 0.020103,
+      "payload_sha256": "bbac8d10589a075a3c36a163e300a2126066b816cb4589a11c55344ac41361e3",
+      "request_id": "bound-3f7c02ba6a2843f4--bound-v2--coder--2",
+      "response_sha256": "d457eb2ab6b18832f92848b1254f4cf31b7ac83778db7c93d61c512117f833e8"
+    },
+    {
+      "actual_cny": 0.097916,
+      "payload_sha256": "0bc8253cb41c744ab5bb576f5527ea79c149f0dbd2fd8c5f8731479b1b4ac2a9",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--planner--4",
+      "response_sha256": "a65aec37df7ebd43185e6bd586ee2ce0c9f6a3c4f2f0052d46d7d5e695dd2145"
+    },
+    {
+      "actual_cny": 0.017853,
+      "payload_sha256": "fbd23c528a6e1e7c51acefb2c7739312fde879e75fe67077d50cf3aeeeba712d",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--coder--2",
+      "response_sha256": "ad3f2e9d28b8373ca4507ec7b09e4b2449e4c2a0d5c77e4357184d77f5c7a57d"
+    },
+    {
+      "actual_cny": 0.036261,
+      "payload_sha256": "deca1f24a7d1b6981bea0c73f807eb641e2f0a637ef210c31f280d587f143f70",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--critic--3",
+      "response_sha256": "706c0a1e380e76cab4555d0016022f58e37ec122f4568c6a1aea923a647c6698"
+    },
+    {
+      "actual_cny": 0.04302,
+      "payload_sha256": "fa894497cb883531887a3bada5180425da7820af71a2c5a2844200a5db0667f6",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--critic--6",
+      "response_sha256": "eda349010155fc4bd37655216477135412276b822c94bb553fc8098f726830d0"
+    },
+    {
+      "actual_cny": 0.026247,
+      "payload_sha256": "04f2b6e6f810c16d71dfd29ebe1e847020432cb48cfc5c36216d3c7a0784af8b",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--coder--5",
+      "response_sha256": "584bb4b9665b39bf87da58206dff63391a8c535b5fff886e1c052d43d8f21b9a"
+    },
+    {
+      "actual_cny": 0.081924,
+      "payload_sha256": "43a0f4a91cd67391cf365ef308b522c8d5acbabb5d927f4d7921cf0c62c8fb21",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--planner--1",
+      "response_sha256": "93096c2eb4b9320c0348fa8e6127c8cba6858c57dd5661cd117e46a56950d185"
+    },
+    {
+      "actual_cny": 0.0614745,
+      "payload_sha256": "303706f4e0c3347978c4e0e5dc859dd389b8a508ce29302d79e7e22bbbf8bf40",
+      "request_id": "bound-5ffc89b7db634a18--bound-v2--reporter--7",
+      "response_sha256": "49de8b55d81db0b4b1506d0bc0b19af0632efb4c6ced6fc683c1701361c5c35e"
+    },
+    {
+      "actual_cny": 0.080092,
+      "payload_sha256": "6322463618e8086cb1b707facc21a4571dc30f7377019da4cc4025e601be9a9d",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--planner--4",
+      "response_sha256": "b0c8bfbaea31981f790aec00a0e1e76d078af9f100aa7047a80c8437798662ad"
+    },
+    {
+      "actual_cny": 0.05554,
+      "payload_sha256": "ccae73fed7a5fc3e78b7f43fa485dcf46fb8047e99ed06c6458c67041e3592a6",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--planner--1",
+      "response_sha256": "a7dbcbe696fa6c630fd8035a71ff2855e4cf95839ea58e538f7991beb753789a"
+    },
+    {
+      "actual_cny": 0.056984,
+      "payload_sha256": "d1b005cb271aff3f0786f3364cd300559c229af6817ac69a8f2ebeaca8d930a4",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--reporter--7",
+      "response_sha256": "48d6ee5f5de3813fb22c2ea57078342487f84f6b04f2ea26f4d8aea57100e292"
+    },
+    {
+      "actual_cny": 0.033159,
+      "payload_sha256": "e81dc0bfaf8e23c161ff523d1744abe18287f511fc30debb82cd8cd7c5722a40",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--critic--3",
+      "response_sha256": "9e283db6a5b4adb0648f130311ba55d3b714ebd928d0e259b37108a56804de35"
+    },
+    {
+      "actual_cny": 0.024483,
+      "payload_sha256": "16d491a1459de8c38d637578fb9b584af6d5e0b7f9e01342449d7b51c765e8da",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--coder--5",
+      "response_sha256": "bc376a7237e9ea3f566da4cdbd596870fa4ab038f9f6c8f9fce23be4801924e4"
+    },
+    {
+      "actual_cny": 0.016365,
+      "payload_sha256": "43303aebbb84ec1177eab9290df2fe152a10f16f36efe856bf56237de032a0d5",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--coder--2",
+      "response_sha256": "8818461814ad536bca94660006a67ed28ae5b2c2f1ecdd9e690b12e4825da8b6"
+    },
+    {
+      "actual_cny": 0.039627,
+      "payload_sha256": "94def32de8fabdd2730337b24c36630f16a66304fac9be7c95c84d90c56cf8a4",
+      "request_id": "bound-71a50f65ef8241ce--bound-v2--critic--6",
+      "response_sha256": "efbf6694cf7ffeaf5f22be7f0780cfd196fb695fab9943a09a45db1c7c7a7fb2"
+    },
+    {
+      "actual_cny": 0.048141,
+      "payload_sha256": "e39107e0dd5c3b1e1df7ad20ade3cdcf17dc5f28e8d6ba4a9a46da2b912462f5",
+      "request_id": "bound-71b667779ad242e2--bound-v2--critic--6",
+      "response_sha256": "a45521965287fceeca4f3a912a9c06c1d223fe38bae7cfdd913d7f3d602ad317"
+    },
+    {
+      "actual_cny": 0.112656,
+      "payload_sha256": "4dd57e10ae93e5ed2b3ad5a16d78fc4dbfa2fdb571991252ff826148f8844fd2",
+      "request_id": "bound-71b667779ad242e2--bound-v2--planner--4",
+      "response_sha256": "bc2330ccfe5e21f2674181c3c5df138980acf601b7a43c4801fcbec584a47d07"
+    },
+    {
+      "actual_cny": 0.064044,
+      "payload_sha256": "4255e0f7a278cd64596564ed61f7e7cdb525394cebb72f28dbeeced77c2b91ce",
+      "request_id": "bound-71b667779ad242e2--bound-v2--planner--1",
+      "response_sha256": "e6a76a3d1717c704afb5a7a348418753b4dff57beef77588403cf885e5a494db"
+    },
+    {
+      "actual_cny": 0.071748,
+      "payload_sha256": "a27adfb4c873e54020869fec4064c5fe19f449619088180a1c6f0385e652bb1e",
+      "request_id": "bound-71b667779ad242e2--bound-v2--reporter--7",
+      "response_sha256": "9072315a2a50b67a634202278d5690f8dc4afc8d334f7f75de640b7d8260db0b"
+    },
+    {
+      "actual_cny": 0.019677,
+      "payload_sha256": "8d3db1c83d723cf7092eda3329a8440eaeecf0df4f81a1c6047124db14a57948",
+      "request_id": "bound-71b667779ad242e2--bound-v2--coder--2",
+      "response_sha256": "a1efe4029af63c3906d5484ebcd88f572cbe715d804d001a076758ce6c9d309f"
+    },
+    {
+      "actual_cny": 0.038685,
+      "payload_sha256": "858a52db497d6ebc18f37a30953ec581009348105c9c2c46a71fcb9d8c205d7d",
+      "request_id": "bound-71b667779ad242e2--bound-v2--critic--3",
+      "response_sha256": "0f393a409e43f44f88d14ce46fde5a961f62d3cc71760732f6cb51bdde5863b7"
+    },
+    {
+      "actual_cny": 0.027534,
+      "payload_sha256": "1a28ecd99477809962e902bf5de5ae0246bc54d773eee04395edb3ce5cf09270",
+      "request_id": "bound-71b667779ad242e2--bound-v2--coder--5",
+      "response_sha256": "c39bb78d6a0eb20edc5b3f5764ad7cdecc5d4e05c9631a1f604a5800a5a0bbb2"
+    },
+    {
+      "actual_cny": 0.05698,
+      "payload_sha256": "6e41d26e7e74cae12eee4d44a46de1022add1f5757a6d88d4cb815f4d4a62a9f",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--reporter--7",
+      "response_sha256": "c540ad3e2fc40ca2ddecbb79fc0ec2e6c217de56c1d84e2f0ccf13603a21cae3"
+    },
+    {
+      "actual_cny": 0.023325,
+      "payload_sha256": "e90e17211a8e8756b6a6477a6f50756cd9b4c2044e59cbe853f5ff8ee1e82747",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--coder--5",
+      "response_sha256": "5c00b54648659213609b90d0b7b786068c956aed8a64d5113113d982d4b8c525"
+    },
+    {
+      "actual_cny": 0.01539,
+      "payload_sha256": "69b375e50d54c1bba73adb55243a8048ccc82877a44144c1d1353db09f5521b2",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--coder--2",
+      "response_sha256": "5ec164e9adc0074ed40136c66948843545a1d3dd9678f07b52908d80c8497302"
+    },
+    {
+      "actual_cny": 0.04245,
+      "payload_sha256": "5d0ee473402c36657f5bb30946bc58be068d28be4ca73f962cdf5b16135fc26d",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--critic--6",
+      "response_sha256": "ebcf0ad0720562c2837818d9d6548c9a0eed92d47ac36dcecd5ffdc53b184616"
+    },
+    {
+      "actual_cny": 0.078532,
+      "payload_sha256": "75e0784d337f4788696f8062961b3ea50ce51888e12bc8c5f6b5e9091ccfa431",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--planner--4",
+      "response_sha256": "965c674635035a5bbd7725f1fa5d226e5d7cc75d586975a35d92b4a174a1066d"
+    },
+    {
+      "actual_cny": 0.034827,
+      "payload_sha256": "411fc5df85961ad56a4b063d4cf026d67a81d0b57e24619728b85a21d1dd5f11",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--critic--3",
+      "response_sha256": "f95604173a5243983d73e112cabb230a38bb6ef19a6bbbd8595abf126a81c521"
+    },
+    {
+      "actual_cny": 0.057056,
+      "payload_sha256": "4f9458f9824b764e27f60fceb0898de6a98d129382dc710e0a0988ab6bcb9467",
+      "request_id": "bound-78f937e571ce42fa--bound-v2--planner--1",
+      "response_sha256": "d87495d7f700a60de747cc6680f833ca00659f337dcf445238b7b6951de756e1"
+    },
+    {
+      "actual_cny": 0.028728,
+      "payload_sha256": "9fc5ab640c68b987ea4adfef4114657a5ca93d36c5605c1f77d423d98140365f",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--coder--5",
+      "response_sha256": "1c0165dacf2119a9a5b27cbd4a7f4b576f6749661ca7e49b68b276f460950058"
+    },
+    {
+      "actual_cny": 0.093988,
+      "payload_sha256": "2ee3dbd00a3ac818fbef7d59ef99388cd4d52840fffc0c3d8c6e0c5223928365",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--planner--4",
+      "response_sha256": "afa9de66b55743a9e432b875772f0a90c9e7e3e2ce69839faf7f8d271c49d50a"
+    },
+    {
+      "actual_cny": 0.04137,
+      "payload_sha256": "1bf818fab3972a13d85ee96a8f998f8b2aa84e937608fb846f71588a47d6685f",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--critic--3",
+      "response_sha256": "181fbedcb68e168c032af41913b94c4cb62141c1cb57608282c031b07dd71402"
+    },
+    {
+      "actual_cny": 0.049851,
+      "payload_sha256": "a31c5c2ce1f26a410e92c5ad0a1d87e742e04f0dcbdb2bec0ebb6aef598f7a9f",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--critic--6",
+      "response_sha256": "8d8e4c41c5cbd98da75735e74a5ff21c46d8bae0457966be6af3609d65bc8cc1"
+    },
+    {
+      "actual_cny": 0.0659325,
+      "payload_sha256": "051ae74b8391481610aac4c0ba1350946f0182bd09075429ffb3fd25d58ceaf1",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--reporter--7",
+      "response_sha256": "04b44a09a18095f53080376ead1428b6bf0de9b8be9ba95ae36e02604d922c7f"
+    },
+    {
+      "actual_cny": 0.015495,
+      "payload_sha256": "229b23626c6c9d248c31f9ed91269beb3e711d6f3d7267185ca193524831fd2d",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--coder--2",
+      "response_sha256": "8ec4600f1c9f90194a81380d8389a8f5e286e624f66dc32ddd3df0e2e4664daf"
+    },
+    {
+      "actual_cny": 0.059088,
+      "payload_sha256": "d00a57c5398e9860907daa0763c1f0054aadb68dfbf7f30faf20a127191feac4",
+      "request_id": "bound-b7f938cc296544a1--bound-v2--planner--1",
+      "response_sha256": "7035d34ed3c5dadb018cc90165628bf32bd35ef3856084411aa31cc94fa18c6b"
+    },
+    {
+      "actual_cny": 0.000264,
+      "payload_sha256": "bf858fa9fceb35b37cabc8389845767143d5ab96822bbffd8f4326fceb6ec5dc",
+      "request_id": "explicit-state-engineering-pilot-v2--probe--Qwen/Qwen3.8-27B",
+      "response_sha256": "456fb764a6ed41fa40539430c9b4e3e812f8738d4c998709f66a9725c0b8f652"
+    },
+    {
+      "actual_cny": 0.00118,
+      "payload_sha256": "90b7347bf7f2699830b3d80b82c01fdd28a291883eb9e11c92104fdc0938c08f",
+      "request_id": "explicit-state-engineering-pilot-v2--probe--zai-org/GLM-5.3",
+      "response_sha256": "4adb94043b53d33c1126bd9d217be484194a95c2ab07bbdf819fd9249ce1f9ee"
+    },
+    {
+      "actual_cny": 0.000559,
+      "payload_sha256": "a7d20195b28cfcb775a011734abe5824c55fca4dff6ced97afe2031eee75fbe9",
+      "request_id": "explicit-state-engineering-pilot-v2--probe--Pro/moonshotai/Kimi-K2.6",
+      "response_sha256": "ee49b3078511a158f2452c08caa5a71cf87907b73e3583825a8c82bdb7f9d4d0"
+    },
+    {
+      "actual_cny": 0.000198,
+      "payload_sha256": "cd823bfcdf2f27c622cc28c28354a1392ee673eac1e9940b720cf16db5873630",
+      "request_id": "explicit-state-engineering-pilot-v2--probe--deepseek-ai/DeepSeek-V4-Flash",
+      "response_sha256": "d1a01aa90e2bdb2b32de6c20126dd5c7d8b39f9e73673bce12f13d402808f602"
+    }
+  ],
+  "ranking_authorized": false,
+  "retained_candidates": 53,
+  "runtime_sha256": "f09fd3cff34d368a6192ff18bb5255e6a397f55a121d0bf6a1531527c4769889",
+  "scope": "Frozen runtime/context/outcome integrity and settled provider accounting; no fitting, API requests, private-test assessment or scientific ranking",
+  "sha256": "fa4c75e109d138dbd330d9d26a8facb49fcfa9edc6665b881e3bda011e0f3ed9",
+  "status": "passed",
+  "statuses": {
+    "complete": 6,
+    "unsupported": 2
+  },
+  "submission_freeze_sha256": "0be12bed97ba9db8dfd705833bc02f2afa5e984a89c7d650ca4d09f45ea46a69",
+  "training_fits": 56
+}

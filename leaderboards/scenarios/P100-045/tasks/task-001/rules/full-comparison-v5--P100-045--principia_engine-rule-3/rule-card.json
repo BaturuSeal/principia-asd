@@ -1,0 +1,76 @@
+{
+  "dev_error": 19.56974698501812,
+  "execution_status": "complete",
+  "expression": "p0+p1*(low - background_low)",
+  "inputs": [
+    "low",
+    "low_lag",
+    "background_low",
+    "background_high",
+    "time_s",
+    "channel_low_keV",
+    "channel_high_keV"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 132.378395031634,
+    "p1": 0.46098540991794285
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "background_high": -0.3238019925154567,
+      "background_low": -0.3238019925154568,
+      "channel_high_keV": -0.3238019925154567,
+      "channel_low_keV": 0.32380199251545677,
+      "low": -0.5221074459680868,
+      "low_lag": -0.4604444239512401,
+      "time_s": 0.281637697268105
+    },
+    "mean": 1.6305640456740593,
+    "p90_abs": 37.634763038424154,
+    "std": 27.505903486489263
+  },
+  "rule_id": "full-comparison-v5--P100-045--principia_engine-rule-3",
+  "rule_sha256": "e061269b314c7fd9a6c2a539bc58c89975be9021a12668eb6ba74f5bbd495655",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "132.378395031634 + 0.46098540991794285 * (low - background_low)",
+    "expression_bytes": 28,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 15,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-045.compact.v2",
+  "train_error": 14.769776056312253,
+  "units": {
+    "inputs": {
+      "background_high": "counts/s in pretrigger channel 4",
+      "background_low": "counts/s in pretrigger channels 2+3",
+      "channel_high_keV": "keV",
+      "channel_low_keV": "keV",
+      "low": "counts/s in channels 2+3",
+      "low_lag": "counts/s in preceding bin, channels 2+3",
+      "time_s": "s after trigger"
+    },
+    "output": "counts/s",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

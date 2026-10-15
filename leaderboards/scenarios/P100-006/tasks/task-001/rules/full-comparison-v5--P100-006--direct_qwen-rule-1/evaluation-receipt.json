@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.16920468722810608,
+    "primary": "mae",
+    "primary_error": 0.16920468722810608,
+    "rmse": 0.18876256001823588
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.23307961305015756,
+  "by_group": [
+    {
+      "error": 0.14300119940267753,
+      "group": "group-2d4be703bac713893e380306",
+      "rows": 2400
+    },
+    {
+      "error": 0.19540817505353464,
+      "group": "group-a5093bf7ea537f01bcf93bca",
+      "rows": 2400
+    }
+  ],
+  "coverage": {
+    "eligible": 4800,
+    "fraction": 1.0,
+    "predicted": 4800
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_qwen",
+  "rule_id": "full-comparison-v5--P100-006--direct_qwen-rule-1",
+  "rule_sha256": "7e7d90ccbc3e50f237a73b3de14fb9b18ecdec26836a38007c327938c75d3ad2",
+  "run_id": "full-comparison-v5--P100-006--direct_qwen",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.4965932876416754 + -0.028775746652177355 * rabi_MHz ** 1.7859109685711614 / (1 + (detuning_MHz / 6.524170022984778) ** 2)",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 106,
+    "literal_state_bytes": 2,
+    "nodes": 29,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.1484207299107451,
+    "perturbation_labels_available": false,
+    "population_rows": 4800,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

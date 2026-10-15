@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.010915530644796178,
+    "primary": "mae",
+    "primary_error": 0.010915530644796178,
+    "rmse": 0.014189624060923703
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.011003542604276611,
+  "by_group": [
+    {
+      "error": 0.011953571049739384,
+      "group": "group-2d4a3f44ac9fdd8d0d4bbce8",
+      "rows": 32
+    },
+    {
+      "error": 0.009877490239852973,
+      "group": "group-f1263395f4d4af8c39623846",
+      "rows": 32
+    }
+  ],
+  "coverage": {
+    "eligible": 64,
+    "fraction": 1.0,
+    "predicted": 64
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_qwen",
+  "rule_id": "full-comparison-v5--P100-003--direct_qwen-rule-1",
+  "rule_sha256": "7f3f02a4e27fe01b25dbbd445efe40d0f685f64e8ab1a1135364906eb5bb81da",
+  "run_id": "full-comparison-v5--P100-003--direct_qwen",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "maximum(0.0, 0.6742935847768591 * median4 + -2.2396536128589806 * mad4 + 0.0005461884190156095 * high1 + 0.46750187986934355 * line1 + 0.05446607824363203 * lag1 + 0.11986415032534618 * lag2 + -0.025088360234194505 * lag3 + 0.08815682810233824 * lag4)",
+    "expression_bytes": 112,
+    "free_parameters": 8,
+    "learned_state_bytes": 219,
+    "literal_state_bytes": 3,
+    "nodes": 67,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 16
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.024833407177749435,
+    "perturbation_labels_available": false,
+    "population_rows": 64,
+    "ranking": false,
+    "samples": 64,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

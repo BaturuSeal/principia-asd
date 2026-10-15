@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.0003659130911483003,
+  "execution_status": "complete",
+  "expression": "u120 + p0 * (u120 - u60) * log(t / t120) + p1 * current",
+  "inputs": [
+    "t",
+    "t60",
+    "t120",
+    "u60",
+    "u120",
+    "u10",
+    "pulse_s",
+    "current"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.3224721453245118,
+    "p1": 0.8101203869283827
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.04109664888289501,
+      "pulse_s": 0.2587489469041372,
+      "t": 0.0149961321555401,
+      "t120": 0.11029183075791975,
+      "t60": -0.07460401357460486,
+      "u10": -0.021150135510368394,
+      "u120": -0.023485760369879486,
+      "u60": -0.02297463550886944
+    },
+    "mean": -2.0655029142384386e-05,
+    "p90_abs": 0.0007633001700243322,
+    "std": 0.00046115032444545175
+  },
+  "rule_id": "full-comparison-v5--P100-049--tool_agent-rule-1",
+  "rule_sha256": "f375671b739629bd25c84786bfa138f2765b058f536622137f31122897d00bca",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "u120 + 1.3224721453245118 * (u120 - u60) * log(t / t120) + 0.8101203869283827 * current",
+    "expression_bytes": 55,
+    "free_parameters": 2,
+    "learned_state_bytes": 52,
+    "literal_state_bytes": 0,
+    "nodes": 34,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-049.compact.v2",
+  "train_error": 0.00042077716555486544,
+  "units": {
+    "inputs": {
+      "current": "A",
+      "pulse_s": "s",
+      "t": "s",
+      "t120": "s",
+      "t60": "s",
+      "u10": "V",
+      "u120": "V",
+      "u60": "V"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

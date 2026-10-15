@@ -1,0 +1,61 @@
+{
+  "dev_error": 0.11098429062889784,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "income_proxy",
+    "household_size",
+    "shock",
+    "age"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.11172355310578758
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.19702859593212926,
+      "household_size": -0.1382111983009753,
+      "income_proxy": 0.37220780125122177,
+      "shock": -0.10416386982385223
+    },
+    "mean": -0.030688898256080108,
+    "p90_abs": 0.8882764468942124,
+    "std": 0.3494726671128536
+  },
+  "rule_id": "full-comparison-v5--P100-015--mean_control-rule-1",
+  "rule_sha256": "6338904e7f27773e50b78912f5be1755892082b72d69e28c28257a87e1220fa1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.11172355310578758",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-015.compact.v2",
+  "train_error": 0.09968323729213366,
+  "units": {
+    "inputs": {
+      "age": "years",
+      "household_size": "persons",
+      "income_proxy": "thousands USD/year bracket proxy",
+      "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+    },
+    "output": "binary EF3_h",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

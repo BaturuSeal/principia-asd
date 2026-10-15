@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.47605884798932385,
+  "execution_status": "complete",
+  "expression": "p0+p1*depth_km+p2*rms_s+p3*phases+p4*stations+p5*gap_deg+p6*dmin_km+p7*log1p(dmin_km)",
+  "inputs": [
+    "depth_km",
+    "rms_s",
+    "phases",
+    "stations",
+    "gap_deg",
+    "dmin_km"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.18659746428531887,
+    "p1": 0.01924497352740816,
+    "p2": 0.6181676521598426,
+    "p3": -0.008569920693042242,
+    "p4": 0.008063354408864753,
+    "p5": 0.003558531142124353,
+    "p6": -0.0005131197626796358,
+    "p7": 0.3295796888362467
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "depth_km": -0.007546250940893355,
+      "dmin_km": 0.16487185017861827,
+      "gap_deg": -0.17976630975013394,
+      "phases": 0.10280969819071711,
+      "rms_s": 0.1707641623837669,
+      "stations": 0.13160125256233035
+    },
+    "mean": -1.9681206920694867,
+    "p90_abs": 7.2437769887621,
+    "std": 4.83210482968311
+  },
+  "rule_id": "interface-repair-pilot-v4--P100-017--best_of_n-rule-1",
+  "rule_sha256": "a56c6d50e85e47a420ae2d2c8a216fef79513dfa06c0f5e1ffdab925d4b6baaf",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.18659746428531887 + 0.01924497352740816 * depth_km + 0.6181676521598426 * rms_s + -0.008569920693042242 * phases + 0.008063354408864753 * stations + 0.003558531142124353 * gap_deg + -0.0005131197626796358 * dmin_km + 0.3295796888362467 * log1p(dmin_km)",
+    "expression_bytes": 85,
+    "free_parameters": 8,
+    "learned_state_bytes": 222,
+    "literal_state_bytes": 0,
+    "nodes": 62,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-017.compact.v2",
+  "train_error": 0.43135879584363584,
+  "units": {
+    "inputs": {
+      "depth_km": "km below network reference (may negative)",
+      "dmin_km": "minimum angular station distance*111.195km/degree",
+      "gap_deg": "largest azimuthal gap degrees",
+      "phases": "used phase count",
+      "rms_s": "seconds phase residual standardError",
+      "stations": "used station count"
+    },
+    "output": "km",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "dev_error": 18.06144431785301,
+  "execution_status": "complete",
+  "expression": "where(fft_bpm > 2 * half_bpm, fft_bpm, 2 * half_bpm)",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.34315301556462585,
+      "agreement": 0.2724217808409628,
+      "ear": -0.09611432146503976,
+      "fft_bpm": 0.7444806797984355,
+      "half_bpm": 0.9164970672844188,
+      "half_strength": -0.18500612562210075,
+      "motion": -0.02839828331054338,
+      "spectral_quality": 0.030202050692564198
+    },
+    "mean": 2.6249632871240602,
+    "p90_abs": 40.20234375000001,
+    "std": 27.10661686754968
+  },
+  "rule_id": "full-comparison-v5--P100-033--direct_qwen-rule-1",
+  "rule_sha256": "83d1d165652f1db7d8bf4a67d78e6f49519f40ee573bab1905ae406843e1aa0b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "where(fft_bpm > 2 * half_bpm, fft_bpm, 2 * half_bpm)",
+    "expression_bytes": 52,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 2,
+    "nodes": 20,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 16.39032957288954,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

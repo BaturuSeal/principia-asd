@@ -1,0 +1,75 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "background_high": "counts/s in pretrigger channel 4",
+    "background_low": "counts/s in pretrigger channels 2+3",
+    "channel_high_keV": "keV",
+    "channel_low_keV": "keV",
+    "low": "counts/s in channels 2+3",
+    "low_lag": "counts/s in preceding bin, channels 2+3",
+    "time_s": "s after trigger"
+  },
+  "inputs": [
+    "low",
+    "low_lag",
+    "background_low",
+    "background_high",
+    "time_s",
+    "channel_low_keV",
+    "channel_high_keV"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": true,
+  "observation_window": "Same-bin channel2+3 count rates and previous-bin low-energy rate permitted; targetchannel4 observations aftertrigger forbidden as predictors.",
+  "output": "target",
+  "output_description": "GBM NaI channel4 count rate during fixed post-trigger window",
+  "output_units": "counts/s",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-045",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "0229638fce436f5d126cd9c603dc0e4f0572d457cb6975cf0b1383f3f6f91a89",
+  "source_task": "P100-045.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "Detector within one GRB; detectors share one incident event",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-045.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "GBM NaI channel4 count rate during fixed post-trigger window",
+  "version": "1.0.0rc2"
+}

@@ -1,0 +1,80 @@
+{
+  "dev_error": 0.20382876250973536,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(lag_choice)))",
+  "inputs": [
+    "reward",
+    "probability",
+    "child",
+    "age_child",
+    "multi",
+    "description",
+    "trial_progress",
+    "lag_choice",
+    "history_mean",
+    "has_history"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.29644591768490386,
+    "p1": 0.45246961513665346
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_child": -0.07244030580446716,
+      "child": -0.07191976029615882,
+      "description": 0.027645525595122112,
+      "has_history": 0.03726190827524607,
+      "history_mean": -0.11012448206020542,
+      "lag_choice": 0.019265134156522066,
+      "multi": -0.017350506174919265,
+      "probability": -0.40853665979018916,
+      "reward": -0.27388223094061237,
+      "trial_progress": 0.02662092380077758
+    },
+    "mean": 0.03585557049044338,
+    "p90_abs": 0.7489155328215573,
+    "std": 0.450068703043288
+  },
+  "rule_id": "full-comparison-v5--P100-089--symbolic_control-rule-2",
+  "rule_sha256": "3e84121297daaeb99424c850d76696d4f91e7fd59fe35621996f408298930908",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.29644591768490386 + 0.45246961513665346 * lag_choice))",
+    "expression_bytes": 40,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 2,
+    "nodes": 19,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-089.compact.v2",
+  "train_error": 0.19789493123278,
+  "units": {
+    "inputs": {
+      "age_child": "years; adult sentinel0",
+      "child": "binary",
+      "description": "binary",
+      "has_history": "binary",
+      "history_mean": "proportion or first-trial prior0.5",
+      "lag_choice": "binary or first-trial prior0.5",
+      "multi": "binary",
+      "probability": "probability",
+      "reward": "points",
+      "trial_progress": "trial index/40"
+    },
+    "output": "binary choice",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

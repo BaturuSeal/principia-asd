@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.03582745380990572,
+  "execution_status": "complete",
+  "expression": "p0 * (width_um - notch_width_um) * thickness_um * thickness_um / length_um",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.1249530855574146
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": -0.4361716124230264,
+      "notch_depth_um": 0.6236447516816116,
+      "notch_width_um": -0.44657930271110546,
+      "thickness_um": -0.12304052547081876,
+      "width_um": -0.08536908064323587
+    },
+    "mean": 0.006736023717712666,
+    "p90_abs": 0.06281184858717682,
+    "std": 0.03933906072691047
+  },
+  "rule_id": "live-pilot-v3--P100-054--direct_deepseek-rule-1",
+  "rule_sha256": "46f7a6006d11ff6ed7cc78748d25e7dc289bc1eebd3aadbd9db510457d98017d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.1249530855574146 * (width_um - notch_width_um) * thickness_um * thickness_um / length_um",
+    "expression_bytes": 74,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 23,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.02947456563400441,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

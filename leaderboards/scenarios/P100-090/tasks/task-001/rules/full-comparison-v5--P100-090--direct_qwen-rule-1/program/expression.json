@@ -1,0 +1,16 @@
+{
+  "expression": "tanh(p0 * p_now + p1 * (p_now - p_past) + p2 * (p_now - p_initial) + p3 * (density - 0.5) + p4 * (speed - 1.15) + p5 * (radius90 - 4.0) + p6 * (polarization_variance - 0.62) + p7)",
+  "parameters": {
+    "p0": 0.8463140480617019,
+    "p1": 0.18160911043810496,
+    "p2": 0.002704623729799297,
+    "p3": 0.02346902176601922,
+    "p4": 0.14558958572154435,
+    "p5": -0.0022340400690613943,
+    "p6": -0.08877238617773903,
+    "p7": 0.03229680900210997
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

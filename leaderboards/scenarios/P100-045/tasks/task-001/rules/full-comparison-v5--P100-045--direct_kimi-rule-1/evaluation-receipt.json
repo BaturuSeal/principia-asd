@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 24.50730185416881,
+    "primary": "mae",
+    "primary_error": 24.50730185416881,
+    "rmse": 36.749127769005376
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 47.81561608986473,
+  "by_group": [
+    {
+      "error": 25.84541591650938,
+      "group": "group-6d2d7feaad91042c2561194e",
+      "rows": 100
+    },
+    {
+      "error": 23.169187791828236,
+      "group": "group-7b6c3d5f3df37880ee96c84a",
+      "rows": 100
+    }
+  ],
+  "coverage": {
+    "eligible": 200,
+    "fraction": 1.0,
+    "predicted": 200
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-045--direct_kimi-rule-1",
+  "rule_sha256": "fd569857c95c51f6bf0471e14495fab205557fffb8aaf550c28cdd34ee3b5f73",
+  "run_id": "full-comparison-v5--P100-045--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-60.23433758908719 + -0.06622024372527777 * low + 2.2221966657019356 * background_high + 0.925789810982879 * (low - background_low) + -0.0062893342148477895 * (low - low_lag) + -0.07652210294507834 * time_s + 0.3146402739237303 * channel_high_keV + -1.2257388613283702 * (low * background_high / background_low)",
+    "expression_bytes": 175,
+    "free_parameters": 8,
+    "learned_state_bytes": 216,
+    "literal_state_bytes": 0,
+    "nodes": 75,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 18
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.06147906076092216,
+    "perturbation_labels_available": false,
+    "population_rows": 200,
+    "ranking": false,
+    "samples": 200,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

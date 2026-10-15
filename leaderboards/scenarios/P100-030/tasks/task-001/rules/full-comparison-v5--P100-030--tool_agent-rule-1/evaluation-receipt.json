@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.031842558721847145,
+    "primary": "mae",
+    "primary_error": 0.031842558721847145,
+    "rmse": 0.04723872681337485
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.06938069444444445,
+  "by_group": [
+    {
+      "error": 0.06054889090209684,
+      "group": "group-0a265a6180cfba94d3eb0666",
+      "rows": 12
+    },
+    {
+      "error": 0.003136226541597452,
+      "group": "group-191e001270476d8b8d4971b9",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tool_agent",
+  "rule_id": "full-comparison-v5--P100-030--tool_agent-rule-1",
+  "rule_sha256": "f7398052eabf46693f35c3ae31ac4c6b76e203f8f919b1fb4e7508016a9eb001",
+  "run_id": "full-comparison-v5--P100-030--tool_agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "boundary_cof * (-0.132289401650231 + 0.9957853373016509 * exp(-0.36705429233744824 * speed_mm_s)) + 0.0018590238004610063 * speed_mm_s + 0.013014472706541073",
+    "expression_bytes": 71,
+    "free_parameters": 5,
+    "learned_state_bytes": 136,
+    "literal_state_bytes": 0,
+    "nodes": 36,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.7068309786398369,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

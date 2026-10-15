@@ -1,0 +1,220 @@
+{
+  "assigned": 8,
+  "attempt_cap_cny": 12,
+  "campaign_id": "explicit-state-data-to-paper-pilot-v2",
+  "capabilities_sha256": "b17c83feb3c8cd4834cc7e9bdaaa6fbd8b0196dc00d96ca3fbd46ad768b34bf5",
+  "created_at": "2026-10-13T23:25:25.314047+00:00",
+  "fixed_nomination_slots": 24,
+  "frozen_before_dispatch": true,
+  "global_cap_cny": 3000,
+  "global_capabilities_sha256": "b17c83feb3c8cd4834cc7e9bdaaa6fbd8b0196dc00d96ca3fbd46ad768b34bf5",
+  "inputs": {
+    "data/scenarios/P100-002/public/dev.csv.gz": "d2e956fd5135addcd15b6bb834fe8b8cee3595ae79a6fc09b000d7897345761b",
+    "data/scenarios/P100-002/public/train.csv.gz": "0e69bb209255f2315b60eddba993cf72343a40fd33c41bbd424f4e50f4a3630c",
+    "data/scenarios/P100-002/task-contracts/task-001.json": "a3f315506c6df62708f7a2b7611d66bdbc5352c5b2fce77bf07548f126c0ec9f",
+    "data/scenarios/P100-017/public/dev.csv.gz": "ddaf9078b16000828cf51133ed238cde956147d74c71619bd7baaa90cf753b64",
+    "data/scenarios/P100-017/public/train.csv.gz": "5810ca98f050a1137ed16976e8dad5641861d7404beda941ac7418e11b157a3b",
+    "data/scenarios/P100-017/task-contracts/task-001.json": "302a6259bad23bdcc7ce1fc7ddf3c2d23fb608c7974c6fe91b328aed47c26537",
+    "data/scenarios/P100-043/public/dev.csv.gz": "6a28ad78ccb4fe3a27e39356376828524f5df7bddcd1a42eddd0ccfcbd925484",
+    "data/scenarios/P100-043/public/train.csv.gz": "5de2c2ff64ff12764572f6a295b8ff3d80f06cb92c62a211a80b0bf38b9bd764",
+    "data/scenarios/P100-043/task-contracts/task-001.json": "d2059f7340928444372321d93af0617cdbb491d1d8b10f6460efa01588f26dab",
+    "data/scenarios/P100-051/public/dev.csv.gz": "9a0c2065d0c5d7429a4698334ce9c2cebe8da57e2e33b22e15b7558da4edfc3f",
+    "data/scenarios/P100-051/public/train.csv.gz": "9712dc6b341acfd3a68487f33d449d70260164c03616532f0b3110465a2e8239",
+    "data/scenarios/P100-051/task-contracts/task-001.json": "9e6ef4015bc1d92b9f102256042d0ed44d8037eab04e155c3a7cd1fe227ebb73",
+    "data/scenarios/P100-054/public/dev.csv.gz": "a2fa4e42ba79ee264405f54526930918f4dda680b5afdb6b3192bcf03300799b",
+    "data/scenarios/P100-054/public/train.csv.gz": "8edeaa29cd95b165708d4e9b33b497aed457ab27f770c8fc93cc12b3c2430709",
+    "data/scenarios/P100-054/task-contracts/task-001.json": "9360e20e67975eefcc1bcfa6835ca57ce718fe698850a5c570ef044346020596",
+    "data/scenarios/P100-068/public/dev.csv.gz": "a47b46665be75ea0d94d3d4a5162fb6a816ca139e3c54c565d62651fdfc23d7f",
+    "data/scenarios/P100-068/public/train.csv.gz": "74df15d382afdd167adda204608a03ae1a315468b4d6a743cadbd8633f1b768c",
+    "data/scenarios/P100-068/task-contracts/task-001.json": "cd78259dbbfe61dfc1a6b662538ca2539e54fd8a641f26cb2a5a9c8a000f2551",
+    "data/scenarios/P100-087/public/dev.csv.gz": "cfbf481eb003b4c70306d01509517ec2794ee5f9317c1df32dd71f3be4755282",
+    "data/scenarios/P100-087/public/train.csv.gz": "60ecf50065478290fe67d727a5564c1a334314a309d77977c166193a31405c22",
+    "data/scenarios/P100-087/task-contracts/task-001.json": "aaceda258df8195c12fabc01ef26f6bc691fa0d8181597e8d572a8f876546db3",
+    "data/scenarios/P100-090/public/dev.csv.gz": "42e63df14721241c86141e3bf07af79c5f8decda64d2eddb5dad62551c72341e",
+    "data/scenarios/P100-090/public/train.csv.gz": "dc4714dc274d2360fbbdab3ed3fec3f6d75b1f5c5d9bfb1444cfa0ee719d08bb",
+    "data/scenarios/P100-090/task-contracts/task-001.json": "4302a8f993d66700590481404825d889c43b639ca6affd459d0e260c3f98b69d"
+  },
+  "jobs": [
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 10,
+      "nomination_slots": 3,
+      "run_id": null,
+      "scenario_id": "P100-002",
+      "supported": false,
+      "task_id": "P100-002.compact.v2"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 6,
+      "launch_sha256": "f75f59472c2157e228044881f99d1bd70a5b2455384125414e73e857bbd92079",
+      "nomination_slots": 3,
+      "request_sha256": "98ef39605723cb05741d384357a17869a709038e1919eba87e5e56150ac783eb",
+      "run_id": "paper-v2-a1269e5ee7af46cc",
+      "scenario_id": "P100-017",
+      "supported": true,
+      "task_id": "P100-017.compact.v2",
+      "ui_sha256": "181dc81b0648db8384a1ccce50f21f3a495617932ba955981ea3c60c7f33e7d6"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 8,
+      "launch_sha256": "3c1e1dcb02519b612ed289995c09514137cac2ed90fc5ef3a9884e25d42ea941",
+      "nomination_slots": 3,
+      "request_sha256": "19bcef026e62f8b92e8a37f76591cde4e1639d71bbd32f788fdf6c5646477af6",
+      "run_id": "paper-v2-8c5c101321894b75",
+      "scenario_id": "P100-043",
+      "supported": true,
+      "task_id": "P100-043.compact.v2",
+      "ui_sha256": "ea076aeef188d199f86f9f28dfd30dfd632752acbc354c17f9c328dd68b7c558"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 4,
+      "launch_sha256": "53b50e640b67e747aad5c5aefbd41c054878405276b135b7b464c294d0d30a9e",
+      "nomination_slots": 3,
+      "request_sha256": "8734ecc0b633cdb8ddd254455d37666bed67b93c894dcb719a58fa30d9faa75f",
+      "run_id": "paper-v2-3cbbf4c590954102",
+      "scenario_id": "P100-051",
+      "supported": true,
+      "task_id": "P100-051.compact.v2",
+      "ui_sha256": "1ec39ddcc59ca11d3ee977340fa44ec209fe2f3e84e97eace836f7514ff37d22"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 5,
+      "launch_sha256": "8b8f22e047373c58c835285ad1149ea33dd42f0f53c7828cbda6e9dfd9a575e1",
+      "nomination_slots": 3,
+      "request_sha256": "23057c9d6022514178f5ac4a48ad6dcae43976fce32887830850e00246866167",
+      "run_id": "paper-v2-3c2545e413fb47b3",
+      "scenario_id": "P100-054",
+      "supported": true,
+      "task_id": "P100-054.compact.v2",
+      "ui_sha256": "01da3b16b63d7c814edacfa83bb0d41538de0da98ea4e5d155a390d450769474"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 6,
+      "launch_sha256": "d191f474fbeadb56289c118bdf991a9bc39535f6f8dee070f8805ad4ae98bab8",
+      "nomination_slots": 3,
+      "request_sha256": "7b20dd6371a11188570845a8e9d234fd933a89415546a277c3298a4ac4ec31db",
+      "run_id": "paper-v2-ee0e805b5f5443f7",
+      "scenario_id": "P100-068",
+      "supported": true,
+      "task_id": "P100-068.compact.v2",
+      "ui_sha256": "6ae6523fbe2b37d092cbd15aafbd23d6df2be60824088426c2c097d33174e6ab"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 14,
+      "nomination_slots": 3,
+      "run_id": null,
+      "scenario_id": "P100-087",
+      "supported": false,
+      "task_id": "P100-087.compact.v2"
+    },
+    {
+      "exposure": "previously engineering-exposed; retrospective development only",
+      "input_count": 7,
+      "launch_sha256": "c02467270198526ae49f7cc7f5803c6880220fb4b09c070e5623add25f7329d2",
+      "nomination_slots": 3,
+      "request_sha256": "603de99f9609d8fe2e5957f81432576007e24395985bc938f6cd5eb7d7ccd3ac",
+      "run_id": "paper-v2-51b736c6ed734ae6",
+      "scenario_id": "P100-090",
+      "supported": true,
+      "task_id": "P100-090.compact.v2",
+      "ui_sha256": "999754418b6eae783900bf605c1a3a993de3eeac773aedf4ce6a44aa7fa9459b"
+    }
+  ],
+  "maximum_additional_cny": 80,
+  "policy": "explicit-state-data-to-paper-pilot-v2",
+  "price_rechecked": {
+    "checked_at": "2026-10-13T23:20:12.532390+00:00",
+    "rates": {
+      "Pro/moonshotai/Kimi-K2.6": {
+        "input_rate": 6.5,
+        "output_rate": 27
+      },
+      "Qwen/Qwen3.8-27B": {
+        "input_rate": 3,
+        "output_rate": 12
+      },
+      "deepseek-ai/DeepSeek-V4-Flash": {
+        "input_rate": 3,
+        "output_rate": 9
+      },
+      "zai-org/GLM-5.3": {
+        "input_rate": 8,
+        "output_rate": 28
+      }
+    },
+    "url": "https://www.siliconflow.cn/pricing",
+    "verification": "Official pricing page read during this turn. Highest published daily rates, without cache or off-peak discounts."
+  },
+  "price_source": {
+    "currency": "CNY",
+    "date": "2026-10-11",
+    "policy": "highest daily input/output rates; cache discounts not assumed",
+    "unit": "per million tokens",
+    "url": "https://www.siliconflow.cn/pricing"
+  },
+  "private_manifest_sha256": "7fc7202e0c1ab78306b82009e65aad68d3d91995f68bc0ca99a10408dd3d4bb9",
+  "probe_cap_cny": 8,
+  "profiles": {
+    "Pro/moonshotai/Kimi-K2.6": {
+      "input_rate": 6.5,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 27,
+      "reasoning_bound": 0
+    },
+    "Qwen/Qwen3.8-27B": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 12,
+      "reasoning_bound": 0
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 9,
+      "reasoning_bound": 0
+    },
+    "zai-org/GLM-5.3": {
+      "input_rate": 8,
+      "options": {
+        "enable_thinking": true,
+        "reasoning_effort": "high",
+        "thinking_budget": 1024
+      },
+      "output_rate": 28,
+      "reasoning_bound": 1024
+    }
+  },
+  "protocol_revision": "paper-v2",
+  "ranking_authorized": false,
+  "retry_policy": "No automatic replay of ambiguous calls or sealed attempts",
+  "roles": {
+    "coder": "deepseek-ai/DeepSeek-V4-Flash",
+    "critic": "Qwen/Qwen3.8-27B",
+    "planner": "zai-org/GLM-5.3",
+    "reporter": "Pro/moonshotai/Kimi-K2.6"
+  },
+  "runtime_binding_sha256": "dde5736c10872030dd9b335a10786ea8c9d60b3a1e4ed4046174233c456f2f85",
+  "scientific_review": "not_assessed",
+  "scope": "engineering_only_train_dev_no_final_assessment",
+  "selection": "guarded statistical analysis, conditional repairs, traced report and three fixed slots",
+  "settings_sha256": "4d42d5dfbd453cece71a2d854b83bfdfafdec3985602daa3f906b37eef11899c",
+  "verification_prerequisites": [
+    "PAPER_V2_WORKER_VERIFICATION.json",
+    "PAPER_V2_WORKER_UI_VERIFICATION.json",
+    "TEST_VERIFICATION.json",
+    "COLD_INSTALL_VERIFICATION.json"
+  ],
+  "workers": 4
+}

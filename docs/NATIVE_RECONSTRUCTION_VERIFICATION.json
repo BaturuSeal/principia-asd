@@ -1,0 +1,162 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-11T21:50:40.668579+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 4192279,
+  "registered_source_files": 58,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-012/reconstruction.json",
+      "candidate_receipt_sha256": "cb1396cddbc01d2d8c720c23d39be4fb484b04f989713178fc305a333747b2f3",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 4042
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 774
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "reader_source_sha256": "8cda8f03125de4e3c9432723dbb2fd81318565612bcce17abf26690764ea2697",
+      "recipe_sha256": "db3c7329ada18d09ec3db568ab8c38e29c7f1fbeea1643ce303378cab981d313",
+      "rows": {
+        "dev": 1118,
+        "test": 774,
+        "train": 2924
+      },
+      "runtime_binding_sha256": "ee1cd5edae51853a07a44f280031877841048c6d6c9621d55a72e867288546e2",
+      "scenario_id": "P100-012",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "deposition-3"
+          ],
+          "test": [
+            "deposition-4"
+          ],
+          "train": [
+            "deposition-1",
+            "deposition-2"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      }
+    },
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-062/reconstruction.json",
+      "candidate_receipt_sha256": "552412897b0cc3952eacc6a27055ad6896d97f28e5c9c24d24122bcffa98a15c",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1483
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 370
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "reader_source_sha256": "8cda8f03125de4e3c9432723dbb2fd81318565612bcce17abf26690764ea2697",
+      "recipe_sha256": "015738a8a207c3470c790e7675f82465180c846e01e537a7d75ec0c8d7ecd8e0",
+      "rows": {
+        "dev": 370,
+        "test": 370,
+        "train": 1113
+      },
+      "runtime_binding_sha256": "ee1cd5edae51853a07a44f280031877841048c6d6c9621d55a72e867288546e2",
+      "scenario_id": "P100-062",
+      "scientific_split_check": {
+        "stream_columns": [
+          "high",
+          "drive"
+        ],
+        "streams": [
+          {
+            "intervals": {
+              "dev": {
+                "max": 12072.0,
+                "min": 9072.0,
+                "rows": 251
+              },
+              "test": {
+                "max": 15084.0,
+                "min": 12084.0,
+                "rows": 251
+              },
+              "train": {
+                "max": 9060.0,
+                "min": 12.0,
+                "rows": 755
+              }
+            },
+            "stream": {
+              "drive": 0.5,
+              "high": 0.0
+            },
+            "violations": []
+          },
+          {
+            "intervals": {
+              "dev": {
+                "max": 5723.999999999999,
+                "min": 4307.999999999999,
+                "rows": 119
+              },
+              "test": {
+                "max": 7151.999999999999,
+                "min": 5735.999999999999,
+                "rows": 119
+              },
+              "train": {
+                "max": 4295.999999999999,
+                "min": 12.0,
+                "rows": 358
+              }
+            },
+            "stream": {
+              "drive": 5.0,
+              "high": 1.0
+            },
+            "violations": []
+          }
+        ],
+        "time_column": "t",
+        "valid": true
+      }
+    }
+  ],
+  "scope": "Curator-only native reconstruction and corrected development partition drafts, not scientific admission",
+  "status": "passed",
+  "test_targets_exported": false
+}

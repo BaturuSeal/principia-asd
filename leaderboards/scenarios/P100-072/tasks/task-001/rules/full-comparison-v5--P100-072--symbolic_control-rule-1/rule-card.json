@@ -1,0 +1,60 @@
+{
+  "dev_error": 6.413308377231335,
+  "execution_status": "complete",
+  "expression": "p0+p1*(p22_pct*p72_pct)+p2*((p22_pct)**2)",
+  "inputs": [
+    "p22_pct",
+    "p72_pct",
+    "time_h"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 20.108239116947207,
+    "p1": 0.019624663768298186,
+    "p2": -0.011981643331805092
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "p22_pct": 0.10141496460676229,
+      "p72_pct": -0.08223608880472756,
+      "time_h": 0.12450455114529736
+    },
+    "mean": -2.8907907309452248,
+    "p90_abs": 15.94041333927797,
+    "std": 9.002977849169627
+  },
+  "rule_id": "full-comparison-v5--P100-072--symbolic_control-rule-1",
+  "rule_sha256": "07c967788140bc535035116136c4381ca7c938462b75c3984f0a543ebb03e40c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "20.108239116947207 + 0.019624663768298186 * (p22_pct * p72_pct) + -0.011981643331805092 * p22_pct ** 2",
+    "expression_bytes": 41,
+    "free_parameters": 3,
+    "learned_state_bytes": 83,
+    "literal_state_bytes": 1,
+    "nodes": 26,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-072.compact.v2",
+  "train_error": 8.409545792400108,
+  "units": {
+    "inputs": {
+      "p22_pct": "percentage points; own replicate at22h",
+      "p72_pct": "percentage points; own replicate at72h",
+      "time_h": "h since inoculation"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

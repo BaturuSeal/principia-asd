@@ -1,0 +1,76 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.06541870077507984,
+    "primary": "mae",
+    "primary_error": 0.06541870077507984,
+    "rmse": 0.08584171769773495
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.22481206882342106,
+  "by_group": [
+    {
+      "error": 0.09289938816697711,
+      "group": "group-65f8e37268e0ea6bf2fc99d1",
+      "rows": 64
+    },
+    {
+      "error": 0.046557821539003244,
+      "group": "group-97abeacb99bbf54ae9d83cc8",
+      "rows": 64
+    },
+    {
+      "error": 0.058055384858866375,
+      "group": "group-a8be0879b3e2bac7acf5a8aa",
+      "rows": 69
+    },
+    {
+      "error": 0.054786664504835915,
+      "group": "group-c40df07e03a1a8f50d6cbd63",
+      "rows": 6
+    },
+    {
+      "error": 0.0747942448057166,
+      "group": "group-da5d8726e7ff6370926cea38",
+      "rows": 67
+    }
+  ],
+  "coverage": {
+    "eligible": 270,
+    "fraction": 1.0,
+    "predicted": 270
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_qwen",
+  "rule_id": "live-pilot-v3--P100-090--direct_qwen-rule-1",
+  "rule_sha256": "f8a33887f85ab1ddf99bb60800bf0abdf651a48a0933a900f8c9c8d6cdb92395",
+  "run_id": "live-pilot-v3--P100-090--direct_qwen",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "maximum(-1, minimum(1, 0.928900815947456 * p_now + 0.12275980145545937 * (p_now - p_past) + -0.04525496020338773 * (p_now - p_initial) + -0.013924717152711754 * (density - 0.5174) + 0.06318376659392448 * (speed - 1.1583) + -0.0021256995172414597 * (radius90 - 4.0145) + 0.06590010993135652 * (polarization_variance - 0.6212)))",
+    "expression_bytes": 203,
+    "free_parameters": 7,
+    "learned_state_bytes": 193,
+    "literal_state_bytes": 26,
+    "nodes": 85,
+    "numeric_literal_count": 6,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.059541832468719955,
+    "perturbation_labels_available": false,
+    "population_rows": 270,
+    "ranking": false,
+    "samples": 270,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

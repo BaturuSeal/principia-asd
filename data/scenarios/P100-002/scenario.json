@@ -1,0 +1,198 @@
+{
+  "description": "Next hourly median systematics-corrected stellar flux",
+  "domain": "astronomy",
+  "independent_unit": "Star; repeated hourly bins are dependent",
+  "input_units": {
+    "lag1": "author-normalized relative flux",
+    "lag12": "author-normalized relative flux",
+    "lag2": "author-normalized relative flux",
+    "lag24": "author-normalized relative flux",
+    "lag3": "author-normalized relative flux",
+    "lag4": "author-normalized relative flux",
+    "lag6": "author-normalized relative flux",
+    "mad6": "author-normalized relative flux",
+    "median24": "author-normalized relative flux",
+    "median6": "author-normalized relative flux"
+  },
+  "limitations": [
+    "Predict next disjoint hourly bin using preceding observed hourly medians only. The released light curve was author-corrected using full-sector information; this is a retrospective product-space forecast, not a raw real-time pipeline.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "images",
+    "scientific_arrays_or_events"
+  ],
+  "output_units": "relative flux (native normalization)",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 922,
+    "test": 981,
+    "train": 1848
+  },
+  "scenario_id": "P100-002",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 1123743,
+    "limit_bytes": 10000000,
+    "public_bytes": 245361
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/context/mast_selection.json",
+        "source_sha256": "d5774fe01c9f2e8e31b1e1fa221e0618ab80a7eb6c6442ab93c78149fd87ae92"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000002733028_tess_v01_lc.fits",
+        "source_sha256": "d74f4705d28aafa9627e7038406c7a2f6c6137cd50ab4aacb69553e1b8920645"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000002733028_tess_v01_preview.jpeg",
+        "source_sha256": "ddbc108e20056bcaef9832504bfa17f9c7a1c74845c9945f4beb71a8945fda3f"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000063725713_tess_v01_lc.fits",
+        "source_sha256": "cf00d39345669b2845e80ad015e42fe546d090f151768cf08dc5a72e38b519bd"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000063725713_tess_v01_preview.jpeg",
+        "source_sha256": "dc2d6b639bba63264c0840d3cd419e922b046a6f023576bb8ec4764e78ccdaf5"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000149351953_tess_v01_lc.fits",
+        "source_sha256": "a9105f9fdd20d76f32831ffdeb0cb473e0b1867c378e035f3cc9842bae94f611"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000149351953_tess_v01_preview.jpeg",
+        "source_sha256": "fee4f1122fbc43a5286fd9cad5d6822ee9d9ed85979592504a87c31962b5faf3"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000201249388_tess_v01_lc.fits",
+        "source_sha256": "d38efec24e12d19dfe1a84ad6d4eec6763d9f4da20a6e2a94ca03e9553a0877b"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000201249388_tess_v01_preview.jpeg",
+        "source_sha256": "4311717ae81836a4b79d07751b7bfd229cc4d11c8cdf058c2c5274da1c7f865a"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000231055285_tess_v01_lc.fits",
+        "source_sha256": "8cfcbaccdcddb7a411aa20c422aac0df4972f01398d82c2530c469153db0d437"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000231055285_tess_v01_preview.jpeg",
+        "source_sha256": "166b1627e92f0fa913f471c13ea0e5c495c94d6fec0d7fe69a068e525017d727"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000278960483_tess_v01_lc.fits",
+        "source_sha256": "f292dac61144843bd9d378febb2949c724a40af6873051eaa5e19d96a9bb51cb"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000278960483_tess_v01_preview.jpeg",
+        "source_sha256": "52157bbadd9956a0e897209202bc7e1c489d34a1f6e032bbf1d3a7a4aada5925"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000350184430_tess_v01_lc.fits",
+        "source_sha256": "50b69af6f355bfded2b4625b2596a23f1f37c0045ddd071ea7ee9b22ad1f2195"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000000350184430_tess_v01_preview.jpeg",
+        "source_sha256": "08099b1bce1d3ace65844424c0f2914c893b6f6f025c6cc641d8264f3f46293e"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000002056110539_tess_v01_lc.fits",
+        "source_sha256": "d3d2f1200d6bf0c4dd24a6936f0ff751ebdfa90fde14b1ac4a0d365a67534e3e"
+      },
+      {
+        "citation_url": "https://archive.stsci.edu/hlsp/tars",
+        "license": "CC BY 4.0",
+        "rights_url": "https://archive.stsci.edu/hlsp/tars",
+        "source": "scenarios/02_astronomy_mast_tars_sector96/raw/hlsp_tars_tess_ffi_s0096-0000002056110539_tess_v01_preview.jpeg",
+        "source_sha256": "e1988ad26ad8795294e449605fdaef95fce1ac6db9ad8a765f3a103536df2342"
+      }
+    ],
+    "historical_case": "P100-002",
+    "license": "CC BY 4.0",
+    "url": "https://archive.stsci.edu/hlsp/tars",
+    "version": "TARS v01; TESS Sector 96"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "59cbe847348c50b0a6ec995eab4db842534c25eb2dbb6b95dc35cd7f977c15b5",
+        "groups": 2,
+        "rows": 922,
+        "sample_ids_sha256": "0672e87f87e3cdbd12b703e6f160b748415c7f52994b924a987199e0bac98b88"
+      },
+      "test": {
+        "group_ids_sha256": "327d86e68b977a5bada18cb59fb70c3576b6a664bfed2f462731aa9565056ec1",
+        "groups": 2,
+        "rows": 981,
+        "sample_ids_sha256": "bcd11f0c609554d39855f1ff560fe7a26aadb038f4af7119796e2c4d86edb909"
+      },
+      "train": {
+        "group_ids_sha256": "f008c02aeb65e423b13303defd1979ba26368e002d152ab433c97c5a6dfeee0b",
+        "groups": 4,
+        "rows": 1848,
+        "sample_ids_sha256": "bea7bfa3e969e6903e81fdada7c932d99900b8699c0e9448b1f65b4817b81ede"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "MAST TARS TESS Sector 96 light curves and vetting images",
+  "version": "1.0.0rc2"
+}

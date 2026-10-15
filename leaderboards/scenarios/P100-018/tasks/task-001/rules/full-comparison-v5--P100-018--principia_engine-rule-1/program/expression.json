@@ -1,0 +1,16 @@
+{
+  "expression": "p0+p1*(log1p(length_km))+p2*(tanh((length_km-6.451771421711607)/7.5511207919229815))+p3*(log1p(length_km * width_km))+p4*(log1p(length_km * width_km * duration_min))+p5*(tanh((width_km-0.20275774818288392)/0.273178517613633))+p6*(sin(0.5236 * month))+p7*(length_km)",
+  "parameters": {
+    "p0": 2.9470755428994773,
+    "p1": 1.4900089003347805,
+    "p2": -1.912638874993445,
+    "p3": -3.0917516524967796,
+    "p4": 0.9521467311278619,
+    "p5": 3.623414505551829,
+    "p6": 1.6439873105480212,
+    "p7": 0.09268603867223418
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.010553248638845637,
+    "primary": "mae",
+    "primary_error": 0.010553248638845637,
+    "rmse": 0.012763774492703387
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.011003542604276611,
+  "by_group": [
+    {
+      "error": 0.011957068205616997,
+      "group": "group-2d4a3f44ac9fdd8d0d4bbce8",
+      "rows": 32
+    },
+    {
+      "error": 0.009149429072074276,
+      "group": "group-f1263395f4d4af8c39623846",
+      "rows": 32
+    }
+  ],
+  "coverage": {
+    "eligible": 64,
+    "fraction": 1.0,
+    "predicted": 64
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "symbolic_control",
+  "rule_id": "controls-v2--P100-003--symbolic_control-rule-2",
+  "rule_sha256": "ff65487fc68f2e8e5a7239dad703fa7efae2cdb9bc4b9c25858d4f1e747df752",
+  "run_id": "controls-v2--P100-003--symbolic_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.09805721546033358 + 0.010263387018233415 * tanh((line1 - 0.0482046995204182) / 0.021671370614270723) + -0.01300062425604245 * log1p(abs((lag3 - 0.0944327321450571) / 0.0343659360443225))",
+    "expression_bytes": 123,
+    "free_parameters": 3,
+    "learned_state_bytes": 83,
+    "nodes": 40,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.02392702126176592,
+    "perturbation_labels_available": false,
+    "population_rows": 64,
+    "ranking": false,
+    "samples": 64,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "dev_error": 8.473940245678028e-06,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.651560843546373e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.8867401785171484,
+      "gx": 0.005202765895949031,
+      "gy": -0.027111026824893285,
+      "hi": -0.6173817568562568,
+      "hx": -0.9104301355996489,
+      "hy": -0.9138386869096682,
+      "lo": -0.5047813486634465,
+      "ox": -0.7230738747028926,
+      "oy": -0.6710783685010043
+    },
+    "mean": -9.5047276768165e-07,
+    "p90_abs": 2.5348450542836117e-05,
+    "std": 2.055885354741385e-05
+  },
+  "rule_id": "full-comparison-v5--P100-070--mean_control-rule-1",
+  "rule_sha256": "9b975e4371c16cd99c88e22c569da218469d31b673122f9419fa69934b6c29e8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.651560843546373e-07",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 30,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 9.61183004434027e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

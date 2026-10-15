@@ -1,0 +1,65 @@
+{
+  "dev_error": 2.143168199997718,
+  "execution_status": "complete",
+  "expression": "p0+p1*(x)+p2*(base)+p3*(amp)+p4*(progress)",
+  "inputs": [
+    "x",
+    "base",
+    "amp",
+    "progress"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.93979817303009,
+    "p1": 0.44239072894459514,
+    "p2": 1.0191329413410768,
+    "p3": -0.2374126587704716,
+    "p4": 9.084593333997185
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "amp": -0.03844716986412034,
+      "base": -0.03844716986412033,
+      "progress": -0.024982098107554168,
+      "x": 0.03957466912841241
+    },
+    "mean": -0.35908427885498717,
+    "p90_abs": 4.701067723121908,
+    "std": 3.5412772467145093
+  },
+  "rule_id": "full-comparison-v5--P100-084--linear_control-rule-1",
+  "rule_sha256": "d2eadc560c0a8828344604279cbd40c3c9b91e5ac323e92b68b5c5b7bf9cafbc",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.93979817303009 + 0.44239072894459514 * x + 1.0191329413410768 * base + -0.2374126587704716 * amp + 9.084593333997185 * progress",
+    "expression_bytes": 42,
+    "free_parameters": 5,
+    "learned_state_bytes": 129,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-084.compact.v2",
+  "train_error": 1.9382668868779405,
+  "units": {
+    "inputs": {
+      "amp": "nN; initialretractionlevel minusbase",
+      "base": "nN; mean first10approachpoints",
+      "progress": "dimensionless fraction ofretractionramp",
+      "x": "dimensionless normalized piezo position relative to fixed5nNapproach crossing"
+    },
+    "output": "nN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

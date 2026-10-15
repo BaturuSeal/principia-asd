@@ -1,0 +1,13 @@
+{
+  "expression": "p0 * thickness_um * width_um * (1 - notch_depth_um / width_um) ** p1 * (1 - notch_width_um / length_um) ** p2 * (length_um / p3) ** p4",
+  "parameters": {
+    "p0": 0.10094004783319888,
+    "p1": 1.5862068930120898,
+    "p2": 3.861343468412782,
+    "p3": 10.375946618605582,
+    "p4": -1.1457271490712857
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

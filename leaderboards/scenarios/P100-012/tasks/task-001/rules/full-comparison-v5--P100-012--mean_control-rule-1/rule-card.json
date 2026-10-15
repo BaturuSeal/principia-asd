@@ -1,0 +1,61 @@
+{
+  "dev_error": 21592.46338813156,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 16846.839240826874
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": 0.0035236345329650747,
+      "outer": 0.015562784637806628,
+      "q": 0.6776682371158582,
+      "q0": 0.0
+    },
+    "mean": 1205.490805837444,
+    "p90_abs": 50283.36390917313,
+    "std": 28573.520778343936
+  },
+  "rule_id": "full-comparison-v5--P100-012--mean_control-rule-1",
+  "rule_sha256": "97a4271e33d8c66af345c869230e1974e556bbb31ecf2d732201d2667dc05c29",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "16846.839240826874",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 23083.142347314668,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

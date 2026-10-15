@@ -1,0 +1,13 @@
+{
+  "expression": "anchor_loss - p0 * log1p(tokens_B - anchor_tokens_B) - p1 * log1p(anchor_tokens_B - early_tokens_B) + p2 * log1p(params_B) + p3 * log1p(width) + p4 * log1p(depth)",
+  "parameters": {
+    "p0": 0.05406931919529633,
+    "p1": -0.17470686580755782,
+    "p2": -0.014969674705613733,
+    "p3": -0.04088248554616484,
+    "p4": -0.02613388066360916
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

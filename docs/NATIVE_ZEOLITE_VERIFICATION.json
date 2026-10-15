@@ -1,0 +1,133 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T12:14:36.740832+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 24982620,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Physical run, catalyst-batch independence and acquisition dates need source review",
+        "Author-reported selectivity processing and source-label Ag loading require review",
+        "Eight retrospective calibrated trajectories do not establish mechanism or independent transfer",
+        "Scientific contract, measurement-error stability and final rights/attribution review pending"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-026/reconstruction.json",
+      "candidate_receipt_sha256": "146609768ecd6c5c12751b587234e35a1c464a2bff0ac2330596e81337df973b",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 629
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 233
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 240,
+            "reconstructed_rows": 240,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 233,
+            "reconstructed_rows": 233,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 389,
+            "reconstructed_rows": 389,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_battery_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_zeolite_validation": {
+        "analytical_prefix_calibrations": 8,
+        "archive_expanded_bytes": 102695483,
+        "archive_members": 459,
+        "calibration_scope": "Each run's own <=300 min responses; slope fit on 120..300 min; targets at >300..1500 min",
+        "distinct_runs": 8,
+        "duplicate_alias": {
+          "Figure1_longterm-reaction_Ag20-Hbeta": "FigureS14b_reaction_Ag20-Hbeta-red"
+        },
+        "finite_response_rows": 1672,
+        "group_counts": {
+          "dev": 2,
+          "test": 2,
+          "train": 4
+        },
+        "missing_response_rows": 389,
+        "no_future_or_other_response_predictors": true,
+        "restarts": 0,
+        "rule_fitting_attempts": 0,
+        "selected_expanded_bytes": 247897,
+        "selected_response": "Author-reported DMM selectivity; no raw chromatogram recomputation",
+        "source_rows_distinct_runs": 2061
+      },
+      "reader_source_sha256": "57c80ef09eccb3a057ecada9f9210c7883c11ae48a05b69fc5fdae598f5af7dd",
+      "recipe_sha256": "862299bf7fab49f166dc9115854db3b7e0ff65ab4504bc855659afc094bfa1cb",
+      "rows": {
+        "dev": 240,
+        "test": 233,
+        "train": 389
+      },
+      "runtime_binding_sha256": "ee1b5cd231a84a7ca87e5317f61246d7f1f224c1bf34ccac3b12beea57284d66",
+      "scenario_id": "P100-026",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "FigureS13c_reaction_Ag20-Hbeta_T240",
+            "FigureS13c_reaction_Ag20-Hbeta_T280"
+          ],
+          "test": [
+            "FigureS13b_reaction_Ag20-Hbeta_T220",
+            "FigureS14a_reaction_Ag20-Hbeta-calc"
+          ],
+          "train": [
+            "FigureS12a_reaction_Ag1-Hbeta",
+            "FigureS12b_reaction_Ag5-Hbeta",
+            "FigureS12c_FigureS13a_reaction_Ag20-Hbeta",
+            "FigureS14b_reaction_Ag20-Hbeta-red"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

@@ -1,0 +1,94 @@
+{
+  "description": "Coefficient of friction",
+  "domain": "nanomaterials and surface science",
+  "independent_unit": "Material formulation, repeated representations linked. Two-point calibration at 0.2 and500 mm/s; score0.28–10 mm/s.",
+  "input_units": {
+    "boundary_cof": "dimensionless",
+    "concentration_wt_pct": "wt percent",
+    "highspeed_cof": "dimensionless",
+    "speed_mm_s": "mm/s"
+  },
+  "limitations": [
+    "Six formulations were developed with leave-formulation-out validation; N+S functionalization and NG supplier curves were reserved. Duplicate curves cannot cross partitions. Both endpoint calibrations are provided for every curve. Scoring covers only 0.28–10 mm/s and tests calibrated shape transfer, not unmeasured-lubricant performance.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "images",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "dimensionless",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 24,
+    "test": 24,
+    "train": 60
+  },
+  "scenario_id": "P100-030",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 24236,
+    "limit_bytes": 10000000,
+    "public_bytes": 11340
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/17864405",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/30_nanomaterials_hbn_lubricants/context/zenodo_record.json",
+        "source_sha256": "0b2348f5165d117b1600c85b5cd173d02ddef7a6c9b6c747242dcc5dc46c9399"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17864405",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/17864405",
+        "source": "scenarios/30_nanomaterials_hbn_lubricants/raw/README.txt",
+        "source_sha256": "e5230b4f68ef1c46a85a414a2e75ba198fc3d0426d337ab2c430d88c35859483"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/17864405",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/17864405",
+        "source": "scenarios/30_nanomaterials_hbn_lubricants/raw/dataset.zip",
+        "source_sha256": "658c7be90b88e2755fd568fd25842536a4e9d154ac3b1354cc1d91812251b195"
+      }
+    ],
+    "historical_case": "P100-030",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/17864405",
+    "version": "17864405"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "02e61239018fde2c4f8fcf43ed030587714ab9c18c09bc122d99b2fcf179edc8",
+        "groups": 2,
+        "rows": 24,
+        "sample_ids_sha256": "e173a104855a27df0edabf6ebffe7228656e88a7d0a4ff85859a348b842a9a0f"
+      },
+      "test": {
+        "group_ids_sha256": "c2b030521a392824663fdc70a6e87e2c296a0dff4d8132f5d8ec6e1a09e314a4",
+        "groups": 2,
+        "rows": 24,
+        "sample_ids_sha256": "c6015490529139bdf8cdf68e3c065d30ee899287ea07f38c7a5a6473b98ec8a0"
+      },
+      "train": {
+        "group_ids_sha256": "29a8d4e595e52fb55a26181b23b95ed11e25f90c233762129abca2f48d9b5f68",
+        "groups": 4,
+        "rows": 60,
+        "sample_ids_sha256": "8f4c4c34e100c4fff4f2907df454a37912609d2eeba88a308e3e0bc401bc1bbf"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Particle size and surface modification of hBN lubricants",
+  "version": "1.0.0rc2"
+}

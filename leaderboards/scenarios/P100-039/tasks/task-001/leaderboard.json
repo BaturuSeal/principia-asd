@@ -1,0 +1,2176 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.007042681099846959
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--mean_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.008914169040508568
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--linear_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.018176609999500215
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--polynomial_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 4,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 0,
+        "wall_seconds": 1.387329044053331
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tree_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--tree_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 46,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 46,
+        "wall_seconds": 0.25340243498794734
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "symbolic_control",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-039--symbolic_control",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 72,
+        "structures": 1,
+        "wall_seconds": 1.8484953920124099
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_deepseek",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--direct_deepseek",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 164,
+        "structures": 1,
+        "wall_seconds": 6.520586141035892
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_glm",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--direct_glm",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 82,
+        "structures": 1,
+        "wall_seconds": 30.828754564048722
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_qwen",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-039--direct_qwen",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 1,
+        "optimizer_evaluations": 63,
+        "structures": 1,
+        "wall_seconds": 10.700545405037701
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "direct_kimi",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "full-comparison-v5--P100-039--direct_kimi",
+      "status": "complete"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 3,
+        "model_calls": 3,
+        "optimizer_evaluations": 97,
+        "structures": 3,
+        "wall_seconds": 9.322465712903067
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "best_of_n",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-039--best_of_n",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 3,
+        "optimizer_evaluations": 60,
+        "structures": 3,
+        "wall_seconds": 13.22540218802169
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "feedback_refinement",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-039--feedback_refinement",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 6,
+        "optimizer_evaluations": 36,
+        "structures": 1,
+        "wall_seconds": 10.420666851918213
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "tool_agent",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "full-comparison-v5--P100-039--tool_agent",
+      "status": "failed"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 95,
+        "model_calls": 4,
+        "optimizer_evaluations": 196,
+        "structures": 61,
+        "wall_seconds": 54.95344750303775
+      },
+      "campaign_id": "full-comparison-v5",
+      "method_id": "principia_engine",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "full-comparison-v5--P100-039--principia_engine",
+      "status": "complete"
+    }
+  ],
+  "campaign_id": "full-comparison-v5",
+  "campaign_ids": [
+    "full-comparison-v5"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "full-comparison-v5--P100-039--polynomial_control-rule-1",
+    "full-comparison-v5--P100-039--direct_glm-rule-1",
+    "full-comparison-v5--P100-039--symbolic_control-rule-3",
+    "full-comparison-v5--P100-039--linear_control-rule-1",
+    "full-comparison-v5--P100-039--principia_engine-rule-3",
+    "full-comparison-v5--P100-039--symbolic_control-rule-2",
+    "full-comparison-v5--P100-039--principia_engine-rule-2",
+    "full-comparison-v5--P100-039--mean_control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.36893420751535877,
+        "primary": "brier",
+        "primary_error": 0.1812001265769915,
+        "rmse": 0.42567608175347543
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21286197141609955,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14380383700021335,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.16859350328391284,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.19954119460774025,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19498623501335666,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(education)+p2*(age)+p3*(japan)+p4*(education*education)+p5*(education*age)+p6*(education*japan)+p7*(age*age)+p8*(age*japan)+p9*(japan*japan)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.4519526867110875,
+          "p1": -0.09372542629844549,
+          "p2": 0.040152072696399733,
+          "p3": -0.009378739766227644,
+          "p4": 0.004419018735216492,
+          "p5": 0.0007838999582835824,
+          "p6": -0.0037305290035447563,
+          "p7": -0.0005229081005517553,
+          "p8": 0.0024429930011044885,
+          "p9": -0.009378739766222964
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.04737333484796792,
+            "education": 0.02567204063869092,
+            "japan": 0.014546216971009341
+          },
+          "mean": 0.012231137253708146,
+          "p90_abs": 0.7136894456490174,
+          "std": 0.4454558925019413
+        },
+        "rule_id": "full-comparison-v5--P100-039--polynomial_control-rule-1",
+        "rule_sha256": "e1d81c698bd825dcc974340e8b77d50977dc009d97326b2a1dd4828696b3c6d0",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.4519526867110875 + -0.09372542629844549 * education + 0.040152072696399733 * age + -0.009378739766227644 * japan + 0.004419018735216492 * (education * education) + 0.0007838999582835824 * (education * age) + -0.0037305290035447563 * (education * japan) + -0.0005229081005517553 * (age * age) + 0.0024429930011044885 * (age * japan) + -0.009378739766222964 * (japan * japan)))",
+          "expression_bytes": 169,
+          "free_parameters": 10,
+          "learned_state_bytes": 287,
+          "literal_state_bytes": 2,
+          "nodes": 107,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 26
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.18592788720780618,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(education)+p2*(age)+p3*(japan)+p4*(education*education)+p5*(education*age)+p6*(education*japan)+p7*(age*age)+p8*(age*japan)+p9*(japan*japan)))",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--polynomial_control-rule-1",
+      "rule_sha256": "e1d81c698bd825dcc974340e8b77d50977dc009d97326b2a1dd4828696b3c6d0",
+      "run_id": "full-comparison-v5--P100-039--polynomial_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.4519526867110875 + -0.09372542629844549 * education + 0.040152072696399733 * age + -0.009378739766227644 * japan + 0.004419018735216492 * (education * education) + 0.0007838999582835824 * (education * age) + -0.0037305290035447563 * (education * japan) + -0.0005229081005517553 * (age * age) + 0.0024429930011044885 * (age * japan) + -0.009378739766222964 * (japan * japan)))",
+        "expression_bytes": 169,
+        "free_parameters": 10,
+        "learned_state_bytes": 287,
+        "literal_state_bytes": 2,
+        "nodes": 107,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 26
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.023065054842962535,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.36428539237221347,
+        "primary": "brier",
+        "primary_error": 0.18138693554984087,
+        "rmse": 0.42589545143126484
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21277451255866534,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14386787109236293,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.16712795843713588,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20177740011119943,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19382849341860262,
+        "execution_status": "complete",
+        "expression": "1/(1+exp(-(p0 + p1*education + p2*age + p3*japan + p4*education*japan + p5*age*japan + p6*age**2)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "direct_glm",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -13.949024980990934,
+          "p1": 0.40707214287321036,
+          "p2": 0.31297421445744733,
+          "p3": 0.8088691733502613,
+          "p4": -0.08182487956899959,
+          "p5": 0.012303049876461905,
+          "p6": -0.003191012395930067
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.049906659536310974,
+            "education": 0.03972726055914516,
+            "japan": 0.010280525450151099
+          },
+          "mean": 0.00972236311344694,
+          "p90_abs": 0.726027879000074,
+          "std": 0.4443780718785432
+        },
+        "rule_id": "full-comparison-v5--P100-039--direct_glm-rule-1",
+        "rule_sha256": "5667306840569da0d5cb46358af6850f2b44eeda2163ef0bd52133fe604815af",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1 / (1 + exp(-(-13.949024980990934 + 0.40707214287321036 * education + 0.31297421445744733 * age + 0.8088691733502613 * japan + -0.08182487956899959 * education * japan + 0.012303049876461905 * age * japan + -0.003191012395930067 * age ** 2)))",
+          "expression_bytes": 99,
+          "free_parameters": 7,
+          "learned_state_bytes": 192,
+          "literal_state_bytes": 3,
+          "nodes": 73,
+          "numeric_literal_count": 3,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.185214827641091,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "1/(1+exp(-(p0 + p1*education + p2*age + p3*japan + p4*education*japan + p5*age*japan + p6*age**2)))",
+      "method_id": "direct_glm",
+      "model_ids": [
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-039--direct_glm-rule-1",
+      "rule_sha256": "5667306840569da0d5cb46358af6850f2b44eeda2163ef0bd52133fe604815af",
+      "run_id": "full-comparison-v5--P100-039--direct_glm",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1 / (1 + exp(-(-13.949024980990934 + 0.40707214287321036 * education + 0.31297421445744733 * age + 0.8088691733502613 * japan + -0.08182487956899959 * education * japan + 0.012303049876461905 * age * japan + -0.003191012395930067 * age ** 2)))",
+        "expression_bytes": 99,
+        "free_parameters": 7,
+        "learned_state_bytes": 192,
+        "literal_state_bytes": 3,
+        "nodes": 73,
+        "numeric_literal_count": 3,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.024300859614097288,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.3733392226261095,
+        "primary": "brier",
+        "primary_error": 0.1826881772788718,
+        "rmse": 0.4274203753670054
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21327227148444497,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14639070395308157,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.17010247396765996,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20098725971030074,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19369534877239572,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(education**2/441)+p2*((education)**2)+p3*(education)+p4*(tanh((education-14.146865671641791)/2.5552837906214267))+p5*(log1p(education))+p6*(education*age)+p7*((age-45)**2)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.3595464483871894,
+          "p1": 0.9673908533348823,
+          "p2": 0.0021936300529135804,
+          "p3": -0.11828978807383486,
+          "p4": 0.09980497586107202,
+          "p5": 0.2031679452132284,
+          "p6": 0.0004219172120560283,
+          "p7": -0.0005352482654634898
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.039844449276757475,
+            "education": 0.03408429974302773,
+            "japan": -0.01484026102888315
+          },
+          "mean": 0.007162521197200347,
+          "p90_abs": 0.7384568829551075,
+          "std": 0.444184985485661
+        },
+        "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-1",
+        "rule_sha256": "d4ffcbc8c51bb75b49b9b832fdd83a02fde5c852a0b947368c330c431b753e90",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.3595464483871894 + 0.9673908533348823 * (education ** 2 / 441) + 0.0021936300529135804 * education ** 2 + -0.11828978807383486 * education + 0.09980497586107202 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.2031679452132284 * log1p(education) + 0.0004219172120560283 * (education * age) + -0.0005352482654634898 * (age - 45) ** 2))",
+          "expression_bytes": 200,
+          "free_parameters": 8,
+          "learned_state_bytes": 221,
+          "literal_state_bytes": 46,
+          "nodes": 98,
+          "numeric_literal_count": 9,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 28
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.18583446228530867,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(education**2/441)+p2*((education)**2)+p3*(education)+p4*(tanh((education-14.146865671641791)/2.5552837906214267))+p5*(log1p(education))+p6*(education*age)+p7*((age-45)**2)))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-1",
+      "rule_sha256": "d4ffcbc8c51bb75b49b9b832fdd83a02fde5c852a0b947368c330c431b753e90",
+      "run_id": "full-comparison-v5--P100-039--principia_engine",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.3595464483871894 + 0.9673908533348823 * (education ** 2 / 441) + 0.0021936300529135804 * education ** 2 + -0.11828978807383486 * education + 0.09980497586107202 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.2031679452132284 * log1p(education) + 0.0004219172120560283 * (education * age) + -0.0005352482654634898 * (age - 45) ** 2))",
+        "expression_bytes": 200,
+        "free_parameters": 8,
+        "learned_state_bytes": 221,
+        "literal_state_bytes": 46,
+        "nodes": 98,
+        "numeric_literal_count": 9,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 28
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02220259590805334,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.37307461169733325,
+        "primary": "brier",
+        "primary_error": 0.18289049968388185,
+        "rmse": 0.42765698834916965
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21151501825352806,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14792427379650433,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.17226101191533116,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.19986169477016394,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19398576431482184,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(education)+p3*(tanh((education-14.146865671641791)/2.5552837906214267))+p4*(education*age)+p5*(log1p(abs((age-44.5544776119403)/11.315902267609763)))+p6*(log1p(abs((education-14.146865671641791)/2.5552837906214267)))+p7*(tanh((age-44.5544776119403)/11.315902267609763))))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.015554869255853511,
+          "p1": 0.0005531419672838992,
+          "p2": 0.0037879161774590723,
+          "p3": 0.10791086727280672,
+          "p4": 0.00034761797748116756,
+          "p5": -0.2081636586748809,
+          "p6": 0.15751638385677266,
+          "p7": 0.025932259182887427
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.04429959496865411,
+            "education": 0.031003481852430983,
+            "japan": -0.013995329546909355
+          },
+          "mean": 0.006254495239973162,
+          "p90_abs": 0.718182742353406,
+          "std": 0.444402217857932
+        },
+        "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-1",
+        "rule_sha256": "30f75f4e4ea454111f9214a3e5276082627c53d4053f3de75fac179c1ea3dabd",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.015554869255853511 + 0.0005531419672838992 * education ** 2 + 0.0037879161774590723 * education + 0.10791086727280672 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00034761797748116756 * (education * age) + -0.2081636586748809 * log1p(abs((age - 44.5544776119403) / 11.315902267609763)) + 0.15751638385677266 * log1p(abs((education - 14.146865671641791) / 2.5552837906214267)) + 0.025932259182887427 * tanh((age - 44.5544776119403) / 11.315902267609763)))",
+          "expression_bytes": 318,
+          "free_parameters": 8,
+          "learned_state_bytes": 226,
+          "literal_state_bytes": 143,
+          "nodes": 116,
+          "numeric_literal_count": 11,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 36
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.18596204062275168,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(education)+p3*(tanh((education-14.146865671641791)/2.5552837906214267))+p4*(education*age)+p5*(log1p(abs((age-44.5544776119403)/11.315902267609763)))+p6*(log1p(abs((education-14.146865671641791)/2.5552837906214267)))+p7*(tanh((age-44.5544776119403)/11.315902267609763))))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-1",
+      "rule_sha256": "30f75f4e4ea454111f9214a3e5276082627c53d4053f3de75fac179c1ea3dabd",
+      "run_id": "full-comparison-v5--P100-039--symbolic_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.015554869255853511 + 0.0005531419672838992 * education ** 2 + 0.0037879161774590723 * education + 0.10791086727280672 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00034761797748116756 * (education * age) + -0.2081636586748809 * log1p(abs((age - 44.5544776119403) / 11.315902267609763)) + 0.15751638385677266 * log1p(abs((education - 14.146865671641791) / 2.5552837906214267)) + 0.025932259182887427 * tanh((age - 44.5544776119403) / 11.315902267609763)))",
+        "expression_bytes": 318,
+        "free_parameters": 8,
+        "learned_state_bytes": 226,
+        "literal_state_bytes": 143,
+        "nodes": 116,
+        "numeric_literal_count": 11,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 36
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.019705718240102213,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.36723117565814023,
+        "primary": "brier",
+        "primary_error": 0.18299394892196574,
+        "rmse": 0.4277779200963576
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21892941787496223,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14200916674297986,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.16888131079100846,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20215590027891236,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19652285717898835,
+        "execution_status": "complete",
+        "expression": "Decision tree; see complete node arrays",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "tree_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "tree_reference",
+        "output": "target",
+        "parameters": {},
+        "representation": "tree",
+        "rule_id": "full-comparison-v5--P100-039--tree_control-rule-1",
+        "rule_sha256": "121c7e3236fcc4f9ed782055c25e0c37dac799ee264fe3f1901e850454fd9e18",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "free_parameters": 27,
+          "weighted_operator_count": 27
+        },
+        "task_id": "P100-039.compact.v2",
+        "tree": {
+          "feature": [
+            0,
+            1,
+            2,
+            0,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            0,
+            2,
+            -2,
+            -2,
+            1,
+            -2,
+            -2,
+            1,
+            2,
+            -2,
+            -2,
+            0,
+            1,
+            -2,
+            -2,
+            0,
+            -2,
+            -2
+          ],
+          "features": [
+            "education",
+            "age",
+            "japan"
+          ],
+          "left": [
+            1,
+            2,
+            3,
+            4,
+            -1,
+            -1,
+            7,
+            -1,
+            -1,
+            10,
+            11,
+            -1,
+            -1,
+            14,
+            -1,
+            -1,
+            17,
+            18,
+            -1,
+            -1,
+            21,
+            22,
+            -1,
+            -1,
+            25,
+            -1,
+            -1
+          ],
+          "right": [
+            16,
+            9,
+            6,
+            5,
+            -1,
+            -1,
+            8,
+            -1,
+            -1,
+            13,
+            12,
+            -1,
+            -1,
+            15,
+            -1,
+            -1,
+            20,
+            19,
+            -1,
+            -1,
+            24,
+            23,
+            -1,
+            -1,
+            26,
+            -1,
+            -1
+          ],
+          "threshold": [
+            15.0,
+            34.5,
+            0.5,
+            13.5,
+            -2.0,
+            -2.0,
+            29.5,
+            -2.0,
+            -2.0,
+            12.5,
+            0.5,
+            -2.0,
+            -2.0,
+            44.5,
+            -2.0,
+            -2.0,
+            29.5,
+            0.5,
+            -2.0,
+            -2.0,
+            16.5,
+            39.5,
+            -2.0,
+            -2.0,
+            20.0,
+            -2.0,
+            -2.0
+          ],
+          "value": [
+            0.3364179104477612,
+            0.20931422722620266,
+            0.09004739336492891,
+            0.05714285714285714,
+            0.047337278106508875,
+            0.0975609756097561,
+            0.12264150943396226,
+            0.13829787234042554,
+            0.11016949152542373,
+            0.24216710182767623,
+            0.21380846325167038,
+            0.14545454545454545,
+            0.24398073836276082,
+            0.2823343848580442,
+            0.228310502283105,
+            0.3108433734939759,
+            0.5143266475644699,
+            0.21348314606741572,
+            0.3170731707317073,
+            0.125,
+            0.5582922824302134,
+            0.5041816009557945,
+            0.3971631205673759,
+            0.5585585585585585,
+            0.6771653543307087,
+            0.6516516516516516,
+            0.8541666666666666
+          ]
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "Decision tree; see complete node arrays",
+      "method_id": "tree_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--tree_control-rule-1",
+      "rule_sha256": "121c7e3236fcc4f9ed782055c25e0c37dac799ee264fe3f1901e850454fd9e18",
+      "run_id": "full-comparison-v5--P100-039--tree_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "complete tree in Rule Card",
+        "free_parameters": 40,
+        "learned_state_bytes": 1103,
+        "scope": "predictive reference, not a compact scientific formula",
+        "weighted_operator_count": 27
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0008952904803857034,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.37462484832984744,
+        "primary": "brier",
+        "primary_error": 0.1836773769479783,
+        "rmse": 0.42857598736744257
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.2126133313274163,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14739526618892068,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.17218333586281903,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.2025175744127572,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19466648193372682,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(education)+p3*(tanh((education-14.146865671641791)/2.5552837906214267))+p4*(education*age)+p5*(log1p(abs((age-44.5544776119403)/11.315902267609763)))))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "beam-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.5138214810103168,
+          "p1": 0.00348078822887641,
+          "p2": -0.07458248687676569,
+          "p3": 0.08080453243273543,
+          "p4": 0.00044541764251344846,
+          "p5": -0.20506674984087678
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.04325475031752998,
+            "education": 0.03780382463977615,
+            "japan": -0.011681627528586157
+          },
+          "mean": 0.006371509426326057,
+          "p90_abs": 0.724266374078437,
+          "std": 0.4451206833367085
+        },
+        "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-3",
+        "rule_sha256": "c9f04e92a7cb139d634e27dd934bc05b7163f6317cb296a46e93fef6207ef089",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, 0.5138214810103168 + 0.00348078822887641 * education ** 2 + -0.07458248687676569 * education + 0.08080453243273543 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00044541764251344846 * (education * age) + -0.20506674984087678 * log1p(abs((age - 44.5544776119403) / 11.315902267609763))))",
+          "expression_bytes": 198,
+          "free_parameters": 6,
+          "learned_state_bytes": 166,
+          "literal_state_bytes": 73,
+          "nodes": 79,
+          "numeric_literal_count": 7,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 23
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.18647578729528236,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*(education)+p3*(tanh((education-14.146865671641791)/2.5552837906214267))+p4*(education*age)+p5*(log1p(abs((age-44.5544776119403)/11.315902267609763)))))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-3",
+      "rule_sha256": "c9f04e92a7cb139d634e27dd934bc05b7163f6317cb296a46e93fef6207ef089",
+      "run_id": "full-comparison-v5--P100-039--symbolic_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, 0.5138214810103168 + 0.00348078822887641 * education ** 2 + -0.07458248687676569 * education + 0.08080453243273543 * tanh((education - 14.146865671641791) / 2.5552837906214267) + 0.00044541764251344846 * (education * age) + -0.20506674984087678 * log1p(abs((age - 44.5544776119403) / 11.315902267609763))))",
+        "expression_bytes": 198,
+        "free_parameters": 6,
+        "learned_state_bytes": 166,
+        "literal_state_bytes": 73,
+        "nodes": 79,
+        "numeric_literal_count": 7,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 23
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.023128151839641176,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.37104444115376467,
+        "primary": "brier",
+        "primary_error": 0.18560238051879144,
+        "rmse": 0.43081594738216394
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21874280916980912,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14690358565103268,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.1742278833688822,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20253524388544175,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19900952606263456,
+        "execution_status": "complete",
+        "expression": "1 / (1 + exp(-(p0 + p1*education + p2*age + p3*japan + p4*education*age + p5*education*japan + p6*age*japan + p7*education*age*japan)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "direct_deepseek",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -7.915321827679413,
+          "p1": 0.4087251066626154,
+          "p2": 0.02796365417653829,
+          "p3": 6.389834781884849,
+          "p4": -0.00015611549206091224,
+          "p5": -0.44173806900942447,
+          "p6": -0.10704901227932077,
+          "p7": 0.0078266265202067
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.047961195022514544,
+            "education": 0.042774902910508755,
+            "japan": 0.007441941267775994
+          },
+          "mean": 0.007056363378822871,
+          "p90_abs": 0.7403215493144227,
+          "std": 0.4498332429663076
+        },
+        "rule_id": "full-comparison-v5--P100-039--direct_deepseek-rule-1",
+        "rule_sha256": "b92e1d3b6c5cea43c64a96ca25040abff39d0d22feb43d5a01f6ddcf14f3f73f",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1 / (1 + exp(-(-7.915321827679413 + 0.4087251066626154 * education + 0.02796365417653829 * age + 6.389834781884849 * japan + -0.00015611549206091224 * education * age + -0.44173806900942447 * education * japan + -0.10704901227932077 * age * japan + 0.0078266265202067 * education * age * japan)))",
+          "expression_bytes": 135,
+          "free_parameters": 8,
+          "learned_state_bytes": 217,
+          "literal_state_bytes": 2,
+          "nodes": 90,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 25
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.18817376246711234,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "1 / (1 + exp(-(p0 + p1*education + p2*age + p3*japan + p4*education*age + p5*education*japan + p6*age*japan + p7*education*age*japan)))",
+      "method_id": "direct_deepseek",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "full-comparison-v5--P100-039--direct_deepseek-rule-1",
+      "rule_sha256": "b92e1d3b6c5cea43c64a96ca25040abff39d0d22feb43d5a01f6ddcf14f3f73f",
+      "run_id": "full-comparison-v5--P100-039--direct_deepseek",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1 / (1 + exp(-(-7.915321827679413 + 0.4087251066626154 * education + 0.02796365417653829 * age + 6.389834781884849 * japan + -0.00015611549206091224 * education * age + -0.44173806900942447 * education * japan + -0.10704901227932077 * age * japan + 0.0078266265202067 * education * age * japan)))",
+        "expression_bytes": 135,
+        "free_parameters": 8,
+        "learned_state_bytes": 217,
+        "literal_state_bytes": 2,
+        "nodes": 90,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 25
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02298520693506556,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.37104415510271027,
+        "primary": "brier",
+        "primary_error": 0.18560238346924332,
+        "rmse": 0.4308159508064242
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21874285640198016,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14690345793455684,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.17422806770016078,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20253515184027548,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.1990094044864921,
+        "execution_status": "complete",
+        "expression": "1/(1+exp(-(p0+p1*education+p2*age+p3*japan+p4*education*age+p5*education*japan+p6*age*japan+p7*education*age*japan)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "direct_kimi",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6"
+        ],
+        "origin": "single_generation",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -7.9160755586728095,
+          "p1": 0.40876873301071137,
+          "p2": 0.027979413798132572,
+          "p3": 6.39058729456279,
+          "p4": -0.0001570325021462599,
+          "p5": -0.44178110492514056,
+          "p6": -0.10706403263156114,
+          "p7": 0.007827478300503421
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.04796269498192804,
+            "education": 0.042773541171096184,
+            "japan": 0.007442868897704402
+          },
+          "mean": 0.0070559071956092494,
+          "p90_abs": 0.7403199327339467,
+          "std": 0.449833134983292
+        },
+        "rule_id": "full-comparison-v5--P100-039--direct_kimi-rule-1",
+        "rule_sha256": "965728fa8f16d85649df2d0518040a8a0b9ade63afa83f70d4558bd093c60c6e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "1 / (1 + exp(-(-7.9160755586728095 + 0.40876873301071137 * education + 0.027979413798132572 * age + 6.39058729456279 * japan + -0.0001570325021462599 * education * age + -0.44178110492514056 * education * japan + -0.10706403263156114 * age * japan + 0.007827478300503421 * education * age * japan)))",
+          "expression_bytes": 117,
+          "free_parameters": 8,
+          "learned_state_bytes": 220,
+          "literal_state_bytes": 2,
+          "nodes": 90,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 25
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.18817376121855453,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "1/(1+exp(-(p0+p1*education+p2*age+p3*japan+p4*education*age+p5*education*japan+p6*age*japan+p7*education*age*japan)))",
+      "method_id": "direct_kimi",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6"
+      ],
+      "rule_id": "full-comparison-v5--P100-039--direct_kimi-rule-1",
+      "rule_sha256": "965728fa8f16d85649df2d0518040a8a0b9ade63afa83f70d4558bd093c60c6e",
+      "run_id": "full-comparison-v5--P100-039--direct_kimi",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "1 / (1 + exp(-(-7.9160755586728095 + 0.40876873301071137 * education + 0.027979413798132572 * age + 6.39058729456279 * japan + -0.0001570325021462599 * education * age + -0.44178110492514056 * education * japan + -0.10706403263156114 * age * japan + 0.007827478300503421 * education * age * japan)))",
+        "expression_bytes": 117,
+        "free_parameters": 8,
+        "learned_state_bytes": 220,
+        "literal_state_bytes": 2,
+        "nodes": 90,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 25
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.022985142140438054,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.38260615939698855,
+        "primary": "brier",
+        "primary_error": 0.1866993831130031,
+        "rmse": 0.4320872401645333
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.2176338678043491,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.14815802488582458,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.1791924388819809,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20181320087985793,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19853014033333974,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(education)+p2*(age)+p3*(japan)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.8370161210614262,
+          "p1": 0.06321132458909992,
+          "p2": 0.005983090054334808,
+          "p3": 0.020691065513595838
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": 0.0507098404193018,
+            "education": 0.016913756092741632,
+            "japan": 0.00407014763607925
+          },
+          "mean": 0.010017640841722518,
+          "p90_abs": 0.6896339737672998,
+          "std": 0.44896180884250386
+        },
+        "rule_id": "full-comparison-v5--P100-039--linear_control-rule-1",
+        "rule_sha256": "8a857e7d2394ec8fad0f3999a70e56f02c6a43002a4a1a4d574df85f4f708860",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.8370161210614262 + 0.06321132458909992 * education + 0.005983090054334808 * age + 0.020691065513595838 * japan))",
+          "expression_bytes": 59,
+          "free_parameters": 4,
+          "learned_state_bytes": 110,
+          "literal_state_bytes": 2,
+          "nodes": 35,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.19046325467359268,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(education)+p2*(age)+p3*(japan)))",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--linear_control-rule-1",
+      "rule_sha256": "8a857e7d2394ec8fad0f3999a70e56f02c6a43002a4a1a4d574df85f4f708860",
+      "run_id": "full-comparison-v5--P100-039--linear_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.8370161210614262 + 0.06321132458909992 * education + 0.005983090054334808 * age + 0.020691065513595838 * japan))",
+        "expression_bytes": 59,
+        "free_parameters": 4,
+        "learned_state_bytes": 110,
+        "literal_state_bytes": 2,
+        "nodes": 35,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02270261353402455,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.3819831360720398,
+        "primary": "brier",
+        "primary_error": 0.1873819136501883,
+        "rmse": 0.4328763260449667
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.21294874583960757,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.15517050175176025,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.17514348177134895,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20626492523803644,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.19639766922608395,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*((age-45)**2)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "composition-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.044699272213229495,
+          "p1": 0.0021966960893464163,
+          "p2": -0.0005681115329812959
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": -0.09802576045259762,
+            "education": 0.033385234734606944,
+            "japan": -0.018129492455069136
+          },
+          "mean": 0.005840674389606137,
+          "p90_abs": 0.7012950982297687,
+          "std": 0.4463224860186262
+        },
+        "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-3",
+        "rule_sha256": "afc6397fc54b3d6b7afd77ee83933fad601469b0b8609fd69b193feefec088be",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.044699272213229495 + 0.0021966960893464163 * education ** 2 + -0.0005681115329812959 * (age - 45) ** 2))",
+          "expression_bytes": 61,
+          "free_parameters": 3,
+          "learned_state_bytes": 88,
+          "literal_state_bytes": 6,
+          "nodes": 36,
+          "numeric_literal_count": 5,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 9
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.1908169523231944,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*((education)**2)+p2*((age-45)**2)))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-3",
+      "rule_sha256": "afc6397fc54b3d6b7afd77ee83933fad601469b0b8609fd69b193feefec088be",
+      "run_id": "full-comparison-v5--P100-039--principia_engine",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.044699272213229495 + 0.0021966960893464163 * education ** 2 + -0.0005681115329812959 * (age - 45) ** 2))",
+        "expression_bytes": 61,
+        "free_parameters": 3,
+        "learned_state_bytes": 88,
+        "literal_state_bytes": 6,
+        "nodes": 36,
+        "numeric_literal_count": 5,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 9
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02296085660985492,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.39204728147103307,
+        "primary": "brier",
+        "primary_error": 0.19263475288967097,
+        "rmse": 0.43890175767439227
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.218937629534743,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.15837221569786966,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.18501259170329803,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20821657462277313,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.20091448154146996,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(education)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "symbolic_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.5201924652083398,
+          "p1": 0.06055124827920197
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": -0.09002073766230659,
+            "education": 0.0239275248091178,
+            "japan": -0.02486869324897631
+          },
+          "mean": 0.0016381398341867206,
+          "p90_abs": 0.7330262375787142,
+          "std": 0.45057118892377435
+        },
+        "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-2",
+        "rule_sha256": "be79531b527cbec4770b7d2fac5ffb45bc1ae0e52485a153a0c97b568f3db458",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.5201924652083398 + 0.06055124827920197 * education))",
+          "expression_bytes": 39,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 2,
+          "nodes": 19,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.19548464209378322,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(education)))",
+      "method_id": "symbolic_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--symbolic_control-rule-2",
+      "rule_sha256": "be79531b527cbec4770b7d2fac5ffb45bc1ae0e52485a153a0c97b568f3db458",
+      "run_id": "full-comparison-v5--P100-039--symbolic_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.5201924652083398 + 0.06055124827920197 * education))",
+        "expression_bytes": 39,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 2,
+        "nodes": 19,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02196563241692285,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.39204728147103307,
+        "primary": "brier",
+        "primary_error": 0.19263475288967097,
+        "rmse": 0.43890175767439227
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.218937629534743,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.15837221569786966,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.18501259170329803,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.20821657462277313,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.20091448154146996,
+        "execution_status": "complete",
+        "expression": "minimum(1,maximum(0,p0+p1*(education)))",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "principia_engine",
+        "method_version": "1.0.0rc2",
+        "model_ids": [
+          "Pro/moonshotai/Kimi-K2.6",
+          "Qwen/Qwen3.8-27B",
+          "deepseek-ai/DeepSeek-V4-Flash",
+          "zai-org/GLM-5.3"
+        ],
+        "origin": "grammar-round-0",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -0.5201924652083398,
+          "p1": 0.06055124827920197
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": -0.09002073766230659,
+            "education": 0.0239275248091178,
+            "japan": -0.02486869324897631
+          },
+          "mean": 0.0016381398341867206,
+          "p90_abs": 0.7330262375787142,
+          "std": 0.45057118892377435
+        },
+        "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-2",
+        "rule_sha256": "0f6e363e9f2ca9858f86628034e042a3e01cb3ca1d89ec19dc27559cf2d9c36e",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "minimum(1, maximum(0, -0.5201924652083398 + 0.06055124827920197 * education))",
+          "expression_bytes": 39,
+          "free_parameters": 2,
+          "learned_state_bytes": 54,
+          "literal_state_bytes": 2,
+          "nodes": 19,
+          "numeric_literal_count": 2,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.19548464209378322,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "minimum(1,maximum(0,p0+p1*(education)))",
+      "method_id": "principia_engine",
+      "model_ids": [
+        "Pro/moonshotai/Kimi-K2.6",
+        "Qwen/Qwen3.8-27B",
+        "deepseek-ai/DeepSeek-V4-Flash",
+        "zai-org/GLM-5.3"
+      ],
+      "rule_id": "full-comparison-v5--P100-039--principia_engine-rule-2",
+      "rule_sha256": "0f6e363e9f2ca9858f86628034e042a3e01cb3ca1d89ec19dc27559cf2d9c36e",
+      "run_id": "full-comparison-v5--P100-039--principia_engine",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "minimum(1, maximum(0, -0.5201924652083398 + 0.06055124827920197 * education))",
+        "expression_bytes": 39,
+        "free_parameters": 2,
+        "learned_state_bytes": 54,
+        "literal_state_bytes": 2,
+        "nodes": 19,
+        "numeric_literal_count": 2,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.02196563241692285,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.4418653805022321,
+        "primary": "brier",
+        "primary_error": 0.21862448052450872,
+        "rmse": 0.4675729681285144
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.21862448052450872,
+      "by_group": [
+        {
+          "error": 0.24441765538300889,
+          "group": "group-0b95827d139695ee703b2a32",
+          "rows": 349
+        },
+        {
+          "error": 0.18898334465278266,
+          "group": "group-7e220f1f688288ccb15fd312",
+          "rows": 164
+        },
+        {
+          "error": 0.2242893731847662,
+          "group": "group-973f07eeb68ad5339919fe62",
+          "rows": 159
+        },
+        {
+          "error": 0.21680754887747716,
+          "group": "group-f92d57ee06910585315b543a",
+          "rows": 382
+        }
+      ],
+      "campaign_id": "full-comparison-v5",
+      "card": {
+        "dev_error": 0.22021931839953682,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "education",
+          "age",
+          "japan"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.3364179104477612
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "age": -0.0531643300971363,
+            "education": -0.2738370038022215,
+            "japan": 0.0018324129515554157
+          },
+          "mean": 0.01023280886762573,
+          "p90_abs": 0.6635820895522389,
+          "std": 0.46881593518916587
+        },
+        "rule_id": "full-comparison-v5--P100-039--mean_control-rule-1",
+        "rule_sha256": "81096f72234bd04f47dd731ab7b606ad1b9f1087b7e20f4ae21aee310931e5a2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.3364179104477612",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 26,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-039.compact.v2",
+        "train_error": 0.22407867931816502,
+        "units": {
+          "inputs": {
+            "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+            "education": "source derived years of formal education",
+            "japan": "country indicator"
+          },
+          "output": "binary EARNHRDCLC2>=8",
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1054,
+        "fraction": 1.0,
+        "predicted": 1054
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "full-comparison-v5--P100-039--mean_control-rule-1",
+      "rule_sha256": "81096f72234bd04f47dd731ab7b606ad1b9f1087b7e20f4ae21aee310931e5a2",
+      "run_id": "full-comparison-v5--P100-039--mean_control",
+      "scenario_id": "P100-039",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.3364179104477612",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 26,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 1054,
+        "ranking": false,
+        "samples": 512,
+        "scope": "diagnostic only; measurement error distribution not independently established"
+      },
+      "status": "complete",
+      "task_id": "P100-039.compact.v2",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-039",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-039.compact.v2",
+  "track": "primary",
+  "version": "1.0.0rc2"
+}

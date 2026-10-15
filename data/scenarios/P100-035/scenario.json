@@ -1,0 +1,100 @@
+{
+  "description": "Source positive-context label probability",
+  "domain": "bioacoustics and animal welfare",
+  "independent_unit": "Animal within species; all calls and typo-linked names grouped",
+  "input_units": {
+    "entropy": "dimensionless",
+    "envelope_cv": "dimensionless",
+    "flatness": "dimensionless",
+    "high_share": "dimensionless",
+    "log_centroid": "dimensionless",
+    "log_duration": "dimensionless",
+    "log_modulation": "dimensionless",
+    "log_peak": "dimensionless",
+    "log_rms": "dimensionless",
+    "species_code": "dimensionless"
+  },
+  "limitations": [
+    "After the complete author-extracted call. Predictors only waveform summaries and known species. File context words, animal ID, call label and source reference are never predictors.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "audio",
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "probability",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 489,
+    "test": 475,
+    "train": 2217
+  },
+  "scenario_id": "P100-035",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 832220,
+    "limit_bytes": 10000000,
+    "public_bytes": 305809
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/14636641",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/35_bioacoustics_ungulate_calls/context/zenodo_record.json",
+        "source_sha256": "f7da36509587ec03692ca4ae1de6085ea0a3a9fe82f8f69caa131d32f7e41261"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14636641",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14636641",
+        "source": "scenarios/35_bioacoustics_ungulate_calls/raw/Data S1.zip",
+        "source_sha256": "ec2883fb18dc354b7700e2a87813e4befa5d8b79c918ecc659026643609ec38d"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/14636641",
+        "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "rights_url": "https://zenodo.org/records/14636641",
+        "source": "scenarios/35_bioacoustics_ungulate_calls/raw/SoundsDatabase.zip",
+        "source_sha256": "2af4f5458f5ab9a14817d55fc037e3ae7df01224b8c329bf42a4ba647065eee2"
+      }
+    ],
+    "historical_case": "P100-035",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://zenodo.org/records/14636641",
+    "version": "14636641"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "b7f2f895357b6b9a30aa5199c609021067df77e593de6d938d201698c5928794",
+        "groups": 26,
+        "rows": 489,
+        "sample_ids_sha256": "db201c4de24ebfd8067eb3b1eb17a9aed1b71c7a6ab11d3dd5793ef17a765421"
+      },
+      "test": {
+        "group_ids_sha256": "a3ea6e2b4c442f3f9d17f42d0e64ce949492ceb8c6209023129ad69023ee7b3f",
+        "groups": 34,
+        "rows": 475,
+        "sample_ids_sha256": "ff79044b89fc10e024a03287fac0bd32efc6a879e8c78cf362c3c2acc8356aaa"
+      },
+      "train": {
+        "group_ids_sha256": "07f51618cc2a5ec18f3a2b20d6ca7276833a46ce6173474de9d2214a46bd0939",
+        "groups": 108,
+        "rows": 2217,
+        "sample_ids_sha256": "7f8966ba0cdb6dc48d93f66db81bb71edc5e0c9617743ecc3d7729bb96be8d7f"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Ungulate vocalizations and production context",
+  "version": "1.0.0rc2"
+}

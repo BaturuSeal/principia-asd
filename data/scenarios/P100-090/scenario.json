@@ -1,0 +1,89 @@
+{
+  "description": "Mean next-two-second signed angular polarization about instantaneous group centroid",
+  "domain": "Pedestrian dynamics",
+  "independent_unit": "Whole country/experiment-condition group with all repetitions; participants may recur across conditions and identifiers do not resolve all dependence. One teen condition keptdevelopment, no heldteen generalization.",
+  "input_units": {
+    "density": "tracked persons/(pi*r90²), proxy persons/m²",
+    "p_initial": "first2seconds mean order, declared pertrialcalibration",
+    "p_now": "dimensionless current signed angular order",
+    "p_past": "previous2integerseconds mean order",
+    "polarization_variance": "withinframe variance of individual signedorder",
+    "radius90": "90th-percentile centroiddistance metres",
+    "speed": "mean1sbackwardsecant m/s"
+  },
+  "limitations": [
+    "Every predictor uses trajectory rows at/before origin t. Integer positions use previous observed sample only, at most1second stale; current tracked count uses prefix-present IDs, never full-trial future membership. No interpolation from future. Velocities derived by backward1s differences; supplied VX/VY/Pol forbidden because smoothing provenance can include future. Target uses t+1..t+2.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "dimensionless signed[-1,1]",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 172,
+    "test": 270,
+    "train": 986
+  },
+  "scenario_id": "P100-090",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 342987,
+    "limit_bytes": 10000000,
+    "public_bytes": 128076
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/19592341",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/19592341",
+        "source": "scenarios/90_transport_crowd_rotation/raw/ExperimentalData.zip",
+        "source_sha256": "2e421df218b9a2f8e5fde65cf71f0ef838ae0627cfb702c0cb8f95866ca41f14"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/19592341",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/90_transport_crowd_rotation/context/source_record.json",
+        "source_sha256": "07c4c1a70345a38818f9d18cd94a04077fad6a833bf2f1637ed123d4634d25c3"
+      }
+    ],
+    "historical_case": "P100-090",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/19592341",
+    "version": "19592341"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "375763bea07266891352d653964adc256d892363ee57de7b51f3346a7d27f68b",
+        "groups": 4,
+        "rows": 172,
+        "sample_ids_sha256": "964c429d2c1e04de55c408690d1460c0fb590716b6973bd3b9d046f621d4c754"
+      },
+      "test": {
+        "group_ids_sha256": "29739fb822f4c0eba48b62cda6191ddfbe624ed5318b9b31c36c11fe9d9b8d5b",
+        "groups": 5,
+        "rows": 270,
+        "sample_ids_sha256": "7499f0823353f73487d9a4fb7da129247a4e0fcb5ffffd66b24a2b18e9fe26e1"
+      },
+      "train": {
+        "group_ids_sha256": "0086dc1022a392af913996838209c735b103c9dcf6cb519ac40f9fb7c22d0b51",
+        "groups": 17,
+        "rows": 986,
+        "sample_ids_sha256": "529bfa024403100c6d5c0184c1f5e228e7550d29fe773d76b9f9681b0f54eb00"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Individual locomotor bias drives counterclockwise motion in pedestrian crowds",
+  "version": "1.0.0rc2"
+}

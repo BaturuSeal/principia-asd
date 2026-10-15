@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1*log1p(length_km) + p2*log1p(width_km) + p3*log1p(duration_min) + p4*latitude + p5*month + p6*sin(month) + p7*cos(month)",
+  "parameters": {
+    "p0": 12.477597740434781,
+    "p1": 1.754234049065552,
+    "p2": 3.3387483168724246,
+    "p3": -0.842232075986281,
+    "p4": -0.19639814420297005,
+    "p5": -0.27881079875928694,
+    "p6": -0.10647197020842405,
+    "p7": -0.5862038244357225
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,16 @@
+{
+  "expression": "p0 + p1*current + p2*soft + p3*kd + p4*cal_mean + p5*cal_last + p6*maximum(0, current - 40) + p7*soft*kd",
+  "parameters": {
+    "p0": -0.46108059358324827,
+    "p1": 0.02596153858313574,
+    "p2": 0.15476191176493295,
+    "p3": 1.2380952445746245,
+    "p4": -2.0311751237266957,
+    "p5": 0.9456720287436096,
+    "p6": -0.01785714304707291,
+    "p7": -0.9047619146064527
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

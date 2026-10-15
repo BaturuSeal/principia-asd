@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.09326281143357042,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(income_proxy)+p2*((age)**2)))",
+  "inputs": [
+    "income_proxy",
+    "household_size",
+    "shock",
+    "age"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.3573901898342137,
+    "p1": -0.0017818842124359328,
+    "p2": -2.2890803648999384e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.0873456624956297,
+      "household_size": -0.12486380222628497,
+      "income_proxy": 0.11588190798860212,
+      "shock": -0.08913395239382563
+    },
+    "mean": -0.02134533804207721,
+    "p90_abs": 0.7237372204127583,
+    "std": 0.3187833910135534
+  },
+  "rule_id": "full-comparison-v5--P100-015--symbolic_control-rule-3",
+  "rule_sha256": "7ee71930ec2f6c3a2caa9791b26fd59e36046a3a9b73049c0f7e2f977ca84e55",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, 0.3573901898342137 + -0.0017818842124359328 * income_proxy + -2.2890803648999384e-05 * age ** 2))",
+    "expression_bytes": 56,
+    "free_parameters": 3,
+    "learned_state_bytes": 87,
+    "literal_state_bytes": 3,
+    "nodes": 30,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-015.compact.v2",
+  "train_error": 0.08600008862119128,
+  "units": {
+    "inputs": {
+      "age": "years",
+      "household_size": "persons",
+      "income_proxy": "thousands USD/year bracket proxy",
+      "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+    },
+    "output": "binary EF3_h",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

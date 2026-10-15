@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.0014535895948277675,
+  "execution_status": "complete",
+  "expression": "u120 + p0 * (u60 - u120) * exp(-t / p1)",
+  "inputs": [
+    "t",
+    "t60",
+    "t120",
+    "u60",
+    "u120",
+    "u10",
+    "pulse_s",
+    "current"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -27.445987493314803,
+    "p1": 3.868690984580141
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.8507351375535087,
+      "pulse_s": 0.054749100415538765,
+      "t": -0.019040894363423617,
+      "t120": -0.027799636488567717,
+      "t60": -0.11155682714850017,
+      "u10": -0.2457958912658732,
+      "u120": -0.2752508022005759,
+      "u60": -0.2663948613631783
+    },
+    "mean": -5.4580187634874905e-05,
+    "p90_abs": 0.002670037684759165,
+    "std": 0.0017200772626212919
+  },
+  "rule_id": "full-comparison-v5--P100-049--direct_qwen-rule-1",
+  "rule_sha256": "54798e62862c62ff4d71e0422b9775ac00dbe0cac2e85e6189edec9d6158bc54",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "u120 + -27.445987493314803 * (u60 - u120) * exp(-t / 3.868690984580141)",
+    "expression_bytes": 39,
+    "free_parameters": 2,
+    "learned_state_bytes": 52,
+    "literal_state_bytes": 0,
+    "nodes": 28,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 9
+  },
+  "task_id": "P100-049.compact.v2",
+  "train_error": 0.0018351803894129952,
+  "units": {
+    "inputs": {
+      "current": "A",
+      "pulse_s": "s",
+      "t": "s",
+      "t120": "s",
+      "t60": "s",
+      "u10": "V",
+      "u120": "V",
+      "u60": "V"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

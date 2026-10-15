@@ -1,0 +1,85 @@
+{
+  "dev_error": 2.503625394877594e-06,
+  "execution_status": "complete",
+  "expression": "p0 + p1*hx + p2*hy + p3*ox + p4*oy + p5*dg + p6*lo + p7*hi",
+  "inputs": [
+    "hx",
+    "hy",
+    "ox",
+    "oy",
+    "dg",
+    "gx",
+    "gy",
+    "lo",
+    "hi"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.8703852709589526e-07,
+    "p1": 0.5784851723062648,
+    "p2": 0.7133065507671122,
+    "p3": -0.025053195512807724,
+    "p4": -0.1951902477034855,
+    "p5": 0.2694257618989435,
+    "p6": -0.11380066786501943,
+    "p7": -0.14710486829087907
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "dg": -0.013673124113261487,
+      "gx": -0.016101415543963445,
+      "gy": 0.02167094777626633,
+      "hi": -0.1203283022213891,
+      "hx": 0.015639194989342232,
+      "hy": -0.0036030451670497846,
+      "lo": 0.05584226646408111,
+      "ox": -0.057020718672816884,
+      "oy": -0.05447617097962368
+    },
+    "mean": -1.2540339636672486e-07,
+    "p90_abs": 5.605340802649477e-06,
+    "std": 7.131583364653624e-06
+  },
+  "rule_id": "full-comparison-v5--P100-070--best_of_n-rule-1",
+  "rule_sha256": "50dd7562ad4acc7d98d3a6c11c32ae6e6b4abcb9489edb9c227963a63e7d40f4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.8703852709589526e-07 + 0.5784851723062648 * hx + 0.7133065507671122 * hy + -0.025053195512807724 * ox + -0.1951902477034855 * oy + 0.2694257618989435 * dg + -0.11380066786501943 * lo + -0.14710486829087907 * hi",
+    "expression_bytes": 58,
+    "free_parameters": 8,
+    "learned_state_bytes": 220,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-070.compact.v2",
+  "train_error": 3.275704760483264e-06,
+  "units": {
+    "inputs": {
+      "dg": "source-native Bz unit",
+      "gx": "dimensionless local contrast",
+      "gy": "dimensionless local contrast",
+      "hi": "source-native Bz unit",
+      "hx": "source-native Bz unit",
+      "hy": "source-native Bz unit",
+      "lo": "source-native Bz unit",
+      "ox": "source-native Bz unit",
+      "oy": "source-native Bz unit"
+    },
+    "output": "source-native Bz unit (SI conversion unresolved)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

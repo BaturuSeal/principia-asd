@@ -1,0 +1,69 @@
+{
+  "accuracy_gate": {
+    "policy": "no worse than frozen train-mean predictor on identical test cohort",
+    "ratio": 1.0
+  },
+  "assessment_scope": "retrospective predictive rule comparison; mechanism and novelty not established",
+  "coverage": {
+    "required_fraction": 1.0
+  },
+  "custody": "test outputs accessible only to evaluator; not independent new evidence",
+  "input_units": {
+    "age_min": "min since mixing; 0 or 30",
+    "ratio": "mix-design ratio encoded in author mixture label",
+    "time_s": "native penetration clock index; unit unspecified",
+    "water": "water ratio encoded in author mixture label"
+  },
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "limits": {
+    "max_expression_nodes": 160,
+    "max_parameters": 8,
+    "portfolio_size": 3
+  },
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "historical_aggregation": {
+      "hierarchy": [
+        "group"
+      ],
+      "primary": "mean_group_error"
+    },
+    "primary": "mae"
+  },
+  "nonnegative_prediction": false,
+  "observation_window": "Known mix label, age and elapsed penetration index only; force is never an input.",
+  "output": "target",
+  "output_description": "Individual penetration normal force",
+  "output_units": "N",
+  "positive_prediction": false,
+  "preprocessing": {
+    "learned_transformations": [],
+    "measurements": "inherited native measurements and permitted calibrated features; see source lineage"
+  },
+  "scenario_id": "P100-055",
+  "schema_version": "principia-asd.task-contract/2.0",
+  "source_contract_sha256": "410d87082663f6d1d36d093517ce1d4e631e6c57c6b28a1570bb30dc5f275507",
+  "source_task": "P100-055.original.v1",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "independent_unit": "whole mixture across both ages and replicates",
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "stability": {
+    "domain": "observed training range",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "task_id": "P100-055.compact.v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Individual penetration normal force",
+  "version": "1.0.0rc2"
+}

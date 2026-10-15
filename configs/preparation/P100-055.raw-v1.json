@@ -1,0 +1,88 @@
+{
+  "assets": [
+    {
+      "bytes": 32481947,
+      "path": "scenarios/55_materials_slag_printing/raw/08.2025_Micro-CT data.xlsx",
+      "role": "excluded_response_workbook",
+      "sha256": "1063a677f84ea0d52fe15a5cab123f4185e88fc9bdbee7a34da34cc33fd919a5"
+    },
+    {
+      "bytes": 181119,
+      "path": "scenarios/55_materials_slag_printing/raw/08.2025_mixes_strength-results.xlsx",
+      "role": "excluded_response_workbook",
+      "sha256": "bfd01900019552a81c9f414c6d13d052dc8dcf06273631dbff58cf1b7934ebac"
+    },
+    {
+      "bytes": 567557,
+      "path": "scenarios/55_materials_slag_printing/raw/08.2025_TGA.xlsx",
+      "role": "excluded_response_workbook",
+      "sha256": "2e7f5582b04457972e0c89554a785c27f07d44129af84bf38798934e418f8285"
+    },
+    {
+      "bytes": 1190858,
+      "path": "scenarios/55_materials_slag_printing/raw/08.2025_Rheology tests.xlsx",
+      "role": "rheology_workbook",
+      "sha256": "7697c76bd1c02614a7ffddd1f261be7215e3a42aca2aba0262fa7138b9caac63"
+    },
+    {
+      "bytes": 482116,
+      "path": "scenarios/55_materials_slag_printing/raw/08.2025_CARBCOMN Dataset_Early-research results.pdf",
+      "role": "source_methods",
+      "sha256": "23fc7b9716e5e0216f158463771c781dab6f95160c3fe0b6277cf5a91dbf07dd"
+    },
+    {
+      "bytes": 8584,
+      "path": "scenarios/55_materials_slag_printing/context/source_record.json",
+      "role": "source_metadata",
+      "sha256": "1087e2536ca0ba70f223aaa49574a6957f565f02798ddd815f87543287754441"
+    }
+  ],
+  "group_assignments": {
+    "0.5_0.25": "dev",
+    "0.5_0.30": "test",
+    "0.5_0.35": "train",
+    "0.7_0.25": "train",
+    "0.7_0.30": "test",
+    "0.7_0.35": "train",
+    "1.0_0.25": "train",
+    "1.0_0.30": "dev",
+    "1.0_0.35": "train"
+  },
+  "historical_contract_sha256": "eb8305fb864739905d465860e546a6ed770b02dda032ee5c4d95612a06f0a748",
+  "input_units": {
+    "age_min": "min since mixing; 0 or 30",
+    "ratio": "mix-design ratio encoded in author mixture label",
+    "time_s": "native penetration clock index; unit unspecified",
+    "water": "water ratio encoded in author mixture label"
+  },
+  "limitations": [
+    "Retrospective only; native-source review is not scientific admission",
+    "Source PDF CC BY-NC-SA 4.0 differs from metadata CC BY 4.0",
+    "Source Incomplete quality flag retained for mixture 0.7_0.30",
+    "Workbook mixture 1.0_0.25 is absent from methods appendix",
+    "No protected evaluator access or test-target export"
+  ],
+  "numerical_policy": {
+    "clock": "native row index retained without seconds conversion",
+    "fit_count": 0,
+    "force": "stored individual measurements only; source averages excluded",
+    "learned_transformations": [],
+    "missingness": "fail whole reconstruction if any measured cell missing; no deletion or imputation"
+  },
+  "output_units": "N",
+  "parser": "slag-mixture-penetration-traces-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/ports/batch4.py",
+    "reuse": "Source indexing and historical identity specification independently implemented; no source code execution, fitted states or reference equations",
+    "sha256": "d4caae6dabf7c75f13c0220c33a2b1574b5c92da7178048c983e964ffb5b2fe4"
+  },
+  "rights_status": "conflict_requires_review",
+  "scenario_id": "P100-055",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.17092152",
+    "url": "https://zenodo.org/records/17092152",
+    "version": "17092152"
+  },
+  "source_scenario_descriptor_sha256": "85a15170ac2736041bbb5b9348e300117a47085242ae2080c799d6efaa23151a"
+}

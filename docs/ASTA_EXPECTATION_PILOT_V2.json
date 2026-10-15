@@ -1,0 +1,46 @@
+{
+  "preregistered_at": "2026-10-11T18:40:23.337515+00:00",
+  "campaign_id": "asta-expectation-pilot-v2",
+  "track": "engineering",
+  "adaptation_version": "asta-autodiscovery-adaptation-v2",
+  "source_revision": "effa4be80f94e234d3d926f4f24b6aa6064d10e7",
+  "cases": [
+    "P100-002",
+    "P100-017",
+    "P100-043",
+    "P100-051",
+    "P100-054",
+    "P100-068",
+    "P100-087",
+    "P100-090"
+  ],
+  "assigned_attempts": 8,
+  "exposure": "Previously engineering-exposed; no independent performance claim",
+  "development_basis": "v1 cached prior reasons and pinned source show a domain-knowledge prior versus evidence-only system-prompt conflict",
+  "changes": [
+    "Explicit domain-knowledge expectation policy only for measurement-isolated prior calls",
+    "Clarify expectation versus verification, without requiring a non-null answer",
+    "Record handoff knowledge scope"
+  ],
+  "unchanged": [
+    "Role/model profiles",
+    "Input and split hashes",
+    "Frozen operational claim",
+    "Four-node tree and 25-request budget",
+    "Beta counts, reward and all conformance guards",
+    "Abstentions and unknown-usage policy",
+    "Fit method and final rule selection"
+  ],
+  "acceptance": "All assigned outcomes retained; inspect observed prior/posterior counts, branch execution, reward use and original conformance guards. No success quota or automatic rerun.",
+  "synthetic_tests_passed": 90,
+  "ruff": "passed",
+  "maximum_concurrency": 4,
+  "numerical_threads_per_worker": 1,
+  "global_cap_cny": 3000,
+  "attempt_cap_cny": 12,
+  "maximum_new_cohort_reservations_cny": 96,
+  "accounted_before_cny": 43.7408855,
+  "unknown_before_cny": 24.0,
+  "evaluation_custody": "Freeze all eight submissions before zero-API assessment; use train/dev evidence only for development decisions; preserve canonical 520-attempt primary export",
+  "scientific_review": "not_assessed"
+}

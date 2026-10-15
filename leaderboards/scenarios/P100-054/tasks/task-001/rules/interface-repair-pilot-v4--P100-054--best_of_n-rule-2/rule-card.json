@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.017429962226861558,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * (width_um * thickness_um * (length_um - notch_depth_um) / (notch_width_um * length_um))",
+  "inputs": [
+    "width_um",
+    "thickness_um",
+    "length_um",
+    "notch_depth_um",
+    "notch_width_um"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.19188841479951446,
+    "p1": 0.13774698466309868
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "length_um": 0.2946641047066705,
+      "notch_depth_um": 0.5648182757514264,
+      "notch_width_um": -0.24333282273950935,
+      "thickness_um": 0.49531039854892583,
+      "width_um": -0.3943059343405861
+    },
+    "mean": 0.0009624096397375536,
+    "p90_abs": 0.03712049967955266,
+    "std": 0.022109653428118
+  },
+  "rule_id": "interface-repair-pilot-v4--P100-054--best_of_n-rule-2",
+  "rule_sha256": "876ea8e9a2bd01d2497e57632e52e9d56965599f5cfac1ccc242e2d67ba6d882",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.19188841479951446 + 0.13774698466309868 * (width_um * thickness_um * (length_um - notch_depth_um) / (notch_width_um * length_um))",
+    "expression_bytes": 97,
+    "free_parameters": 2,
+    "learned_state_bytes": 55,
+    "literal_state_bytes": 0,
+    "nodes": 31,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-054.compact.v2",
+  "train_error": 0.021175876294228967,
+  "units": {
+    "inputs": {
+      "length_um": "um",
+      "notch_depth_um": "um",
+      "notch_width_um": "um",
+      "thickness_um": "um",
+      "width_um": "um"
+    },
+    "output": "mN",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

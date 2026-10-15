@@ -1,0 +1,86 @@
+{
+  "description": "measured anodic permeation current",
+  "domain": "Hydrogen embrittlement",
+  "independent_unit": "Two chronological traces with no independent specimen identifiers; nonoverlapping temporal blocks are scoring units, not independent specimens. All trace linkage is explicit.",
+  "input_units": {
+    "drive": "mA/cm²; imposed cathodic-current step",
+    "high": "binary known high-current condition",
+    "offset": "μA; mean first3 observations",
+    "t": "s since third baseline observation"
+  },
+  "limitations": [
+    "Forward extrapolation within two linked permeation traces. Parameters are learned only from earlier chronological blocks; confirmation is the last20% of each trace. Known imposed current step and initial three-point current calibration are permitted.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "μA",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 370,
+    "test": 370,
+    "train": 1113
+  },
+  "scenario_id": "P100-062",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 240436,
+    "limit_bytes": 10000000,
+    "public_bytes": 53445
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://data.mendeley.com/datasets/tnsgf7v76z/1",
+        "license": "CC BY 4.0",
+        "rights_url": "https://data.mendeley.com/datasets/tnsgf7v76z/1",
+        "source": "scenarios/62_materials_steel_hydrogen/raw/Permeation_MS AHSS 1300.xlsx",
+        "source_sha256": "117d75a3f8329456732beada95b8f2be8bda688da88e6b8c7c83a9ee49698b3b"
+      },
+      {
+        "citation_url": "https://data.mendeley.com/datasets/tnsgf7v76z/1",
+        "license": "CC-BY-4.0 (proposed release terms for curator documentation; pending owner acceptance)",
+        "rights_url": "https://data.mendeley.com/datasets/tnsgf7v76z/1",
+        "source": "scenarios/62_materials_steel_hydrogen/context/SOURCE_FACTS.json",
+        "source_sha256": "89b811cbc81794072ad18505968d5a9e6dd874bd1180ef9c331de3060013d92b"
+      }
+    ],
+    "historical_case": "P100-062",
+    "license": "CC BY 4.0",
+    "url": "https://data.mendeley.com/datasets/tnsgf7v76z/1",
+    "version": "1"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "e2b4a397f90ac7b2155cdde1bc5a57c8da5b58399b9c34f1b3f702fba54ccfc9",
+        "groups": 2,
+        "rows": 370,
+        "sample_ids_sha256": "fc8ecbdea8e8c99214bcee521f83e9b1729cbb5d6db9065d33e4319be2d61d63"
+      },
+      "test": {
+        "group_ids_sha256": "15f26cc379d3e7ef34b7b2d99844e395e8b8e89df1f5690c36dde6b322aad6b1",
+        "groups": 2,
+        "rows": 370,
+        "sample_ids_sha256": "2b420bc86a1e527cdfb21208116cec7fbbaeb9a14279f636a31c6a540fff2b72"
+      },
+      "train": {
+        "group_ids_sha256": "247e2368f6fa25349a057c1fbe00b2ea3f42ae0c1ad0d47952a296e73dfae3e3",
+        "groups": 6,
+        "rows": 1113,
+        "sample_ids_sha256": "5045a92d233d6ba44aa9861a7d9ccf07b8efe9aa72c0af43f02eabd18a91d3f8"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Hydrogen permeation test on MS AHSS grade 1300",
+  "version": "1.0.0rc2"
+}

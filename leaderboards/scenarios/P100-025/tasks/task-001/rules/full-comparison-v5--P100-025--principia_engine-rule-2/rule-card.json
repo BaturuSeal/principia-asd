@@ -1,0 +1,85 @@
+{
+  "dev_error": 0.07175351263886845,
+  "execution_status": "complete",
+  "expression": "p0+p1*(rF)",
+  "inputs": [
+    "pre",
+    "jump",
+    "rL",
+    "rF",
+    "dL",
+    "d2L",
+    "f",
+    "discharge",
+    "rest",
+    "e"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.636404767328667,
+    "p1": 1.030576972412644
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "d2L": -0.173047144435217,
+      "dL": 0.23773859915373546,
+      "discharge": -0.4069648323499694,
+      "e": -0.026746915884303432,
+      "f": -0.03013295762369538,
+      "jump": -0.45220872318019906,
+      "pre": -0.48040348350462253,
+      "rF": 0.022933078695304053,
+      "rL": 0.07736559318214713,
+      "rest": -0.4069648323499694
+    },
+    "mean": 0.05399186350048382,
+    "p90_abs": 0.1574971077363304,
+    "std": 0.0760950176567044
+  },
+  "rule_id": "full-comparison-v5--P100-025--principia_engine-rule-2",
+  "rule_sha256": "38ba1367204b6568dafbf78ffda22a4274dfe03b2e23762b09c5dfc368854798",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.636404767328667 + 1.030576972412644 * rF",
+    "expression_bytes": 10,
+    "free_parameters": 2,
+    "learned_state_bytes": 50,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-025.compact.v2",
+  "train_error": 0.07788875679091155,
+  "units": {
+    "inputs": {
+      "d2L": "eV⁻²",
+      "dL": "eV⁻¹",
+      "discharge": "binarydischarge/rest2branch",
+      "e": "eVrelative7112",
+      "f": "dimensionlessnominalprotocolprogress",
+      "jump": "rawμ(E),dimensionless",
+      "pre": "rawμ(E),dimensionless",
+      "rF": "normalizedmeasuredFePO4reference",
+      "rL": "normalizedmeasuredLiFePO4reference",
+      "rest": "binaryrestsegment"
+    },
+    "output": "dimensionless μ(E)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

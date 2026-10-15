@@ -1,0 +1,108 @@
+{
+  "assets": [
+    {
+      "bytes": 4676794,
+      "path": "scenarios/15_economics_federal_reserve_shed_2025/raw/SHED_public_use_data_2025_CSV.zip",
+      "role": "respondents_archive",
+      "sha256": "a4ab3f7d042f16d63626b1af9aeb6f0b8a0b39e412fa94b87265bc67fe26de14"
+    },
+    {
+      "bytes": 863597,
+      "path": "scenarios/15_economics_federal_reserve_shed_2025/context/SHED_2025_codebook.pdf",
+      "role": "codebook",
+      "sha256": "143137652f0464c57704ee60fa17d2eb94a24ed976bde26a0287920bf250c6df"
+    }
+  ],
+  "group_assignments": {
+    "state:ak": "test",
+    "state:al": "test",
+    "state:ar": "train",
+    "state:az": "dev",
+    "state:ca": "train",
+    "state:co": "train",
+    "state:ct": "test",
+    "state:dc": "train",
+    "state:de": "train",
+    "state:fl": "train",
+    "state:ga": "dev",
+    "state:hi": "train",
+    "state:ia": "train",
+    "state:id": "train",
+    "state:il": "train",
+    "state:in": "train",
+    "state:ks": "train",
+    "state:ky": "dev",
+    "state:la": "train",
+    "state:ma": "dev",
+    "state:md": "test",
+    "state:me": "dev",
+    "state:mi": "train",
+    "state:mn": "train",
+    "state:mo": "train",
+    "state:ms": "train",
+    "state:mt": "test",
+    "state:nc": "train",
+    "state:nd": "dev",
+    "state:ne": "train",
+    "state:nh": "dev",
+    "state:nj": "train",
+    "state:nm": "train",
+    "state:nv": "train",
+    "state:ny": "train",
+    "state:oh": "train",
+    "state:ok": "train",
+    "state:or": "train",
+    "state:pa": "train",
+    "state:ri": "test",
+    "state:sc": "train",
+    "state:sd": "dev",
+    "state:tn": "train",
+    "state:tx": "test",
+    "state:ut": "train",
+    "state:va": "test",
+    "state:vt": "test",
+    "state:wa": "train",
+    "state:wi": "train",
+    "state:wv": "test",
+    "state:wy": "train"
+  },
+  "historical_contract_sha256": "a0139d132280ecbc6f80c365f54cc8d6c8ae2dbda4a3e9f6a913487a55e631b3",
+  "input_units": {
+    "age": "years",
+    "household_size": "persons",
+    "income_proxy": "thousands USD/year bracket proxy",
+    "shock": "no paid/profit work lastmonth (D1A0) binary, not jobloss"
+  },
+  "limitations": [
+    "Hypothetical expense response, not prospective distress or causal income effect",
+    "Fixed income bracket proxies; 175k open top-bin value is a convention not measured income",
+    "Source has imputed target/input responses; training/donor scope unverified",
+    "Profile information was collected separately; no synchronized-clock claim",
+    "Unweighted compact loss is not population or survey-weighted evidence",
+    "Source rights/notices and scientific admission remain pending"
+  ],
+  "numerical_policy": {
+    "discovery_rule_fits": 0,
+    "local_preprocessing_fits": 0,
+    "source_imputation": "Retain all source-imputed fields without refitting or outcome-based exclusions; upstream fitting scope unverified",
+    "split_policy": "Whole registered states, original ten confirmation states unchanged",
+    "weights": "Positive final weight for eligibility only; compact scoring unweighted"
+  },
+  "output_units": "binary EF3_h",
+  "parser": "shed-native-state-respondent-custody-v1",
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-015/native.py",
+    "reuse": "Historical label/identity, source-wide state hashing and fixed income proxies preserved; bounded CSV decoder and source-imputation/weighting audit independently implemented; no evaluator state copied",
+    "sha256": "2e83c9d1196da6ae4586efba4f75fc6ec85b0d4c6e0385d2581ab38aaf9f4b12"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-015",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.17016/datasets.002",
+    "retrieved_utc": "2026-08-23T14:14:09.390874Z",
+    "url": "https://www.federalreserve.gov/consumerscommunities/shed_data.htm",
+    "version": "2025 public-use release updated July 2026"
+  },
+  "source_scenario_descriptor_sha256": "0393f69fa924617e23a6cecef4aa90af5d42f5408d99ad42fca53b904a2f25b9"
+}

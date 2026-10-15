@@ -1,0 +1,64 @@
+{
+  "dev_error": 39.163219684586316,
+  "execution_status": "complete",
+  "expression": "p0+p1*(current + 6*slope6)",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 24.62830099100203,
+    "p1": 0.9956705063486389
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.027180653375580725,
+      "slope6": 0.3764069219311832,
+      "time_h": -0.05130331059582705
+    },
+    "mean": -1.2208595926281731,
+    "p90_abs": 87.8682409097681,
+    "std": 70.57836911656545
+  },
+  "rule_id": "full-comparison-v5--P100-086--principia_engine-rule-3",
+  "rule_sha256": "be477c0254635b2c52eacfd14055d0a6bf193d558eb2d96d69c79da47de0fb31",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "24.62830099100203 + 0.9956705063486389 * (current + 6 * slope6)",
+    "expression_bytes": 26,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 1,
+    "nodes": 18,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 38.21923270243564,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

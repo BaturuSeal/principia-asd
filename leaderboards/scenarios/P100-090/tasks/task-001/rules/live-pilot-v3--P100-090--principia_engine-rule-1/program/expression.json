@@ -1,0 +1,16 @@
+{
+  "expression": "p0+p1*(0.5 * (p_now + p_past))+p2*(p_now)+p3*(p_past)+p4*((p_past)**2)+p5*(1 - polarization_variance)+p6*(polarization_variance)+p7*(p_now*p_past)",
+  "parameters": {
+    "p0": 0.0010820286161360424,
+    "p1": 0.28376779342518965,
+    "p2": 0.9086985560107919,
+    "p3": -0.37258303484172267,
+    "p4": 0.7443530983757778,
+    "p5": 0.07198399035087047,
+    "p6": -0.0019648033691332576,
+    "p7": -0.7087130889329215
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

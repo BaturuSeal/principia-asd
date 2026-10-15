@@ -1,0 +1,50 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.08333333333333337,
+    "mae": null,
+    "primary": "mae",
+    "primary_error": null,
+    "rmse": null
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.3762859391534392,
+  "by_group": [],
+  "coverage": {
+    "eligible": 36,
+    "fraction": 0.9166666666666666,
+    "predicted": 33
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "principia_engine",
+  "rule_id": "full-comparison-v5--P100-027--principia_engine-rule-1",
+  "rule_sha256": "84528a60ddfdc05dca0ef060cb9403719190debbe816dfd8c5da2ea11564668a",
+  "run_id": "full-comparison-v5--P100-027--principia_engine",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.146936558335454 + 1.304199119224962 * (quality / rho_vapor / (quality / rho_vapor + (1 - quality) / rho_liquid) * radial_fraction ** 0.41787309555236074) + -1.4153903639799104 * radial_fraction ** 0.5 + -0.0049719574734921005 * (massflux_kg_m2_s / 700) * (1 - radial_fraction) ** 2 + -0.5084497931956534 * abs(radial_fraction - 0.5)",
+    "expression_bytes": 207,
+    "free_parameters": 6,
+    "learned_state_bytes": 161,
+    "literal_state_bytes": 12,
+    "nodes": 88,
+    "numeric_literal_count": 6,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.29030260698310406,
+    "perturbation_labels_available": false,
+    "population_rows": 36,
+    "ranking": false,
+    "samples": 36,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "invalid",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

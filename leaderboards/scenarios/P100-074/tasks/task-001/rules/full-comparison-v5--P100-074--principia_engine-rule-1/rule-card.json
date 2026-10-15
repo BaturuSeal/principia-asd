@@ -1,0 +1,71 @@
+{
+  "dev_error": 67.04606706404024,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * (time_min * calibration_v6) + p2 * (calibration_F6 * (time_min - 6) / 6)",
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "engine-round-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 24.02511768146325,
+    "p1": 1.005635196060403,
+    "p2": -0.2967783873180357
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "calibration_F6": -0.24841771251116881,
+      "calibration_curvature": 0.24841771251116884,
+      "calibration_v6": -0.24841771251116881,
+      "concentration_uM": -0.24841771251116881,
+      "time_min": -0.4157285724076547
+    },
+    "mean": -59.773374093661005,
+    "p90_abs": 146.38816848643768,
+    "std": 59.349008323766036
+  },
+  "rule_id": "full-comparison-v5--P100-074--principia_engine-rule-1",
+  "rule_sha256": "7bf6d847747e490812701436a6395d2b5f1701b84492678f92e08aeb7030ef87",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "24.02511768146325 + 1.005635196060403 * (time_min * calibration_v6) + -0.2967783873180357 * (calibration_F6 * (time_min - 6) / 6)",
+    "expression_bytes": 82,
+    "free_parameters": 3,
+    "learned_state_bytes": 77,
+    "literal_state_bytes": 2,
+    "nodes": 33,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-074.compact.v2",
+  "train_error": 45.80501631883335,
+  "units": {
+    "inputs": {
+      "calibration_F6": "source fluorescence units",
+      "calibration_curvature": "source fluorescence units/min^2",
+      "calibration_v6": "source fluorescence units/min",
+      "concentration_uM": "uM",
+      "time_min": "min"
+    },
+    "output": "source fluorescence units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

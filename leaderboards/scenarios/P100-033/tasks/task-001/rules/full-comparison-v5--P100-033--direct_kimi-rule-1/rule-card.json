@@ -1,0 +1,82 @@
+{
+  "dev_error": 10.483953586664256,
+  "execution_status": "complete",
+  "expression": "fft_bpm + p0 * acf_bpm + p1 * half_bpm + p2 * half_strength + p3 * spectral_quality + p4 * agreement + p5 * motion + p6 * ear + p7",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.06046533722812384,
+    "p1": -1.575986359781622,
+    "p2": 47.26913265337146,
+    "p3": 12.53668119506674,
+    "p4": -0.08673358443608006,
+    "p5": 3.244208884033519,
+    "p6": -1.4843786801351777,
+    "p7": 43.804712192663814
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.2108306877512208,
+      "agreement": 0.14652011013973257,
+      "ear": -0.23260064580214448,
+      "fft_bpm": 0.3881478346481568,
+      "half_bpm": 0.1355268741745459,
+      "half_strength": -0.23455981530437053,
+      "motion": 0.0773944680241237,
+      "spectral_quality": -0.09842546109856516
+    },
+    "mean": 5.411009261887664,
+    "p90_abs": 21.93335891857636,
+    "std": 13.25405564973443
+  },
+  "rule_id": "full-comparison-v5--P100-033--direct_kimi-rule-1",
+  "rule_sha256": "4038a5a4254c7cfa7146b97142d5cc3b979034f6a797e7cbc3f248cf81539d38",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "fft_bpm + 0.06046533722812384 * acf_bpm + -1.575986359781622 * half_bpm + 47.26913265337146 * half_strength + 12.53668119506674 * spectral_quality + -0.08673358443608006 * agreement + 3.244208884033519 * motion + -1.4843786801351777 * ear + 43.804712192663814",
+    "expression_bytes": 130,
+    "free_parameters": 8,
+    "learned_state_bytes": 209,
+    "literal_state_bytes": 0,
+    "nodes": 63,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 15
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 12.378552671007263,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

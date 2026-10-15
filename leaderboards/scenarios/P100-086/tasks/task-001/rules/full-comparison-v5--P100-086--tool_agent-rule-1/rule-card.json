@@ -1,0 +1,63 @@
+{
+  "dev_error": 39.50480869070261,
+  "execution_status": "complete",
+  "expression": "p0 + p1*current + p2*slope6 + p3*time_h",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 156.5000109164458,
+    "p1": 0.9797478435149393,
+    "p2": 4.284060127876344,
+    "p3": 1.022219853820775
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.023072903834392637,
+      "slope6": 0.0670379933985632,
+      "time_h": -0.02358578358372752
+    },
+    "mean": -0.24350871276899694,
+    "p90_abs": 82.64834209178989,
+    "std": 65.15752036188002
+  },
+  "rule_id": "full-comparison-v5--P100-086--tool_agent-rule-1",
+  "rule_sha256": "3de3c7573a3c2a7d60dda788d248b9e81caf8d4dde5e092e7a0c0b2ecd3ae266",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "156.5000109164458 + 0.9797478435149393 * current + 4.284060127876344 * slope6 + 1.022219853820775 * time_h",
+    "expression_bytes": 39,
+    "free_parameters": 4,
+    "learned_state_bytes": 101,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 39.18446848411449,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

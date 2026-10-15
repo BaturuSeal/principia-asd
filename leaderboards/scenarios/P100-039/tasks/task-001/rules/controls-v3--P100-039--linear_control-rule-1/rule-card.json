@@ -1,0 +1,61 @@
+{
+  "dev_error": 0.19853014033333974,
+  "execution_status": "complete",
+  "expression": "minimum(1,maximum(0,p0+p1*(education)+p2*(age)+p3*(japan)))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.8370161210614262,
+    "p1": 0.06321132458909992,
+    "p2": 0.005983090054334808,
+    "p3": 0.020691065513595838
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.0507098404193018,
+      "education": 0.016913756092741632,
+      "japan": 0.00407014763607925
+    },
+    "mean": 0.010017640841722518,
+    "p90_abs": 0.6896339737672998,
+    "std": 0.44896180884250386
+  },
+  "rule_id": "controls-v3--P100-039--linear_control-rule-1",
+  "rule_sha256": "f86f8f8dbba0f03bccb833ec33c62a876d62b6e5504159ceb21a173c768adcb9",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -0.8370161210614262 + 0.06321132458909992 * education + 0.005983090054334808 * age + 0.020691065513595838 * japan))",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 110,
+    "literal_state_bytes": 2,
+    "nodes": 35,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.19046325467359268,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

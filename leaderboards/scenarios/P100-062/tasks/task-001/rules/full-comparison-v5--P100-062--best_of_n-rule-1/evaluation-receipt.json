@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 2.2973764421001883,
+    "primary": "mae",
+    "primary_error": 2.2973764421001883,
+    "rmse": 2.4737661699507214
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 62.72231225017243,
+  "by_group": [
+    {
+      "error": 3.1544144189982455,
+      "group": "group-1000ba85327fac63d060ca46",
+      "rows": 119
+    },
+    {
+      "error": 1.440338465202131,
+      "group": "group-4d7b9fc94e5faa5af1241873",
+      "rows": 251
+    }
+  ],
+  "coverage": {
+    "eligible": 370,
+    "fraction": 1.0,
+    "predicted": 370
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-062--best_of_n-rule-1",
+  "rule_sha256": "289e5e0e1bd47288346e32d7fd20f8d4e81273f10ddfb0d6e0711815ed9d8129",
+  "run_id": "full-comparison-v5--P100-062--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + -6.456591648561394 * (1 - exp(-t / 188.37417760680424)) + 58.27455220234948 * drive * (1 - exp(-t / 3458.528046041861)) + -236.9493218768781 * high * (1 - exp(-t / 4292.129249262086)) + -0.0006702717385549008 * t",
+    "expression_bytes": 108,
+    "free_parameters": 7,
+    "learned_state_bytes": 183,
+    "literal_state_bytes": 3,
+    "nodes": 79,
+    "numeric_literal_count": 3,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 28
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.03310096707922326,
+    "perturbation_labels_available": false,
+    "population_rows": 370,
+    "ranking": false,
+    "samples": 370,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

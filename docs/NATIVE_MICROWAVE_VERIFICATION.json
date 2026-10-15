@@ -1,0 +1,310 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T18:10:50.388765+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 927745,
+  "registered_source_files": 3,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "One installation/acquisition; shared directed-pair calibration does not establish independent-device transfer",
+        "Frequency-control extrapolation in source full-scale units; SI amplitude/power and input/output axis orientation not independently certified",
+        "Magnitude-only target does not recover complex phase, pump mechanism or the inverse control problem",
+        "USB export is an upstream measured/reduced response; detector processing and USB std uncertainty not independently validated",
+        "Rule-only complexity excludes complex magnitudes and calibrated input construction",
+        "Rights/notices, calibrated perturbations and final scientific admission pending"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-028/reconstruction.json",
+      "candidate_receipt_sha256": "95a61ee96974ccfbf4ed3be5ade861ff2029ffcd30947b39432b0d3d5ac1a64c",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 4524
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1560
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 780,
+            "reconstructed_rows": 780,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 1560,
+            "reconstructed_rows": 1560,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 3744,
+            "reconstructed_rows": 3744,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_microwave_validation": {
+        "calibration_complex_values": 468,
+        "calibration_matrices": [
+          0,
+          1,
+          11
+        ],
+        "dataset_inventory": [
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/USB",
+            "dtype": "complex128",
+            "shape": [
+              1,
+              51,
+              1,
+              1,
+              1,
+              13,
+              13
+            ],
+            "unit": "fsu complex",
+            "values": 8619
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/amp fc pumps",
+            "dtype": "float64",
+            "shape": [
+              51
+            ],
+            "unit": "fsu",
+            "values": 51
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/freq sig",
+            "dtype": "float64",
+            "shape": [
+              1,
+              13
+            ],
+            "unit": "Hz",
+            "values": 13
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/freq fc pumps",
+            "dtype": "float64",
+            "shape": [
+              1,
+              12
+            ],
+            "unit": "Hz",
+            "values": 12
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/freq param pumps",
+            "dtype": "float64",
+            "shape": [
+              1,
+              0
+            ],
+            "unit": "Hz",
+            "values": 0
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/amp param pumps",
+            "dtype": "float64",
+            "shape": [
+              1
+            ],
+            "unit": "fsu",
+            "values": 1
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/phase fc pumps",
+            "dtype": "float64",
+            "shape": [
+              1
+            ],
+            "unit": "rad",
+            "values": 1
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/phase param pumps",
+            "dtype": "float64",
+            "shape": [
+              1
+            ],
+            "unit": "rad",
+            "values": 1
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/df",
+            "dtype": "float64",
+            "shape": [
+              1
+            ],
+            "unit": "Hz",
+            "values": 1
+          },
+          {
+            "dataset": "Scattering/2025-11-21_16_40_49/pumping scheme",
+            "dtype": "int64",
+            "shape": [],
+            "unit": "int",
+            "values": 1
+          }
+        ],
+        "decoder": {
+          "h5py": "3.16.0",
+          "h5py_core_sha256": "33cbcd8ee753725155fbc1dbcb4166ff9e744fbf26902951d0c5a279dbac6e87",
+          "hdf5": "2.0.0"
+        },
+        "diagonal_values_excluded": 663,
+        "directed_pairs_per_matrix": 156,
+        "eligible_rows": 6084,
+        "fit_count": 0,
+        "group_counts": {
+          "dev": 5,
+          "test": 10,
+          "train": 24
+        },
+        "learned_transformations": [],
+        "legacy_five_folds_not_used_in_compact_split": true,
+        "native_complex_values": 8619,
+        "phase_policy": "Native complex arrays decoded; magnitude target discards phase without a reciprocity assumption",
+        "physical_replicates": "One installation/acquisition; pump matrices are linked conditions, not independent devices",
+        "signal_frequency_Hz": [
+          4199400000.0,
+          4199500000.0,
+          4199600000.0,
+          4199700000.0,
+          4199800000.0,
+          4199900000.0,
+          4200000000.0,
+          4200100000.0,
+          4200200000.0,
+          4200300000.0,
+          4200400000.0,
+          4200500000.0,
+          4200600000.0
+        ],
+        "source_std_used": false,
+        "target_pump_range": [
+          0.14122448979591837,
+          0.18
+        ],
+        "test_pump_range": [
+          0.17081632653061224,
+          0.18
+        ],
+        "unscored_noncalibration_pump_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "native_slag_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_xas_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "8c2cde906e706ea1e9b33b3ef6c89af0d982413adc69a19d605b54f3b840b1af",
+      "recipe_sha256": "d92e762906ee133e84c7923c71f72c51112bafc785c3f30391ef085a733162ad",
+      "rows": {
+        "dev": 780,
+        "test": 1560,
+        "train": 3744
+      },
+      "runtime_binding_sha256": "32520bab7b6b2471946df7470627d60208b83e0800696f718dc9bc508773c689",
+      "scenario_id": "P100-028",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "pump-15",
+            "pump-20",
+            "pump-28",
+            "pump-36",
+            "pump-38"
+          ],
+          "test": [
+            "pump-41",
+            "pump-42",
+            "pump-43",
+            "pump-44",
+            "pump-45",
+            "pump-46",
+            "pump-47",
+            "pump-48",
+            "pump-49",
+            "pump-50"
+          ],
+          "train": [
+            "pump-12",
+            "pump-13",
+            "pump-14",
+            "pump-16",
+            "pump-17",
+            "pump-18",
+            "pump-19",
+            "pump-21",
+            "pump-22",
+            "pump-23",
+            "pump-24",
+            "pump-25",
+            "pump-26",
+            "pump-27",
+            "pump-29",
+            "pump-30",
+            "pump-31",
+            "pump-32",
+            "pump-33",
+            "pump-34",
+            "pump-35",
+            "pump-37",
+            "pump-39",
+            "pump-40"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

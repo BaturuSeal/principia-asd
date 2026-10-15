@@ -1,0 +1,61 @@
+{
+  "dev_error": 39.78091202932602,
+  "execution_status": "complete",
+  "expression": "current + slope6 * p0 + p1",
+  "inputs": [
+    "time_h",
+    "current",
+    "slope6"
+  ],
+  "method_id": "direct_kimi",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 4.62341743699094,
+    "p1": 96.0736305129557
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": 0.21716267506771905,
+      "slope6": 0.07567719801571225,
+      "time_h": 0.20315725150129219
+    },
+    "mean": -0.8449094587483004,
+    "p90_abs": 87.49838322189997,
+    "std": 67.44466071607992
+  },
+  "rule_id": "full-comparison-v5--P100-086--direct_kimi-rule-1",
+  "rule_sha256": "044d49c3f2bf2389ad30d2af68e4b413d7d695413ab75bff4eaa5df79e0570c5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "current + slope6 * 4.62341743699094 + 96.0736305129557",
+    "expression_bytes": 26,
+    "free_parameters": 2,
+    "learned_state_bytes": 48,
+    "literal_state_bytes": 0,
+    "nodes": 15,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-086.compact.v2",
+  "train_error": 39.765487547200934,
+  "units": {
+    "inputs": {
+      "current": "source potency unit; last available potency measurement",
+      "slope6": "source potency unit/h from strictly past 6 h",
+      "time_h": "h since cultivation, source hh"
+    },
+    "output": "source potency unit (undocumented)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

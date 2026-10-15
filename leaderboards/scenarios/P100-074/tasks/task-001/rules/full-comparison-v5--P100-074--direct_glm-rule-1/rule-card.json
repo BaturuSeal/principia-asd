@@ -1,0 +1,71 @@
+{
+  "dev_error": 88.52368750600269,
+  "execution_status": "complete",
+  "expression": "calibration_F6 + p0 * calibration_v6 * (time_min - 6.0) + p1 * calibration_curvature * (time_min - 6.0) ** 2 + p2 * calibration_v6 * (time_min - 6.0) ** 2 / (p3 + concentration_uM) + p4 * (time_min - 6.0) ** 2 * sqrt(calibration_F6 + p5)",
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "method_id": "direct_glm",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8954499882933211,
+    "p1": 0.01273799853835839,
+    "p2": 0.005369287919589638,
+    "p3": -0.42125692320134694,
+    "p4": -0.013586113417822794,
+    "p5": -1.4406399796718445
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "calibration_F6": -0.11289422717409045,
+      "calibration_curvature": 0.11289422717409042,
+      "calibration_v6": -0.11289422717409042,
+      "concentration_uM": -0.11289422717409042,
+      "time_min": -0.5748115631849863
+    },
+    "mean": -88.5236875060027,
+    "p90_abs": 170.21157512220083,
+    "std": 58.31592159404666
+  },
+  "rule_id": "full-comparison-v5--P100-074--direct_glm-rule-1",
+  "rule_sha256": "3763543773fa8aaaa9e4158f7126eae798f76bb053eba8bc5159ab40e97cedbb",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "calibration_F6 + 0.8954499882933211 * calibration_v6 * (time_min - 6.0) + 0.01273799853835839 * calibration_curvature * (time_min - 6.0) ** 2 + 0.005369287919589638 * calibration_v6 * (time_min - 6.0) ** 2 / (-0.42125692320134694 + concentration_uM) + -0.013586113417822794 * (time_min - 6.0) ** 2 * sqrt(calibration_F6 + -1.4406399796718445)",
+    "expression_bytes": 237,
+    "free_parameters": 6,
+    "learned_state_bytes": 165,
+    "literal_state_bytes": 15,
+    "nodes": 87,
+    "numeric_literal_count": 7,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 23
+  },
+  "task_id": "P100-074.compact.v2",
+  "train_error": 46.950359438055926,
+  "units": {
+    "inputs": {
+      "calibration_F6": "source fluorescence units",
+      "calibration_curvature": "source fluorescence units/min^2",
+      "calibration_v6": "source fluorescence units/min",
+      "concentration_uM": "uM",
+      "time_min": "min"
+    },
+    "output": "source fluorescence units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

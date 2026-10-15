@@ -1,0 +1,205 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-11T22:47:32.690833+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 8015725,
+  "registered_source_files": 6,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-043/reconstruction.json",
+      "candidate_receipt_sha256": "93c047017ba7362b66ad2792b6b0ad3a3f6afef6e9583f3493ba9546be952956",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 741
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 221
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 125,
+            "reconstructed_rows": 125,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 221,
+            "reconstructed_rows": 221,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 616,
+            "reconstructed_rows": 616,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "reader_source_sha256": "258ab1bde158cc525d6e855da2e8af8efabd288dedf6ddd2f09ab77134cb0651",
+      "recipe_sha256": "f6c808b1b2ace26208d440419cdcfae3afa0f707e7f6115ad0c1b5aa39b806b0",
+      "rows": {
+        "dev": 125,
+        "test": 221,
+        "train": 616
+      },
+      "runtime_binding_sha256": "de5755daa92453dbe242fa3ab5865ab39e37733a1bef6229f08d3229b2551c9b",
+      "scenario_id": "P100-043",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "1280x15",
+            "512x11",
+            "768x3"
+          ],
+          "test": [
+            "1024x28",
+            "1280x36",
+            "1536x50",
+            "384x13",
+            "512x12"
+          ],
+          "train": [
+            "1792x18",
+            "1792x7",
+            "2048x27",
+            "2560x8",
+            "256x23",
+            "256x27",
+            "256x71",
+            "256x80",
+            "3072x12",
+            "384x36",
+            "512x13",
+            "512x14",
+            "512x16",
+            "768x45"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      }
+    },
+    {
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-051/reconstruction.json",
+      "candidate_receipt_sha256": "245d9ade4671b10a09dee027eefee846f439ed25601228362b16e36ee6bf998f",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 5346
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1782
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 990,
+            "reconstructed_rows": 990,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 1782,
+            "reconstructed_rows": 1782,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 4356,
+            "reconstructed_rows": 4356,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "reader_source_sha256": "258ab1bde158cc525d6e855da2e8af8efabd288dedf6ddd2f09ab77134cb0651",
+      "recipe_sha256": "96ec7c1050856485f9b09efd5f1d500a46b93fb0ce758841ab02fb458fb9b839",
+      "rows": {
+        "dev": 990,
+        "test": 1782,
+        "train": 4356
+      },
+      "runtime_binding_sha256": "de5755daa92453dbe242fa3ab5865ab39e37733a1bef6229f08d3229b2551c9b",
+      "scenario_id": "P100-051",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "wave14",
+            "wave18",
+            "wave25",
+            "wave27",
+            "wave9"
+          ],
+          "test": [
+            "wave10",
+            "wave12",
+            "wave15",
+            "wave16",
+            "wave22",
+            "wave24",
+            "wave29",
+            "wave36",
+            "wave6"
+          ],
+          "train": [
+            "wave1",
+            "wave11",
+            "wave13",
+            "wave17",
+            "wave19",
+            "wave2",
+            "wave20",
+            "wave21",
+            "wave23",
+            "wave26",
+            "wave28",
+            "wave3",
+            "wave30",
+            "wave31",
+            "wave32",
+            "wave33",
+            "wave34",
+            "wave35",
+            "wave4",
+            "wave5",
+            "wave7",
+            "wave8"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      }
+    }
+  ],
+  "scope": "Curator-only native reconstruction and corrected development partition drafts, not scientific admission",
+  "status": "passed",
+  "test_targets_exported": false
+}

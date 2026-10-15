@@ -1,0 +1,88 @@
+{
+  "dev_error": 0.22884821897742588,
+  "execution_status": "complete",
+  "expression": "1/(1+exp(-(p0 + p1*log_duration + p2*log_centroid + p3*log_peak + p4*high_share + p5*entropy + p6*flatness + p7*envelope_cv)))",
+  "inputs": [
+    "log_duration",
+    "log_centroid",
+    "log_peak",
+    "high_share",
+    "entropy",
+    "flatness",
+    "envelope_cv",
+    "log_modulation",
+    "log_rms",
+    "species_code"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -6.605396257912836,
+    "p1": -2.061957368941191,
+    "p2": -0.9299120907314633,
+    "p3": 0.015241892650654103,
+    "p4": 2.8741021943119622,
+    "p5": 4.925810393753256,
+    "p6": -1.738190577650004,
+    "p7": 1.1898224603177456
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "entropy": 0.06118205406349238,
+      "envelope_cv": 0.06886988152993188,
+      "flatness": 0.06570712960140637,
+      "high_share": -0.06648671967685917,
+      "log_centroid": 0.01279598649028823,
+      "log_duration": 0.03153297151966156,
+      "log_modulation": -0.035231424396815904,
+      "log_peak": 0.022495443938755834,
+      "log_rms": 0.08948549451319106,
+      "species_code": -0.057468238453597525
+    },
+    "mean": -0.08243438778069816,
+    "p90_abs": 0.8454470969964664,
+    "std": 0.3917694257466433
+  },
+  "rule_id": "full-comparison-v5--P100-035--direct_deepseek-rule-1",
+  "rule_sha256": "540c03f5321aedd2daa5d135934c2156542dc52ab22335b8a46fe607ebbdebe5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(-6.605396257912836 + -2.061957368941191 * log_duration + -0.9299120907314633 * log_centroid + 0.015241892650654103 * log_peak + 2.8741021943119622 * high_share + 4.925810393753256 * entropy + -1.738190577650004 * flatness + 1.1898224603177456 * envelope_cv)))",
+    "expression_bytes": 126,
+    "free_parameters": 8,
+    "learned_state_bytes": 210,
+    "literal_state_bytes": 2,
+    "nodes": 70,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-035.compact.v2",
+  "train_error": 0.17975473718056106,
+  "units": {
+    "inputs": {
+      "entropy": "dimensionless",
+      "envelope_cv": "dimensionless",
+      "flatness": "dimensionless",
+      "high_share": "dimensionless",
+      "log_centroid": "dimensionless",
+      "log_duration": "dimensionless",
+      "log_modulation": "dimensionless",
+      "log_peak": "dimensionless",
+      "log_rms": "dimensionless",
+      "species_code": "dimensionless"
+    },
+    "output": "probability",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

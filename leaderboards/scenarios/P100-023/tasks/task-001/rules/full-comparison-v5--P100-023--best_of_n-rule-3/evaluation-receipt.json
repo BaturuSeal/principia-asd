@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.3245070528375142,
+    "primary": "mae",
+    "primary_error": 0.3245070528375142,
+    "rmse": 0.6271031762069473
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.262718234646325,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.3862958710287034,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "best_of_n",
+  "rule_id": "full-comparison-v5--P100-023--best_of_n-rule-3",
+  "rule_sha256": "406e7c00c40ff04a48b791be8343485d8319e32c674d6c94423474bcf766226a",
+  "run_id": "full-comparison-v5--P100-023--best_of_n",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.11209874092465881 + -0.17314507306633523 * (viscosity * speed / load) + 7.206579645339988 * (H * load / area) + 0.29823727977734943 * (hydration / 100) + -8.384025761840096 * (viscosity * speed / load) * (H * load / area) + 0.5435970921740165 * (viscosity * speed / load) * (hydration / 100) + -12.713323855116675 * (H * load / area) * (hydration / 100) + 18.07649998847494 * (viscosity * speed / load) * (H * load / area) * (hydration / 100)",
+    "expression_bytes": 313,
+    "free_parameters": 8,
+    "learned_state_bytes": 211,
+    "literal_state_bytes": 12,
+    "nodes": 155,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 39
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.16802223217371431,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 6.0574804725052385,
+    "primary": "mae",
+    "primary_error": 6.0574804725052385,
+    "rmse": 7.799573262922681
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 62.72231225017243,
+  "by_group": [
+    {
+      "error": 10.911329741400646,
+      "group": "group-1000ba85327fac63d060ca46",
+      "rows": 119
+    },
+    {
+      "error": 1.2036312036098304,
+      "group": "group-4d7b9fc94e5faa5af1241873",
+      "rows": 251
+    }
+  ],
+  "coverage": {
+    "eligible": 370,
+    "fraction": 1.0,
+    "predicted": 370
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_kimi",
+  "rule_id": "full-comparison-v5--P100-062--direct_kimi-rule-1",
+  "rule_sha256": "6b46e777927717d7fa698abc68cd3a0e2d171d6cf32636152ebf32d057d591ce",
+  "run_id": "full-comparison-v5--P100-062--direct_kimi",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + drive * (33.12380763515693 + -19.236833620883115 * high) * (1 - exp(-t / (4696.718831637412 + -1294.8155480141004 * high)))",
+    "expression_bytes": 68,
+    "free_parameters": 4,
+    "learned_state_bytes": 104,
+    "literal_state_bytes": 1,
+    "nodes": 43,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.014531321714006281,
+    "perturbation_labels_available": false,
+    "population_rows": 370,
+    "ranking": false,
+    "samples": 370,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

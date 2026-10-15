@@ -1,0 +1,67 @@
+{
+  "assets": [
+    {
+      "bytes": 88885,
+      "path": "scenarios/62_materials_steel_hydrogen/raw/Permeation_MS AHSS 1300.xlsx",
+      "role": "permeation_workbook",
+      "sha256": "117d75a3f8329456732beada95b8f2be8bda688da88e6b8c7c83a9ee49698b3b"
+    }
+  ],
+  "historical_contract_sha256": "61707d25b44e440e668665a135f08fed4683c2ab87dd0b16febc791103e7cafb",
+  "independent_units": "Two chronological traces with no independent specimen identifiers; nonoverlapping temporal blocks are scoring units, not independent specimens. All trace linkage is explicit.",
+  "input_units": {
+    "drive": "mA/cm²; imposed cathodic-current step",
+    "high": "binary known high-current condition",
+    "offset": "μA; mean first3 observations",
+    "t": "s since third baseline observation"
+  },
+  "limitations": [
+    "Curator-only: original acquisition files contain historical responses; never grant source-root access to discovery agents",
+    "Outputs omit test responses and do not create an evaluator vault",
+    "Corrected partitions require new scientific admission and a new frozen comparison"
+  ],
+  "numerical_policy": {
+    "fit_count": 0,
+    "learned_transformations": []
+  },
+  "output_units": "μA",
+  "parser": "hydrogen-permeation-v1",
+  "policy": {
+    "blocks": "min(4,floor((k-3)*5/(N-3))) using zero-based numeric-row index k",
+    "calibration": "Mean first three finite currents; time origin is third corresponding observation",
+    "drive": [
+      0.5,
+      5.0
+    ],
+    "high": [
+      0.0,
+      1.0
+    ],
+    "numeric_columns": [
+      "A",
+      "B"
+    ],
+    "sample_selection": "All subsequent finite numeric rows in acquisition order",
+    "sheet_order": [
+      "0.5 to 1 mA_cm2",
+      "5 to 10 mA_cm2"
+    ],
+    "split": "blocks 0,1,2 train; block 3 dev; block 4 test, separately per trace"
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-062/native.py",
+    "reuse": "Measurement and identity specification reimplemented; no fitting, reference equations, fitted states or confirmation evaluator copied",
+    "sha256": "47bda61a260a69ed0eaa4809a7defe10bb94a198389bda6c2ac59c217805f59a"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-062",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "historical_case": "P100-062",
+    "revision": "1",
+    "url": "https://data.mendeley.com/datasets/tnsgf7v76z/1"
+  },
+  "source_scenario_descriptor_sha256": "b0f496821716572bab8d840dbd1cc9a9349c05822a3b5fb57450dc990ba94605",
+  "status": "draft_not_admitted",
+  "test_exposure": "retrospective-open-test"
+}

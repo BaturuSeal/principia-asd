@@ -1,0 +1,216 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T09:03:19.891440+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 6540734,
+  "registered_source_files": 2,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Resolve instrument/unit provenance and physical device/batch identities",
+        "Reconcile 1.15 mA stored plateaus with reported 1 mA compliance before mechanistic interpretation",
+        "Verify duplicate-trace origin; no new independent cell is inferred from its column label",
+        "Complete rights/notices and scenario-specific perturbation standards"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-022/reconstruction.json",
+      "candidate_receipt_sha256": "e2c954d4601c1afce0d0c888e160682406e6aec2a3b348aca69eebcfc94d3098",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 7505
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1900
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 1425,
+            "reconstructed_rows": 1425,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 1900,
+            "reconstructed_rows": 1900,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 6080,
+            "reconstructed_rows": 6080,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_battery_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_memristor_validation": {
+        "distinct_stored_traces": 99,
+        "duplicate_aliases": {
+          "Br-device-05": "Br-device-04"
+        },
+        "eligible_rows": 9405,
+        "exact_1_15_mA_selected_currents": 3181,
+        "first_100_pairs_increasing_positive_voltage": true,
+        "fitting_performed": false,
+        "group_counts": {
+          "dev": 15,
+          "test": 20,
+          "train": 64
+        },
+        "negative_selected_currents": 1852,
+        "source_trace_columns": 100,
+        "stored_pairs_including_duplicate": 50000
+      },
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "reader_source_sha256": "32482a9789615f5e998a1f228259a67d0ae461be50e181ef063894242a594969",
+      "recipe_sha256": "7efb491e0450738792cd2e5a3331dc037717cc87edcb98c551c88472e4b49115",
+      "rows": {
+        "dev": 1425,
+        "test": 1900,
+        "train": 6080
+      },
+      "runtime_binding_sha256": "4fcdfbac319d6596e3e223e4bec851aaef073a40f300a5731d923fbaaee9c1d6",
+      "scenario_id": "P100-022",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "Br-device-01",
+            "Br-device-16",
+            "Br-device-20",
+            "Br-device-23",
+            "Br-device-29",
+            "Br-device-32",
+            "Br-device-49",
+            "Br-device-50",
+            "I-device-13",
+            "I-device-14",
+            "I-device-23",
+            "I-device-25",
+            "I-device-36",
+            "I-device-37",
+            "I-device-48"
+          ],
+          "test": [
+            "Br-device-03",
+            "Br-device-10",
+            "Br-device-11",
+            "Br-device-13",
+            "Br-device-14",
+            "Br-device-17",
+            "Br-device-25",
+            "Br-device-34",
+            "Br-device-37",
+            "Br-device-43",
+            "I-device-03",
+            "I-device-06",
+            "I-device-09",
+            "I-device-12",
+            "I-device-15",
+            "I-device-16",
+            "I-device-20",
+            "I-device-22",
+            "I-device-31",
+            "I-device-34"
+          ],
+          "train": [
+            "Br-device-02",
+            "Br-device-04",
+            "Br-device-06",
+            "Br-device-07",
+            "Br-device-08",
+            "Br-device-09",
+            "Br-device-12",
+            "Br-device-15",
+            "Br-device-18",
+            "Br-device-19",
+            "Br-device-21",
+            "Br-device-22",
+            "Br-device-24",
+            "Br-device-26",
+            "Br-device-27",
+            "Br-device-28",
+            "Br-device-30",
+            "Br-device-31",
+            "Br-device-33",
+            "Br-device-35",
+            "Br-device-36",
+            "Br-device-38",
+            "Br-device-39",
+            "Br-device-40",
+            "Br-device-41",
+            "Br-device-42",
+            "Br-device-44",
+            "Br-device-45",
+            "Br-device-46",
+            "Br-device-47",
+            "Br-device-48",
+            "I-device-01",
+            "I-device-02",
+            "I-device-04",
+            "I-device-05",
+            "I-device-07",
+            "I-device-08",
+            "I-device-10",
+            "I-device-11",
+            "I-device-17",
+            "I-device-18",
+            "I-device-19",
+            "I-device-21",
+            "I-device-24",
+            "I-device-26",
+            "I-device-27",
+            "I-device-28",
+            "I-device-29",
+            "I-device-30",
+            "I-device-32",
+            "I-device-33",
+            "I-device-35",
+            "I-device-38",
+            "I-device-39",
+            "I-device-40",
+            "I-device-41",
+            "I-device-42",
+            "I-device-43",
+            "I-device-44",
+            "I-device-45",
+            "I-device-46",
+            "I-device-47",
+            "I-device-49",
+            "I-device-50"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

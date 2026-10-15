@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.7745909378828024,
+  "execution_status": "complete",
+  "expression": "4.108612271167263",
+  "inputs": [
+    "depth_km",
+    "rms_s",
+    "phases",
+    "stations",
+    "gap_deg",
+    "dmin_km"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "depth_km": -0.29432761861358075,
+      "dmin_km": 0.08867639801140687,
+      "gap_deg": -0.14762940954709036,
+      "phases": 0.12490071809421462,
+      "rms_s": 0.10280436017763529,
+      "stations": 0.13448602995144948
+    },
+    "mean": -0.9694852288327372,
+    "p90_abs": 6.540887728832739,
+    "std": 5.057674743079154
+  },
+  "rule_id": "controls-v2--P100-017--mean_control-rule-1",
+  "rule_sha256": "eb0fa1c6ac983c0abbf98f98807d036b2cf0a6ea23633d5c7331e30aaa0cb7b0",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "4.108612271167263",
+    "expression_bytes": 17,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-017.compact.v2",
+  "train_error": 0.7466743643372244,
+  "units": {
+    "inputs": {
+      "depth_km": "km below network reference (may negative)",
+      "dmin_km": "minimum angular station distance*111.195km/degree",
+      "gap_deg": "largest azimuthal gap degrees",
+      "phases": "used phase count",
+      "rms_s": "seconds phase residual standardError",
+      "stations": "used station count"
+    },
+    "output": "km",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

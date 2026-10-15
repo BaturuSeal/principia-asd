@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.21226038327347388,
+  "execution_status": "complete",
+  "expression": "cal_minus20_uA * exp(p0 * gate_V)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.6835116838679183
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": 0.02442961457633699,
+      "cal_plus20_uA": -0.0018978531999941958,
+      "cal_zero_uA": 0.021297333391444875,
+      "gate_V": -0.6363931004280887
+    },
+    "mean": -0.18974576322722908,
+    "p90_abs": 0.8378642721108911,
+    "std": 0.34338218930222836
+  },
+  "rule_id": "full-comparison-v5--P100-051--direct_qwen-rule-1",
+  "rule_sha256": "09da1c33a62dbc4f4e52aeef02fefba2bb53f8150638caeb6f2e8ee73bf38c08",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "cal_minus20_uA * exp(0.6835116838679183 * gate_V)",
+    "expression_bytes": 33,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 14,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.22999281172537248,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

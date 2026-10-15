@@ -1,0 +1,92 @@
+{
+  "description": "risky_choice",
+  "domain": "Behavioral science",
+  "independent_unit": "participant",
+  "input_units": {
+    "age_child": "years; adult sentinel0",
+    "child": "binary",
+    "description": "binary",
+    "has_history": "binary",
+    "history_mean": "proportion or first-trial prior0.5",
+    "lag_choice": "binary or first-trial prior0.5",
+    "multi": "binary",
+    "probability": "probability",
+    "reward": "points",
+    "trial_progress": "trial index/40"
+  },
+  "limitations": [
+    "Before each choice using trial settings and only prior choices in that protocol; numeric Hidden and EV excluded.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "tables_logs_or_structured_text"
+  ],
+  "output_units": "binary choice",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 4211,
+    "test": 6008,
+    "train": 17448
+  },
+  "scenario_id": "P100-089",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 3743576,
+    "limit_bytes": 10000000,
+    "public_bytes": 742480
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://zenodo.org/records/15412216",
+        "license": "cc-by-4.0",
+        "rights_url": "https://zenodo.org/records/15412216",
+        "source": "scenarios/89_psychology_age_risk/raw/raw data.csv",
+        "source_sha256": "85b66b0a146872e817b183b6979c03201a8a0e89bc1e02937b383833a09bd1d9"
+      },
+      {
+        "citation_url": "https://zenodo.org/records/15412216",
+        "license": "CC0-1.0 (repository metadata; excludes email addresses)",
+        "rights_url": "https://about.zenodo.org/policies/",
+        "source": "scenarios/89_psychology_age_risk/context/source_record.json",
+        "source_sha256": "d43f2c86435c85ba58cf34089863cb89cc053d0da73d7b5b5c8ffc2923b89dad"
+      }
+    ],
+    "historical_case": "P100-089",
+    "license": "cc-by-4.0",
+    "url": "https://zenodo.org/records/15412216",
+    "version": "15412216"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "054836ff069c44bd0c67231f78d4d67dca8110091f3412207ca4d62261e8f7f1",
+        "groups": 8,
+        "rows": 4211,
+        "sample_ids_sha256": "0ae5e7fc7d106891d82f1ac3bece871ad6eb6b9cb435086838446d8adf199e40"
+      },
+      "test": {
+        "group_ids_sha256": "b60ba4f6f7086497f390c4206e8f0368d7b79b869e05de426d28b26b7564bdf3",
+        "groups": 12,
+        "rows": 6008,
+        "sample_ids_sha256": "55acd4c5797b37562791957527224e395e34a2ad16957a790f0b0d98597ca738"
+      },
+      "train": {
+        "group_ids_sha256": "1cb56046364d3d811c18f862f18b4eb56a9dd521b6f081ecd8e1f3ea17a23faf",
+        "groups": 35,
+        "rows": 17448,
+        "sample_ids_sha256": "0797495ee036ec71b5bb1843965c2bb14730af28db6223b369e7d5cb84ccd2e7"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "Dataset : Contextual influences on risk-taking in children and adults",
+  "version": "1.0.0rc2"
+}

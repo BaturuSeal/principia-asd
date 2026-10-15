@@ -1,0 +1,69 @@
+{
+  "dev_error": 2.4118864434952076,
+  "execution_status": "complete",
+  "expression": "p0+p1*(pilot_gates*is_bqskit)",
+  "inputs": [
+    "pilot_seconds",
+    "qubits",
+    "pilot_gates",
+    "pilot_depth",
+    "load_seconds",
+    "is_tket",
+    "is_bqskit"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.7391827661641772,
+    "p1": 0.052914917351684625
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "is_bqskit": 0.4301516298706825,
+      "is_tket": -0.3290573218446345,
+      "load_seconds": -0.09387230620624296,
+      "pilot_depth": -0.3097312468917554,
+      "pilot_gates": -0.24999900440348202,
+      "pilot_seconds": -0.2571012978946264,
+      "qubits": 0.23340683604534368
+    },
+    "mean": 1.7662755306675089,
+    "p90_abs": 5.976546352329115,
+    "std": 9.20745987389754
+  },
+  "rule_id": "controls-v2--P100-031--symbolic_control-rule-2",
+  "rule_sha256": "18f698ed30e60e32fc5b6e4213f3a4bdd5e24b47a07dd77fd39f08e7cc0b2b73",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.7391827661641772 + 0.052914917351684625 * (pilot_gates * is_bqskit)",
+    "expression_bytes": 29,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "nodes": 15,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-031.compact.v2",
+  "train_error": 2.4140958548244,
+  "units": {
+    "inputs": {
+      "is_bqskit": "SDK indicator,elseStaq",
+      "is_tket": "SDK indicator",
+      "load_seconds": "Qiskit QASM loading seconds",
+      "pilot_depth": "Qiskit output two-qubit depth",
+      "pilot_gates": "Qiskit output two-qubit gate count",
+      "pilot_seconds": "seconds Qiskit calibration cost",
+      "qubits": "input qubit count"
+    },
+    "output": "seconds",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "dev_error": 21592.46338813156,
+  "execution_status": "complete",
+  "expression": "p0+p1*(q)+p2*(q0)+p3*(I0)+p4*(outer)",
+  "inputs": [
+    "q",
+    "q0",
+    "I0",
+    "outer"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.324993692479179e-18,
+    "p1": 1.469516946724325e-16,
+    "p2": 236676.2223248463,
+    "p3": 8.787804662091674e-23,
+    "p4": 1.7099967561321926e-17
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "I0": 0.0035236345329650726,
+      "outer": 0.015562784637806628,
+      "q": 0.6776682371158582,
+      "q0": -2.1534027054632793e-18
+    },
+    "mean": 1205.4908058374554,
+    "p90_abs": 50283.36390917312,
+    "std": 28573.520778343936
+  },
+  "rule_id": "full-comparison-v5--P100-012--polynomial_control-rule-1",
+  "rule_sha256": "85e1e8318bc857bbc6010913854691667c8d45f999aa4c02d89eb15245516ea7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.324993692479179e-18 + 1.469516946724325e-16 * q + 236676.2223248463 * q0 + 8.787804662091674e-23 * I0 + 1.7099967561321926e-17 * outer",
+    "expression_bytes": 36,
+    "free_parameters": 5,
+    "learned_state_bytes": 142,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-012.compact.v2",
+  "train_error": 23083.142347314668,
+  "units": {
+    "inputs": {
+      "I0": "counts; mean at2theta1.0±0.008deg",
+      "outer": "binary noncenter measurement position",
+      "q": "Å⁻¹;4πsin(theta)/lambda",
+      "q0": "Å⁻¹; calibration mean wavevector"
+    },
+    "output": "counts",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

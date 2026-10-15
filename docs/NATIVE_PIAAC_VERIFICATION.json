@@ -1,0 +1,249 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-13T05:14:31.345839+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "fitting_attempts_scope": "Discovery-rule fitting only; local calibration, detrending and scaling are itemized in native validation",
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 84416185,
+  "registered_source_files": 4,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Review compact unweighted versus historical survey-weighted estimands; no survey-population or design-variance claims",
+        "Whole respondent/hash-block separation does not reconstruct survey clusters, time ordering or country-held-out transfer",
+        "Resolve source rights/notices, upstream derivations and final scientific contract before admission"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-039/reconstruction.json",
+      "candidate_receipt_sha256": "939449b9984119205e7af49bab7bf0e4113b3a59b2da9ab4f6fd2f359428274e",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 4236
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 1054
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 886,
+            "reconstructed_rows": 886,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 1054,
+            "reconstructed_rows": 1054,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 3350,
+            "reconstructed_rows": 3350,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_afm_validation": null,
+      "native_battery_validation": null,
+      "native_boiling_validation": null,
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_compiler_validation": null,
+      "native_coral_validation": null,
+      "native_cpap_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_gwosc_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_microscopy_validation": null,
+      "native_microwave_validation": null,
+      "native_nhtsa_validation": null,
+      "native_piaac_validation": {
+        "age_midpoints": [
+          17.5,
+          22,
+          27,
+          32,
+          37,
+          42,
+          47,
+          52,
+          57,
+          62.5
+        ],
+        "compact_weighting": "unweighted Brier within each hash block; equal mean across blocks",
+        "country_values": {
+          "Japan": "392",
+          "USA": "840"
+        },
+        "discovery_rule_fits": 0,
+        "excluded_fields": [
+          "plausible values",
+          "replicate weights",
+          "absolute earnings",
+          "occupation",
+          "assessment responses",
+          "unselected background variables"
+        ],
+        "legacy_weighting": "within-block final survey weight; not retained in compact scoring",
+        "local_preprocessing_fits": 0,
+        "native_inventory": [
+          {
+            "country": "USA",
+            "duplicate_respondents": 0,
+            "eligible_final_weight": {
+              "distinct": 1691,
+              "max": 243536.148622,
+              "min": 6892.750611
+            },
+            "eligible_records": 1813,
+            "excluded_records": 1952,
+            "exclusion_reason_counts_nonexclusive": {
+              "age_below_25": 591,
+              "missing_EARNHRDCLC2": 1652,
+              "missing_YRSQUALC2": 7
+            },
+            "missing_codes": {
+              "EARNHRDCLC2:.": 63,
+              "EARNHRDCLC2:.v": 1589,
+              "YRSQUALC2:.": 7
+            },
+            "plausible_values_used": false,
+            "selected_columns": [
+              "SEQID",
+              "CNTRYID",
+              "CNTRYID_E",
+              "AGEG5LFS",
+              "YRSQUALC2",
+              "EARNHRDCLC2",
+              "SPFWT0"
+            ],
+            "source_columns": 2483,
+            "source_records": 3765,
+            "survey_weights_exported": false
+          },
+          {
+            "country": "Japan",
+            "duplicate_respondents": 0,
+            "eligible_final_weight": {
+              "distinct": 2628,
+              "max": 38671.696887,
+              "min": 5009.305005
+            },
+            "eligible_records": 3477,
+            "excluded_records": 1688,
+            "exclusion_reason_counts_nonexclusive": {
+              "age_below_25": 674,
+              "missing_EARNHRDCLC2": 1297,
+              "missing_YRSQUALC2": 44
+            },
+            "missing_codes": {
+              "EARNHRDCLC2:.": 66,
+              "EARNHRDCLC2:.v": 1231,
+              "YRSQUALC2:.": 43,
+              "YRSQUALC2:.r": 1
+            },
+            "plausible_values_used": false,
+            "selected_columns": [
+              "SEQID",
+              "CNTRYID",
+              "CNTRYID_E",
+              "AGEG5LFS",
+              "YRSQUALC2",
+              "EARNHRDCLC2",
+              "SPFWT0"
+            ],
+            "source_columns": 2483,
+            "source_records": 5165,
+            "survey_weights_exported": false
+          }
+        ],
+        "original_confirmation_buckets": [
+          0,
+          1
+        ],
+        "respondent_identity_overlap": 0,
+        "scope": "Complete-case contemporaneous association with country-relative wage/salary earnings deciles; no absolute wages, prospective earnings, survey-population or causal inference",
+        "source_derivations": "Coarsened ages, years assigned from completed education, country earnings deciles and final weights already derived upstream",
+        "survey_design_variance_established": false,
+        "whole_respondent_blocks": 20
+      },
+      "native_ppg_validation": null,
+      "native_screw_validation": null,
+      "native_slag_validation": null,
+      "native_spectral_validation": null,
+      "native_storm_validation": null,
+      "native_tomato_validation": null,
+      "native_trace_validation": null,
+      "native_xas_validation": null,
+      "native_yeast_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "33a18edd9d54307ddcee8df1a957f0b5707ee2e09b344242daf252987647119d",
+      "recipe_sha256": "bda6dc0b2a66f7d872a4dcdb6408fc4103242dcab4d8ec4c71d712d80656ebce",
+      "rows": {
+        "dev": 886,
+        "test": 1054,
+        "train": 3350
+      },
+      "runtime_binding_sha256": "ad111008fdb3d25e9ba7d5440011f65b0d05764699039407e651633989d2ff3b",
+      "scenario_id": "P100-039",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "Japan:respondentblock2",
+            "Japan:respondentblock4",
+            "USA:respondentblock9"
+          ],
+          "test": [
+            "Japan:respondentblock0",
+            "Japan:respondentblock1",
+            "USA:respondentblock0",
+            "USA:respondentblock1"
+          ],
+          "train": [
+            "Japan:respondentblock3",
+            "Japan:respondentblock5",
+            "Japan:respondentblock6",
+            "Japan:respondentblock7",
+            "Japan:respondentblock8",
+            "Japan:respondentblock9",
+            "USA:respondentblock2",
+            "USA:respondentblock3",
+            "USA:respondentblock4",
+            "USA:respondentblock5",
+            "USA:respondentblock6",
+            "USA:respondentblock7",
+            "USA:respondentblock8"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

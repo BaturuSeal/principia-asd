@@ -1,0 +1,148 @@
+{
+  "api_calls": 0,
+  "checked_at": "2026-10-12T13:11:44.867978+00:00",
+  "evaluator_vault_accessed": false,
+  "fitting_attempts": 0,
+  "frozen_edition_replaced": false,
+  "raw_acquisition_scope": "Source files include historically exposed responses; preparation does not establish new independent test evidence",
+  "registered_source_bytes": 4504381,
+  "registered_source_files": 14,
+  "remaining_gate": "Complete contracts, rights and notices; native reconstruction for remaining scenarios; new versioned admission and frozen comparison",
+  "replay_environment_isolated": true,
+  "scenarios": [
+    {
+      "acquisition_chronology": null,
+      "admission_blockers": [
+        "Single facility and same-day runs cross splits; independent day/calibration transfer is not established",
+        "Supplied outlet quality sensor/energy-balance provenance requires confirmation",
+        "Native radial unit and true tube-radius normalization remain unverified",
+        "Raw probe processing, scientific contract, perturbation model and final rights/attribution review pending",
+        "Historical complexity counts the submitted rule only, excluding upstream pressure-property preparation; full-pipeline complexity is not assessed"
+      ],
+      "all_reconstructed_artifacts_replayed_exactly": true,
+      "candidate": "P100-027/reconstruction.json",
+      "candidate_receipt_sha256": "82a07f75e212bbd9e3516686b0cb62f2b373a1e48e28ac85cd595087fa2bb009",
+      "historical_public_parity": {
+        "absolute_tolerance": 1e-12,
+        "cohorts": {
+          "development_union": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 108
+          },
+          "test_inputs": {
+            "exact_sample_and_group_coverage": true,
+            "max_absolute_numeric_difference": 0.0,
+            "nonidentical_float_values": 0,
+            "rows": 36
+          }
+        },
+        "evaluator_targets_accessed": false,
+        "partition_membership": {
+          "dev": {
+            "historical_rows": 24,
+            "reconstructed_rows": 24,
+            "unchanged": true
+          },
+          "test": {
+            "historical_rows": 36,
+            "reconstructed_rows": 36,
+            "unchanged": true
+          },
+          "train": {
+            "historical_rows": 84,
+            "reconstructed_rows": 84,
+            "unchanged": true
+          }
+        },
+        "relative_tolerance": 1e-12,
+        "status": "passed"
+      },
+      "historical_scenario_files_unchanged": true,
+      "native_battery_validation": null,
+      "native_boiling_validation": {
+        "bisection_iterations": 960,
+        "density_evaluations": 12,
+        "density_scope": "Pressure-derived saturated-water approximation; not independently measured densities",
+        "fit_count": 0,
+        "group_counts": {
+          "dev": 2,
+          "test": 3,
+          "train": 7
+        },
+        "ignored_radial_distribution_cells": 96000,
+        "no_response_derived_predictors": true,
+        "radial_measurements": 144,
+        "response_scope": "Stored local VOIDFRACTION; no raw probe-signal reprocessing",
+        "runs": 12,
+        "shared_source_dates": {
+          "2023-08-08": [
+            "dev",
+            "train"
+          ],
+          "2023-08-09": [
+            "test",
+            "train"
+          ],
+          "2023-08-10": [
+            "dev",
+            "train"
+          ]
+        },
+        "source_dates": 4,
+        "target_calibration_count": 0
+      },
+      "native_choice_validation": null,
+      "native_comcat_validation": null,
+      "native_crowd_validation": null,
+      "native_curve_validation": null,
+      "native_finger_friction_validation": null,
+      "native_game_validation": null,
+      "native_levitation_validation": null,
+      "native_lubricant_validation": null,
+      "native_memristor_validation": null,
+      "native_spectral_validation": null,
+      "native_trace_validation": null,
+      "native_zeolite_validation": null,
+      "reader_source_sha256": "70644d55b6a61c093ff5a7deb3e0a140a2582ebd4b86e2dfe7860772d748a35a",
+      "recipe_sha256": "f9306edb557a1b7b08070148204a1b5122051566c18552608e2660ca426970a3",
+      "rows": {
+        "dev": 24,
+        "test": 36,
+        "train": 84
+      },
+      "runtime_binding_sha256": "f9d275089d0780d01a1d80becb4cb3325c3039b56f45dc07a589f7b7a235f4e8",
+      "scenario_id": "P100-027",
+      "scientific_split_check": {
+        "shared_split_units": {},
+        "units_by_partition": {
+          "dev": [
+            "ID_20230808_Run_02",
+            "ID_20230810_Run_04"
+          ],
+          "test": [
+            "ID_20230630_Run_31",
+            "ID_20230630_Run_32",
+            "ID_20230809_Run_09"
+          ],
+          "train": [
+            "ID_20230808_Run_07",
+            "ID_20230809_Run_10",
+            "ID_20230809_Run_13",
+            "ID_20230809_Run_16",
+            "ID_20230809_Run_18",
+            "ID_20230809_Run_20",
+            "ID_20230810_Run_07"
+          ]
+        },
+        "unmapped_groups": [],
+        "valid": true
+      },
+      "temporal_validation": null
+    }
+  ],
+  "scope": "Curator-only native reconstruction of historical or corrected development drafts; passing replay does not clear reported admission blockers",
+  "status": "passed",
+  "test_targets_exported": false
+}

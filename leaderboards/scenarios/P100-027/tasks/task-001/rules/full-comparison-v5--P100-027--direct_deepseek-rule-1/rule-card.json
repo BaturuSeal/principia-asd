@@ -1,0 +1,76 @@
+{
+  "dev_error": 0.10323196575853265,
+  "execution_status": "complete",
+  "expression": "minimum(1, maximum(0, p0 + p1*quality + p2*radial_fraction + p3*quality*radial_fraction + p4*massflux_kg_m2_s + p5*pressure_Pa + p6*rho_liquid + p7*rho_vapor))",
+  "inputs": [
+    "pressure_Pa",
+    "massflux_kg_m2_s",
+    "quality",
+    "radial_fraction",
+    "rho_liquid",
+    "rho_vapor"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -275.9850179585229,
+    "p1": 6.843476915247267,
+    "p2": -0.34753137060591915,
+    "p3": -5.436314764618697,
+    "p4": 0.0006174538773128346,
+    "p5": -3.7859636237124337e-07,
+    "p6": 0.3256494944938564,
+    "p7": 1.0339383596644018
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "massflux_kg_m2_s": 0.00717079759045158,
+      "pressure_Pa": 0.00717079759045154,
+      "quality": -0.007170797590451541,
+      "radial_fraction": -0.6967685699690549,
+      "rho_liquid": -0.007170797590451555,
+      "rho_vapor": 0.007170797590451508
+    },
+    "mean": 0.03344313531399975,
+    "p90_abs": 0.21850998697627425,
+    "std": 0.13910945581820527
+  },
+  "rule_id": "full-comparison-v5--P100-027--direct_deepseek-rule-1",
+  "rule_sha256": "6349e5d2262248289551372ea0b66035ad601ecb62f612681108c28b74a40c07",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "minimum(1, maximum(0, -275.9850179585229 + 6.843476915247267 * quality + -0.34753137060591915 * radial_fraction + -5.436314764618697 * quality * radial_fraction + 0.0006174538773128346 * massflux_kg_m2_s + -3.7859636237124337e-07 * pressure_Pa + 0.3256494944938564 * rho_liquid + 1.0339383596644018 * rho_vapor))",
+    "expression_bytes": 159,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 2,
+    "nodes": 71,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-027.compact.v2",
+  "train_error": 0.0535965919824804,
+  "units": {
+    "inputs": {
+      "massflux_kg_m2_s": "kg m^-2 s^-1",
+      "pressure_Pa": "Pa, absolute",
+      "quality": "kg vapor per kg mixture",
+      "radial_fraction": "dimensionless native coordinate / maximum sampled coordinate",
+      "rho_liquid": "kg m^-3",
+      "rho_vapor": "kg m^-3"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

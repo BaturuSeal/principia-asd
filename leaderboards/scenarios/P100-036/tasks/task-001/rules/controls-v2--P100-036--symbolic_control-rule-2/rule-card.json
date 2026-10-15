@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.0029344758347064864,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((rfd-2.2161338628189617)/0.7298525550595808))+p2*((tiny)**2)+p3*(tiny)+p4*(tanh((tiny-0.4090909090909091)/0.4916660830178166))+p5*(log1p(abs((tiny-0.4090909090909091)/0.4916660830178166)))+p6*(ngrdi*tiny)+p7*((rfd)**2)",
+  "inputs": [
+    "npq",
+    "rfd",
+    "ngrdi",
+    "area",
+    "tiny",
+    "salt",
+    "drought",
+    "high_stress"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "beam-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.0224248799172078,
+    "p1": 0.0007322881662005755,
+    "p2": -0.06846739450265267,
+    "p3": -0.06846739450265263,
+    "p4": -0.07268775591270435,
+    "p5": 1.289007133087801,
+    "p6": 0.11620991610980097,
+    "p7": -0.002630312835139981
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "area": -0.2762327429470738,
+      "drought": 0.04392325367602384,
+      "high_stress": 0.06473652857479487,
+      "ngrdi": -0.13854834702953106,
+      "npq": -0.1814500304771893,
+      "rfd": 0.07310233045088262,
+      "salt": -0.007285325994250575,
+      "tiny": -0.18535058304435656
+    },
+    "mean": 0.00027947067552379107,
+    "p90_abs": 0.005820284561806277,
+    "std": 0.004527875958103827
+  },
+  "rule_id": "controls-v2--P100-036--symbolic_control-rule-2",
+  "rule_sha256": "c294d94727abbca11584000d5ae3edbbc36005468960085360a2de41107a4b80",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0224248799172078 + 0.0007322881662005755 * tanh((rfd - 2.2161338628189617) / 0.7298525550595808) + -0.06846739450265267 * tiny ** 2 + -0.06846739450265263 * tiny + -0.07268775591270435 * tanh((tiny - 0.4090909090909091) / 0.4916660830178166) + 1.289007133087801 * log1p(abs((tiny - 0.4090909090909091) / 0.4916660830178166)) + 0.11620991610980097 * (ngrdi * tiny) + -0.002630312835139981 * rfd ** 2",
+    "expression_bytes": 230,
+    "free_parameters": 8,
+    "learned_state_bytes": 220,
+    "nodes": 99,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 29
+  },
+  "task_id": "P100-036.compact.v2",
+  "train_error": 0.005985335508530646,
+  "units": {
+    "inputs": {
+      "area": "source AREA_MM scale; only relative/log descriptor used",
+      "drought": "drought-treatment indicator",
+      "high_stress": "source second stress-level indicator; no invented dose units",
+      "ngrdi": "dimensionless RGB index",
+      "npq": "dimensionless author NPQ_Lss",
+      "rfd": "dimensionless author Rfd_Lss",
+      "salt": "salt-treatment indicator",
+      "tiny": "cultivar indicator"
+    },
+    "output": "dimensionless quantum yield",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dev_error": 0.7210967196872359,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tanh((kd-0.6)/0.4898979485566356))+p2*(tanh((current-40.0)/16.1245154965971))",
+  "inputs": [
+    "current",
+    "soft",
+    "kd",
+    "cal_mean",
+    "cal_last"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.9417332678949257,
+    "p1": 0.369516117796783,
+    "p2": 0.4027688678290012
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "current": -0.07633374323163875,
+      "soft": -0.510928014229622
+    },
+    "mean": 0.2595238095238091,
+    "p90_abs": 1.3292854550523556,
+    "std": 0.8332771621681296
+  },
+  "rule_id": "full-comparison-v5--P100-076--principia_engine-rule-1",
+  "rule_sha256": "4f457366465240ced3cd673122ac3fcd3243acb7a8e2e4973ff545d075e35d7a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.9417332678949257 + 0.369516117796783 * tanh((kd - 0.6) / 0.4898979485566356) + 0.4027688678290012 * tanh((current - 40.0) / 16.1245154965971)",
+    "expression_bytes": 84,
+    "free_parameters": 3,
+    "learned_state_bytes": 77,
+    "literal_state_bytes": 41,
+    "nodes": 37,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-076.compact.v2",
+  "train_error": 0.7785335927626446,
+  "units": {
+    "inputs": {
+      "cal_last": "spikes per stimulus",
+      "cal_mean": "spikes per stimulus",
+      "current": "pA",
+      "kd": "binary",
+      "soft": "binary"
+    },
+    "output": "spikes per stimulus",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

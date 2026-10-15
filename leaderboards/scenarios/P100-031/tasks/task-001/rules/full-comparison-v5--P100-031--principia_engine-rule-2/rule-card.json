@@ -1,0 +1,76 @@
+{
+  "dev_error": 3.543911868362298,
+  "execution_status": "complete",
+  "expression": "p0+p1*(is_bqskit)",
+  "inputs": [
+    "pilot_seconds",
+    "qubits",
+    "pilot_gates",
+    "pilot_depth",
+    "load_seconds",
+    "is_tket",
+    "is_bqskit"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.5739213608202185,
+    "p1": 51.55024801953734
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "is_bqskit": 0.9814900749101771,
+      "is_tket": -0.5207950866168836,
+      "load_seconds": -0.24069571788365313,
+      "pilot_depth": -0.3243856723990987,
+      "pilot_gates": -0.32638820615066316,
+      "pilot_seconds": -0.326592943705365,
+      "qubits": -0.1644971233787893
+    },
+    "mean": 16.69805404175003,
+    "p90_abs": 53.08975757686428,
+    "std": 22.862317353969868
+  },
+  "rule_id": "full-comparison-v5--P100-031--principia_engine-rule-2",
+  "rule_sha256": "00f1ab201ac7be49381ace14302c03956d4b23f32b437d394922bd049922bfb8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.5739213608202185 + 51.55024801953734 * is_bqskit",
+    "expression_bytes": 17,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-031.compact.v2",
+  "train_error": 3.93112113215516,
+  "units": {
+    "inputs": {
+      "is_bqskit": "SDK indicator,elseStaq",
+      "is_tket": "SDK indicator",
+      "load_seconds": "Qiskit QASM loading seconds",
+      "pilot_depth": "Qiskit output two-qubit depth",
+      "pilot_gates": "Qiskit output two-qubit gate count",
+      "pilot_seconds": "seconds Qiskit calibration cost",
+      "qubits": "input qubit count"
+    },
+    "output": "seconds",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "all_candidates_retained": 6,
+  "artifacts": {
+    "assessment_sha256": "1f6e3812adc807e50a28b3766687032658b2532ad7c678c78a96b5a7e3e0ebe8",
+    "private_fixture_folder": "/Users/zhengqipei/Desktop/ChipFlow/Principia/Principia-ASD/private-workspace/PrincipiaASD-dev-26Oct10/engineering-fixtures/bound-engine-fixture-j6vh0cm7",
+    "submission_sha256": "d29605916991afb230bec05afb179d13e78b567c90cd6f7e2643c377b119f491"
+  },
+  "assessed_nominations": 3,
+  "checked_at": "2026-10-13T10:32:42.383323+00:00",
+  "configuration": {
+    "host_context": {
+      "dev_sha256": "8f1b9f33254055f0594f93a13563a42bd0428cecebdef817e7172d0384d0e892",
+      "task_sha256": "35cab8eeb92d894aa3e0f2dba47650c437e39c8e9c1181c2f5c917dc91d225e0",
+      "train_sha256": "623be27ca9419a5244519571de316059e498746ca79821941aae16055611a4d9"
+    },
+    "limits": {
+      "max_calls": 7,
+      "max_fits": 16,
+      "max_optimizer_evaluations": 4096,
+      "max_seconds": 2400,
+      "max_structures": 8000
+    },
+    "local_compositions_per_round": 2,
+    "max_tokens": 1800,
+    "nomination_slots": 3,
+    "policy": "principia-explicit-state-protocol-v1-dev",
+    "roles": {
+      "coder": "deepseek-ai/DeepSeek-V4-Flash",
+      "critic": "Qwen/Qwen3.8-27B",
+      "planner": "zai-org/GLM-5.3",
+      "reporter": "Pro/moonshotai/Kimi-K2.6"
+    },
+    "rounds": 2,
+    "selection_policy": "dev-loss-expanded-operations-learned-scalars-v1-dev",
+    "sha256": "2dfec854fe86d9a8930bd18eaca3a8842ade309c2f251b5e0e154a4450f86a6a",
+    "temperature": 0.25,
+    "weak_prior_fits": 2
+  },
+  "conformance": {
+    "kernel_search_executed": true,
+    "report_links_frozen_nominations": true,
+    "two_executed_rounds": true
+  },
+  "durable_worker_verification": "docs/BOUND_RECOVERY_VERIFICATION.json",
+  "fitting_attempts": 6,
+  "fixed_nomination_slots": 3,
+  "historical_campaign_changed": false,
+  "optimizer_evaluations": 46,
+  "protocol_module_sha256": "9f7d89f98d0f0767ffa7c618306be11b3fa1afc8ed0079b80d5d5c9c950de9bf",
+  "public_ranking_authorized": false,
+  "real_api_calls": 0,
+  "scope": "Scripted model responses plus real train fits; not a live API pilot or scientific trial",
+  "simulated_gateway_calls": [
+    {
+      "max_tokens": 1800,
+      "model": "zai-org/GLM-5.3",
+      "request_id": "bound-engine-fixture--bound-v1--planner--1",
+      "temperature": 0.25
+    },
+    {
+      "max_tokens": 1800,
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "request_id": "bound-engine-fixture--bound-v1--coder--2",
+      "temperature": 0.25
+    },
+    {
+      "max_tokens": 1800,
+      "model": "Qwen/Qwen3.8-27B",
+      "request_id": "bound-engine-fixture--bound-v1--critic--3",
+      "temperature": 0.25
+    },
+    {
+      "max_tokens": 1800,
+      "model": "zai-org/GLM-5.3",
+      "request_id": "bound-engine-fixture--bound-v1--planner--4",
+      "temperature": 0.25
+    },
+    {
+      "max_tokens": 1800,
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "request_id": "bound-engine-fixture--bound-v1--coder--5",
+      "temperature": 0.25
+    },
+    {
+      "max_tokens": 1800,
+      "model": "Qwen/Qwen3.8-27B",
+      "request_id": "bound-engine-fixture--bound-v1--critic--6",
+      "temperature": 0.25
+    },
+    {
+      "max_tokens": 1800,
+      "model": "Pro/moonshotai/Kimi-K2.6",
+      "request_id": "bound-engine-fixture--bound-v1--reporter--7",
+      "temperature": 0.25
+    }
+  ],
+  "source_is_installed_distribution": true,
+  "status": "passed_scripted_protocol_integration",
+  "ui_integration": "pending",
+  "zero_fit_zero_api_reassessment": true
+}

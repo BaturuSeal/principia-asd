@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.004961749517642994,
+  "execution_status": "complete",
+  "expression": "p0+p1*(speed_mm_s)",
+  "inputs": [
+    "speed_mm_s",
+    "boundary_cof",
+    "highspeed_cof",
+    "concentration_wt_pct"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.060522872416533306,
+    "p1": -0.005148622061283345
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "boundary_cof": 0.25565384357879695,
+      "highspeed_cof": 0.255653843578797,
+      "speed_mm_s": -0.5447030830986199
+    },
+    "mean": -0.0007174999999999777,
+    "p90_abs": 0.009148264141769063,
+    "std": 0.0060465874938308165
+  },
+  "rule_id": "full-comparison-v5--P100-030--principia_engine-rule-2",
+  "rule_sha256": "f56932e45af65945f2fe28feb146a32a647f2b5460a9609df33ba489dd605f6d",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.060522872416533306 + -0.005148622061283345 * speed_mm_s",
+    "expression_bytes": 18,
+    "free_parameters": 2,
+    "learned_state_bytes": 57,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-030.compact.v2",
+  "train_error": 0.01506594228252834,
+  "units": {
+    "inputs": {
+      "boundary_cof": "dimensionless",
+      "concentration_wt_pct": "wt percent",
+      "highspeed_cof": "dimensionless",
+      "speed_mm_s": "mm/s"
+    },
+    "output": "dimensionless",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

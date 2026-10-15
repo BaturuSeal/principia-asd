@@ -1,0 +1,67 @@
+{
+  "dev_error": 0.19900952606263456,
+  "execution_status": "complete",
+  "expression": "1 / (1 + exp(-(p0 + p1*education + p2*age + p3*japan + p4*education*age + p5*education*japan + p6*age*japan + p7*education*age*japan)))",
+  "inputs": [
+    "education",
+    "age",
+    "japan"
+  ],
+  "method_id": "direct_deepseek",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -7.915321827679413,
+    "p1": 0.4087251066626154,
+    "p2": 0.02796365417653829,
+    "p3": 6.389834781884849,
+    "p4": -0.00015611549206091224,
+    "p5": -0.44173806900942447,
+    "p6": -0.10704901227932077,
+    "p7": 0.0078266265202067
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age": 0.047961195022514544,
+      "education": 0.042774902910508755,
+      "japan": 0.007441941267775994
+    },
+    "mean": 0.007056363378822871,
+    "p90_abs": 0.7403215493144227,
+    "std": 0.4498332429663076
+  },
+  "rule_id": "full-comparison-v5--P100-039--direct_deepseek-rule-1",
+  "rule_sha256": "b92e1d3b6c5cea43c64a96ca25040abff39d0d22feb43d5a01f6ddcf14f3f73f",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1 / (1 + exp(-(-7.915321827679413 + 0.4087251066626154 * education + 0.02796365417653829 * age + 6.389834781884849 * japan + -0.00015611549206091224 * education * age + -0.44173806900942447 * education * japan + -0.10704901227932077 * age * japan + 0.0078266265202067 * education * age * japan)))",
+    "expression_bytes": 135,
+    "free_parameters": 8,
+    "learned_state_bytes": 217,
+    "literal_state_bytes": 2,
+    "nodes": 90,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 25
+  },
+  "task_id": "P100-039.compact.v2",
+  "train_error": 0.18817376246711234,
+  "units": {
+    "inputs": {
+      "age": "fixed midpoint of published five-year age bin; final60–65midpoint62.5",
+      "education": "source derived years of formal education",
+      "japan": "country indicator"
+    },
+    "output": "binary EARNHRDCLC2>=8",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

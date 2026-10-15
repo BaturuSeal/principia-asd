@@ -1,0 +1,99 @@
+{
+  "assets": [
+    {
+      "bytes": 5440639,
+      "path": "scenarios/84_biomaterials_cellulose_afm/raw/Microstructured cellulose acetate biointerfaces regulate mesenchymal stem cell response and promote osteogenic commitment_Dataset.zip",
+      "role": "afm_archive",
+      "sha256": "0102b2289400d96f1dc2e53c768ee731f1f13ed7ce9c63493a2fabe95fcdfba5"
+    },
+    {
+      "bytes": 4632050,
+      "path": "scenarios/84_biomaterials_cellulose_afm/raw/Microstructured cellulose acetate biointerfaces regulate mesenchymal stem cell response and promote osteogenic commitment_README.docx",
+      "role": "source_readme",
+      "sha256": "c5d6383b376c00c7f94aae9225e3cd5d65545225407d7234977073f4b7969704"
+    },
+    {
+      "bytes": 8736,
+      "path": "scenarios/84_biomaterials_cellulose_afm/context/source_record.json",
+      "role": "source_metadata",
+      "sha256": "ef11fb5666ecbaab705ab789cf8c3ecc7442a00656a32c391f85bf369454a26f"
+    }
+  ],
+  "curve_members": [
+    "NFFA DESY Raw data/CA Flat/230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_32893.spm.txt",
+    "NFFA DESY Raw data/CA Flat/230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_33161.spm.txt",
+    "NFFA DESY Raw data/CA Flat/230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_34949.spm.txt",
+    "NFFA DESY Raw data/CA Flat/230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_36494.spm.txt",
+    "NFFA DESY Raw data/CA High Roughness/230807_CA_high.0_00022.pfc-56F0_ForceCurveIndex_32640.spm.txt",
+    "NFFA DESY Raw data/CA High Roughness/230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_30859.spm.txt",
+    "NFFA DESY Raw data/CA High Roughness/230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_32388.spm.txt",
+    "NFFA DESY Raw data/CA High Roughness/230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_32907.spm.txt",
+    "NFFA DESY Raw data/CA High Roughness/230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_33925.spm.txt",
+    "NFFA DESY Raw data/CA Low Roughness/230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32378.spm.txt",
+    "NFFA DESY Raw data/CA Low Roughness/230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32384.spm.txt",
+    "NFFA DESY Raw data/CA Low Roughness/230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32904.spm.txt",
+    "NFFA DESY Raw data/CA Low Roughness/230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_34177.spm.txt"
+  ],
+  "group_assignments": {
+    "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_32893.spm.txt": "dev",
+    "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_33161.spm.txt": "train",
+    "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_34949.spm.txt": "train",
+    "230804_CA_Flat.0_00002.pfc-C488_ForceCurveIndex_36494.spm.txt": "test",
+    "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32378.spm.txt": "train",
+    "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32384.spm.txt": "train",
+    "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_32904.spm.txt": "test",
+    "230804_CA_Low.0_00016.pfc-228E_ForceCurveIndex_34177.spm.txt": "dev",
+    "230807_CA_high.0_00022.pfc-56F0_ForceCurveIndex_32640.spm.txt": "train",
+    "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_30859.spm.txt": "train",
+    "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_32388.spm.txt": "train",
+    "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_32907.spm.txt": "test",
+    "230807_CA_high.0_00022.pfc-D316_ForceCurveIndex_33925.spm.txt": "train"
+  },
+  "historical_contract_sha256": "fa8e444e0f6264bdd9f3cfb92b79636ba0058708b506039a4bafd7b8315ef737",
+  "input_units": {
+    "amp": "nN",
+    "base": "nN",
+    "progress": "dimensionless",
+    "x": "dimensionless"
+  },
+  "limitations": [
+    "Retrospective measurements only",
+    "Source export processing and instrument calibration need reconciliation",
+    "No evaluator-vault access or test-target export",
+    "Pending scientific admission and final rights/notices"
+  ],
+  "numerical_policy": {
+    "complexity_scope": "Historical rule-only simplicity excludes upstream preparation; full pipeline unassessed",
+    "fit_count": 0,
+    "learned_transformations": [],
+    "source_force_unit": "pN; divide by1000 for nN",
+    "source_instrument_calibration": "Per-curve headers retained; README 86.5nm/V differs from 66.70613 and 68.49950nm/V"
+  },
+  "output_units": "nN",
+  "parser": "cellulose-afm-calibrated-retraction-v1",
+  "policy": {
+    "coordinates": "Source calculated ramp; not measured indentation or physical time",
+    "observed": "Entire approach and first five retraction samples permitted; target begins zero-based index16",
+    "scope": "Curves at locations within three surfaces, not independent batch transfer",
+    "target_aliases_excluded": [
+      "Defl_nm_Rt",
+      "late Defl_pN_Rt",
+      "modulus and adhesion maps"
+    ]
+  },
+  "reference_parser_provenance": {
+    "path": "evaluation/preparation/new_cases/P100-084/native.py",
+    "reuse": "Identity specification and fixed calibration independently implemented; no fitted model, reference equation or evaluator copied",
+    "sha256": "f0ac3da499ea5e9a452ceb99fdcb463820801bf7df35e4aea9502842ac607182",
+    "split_sha256": "117ed2f7f0a725d10393ce1a5cb4c71d42969bdd89f548a1cd4a14928372118f"
+  },
+  "rights_status": "pending_final_review",
+  "scenario_id": "P100-084",
+  "schema_version": "native-reconstruction/1",
+  "source_identity": {
+    "doi": "10.5281/zenodo.20281797",
+    "url": "https://zenodo.org/records/20281797",
+    "version": "20281797"
+  },
+  "source_scenario_descriptor_sha256": "756aad35dbf732177304160317784cf39f21e9bfcfef568de3ec05695e054f3d"
+}

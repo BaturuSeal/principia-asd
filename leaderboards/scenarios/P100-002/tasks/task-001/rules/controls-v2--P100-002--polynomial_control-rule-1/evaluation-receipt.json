@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.0008029414731603725,
+    "primary": "mae",
+    "primary_error": 0.0008029414731603725,
+    "rmse": 0.0010320977432375078
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.0009691040695220571,
+  "by_group": [
+    {
+      "error": 0.0009745351684157464,
+      "group": "group-1df67ce996f16a4c66e8e746",
+      "rows": 509
+    },
+    {
+      "error": 0.0006313477779049985,
+      "group": "group-4343ce7a057ed808fa739c5a",
+      "rows": 472
+    }
+  ],
+  "coverage": {
+    "eligible": 981,
+    "fraction": 1.0,
+    "predicted": 981
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "controls-v2--P100-002--polynomial_control-rule-1",
+  "rule_sha256": "b9b11dee9117c1bee0dbfe50a4378ed52f41393dcf516e45d42a76b6c7f83266",
+  "run_id": "controls-v2--P100-002--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.141965072447746 + 0.10931336361421926 * lag1 + 0.06065888416008787 * lag2 + 0.04079336336649683 * lag3 + 0.017122625907233992 * lag4 + 0.035621912677343534 * lag6 + 0.052248712959694445 * lag12 + 0.0005117630952955524 * lag24 + 0.2413147617196583 * median6 + 0.30052947324178897 * median24 + -0.18278251996786257 * mad6",
+    "expression_bytes": 112,
+    "free_parameters": 11,
+    "learned_state_bytes": 301,
+    "nodes": 83,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.019717891876093227,
+    "perturbation_labels_available": false,
+    "population_rows": 981,
+    "ranking": false,
+    "samples": 512,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

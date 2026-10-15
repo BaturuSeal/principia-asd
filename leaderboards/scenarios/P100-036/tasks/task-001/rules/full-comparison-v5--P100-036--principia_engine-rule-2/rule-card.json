@@ -1,0 +1,79 @@
+{
+  "dev_error": 0.0034545016945723666,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tiny)",
+  "inputs": [
+    "npq",
+    "rfd",
+    "ngrdi",
+    "area",
+    "tiny",
+    "salt",
+    "drought",
+    "high_stress"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8326101589809537,
+    "p1": 0.020695135849230575
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "area": -0.16747927058148038,
+      "drought": 0.10867788692012188,
+      "high_stress": 0.20788954453425498,
+      "ngrdi": 0.252387911894077,
+      "npq": 0.1251490374161854,
+      "rfd": 0.1959029421064661,
+      "salt": -0.07327440144677244,
+      "tiny": -0.026484019361768477
+    },
+    "mean": -0.0011295551055752013,
+    "p90_abs": 0.006193631568092273,
+    "std": 0.004831374995872076
+  },
+  "rule_id": "full-comparison-v5--P100-036--principia_engine-rule-2",
+  "rule_sha256": "4b95698838cdc1f87870953962fe8f062c73460f86aa134a0e7eb1164002f47e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.8326101589809537 + 0.020695135849230575 * tiny",
+    "expression_bytes": 12,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-036.compact.v2",
+  "train_error": 0.006534431999766055,
+  "units": {
+    "inputs": {
+      "area": "source AREA_MM scale; only relative/log descriptor used",
+      "drought": "drought-treatment indicator",
+      "high_stress": "source second stress-level indicator; no invented dose units",
+      "ngrdi": "dimensionless RGB index",
+      "npq": "dimensionless author NPQ_Lss",
+      "rfd": "dimensionless author Rfd_Lss",
+      "salt": "salt-treatment indicator",
+      "tiny": "cultivar indicator"
+    },
+    "output": "dimensionless quantum yield",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

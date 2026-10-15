@@ -1,0 +1,91 @@
+{
+  "description": "Next nonoverlapping16-second recorded 30–80Hz strain RMS",
+  "domain": "physics",
+  "independent_unit": "Contiguous512-second block in one detector segment; blocks not independent experiments",
+  "input_units": {
+    "high1": "RMS strain in units of 1e-21",
+    "lag1": "RMS strain in units of 1e-21",
+    "lag2": "RMS strain in units of 1e-21",
+    "lag3": "RMS strain in units of 1e-21",
+    "lag4": "RMS strain in units of 1e-21",
+    "line1": "RMS strain in units of 1e-21",
+    "low1": "RMS strain in units of 1e-21",
+    "mad4": "RMS strain in units of 1e-21",
+    "median4": "RMS strain in units of 1e-21"
+  },
+  "limitations": [
+    "Only earlier16-second strain summaries used. Quality masks applied to entire predictor and target windows; no centered filters or future PSD.",
+    "Historical source and target exposure; retrospective only",
+    "Source-license evidence inherited from local register; publication audit pending"
+  ],
+  "measurement_representation": "traceable numeric features; native raw modalities not included in this compact track",
+  "modalities": [
+    "scientific_arrays_or_events"
+  ],
+  "output_units": "10^-21 strain",
+  "publication_authorized": false,
+  "rights_status": "source_terms_documented_pending_final_review",
+  "rows": {
+    "dev": 60,
+    "test": 64,
+    "train": 128
+  },
+  "scenario_id": "P100-003",
+  "schema_version": "principia-asd.scenario/2.0",
+  "size": {
+    "expanded_bytes_including_targets": 79996,
+    "limit_bytes": 10000000,
+    "public_bytes": 29422
+  },
+  "source": {
+    "evidence": [
+      {
+        "citation_url": "https://gwosc.org/O4/O4a/",
+        "license": "CC BY 4.0",
+        "rights_url": "https://gwosc.org/O4/O4a/",
+        "source": "scenarios/03_physics_gwosc_o4a_h1_strain/context/strain_file_api.json",
+        "source_sha256": "fed04f5569cf7e853585879922328e2beae80edfc2fea68b1ba424130c559c5e"
+      },
+      {
+        "citation_url": "https://gwosc.org/O4/O4a/",
+        "license": "CC BY 4.0",
+        "rights_url": "https://gwosc.org/O4/O4a/",
+        "source": "scenarios/03_physics_gwosc_o4a_h1_strain/raw/H-H1_GWOSC_O4a_4KHZ_R1-1388511232-4096.hdf5",
+        "source_sha256": "b0d7ae53435952801347f8bf518bc8ef5a167dfdb790fe562a2214cc2072522a"
+      }
+    ],
+    "historical_case": "P100-003",
+    "license": "CC BY 4.0",
+    "url": "https://gwosc.org/O4/O4a/",
+    "version": "O4a 4 kHz R1"
+  },
+  "split": {
+    "disjoint_groups": true,
+    "disjoint_samples": true,
+    "identity_join": "verified opaque reference sample_id and all allowed input values",
+    "partitions": {
+      "dev": {
+        "group_ids_sha256": "5ef0cfe70ca28f1cdba52600a61b84a829eb9999850c4d63c85acc7d6a5244fe",
+        "groups": 2,
+        "rows": 60,
+        "sample_ids_sha256": "acd625f0104a0345f532f3aca29f00e7ec65adfa560eff6cf22bd9cc67d9e040"
+      },
+      "test": {
+        "group_ids_sha256": "809411a15ad64eacaa9f655c574219dd023da65e7d50d039a33691be54d74a6a",
+        "groups": 2,
+        "rows": 64,
+        "sample_ids_sha256": "3aab7a423173634d22e798ef6050ba69c734780595afbf461ffc2164c163ef48"
+      },
+      "train": {
+        "group_ids_sha256": "1e2612df39938f33fcd366ba89f0806b596c0a8a789cbbde02acac698b552cd0",
+        "groups": 4,
+        "rows": 128,
+        "sample_ids_sha256": "a1283553237147abc7937d81e419097d074c8728d6498d74e178e812f1b67cc9"
+      }
+    },
+    "policy": "deterministic whole independent-unit groups; original confirmation unchanged"
+  },
+  "status": "retrospective_local_admitted",
+  "title": "GWOSC O4a H1 strain and detector-quality masks",
+  "version": "1.0.0rc2"
+}

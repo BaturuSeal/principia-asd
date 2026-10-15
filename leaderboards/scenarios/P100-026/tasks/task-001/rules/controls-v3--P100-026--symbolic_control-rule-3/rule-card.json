@@ -1,0 +1,62 @@
+{
+  "dev_error": 5.391674485416562,
+  "execution_status": "complete",
+  "expression": "p0+p1*(log1p(abs((anchor_selectivity_pct-52.39578511669138)/11.10643976277952)))+p2*(elapsed_min*ag_wt_pct)",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 62.830912176516,
+    "p1": -28.24050753203503,
+    "p2": 0.0008551070670931913
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": -0.3352945514659639,
+      "elapsed_min": 0.40861750443565353,
+      "prefix_slope_pct_min": 0.3352945514659639
+    },
+    "mean": -5.356420698098933,
+    "p90_abs": 8.094029363798363,
+    "std": 2.2352107168642013
+  },
+  "rule_id": "controls-v3--P100-026--symbolic_control-rule-3",
+  "rule_sha256": "753be14aead9e21cc917872418367a0ce0dd8fc1ef612b9ee42d0d2b6266b870",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "62.830912176516 + -28.24050753203503 * log1p(abs((anchor_selectivity_pct - 52.39578511669138) / 11.10643976277952)) + 0.0008551070670931913 * (elapsed_min * ag_wt_pct)",
+    "expression_bytes": 107,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "literal_state_bytes": 34,
+    "nodes": 35,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 4.47271814878851,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

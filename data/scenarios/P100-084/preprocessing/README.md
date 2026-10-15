@@ -1,0 +1,1 @@
+Source-native prepared quantities; no new numerical values generated. Reconstruct using scripts/curate_v2.py with the preserved local Principia source registry. Original raw data is not needed to run this compact package. SHA256SUMS pins all public content. Inputs retain the legacy task calibration and timing restrictions.

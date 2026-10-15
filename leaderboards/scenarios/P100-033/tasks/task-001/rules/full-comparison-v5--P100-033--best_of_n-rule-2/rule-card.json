@@ -1,0 +1,82 @@
+{
+  "dev_error": 10.146735036818885,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * (0.5 * (fft_bpm + acf_bpm)) + p2 * (half_bpm - 0.5 * (fft_bpm + acf_bpm)) + p3 * (half_strength - 0.5) + p4 * (spectral_quality - 0.5) + p5 * (agreement - 10) + p6 * motion + p7 * ear",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 81.19055773135685,
+    "p1": -0.04275067204989865,
+    "p2": -0.11053706093697492,
+    "p3": -1.905837546568246,
+    "p4": -3.113373936060982,
+    "p5": -0.02905370724787665,
+    "p6": 2.2634184024310944,
+    "p7": -2.073252251096876
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.27878073186063584,
+      "agreement": 0.18657915268330288,
+      "ear": -0.2588035898941706,
+      "fft_bpm": 0.24173950623040377,
+      "half_bpm": 0.1588903491823522,
+      "half_strength": -0.23457665848845077,
+      "motion": 0.037686611601223746,
+      "spectral_quality": -0.14278257204919845
+    },
+    "mean": 6.550843549379167,
+    "p90_abs": 21.60576283101756,
+    "std": 11.519961181895154
+  },
+  "rule_id": "full-comparison-v5--P100-033--best_of_n-rule-2",
+  "rule_sha256": "8ab07f2e08b24f1a17a7f71313c87de5a25b5c545ec6d9f21b775e88f6626349",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "81.19055773135685 + -0.04275067204989865 * (0.5 * (fft_bpm + acf_bpm)) + -0.11053706093697492 * (half_bpm - 0.5 * (fft_bpm + acf_bpm)) + -1.905837546568246 * (half_strength - 0.5) + -3.113373936060982 * (spectral_quality - 0.5) + -0.02905370724787665 * (agreement - 10) + 2.2634184024310944 * motion + -2.073252251096876 * ear",
+    "expression_bytes": 193,
+    "free_parameters": 8,
+    "learned_state_bytes": 213,
+    "literal_state_bytes": 14,
+    "nodes": 86,
+    "numeric_literal_count": 5,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 22
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 11.595218356220718,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "dev_error": 108.12716279069404,
+  "execution_status": "complete",
+  "expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+  "inputs": [
+    "concentration_uM",
+    "time_min",
+    "calibration_F6",
+    "calibration_v6",
+    "calibration_curvature"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.0
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "calibration_F6": 0.17304674811138573,
+      "calibration_curvature": -0.17304674811138576,
+      "calibration_v6": 0.1730467481113858,
+      "concentration_uM": 0.17304674811138576,
+      "time_min": 0.8218970006357195
+    },
+    "mean": 106.82748837208887,
+    "p90_abs": 294.7839374999862,
+    "std": 138.43526975953816
+  },
+  "rule_id": "full-comparison-v5--P100-074--direct_qwen-rule-1",
+  "rule_sha256": "dcd039eb12395c342676d27601cb8b5162d16dc0df75756aa11fc35476024edd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "calibration_F6 + calibration_v6 * (time_min - 6.0) + 0.5 * calibration_curvature * (time_min - 6.0) ** 2",
+    "expression_bytes": 104,
+    "free_parameters": 1,
+    "learned_state_bytes": 11,
+    "literal_state_bytes": 10,
+    "nodes": 31,
+    "numeric_literal_count": 4,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-074.compact.v2",
+  "train_error": 685.4463076395353,
+  "units": {
+    "inputs": {
+      "calibration_F6": "source fluorescence units",
+      "calibration_curvature": "source fluorescence units/min^2",
+      "calibration_v6": "source fluorescence units/min",
+      "concentration_uM": "uM",
+      "time_min": "min"
+    },
+    "output": "source fluorescence units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.11526060239599203,
+  "execution_status": "complete",
+  "expression": "p0+p1*(y0)+p2*(y1)+p3*(y2)+p4*(y3)+p5*(offset)+p6*(t)",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.0012593566237154197,
+    "p1": 1.0896105504617,
+    "p2": -1.0367570511430297,
+    "p3": 0.09022524857968947,
+    "p4": -0.06853973429933885,
+    "p5": 0.06277097161401221,
+    "p6": 0.028124011159597985
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.02916305174893585,
+      "t": -0.022847944251183444,
+      "y0": -0.057270352600349336,
+      "y1": -0.035423305032468815,
+      "y2": -0.006838343174086738,
+      "y3": 0.013209024098496492
+    },
+    "mean": 0.003993261615848306,
+    "p90_abs": 0.24014384302035793,
+    "std": 0.14544722634072704
+  },
+  "rule_id": "full-comparison-v5--P100-068--linear_control-rule-1",
+  "rule_sha256": "409e61de4674e4e2176e581a2de8f78914946e6dc3c0f9a7d7ce3c78aed80b0e",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.0012593566237154197 + 1.0896105504617 * y0 + -1.0367570511430297 * y1 + 0.09022524857968947 * y2 + -0.06853973429933885 * y3 + 0.06277097161401221 * offset + 0.028124011159597985 * t",
+    "expression_bytes": 53,
+    "free_parameters": 7,
+    "learned_state_bytes": 190,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.11230295796534599,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

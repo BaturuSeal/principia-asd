@@ -1,0 +1,75 @@
+{
+  "dev_error": 0.1152606023832238,
+  "execution_status": "complete",
+  "expression": "p0*y0 + p1*y1 + p2*y2 + p3*y3 + p4*offset + p5*t + p6",
+  "inputs": [
+    "y0",
+    "y1",
+    "y2",
+    "y3",
+    "offset",
+    "t"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.0896105526522644,
+    "p1": -1.0367570551589802,
+    "p2": 0.09022525255630764,
+    "p3": -0.06853973597096565,
+    "p4": 0.06277097243218252,
+    "p5": 0.02812401217754941,
+    "p6": -0.0012593569948984836
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "offset": 0.029163052188848286,
+      "t": -0.022847943358131843,
+      "y0": -0.05727035248666906,
+      "y1": -0.03542330518847156,
+      "y2": -0.006838343100782298,
+      "y3": 0.013209023871957194
+    },
+    "mean": 0.003993261541368899,
+    "p90_abs": 0.24014384213634457,
+    "std": 0.14544722632253712
+  },
+  "rule_id": "full-comparison-v5--P100-068--direct_qwen-rule-1",
+  "rule_sha256": "48034681006d5e3e8628cd90a8d5aa14a9f2d668dd88081355360a72b862f049",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.0896105526522644 * y0 + -1.0367570551589802 * y1 + 0.09022525255630764 * y2 + -0.06853973597096565 * y3 + 0.06277097243218252 * offset + 0.02812401217754941 * t + -0.0012593569948984836",
+    "expression_bytes": 53,
+    "free_parameters": 7,
+    "learned_state_bytes": 192,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-068.compact.v2",
+  "train_error": 0.11230295798302536,
+  "units": {
+    "inputs": {
+      "offset": "V; first20samplemean",
+      "t": "s; storedtimestamp",
+      "y0": "V; currentrawminusinitialoffset",
+      "y1": "V;5mslagminusoffset",
+      "y2": "V;10mslagminusoffset",
+      "y3": "V;15mslagminusoffset"
+    },
+    "output": "V",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

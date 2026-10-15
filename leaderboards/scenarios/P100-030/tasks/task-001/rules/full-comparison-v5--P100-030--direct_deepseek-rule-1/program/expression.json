@@ -1,0 +1,7 @@
+{
+  "expression": "boundary_cof * (1 - 0.5 * log1p(speed_mm_s) / log1p(10)) + highspeed_cof * (log1p(speed_mm_s) / log1p(10))",
+  "parameters": {},
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

@@ -1,0 +1,16 @@
+{
+  "expression": "minimum(1, maximum(0, p0 + p1 * quality + p2 * radial_fraction + p3 * quality * radial_fraction + p4 * (rho_vapor / rho_liquid) + p5 * (pressure_Pa / 1e7) + p6 * (massflux_kg_m2_s / 1000) + p7 * quality * (rho_vapor / rho_liquid)))",
+  "parameters": {
+    "p0": 19.595104593309248,
+    "p1": -0.11744455111356034,
+    "p2": -0.36578221257420424,
+    "p3": -5.548546818357605,
+    "p4": 991.7487735399659,
+    "p5": -97.45917672012305,
+    "p6": 0.5117369188082073,
+    "p7": 133.4340295206412
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

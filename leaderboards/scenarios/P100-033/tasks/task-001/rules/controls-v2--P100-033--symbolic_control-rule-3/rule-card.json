@@ -1,0 +1,73 @@
+{
+  "dev_error": 9.50457267704617,
+  "execution_status": "complete",
+  "expression": "p0+p1*(log1p(abs((half_bpm-37.557614677056556)/9.191220917951293)))+p2*(half_strength*motion)",
+  "inputs": [
+    "fft_bpm",
+    "acf_bpm",
+    "half_bpm",
+    "half_strength",
+    "spectral_quality",
+    "agreement",
+    "motion",
+    "ear"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 80.7152612423495,
+    "p1": -3.6221089289328448,
+    "p2": 2.078560173591144
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "acf_bpm": 0.19150013675275696,
+      "agreement": 0.13771891458455102,
+      "ear": -0.16966313429278887,
+      "fft_bpm": 0.15365920983157078,
+      "half_bpm": 0.13139335810436262,
+      "half_strength": -0.13646983130230486,
+      "motion": 0.015486419337513617,
+      "spectral_quality": -0.05678276806013469
+    },
+    "mean": 6.23044346246589,
+    "p90_abs": 20.612078753830602,
+    "std": 10.841987501689703
+  },
+  "rule_id": "controls-v2--P100-033--symbolic_control-rule-3",
+  "rule_sha256": "15ba5956460b9ef0d9afdacdf88b83914c30e90d33d5ab134662adbd1f18c1ca",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "80.7152612423495 + -3.6221089289328448 * log1p(abs((half_bpm - 37.557614677056556) / 9.191220917951293)) + 2.078560173591144 * (half_strength * motion)",
+    "expression_bytes": 93,
+    "free_parameters": 3,
+    "learned_state_bytes": 76,
+    "nodes": 35,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 11
+  },
+  "task_id": "P100-033.compact.v2",
+  "train_error": 12.08280202463051,
+  "units": {
+    "inputs": {
+      "acf_bpm": "bpm",
+      "agreement": "bpm",
+      "ear": "dimensionless",
+      "fft_bpm": "bpm",
+      "half_bpm": "bpm",
+      "half_strength": "dimensionless",
+      "motion": "dimensionless",
+      "spectral_quality": "dimensionless"
+    },
+    "output": "bpm",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

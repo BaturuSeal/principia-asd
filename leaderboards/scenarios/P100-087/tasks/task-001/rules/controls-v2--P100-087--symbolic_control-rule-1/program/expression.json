@@ -1,0 +1,14 @@
+{
+  "expression": "p0+p1*(own_previous)+p2*(own_history_mean)+p3*(tanh((own_previous-10.778558052434457)/6.094869696918072))+p4*(own_lag2)+p5*(tanh((own_lag2-10.801186017478152)/6.100499240052563))",
+  "parameters": {
+    "p0": 0.878388223757082,
+    "p1": 0.4270722168615644,
+    "p2": 0.2924373564163674,
+    "p3": 0.8178955426255242,
+    "p4": 0.19359041912749334,
+    "p5": -0.2798382146497475
+  },
+  "representation": "expression",
+  "runtime": "principia-asd 1.0.0rc2",
+  "tree": null
+}

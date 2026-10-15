@@ -1,0 +1,61 @@
+{
+  "dev_error": 0.24680891666666666,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "ratio",
+    "water",
+    "age_min",
+    "time_s"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.42913333333333337
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "age_min": -0.49743209262798416,
+      "ratio": 0.7209133264835706,
+      "time_s": -0.28076381674891765,
+      "water": 0.7209133264835706
+    },
+    "mean": -0.0985833333333333,
+    "p90_abs": 0.5808666666666666,
+    "std": 0.30744565057186213
+  },
+  "rule_id": "full-comparison-v5--P100-055--mean_control-rule-1",
+  "rule_sha256": "0b1da70ca9be322cfc5843c812000daa36be7c8a87cee1f78a8a7a3adc52d6d4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.42913333333333337",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-055.compact.v2",
+  "train_error": 0.12196472222222221,
+  "units": {
+    "inputs": {
+      "age_min": "min since mixing; 0 or 30",
+      "ratio": "mix-design ratio encoded in author mixture label",
+      "time_s": "native penetration clock index; unit unspecified",
+      "water": "water ratio encoded in author mixture label"
+    },
+    "output": "N",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

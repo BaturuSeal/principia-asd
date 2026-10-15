@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.4153336342945561,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * p0 + p2 * p05 + p3 * p10 + p4 * p20 + p5 * p30 + p6 * p40 + p7 * p50",
+  "inputs": [
+    "p0",
+    "p05",
+    "p10",
+    "p20",
+    "p30",
+    "p40",
+    "p50",
+    "di0",
+    "de0",
+    "di20",
+    "de20",
+    "trial_BH",
+    "trial_FEM"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.23506070376625218,
+    "p1": -0.6690944077671456,
+    "p2": 1.8676670950761936,
+    "p3": -0.5592027063888758,
+    "p4": -0.30641085360505116,
+    "p5": 0.11080231294194617,
+    "p6": -0.13326437099650904,
+    "p7": -0.04750491067611821
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "de0": -0.01742549445641296,
+      "de20": -0.004176751816153297,
+      "di0": -0.13666961205630568,
+      "di20": -0.19173793924000146,
+      "p0": -0.012663280504472104,
+      "p05": 0.044497750620358795,
+      "p10": 0.04955141185864111,
+      "p20": 0.05716130707583585,
+      "p30": 0.058932843872766025,
+      "p40": 0.04159635116944428,
+      "p50": 0.036833869655477434,
+      "trial_BH": -5.504888142205371e-05,
+      "trial_FEM": 0.0449888960896912
+    },
+    "mean": 0.03734615049917273,
+    "p90_abs": 1.0411837656569534,
+    "std": 0.7843460154634607
+  },
+  "rule_id": "full-comparison-v5--P100-032--feedback_refinement-rule-1",
+  "rule_sha256": "3d12421738489ecc91af88b1311267c385f95f887c19f251ead0940bebbc8784",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.23506070376625218 + -0.6690944077671456 * 0.23506070376625218 + 1.8676670950761936 * p05 + -0.5592027063888758 * p10 + -0.30641085360505116 * p20 + 0.11080231294194617 * p30 + -0.13326437099650904 * p40 + -0.04750491067611821 * p50",
+    "expression_bytes": 78,
+    "free_parameters": 8,
+    "learned_state_bytes": 218,
+    "literal_state_bytes": 0,
+    "nodes": 59,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "task_id": "P100-032.compact.v2",
+  "train_error": 0.3740969663134652,
+  "units": {
+    "inputs": {
+      "de0": "cmH2O",
+      "de20": "cmH2O",
+      "di0": "cmH2O",
+      "di20": "cmH2O",
+      "p0": "cmH2O",
+      "p05": "cmH2O",
+      "p10": "cmH2O",
+      "p20": "cmH2O",
+      "p30": "cmH2O",
+      "p40": "cmH2O",
+      "p50": "cmH2O",
+      "trial_BH": "binary",
+      "trial_FEM": "binary"
+    },
+    "output": "cmH2O",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

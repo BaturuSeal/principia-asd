@@ -1,0 +1,70 @@
+{
+  "dev_error": 4.204179277238275,
+  "execution_status": "complete",
+  "expression": "p0 + p1*lag1 + p2*lag3 + p3*lag6 + p4*month + p5*lag1*lag3 + p6*lag1*lag6 + p7*lag3*lag6",
+  "inputs": [
+    "lag1",
+    "lag3",
+    "lag6",
+    "month"
+  ],
+  "method_id": "feedback_refinement",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "revision-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.2288756443145974,
+    "p1": 0.5622516733012068,
+    "p2": 0.6182880490113427,
+    "p3": -0.1390354815194624,
+    "p4": -0.15330987688393483,
+    "p5": -0.004287350021181228,
+    "p6": 0.00539422910601408,
+    "p7": -0.0015632346165541328
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "lag1": -0.1353497602841675,
+      "lag3": -0.16697540955681392,
+      "lag6": -0.1947567191872282,
+      "month": 0.14355319950601125
+    },
+    "mean": 0.32797493548720885,
+    "p90_abs": 8.886640336658198,
+    "std": 8.294544156277492
+  },
+  "rule_id": "full-comparison-v5--P100-019--feedback_refinement-rule-1",
+  "rule_sha256": "43e350734d030aa420b85bd254b10c817706a32f459a546b2e7221a3187a49fd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.2288756443145974 + 0.5622516733012068 * lag1 + 0.6182880490113427 * lag3 + -0.1390354815194624 * lag6 + -0.15330987688393483 * month + -0.004287350021181228 * lag1 * lag3 + 0.00539422910601408 * lag1 * lag6 + -0.0015632346165541328 * lag3 * lag6",
+    "expression_bytes": 88,
+    "free_parameters": 8,
+    "learned_state_bytes": 219,
+    "literal_state_bytes": 0,
+    "nodes": 71,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 17
+  },
+  "task_id": "P100-019.compact.v2",
+  "train_error": 4.113298094686703,
+  "units": {
+    "inputs": {
+      "lag1": "prior calendar month unique ODINO count",
+      "lag3": "mean prior3monthly counts",
+      "lag6": "mean prior6monthly counts",
+      "month": "target calendar month1–12"
+    },
+    "output": "complaints/month",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

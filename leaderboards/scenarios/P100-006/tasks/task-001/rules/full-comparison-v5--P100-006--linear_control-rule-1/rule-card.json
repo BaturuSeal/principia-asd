@@ -1,0 +1,57 @@
+{
+  "dev_error": 0.19607600833841554,
+  "execution_status": "complete",
+  "expression": "p0+p1*(detuning_MHz)+p2*(rabi_MHz)",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.4165587633933575,
+    "p1": 0.0005034545521617004,
+    "p2": 0.015131523761395075
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.09507430627084307,
+      "rabi_MHz": 0.16820477044204019
+    },
+    "mean": 0.02636823700259232,
+    "p90_abs": 0.44264251708782376,
+    "std": 0.2373085328080523
+  },
+  "rule_id": "full-comparison-v5--P100-006--linear_control-rule-1",
+  "rule_sha256": "91c3ac342fe6a01c02d012b4bf6ef36446c99a9a47c0bb2ffdd55bffe0e16a38",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.4165587633933575 + 0.0005034545521617004 * detuning_MHz + 0.015131523761395075 * rabi_MHz",
+    "expression_bytes": 34,
+    "free_parameters": 3,
+    "learned_state_bytes": 83,
+    "literal_state_bytes": 0,
+    "nodes": 19,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.10113355171011323,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

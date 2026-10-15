@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.011068984189267186,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lag3*line1)+p2*(lag1*low1)",
+  "inputs": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "lag4",
+    "median4",
+    "mad4",
+    "low1",
+    "high1",
+    "line1"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.08551590743580995,
+    "p1": 1.0204605377191496,
+    "p2": 0.0015324350085940135
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "high1": 0.0775621402940306,
+      "lag1": -0.0027587161665126813,
+      "lag2": -0.09981347856610848,
+      "lag3": -0.020221865301150183,
+      "lag4": 0.005043692359703479,
+      "line1": -0.017557597510715214,
+      "low1": 0.08761795100346624,
+      "mad4": 0.0961612885915629,
+      "median4": -0.0022741803436552343
+    },
+    "mean": 0.0014096957426064198,
+    "p90_abs": 0.020384088989519777,
+    "std": 0.01434706486210219
+  },
+  "rule_id": "controls-v3--P100-003--symbolic_control-rule-3",
+  "rule_sha256": "452dad4b4b6e60e80d0993f75fb42813ee3ae44098a21758e04d76049f227d0a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.08551590743580995 + 1.0204605377191496 * (lag3 * line1) + 0.0015324350085940135 * (lag1 * low1)",
+    "expression_bytes": 33,
+    "free_parameters": 3,
+    "learned_state_bytes": 82,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-003.compact.v2",
+  "train_error": 0.013401607760616083,
+  "units": {
+    "inputs": {
+      "high1": "RMS strain in units of 1e-21",
+      "lag1": "RMS strain in units of 1e-21",
+      "lag2": "RMS strain in units of 1e-21",
+      "lag3": "RMS strain in units of 1e-21",
+      "lag4": "RMS strain in units of 1e-21",
+      "line1": "RMS strain in units of 1e-21",
+      "low1": "RMS strain in units of 1e-21",
+      "mad4": "RMS strain in units of 1e-21",
+      "median4": "RMS strain in units of 1e-21"
+    },
+    "output": "10^-21 strain",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

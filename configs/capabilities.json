@@ -1,0 +1,148 @@
+{
+  "Pro/moonshotai/Kimi-K2.6": {
+    "generation": {
+      "input_rate": 6.5,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 27,
+      "reasoning_bound": 0
+    },
+    "json": true,
+    "model": "Pro/moonshotai/Kimi-K2.6",
+    "price_source": {
+      "currency": "CNY",
+      "date": "2026-10-11",
+      "policy": "highest daily input/output rates; cache discounts not assumed",
+      "unit": "per million tokens",
+      "url": "https://www.siliconflow.cn/pricing"
+    },
+    "state": "verified",
+    "text": true,
+    "tools": "host structured JSON actions only",
+    "usage": {
+      "completion_tokens": 16,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 36,
+      "prompt_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 52
+    },
+    "vision": "not_probed"
+  },
+  "Qwen/Qwen3.8-27B": {
+    "generation": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 12,
+      "reasoning_bound": 0
+    },
+    "json": true,
+    "model": "Qwen/Qwen3.8-27B",
+    "price_source": {
+      "currency": "CNY",
+      "date": "2026-10-11",
+      "policy": "highest daily input/output rates; cache discounts not assumed",
+      "unit": "per million tokens",
+      "url": "https://www.siliconflow.cn/pricing"
+    },
+    "state": "verified",
+    "text": true,
+    "tools": "host structured JSON actions only",
+    "usage": {
+      "completion_tokens": 15,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 39,
+      "prompt_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 54
+    },
+    "vision": "not_probed"
+  },
+  "deepseek-ai/DeepSeek-V4-Flash": {
+    "generation": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 9,
+      "reasoning_bound": 0
+    },
+    "json": true,
+    "model": "deepseek-ai/DeepSeek-V4-Flash",
+    "price_source": {
+      "currency": "CNY",
+      "date": "2026-10-11",
+      "policy": "highest daily input/output rates; cache discounts not assumed",
+      "unit": "per million tokens",
+      "url": "https://www.siliconflow.cn/pricing"
+    },
+    "state": "verified",
+    "text": true,
+    "tools": "host structured JSON actions only",
+    "usage": {
+      "completion_tokens": 16,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 27,
+      "prompt_tokens": 27,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 43
+    },
+    "vision": "not_probed"
+  },
+  "zai-org/GLM-5.3": {
+    "generation": {
+      "input_rate": 8,
+      "options": {
+        "enable_thinking": true,
+        "reasoning_effort": "high",
+        "thinking_budget": 1024
+      },
+      "output_rate": 28,
+      "reasoning_bound": 1024
+    },
+    "json": true,
+    "model": "zai-org/GLM-5.3",
+    "price_source": {
+      "currency": "CNY",
+      "date": "2026-10-11",
+      "policy": "highest daily input/output rates; cache discounts not assumed",
+      "unit": "per million tokens",
+      "url": "https://www.siliconflow.cn/pricing"
+    },
+    "state": "verified",
+    "text": true,
+    "tools": "host structured JSON actions only",
+    "usage": {
+      "completion_tokens": 85,
+      "completion_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 35,
+      "prompt_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 120
+    },
+    "vision": "not_probed"
+  }
+}

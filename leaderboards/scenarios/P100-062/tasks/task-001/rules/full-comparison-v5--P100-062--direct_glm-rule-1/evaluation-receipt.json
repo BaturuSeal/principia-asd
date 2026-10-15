@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.5134392918325765,
+    "primary": "mae",
+    "primary_error": 1.5134392918325765,
+    "rmse": 1.6128621197812616
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 62.72231225017243,
+  "by_group": [
+    {
+      "error": 2.0593799366915087,
+      "group": "group-1000ba85327fac63d060ca46",
+      "rows": 119
+    },
+    {
+      "error": 0.9674986469736443,
+      "group": "group-4d7b9fc94e5faa5af1241873",
+      "rows": 251
+    }
+  ],
+  "coverage": {
+    "eligible": 370,
+    "fraction": 1.0,
+    "predicted": 370
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "direct_glm",
+  "rule_id": "full-comparison-v5--P100-062--direct_glm-rule-1",
+  "rule_sha256": "2e2bfa1ea671222911cc6f39a7f121cb63f2768842cbafb6878842c351f0a725",
+  "run_id": "full-comparison-v5--P100-062--direct_glm",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "offset + 19.944793014719345 * drive ** 0.5677025276735944 * (1 - exp(-(t / 2020.9336867575394) ** 1.5767324080370073)) * (1 + 0.008994422438389457 * high)",
+    "expression_bytes": 64,
+    "free_parameters": 5,
+    "learned_state_bytes": 132,
+    "literal_state_bytes": 2,
+    "nodes": 46,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 14
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.011406680934549024,
+    "perturbation_labels_available": false,
+    "population_rows": 370,
+    "ranking": false,
+    "samples": 370,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

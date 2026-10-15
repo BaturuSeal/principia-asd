@@ -1,0 +1,59 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.18450499558027822,
+    "primary": "mae",
+    "primary_error": 0.18450499558027822,
+    "rmse": 0.22490727044239087
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2554634926942343,
+  "by_group": [
+    {
+      "error": 0.16810898111820458,
+      "group": "group-42ddf94ec42730d384acd41e",
+      "rows": 15
+    },
+    {
+      "error": 0.20090101004235184,
+      "group": "group-50b8635b9fa8ad85412f6437",
+      "rows": 15
+    }
+  ],
+  "coverage": {
+    "eligible": 30,
+    "fraction": 1.0,
+    "predicted": 30
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "controls-v2--P100-023--linear_control-rule-1",
+  "rule_sha256": "cdcdc0d31979722f7a16676a31bd4ec777c65d9cacef817551e4059395eeade2",
+  "run_id": "controls-v2--P100-023--linear_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.17734914819161257 + 0.41875117708457954 * H + 0.006158762874269336 * viscosity + -1.294672207303249 * speed + -0.12490198725299624 * load + 0.0036086345361670447 * hydration + 0.019462772072271973 * area",
+    "expression_bytes": 70,
+    "free_parameters": 7,
+    "learned_state_bytes": 193,
+    "nodes": 51,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.09585527030680223,
+    "perturbation_labels_available": false,
+    "population_rows": 30,
+    "ranking": false,
+    "samples": 30,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

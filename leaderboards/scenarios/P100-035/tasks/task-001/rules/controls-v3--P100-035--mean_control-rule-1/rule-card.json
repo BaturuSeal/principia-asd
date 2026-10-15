@@ -1,0 +1,79 @@
+{
+  "dev_error": 0.267523656985867,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "log_duration",
+    "log_centroid",
+    "log_peak",
+    "high_share",
+    "entropy",
+    "flatness",
+    "envelope_cv",
+    "log_modulation",
+    "log_rms",
+    "species_code"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.18583671628326567
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "entropy": 0.15614372849496214,
+      "envelope_cv": 0.054415824038005815,
+      "flatness": 0.14503844926029674,
+      "high_share": 0.015432113616651349,
+      "log_centroid": 0.1237362773363772,
+      "log_duration": 0.4330611286400912,
+      "log_modulation": -0.3212825398552948,
+      "log_peak": 0.04083447833864781,
+      "log_rms": 0.262357430554712,
+      "species_code": -0.2483476314275585
+    },
+    "mean": -0.08410193402348277,
+    "p90_abs": 0.8141632837167343,
+    "std": 0.44392766908283543
+  },
+  "rule_id": "controls-v3--P100-035--mean_control-rule-1",
+  "rule_sha256": "6775f7ad0247239d1ac66f8da5567de28e2d6e0f29a5b3cfd8f1d7e8e8f42075",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.18583671628326567",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-035.compact.v2",
+  "train_error": 0.20097438465729547,
+  "units": {
+    "inputs": {
+      "entropy": "dimensionless",
+      "envelope_cv": "dimensionless",
+      "flatness": "dimensionless",
+      "high_share": "dimensionless",
+      "log_centroid": "dimensionless",
+      "log_duration": "dimensionless",
+      "log_modulation": "dimensionless",
+      "log_peak": "dimensionless",
+      "log_rms": "dimensionless",
+      "species_code": "dimensionless"
+    },
+    "output": "probability",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

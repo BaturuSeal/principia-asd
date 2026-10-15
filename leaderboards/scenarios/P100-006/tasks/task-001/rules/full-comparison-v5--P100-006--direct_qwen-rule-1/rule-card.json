@@ -1,0 +1,60 @@
+{
+  "dev_error": 0.1493821497978864,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * (rabi_MHz ** p2) / (1 + (detuning_MHz / p3) ** 2)",
+  "inputs": [
+    "detuning_MHz",
+    "rabi_MHz"
+  ],
+  "method_id": "direct_qwen",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Qwen/Qwen3.8-27B"
+  ],
+  "origin": "single_generation",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.4965932876416754,
+    "p1": -0.028775746652177355,
+    "p2": 1.7859109685711614,
+    "p3": 6.524170022984778
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "detuning_MHz": -0.2563643488045373,
+      "rabi_MHz": -0.0656430470748344
+    },
+    "mean": -0.07364738836059878,
+    "p90_abs": 0.22689856691851576,
+    "std": 0.15077679343061948
+  },
+  "rule_id": "full-comparison-v5--P100-006--direct_qwen-rule-1",
+  "rule_sha256": "7e7d90ccbc3e50f237a73b3de14fb9b18ecdec26836a38007c327938c75d3ad2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.4965932876416754 + -0.028775746652177355 * rabi_MHz ** 1.7859109685711614 / (1 + (detuning_MHz / 6.524170022984778) ** 2)",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 106,
+    "literal_state_bytes": 2,
+    "nodes": 29,
+    "numeric_literal_count": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-006.compact.v2",
+  "train_error": 0.10074692753745064,
+  "units": {
+    "inputs": {
+      "detuning_MHz": "MHz",
+      "rabi_MHz": "MHz"
+    },
+    "output": "arbitrary units",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

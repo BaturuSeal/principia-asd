@@ -1,0 +1,50 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.6666666666666667,
+    "mae": null,
+    "primary": "mae",
+    "primary_error": null,
+    "rmse": null
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.3762859391534392,
+  "by_group": [],
+  "coverage": {
+    "eligible": 36,
+    "fraction": 0.3333333333333333,
+    "predicted": 12
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "full-comparison-v5--P100-027--polynomial_control-rule-1",
+  "rule_sha256": "259e838a05f894ea19c805334772019a9f3535b0c5927000b236377880777b3d",
+  "run_id": "full-comparison-v5--P100-027--polynomial_control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "467509.3671024234 + -0.016436379227071033 * pressure_Pa + -0.00023365186663284353 * massflux_kg_m2_s + 1.0446687579685952 * quality + -0.41440052605530026 * radial_fraction + -534.7543913117128 * rho_liquid + 1182.9955504875659 * rho_vapor",
+    "expression_bytes": 106,
+    "free_parameters": 7,
+    "learned_state_bytes": 191,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 374.7979072799195,
+    "perturbation_labels_available": false,
+    "population_rows": 36,
+    "ranking": false,
+    "samples": 36,
+    "scope": "diagnostic only; measurement error distribution not independently established"
+  },
+  "status": "invalid",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

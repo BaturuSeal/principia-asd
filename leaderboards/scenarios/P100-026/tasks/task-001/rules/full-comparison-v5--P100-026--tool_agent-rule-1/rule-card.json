@@ -1,0 +1,65 @@
+{
+  "dev_error": 2.376602490344984,
+  "execution_status": "complete",
+  "expression": "p0 + p1*anchor_selectivity_pct + p2*prefix_slope_pct_min*elapsed_min + p3*ag_wt_pct",
+  "inputs": [
+    "elapsed_min",
+    "anchor_selectivity_pct",
+    "prefix_slope_pct_min",
+    "ag_wt_pct"
+  ],
+  "method_id": "tool_agent",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "tool-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.8961131310920392,
+    "p1": 1.0000799461766816,
+    "p2": 0.3244748317873817,
+    "p3": 0.0070220868653278505
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_selectivity_pct": 0.03061427911188992,
+      "elapsed_min": 0.7573136550869403,
+      "prefix_slope_pct_min": -0.030614279111889988
+    },
+    "mean": 0.4215344421675129,
+    "p90_abs": 4.525694382903773,
+    "std": 3.002549992293958
+  },
+  "rule_id": "full-comparison-v5--P100-026--tool_agent-rule-1",
+  "rule_sha256": "5cffde357a3e2b12c3bd9a2a25e4efe7d8b7eda33627ecf486d13f8a0b06ccb2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.8961131310920392 + 1.0000799461766816 * anchor_selectivity_pct + 0.3244748317873817 * prefix_slope_pct_min * elapsed_min + 0.0070220868653278505 * ag_wt_pct",
+    "expression_bytes": 83,
+    "free_parameters": 4,
+    "learned_state_bytes": 107,
+    "literal_state_bytes": 0,
+    "nodes": 31,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-026.compact.v2",
+  "train_error": 1.1236096380660776,
+  "units": {
+    "inputs": {
+      "ag_wt_pct": "wt percent",
+      "anchor_selectivity_pct": "percent",
+      "elapsed_min": "min",
+      "prefix_slope_pct_min": "percent/min"
+    },
+    "output": "percentage points",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

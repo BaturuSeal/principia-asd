@@ -1,0 +1,70 @@
+{
+  "dev_error": 5.2816559885852294,
+  "execution_status": "complete",
+  "expression": "p0+p1*(length_km)",
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 4.454115819501957,
+    "p1": 0.1999146660605876
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "duration_min": 0.09206226711052996,
+      "latitude": -0.24893211385482392,
+      "length_km": -0.03137610619707977,
+      "month": -0.018165791440717918,
+      "width_km": 0.15512936076889608
+    },
+    "mean": -0.365822428660429,
+    "p90_abs": 7.556307195728125,
+    "std": 5.7023173205883175
+  },
+  "rule_id": "full-comparison-v5--P100-018--principia_engine-rule-2",
+  "rule_sha256": "a13b7e8734b2c019c4731e824a9056c811336b1d72268d16596601b3850dcc63",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "4.454115819501957 + 0.1999146660605876 * length_km",
+    "expression_bytes": 17,
+    "free_parameters": 2,
+    "learned_state_bytes": 51,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-018.compact.v2",
+  "train_error": 5.154539987278135,
+  "units": {
+    "inputs": {
+      "duration_min": "minutes event duration",
+      "latitude": "degrees north",
+      "length_km": "km path length",
+      "month": "calendar1–12",
+      "width_km": "km maximum path width"
+    },
+    "output": "ln(1+property damage in USD)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

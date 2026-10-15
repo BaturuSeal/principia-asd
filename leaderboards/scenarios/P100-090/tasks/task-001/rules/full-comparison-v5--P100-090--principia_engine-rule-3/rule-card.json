@@ -1,0 +1,77 @@
+{
+  "dev_error": 0.06911748545398304,
+  "execution_status": "complete",
+  "expression": "p0+p1*(p_now/(1+density))+p2*(p_past)",
+  "inputs": [
+    "p_now",
+    "p_past",
+    "p_initial",
+    "density",
+    "speed",
+    "radius90",
+    "polarization_variance"
+  ],
+  "method_id": "principia_engine",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.02450351038282622,
+    "p1": 1.02699113345285,
+    "p2": 0.14984279035164136
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "density": -0.024325991104983666,
+      "p_initial": -0.010764839035508567,
+      "p_now": 0.01549416888300052,
+      "p_past": 0.05520222709887018,
+      "polarization_variance": 0.014552404079194937,
+      "radius90": -0.0047788647585714356,
+      "speed": -0.058204548955548975
+    },
+    "mean": -0.007763516964796692,
+    "p90_abs": 0.13072877444793315,
+    "std": 0.08244457061879712
+  },
+  "rule_id": "full-comparison-v5--P100-090--principia_engine-rule-3",
+  "rule_sha256": "b4bfdd431f5882ff0d860818bb922ed6dcdfec3387a0528764ba39287bd525c7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.02450351038282622 + 1.02699113345285 * (p_now / (1 + density)) + 0.14984279035164136 * p_past",
+    "expression_bytes": 37,
+    "free_parameters": 3,
+    "learned_state_bytes": 78,
+    "literal_state_bytes": 1,
+    "nodes": 26,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-090.compact.v2",
+  "train_error": 0.07080959128428235,
+  "units": {
+    "inputs": {
+      "density": "tracked persons/(pi*r90²), proxy persons/m²",
+      "p_initial": "first2seconds mean order, declared pertrialcalibration",
+      "p_now": "dimensionless current signed angular order",
+      "p_past": "previous2integerseconds mean order",
+      "polarization_variance": "withinframe variance of individual signedorder",
+      "radius90": "90th-percentile centroiddistance metres",
+      "speed": "mean1sbackwardsecant m/s"
+    },
+    "output": "dimensionless signed[-1,1]",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

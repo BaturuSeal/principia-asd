@@ -1,0 +1,62 @@
+{
+  "dev_error": 9.498282583026882,
+  "execution_status": "complete",
+  "expression": "p0+p1*((offset)**2)",
+  "inputs": [
+    "t",
+    "offset",
+    "drive",
+    "high"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 27.614606051310393,
+    "p1": 0.008995081994391897
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "drive": -0.9906527628163133,
+      "high": -0.9906527628163133,
+      "offset": -0.9906527628163133,
+      "t": -0.4104658621725652
+    },
+    "mean": -6.35503873073298,
+    "p90_abs": 17.85464111787696,
+    "std": 7.797732118608322
+  },
+  "rule_id": "controls-v3--P100-062--symbolic_control-rule-3",
+  "rule_sha256": "55182f521afb9f3b0e8a61d5f62fd0d13c1eaa49f642886af218bec9a8e96cbd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "27.614606051310393 + 0.008995081994391897 * offset ** 2",
+    "expression_bytes": 19,
+    "free_parameters": 2,
+    "learned_state_bytes": 54,
+    "literal_state_bytes": 1,
+    "nodes": 14,
+    "numeric_literal_count": 1,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-062.compact.v2",
+  "train_error": 9.305839256280157,
+  "units": {
+    "inputs": {
+      "drive": "mA/cm²; imposed cathodic-current step",
+      "high": "binary known high-current condition",
+      "offset": "μA; mean first3 observations",
+      "t": "s since third baseline observation"
+    },
+    "output": "μA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

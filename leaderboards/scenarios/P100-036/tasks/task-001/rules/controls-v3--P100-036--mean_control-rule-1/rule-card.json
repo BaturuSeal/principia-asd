@@ -1,0 +1,73 @@
+{
+  "dev_error": 0.010656833517761616,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "npq",
+    "rfd",
+    "ngrdi",
+    "area",
+    "tiny",
+    "salt",
+    "drought",
+    "high_stress"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.8410763509192749
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "area": -0.7055573088740784,
+      "drought": 0.006360006516018778,
+      "high_stress": 0.09277259007568675,
+      "ngrdi": -0.25101832819152975,
+      "npq": 0.48693417876517625,
+      "rfd": 0.8835352605948857,
+      "salt": -0.19639169559538033,
+      "tiny": -0.9063858049945593
+    },
+    "mean": -0.004537621441402667,
+    "p90_abs": 0.016264295388876082,
+    "std": 0.011432524342374507
+  },
+  "rule_id": "controls-v3--P100-036--mean_control-rule-1",
+  "rule_sha256": "be5b66eb00e953add1c23db838e62e3971488c2421a21731cfc2baa1a560b18c",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.8410763509192749",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-036.compact.v2",
+  "train_error": 0.010478715237234591,
+  "units": {
+    "inputs": {
+      "area": "source AREA_MM scale; only relative/log descriptor used",
+      "drought": "drought-treatment indicator",
+      "high_stress": "source second stress-level indicator; no invented dose units",
+      "ngrdi": "dimensionless RGB index",
+      "npq": "dimensionless author NPQ_Lss",
+      "rfd": "dimensionless author Rfd_Lss",
+      "salt": "salt-treatment indicator",
+      "tiny": "cultivar indicator"
+    },
+    "output": "dimensionless quantum yield",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "dev_error": 0.10404727720569917,
+  "execution_status": "complete",
+  "expression": "p0+p1*(gate_V)+p2*((gate_V)**2)",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "composition-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.007795575475335975,
+    "p1": 0.03406051094047151,
+    "p2": 0.002325583615443799
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.13447067421610204,
+      "cal_plus20_uA": -0.053115560280767235,
+      "cal_zero_uA": -0.12143697713493831,
+      "gate_V": -0.014329842343332348
+    },
+    "mean": 0.0013147980539883624,
+    "p90_abs": 0.19181864834351178,
+    "std": 0.12158188684804164
+  },
+  "rule_id": "controls-v2--P100-051--symbolic_control-rule-3",
+  "rule_sha256": "a8f98482fbf36a53e03fd1be51c5278a33fc8e5ed2f222a61c7ba6bce40672c6",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.007795575475335975 + 0.03406051094047151 * gate_V + 0.002325583615443799 * gate_V ** 2",
+    "expression_bytes": 31,
+    "free_parameters": 3,
+    "learned_state_bytes": 84,
+    "nodes": 22,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 5
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.1009355336729945,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "dev_error": 5.5406980974915205,
+  "execution_status": "complete",
+  "expression": "5.743919548772672",
+  "inputs": [
+    "length_km",
+    "width_km",
+    "duration_min",
+    "latitude",
+    "month"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "duration_min": -0.15170541848676214,
+      "latitude": -0.23124745699243282,
+      "length_km": -0.29672995531248675,
+      "month": 0.054434671460929396,
+      "width_km": 0.010381688078527827
+    },
+    "mean": -0.6499613625485917,
+    "p90_abs": 7.7839102700722655,
+    "std": 5.968314107794801
+  },
+  "rule_id": "controls-v2--P100-018--mean_control-rule-1",
+  "rule_sha256": "b6d702ee7ce0d604d2eebb9ecb94a45c1e9646b577aefcc53c6d0f619fb0e3ff",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "5.743919548772672",
+    "expression_bytes": 17,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "nodes": 2,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-018.compact.v2",
+  "train_error": 5.4648866525133775,
+  "units": {
+    "inputs": {
+      "duration_min": "minutes event duration",
+      "latitude": "degrees north",
+      "length_km": "km path length",
+      "month": "calendar1–12",
+      "width_km": "km maximum path width"
+    },
+    "output": "ln(1+property damage in USD)",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

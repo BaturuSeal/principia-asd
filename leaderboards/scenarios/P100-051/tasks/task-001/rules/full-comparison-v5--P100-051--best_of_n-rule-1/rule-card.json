@@ -1,0 +1,70 @@
+{
+  "dev_error": 0.026043689811014476,
+  "execution_status": "complete",
+  "expression": "p0 + p1 * gate_V + p2 * cal_minus20_uA + p3 * cal_zero_uA + p4 * cal_plus20_uA + p5 * gate_V * cal_plus20_uA + p6 * gate_V * gate_V * cal_plus20_uA + p7 * gate_V * gate_V * gate_V * cal_plus20_uA",
+  "inputs": [
+    "gate_V",
+    "cal_minus20_uA",
+    "cal_zero_uA",
+    "cal_plus20_uA"
+  ],
+  "method_id": "best_of_n",
+  "method_version": "1.0.0rc2",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "independent-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.090419813780218,
+    "p1": 0.009028340117083583,
+    "p2": -3798.128087620905,
+    "p3": 5.219136389771509,
+    "p4": -0.05510644876054247,
+    "p5": 0.0019271740412966142,
+    "p6": 0.0012572986926694134,
+    "p7": 4.884991647965386e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "cal_minus20_uA": -0.27304368781852617,
+      "cal_plus20_uA": 0.09386458709107755,
+      "cal_zero_uA": -0.1628517035736759,
+      "gate_V": 0.22975751244163184
+    },
+    "mean": 0.0021848098693534705,
+    "p90_abs": 0.05704588814757902,
+    "std": 0.03248270739067474
+  },
+  "rule_id": "full-comparison-v5--P100-051--best_of_n-rule-1",
+  "rule_sha256": "d5e4ce243043de1035a31f3bbf870249bd2863fdf0763db37c1fb59624578487",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.090419813780218 + 0.009028340117083583 * gate_V + -3798.128087620905 * cal_minus20_uA + 5.219136389771509 * cal_zero_uA + -0.05510644876054247 * cal_plus20_uA + 0.0019271740412966142 * gate_V * cal_plus20_uA + 0.0012572986926694134 * gate_V * gate_V * cal_plus20_uA + 4.884991647965386e-05 * gate_V * gate_V * gate_V * cal_plus20_uA",
+    "expression_bytes": 195,
+    "free_parameters": 8,
+    "learned_state_bytes": 219,
+    "literal_state_bytes": 0,
+    "nodes": 83,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 20
+  },
+  "task_id": "P100-051.compact.v2",
+  "train_error": 0.02428342259187249,
+  "units": {
+    "inputs": {
+      "cal_minus20_uA": "uA",
+      "cal_plus20_uA": "uA",
+      "cal_zero_uA": "uA",
+      "gate_V": "V"
+    },
+    "output": "uA",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

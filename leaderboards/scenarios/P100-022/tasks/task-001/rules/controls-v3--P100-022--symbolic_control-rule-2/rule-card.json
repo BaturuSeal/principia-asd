@@ -1,0 +1,56 @@
+{
+  "dev_error": 223.31219921070928,
+  "execution_status": "complete",
+  "expression": "p0+p1*(voltage_V)",
+  "inputs": [
+    "voltage_V",
+    "bromine_rich"
+  ],
+  "method_id": "symbolic_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "grammar-round-0",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -284.9204175367535,
+    "p1": 1510.6973647209093
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "bromine_rich": -0.5544812531242467,
+      "voltage_V": -0.06683521822753877
+    },
+    "mean": -38.82005614627034,
+    "p90_abs": 503.6449024663893,
+    "std": 283.4106472042605
+  },
+  "rule_id": "controls-v3--P100-022--symbolic_control-rule-2",
+  "rule_sha256": "a58f56175c9b9e8aebda6f8fa4c750c12dcf9c3613703328d5eda4b13e31d556",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-284.9204175367535 + 1510.6973647209093 * voltage_V",
+    "expression_bytes": 17,
+    "free_parameters": 2,
+    "learned_state_bytes": 52,
+    "literal_state_bytes": 0,
+    "nodes": 11,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 2
+  },
+  "task_id": "P100-022.compact.v2",
+  "train_error": 231.22386074439905,
+  "units": {
+    "inputs": {
+      "bromine_rich": "indicator",
+      "voltage_V": "V"
+    },
+    "output": "microampere",
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}
