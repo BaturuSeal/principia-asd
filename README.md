@@ -8,7 +8,7 @@
   <a href="docs/EVALUATION.md">Evaluation</a> ·
   <a href="REPRODUCIBILITY.md">Reproducibility</a>
 </p>
-<p align="center"><b>1.0.0rc6</b> · 47 scientific scenarios · 51 task leaderboards · 11 connected-equation examples</p>
+<p align="center"><b>1.0.0rc7</b> · 47 scientific scenarios · 51 task leaderboards · 11 connected-equation examples</p>
 
 Principia ASD is an open framework for **Autonomous Scientific Discovery**: choose a scientific question, investigate it with interchangeable methods, and examine the resulting rules against a declared evidence contract.
 
@@ -30,7 +30,7 @@ The interface groups repeated mathematical structures while preserving every met
 
 | Capability | What it makes possible |
 |---|---|
-| **Scenario library** | Understand the measurements, source, units, partitions, and task before running an experiment. Add your own input–output combination or local numeric CSV. |
+| **Explorer** | Understand the measurements, source, units, partitions, and task before running an experiment. Add your own input–output combination or local numeric CSV. |
 | **Method workbench** | Compare numerical controls, direct proposals, feedback refinement, program search, and adapted research agents under explicit budgets. Unsupported capabilities fail visibly. |
 | **Equation discovery** | Compose, fit, and revise typed equations with reusable primitives, meaningful intermediate quantities, and shared parameters. |
 | **Rule Cards** | Read typeset mathematics; inspect parameter values, physical assumptions, complexity, test coverage, perturbation diagnostics, and the ASD recipe. |
@@ -63,12 +63,12 @@ Browse the [public library](https://atlas.chipflow.net/web/asd-test/) without in
 ```bash
 python3 -m venv ~/.principia-asd-venv
 ~/.principia-asd-venv/bin/pip install .
-~/.principia-asd-venv/bin/principia-asd companion --bundle-root .
+~/.principia-asd-venv/bin/principia-asd companion --bundle-root . --open-browser
 ```
 
 Open **http://127.0.0.1:8150/** and keep the terminal running.
 
-1. Choose **Scenario library → Try it yourself**, or import a local grouped numeric CSV.
+1. Choose **Explorer → Try it yourself**, or import a local grouped numeric CSV.
 2. Inspect the task card and select a method. Numerical controls need no API key.
 3. For LLM methods, open **API settings**. Add your SiliconFlow key, select or edit exact model identifiers and dated prices, then explicitly check capabilities. Saving profiles and browsing the catalog do not generate model responses; capability probes are billed.
 4. Run discovery, inspect the Rule Cards, and export your results. Personal runs do not overwrite the shared library.

@@ -686,7 +686,9 @@ class App:
             "schema_version": "principia-asd.task-contract/2.0",
             "scenario_id": sid,
             "task_id": sid + ".v1",
-            "title": str(req.get("title") or filename),
+            "title": str(req.get("title") or filename)[:120],
+            "display_title": "Predict " + output,
+            "output_description": output + "; user-selected output column from " + filename,
             "inputs": inputs,
             "input_units": {k: "user review required" for k in inputs},
             "output": "target",
@@ -752,7 +754,25 @@ class App:
         return {"scenario_id": sid, "rows": info["rows"]}
 
 
-def serve(settings, port=8150):
+def _listen(handler, port):
+    """Give first-time companion users an actionable startup error."""
+    import errno
+
+    if not 1 <= port <= 65535:
+        raise SystemExit("Choose a local port between 1 and 65535 with --port.")
+    try:
+        return ThreadingHTTPServer(("127.0.0.1", port), handler)
+    except OSError as exc:
+        if exc.errno == errno.EADDRINUSE:
+            raise SystemExit(
+                f"Port {port} is already in use. If your companion is already running, "
+                f"open http://127.0.0.1:{port}/. Otherwise choose a different port "
+                "with --port (for example --port 8152), and use the address printed there."
+            ) from None
+        raise
+
+
+def serve(settings, port=8150, *, open_browser=False):
     app = App(settings)
     assets = Path(__file__).parent
 
@@ -808,7 +828,9 @@ def serve(settings, port=8150):
                 name = {
                     "/": "index.html",
                     "/app.js": "app.js",
+                    "/explorer.js": "explorer.js",
                     "/style.css": "style.css",
+                    "/explorer.css": "explorer.css",
                     "/vendor/katex.min.js": "vendor/katex.min.js",
                 }.get(path)
                 if not name:
@@ -820,7 +842,9 @@ def serve(settings, port=8150):
                     {
                         "index.html": "text/html",
                         "app.js": "text/javascript",
+                        "explorer.js": "text/javascript",
                         "style.css": "text/css",
+                        "explorer.css": "text/css",
                         "vendor/katex.min.js": "text/javascript",
                     }[name],
                 )
@@ -875,6 +899,15 @@ def serve(settings, port=8150):
             except Exception as e:
                 self.send({"error": "Application error: " + type(e).__name__}, 500)
 
-    server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
-    print(f"Principia-ASD: http://127.0.0.1:{port}", flush=True)
+    server = _listen(Handler, port)
+    url = f"http://127.0.0.1:{port}/#explorer"
+    print(f"Principia-ASD workspace ready: {url}\nKeep this terminal open while working.", flush=True)
+    if open_browser:
+        import webbrowser
+
+        try:
+            if not webbrowser.open(url, new=2):
+                print("Open the address above in your browser to continue.", flush=True)
+        except webbrowser.Error:
+            print("Open the address above in your browser to continue.", flush=True)
     server.serve_forever()

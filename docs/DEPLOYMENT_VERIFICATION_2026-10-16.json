@@ -1,0 +1,193 @@
+{
+  "status": "deployed_verified_pr_open",
+  "created_at": "2026-10-16T03:45:39.753763+00:00",
+  "version": "1.0.0rc6",
+  "public_url": "https://atlas.chipflow.net/web/asd-test/",
+  "activation": {
+    "status": "active",
+    "release": "/data/pzq/Principia-ASD/releases/1.0.0rc6-20261016",
+    "previous": "/data/pzq/Principia-ASD/releases/1.0.0rc4-20261015-r2",
+    "commit": "0646630e5da437d44a1f795b5342259294a6f7a9",
+    "activated_at": "2026-10-16T03:37:21.482902+00:00",
+    "public_version": "1.0.0rc6",
+    "legacy_services": "healthy",
+    "rollback": "atomically restore previous current target"
+  },
+  "server_verification": {
+    "status": "passed",
+    "version": "1.0.0rc6",
+    "public_manifest": "passed",
+    "static_manifest": "passed",
+    "private_manifest": "passed",
+    "protected_contract_input_target_bindings": 51,
+    "private_scenarios": 47,
+    "private_modes": "0700 directories; 0600 files",
+    "replays": [
+      {
+        "collection": "primary",
+        "scenario_id": "P100-054",
+        "method": "linear_control",
+        "match": true
+      },
+      {
+        "collection": "mechanism-pack-v2",
+        "scenario_id": "P100-061",
+        "method": "equation_search",
+        "match": true
+      }
+    ],
+    "provider_calls": 0,
+    "targets_or_predictions_exported": false,
+    "public_counts": {
+      "scenario_count": 47,
+      "task_count": 51,
+      "rule_count": 799,
+      "attempt_count": 631
+    }
+  },
+  "https_verification": {
+    "status": "passed",
+    "public_files_verified": 60,
+    "route_checks": [
+      {
+        "path": "api/config",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "api/runs",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "private-evaluator/targets/P100-054/test_targets.csv.gz",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "private-evaluator/collections/mechanism-pack-v2/targets/P100-061/test_targets.csv.gz",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": ".env",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": ".git/config",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "api/runs",
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "PUT",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "PATCH",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "DELETE",
+        "status": 405
+      }
+    ],
+    "existing_services_healthy": true,
+    "security_headers": "passed",
+    "public_archive_sha256": "2b164b01a274fbeb7bc1b3d0dfc2a5440843c8e61d05f7583f32b9d03e98a330",
+    "public_counts": {
+      "scenario_count": 47,
+      "task_count": 51,
+      "rule_count": 799,
+      "attempt_count": 631
+    },
+    "provider_calls": 0
+  },
+  "software_validation": {
+    "status": "passed",
+    "version": "1.0.0rc6",
+    "created_at": "2026-10-16T03:28:37.644008+00:00",
+    "python_tests": {
+      "passed": 1788,
+      "failed": 0,
+      "seconds": 415.63
+    },
+    "ruff": "passed",
+    "javascript_syntax": "passed",
+    "frontend_render_contracts": "passed",
+    "fresh_install": {
+      "status": "passed",
+      "version": "1.0.0rc6",
+      "cli_help_commands": 16,
+      "installed_wheel": true,
+      "scenario_count": 47,
+      "task_count": 51,
+      "isolated_visitors": 2,
+      "operator_vault_inherited": false,
+      "provider_calls": 0
+    },
+    "canonical_byte_parity": {
+      "primary-data": 405,
+      "primary-rules": 5321,
+      "equation-data": 31,
+      "equation-rules": 112,
+      "mechanism-data": 75,
+      "mechanism-rules": 418
+    },
+    "wheel_sha256": "9d8978a81b99595dfb5ed267ad757358f002954cb25c1b1f0f9774ccb7859c2b",
+    "provider_calls": 0,
+    "scientific_configuration_changed": false,
+    "scientific_clearance": false,
+    "source_rights_certified": false,
+    "scope": "Software, portable collection, and immutable-artifact validation; remote deployment has a separate operator receipt."
+  },
+  "browser_verification": {
+    "fresh_companion": "47 scenarios, 51 tasks; richer and historical P100-027 tasks selected successfully",
+    "public_library": "live HTTPS screenshot confirms 47 scenarios and 11 connected-equation examples",
+    "remote_click_journey": "Not completed: external-page accessibility and DOM automation timed out; all served files matched verified local artifacts",
+    "readme_screenshots": [
+      "docs/assets/screenshots/membrane-equations.jpg",
+      "docs/assets/screenshots/thermal-equations.jpg"
+    ]
+  },
+  "github": {
+    "repository": "https://github.com/BaturuSeal/principia-asd",
+    "branch": "codex/rc6-connected-equations-release",
+    "commit": "0646630e5da437d44a1f795b5342259294a6f7a9",
+    "pushed_as": "Chipflow-pzq",
+    "pr_url": "https://github.com/BaturuSeal/principia-asd/pull/1",
+    "pr_state": "open",
+    "blocker": null,
+    "verified_as": "Chipflow-pzq",
+    "visible_installation_accounts": [
+      "Chipflow-pzq"
+    ],
+    "pr_number": 1,
+    "pr_author": "Chipflow-pzq",
+    "base_branch": "main",
+    "head_commit": "0646630e5da437d44a1f795b5342259294a6f7a9",
+    "authentication_method": "GitHub CLI device authorization",
+    "mergeable": "MERGEABLE",
+    "merged": false,
+    "verified_at": "2026-10-16T04:53:07.725824+00:00"
+  },
+  "privacy": {
+    "public_site": "static GET/HEAD only",
+    "private_evaluator": "separate owner-only directory, never in Git or companion ZIP",
+    "visitor_files_keys_results": "local companion only",
+    "server_provider_key_installed": false
+  },
+  "provider_calls_during_release": 0,
+  "scientific_configurations_changed": false,
+  "independent_discovery": "not_assessed",
+  "source_rights_certified": false,
+  "updated_at": "2026-10-16T04:53:07.725824+00:00"
+}
