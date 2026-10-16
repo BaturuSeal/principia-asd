@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.015130485061927225,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tokens)+p2*(anchor_tokens)+p3*(early_tokens)+p4*(anchor_loss)+p5*(early_loss)+p6*(model_size)",
+  "inputs": [
+    "tokens",
+    "anchor_tokens",
+    "early_tokens",
+    "anchor_loss",
+    "early_loss",
+    "model_size"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.7932963114333353,
+    "p1": -0.0017527123544356287,
+    "p2": -0.1026559239604092,
+    "p3": 5.620504062164855e-16,
+    "p4": 1.5053072635069302,
+    "p5": -0.46692832712466253,
+    "p6": -0.010899986587796423
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": -0.14884432459369115,
+      "anchor_tokens": -5.672613967257856e-17,
+      "early_loss": -0.16162105149680026,
+      "early_tokens": 5.672613967257856e-17,
+      "model_size": 0.044575709950136384,
+      "tokens": -0.5124831964864881
+    },
+    "mean": -0.004802713800474283,
+    "p90_abs": 0.03434273197534364,
+    "std": 0.01957163013442
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-043-polynomial-control-rule-1",
+  "rule_sha256": "95ac84296e734b307b828e5d0c610f83ae365e63577ba70407e516ea045d69a5",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.7932963114333353 + -0.0017527123544356287 * tokens + -0.1026559239604092 * anchor_tokens + 5.620504062164855e-16 * early_tokens + 1.5053072635069302 * anchor_loss + -0.46692832712466253 * early_loss + -0.010899986587796423 * model_size",
+    "expression_bytes": 100,
+    "free_parameters": 7,
+    "learned_state_bytes": 195,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "tokens",
+      "anchor_tokens",
+      "early_tokens",
+      "anchor_loss",
+      "early_loss",
+      "model_size"
+    ],
+    "training_centers": [
+      0.0,
+      59.94715120041563,
+      18.008904690701232,
+      8.002732032,
+      3.1686820716668747,
+      3.348866821892043,
+      0.587291769974025
+    ],
+    "training_scales": [
+      1.0,
+      23.552365446971358,
+      0.009823042270204405,
+      1.0,
+      0.2283810053870685,
+      0.1900308392397953,
+      0.6816627028595199
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-043.mechanisms-v2",
+  "train_error": 0.015258420451435915,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

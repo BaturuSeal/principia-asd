@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 109.46923661776421,
+    "primary": "mae",
+    "primary_error": 109.46923661776421,
+    "rmse": 137.9205523728738
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 158.41744805624666,
+  "by_group": [
+    {
+      "error": 154.37295160379023,
+      "group": "group-32f65e8bcf958b45c6c92eb1",
+      "rows": 43
+    },
+    {
+      "error": 64.56552163173818,
+      "group": "group-9325ce927d38c901d5f70925",
+      "rows": 43
+    }
+  ],
+  "coverage": {
+    "eligible": 86,
+    "fraction": 1.0,
+    "predicted": 86
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "mechanism-v2-p100-074-polynomial-control-rule-1",
+  "rule_sha256": "a09923793e7091d96069cdf900dfedee86b52cebb67c9fa49609c92a5555edb8",
+  "run_id": "mechanism-v2-p100-074-polynomial-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-106.96356066639247 + 57760.91045965037 * concentration + 0.1144225020798254 * elapsed + 1.2121295537121197 * initial_signal + 898.7245921033962 * initial_slope + -444071.6133653814 * (concentration * concentration) + -34.77110330214448 * (concentration * elapsed) + -43.56616131446463 * (concentration * initial_signal) + -21858.217405157637 * (concentration * initial_slope) + -2.8343368359638754e-05 * (elapsed * elapsed) + 0.0038021680084716148 * (elapsed * initial_signal) + -0.08204314993749799 * (elapsed * initial_slope) + -0.004020720584575679 * (initial_signal * initial_signal) + -2.3812304518874154 * (initial_signal * initial_slope) + -1519.5754592002247 * (initial_slope * initial_slope)",
+    "expression_bytes": 383,
+    "free_parameters": 15,
+    "learned_state_bytes": 410,
+    "literal_state_bytes": 0,
+    "nodes": 155,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 38
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.05151032458349047,
+    "perturbation_labels_available": false,
+    "population_rows": 86,
+    "ranking": false,
+    "samples": 86,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

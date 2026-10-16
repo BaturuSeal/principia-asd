@@ -1,0 +1,57 @@
+{
+  "dev_error": 0.5849881042901635,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(shear_rate)+p3*(temperature*temperature)+p4*(temperature*shear_rate)+p5*(shear_rate*shear_rate)",
+  "inputs": [
+    "temperature",
+    "shear_rate"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 12.360994276769167,
+    "p1": -0.0665370161422687,
+    "p2": 0.002451835513177335,
+    "p3": 8.969041305540588e-05,
+    "p4": -9.9345190156383e-06,
+    "p5": 1.8040179121411378e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "shear_rate": -0.0118756739707432,
+      "temperature": -0.016791286947154826
+    },
+    "mean": -0.0009119474243726588,
+    "p90_abs": 0.06601113725009569,
+    "std": 0.04340416970577382
+  },
+  "rule_id": "eq-local-v1-p100-057-polynomial-control-rule-1",
+  "rule_sha256": "ef2233d1f240728cff0f4e7e9804a2cd8315dc2d7a1094128239ed4ac2af32a2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "12.360994276769167 + -0.0665370161422687 * temperature + 0.002451835513177335 * shear_rate + 8.969041305540588e-05 * (temperature * temperature) + -9.9345190156383e-06 * (temperature * shear_rate) + 1.8040179121411378e-05 * (shear_rate * shear_rate)",
+    "expression_bytes": 119,
+    "free_parameters": 6,
+    "learned_state_bytes": 168,
+    "literal_state_bytes": 0,
+    "nodes": 55,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "task_id": "P100-057.equations-v1",
+  "train_error": 0.5876627074358267,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

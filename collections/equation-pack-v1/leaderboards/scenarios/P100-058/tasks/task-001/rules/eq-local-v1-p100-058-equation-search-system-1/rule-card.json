@@ -1,0 +1,183 @@
+{
+  "dev_error": 1.143338667058586,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "temperature-45",
+        "loss": 0.9190269400904231
+      },
+      {
+        "group": "temperature-65",
+        "loss": 1.3676503940267488
+      }
+    ],
+    "intermediate_ranges": {
+      "loss1": [
+        2744.177700356347,
+        3653007.9233782487
+      ],
+      "modulus_response": [
+        1.0229712936004536,
+        7348351.2641547
+      ],
+      "storage1": [
+        1.0229712936004536,
+        7348351.2641547
+      ],
+      "thermal_shift": [
+        0.00222107451033065,
+        0.2728674908921438
+      ],
+      "z1": [
+        0.0003727788085544224,
+        23.72056824716152
+      ]
+    },
+    "residual_bias": -694765.146394645,
+    "residual_rmse": 3274879.842075591
+  },
+  "equation_system": {
+    "assumptions": [
+      "Linear generalized Maxwell response",
+      "Shared relaxation times and strengths across both measured response channels",
+      "Arrhenius shift is approximate across this temperature range",
+      "One polymer batch; source data are not compliance-corrected"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 40 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 313.15
+      }
+    },
+    "name": "Single-mode thermal relaxation",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Temperature shift of the relaxation timescale",
+        "unit": "1"
+      },
+      {
+        "expression": "omega * tau1 * thermal_shift",
+        "id": "z1",
+        "meaning": "Angular frequency relative to relaxation mode 1",
+        "unit": "1"
+      },
+      {
+        "expression": "G1 * z1 ** 2 / (1 + z1 ** 2)",
+        "id": "storage1",
+        "meaning": "Energy-storing contribution of mode 1",
+        "unit": "Pa"
+      },
+      {
+        "expression": "G1 * z1 / (1 + z1 ** 2)",
+        "id": "loss1",
+        "meaning": "Dissipative contribution of mode 1",
+        "unit": "Pa"
+      },
+      {
+        "expression": "where(response_kind == 0, storage1, loss1)",
+        "id": "modulus_response",
+        "meaning": "Storage (channel 0) or loss (channel 1) modulus from the same fitted relaxation spectrum",
+        "unit": "Pa"
+      }
+    ],
+    "output": "modulus_response",
+    "parameters": {
+      "G1": {
+        "bounds": [
+          100,
+          10000000000.0
+        ],
+        "initial": 50000000.0,
+        "meaning": "Elastic strength of relaxation mode 1; labels are exchangeable",
+        "unit": "Pa"
+      },
+      "activation": {
+        "bounds": [
+          100,
+          60000
+        ],
+        "initial": 10000,
+        "meaning": "Effective activation temperature for time-temperature shifting",
+        "unit": "K"
+      },
+      "tau1": {
+        "bounds": [
+          1e-08,
+          10000.0
+        ],
+        "initial": 0.03,
+        "meaning": "Reference relaxation time of mode 1",
+        "unit": "s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "where(response_kind == 0, G1 * (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2), G1 * (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) / (1 + (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2))",
+  "fit_recipe": {
+    "development_rows": 92,
+    "log_coordinate_parameters": [
+      "G1",
+      "activation",
+      "tau1"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared log residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 216
+  },
+  "identifiability": {
+    "condition_number": 19.458431927547668,
+    "parameters": 3,
+    "rank": 3,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "omega",
+    "temperature",
+    "response_kind"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v1",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "G1": 7361411.160521323,
+    "activation": 25878.925931700396,
+    "tau1": 0.8693072292931201
+  },
+  "quantity_units": {
+    "omega": "rad/s",
+    "response_kind": "1",
+    "target": "Pa",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-058-equation-search-system-1",
+  "rule_sha256": "452804372cac4ddcb1066703042b9ef842a56fed0159e10d6f3937a51802dcb1",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 20,
+    "expanded_expression": "where(response_kind == 0, 7361411.160521323 * (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) ** 2), 7361411.160521323 * (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) ** 2))",
+    "expression_bytes": 328,
+    "fixed_constants": 1,
+    "free_parameters": 3,
+    "intermediate_quantities": 4,
+    "learned_state_bytes": 87,
+    "literal_state_bytes": 14,
+    "nodes": 144,
+    "numeric_literal_count": 14,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 47
+  },
+  "task_id": "P100-058.equations-v1",
+  "train_error": 1.5945724874472988
+}

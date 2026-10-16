@@ -1,0 +1,257 @@
+{
+  "dev_error": 0.4801407986773027,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "S-HT-N2-350C",
+        "loss": 0.4801407986773027
+      }
+    ],
+    "input_strata": {
+      "pressure_feed": {
+        "bins": [
+          {
+            "mae": 0.2897193917112209,
+            "range": [
+              151200.0,
+              237625.0
+            ],
+            "residual_bias": 0.2897193917112209,
+            "rows": 2
+          },
+          {
+            "mae": 0.5163127455526267,
+            "range": [
+              237625.0,
+              324550.0
+            ],
+            "residual_bias": 0.5163127455526267,
+            "rows": 2
+          },
+          {
+            "mae": 0.5903444229416632,
+            "range": [
+              324550.0,
+              411525.0
+            ],
+            "residual_bias": 0.5903444229416632,
+            "rows": 2
+          },
+          {
+            "mae": 0.5241866345036998,
+            "range": [
+              411525.0,
+              498600.0
+            ],
+            "residual_bias": 0.5241866345036998,
+            "rows": 2
+          }
+        ],
+        "unique_values": 8
+      },
+      "pressure_permeate": {
+        "bins": [
+          {
+            "mae": 0.2897193917112209,
+            "range": [
+              100299.99999999999,
+              100824.99999999999
+            ],
+            "residual_bias": 0.2897193917112209,
+            "rows": 2
+          },
+          {
+            "mae": 0.5163127455526267,
+            "range": [
+              100824.99999999999,
+              101499.99999999999
+            ],
+            "residual_bias": 0.5163127455526267,
+            "rows": 2
+          },
+          {
+            "mae": 0.5903444229416632,
+            "range": [
+              101499.99999999999,
+              102350.0
+            ],
+            "residual_bias": 0.5903444229416632,
+            "rows": 2
+          },
+          {
+            "mae": 0.5241866345036998,
+            "range": [
+              102350.0,
+              103499.99999999999
+            ],
+            "residual_bias": 0.5241866345036998,
+            "rows": 2
+          }
+        ],
+        "unique_values": 8
+      },
+      "temperature": {
+        "bins": [
+          {
+            "mae": 0.2897193917112209,
+            "range": [
+              623.15,
+              624.9
+            ],
+            "residual_bias": 0.2897193917112209,
+            "rows": 2
+          },
+          {
+            "mae": 0.5163127455526267,
+            "range": [
+              624.9,
+              625.65
+            ],
+            "residual_bias": 0.5163127455526267,
+            "rows": 2
+          },
+          {
+            "mae": 0.5572655287226815,
+            "range": [
+              626.15,
+              627.15
+            ],
+            "residual_bias": 0.5572655287226815,
+            "rows": 4
+          }
+        ],
+        "unique_values": 5
+      }
+    },
+    "intermediate_ranges": {
+      "knudsen_factor": [
+        0.6894959087246065,
+        0.6917053060676264
+      ],
+      "knudsen_flux": [
+        0.5925285688752456,
+        4.584681057535532
+      ],
+      "pressure_drive": [
+        0.5090000000000001,
+        3.951
+      ]
+    },
+    "residual_bias": 0.4801407986773027,
+    "residual_rmse": 0.49555668349481136
+  },
+  "equation_system": {
+    "assumptions": [
+      "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+      "Known transport families, not direct pore-size identification"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "25 Celsius reference temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 298.15
+      },
+      "p_ref": {
+        "meaning": "One bar pressure scale",
+        "source": "Exact SI conversion of one bar",
+        "unit": "Pa",
+        "value": 100000
+      }
+    },
+    "name": "Knudsen pore transport",
+    "nodes": [
+      {
+        "expression": "(pressure_feed - pressure_permeate) / p_ref",
+        "id": "pressure_drive",
+        "meaning": "Dimensionless pressure difference across the membrane",
+        "unit": "1"
+      },
+      {
+        "expression": "sqrt(T_ref / temperature)",
+        "id": "knudsen_factor",
+        "meaning": "Knudsen molar-flux temperature scaling",
+        "unit": "1"
+      },
+      {
+        "expression": "K_ref * knudsen_factor * pressure_drive",
+        "id": "knudsen_flux",
+        "meaning": "Molecule-wall transport contribution",
+        "unit": "mol/m2/s"
+      }
+    ],
+    "output": "knudsen_flux",
+    "parameters": {
+      "K_ref": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Reference Knudsen flux scale per one-bar driving difference",
+        "unit": "mol/m2/s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "K_ref * sqrt(T_ref / temperature) * ((pressure_feed - pressure_permeate) / p_ref)",
+  "fit_recipe": {
+    "development_rows": 8,
+    "log_coordinate_parameters": [
+      "K_ref"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 22
+  },
+  "identifiability": {
+    "condition_number": 1.0,
+    "parameters": 1,
+    "rank": 1,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "pressure_feed",
+    "pressure_permeate"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v2",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "K_ref": 1.682946868444985
+  },
+  "quantity_units": {
+    "pressure_feed": "Pa",
+    "pressure_permeate": "Pa",
+    "target": "mol/m2/s",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-v2-p100-061-equation-search-system-1",
+  "rule_sha256": "df746fbec5fa770b50c07b5505e3a005ee65b72222b5cd483a7205a8c7f95f28",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 6,
+    "expanded_expression": "1.682946868444985 * sqrt(T_ref / temperature) * ((pressure_feed - pressure_permeate) / p_ref)",
+    "expression_bytes": 81,
+    "fixed_constants": 2,
+    "free_parameters": 1,
+    "intermediate_quantities": 2,
+    "learned_state_bytes": 28,
+    "literal_state_bytes": 0,
+    "nodes": 26,
+    "numeric_literal_count": 0,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 1,
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-061.mechanisms-v2",
+  "train_error": 0.4134208856209604
+}

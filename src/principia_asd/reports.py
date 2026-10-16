@@ -195,7 +195,9 @@ def export_campaign(campaign, settings):
                         "parameters": card.get("parameters", {}),
                         "tree": card.get("tree"),
                         "representation": card["representation"],
-                        "runtime": "principia-asd 1.0.0rc2",
+                        "runtime": "principia-asd 1.0.0rc5" if card["representation"] == "equation-system-v1" else "principia-asd 1.0.0rc2",
+                        **({"equation_system": card["equation_system"], "task_contract": sub["contract"]}
+                           if card["representation"] == "equation-system-v1" else {}),
                     },
                 )
         rules.sort(
@@ -208,7 +210,7 @@ def export_campaign(campaign, settings):
             )
         )
         board = {
-            "version": "1.0.0rc2",
+            "version": manifest.get("artifact_version", "1.0.0rc2"),
             "scenario_id": sid,
             "task_id": task_id,
             "campaign_id": manifest["campaign_id"],
@@ -277,7 +279,7 @@ def export_campaign(campaign, settings):
     write_json(
         root / "EDITION.json",
         {
-            "version": "1.0.0rc2",
+            "version": manifest.get("artifact_version", "1.0.0rc2"),
             "edition_id": "rules-v2",
             "campaign_id": manifest["campaign_id"],
             "campaign_ids": sorted(campaign_receipts),

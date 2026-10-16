@@ -1,0 +1,60 @@
+{
+  "dev_error": 0.24818290213060656,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "tokens",
+    "anchor_tokens",
+    "early_tokens",
+    "anchor_loss",
+    "early_loss",
+    "model_size"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3.0392633312714286
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": -0.9886974039469348,
+      "anchor_tokens": 4.1060487602607496e-17,
+      "early_loss": -0.988778083184674,
+      "early_tokens": -7.31389935421446e-17,
+      "model_size": 0.9549747883997458,
+      "tokens": 0.1524070569082072
+    },
+    "mean": -0.11938761248777141,
+    "p90_abs": 0.35664130508857145,
+    "std": 0.23073041010030215
+  },
+  "rule_id": "mechanism-v2-p100-043-mean-control-rule-1",
+  "rule_sha256": "dcef6c5440be7394f31e7fb496f91c6ba29fa5ed9c486574ba64205971063c35",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3.0392633312714286",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-043.mechanisms-v2",
+  "train_error": 0.2409309815382228,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

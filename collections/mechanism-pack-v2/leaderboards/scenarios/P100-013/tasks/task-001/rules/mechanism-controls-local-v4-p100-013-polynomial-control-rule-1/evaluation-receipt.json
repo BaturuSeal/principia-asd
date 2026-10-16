@@ -1,0 +1,56 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.002049346843468424,
+    "primary": "mae",
+    "primary_error": 0.002049346843468424,
+    "rmse": 0.0022875905050770127
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.0016362680673457312,
+  "by_group": [
+    {
+      "error": 0.002049346843468424,
+      "group": "heating-20C-min",
+      "rows": 501
+    }
+  ],
+  "coverage": {
+    "eligible": 501,
+    "fraction": 1.0,
+    "predicted": 501
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "mechanism-controls-local-v4-p100-013-polynomial-control-rule-1",
+  "rule_sha256": "8e80c062aed2986580fbfacff701cf6b264ad3f613ca14e7dc5271de65fbfdfd",
+  "run_id": "mechanism-controls-local-v4-p100-013-polynomial-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.04234378666545385 + 0.00022398999383953892 * temperature + -0.009510322660253904 * conversion + -0.10529284643954434 * heating_rate + -2.985188202931603e-07 * (temperature * temperature) + 4.022961091147277e-05 * (temperature * conversion) + 0.0003018047399499459 * (temperature * heating_rate) + -0.006830575214493704 * (conversion * conversion) + -0.02806853138979414 * (conversion * heating_rate) + -0.06868631887066644 * (heating_rate * heating_rate)",
+    "expression_bytes": 227,
+    "free_parameters": 10,
+    "learned_state_bytes": 288,
+    "literal_state_bytes": 0,
+    "nodes": 99,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 1.6928851839187393,
+    "perturbation_labels_available": false,
+    "population_rows": 501,
+    "ranking": false,
+    "samples": 501,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 412546.3607223054,
+    "primary": "log_mae",
+    "primary_error": 1.5696464348013526,
+    "rmse": 1092783.0909846264
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 7.524405530403783,
+  "by_group": [
+    {
+      "error": 1.6322621129080022,
+      "group": "temperature-55",
+      "rows": 50
+    },
+    {
+      "error": 1.507030756694703,
+      "group": "temperature-75",
+      "rows": 38
+    }
+  ],
+  "coverage": {
+    "eligible": 88,
+    "fraction": 1.0,
+    "predicted": 88
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "eq-local-v1-p100-058-equation-search-system-1",
+  "rule_sha256": "452804372cac4ddcb1066703042b9ef842a56fed0159e10d6f3937a51802dcb1",
+  "run_id": "eq-local-v1-p100-058-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 20,
+    "expanded_expression": "where(response_kind == 0, 7361411.160521323 * (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) ** 2), 7361411.160521323 * (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 0.8693072292931201 * exp(25878.925931700396 * (1 / temperature - 1 / T_ref))) ** 2))",
+    "expression_bytes": 328,
+    "fixed_constants": 1,
+    "free_parameters": 3,
+    "intermediate_quantities": 4,
+    "learned_state_bytes": 87,
+    "literal_state_bytes": 14,
+    "nodes": 144,
+    "numeric_literal_count": 14,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 47
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.006034768637813096,
+    "perturbation_labels_available": false,
+    "population_rows": 88,
+    "ranking": false,
+    "samples": 88,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

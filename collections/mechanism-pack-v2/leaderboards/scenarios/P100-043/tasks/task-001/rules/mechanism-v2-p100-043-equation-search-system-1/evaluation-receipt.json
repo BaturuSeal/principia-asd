@@ -1,0 +1,81 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.0075627158265761125,
+    "primary": "mae",
+    "primary_error": 0.0075627158265761125,
+    "rmse": 0.008779854683055898
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2860829921486803,
+  "by_group": [
+    {
+      "error": 0.0052986485927938465,
+      "group": "group-2202a086cb33273ce2d378c3",
+      "rows": 42
+    },
+    {
+      "error": 0.004852425985108755,
+      "group": "group-71145ec09dd8be2729e0100a",
+      "rows": 43
+    },
+    {
+      "error": 0.007303119333629663,
+      "group": "group-ab62ca3054292a2e9049d31e",
+      "rows": 49
+    },
+    {
+      "error": 0.009403331558781732,
+      "group": "group-aec67ad855dba6b880f2abfa",
+      "rows": 41
+    },
+    {
+      "error": 0.010956053662566568,
+      "group": "group-e90b4881bf0e2712c670ec14",
+      "rows": 46
+    }
+  ],
+  "coverage": {
+    "eligible": 221,
+    "fraction": 1.0,
+    "predicted": 221
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-043-equation-search-system-1",
+  "rule_sha256": "30b45d844a0f6e8c98ffd88010a3e90fa183686033b1a807355f284ff779cb50",
+  "run_id": "mechanism-v2-p100-043-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 11,
+    "expanded_expression": "(anchor_loss - early_loss * (early_tokens / anchor_tokens) ** 0.626861211955627) / (1 - (early_tokens / anchor_tokens) ** 0.626861211955627) + (anchor_loss - (anchor_loss - early_loss * (early_tokens / anchor_tokens) ** 0.626861211955627) / (1 - (early_tokens / anchor_tokens) ** 0.626861211955627)) * (anchor_tokens / tokens) ** 0.626861211955627",
+    "expression_bytes": 287,
+    "fixed_constants": 0,
+    "free_parameters": 1,
+    "intermediate_quantities": 3,
+    "learned_state_bytes": 28,
+    "literal_state_bytes": 2,
+    "nodes": 85,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 1,
+    "weighted_operator_count": 21
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.039709161867813134,
+    "perturbation_labels_available": false,
+    "population_rows": 221,
+    "ranking": false,
+    "samples": 221,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "description": "Surface observations from Desert Rock and Penn State test whether air temperature and humidity explain downward thermal radiation. Competing equations separate blackbody emission from effective sky emissivity; clouds and vertical structure remain unresolved.",
+  "display_title": "Atmospheric longwave radiation across climates",
+  "equation_templates": [
+    {
+      "assumptions": [
+        "Near-surface temperature proxies the radiating atmosphere",
+        "Effective emissivity is constant across all retained conditions; clouds are unresolved"
+      ],
+      "constants": {
+        "sigma": {
+          "meaning": "Stefan-Boltzmann constant",
+          "source": "CODATA SI radiation constant",
+          "unit": "W/m2/K4",
+          "value": 5.670374419e-08
+        }
+      },
+      "name": "Gray-atmosphere emission",
+      "nodes": [
+        {
+          "expression": "sigma * temperature ** 4",
+          "id": "blackbody_irradiance",
+          "meaning": "Blackbody longwave irradiance at the measured near-surface temperature",
+          "unit": "W/m2"
+        },
+        {
+          "expression": "emissivity * blackbody_irradiance",
+          "id": "longwave_response",
+          "meaning": "Atmospheric longwave irradiance under an effective gray emissivity",
+          "unit": "W/m2"
+        }
+      ],
+      "output": "longwave_response",
+      "parameters": {
+        "emissivity": {
+          "bounds": [
+            0.05,
+            1
+          ],
+          "initial": 0.8,
+          "meaning": "Effective sky emissivity, conditional on sampled conditions",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    },
+    {
+      "assumptions": [
+        "Brutsaert-inspired clear-sky family evaluated on all retained weather conditions",
+        "Humidity is derived from simultaneous temperature and relative humidity using the documented saturation-vapor formula",
+        "Clouds and vertical profiles are omitted; transfer failure is retained",
+        "Sourced constitutive prior, not an independently discovered radiation law"
+      ],
+      "constants": {
+        "T_ref": {
+          "meaning": "Temperature normalization",
+          "source": "Declared fixed coordinate reference",
+          "unit": "K",
+          "value": 300
+        },
+        "e_ref": {
+          "meaning": "Vapor-pressure normalization",
+          "source": "Declared fixed coordinate reference",
+          "unit": "Pa",
+          "value": 1000
+        },
+        "sigma": {
+          "meaning": "Stefan-Boltzmann constant",
+          "source": "CODATA SI radiation constant",
+          "unit": "W/m2/K4",
+          "value": 5.670374419e-08
+        }
+      },
+      "name": "Humidity-modulated sky emission",
+      "nodes": [
+        {
+          "expression": "sigma * temperature ** 4",
+          "id": "blackbody_irradiance",
+          "meaning": "Blackbody longwave irradiance at the measured near-surface temperature",
+          "unit": "W/m2"
+        },
+        {
+          "expression": "(vapor_pressure / e_ref) / (temperature / T_ref)",
+          "id": "reduced_humidity",
+          "meaning": "Normalized vapor-pressure / absolute-temperature ratio",
+          "unit": "1"
+        },
+        {
+          "expression": "minimum(1, amplitude * reduced_humidity ** exponent)",
+          "id": "sky_emissivity",
+          "meaning": "Bounded empirical atmospheric emissivity",
+          "unit": "1"
+        },
+        {
+          "expression": "sky_emissivity * blackbody_irradiance",
+          "id": "longwave_response",
+          "meaning": "Longwave irradiance from the emissivity-temperature decomposition",
+          "unit": "W/m2"
+        }
+      ],
+      "output": "longwave_response",
+      "parameters": {
+        "amplitude": {
+          "bounds": [
+            0.1,
+            1
+          ],
+          "initial": 0.8,
+          "meaning": "Effective emissivity scale at the normalization point",
+          "unit": "1"
+        },
+        "exponent": {
+          "bounds": [
+            0.01,
+            0.6
+          ],
+          "initial": 0.14,
+          "meaning": "Humidity response exponent in a Brutsaert-inspired family",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    }
+  ],
+  "inputs": [
+    "temperature",
+    "vapor_pressure"
+  ],
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "primary": "mae"
+  },
+  "output": "target",
+  "positive_prediction": true,
+  "preprocessing": [
+    "Keep minute 00 only",
+    "Require QC=0 for target, temperature and RH",
+    "Celsius to Kelvin",
+    "vapor_pressure = RH/100 * 610.78 * exp(17.27*T_C/(T_C+237.3)); Pa",
+    "No fitted preprocessing"
+  ],
+  "quantity_units": {
+    "target": "W/m2",
+    "temperature": "K",
+    "vapor_pressure": "Pa"
+  },
+  "revision": 1,
+  "scenario_id": "P100-048",
+  "scientific_scope": "Local scientific-method development; no independent-discovery claim",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "split_policy": "Train: Desert Rock January; development: Desert Rock July; test: all retained Penn State January/July days. Whole site-day blocks remain together.",
+  "stability": {
+    "categorical_inputs": [],
+    "domain": "Observed training ranges; positive physical quantities",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "task_id": "P100-048.equations-v1",
+  "test_exposure": "retrospective-open-test",
+  "title": "Atmospheric longwave radiation across climates",
+  "units": {
+    "target": "W/m2",
+    "temperature": "K",
+    "vapor_pressure": "Pa"
+  },
+  "variable_descriptions": {
+    "target": "Measured downward longwave irradiance from the pyrgeometer",
+    "temperature": "Measured near-surface air temperature, converted to Kelvin",
+    "vapor_pressure": "Derived water-vapor partial pressure from simultaneous relative humidity and air temperature; Tetens approximation"
+  }
+}

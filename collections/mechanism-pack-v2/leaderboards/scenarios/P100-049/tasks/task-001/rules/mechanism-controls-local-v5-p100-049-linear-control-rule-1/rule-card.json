@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.000523052542208427,
+  "execution_status": "complete",
+  "expression": "p0+p1*(elapsed)+p2*(anchor_time_early)+p3*(anchor_time_late)+p4*(voltage_early)+p5*(voltage_late)+p6*(pulse_duration)",
+  "inputs": [
+    "elapsed",
+    "anchor_time_early",
+    "anchor_time_late",
+    "voltage_early",
+    "voltage_late",
+    "pulse_duration"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 21.533019293566625,
+    "p1": 3.4487001422226006e-08,
+    "p2": -0.08786734703766967,
+    "p3": 0.014788852067685479,
+    "p4": -1.9332867506925915,
+    "p5": 2.9347406294109546,
+    "p6": -0.12510111086332476
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_time_early": -0.017146663024924246,
+      "anchor_time_late": 0.04677566305237031,
+      "elapsed": -0.0186107188910644,
+      "pulse_duration": 0.14880631026002514,
+      "voltage_early": 0.1136673324819064,
+      "voltage_late": 0.11296386395002614
+    },
+    "mean": 8.717161949267345e-05,
+    "p90_abs": 0.0010469997919162364,
+    "std": 0.000692302831616488
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-049-linear-control-rule-1",
+  "rule_sha256": "7e5122723bbdaa82aecf5a06ecfd042bf322174ca370c970aa77f53ec3fc12f4",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "21.533019293566625 + 3.4487001422226006e-08 * elapsed + -0.08786734703766967 * anchor_time_early + 0.014788852067685479 * anchor_time_late + -1.9332867506925915 * voltage_early + 2.9347406294109546 * voltage_late + -0.12510111086332476 * pulse_duration",
+    "expression_bytes": 117,
+    "free_parameters": 7,
+    "learned_state_bytes": 193,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "elapsed",
+      "anchor_time_early",
+      "anchor_time_late",
+      "voltage_early",
+      "voltage_late",
+      "pulse_duration"
+    ],
+    "training_centers": [
+      0.0,
+      975.0001744972632,
+      50.0302763015267,
+      110.02878632884718,
+      0.1185381298073012,
+      0.11857388924057843,
+      149.99412683347896
+    ],
+    "training_scales": [
+      1.0,
+      576.0859345103096,
+      0.5238892604586587,
+      0.49809116733890535,
+      0.08894867902207323,
+      0.08744977791177845,
+      0.2973368497297532
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-049.mechanisms-v2",
+  "train_error": 0.0006385200853268343,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

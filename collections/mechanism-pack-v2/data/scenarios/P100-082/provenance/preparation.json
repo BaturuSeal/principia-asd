@@ -1,0 +1,49 @@
+{
+  "admission": "local_research_preview",
+  "excluded_count": 17189,
+  "exclusion_reasons": {
+    "invalid_temperature_water_or_trenching_metadata": 133,
+    "missing_required_native_measurement": 17056
+  },
+  "groups": {
+    "dev": [
+      "Llobera",
+      "Secanella",
+      "St Christol"
+    ],
+    "test": [
+      "Gamiz",
+      "Kacergine",
+      "Kranzberg-Freising",
+      "RincondelBatovi",
+      "Saint Mitre"
+    ],
+    "train": [
+      "Dobroc",
+      "Dumbravita",
+      "Karstula",
+      "Kelheim-Parsberg",
+      "Ränskälänkorpi",
+      "Wasserburg-Maitenbeth"
+    ]
+  },
+  "registry_entry_sha256": "ce51d7842d02cd479dcfd3b140a6406facbafd1c4e41153e39d9a4b71ca728d7",
+  "rows": {
+    "dev": 6061,
+    "test": 11359,
+    "train": 15531
+  },
+  "scenario_id": "P100-082",
+  "scientific_review": "not_assessed",
+  "source_terms": "cc-by-4.0",
+  "source_url": "https://zenodo.org/records/17519671",
+  "sources": [
+    {
+      "bytes": 11215296,
+      "path": "raw/holisoils_soil_respiration_dataset.csv",
+      "sha256": "bcbf7e1a87b056ee8deb75f8b3fd10c1bfba9a725030da8dede1bf3bf9b57438"
+    }
+  ],
+  "split_policy": "Whole site families. Dev Llobera/Secanella/St Christol; test Gamiz/Kacergine/Kranzberg-Freising/Saint Mitre/RincondelBatovi; remaining eligible sites train. Adjacent Karstula and Dumbravita families never cross partitions.",
+  "test_targets_public": false
+}

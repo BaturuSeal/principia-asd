@@ -1,0 +1,96 @@
+{
+  "dev_error": 0.19797521287384925,
+  "execution_status": "complete",
+  "expression": "p0+p1*(lubricant_temperature)+p2*(housing_temperature)+p3*(environment_temperature)+p4*(speed)+p5*(torque)+p6*(horizon)",
+  "inputs": [
+    "lubricant_temperature",
+    "housing_temperature",
+    "environment_temperature",
+    "speed",
+    "torque",
+    "horizon"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 110.72753579057196,
+    "p1": -0.21853134769682392,
+    "p2": 0.2935877109772797,
+    "p3": -0.44437519363753397,
+    "p4": -0.6014339129782803,
+    "p5": 0.2676376761191843,
+    "p6": 0.0
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "environment_temperature": 0.7062680257091059,
+      "housing_temperature": 0.869686623185461,
+      "lubricant_temperature": 0.9120793310567551,
+      "speed": 0.5870096049488708,
+      "torque": -0.3568918230186072
+    },
+    "mean": -0.07421558114203566,
+    "p90_abs": 0.3898924691134621,
+    "std": 0.24379574508787671
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-069-linear-control-rule-1",
+  "rule_sha256": "8f7a54fa9e806a47f777d4a5bf1c2491aaa514c662f2ecb2eff0699b66e45659",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "110.72753579057196 + -0.21853134769682392 * lubricant_temperature + 0.2935877109772797 * housing_temperature + -0.44437519363753397 * environment_temperature + -0.6014339129782803 * speed + 0.2676376761191843 * torque + 0.0 * horizon",
+    "expression_bytes": 119,
+    "free_parameters": 7,
+    "learned_state_bytes": 172,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "lubricant_temperature",
+      "housing_temperature",
+      "environment_temperature",
+      "speed",
+      "torque",
+      "horizon"
+    ],
+    "training_centers": [
+      0.0,
+      311.00324000000006,
+      302.938,
+      294.33344,
+      0.39254200206604456,
+      1.037951259374647,
+      60.0
+    ],
+    "training_scales": [
+      1.0,
+      8.112369228677897,
+      6.12267967478293,
+      1.134720479413319,
+      1.0684522632898426,
+      3.530173224111969,
+      1.0
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-069.mechanisms-v2",
+  "train_error": 0.19995654908747346,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.035326076307004274,
+    "primary": "log_mae",
+    "primary_error": 0.5826623420361335,
+    "rmse": 0.04363840406476482
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.8878578887816473,
+  "by_group": [
+    {
+      "error": 0.5826623420361335,
+      "group": "replicate-4",
+      "rows": 242
+    }
+  ],
+  "coverage": {
+    "eligible": 242,
+    "fraction": 1.0,
+    "predicted": 242
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "eq-local-v1-p100-057-polynomial-control-rule-1",
+  "rule_sha256": "ef2233d1f240728cff0f4e7e9804a2cd8315dc2d7a1094128239ed4ac2af32a2",
+  "run_id": "eq-local-v1-p100-057-polynomial-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "12.360994276769167 + -0.0665370161422687 * temperature + 0.002451835513177335 * shear_rate + 8.969041305540588e-05 * (temperature * temperature) + -9.9345190156383e-06 * (temperature * shear_rate) + 1.8040179121411378e-05 * (shear_rate * shear_rate)",
+    "expression_bytes": 119,
+    "free_parameters": 6,
+    "learned_state_bytes": 168,
+    "literal_state_bytes": 0,
+    "nodes": 55,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 13
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.026770823068918672,
+    "perturbation_labels_available": false,
+    "population_rows": 242,
+    "ranking": false,
+    "samples": 242,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

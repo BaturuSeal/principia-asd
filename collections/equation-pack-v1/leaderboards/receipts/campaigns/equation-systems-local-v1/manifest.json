@@ -1,0 +1,303 @@
+{
+  "artifact_version": "1.0.0rc5",
+  "campaign_id": "equation-systems-local-v1",
+  "capability_profile_sha256": "7506da98fa7b97d16d882ab7bb8acc49986373b6e771206dedb6ac0f639cc753",
+  "claim_scope": "Retrospective engineering pilot with disclosed constitutive priors; no independent novelty or mechanism claim",
+  "costs_before": {
+    "accounted_cny": 60.9629845,
+    "cap_cny": 3000.0,
+    "remaining_cny": 2939.0370155,
+    "requests": 1783,
+    "states": {
+      "completed": 1779,
+      "unknown": 4
+    },
+    "unknown_usage_reserved": 24.0
+  },
+  "created": "2026-10-15T15:18:12.754744+00:00",
+  "data_edition_sha256": "b354fca2657b8d0301415158ff44610d9eef51f3528a7dbb7d3be2a186a2ebfe",
+  "data_hashes": {
+    "ADMISSION_AUDIT.json": "ec3d047523eda2bfc6e17ad3c045ffb13cde6dc19bb59c95379ccdda16671d54",
+    "EDITION.json": "b354fca2657b8d0301415158ff44610d9eef51f3528a7dbb7d3be2a186a2ebfe",
+    "README.md": "afa1fc5033b35d92689ee5dcecd222f274a576031de5117da145b0e4a27efb13",
+    "prepare.py": "35114c856f6a02976889a342d28140b4864b913f7cc193b6f2b224f4352c7854",
+    "scenarios/P100-048/README.md": "8d6dcddd1801414814de11611ba60ab6f2c16f987caeeb2e80e0c16a199fc47a",
+    "scenarios/P100-048/checksums.json": "3d2261968cfd85770ddbc8b5371a7878d682679f33791d56876a881fc5f6586e",
+    "scenarios/P100-048/provenance/lineage.csv.gz": "47b4828f4082b436a0cf56749c2ebf5886c58e48370af2b815be7ab591357ddc",
+    "scenarios/P100-048/provenance/preparation.json": "e58a3979687d369396d6b29f853c24fe91ade19b7962674524e0133d2c0f46bd",
+    "scenarios/P100-048/public/dev.csv.gz": "5280c6ec7a9cd43f1f749454372165eb6ce7f579d71852ec4673764b50c81cd7",
+    "scenarios/P100-048/public/test_inputs.csv.gz": "21866be216e472e50305bf02549814fd2fc5169fb940a7f4a981876b57e10947",
+    "scenarios/P100-048/public/train.csv.gz": "b5663ba1fd1674d98c3720802f77bdfe2227b537c8d816f9733559810ecb90b4",
+    "scenarios/P100-048/scenario.json": "ef40102e69d94aa5f486d6435f37cd2bcedece00991cb8dd27025bd9b4ba8f6a",
+    "scenarios/P100-048/task-contracts/task-001.json": "11361d731ca41961852df8c9ce17ef7f16feb473c7022b9f15108cb95836bb33",
+    "scenarios/P100-057/README.md": "ccdbcf7354312fc0965e095de25690af2874fce9a060b8d9db49cd20894098df",
+    "scenarios/P100-057/checksums.json": "23c31c53cfa175dd6cbb8e0dfb691a0bdd41465d521d5f7620d86cb6000b71a9",
+    "scenarios/P100-057/provenance/lineage.csv.gz": "ecbfa8fbfd4949465fae9cdbd4a2b463fc71dbeb5ea409e5fa6b30f513a03c73",
+    "scenarios/P100-057/provenance/preparation.json": "4ee50ea2890dd36813da61f19a422139f5a6efa04854fa050431ac5600f88874",
+    "scenarios/P100-057/public/dev.csv.gz": "8331b5889c9c5d2f06d2ab47e5127f46d9f2eed2a763fa05b322c7ac1f9c171e",
+    "scenarios/P100-057/public/test_inputs.csv.gz": "7bbb9064c12e60a5f1559babc99e00bdf459eaeac363a3b3280460eadd14ac6f",
+    "scenarios/P100-057/public/train.csv.gz": "1f3103e23469967bc9b9daad0353e2b5036f34a47e3333990bec70d43f3bbcf6",
+    "scenarios/P100-057/scenario.json": "d5cae290359bb936707976a4693c72609fbe5db1b5d6268ccce5b338f1d99394",
+    "scenarios/P100-057/task-contracts/task-001.json": "57a90af567cb1349ea907de1ddf3bedd4ccaf6056db4cbead5cbcba23ee88a9c",
+    "scenarios/P100-058/README.md": "9b90057c39f6bef2b2c29b4a339e2ca2e5ca7efa01d918c83c951c0b4a6f531e",
+    "scenarios/P100-058/checksums.json": "12d7888459c2cd24fcd6da5fee9ccc27f5e79c4f922369bcea2c8ef87cd5f69f",
+    "scenarios/P100-058/provenance/lineage.csv.gz": "26746494d706df8ec2430454d3136ea89c62c7f3ed64e2547ea2742d12f25895",
+    "scenarios/P100-058/provenance/preparation.json": "84a3b73d90dd9aa82343bc977adbbe071b8b2a03ce2eb517ce4c319147277619",
+    "scenarios/P100-058/public/dev.csv.gz": "316015986809d73d4ef6edb84c16dd1b34f88c2245ea3fce10d32758c6b872e3",
+    "scenarios/P100-058/public/test_inputs.csv.gz": "3d733cc65164259f1962e2f3242385afd28c0bdfa054e99622f86a7601ee63b8",
+    "scenarios/P100-058/public/train.csv.gz": "c5db054f013f70c5a6c596d728996563515e8d47f54e2093ab4d8466208eec72",
+    "scenarios/P100-058/scenario.json": "8dc175b620dfa95e70edefae7dfe63feeeaf6f28c0a68f3c4800916c1f481018",
+    "scenarios/P100-058/task-contracts/task-001.json": "eb3839c0fce4492ddb7d95e5a14fdaa6f7a4e0dcb02c6fab705801b0d5e2f5b4"
+  },
+  "driver_sha256": "9b60b0a3d7c6b7b63cf71df0a01f6c183565e710232981af0eb08d44971a441d",
+  "global_cap_cny": 3000,
+  "jobs": [
+    {
+      "method_id": "mean_control",
+      "run_id": "eq-local-v1-p100-048-mean-control",
+      "scenario_id": "P100-048",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "method_id": "linear_control",
+      "run_id": "eq-local-v1-p100-048-linear-control",
+      "scenario_id": "P100-048",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "method_id": "polynomial_control",
+      "run_id": "eq-local-v1-p100-048-polynomial-control",
+      "scenario_id": "P100-048",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "method_id": "equation_search",
+      "run_id": "eq-local-v1-p100-048-equation-search",
+      "scenario_id": "P100-048",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "method_id": "equation_agent",
+      "run_id": "eq-local-v1-p100-048-equation-agent",
+      "scenario_id": "P100-048",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "method_id": "mean_control",
+      "run_id": "eq-local-v1-p100-057-mean-control",
+      "scenario_id": "P100-057",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "method_id": "linear_control",
+      "run_id": "eq-local-v1-p100-057-linear-control",
+      "scenario_id": "P100-057",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "method_id": "polynomial_control",
+      "run_id": "eq-local-v1-p100-057-polynomial-control",
+      "scenario_id": "P100-057",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "method_id": "equation_search",
+      "run_id": "eq-local-v1-p100-057-equation-search",
+      "scenario_id": "P100-057",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "method_id": "equation_agent",
+      "run_id": "eq-local-v1-p100-057-equation-agent",
+      "scenario_id": "P100-057",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "method_id": "mean_control",
+      "run_id": "eq-local-v1-p100-058-mean-control",
+      "scenario_id": "P100-058",
+      "task_id": "P100-058.equations-v1"
+    },
+    {
+      "method_id": "linear_control",
+      "run_id": "eq-local-v1-p100-058-linear-control",
+      "scenario_id": "P100-058",
+      "task_id": "P100-058.equations-v1"
+    },
+    {
+      "method_id": "polynomial_control",
+      "run_id": "eq-local-v1-p100-058-polynomial-control",
+      "scenario_id": "P100-058",
+      "task_id": "P100-058.equations-v1"
+    },
+    {
+      "method_id": "equation_search",
+      "run_id": "eq-local-v1-p100-058-equation-search",
+      "scenario_id": "P100-058",
+      "task_id": "P100-058.equations-v1"
+    },
+    {
+      "method_id": "equation_agent",
+      "run_id": "eq-local-v1-p100-058-equation-agent",
+      "scenario_id": "P100-058",
+      "task_id": "P100-058.equations-v1"
+    }
+  ],
+  "model_profiles": {
+    "Pro/moonshotai/Kimi-K2.6": {
+      "input_rate": 6.5,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 27,
+      "reasoning_bound": 0
+    },
+    "Qwen/Qwen3.8-27B": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 12,
+      "reasoning_bound": 0
+    },
+    "deepseek-ai/DeepSeek-V4-Flash": {
+      "input_rate": 3,
+      "options": {
+        "enable_thinking": false
+      },
+      "output_rate": 9,
+      "reasoning_bound": 0
+    },
+    "zai-org/GLM-5.3": {
+      "input_rate": 8,
+      "options": {
+        "enable_thinking": true,
+        "reasoning_effort": "high",
+        "thinking_budget": 1024
+      },
+      "output_rate": 28,
+      "reasoning_bound": 1024
+    }
+  },
+  "pilot_cap_cny": 18,
+  "scenarios": [
+    "P100-048",
+    "P100-057",
+    "P100-058"
+  ],
+  "selection": "Train/dev only; complete 15-attempt freeze before private-test assessment",
+  "source_hashes": {
+    "__init__.py": "35f8cfe9ec32090141c66c82995fbc3959dea44c9a7a1a3e8197af3f07ea5974",
+    "adapter_jobs.py": "2c0c34d9fbee499808fdcd3e6e34c16877232271e6484189685e510925104874",
+    "asta_jobs.py": "13997b210092e7ea5df9b43da8afa0860ef608f65918e875d05ebe0b8021eeab",
+    "bound_jobs.py": "e292ede2360d53ea496540da70ffdd876650c85ee0dad52cf6b6ea2aa102876f",
+    "bound_pilot.py": "d402127da210cef1e511f450ba29c93fdc2544a385667a223e764d06dd8171e2",
+    "campaign.py": "04a6c3395607006a54a73b042a144b297aed9dd9a6e31c238b23dac4bd65acb3",
+    "catalog/__init__.py": "e2485e1d24725cf7e463e4256759aff9d09b3419ee6bf55576cda22121633b9b",
+    "catalog/afm.py": "5b0951621c24b2f9bb6ae1c51fda63994fa799c7bb970b53c52425611a955708",
+    "catalog/audit.py": "bd622248e5727f9504f5b9b34ed09993017563889f592283c38a35f8420439bc",
+    "catalog/battery.py": "ccb77057a6127fe1976a0b29a04684f1d27759221b349023dd0320e899103199",
+    "catalog/boiling.py": "665c75b649b6a0df8df811ac227d48878ed515417a613d0ef89d69cacc38e01f",
+    "catalog/choices.py": "31daa4ed5a9d95afb59e50cd2d64671132851652310e1b717b78be20ab3e1b02",
+    "catalog/comcat.py": "b6cce7441e33bcf8f9b897d592570dbb213c7e2921182b097273de8af3c77d0c",
+    "catalog/compiler.py": "dd36ce68e5c334fe7ed4708e53f4a18563a8f20ce671cd5936003d164a400e20",
+    "catalog/coral.py": "aecc308aa4ce6f4acee69acfe6c431765d548af0f995f2bbdcd7cee2ae51656a",
+    "catalog/cpap.py": "22c834e382ab4a396083d0d7f4e2c46ea289a431d782155fa47a80f909d1f9af",
+    "catalog/crowd.py": "225c38be34b64b79cfd875318aaff48fe1b466e628c7ddf0dd1c53c53311d916",
+    "catalog/curves.py": "0fac711636e732c486d26586a033c895ee6b316af709c1a03428728205ee8580",
+    "catalog/fermentation.py": "63b6a7ac5be9d9e99e2d6584a576f35d7dc9ab4d097aa99fbb379fcf059b8ac1",
+    "catalog/finger_friction.py": "035f0e1f809982da6db7e50ead7bc23b884fd3893029a08ee306e782320599e7",
+    "catalog/fracture.py": "8b2bedef73d95c710673a92b8d4587fcf62a71b980f58bea02761f476d5c68f6",
+    "catalog/games.py": "029709246b29077cef98c8a06ab982e78d2af95fc2fe8afadb8f7bc1c7e4c564",
+    "catalog/gwosc.py": "431c5709d3e5005d5ba2c0d1059a1e12e3c2aba9d234442986e441ac367cba01",
+    "catalog/levitation.py": "f355998debdf014842d7903375557347fcc8d99e15df37f69be8d89e22d8cb8c",
+    "catalog/lubricants.py": "e193673249aa3050286f52374dd4b15dbe9a682b7352ca1f0524bb78fa50b665",
+    "catalog/memristor.py": "0ec27fcfed8918f9092e0088bd449f2df36c41eed289fa520072a193e6acfa51",
+    "catalog/microscopy.py": "d28cb2219260dd8e4ac07ebace5078ada2823f6598e1a3804de1251ca355f486",
+    "catalog/microwave.py": "568d93c2401f208119c02df2fce934b1c0a853731f19c38fc493d07859c7e28e",
+    "catalog/native.py": "2708af53581bed26eed683f27be461dd2272b7c331f3be1eed80f93189dfce1e",
+    "catalog/nhtsa.py": "0692d15cee06d7db9760577cfae43c015444f11157fb86a421097a2d05772118",
+    "catalog/piaac.py": "32d212d488d44f277f2620181c6f3a08a5b54d20ac0b7c7b95693f2744cde3ac",
+    "catalog/ppg.py": "c189b6c47d1a2bed47bd7cef446a4f498d86c9df1cd82255935e58c4f9063ba2",
+    "catalog/presentation.py": "a5a96c84da215e3e70309ec52adfb61031a390c2212a37b4bfad3accde51ae15",
+    "catalog/reviews.py": "0b277f89677aea58d557e987d6b038a5b96bef379ff3b21ee8dd77849cd99beb",
+    "catalog/rydberg.py": "11d02d3a90d37d2fc1e7d763b8e4cdc344aad6f4d4f027afb77c6779e597a31d",
+    "catalog/screw.py": "9ddaadd2907767eab95bec6860e1b3a457c560e0655d095b8db15e094cc2f270",
+    "catalog/shed.py": "760f9bfb7ad9bea587c7eb997512e4b06497d260a0e91efc204a606d6d3ca59d",
+    "catalog/slag.py": "a591d8014cd0c2cd76424021562f3b1baadf5bfae397e6687baf5311173e5f45",
+    "catalog/splits.py": "b378de2a1a30f2f2beffa4ca235555463ae40a2b5ffff411331b27a09cceffe3",
+    "catalog/storm.py": "f2d7279b10bab69cfcb9a648e7e6cb9b7dae32c698eb9dd2271211194ec8a3b6",
+    "catalog/tomato.py": "ae2d6df360b8cc65e39f2e3d0680dd542b851140f734d7a2d617c85dfd4fabac",
+    "catalog/xas.py": "d474f878c588fc43fb42883d2a4a0eb7247fa1e96732f7115aea74d48adcaf66",
+    "catalog/yeast.py": "76c737ff4d90923313c1e07d6cd6ed66a4652e9b5fad70e2a6c3708368baa0aa",
+    "catalog/zeolite.py": "a3e9c1f8fd7a44579d37e31c0eaa70d2476774ae9054afc8bafb4c6ca45b8904",
+    "cli.py": "c696ddd848d4a0c05cc14e1bc8feed93a033ec2a2a0f977ddf660c1abb17232a",
+    "contracts/__init__.py": "68cfc583c9ee21ab0caa63c26e569aa2685323681f1e94266a584177c66c0c35",
+    "contracts/schema.py": "738b3ff9a3d81a055fc0cae9a5c01aabd84197034998c07b0d3f95eb7eb49a19",
+    "control_jobs.py": "dd5e17becce450b5b003b6824b1ae1ca6f40f49fd1b1b5084587b24376bcbea0",
+    "control_pilot.py": "7183b3b77fa7cd6160516d70c48749ae58eecb8c4a39cca5424ee1b90e6e16bc",
+    "engine/__init__.py": "511dc811b017430620be666ef9eb312da9d87e8eb2b8510ab56741fab39bfd55",
+    "engine/adapter_worker.py": "ddc2203f3352be631f8e153ed121c9c431a914c88b89cd167665a1a8fb8b3dd2",
+    "engine/agentrxiv.py": "ba072481aaea4f9d5d46c651823fce0902eb7ea33c9e8b523c5e0ce99fa789db",
+    "engine/asta.py": "f63f18147ce91dc084941107a8537cec693cd154e99fb4cfb86dcf39966f5b62",
+    "engine/asta_worker.py": "3447e511adcd5ba86a352e9132ea543bdd32fc2d0da3426d58c717f8c5d3bcae",
+    "engine/bindings.py": "93974039519e36ab565e67fdd899875a82bdffd6d2ee7e0c4f9a9ed0c7fe45c8",
+    "engine/bound_asta.py": "1a793cc075103d65ff17d46421cd3007297794e2d2ac4d58285741313c2e4fe0",
+    "engine/bound_checkpoint.py": "e1a263ebc42b7e646465bcb5f1513f2a6f51c819fef3f6200526ea73acb4eacf",
+    "engine/bound_controls.py": "857fcf2eaa5d1d54153e264249785f0f65472d0154ea370d2b88bc3807cd174e",
+    "engine/bound_data_to_paper.py": "c7b19fc55fbeab01df5e36ada2988e4d2b8f2a7436b5a4c00e7a4a48ba716af9",
+    "engine/bound_data_to_paper_v2.py": "4060531f054bde5c70a9fc5413b228094b79d6cedeacf4dd0ef8c8dffa642e93",
+    "engine/bound_engine.py": "0b9fdb711b148e87defa7d72d6d78873bfaa44dd36d34f2e9e5d414516b48d07",
+    "engine/bound_engine_v2.py": "6f3e1579d333587363a5b79e2787e5976a9edb7e92197f1b9a754a99670dc593",
+    "engine/bound_laboratory.py": "a1ffdab579900b0da1b64004412b5e29004fe49e8de16cc6bad20c39598267ce",
+    "engine/bound_search.py": "c032cc66cd9fcdb352a29f7440984361e086f1e228694d46145769ce86e60fb2",
+    "engine/bound_worker.py": "007d4cc364ae4c5e6be951d908abf97947a9ddf4ca79cc794b1d91f0215c4d5b",
+    "engine/control_worker.py": "8d593b3430e8f2b5a7e798a597a6400e4b394122d8d987efb975246a7d75b4a4",
+    "engine/data_to_paper.py": "1e6ae774b226e27dbf3aa35f23bd2c05d352a3eb75bff0d12c66eee3451cae94",
+    "engine/equation_search.py": "1141faddac0f3debf5986afdb0a3ee1f2d83751f29cf09e0e81fbf3170a24123",
+    "engine/equations.py": "14b2dd5c59db766cef93c8aa09e0b18e384774a2e79a84ca9bb07ff77df5e074",
+    "engine/evidence.py": "91e32cd3f23f1ea123ccd999ed15e07a61a5025c6c2c2611f885666340d9c19f",
+    "engine/expression.py": "00abcddb54d4ba76af10bfd6f1b115d0cd7b7089b7cf4b98689af599e8103422",
+    "engine/laboratory.py": "b3cc4a5499ae7b666896f4ade34fc938924164ddb459e79323be611af3907264",
+    "engine/laboratory_worker.py": "efd7062cfe1b0bd2528401d0a0c5db3d89fcb79cff002b2458f46fc292df2e59",
+    "engine/lineage_audit.py": "1491ec57b31f3644651f4acb51996850b8603665eff0169e8ede0c4a8d278149",
+    "engine/paper_v2_worker.py": "c95938eaaf3ef27cacc2d501ed8a19a064bc345f81b8666612980f84d1a1cf75",
+    "engine/paper_worker.py": "4a59bfe17a494506dd8750239000587413419353badb29fd42bde68bfaab4a56",
+    "engine/scientific_templates.py": "616a87066ba31ffeb4c9419c9749baeb0f82bc1c00becd97310d02b1201de6dd",
+    "engine/search.py": "32e58843000a793e15960282191fb661960d7ec5e3fab4c69783750c72eac3fc",
+    "evaluate/__init__.py": "ea4cbe52d9395104741641950a44155aac07b4bd409fa124c51f742a9ee89785",
+    "evaluate/bound.py": "8cabd022a09e044e77c4fb7df01436b61dad3c8ecc76566457ed7ddce4c3f34c",
+    "evaluate/metrics.py": "4809f60721133fec3fea4a7c44b848b407206418a573a2d42fb77fb28a1cd631",
+    "hashing.py": "1df06ccd6199764e76faf6339cf3921f2253cbe623117d76451397424c803351",
+    "io.py": "cae9d80c3520693bc1ccd9e3f7750ec9a658f200d4cbd04e89be5a4322c4a87d",
+    "laboratory_jobs.py": "756d9a8c4677cfc77be236876ee45dbeb9b7b2cf1a64b46fb0cbe8ea2d6b84ae",
+    "llm/__init__.py": "dd70a9045d34c3df7b69490f90d5e7b45d54b948acab90f1b71e12056c0a93f1",
+    "llm/siliconflow.py": "7b4af3f48d29ab94eede3e5cb478bb22b8d6c6df858570d876bb3bb4c5534802",
+    "methods/__init__.py": "ff32a661e63385c6110906eaf127f076a4e4e790ba8da56bb311a7b12ee63b5a",
+    "methods/cards.py": "5e729bd85704282640e2d4dabd673b66f80858443eede9b6969660b1f00a8ec3",
+    "methods/registry.py": "cfa9f69e5b6b98c13bfb75a344e3b47e80aade7fc8d72f19890f852a7642cda9",
+    "paper_jobs.py": "cd2020ac47eb944dd23557da89f1e0b348ac9a9758af9593bf7cdceaacccceb2",
+    "paper_v2_jobs.py": "d0a0eae59a4c2d38f3a01f8620add6bd41d98a3464ba7e36e8658cdd2bf98a81",
+    "records.py": "5fd2376ccd0b12ac4513c6c3b714463c530b4e1ac8fa3b157e88c91249e5ee7d",
+    "report_html.py": "ad0cc2c07d72095466c20d75e27c930aeec18c9342b078e725e5696d87e23d04",
+    "reports.py": "fde13a616be42b32a14f8ba2375c0c7af8f1e6cace3087e5f2b59a4821eb4f4d",
+    "runtime.py": "4a3242d65543200c9df01e211c24bd5b7063ed37e71b2652349f07fcf799b3fa",
+    "sandbox/__init__.py": "7ea4b4438dc9aec2fab621a39a006653f063b2b5edd9c53c5e40efaf717019d6",
+    "sandbox/controls.py": "37a60a84feb0c025452d59af51c4ec194a4daa4f7927492382dceedd94b84284",
+    "store/__init__.py": "dfd1b6fcf7ead9a15feadc5bb83af3cada0f6b7168fdb3c5d2300b6fb4959210",
+    "store/json_store.py": "5468b7a9c8469dc4a233129860248bbaa2d14b7eae39348f9d2eb8a60420bed3",
+    "store/ledger.py": "c83ab5a7f512d7b761286b53eb875865af29a26872e8703ba4b4cb2955f75419",
+    "store/snapshot.py": "1dcbeeba8c86e965577fd2a0aba224b8b0bcf562ef86ee368890ea7d056e3912",
+    "store/worker_limits.py": "1d05f8a7de1543cad63e4a42c7d35d1ee0e287d06df5a473f59170cdf5151c13",
+    "web/__init__.py": "4139123a9906c4b12d2fd893582fd05e385d2bbf595409ead43574d2942bdf6e",
+    "web/credentials.py": "447806608785160594f209c03e7e9ee740891c69cfc583c6771430d6068e245c",
+    "web/equation_view.py": "1e504a6576d67e89d873b19875678b2c2a941c854bc9439dbe6456a2b8b636c1",
+    "web/model_settings.py": "de9e3349a3f86b43c32aa3738d501d82cc73cd6b550d69ebacf89a08e945f597",
+    "web/public_site.py": "69a946959c8a773ecd8a836296140aafef9d827fb7e4af6f7186f41813e6311e",
+    "web/rule_families.py": "164a1cd6755ee297fce48d683a4e20fda37c0b99c03aacc82a226bcb62b9c3d5",
+    "web/rule_view.py": "26e254efddf8abe483757ea791e3e63e292d58572f6a516188f644df3b51729b",
+    "web/server.py": "f31397d9bd317242898921f1091e3a94c808d075e4b2b9e8361f7d45c77975ba",
+    "web/tasks.py": "e9198c2dcda16bfd61389ca62cf18a964fe4687d66ac06d83074a4fd601aa957"
+  },
+  "track": "equation-engineering"
+}

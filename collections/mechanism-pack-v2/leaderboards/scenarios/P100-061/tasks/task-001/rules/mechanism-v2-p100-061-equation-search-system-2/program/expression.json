@@ -1,0 +1,329 @@
+{
+  "equation_system": {
+    "assumptions": [
+      "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+      "Known transport families, not direct pore-size identification",
+      "Additive effective Knudsen and viscous contributions",
+      "A viscosity power law approximates the finite measured temperature range"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "25 Celsius reference temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 298.15
+      },
+      "p_ref": {
+        "meaning": "One bar pressure scale",
+        "source": "Exact SI conversion of one bar",
+        "unit": "Pa",
+        "value": 100000
+      }
+    },
+    "name": "Knudsen and viscous pore transport",
+    "nodes": [
+      {
+        "expression": "(pressure_feed - pressure_permeate) / p_ref",
+        "id": "pressure_drive",
+        "meaning": "Dimensionless pressure difference across the membrane",
+        "unit": "1"
+      },
+      {
+        "expression": "sqrt(T_ref / temperature)",
+        "id": "knudsen_factor",
+        "meaning": "Knudsen molar-flux temperature scaling",
+        "unit": "1"
+      },
+      {
+        "expression": "K_ref * knudsen_factor * pressure_drive",
+        "id": "knudsen_flux",
+        "meaning": "Molecule-wall transport contribution",
+        "unit": "mol/m2/s"
+      },
+      {
+        "expression": "(pressure_feed + pressure_permeate) / (2 * p_ref)",
+        "id": "mean_pressure",
+        "meaning": "Mean pressure relative to one bar",
+        "unit": "1"
+      },
+      {
+        "expression": "(T_ref / temperature) ** (1 + viscosity_exponent)",
+        "id": "viscosity_factor",
+        "meaning": "Inverse viscosity and ideal-gas density correction",
+        "unit": "1"
+      },
+      {
+        "expression": "V_ref * mean_pressure * pressure_drive * viscosity_factor",
+        "id": "viscous_flux",
+        "meaning": "Pressure-driven viscous transport contribution",
+        "unit": "mol/m2/s"
+      },
+      {
+        "expression": "knudsen_flux + viscous_flux",
+        "id": "total_flux",
+        "meaning": "Parallel transport through the effective porous structure",
+        "unit": "mol/m2/s"
+      }
+    ],
+    "output": "total_flux",
+    "parameters": {
+      "K_ref": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Reference Knudsen flux scale per one-bar driving difference",
+        "unit": "mol/m2/s"
+      },
+      "V_ref": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.2,
+        "meaning": "Reference viscous flux scale",
+        "unit": "mol/m2/s"
+      },
+      "viscosity_exponent": {
+        "bounds": [
+          0.1,
+          1.5
+        ],
+        "initial": 0.7,
+        "meaning": "Approximate nitrogen viscosity temperature exponent",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "K_ref * sqrt(T_ref / temperature) * ((pressure_feed - pressure_permeate) / p_ref) + V_ref * ((pressure_feed + pressure_permeate) / (2 * p_ref)) * ((pressure_feed - pressure_permeate) / p_ref) * (T_ref / temperature) ** (1 + viscosity_exponent)",
+  "parameters": {
+    "K_ref": 0.987787202693006,
+    "V_ref": 0.44118250458773056,
+    "viscosity_exponent": 0.8059209331623688
+  },
+  "representation": "equation-system-v1",
+  "runtime": "principia-asd 1.0.0rc5",
+  "task_contract": {
+    "description": "Separate molecule-wall and viscous transport contributions to nitrogen flux through a hydrotalcite-coated support. Entire temperature regimes are held out, with calibrated absolute pressures and source flux units.",
+    "display_title": "Gas transport through a porous membrane",
+    "equation_protocol": "multi-role-equations-v2",
+    "equation_templates": [
+      {
+        "assumptions": [
+          "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+          "Known transport families, not direct pore-size identification"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "25 Celsius reference temperature",
+            "source": "Declared reference coordinate",
+            "unit": "K",
+            "value": 298.15
+          },
+          "p_ref": {
+            "meaning": "One bar pressure scale",
+            "source": "Exact SI conversion of one bar",
+            "unit": "Pa",
+            "value": 100000
+          }
+        },
+        "name": "Knudsen pore transport",
+        "nodes": [
+          {
+            "expression": "(pressure_feed - pressure_permeate) / p_ref",
+            "id": "pressure_drive",
+            "meaning": "Dimensionless pressure difference across the membrane",
+            "unit": "1"
+          },
+          {
+            "expression": "sqrt(T_ref / temperature)",
+            "id": "knudsen_factor",
+            "meaning": "Knudsen molar-flux temperature scaling",
+            "unit": "1"
+          },
+          {
+            "expression": "K_ref * knudsen_factor * pressure_drive",
+            "id": "knudsen_flux",
+            "meaning": "Molecule-wall transport contribution",
+            "unit": "mol/m2/s"
+          }
+        ],
+        "output": "knudsen_flux",
+        "parameters": {
+          "K_ref": {
+            "bounds": [
+              1e-06,
+              100
+            ],
+            "initial": 0.5,
+            "meaning": "Reference Knudsen flux scale per one-bar driving difference",
+            "unit": "mol/m2/s"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+          "Known transport families, not direct pore-size identification",
+          "Additive effective Knudsen and viscous contributions",
+          "A viscosity power law approximates the finite measured temperature range"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "25 Celsius reference temperature",
+            "source": "Declared reference coordinate",
+            "unit": "K",
+            "value": 298.15
+          },
+          "p_ref": {
+            "meaning": "One bar pressure scale",
+            "source": "Exact SI conversion of one bar",
+            "unit": "Pa",
+            "value": 100000
+          }
+        },
+        "name": "Knudsen and viscous pore transport",
+        "nodes": [
+          {
+            "expression": "(pressure_feed - pressure_permeate) / p_ref",
+            "id": "pressure_drive",
+            "meaning": "Dimensionless pressure difference across the membrane",
+            "unit": "1"
+          },
+          {
+            "expression": "sqrt(T_ref / temperature)",
+            "id": "knudsen_factor",
+            "meaning": "Knudsen molar-flux temperature scaling",
+            "unit": "1"
+          },
+          {
+            "expression": "K_ref * knudsen_factor * pressure_drive",
+            "id": "knudsen_flux",
+            "meaning": "Molecule-wall transport contribution",
+            "unit": "mol/m2/s"
+          },
+          {
+            "expression": "(pressure_feed + pressure_permeate) / (2 * p_ref)",
+            "id": "mean_pressure",
+            "meaning": "Mean pressure relative to one bar",
+            "unit": "1"
+          },
+          {
+            "expression": "(T_ref / temperature) ** (1 + viscosity_exponent)",
+            "id": "viscosity_factor",
+            "meaning": "Inverse viscosity and ideal-gas density correction",
+            "unit": "1"
+          },
+          {
+            "expression": "V_ref * mean_pressure * pressure_drive * viscosity_factor",
+            "id": "viscous_flux",
+            "meaning": "Pressure-driven viscous transport contribution",
+            "unit": "mol/m2/s"
+          },
+          {
+            "expression": "knudsen_flux + viscous_flux",
+            "id": "total_flux",
+            "meaning": "Parallel transport through the effective porous structure",
+            "unit": "mol/m2/s"
+          }
+        ],
+        "output": "total_flux",
+        "parameters": {
+          "K_ref": {
+            "bounds": [
+              1e-06,
+              100
+            ],
+            "initial": 0.5,
+            "meaning": "Reference Knudsen flux scale per one-bar driving difference",
+            "unit": "mol/m2/s"
+          },
+          "V_ref": {
+            "bounds": [
+              1e-06,
+              100
+            ],
+            "initial": 0.2,
+            "meaning": "Reference viscous flux scale",
+            "unit": "mol/m2/s"
+          },
+          "viscosity_exponent": {
+            "bounds": [
+              0.1,
+              1.5
+            ],
+            "initial": 0.7,
+            "meaning": "Approximate nitrogen viscosity temperature exponent",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      }
+    ],
+    "inputs": [
+      "temperature",
+      "pressure_feed",
+      "pressure_permeate"
+    ],
+    "metric": {
+      "aggregation": "equal_group_mean",
+      "primary": "mae"
+    },
+    "output": "target",
+    "preprocessing": {
+      "learned_transformations": [],
+      "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+    },
+    "quantity_units": {
+      "pressure_feed": "Pa",
+      "pressure_permeate": "Pa",
+      "target": "mol/m2/s",
+      "temperature": "K"
+    },
+    "research_objective": "",
+    "revision": 2,
+    "scenario_id": "P100-061",
+    "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+    "split": {
+      "dev": "public/dev.csv.gz",
+      "test": "public/test_inputs.csv.gz",
+      "train": "public/train.csv.gz"
+    },
+    "split_policy": "Single S-HT membrane and nitrogen only. Whole nominal temperatures: train 25/200/500 Celsius; dev 350; test 300/400/450. Actual temperatures remain inputs. Source validation sheet and other gases/materials are outside this contract.",
+    "stability": {
+      "categorical_inputs": [],
+      "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+      "input_ranges": {
+        "pressure_feed": [
+          150600.0,
+          498900.0
+        ],
+        "pressure_permeate": [
+          101200.0,
+          107500.0
+        ],
+        "temperature": [
+          294.15,
+          775.15
+        ]
+      },
+      "output_scale": 1.629639170676958,
+      "ranking": false,
+      "relative_noise": 0.01,
+      "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+    },
+    "task_id": "P100-061.mechanisms-v2",
+    "test_exposure": "retrospective-open-test",
+    "title": "Gas transport through a porous membrane",
+    "variable_descriptions": {
+      "pressure_feed": "Retentate absolute pressure in pascals",
+      "pressure_permeate": "Permeate absolute pressure in pascals",
+      "target": "Source-reported nitrogen molar flux per membrane area",
+      "temperature": "Measured membrane temperature in kelvin"
+    }
+  },
+  "tree": null
+}

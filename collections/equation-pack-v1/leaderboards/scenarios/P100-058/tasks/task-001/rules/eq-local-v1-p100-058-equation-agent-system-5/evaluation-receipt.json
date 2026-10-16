@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 114044.28585938374,
+    "primary": "log_mae",
+    "primary_error": 0.6328081235304741,
+    "rmse": 293559.4692167285
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 7.524405530403783,
+  "by_group": [
+    {
+      "error": 0.8021030608157365,
+      "group": "temperature-55",
+      "rows": 50
+    },
+    {
+      "error": 0.4635131862452119,
+      "group": "temperature-75",
+      "rows": 38
+    }
+  ],
+  "coverage": {
+    "eligible": 88,
+    "fraction": 1.0,
+    "predicted": 88
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_agent",
+  "rule_id": "eq-local-v1-p100-058-equation-agent-system-5",
+  "rule_sha256": "65dd11adf6a9a5c01cd24dea1a6343c67a062ddf6a3fec6530a261ced68df90f",
+  "run_id": "eq-local-v1-p100-058-equation-agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 61,
+    "expanded_expression": "where(response_kind == 0, 756057.9722946222 * (omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271 * (cos(0.9893876827227271 * pi / 2) + (omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271) / (1 + 2 * (omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271 * cos(0.9893876827227271 * pi / 2) + ((omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271) ** 2) + 62538403.9694635 * (omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645 * (cos(0.9740622225966645 * pi / 2) + (omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645) / (1 + 2 * (omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645 * cos(0.9740622225966645 * pi / 2) + ((omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645) ** 2), 756057.9722946222 * (omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271 * sin(0.9893876827227271 * pi / 2) / (1 + 2 * (omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271 * cos(0.9893876827227271 * pi / 2) + ((omega * 8.316126624616127 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9893876827227271) ** 2) + 62538403.9694635 * (omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645 * sin(0.9740622225966645 * pi / 2) / (1 + 2 * (omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645 * cos(0.9740622225966645 * pi / 2) + ((omega * 0.05358708931820932 * exp(33891.76510264003 * (1 / temperature - 1 / T_ref))) ** 0.9740622225966645) ** 2))",
+    "expression_bytes": 1377,
+    "fixed_constants": 2,
+    "free_parameters": 7,
+    "intermediate_quantities": 17,
+    "learned_state_bytes": 198,
+    "literal_state_bytes": 49,
+    "nodes": 631,
+    "numeric_literal_count": 49,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 7,
+    "weighted_operator_count": 218
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0027113206323144557,
+    "perturbation_labels_available": false,
+    "population_rows": 88,
+    "ranking": false,
+    "samples": 88,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

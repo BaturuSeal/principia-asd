@@ -281,7 +281,7 @@ def evaluate_run(folder: Path, vault: Path, *, replay=False):
             and value["accuracy"]["primary_error"]
             <= baseline * task.get("accuracy_gate", {}).get("ratio", 1),
             baseline_loss=baseline,
-            evaluator_version="deterministic-v2",
+            evaluator_version="deterministic-equations-v1" if card.get("representation") == "equation-system-v1" else "deterministic-v2",
             test_exposure=task["test_exposure"],
             rule_sha256=card["rule_sha256"],
             scientific_review="not_assessed",

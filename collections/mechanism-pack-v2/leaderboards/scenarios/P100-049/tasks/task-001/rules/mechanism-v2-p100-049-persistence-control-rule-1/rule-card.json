@@ -1,0 +1,58 @@
+{
+  "dev_error": 0.0014535895948277675,
+  "execution_status": "complete",
+  "expression": "voltage_late",
+  "inputs": [
+    "elapsed",
+    "anchor_time_early",
+    "anchor_time_late",
+    "voltage_early",
+    "voltage_late",
+    "pulse_duration"
+  ],
+  "method_id": "persistence_control",
+  "method_version": "persistence-reference-v1",
+  "model_ids": [],
+  "origin": "Frozen task-specific persistence reference; no fitted coefficients",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_time_early": -0.11155682714850017,
+      "anchor_time_late": -0.027799636488567717,
+      "elapsed": -0.019040894363423617,
+      "pulse_duration": 0.054749100415538765,
+      "voltage_early": -0.2663948613631783,
+      "voltage_late": -0.2752508022005759
+    },
+    "mean": -5.4580187634874905e-05,
+    "p90_abs": 0.002670037684759165,
+    "std": 0.0017200772626212919
+  },
+  "rule_id": "mechanism-v2-p100-049-persistence-control-rule-1",
+  "rule_sha256": "6b7919aaf6ef66f399edcb824a2d45936169a0b6a353fe3b220927fba4ffd04a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "voltage_late",
+    "expression_bytes": 12,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-049.mechanisms-v2",
+  "train_error": 0.0018351803894129952,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

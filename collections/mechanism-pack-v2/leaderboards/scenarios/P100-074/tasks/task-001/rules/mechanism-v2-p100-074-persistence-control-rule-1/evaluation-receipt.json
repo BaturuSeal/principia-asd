@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 291.1548953488372,
+    "primary": "mae",
+    "primary_error": 291.1548953488372,
+    "rmse": 339.30404928335497
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 158.41744805624666,
+  "by_group": [
+    {
+      "error": 332.66020930232554,
+      "group": "group-32f65e8bcf958b45c6c92eb1",
+      "rows": 43
+    },
+    {
+      "error": 249.64958139534886,
+      "group": "group-9325ce927d38c901d5f70925",
+      "rows": 43
+    }
+  ],
+  "coverage": {
+    "eligible": 86,
+    "fraction": 1.0,
+    "predicted": 86
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "persistence_control",
+  "rule_id": "mechanism-v2-p100-074-persistence-control-rule-1",
+  "rule_sha256": "d1ef209ed262f2fcdeac012f3bf77f5b08eda5cf047272de8a9774246bb0de00",
+  "run_id": "mechanism-v2-p100-074-persistence-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "initial_signal",
+    "expression_bytes": 14,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.008628435872687102,
+    "perturbation_labels_available": false,
+    "population_rows": 86,
+    "ranking": false,
+    "samples": 86,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

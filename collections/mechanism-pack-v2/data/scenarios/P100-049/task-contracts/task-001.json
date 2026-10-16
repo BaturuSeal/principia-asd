@@ -1,0 +1,178 @@
+{
+  "description": "Compare finite-pulse diffusion and effective exponential polarization relaxation using the same early voltage anchors. Complete later rest blocks remain held out.",
+  "display_title": "Diffusion and polarization during battery rest",
+  "equation_protocol": "multi-role-equations-v2",
+  "equation_templates": [
+    {
+      "assumptions": [
+        "Known relaxation families conditional on 60/120-second observations",
+        "Single half-cell and chronological held-out rest blocks; no independent-cell validation",
+        "No diffusion coefficient or unique electrochemical mechanism is identified"
+      ],
+      "constants": {},
+      "name": "Calibrated polarization relaxation",
+      "nodes": [
+        {
+          "expression": "time_multiplier * pulse_duration",
+          "id": "relaxation_time",
+          "meaning": "Effective relaxation timescale tied to the preceding pulse duration",
+          "unit": "s"
+        },
+        {
+          "expression": "exp(-(anchor_time_late - anchor_time_early) / relaxation_time)",
+          "id": "anchor_decay",
+          "meaning": "Decay between the two disclosed voltage anchors",
+          "unit": "1"
+        },
+        {
+          "expression": "(voltage_late - anchor_decay * voltage_early) / (1 - anchor_decay)",
+          "id": "equilibrium_voltage",
+          "meaning": "Algebraic effective equilibrium voltage from the early rest anchors",
+          "unit": "V"
+        },
+        {
+          "expression": "(voltage_late - equilibrium_voltage) * exp(-(elapsed - anchor_time_late) / relaxation_time)",
+          "id": "residual_voltage",
+          "meaning": "Remaining polarization after the last disclosed anchor",
+          "unit": "V"
+        },
+        {
+          "expression": "equilibrium_voltage + residual_voltage",
+          "id": "relaxed_voltage",
+          "meaning": "Predicted later current-free voltage",
+          "unit": "V"
+        }
+      ],
+      "output": "relaxed_voltage",
+      "parameters": {
+        "time_multiplier": {
+          "bounds": [
+            0.01,
+            100
+          ],
+          "initial": 1,
+          "meaning": "Relaxation-to-pulse duration ratio",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    },
+    {
+      "assumptions": [
+        "Known relaxation families conditional on 60/120-second observations",
+        "Single half-cell and chronological held-out rest blocks; no independent-cell validation",
+        "No diffusion coefficient or unique electrochemical mechanism is identified",
+        "Semi-infinite diffusion approximation; finite-particle and multiple-process deviations retained"
+      ],
+      "constants": {
+        "time_ref": {
+          "meaning": "One-second coordinate scale",
+          "source": "Declared coordinate scale",
+          "unit": "s",
+          "value": 1
+        }
+      },
+      "name": "Finite-pulse diffusion relaxation",
+      "nodes": [
+        {
+          "expression": "sqrt((elapsed + pulse_duration) / time_ref) - sqrt(elapsed / time_ref)",
+          "id": "diffusion_now",
+          "meaning": "Finite-pulse diffusion relaxation shape at the prediction horizon",
+          "unit": "1"
+        },
+        {
+          "expression": "sqrt((anchor_time_early + pulse_duration) / time_ref) - sqrt(anchor_time_early / time_ref)",
+          "id": "diffusion_early",
+          "meaning": "Diffusion shape at the earlier calibration time",
+          "unit": "1"
+        },
+        {
+          "expression": "sqrt((anchor_time_late + pulse_duration) / time_ref) - sqrt(anchor_time_late / time_ref)",
+          "id": "diffusion_late",
+          "meaning": "Diffusion shape at the later calibration time",
+          "unit": "1"
+        },
+        {
+          "expression": "(voltage_early - voltage_late) / (diffusion_early - diffusion_late)",
+          "id": "polarization_scale",
+          "meaning": "Polarization amplitude algebraically calibrated from disclosed early observations",
+          "unit": "V"
+        },
+        {
+          "expression": "voltage_late + transport_scale * polarization_scale * (diffusion_now - diffusion_late)",
+          "id": "relaxed_voltage",
+          "meaning": "Later voltage under finite-pulse diffusion decay",
+          "unit": "V"
+        }
+      ],
+      "output": "relaxed_voltage",
+      "parameters": {
+        "transport_scale": {
+          "bounds": [
+            0.01,
+            10
+          ],
+          "initial": 1,
+          "meaning": "Shared correction to the ideal finite-pulse response",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    }
+  ],
+  "inputs": [
+    "elapsed",
+    "anchor_time_early",
+    "anchor_time_late",
+    "voltage_early",
+    "voltage_late",
+    "pulse_duration"
+  ],
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "primary": "mae"
+  },
+  "output": "target",
+  "preprocessing": {
+    "learned_transformations": [],
+    "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+  },
+  "quantity_units": {
+    "anchor_time_early": "s",
+    "anchor_time_late": "s",
+    "elapsed": "s",
+    "pulse_duration": "s",
+    "target": "V",
+    "voltage_early": "V",
+    "voltage_late": "V"
+  },
+  "reference_expression": "voltage_late",
+  "revision": 2,
+  "scenario_id": "P100-049",
+  "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "split_policy": "Last 20% of qualifying rest groups by acquisition chronology remain test. Whole development groups use historical compact-v2 canonical hash allocation; this is interleaved development, not forward-only validation.",
+  "stability": {
+    "categorical_inputs": [],
+    "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "task_id": "P100-049.mechanisms-v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Diffusion and polarization during battery rest",
+  "variable_descriptions": {
+    "anchor_time_early": "Actual earlier disclosed rest-calibration time",
+    "anchor_time_late": "Actual later disclosed rest-calibration time",
+    "elapsed": "Elapsed rest time at the forecast horizon",
+    "pulse_duration": "Duration of the completed preceding current pulse",
+    "target": "voltage during current-free relaxation",
+    "voltage_early": "Measured earlier disclosed rest voltage",
+    "voltage_late": "Measured later disclosed rest voltage"
+  }
+}

@@ -12,3 +12,20 @@ a{color:var(--purple,#6845b8)}.scenario-card h3 a{color:inherit;text-decoration:
 @media(max-width:700px){.header-actions{gap:8px}.connection{font-size:11px}.task-summary{gap:10px;align-items:flex-start}.task-open{white-space:normal;max-width:75px}.scenario-tabs .primary{margin-left:0}#task-dialog,#provider-dialog{padding:22px 16px}.task-summary strong{font-size:14px}}
 
 .model-row{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line,#e6e8ed);align-items:center}.model-row code,.model-row small{display:block;overflow-wrap:anywhere;margin-top:.3rem}.model-row .actions{flex-shrink:0}.profile-form{padding:1.2rem;background:var(--bg,#f7f8fb);border-radius:12px;margin-top:1rem}.profile-form .grid{gap:1rem}.model-row strong{overflow-wrap:anywhere}@media(max-width:600px){.model-row{align-items:flex-start;flex-direction:column}}
+
+/* Local scientific iteration: structural portfolios and connected quantities. */
+.family-variants>td{padding-top:0;border-top:0;background:var(--surface,#fafbfc)}
+.family-variants summary{cursor:pointer;font-size:.82rem;color:var(--muted,#697386);padding:.6rem 0}
+.family-variants table{margin:.7rem 0;width:100%}
+.equation-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px;margin:18px 0}
+.quantity-card{border:1px solid var(--border,#e1e5eb);border-radius:12px;padding:16px;background:var(--surface,#fafbfc)}
+.quantity-card strong{display:block;font-size:1.15rem;margin:10px 0}
+.quantity-card p{font-size:.9rem;line-height:1.55;margin:8px 0}
+.quantity-card small{display:block;overflow-wrap:anywhere;color:var(--muted,#697386)}
+.equation-explainer summary{cursor:pointer;font-weight:600;padding:8px 0}
+.rule-section .math-panel{overflow-x:auto}
+
+.equation-filter{display:flex;align-items:center;gap:8px;white-space:nowrap}.equation-filter input{width:auto;min-height:auto}
+
+/* Connected systems use one document scroll; no clipped nested equation viewport. */
+.math-panel.equation-math-panel{font-size:17px;max-height:none;padding:20px 18px}.equation-math-panel .katex-display{margin:.35em 0}@media(max-width:700px){.math-panel.equation-math-panel{font-size:16px;padding:18px 12px}}

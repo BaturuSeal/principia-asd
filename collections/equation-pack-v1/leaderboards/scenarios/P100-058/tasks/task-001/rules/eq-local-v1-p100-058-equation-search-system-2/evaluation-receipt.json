@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 109004.2559703906,
+    "primary": "log_mae",
+    "primary_error": 0.8065817757295286,
+    "rmse": 419487.51017782354
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 7.524405530403783,
+  "by_group": [
+    {
+      "error": 0.8239687594197511,
+      "group": "temperature-55",
+      "rows": 50
+    },
+    {
+      "error": 0.789194792039306,
+      "group": "temperature-75",
+      "rows": 38
+    }
+  ],
+  "coverage": {
+    "eligible": 88,
+    "fraction": 1.0,
+    "predicted": 88
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "eq-local-v1-p100-058-equation-search-system-2",
+  "rule_sha256": "00456a9cd7c4838c446b813d6b8540fef42d41b4d75a197dad42104aec05aad2",
+  "run_id": "eq-local-v1-p100-058-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 33,
+    "expanded_expression": "where(response_kind == 0, 38387079.99444264 * (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2) + 103170.56751145594 * (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2), 38387079.99444264 * (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2) + 103170.56751145594 * (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2))",
+    "expression_bytes": 633,
+    "fixed_constants": 1,
+    "free_parameters": 5,
+    "intermediate_quantities": 7,
+    "learned_state_bytes": 140,
+    "literal_state_bytes": 27,
+    "nodes": 283,
+    "numeric_literal_count": 27,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 5,
+    "weighted_operator_count": 94
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0027578378835936158,
+    "perturbation_labels_available": false,
+    "population_rows": 88,
+    "ranking": false,
+    "samples": 88,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

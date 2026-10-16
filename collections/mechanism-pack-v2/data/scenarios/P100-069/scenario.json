@@ -1,0 +1,31 @@
+{
+  "description": "Predict the next minute of lubricant-temperature change from measured friction power and thermal boundaries. A thermal resistance network competes with a speed-dependent mixing hypothesis; no future control measurements are inputs.",
+  "domain": "Robotics thermodynamics",
+  "edition": "mechanism-pack-v2",
+  "independent_unit": "Source identification runs train except 1.4137 rad/s dev; every source validation run is test. Nonoverlapping 60-second windows; instantaneous start-state inputs only. Single robot joint.",
+  "limitations": [
+    "Lumped thermal balance with measured instantaneous torque and speed",
+    "Housing, environment and friction power are held locally constant over 60 seconds; later controls are never supplied",
+    "Capacity and conductances are effective quantities; one joint, no independent-machine validation",
+    "Convection proxy, not direct measurement of lubricant circulation"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 22,
+    "test": 1372,
+    "train": 125
+  },
+  "scenario_id": "P100-069",
+  "size": {
+    "public_bytes": 70788
+  },
+  "source": {
+    "license": "CC BY 4.0",
+    "registry_identity": "P100-069",
+    "url": "https://doi.org/10.18419/DARUS-5015"
+  },
+  "status": "local_research_preview",
+  "title": "Frictional heating in a robot gearbox"
+}

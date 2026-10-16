@@ -1,0 +1,58 @@
+{
+  "dev_error": 0.10109011973043243,
+  "execution_status": "complete",
+  "expression": "anchor_loss",
+  "inputs": [
+    "tokens",
+    "anchor_tokens",
+    "early_tokens",
+    "anchor_loss",
+    "early_loss",
+    "model_size"
+  ],
+  "method_id": "persistence_control",
+  "method_version": "persistence-reference-v1",
+  "model_ids": [],
+  "origin": "Frozen task-specific persistence reference; no fitted coefficients",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": -0.6059644976844722,
+      "anchor_tokens": 3.063718280881795e-17,
+      "early_loss": -0.6086418630957827,
+      "early_tokens": 2.0424788539211964e-17,
+      "model_size": 0.5648749945701919,
+      "tokens": 0.7242473970886595
+    },
+    "mean": 0.10195625495680007,
+    "p90_abs": 0.1671166896400001,
+    "std": 0.04348531775469697
+  },
+  "rule_id": "mechanism-v2-p100-043-persistence-control-rule-1",
+  "rule_sha256": "d0359985eb934c2927fe414dfe530cc02ea25252c92f7edf80a15e8173af16ab",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "anchor_loss",
+    "expression_bytes": 11,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-043.mechanisms-v2",
+  "train_error": 0.12750498316621126,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

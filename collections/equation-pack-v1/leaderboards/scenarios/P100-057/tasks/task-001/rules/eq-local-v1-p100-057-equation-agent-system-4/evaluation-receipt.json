@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.03341467927621685,
+    "primary": "log_mae",
+    "primary_error": 0.3133558012769355,
+    "rmse": 0.05611421360866641
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.8878578887816473,
+  "by_group": [
+    {
+      "error": 0.3133558012769355,
+      "group": "replicate-4",
+      "rows": 242
+    }
+  ],
+  "coverage": {
+    "eligible": 242,
+    "fraction": 1.0,
+    "predicted": 242
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_agent",
+  "rule_id": "eq-local-v1-p100-057-equation-agent-system-4",
+  "rule_sha256": "fb0b9436fe00974e91d92d85282c73b9910adc578f4f3af5b6d5f4733913584a",
+  "run_id": "eq-local-v1-p100-057-equation-agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 17,
+    "expanded_expression": "0.26725818910302723 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 1.0000000141669845e-06 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref))) ** 1.9999999906548493)) + 0.08017052343577041 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) / shear_rate",
+    "expression_bytes": 241,
+    "fixed_constants": 1,
+    "free_parameters": 5,
+    "intermediate_quantities": 5,
+    "learned_state_bytes": 176,
+    "literal_state_bytes": 8,
+    "nodes": 92,
+    "numeric_literal_count": 8,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 5,
+    "weighted_operator_count": 31
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.020110579925276855,
+    "perturbation_labels_available": false,
+    "population_rows": 242,
+    "ranking": false,
+    "samples": 242,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

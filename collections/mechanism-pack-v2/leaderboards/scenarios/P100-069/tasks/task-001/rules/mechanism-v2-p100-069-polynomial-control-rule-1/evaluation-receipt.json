@@ -1,0 +1,91 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.0677310030169085,
+    "primary": "mae",
+    "primary_error": 1.0677310030169085,
+    "rmse": 1.322617311604389
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.0677310030169085,
+  "by_group": [
+    {
+      "error": 0.9931987760778861,
+      "group": "validation/cool-down/cool-down.csv",
+      "rows": 719
+    },
+    {
+      "error": 0.8576800000000001,
+      "group": "validation/heat-up/theta_dot=0p3142.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.9546285714285714,
+      "group": "validation/heat-up/theta_dot=0p6283.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.8781119999999998,
+      "group": "validation/heat-up/theta_dot=0p9425.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.3404525714285715,
+      "group": "validation/heat-up/theta_dot=1p2566.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.3417051428571427,
+      "group": "validation/heat-up/theta_dot=1p5708.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.0366453556485358,
+      "group": "validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv",
+      "rows": 239
+    },
+    {
+      "error": 1.1394256066945607,
+      "group": "validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv",
+      "rows": 239
+    }
+  ],
+  "coverage": {
+    "eligible": 1372,
+    "fraction": 1.0,
+    "predicted": 1372
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "polynomial_control",
+  "rule_id": "mechanism-v2-p100-069-polynomial-control-rule-1",
+  "rule_sha256": "52029da9001fcbdba295f2f658f0698a65608e16248f4b931010c2aac2c90495",
+  "run_id": "mechanism-v2-p100-069-polynomial-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.6380000000000003e-28 + 1.246836041397085e-27 * lubricant_temperature + 2.131795139581274e-27 * housing_temperature + 6.030267967020769e-26 * environment_temperature + 9.070906233584745e-29 * speed + 2.1971500553605075e-29 * torque + 0.015828000000000002 * horizon",
+    "expression_bytes": 119,
+    "free_parameters": 7,
+    "learned_state_bytes": 204,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 1372,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

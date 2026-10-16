@@ -1,0 +1,78 @@
+{
+  "dev_error": 0.00035198339927317696,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(conversion)+p3*(heating_rate)",
+  "inputs": [
+    "temperature",
+    "conversion",
+    "heating_rate"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.004464238869311382,
+    "p1": 1.1612321047889382e-05,
+    "p2": -0.0009117370744998239,
+    "p3": 0.0035245579001932804
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "conversion": 0.1765052468710374,
+      "temperature": 0.249893702258993
+    },
+    "mean": 9.754457474850832e-05,
+    "p90_abs": 0.0006988990245687017,
+    "std": 0.00040397175668506626
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-013-linear-control-rule-1",
+  "rule_sha256": "d2f0b1556ef1bd77047fb0c26de27cb1d6eb95f0c70bb283ffab37aa7284e10b",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.004464238869311382 + 1.1612321047889382e-05 * temperature + -0.0009117370744998239 * conversion + 0.0035245579001932804 * heating_rate",
+    "expression_bytes": 53,
+    "free_parameters": 4,
+    "learned_state_bytes": 118,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "temperature",
+      "conversion",
+      "heating_rate"
+    ],
+    "training_centers": [
+      0.0,
+      439.2646090739594,
+      0.40689869484151764,
+      0.08340584213797506
+    ],
+    "training_scales": [
+      1.0,
+      40.89451048618846,
+      0.38438255759400725,
+      0.06096241678546067
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-013.mechanisms-v2",
+  "train_error": 0.00048369270227353276,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

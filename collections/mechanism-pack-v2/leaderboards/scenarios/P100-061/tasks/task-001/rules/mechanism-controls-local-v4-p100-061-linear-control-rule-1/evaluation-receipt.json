@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.583527455383973,
+    "primary": "mae",
+    "primary_error": 0.583527455383973,
+    "rmse": 0.5970179795017977
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.1194666433828158,
+  "by_group": [
+    {
+      "error": 0.46902126423763785,
+      "group": "S-HT-N2-300C",
+      "rows": 8
+    },
+    {
+      "error": 0.6090161176553934,
+      "group": "S-HT-N2-400C",
+      "rows": 8
+    },
+    {
+      "error": 0.6725449842588874,
+      "group": "S-HT-N2-450C",
+      "rows": 8
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-controls-local-v4-p100-061-linear-control-rule-1",
+  "rule_sha256": "a2c3e3f920daf21d77c98fa85e44829084b40a35ce0e90a25861a8fc7cb8626e",
+  "run_id": "mechanism-controls-local-v4-p100-061-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-69.85845144897674 + -0.0006848311602141299 * temperature + 5.125767198134849e-06 * pressure_feed + 0.0006904868703105646 * pressure_permeate",
+    "expression_bytes": 61,
+    "free_parameters": 4,
+    "learned_state_bytes": 114,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.1250735155703245,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "admission": "local_research_preview",
+  "excluded_count": 0,
+  "exclusion_reasons": {},
+  "groups": {
+    "dev": [
+      "group-48702b96649e921d14a6c0a2",
+      "group-c5ed3c1a76691e8176917083",
+      "group-f43dcfbafe4233ae09eeae89"
+    ],
+    "test": [
+      "group-2202a086cb33273ce2d378c3",
+      "group-71145ec09dd8be2729e0100a",
+      "group-ab62ca3054292a2e9049d31e",
+      "group-aec67ad855dba6b880f2abfa",
+      "group-e90b4881bf0e2712c670ec14"
+    ],
+    "train": [
+      "group-08d02cb76964a823dcd2ae25",
+      "group-12371ded7cfe52d49d85a21a",
+      "group-19321ccc639b144d0e3cf8c9",
+      "group-209ddd39259d88cef8a543fb",
+      "group-2a48a3b6dc24c54f6318e75e",
+      "group-4faad6d73d6f05f04506d788",
+      "group-5b9ae7c6721981fc6cec4e3d",
+      "group-8134da8dc2c78bea140db3b0",
+      "group-a65edbc883a0721dd20b7e52",
+      "group-a7d56f499482a0033906829b",
+      "group-a7d83faff57fef80df458902",
+      "group-b03ddd3f845fd79eb5f14ea1",
+      "group-d91ef9e0001b8bc069f46c40",
+      "group-effc1e7ab2138f4e0ac68dba"
+    ]
+  },
+  "historical_contract_sha256": "d2059f7340928444372321d93af0617cdbb491d1d8b10f6460efa01588f26dab",
+  "historical_partition_hashes": {
+    "dev": "6a28ad78ccb4fe3a27e39356376828524f5df7bddcd1a42eddd0ccfcbd925484",
+    "test": "a5767c9479c3218880ef0ab990ec82f15821fbcde1b5d02f24ddc3c960e7e519",
+    "train": "5de2c2ff64ff12764572f6a295b8ff3d80f06cb92c62a211a80b0bf38b9bd764"
+  },
+  "native_recipe": {
+    "assets": [
+      {
+        "bytes": 1185,
+        "path": "scenarios/43_ai_gemstones_training/raw/LICENSE",
+        "role": "source_documentation",
+        "sha256": "f16385e497f4ae54ab342e26d2540c3f17378907074301ad10793a3d1fb398eb"
+      },
+      {
+        "bytes": 6473,
+        "path": "scenarios/43_ai_gemstones_training/raw/README.md",
+        "role": "source_documentation",
+        "sha256": "298bc36844a44118157fe1b051fd7079ed88c94877c6d94b80f32cc3bc96110a"
+      },
+      {
+        "bytes": 15061,
+        "path": "scenarios/43_ai_gemstones_training/raw/wandb_data_extraction.py",
+        "role": "source_documentation",
+        "sha256": "91c2f175b3081351ca3cd864e4642c209614c150f91ec320b6b09796f27260ab"
+      },
+      {
+        "bytes": 7888198,
+        "path": "scenarios/43_ai_gemstones_training/raw/wandb_dfs/wandb_df_raw.jsonl",
+        "role": "training_histories",
+        "sha256": "9e883d4105ace4f739b4d440a9ad51257f775b7fd71e8243c0c0ee9d0130a18c"
+      }
+    ],
+    "group_assignments": {
+      "1024x28": "test",
+      "1280x15": "dev",
+      "1280x36": "test",
+      "1536x50": "test",
+      "1792x18": "train",
+      "1792x7": "train",
+      "2048x27": "train",
+      "2560x8": "train",
+      "256x23": "train",
+      "256x27": "train",
+      "256x71": "train",
+      "256x80": "train",
+      "3072x12": "train",
+      "384x13": "test",
+      "384x36": "train",
+      "512x11": "dev",
+      "512x12": "test",
+      "512x13": "train",
+      "512x14": "train",
+      "512x16": "train",
+      "768x3": "dev",
+      "768x45": "train"
+    },
+    "historical_contract_sha256": "edbe8f90cc8c148101dfdf4a62125525dbc76c42f68bba0acda8c51473dbd8ac",
+    "independent_units": "Complete model architecture (width x depth); shared training corpus and validation set do not establish independent data-generating experiments.",
+    "input_units": {
+      "anchor_loss": "nats per token",
+      "anchor_tokens_B": "billions of training tokens",
+      "depth": "layers",
+      "early_loss": "nats per token",
+      "early_tokens_B": "billions of training tokens",
+      "params_B": "billions of parameters",
+      "tokens_B": "billions of training tokens",
+      "width": "embedding dimensions"
+    },
+    "limitations": [
+      "Curator-only: acquisitions contain historical responses; never expose source-root to discovery workers",
+      "No test targets are exported and no evaluator vault is read or created",
+      "Reconstruction does not establish scientific admission, independent evidence or redistribution rights"
+    ],
+    "numerical_policy": {
+      "fit_count": 0,
+      "learned_transformations": []
+    },
+    "output_units": "nats per token",
+    "parser": "gemstones-hot-trajectories-v1",
+    "partition_provenance": {
+      "allocation": "Original confirmation groups retained; development groups sorted by canonical SHA256([compact-v2, case, opaque group]); first max(2, floor(n/5)) become dev. Explicit source identities, not numeric folder matching.",
+      "source_split_sha256": "0ef86ccd18465d15298f277297da8a2c04c6391c92b4e4e671b62f8e4a1b6f76"
+    },
+    "policy": {
+      "calibration": "Last observed positive finite checkpoint at or before 10B and at or before 20B tokens; distinct and earlier than all forecast points",
+      "excluded": "Global/final summary losses, fitted parameters, cooldown trajectories, future checkpoints and extra source fields cannot become inputs",
+      "forecast": "All recorded positive finite loss checkpoints with 20B < tokens <= 100B; missing checkpoints explicitly recorded, no interpolation",
+      "split": "Frozen complete-architecture assignments, identical to historical compact-v2 partitions",
+      "stage": "pretrain true, cooldown false; one hot history per architecture",
+      "tokens_per_step": 4194304
+    },
+    "reference_parser_provenance": {
+      "path": "evaluation/preparation/new_cases/P100-043/native.py",
+      "reuse": "Measurement and identity specification reimplemented; no upstream fitting, scientific formula, reference state or evaluator copied",
+      "sha256": "76598fa89ee9b623318208978812b890efe014c53985c11df9913152cf5357a2"
+    },
+    "rights_status": "pending_final_review",
+    "scenario_id": "P100-043",
+    "schema_version": "native-reconstruction/1",
+    "source_identity": {
+      "historical_case": "P100-043",
+      "revision": "5f420478f6057b0cbb4d13405fb10ca64675bccb",
+      "url": "https://github.com/mcleish7/gemstone-scaling-laws"
+    },
+    "source_scenario_descriptor_sha256": "cddbc1c08577643a3a949a8ec68d5814e670d9cd7523053d4f59c162874b3220",
+    "status": "draft_not_admitted",
+    "test_exposure": "retrospective-open-test",
+    "units_evidence": {
+      "loss": "Recorded val_loss; historical contract declares nats/token, not a new loss-function validation",
+      "tokens": "Registered wandb_data_extraction.py lines 201-207 and 407: optimizer_step * 2048 * 2048"
+    }
+  },
+  "preservation": "All historical samples and target values preserved. Only permitted inputs are selected and explicitly converted. No refitting or label-dependent filtering.",
+  "projection": {
+    "anchor_loss": {
+      "factor": 1,
+      "source": "anchor_loss"
+    },
+    "anchor_tokens": {
+      "factor": 1,
+      "source": "anchor_tokens_B"
+    },
+    "early_loss": {
+      "factor": 1,
+      "source": "early_loss"
+    },
+    "early_tokens": {
+      "factor": 1,
+      "source": "early_tokens_B"
+    },
+    "model_size": {
+      "factor": 1,
+      "source": "params_B"
+    },
+    "tokens": {
+      "factor": 1,
+      "source": "tokens_B"
+    }
+  },
+  "registry_entry_sha256": "bb2be9abfcb34fbf9d10138e6ccfae76ec28006384869d9d513ec006d4d7f26d",
+  "rows": {
+    "dev": 125,
+    "test": 221,
+    "train": 616
+  },
+  "scenario_id": "P100-043",
+  "scientific_review": "not_assessed",
+  "source_terms": "MIT",
+  "source_url": "https://github.com/mcleish7/gemstone-scaling-laws",
+  "sources": [
+    {
+      "bytes": 1185,
+      "path": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/LICENSE",
+      "sha256": "f16385e497f4ae54ab342e26d2540c3f17378907074301ad10793a3d1fb398eb"
+    },
+    {
+      "bytes": 6473,
+      "path": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/README.md",
+      "sha256": "298bc36844a44118157fe1b051fd7079ed88c94877c6d94b80f32cc3bc96110a"
+    },
+    {
+      "bytes": 15061,
+      "path": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/wandb_data_extraction.py",
+      "sha256": "91c2f175b3081351ca3cd864e4642c209614c150f91ec320b6b09796f27260ab"
+    },
+    {
+      "bytes": 7888198,
+      "path": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/wandb_dfs/wandb_df_raw.jsonl",
+      "sha256": "9e883d4105ace4f739b4d440a9ad51257f775b7fd71e8243c0c0ee9d0130a18c"
+    }
+  ],
+  "split_policy": "Frozen complete-architecture assignments, identical to historical compact-v2 partitions",
+  "test_targets_public": false
+}

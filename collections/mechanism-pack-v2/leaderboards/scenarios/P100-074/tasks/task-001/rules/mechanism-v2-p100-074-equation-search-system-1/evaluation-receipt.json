@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 173.26695210054515,
+    "primary": "mae",
+    "primary_error": 173.26695210054515,
+    "rmse": 213.6650163449118
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 158.41744805624666,
+  "by_group": [
+    {
+      "error": 205.5623377017404,
+      "group": "group-32f65e8bcf958b45c6c92eb1",
+      "rows": 43
+    },
+    {
+      "error": 140.9715664993499,
+      "group": "group-9325ce927d38c901d5f70925",
+      "rows": 43
+    }
+  ],
+  "coverage": {
+    "eligible": 86,
+    "fraction": 1.0,
+    "predicted": 86
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-074-equation-search-system-1",
+  "rule_sha256": "955cb8d32ee22d57029fb0dcd3f5319124ca26535d790acf5a42e7d15773491b",
+  "run_id": "mechanism-v2-p100-074-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 10,
+    "expanded_expression": "initial_signal + initial_slope / 0.0005317576882753114 * (1 - exp(-0.0005317576882753114 * (elapsed - anchor_time)))",
+    "expression_bytes": 82,
+    "fixed_constants": 1,
+    "free_parameters": 1,
+    "intermediate_quantities": 3,
+    "learned_state_bytes": 31,
+    "literal_state_bytes": 1,
+    "nodes": 31,
+    "numeric_literal_count": 1,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 1,
+    "weighted_operator_count": 10
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.016729119226222125,
+    "perturbation_labels_available": false,
+    "population_rows": 86,
+    "ranking": false,
+    "samples": 86,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

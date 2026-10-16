@@ -1,0 +1,97 @@
+{
+  "dev_error": 0.017338462488772365,
+  "execution_status": "complete",
+  "expression": "p0+p1*(tokens)+p2*(anchor_tokens)+p3*(early_tokens)+p4*(anchor_loss)+p5*(early_loss)+p6*(model_size)",
+  "inputs": [
+    "tokens",
+    "anchor_tokens",
+    "early_tokens",
+    "anchor_loss",
+    "early_loss",
+    "model_size"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -273845991699062.75,
+    "p1": -0.0017527123544356271,
+    "p2": -0.1026559239603979,
+    "p3": 34219063015487.023,
+    "p4": 1.505307263506929,
+    "p5": -0.46692832712465915,
+    "p6": -0.010899986587796284
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_loss": -0.131444260718395,
+      "anchor_tokens": 1.4472048347305347e-17,
+      "early_loss": -0.14396776315049076,
+      "early_tokens": 1.6281054390718517e-17,
+      "model_size": 0.02972586875737398,
+      "tokens": -0.46465913513526724
+    },
+    "mean": -0.010645785303464703,
+    "p90_abs": 0.03787409746143785,
+    "std": 0.020457330305181057
+  },
+  "rule_id": "mechanism-controls-local-v4-p100-043-linear-control-rule-1",
+  "rule_sha256": "80ce8b27b57bf56d65df0ad5dd22eea8b95f6c4c14a175c22dc3337779eb7ea1",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-273845991699062.75 + -0.0017527123544356271 * tokens + -0.1026559239603979 * anchor_tokens + 34219063015487.023 * early_tokens + 1.505307263506929 * anchor_loss + -0.46692832712465915 * early_loss + -0.010899986587796284 * model_size",
+    "expression_bytes": 100,
+    "free_parameters": 7,
+    "learned_state_bytes": 192,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "tokens",
+      "anchor_tokens",
+      "early_tokens",
+      "anchor_loss",
+      "early_loss",
+      "model_size"
+    ],
+    "training_centers": [
+      0.0,
+      59.94715120041563,
+      18.008904690701232,
+      8.002732031999956,
+      3.1686820716668747,
+      3.348866821892043,
+      0.587291769974025
+    ],
+    "training_scales": [
+      1.0,
+      23.552365446971358,
+      0.009823042270204405,
+      4.440892098500626e-14,
+      0.2283810053870685,
+      0.1900308392397953,
+      0.6816627028595199
+    ],
+    "version": "centered-least-squares-v2"
+  },
+  "task_id": "P100-043.mechanisms-v2",
+  "train_error": 0.01637975917823439,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.1194666433828158,
+    "primary": "mae",
+    "primary_error": 1.1194666433828158,
+    "rmse": 1.3056445796727008
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.1194666433828158,
+  "by_group": [
+    {
+      "error": 1.1733149662150963,
+      "group": "S-HT-N2-300C",
+      "rows": 8
+    },
+    {
+      "error": 1.098045726207105,
+      "group": "S-HT-N2-400C",
+      "rows": 8
+    },
+    {
+      "error": 1.0870392377262457,
+      "group": "S-HT-N2-450C",
+      "rows": 8
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "mean_control",
+  "rule_id": "mechanism-v2-p100-061-mean-control-rule-1",
+  "rule_sha256": "fb4038d48b596fb1ad01957fe36c405fe76c515edfa5c25703d6d3275ae9f196",
+  "run_id": "mechanism-v2-p100-061-mean-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.559585102148741",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

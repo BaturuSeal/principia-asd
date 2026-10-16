@@ -1,0 +1,56 @@
+{
+  "dev_error": 306.5976329356409,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 242.75339446511626
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "concentration": -0.8072086175688814,
+      "elapsed": -0.5331096477786981,
+      "initial_signal": -0.8072086175688812,
+      "initial_slope": -0.8072086175688814
+    },
+    "mean": -258.54461716279076,
+    "p90_abs": 758.2956055348837,
+    "std": 325.31178561380784
+  },
+  "rule_id": "mechanism-v2-p100-074-mean-control-rule-1",
+  "rule_sha256": "8deab103dda49b647b02965dc46e455c9bd1a33c8158e225980809c21a562998",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "242.75339446511626",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 251.41194463558676,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

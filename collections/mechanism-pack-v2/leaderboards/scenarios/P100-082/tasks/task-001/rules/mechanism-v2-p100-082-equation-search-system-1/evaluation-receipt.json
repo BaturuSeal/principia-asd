@@ -1,0 +1,81 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 8.370645487357927e-08,
+    "primary": "mae",
+    "primary_error": 8.370645487357927e-08,
+    "rmse": 1.1653019527366967e-07
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 6.772136137360195e-08,
+  "by_group": [
+    {
+      "error": 7.408982142084165e-08,
+      "group": "Gamiz",
+      "rows": 2288
+    },
+    {
+      "error": 5.818204290866163e-08,
+      "group": "Kacergine",
+      "rows": 1559
+    },
+    {
+      "error": 6.045007383475371e-08,
+      "group": "Kranzberg-Freising",
+      "rows": 2762
+    },
+    {
+      "error": 8.15446029492587e-08,
+      "group": "RincondelBatovi",
+      "rows": 2540
+    },
+    {
+      "error": 1.4426573325438063e-07,
+      "group": "Saint Mitre",
+      "rows": 2210
+    }
+  ],
+  "coverage": {
+    "eligible": 11359,
+    "fraction": 1.0,
+    "predicted": 11359
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-082-equation-search-system-1",
+  "rule_sha256": "ee7a6cbef60c3885d76ecb6fe601efca487a7d601bb723e2942d845ffc5e24bd",
+  "run_id": "mechanism-v2-p100-082-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 7,
+    "expanded_expression": "1.2930129569950873e-07 * 1.8339842022860626 ** ((temperature - T_ref) / temperature_step) * (1 - 0.20821034336157104 * root_exclusion)",
+    "expression_bytes": 106,
+    "fixed_constants": 2,
+    "free_parameters": 3,
+    "intermediate_quantities": 2,
+    "learned_state_bytes": 108,
+    "literal_state_bytes": 1,
+    "nodes": 30,
+    "numeric_literal_count": 1,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 7
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.044433699311721545,
+    "perturbation_labels_available": false,
+    "population_rows": 11359,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

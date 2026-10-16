@@ -1,0 +1,70 @@
+{
+  "dev_error": 158.28248210780788,
+  "execution_status": "complete",
+  "expression": "p0+p1*(concentration)+p2*(elapsed)+p3*(initial_signal)+p4*(initial_slope)+p5*(concentration*concentration)+p6*(concentration*elapsed)+p7*(concentration*initial_signal)+p8*(concentration*initial_slope)+p9*(elapsed*elapsed)+p10*(elapsed*initial_signal)+p11*(elapsed*initial_slope)+p12*(initial_signal*initial_signal)+p13*(initial_signal*initial_slope)+p14*(initial_slope*initial_slope)",
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -106.96356066639247,
+    "p1": 57760.91045965037,
+    "p10": 0.0038021680084716148,
+    "p11": -0.08204314993749799,
+    "p12": -0.004020720584575679,
+    "p13": -2.3812304518874154,
+    "p14": -1519.5754592002247,
+    "p2": 0.1144225020798254,
+    "p3": 1.2121295537121197,
+    "p4": 898.7245921033962,
+    "p5": -444071.6133653814,
+    "p6": -34.77110330214448,
+    "p7": -43.56616131446463,
+    "p8": -21858.217405157637,
+    "p9": -2.8343368359638754e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "concentration": -0.7715378110469083,
+      "elapsed": -0.5461554297298755,
+      "initial_signal": -0.7715378110469083,
+      "initial_slope": -0.7715378110469083
+    },
+    "mean": -21.66806820771343,
+    "p90_abs": 261.83448154763204,
+    "std": 180.86744320478917
+  },
+  "rule_id": "mechanism-v2-p100-074-polynomial-control-rule-1",
+  "rule_sha256": "a09923793e7091d96069cdf900dfedee86b52cebb67c9fa49609c92a5555edb8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-106.96356066639247 + 57760.91045965037 * concentration + 0.1144225020798254 * elapsed + 1.2121295537121197 * initial_signal + 898.7245921033962 * initial_slope + -444071.6133653814 * (concentration * concentration) + -34.77110330214448 * (concentration * elapsed) + -43.56616131446463 * (concentration * initial_signal) + -21858.217405157637 * (concentration * initial_slope) + -2.8343368359638754e-05 * (elapsed * elapsed) + 0.0038021680084716148 * (elapsed * initial_signal) + -0.08204314993749799 * (elapsed * initial_slope) + -0.004020720584575679 * (initial_signal * initial_signal) + -2.3812304518874154 * (initial_signal * initial_slope) + -1519.5754592002247 * (initial_slope * initial_slope)",
+    "expression_bytes": 383,
+    "free_parameters": 15,
+    "learned_state_bytes": 410,
+    "literal_state_bytes": 0,
+    "nodes": 155,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 38
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 38.71609285220244,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

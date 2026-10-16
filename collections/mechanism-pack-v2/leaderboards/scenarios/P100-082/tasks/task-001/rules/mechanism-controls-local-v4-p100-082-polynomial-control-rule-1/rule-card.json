@@ -1,0 +1,103 @@
+{
+  "dev_error": 5.74483764026733e-08,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(water_fraction)+p3*(root_exclusion)+p4*(temperature*temperature)+p5*(temperature*water_fraction)+p6*(temperature*root_exclusion)+p7*(water_fraction*water_fraction)+p8*(water_fraction*root_exclusion)+p9*(root_exclusion*root_exclusion)",
+  "inputs": [
+    "temperature",
+    "water_fraction",
+    "root_exclusion"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "centered-least-squares-v2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -3.879814549178781e-05,
+    "p1": 2.6686773017073837e-07,
+    "p2": -2.343953671232551e-06,
+    "p3": 1.6116465978498263e-07,
+    "p4": -4.57679771345916e-10,
+    "p5": 9.656620393914162e-09,
+    "p6": -1.0987552164403588e-09,
+    "p7": -4.832641767014648e-07,
+    "p8": -1.0953265654005537e-07,
+    "p9": 1.611646597849884e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "root_exclusion": -0.0908279900927175,
+      "temperature": -0.5931663556542514,
+      "water_fraction": 0.2927054868247767
+    },
+    "mean": 2.7510748635735003e-08,
+    "p90_abs": 1.0251776980449355e-07,
+    "std": 6.228791608913813e-08
+  },
+  "rule_id": "mechanism-controls-local-v4-p100-082-polynomial-control-rule-1",
+  "rule_sha256": "9c3d6c6140a8e76822f08241b7b877710bc868e9e175bcb1e8da0c7c35849fa7",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-3.879814549178781e-05 + 2.6686773017073837e-07 * temperature + -2.343953671232551e-06 * water_fraction + 1.6116465978498263e-07 * root_exclusion + -4.57679771345916e-10 * (temperature * temperature) + 9.656620393914162e-09 * (temperature * water_fraction) + -1.0987552164403588e-09 * (temperature * root_exclusion) + -4.832641767014648e-07 * (water_fraction * water_fraction) + -1.0953265654005537e-07 * (water_fraction * root_exclusion) + 1.611646597849884e-07 * (root_exclusion * root_exclusion)",
+    "expression_bytes": 257,
+    "free_parameters": 10,
+    "learned_state_bytes": 299,
+    "literal_state_bytes": 0,
+    "nodes": 99,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "temperature",
+      "water_fraction",
+      "root_exclusion",
+      "temperature*temperature",
+      "temperature*water_fraction",
+      "temperature*root_exclusion",
+      "water_fraction*water_fraction",
+      "water_fraction*root_exclusion",
+      "root_exclusion*root_exclusion"
+    ],
+    "training_centers": [
+      0.0,
+      284.35782499514323,
+      0.29921710377206884,
+      0.32457665314532225,
+      80884.32063412803,
+      84.94442456022122,
+      92.27173781469345,
+      0.10480026223582435,
+      0.10417392652435584,
+      0.32457665314532225
+    ],
+    "training_scales": [
+      1.0,
+      4.994797107576972,
+      0.12356936127568012,
+      0.46821645568936077,
+      2837.719609092549,
+      34.85859337450816,
+      133.13262542749578,
+      0.09148445068155867,
+      0.16466520592909606,
+      0.46821645568936077
+    ],
+    "version": "centered-least-squares-v2"
+  },
+  "task_id": "P100-082.mechanisms-v2",
+  "train_error": 4.940147952799221e-08,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

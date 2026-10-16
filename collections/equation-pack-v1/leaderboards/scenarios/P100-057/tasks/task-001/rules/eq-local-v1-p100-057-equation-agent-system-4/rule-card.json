@@ -1,0 +1,210 @@
+{
+  "dev_error": 0.31065069968255477,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "replicate-3",
+        "loss": 0.31065069968255477
+      }
+    ],
+    "intermediate_ranges": {
+      "cross_factor": [
+        0.9999999974999998,
+        0.9999999999999911
+      ],
+      "reduced_shear": [
+        9.390275835296908e-08,
+        5.000000070834923e-05
+      ],
+      "thermal_shift": [
+        0.07954396627246277,
+        1.0
+      ],
+      "viscous_response": [
+        0.021386318007958816,
+        0.3475089633127409
+      ],
+      "yield_contribution": [
+        0.00012754162824441217,
+        0.08025077420998039
+      ],
+      "zero_shear_viscosity": [
+        0.021258776380050675,
+        0.26725818910302723
+      ]
+    },
+    "residual_bias": -0.015415302377368647,
+    "residual_rmse": 0.05626827840262659
+  },
+  "equation_system": {
+    "assumptions": [
+      "Viscosity follows a Cross-type shear-thinning model with a yield stress term",
+      "Temperature dependence follows an Arrhenius shift (effective activation energy)",
+      "Yield stress is temperature-dependent via the same shift factor",
+      "No infinite-shear plateau; high-shear viscosity negligible compared to low-shear"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 35 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 308.15
+      }
+    },
+    "name": "Thermally shifted Cross with yield stress",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Arrhenius temperature shift factor relative to reference",
+        "unit": "1"
+      },
+      {
+        "expression": "eta_ref * thermal_shift",
+        "id": "zero_shear_viscosity",
+        "meaning": "Low-shear viscosity at the observed temperature",
+        "unit": "Pa*s"
+      },
+      {
+        "expression": "shear_rate * relaxation * thermal_shift",
+        "id": "reduced_shear",
+        "meaning": "Dimensionless shear rate scaled by temperature-shifted relaxation time",
+        "unit": "1"
+      },
+      {
+        "expression": "1 / (1 + reduced_shear ** exponent)",
+        "id": "cross_factor",
+        "meaning": "Cross shear-thinning factor",
+        "unit": "1"
+      },
+      {
+        "expression": "yield_stress_ref * thermal_shift / shear_rate",
+        "id": "yield_contribution",
+        "meaning": "Apparent viscosity contribution from yield stress (Bingham-like)",
+        "unit": "Pa*s"
+      },
+      {
+        "expression": "zero_shear_viscosity * cross_factor + yield_contribution",
+        "id": "viscous_response",
+        "meaning": "Predicted viscosity combining shear-thinning and yield stress",
+        "unit": "Pa*s"
+      }
+    ],
+    "output": "viscous_response",
+    "parameters": {
+      "activation": {
+        "bounds": [
+          10,
+          30000
+        ],
+        "initial": 3000,
+        "meaning": "Activation energy divided by gas constant; effective parameter",
+        "unit": "K"
+      },
+      "eta_ref": {
+        "bounds": [
+          0.0001,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Low-shear viscosity at reference temperature",
+        "unit": "Pa*s"
+      },
+      "exponent": {
+        "bounds": [
+          0.05,
+          2
+        ],
+        "initial": 0.8,
+        "meaning": "Power-law exponent in Cross model",
+        "unit": "1"
+      },
+      "relaxation": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.02,
+        "meaning": "Effective relaxation time at reference temperature",
+        "unit": "s"
+      },
+      "yield_stress_ref": {
+        "bounds": [
+          0,
+          10
+        ],
+        "initial": 0.1,
+        "meaning": "Yield stress at reference temperature",
+        "unit": "Pa"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent)) + yield_stress_ref * exp(activation * (1 / temperature - 1 / T_ref)) / shear_rate",
+  "fit_recipe": {
+    "development_rows": 242,
+    "log_coordinate_parameters": [
+      "activation",
+      "eta_ref",
+      "exponent",
+      "relaxation"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared log residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 728
+  },
+  "identifiability": {
+    "condition_number": 16727655852.411125,
+    "parameters": 5,
+    "rank": 5,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "shear_rate"
+  ],
+  "method_id": "equation_agent",
+  "method_version": "equation-search-v1",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "Model-proposed equation system, development round 2",
+  "output": "target",
+  "parameters": {
+    "activation": 3450.920410116068,
+    "eta_ref": 0.26725818910302723,
+    "exponent": 1.9999999906548493,
+    "relaxation": 1.0000000141669845e-06,
+    "yield_stress_ref": 0.08017052343577041
+  },
+  "quantity_units": {
+    "shear_rate": "s^-1",
+    "target": "Pa*s",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-057-equation-agent-system-4",
+  "rule_sha256": "fb0b9436fe00974e91d92d85282c73b9910adc578f4f3af5b6d5f4733913584a",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 17,
+    "expanded_expression": "0.26725818910302723 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 1.0000000141669845e-06 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref))) ** 1.9999999906548493)) + 0.08017052343577041 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) / shear_rate",
+    "expression_bytes": 241,
+    "fixed_constants": 1,
+    "free_parameters": 5,
+    "intermediate_quantities": 5,
+    "learned_state_bytes": 176,
+    "literal_state_bytes": 8,
+    "nodes": 92,
+    "numeric_literal_count": 8,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 5,
+    "weighted_operator_count": 31
+  },
+  "task_id": "P100-057.equations-v1",
+  "train_error": 0.31738719123485964
+}

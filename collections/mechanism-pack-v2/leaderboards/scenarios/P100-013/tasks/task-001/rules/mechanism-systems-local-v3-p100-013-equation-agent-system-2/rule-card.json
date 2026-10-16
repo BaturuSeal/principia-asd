@@ -1,0 +1,305 @@
+{
+  "dev_error": 0.00010779083502391556,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "heating-3C-min",
+        "loss": 0.00010779083502391556
+      }
+    ],
+    "input_strata": {
+      "conversion": {
+        "bins": [
+          {
+            "mae": 2.7590949235990316e-05,
+            "range": [
+              0.0,
+              0.03275
+            ],
+            "residual_bias": 2.7590949235990316e-05,
+            "rows": 104
+          },
+          {
+            "mae": 0.00013697371595543803,
+            "range": [
+              0.03275,
+              0.5245
+            ],
+            "residual_bias": 0.00013697371595543803,
+            "rows": 104
+          },
+          {
+            "mae": 0.00020754367289358027,
+            "range": [
+              0.5245,
+              0.9165000000000001
+            ],
+            "residual_bias": -0.00020656005545282696,
+            "rows": 104
+          },
+          {
+            "mae": 5.9055002010653596e-05,
+            "range": [
+              0.9165000000000001,
+              0.955
+            ],
+            "residual_bias": -4.664864933481225e-05,
+            "rows": 104
+          }
+        ],
+        "unique_values": 269
+      },
+      "heating_rate": {
+        "bins": [],
+        "unique_values": 1
+      },
+      "temperature": {
+        "bins": [
+          {
+            "mae": 2.7590949235990316e-05,
+            "range": [
+              379.746,
+              412.99275
+            ],
+            "residual_bias": 2.7590949235990316e-05,
+            "rows": 104
+          },
+          {
+            "mae": 0.00013697371595543803,
+            "range": [
+              412.99275,
+              446.3635
+            ],
+            "residual_bias": 0.00013697371595543803,
+            "rows": 104
+          },
+          {
+            "mae": 0.00020754367289358027,
+            "range": [
+              446.3635,
+              479.41874999999993
+            ],
+            "residual_bias": -0.00020656005545282696,
+            "rows": 104
+          },
+          {
+            "mae": 5.9055002010653596e-05,
+            "range": [
+              479.41874999999993,
+              512.5609999999999
+            ],
+            "residual_bias": -4.664864933481225e-05,
+            "rows": 104
+          }
+        ],
+        "unique_values": 416
+      }
+    },
+    "intermediate_ranges": {
+      "autocatalytic_rate": [
+        0.0,
+        0.18820610318856065
+      ],
+      "conversion_rate": [
+        5.883983660473109e-06,
+        0.0013612170297996572
+      ],
+      "depletion": [
+        4.717324240368526e-05,
+        1.0
+      ],
+      "remaining_fraction": [
+        0.04500000000000004,
+        1.0
+      ],
+      "thermal_rate": [
+        1.5126047864633918e-05,
+        0.05341138002206464
+      ]
+    },
+    "residual_bias": -2.2161009899052715e-05,
+    "residual_rmse": 0.00014843191002790194
+  },
+  "equation_system": {
+    "assumptions": [
+      "Arrhenius effective kinetics over the measured thermal scans",
+      "Conversion and rate are related calorimetric reductions, not independent response channels",
+      "Known kinetic families; microscopic reaction mechanism is not identified",
+      "Kamal-Sourour family with shared coefficients across heating rates"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "150 Celsius reference temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 423.15
+      }
+    },
+    "name": "Parallel autocatalytic cure pathways",
+    "nodes": [
+      {
+        "expression": "k1 * exp(E1 * (1 / T_ref - 1 / temperature))",
+        "id": "thermal_rate",
+        "meaning": "Thermally activated baseline rate",
+        "unit": "s^-1"
+      },
+      {
+        "expression": "maximum(0, 1 - conversion)",
+        "id": "remaining_fraction",
+        "meaning": "Unconverted fraction in the measured calorimetric coordinate",
+        "unit": "1"
+      },
+      {
+        "expression": "remaining_fraction ** order",
+        "id": "depletion",
+        "meaning": "Reaction slowdown as unconverted material is depleted",
+        "unit": "1"
+      },
+      {
+        "expression": "k2 * exp(E2 * (1 / T_ref - 1 / temperature)) * maximum(0, conversion) ** autocat_order",
+        "id": "autocatalytic_rate",
+        "meaning": "Conversion-assisted reaction pathway",
+        "unit": "s^-1"
+      },
+      {
+        "expression": "(thermal_rate + autocatalytic_rate) * depletion",
+        "id": "conversion_rate",
+        "meaning": "Combined baseline and autocatalytic pathways",
+        "unit": "s^-1"
+      }
+    ],
+    "output": "conversion_rate",
+    "parameters": {
+      "E1": {
+        "bounds": [
+          100,
+          30000
+        ],
+        "initial": 8000,
+        "meaning": "Activation energy divided by gas constant",
+        "unit": "K"
+      },
+      "E2": {
+        "bounds": [
+          100,
+          30000
+        ],
+        "initial": 9000,
+        "meaning": "Autocatalytic activation temperature",
+        "unit": "K"
+      },
+      "autocat_order": {
+        "bounds": [
+          0.1,
+          4
+        ],
+        "initial": 1,
+        "meaning": "Effective autocatalytic order",
+        "unit": "1"
+      },
+      "k1": {
+        "bounds": [
+          1e-08,
+          0.1
+        ],
+        "initial": 0.0002,
+        "meaning": "Non-autocatalytic reference rate",
+        "unit": "s^-1"
+      },
+      "k2": {
+        "bounds": [
+          1e-08,
+          1
+        ],
+        "initial": 0.002,
+        "meaning": "Autocatalytic reference rate",
+        "unit": "s^-1"
+      },
+      "order": {
+        "bounds": [
+          0.1,
+          5
+        ],
+        "initial": 1.5,
+        "meaning": "Effective depletion order",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "(k1 * exp(E1 * (1 / T_ref - 1 / temperature)) + k2 * exp(E2 * (1 / T_ref - 1 / temperature)) * maximum(0, conversion) ** autocat_order) * maximum(0, 1 - conversion) ** order",
+  "fit_recipe": {
+    "development_rows": 416,
+    "log_coordinate_parameters": [
+      "E1",
+      "E2",
+      "autocat_order",
+      "k1",
+      "k2",
+      "order"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 1609
+  },
+  "identifiability": {
+    "condition_number": 75.53021686674347,
+    "parameters": 6,
+    "rank": 6,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "conversion",
+    "heating_rate"
+  ],
+  "method_id": "equation_agent",
+  "method_version": "equation-search-v2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "E1": 11972.358650731589,
+    "E2": 7418.874256517694,
+    "autocat_order": 1.3247568819224596,
+    "k1": 0.0003838621618049148,
+    "k2": 0.009407990582546674,
+    "order": 3.212313981381776
+  },
+  "quantity_units": {
+    "conversion": "1",
+    "heating_rate": "K/s",
+    "target": "s^-1",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-systems-local-v3-p100-013-equation-agent-system-2",
+  "rule_sha256": "9355bc89c8f2fc7a503052947843cb2915ee8ad8f871d40f3f3c42a52444b215",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 24,
+    "expanded_expression": "(0.0003838621618049148 * exp(11972.358650731589 * (1 / T_ref - 1 / temperature)) + 0.009407990582546674 * exp(7418.874256517694 * (1 / T_ref - 1 / temperature)) * maximum(0, conversion) ** 1.3247568819224596) * maximum(0, 1 - conversion) ** 3.212313981381776",
+    "expression_bytes": 173,
+    "fixed_constants": 1,
+    "free_parameters": 6,
+    "intermediate_quantities": 4,
+    "learned_state_bytes": 173,
+    "literal_state_bytes": 7,
+    "nodes": 76,
+    "numeric_literal_count": 7,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 6,
+    "weighted_operator_count": 24
+  },
+  "task_id": "P100-013.mechanisms-v2",
+  "train_error": 0.00012935741530900133
+}

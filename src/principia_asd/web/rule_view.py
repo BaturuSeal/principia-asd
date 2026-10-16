@@ -10,6 +10,12 @@ from ..engine.expression import parse
 
 
 def rule_view(card, task):
+    from .rule_families import structure_id
+
+    if card.get("representation") == "equation-system-v1":
+        from .equation_view import equation_view
+
+        return equation_view(card, task) | {"structure_id": structure_id(card, task)}
     inputs = card.get("inputs", task.get("inputs", []))
     symbols = {k: f"x_{{{i + 1}}}" for i, k in enumerate(inputs)}
     parameters = []
@@ -237,6 +243,8 @@ def rule_view(card, task):
     code = hashlib.sha256(identity.encode()).hexdigest()[:8].upper()
     name = f"{family} {output['label'][:64].rstrip()} · {code}"
     return {
+        "structure_id": structure_id(card, task),
+        "family_name": f"{family} {output['label'][:64].rstrip()}",
         "regions": conditions,
         "expanded_latex": expanded_latex,
         "name": name,

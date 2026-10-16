@@ -1,0 +1,56 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.09307687224139498,
+    "primary": "log_mae",
+    "primary_error": 0.8878578887816473,
+    "rmse": 0.12449657958465214
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.8878578887816473,
+  "by_group": [
+    {
+      "error": 0.8878578887816473,
+      "group": "replicate-4",
+      "rows": 242
+    }
+  ],
+  "coverage": {
+    "eligible": 242,
+    "fraction": 1.0,
+    "predicted": 242
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "mean_control",
+  "rule_id": "eq-local-v1-p100-057-mean-control-rule-1",
+  "rule_sha256": "eed2563b9f6b348713d34220741945a64109c367e3aef73fd5ff5456f881166c",
+  "run_id": "eq-local-v1-p100-057-mean-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.11759958241758242",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 27,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 242,
+    "ranking": false,
+    "samples": 242,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

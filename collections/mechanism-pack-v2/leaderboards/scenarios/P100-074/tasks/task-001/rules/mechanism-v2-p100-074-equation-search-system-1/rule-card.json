@@ -1,0 +1,265 @@
+{
+  "dev_error": 109.36623061807245,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "group-015af51bd8934c2e9fdebcfb",
+        "loss": 140.71975457721953
+      },
+      {
+        "group": "group-4f21c4fb0489c10c9ce21921",
+        "loss": 78.01270665892538
+      }
+    ],
+    "input_strata": {
+      "concentration": {
+        "bins": [
+          {
+            "mae": 78.01270665892538,
+            "range": [
+              0.0075,
+              0.00875
+            ],
+            "residual_bias": -78.01270665892538,
+            "rows": 43
+          },
+          {
+            "mae": 140.71975457721953,
+            "range": [
+              0.00875,
+              0.01
+            ],
+            "residual_bias": -140.71975457721953,
+            "rows": 43
+          }
+        ],
+        "unique_values": 2
+      },
+      "elapsed": {
+        "bins": [
+          {
+            "mae": 22.412532866602,
+            "range": [
+              495.0,
+              956.25
+            ],
+            "residual_bias": -22.412532866602,
+            "rows": 22
+          },
+          {
+            "mae": 89.90622013478055,
+            "range": [
+              956.25,
+              1440.0
+            ],
+            "residual_bias": -89.90622013478055,
+            "rows": 20
+          },
+          {
+            "mae": 155.79473667472598,
+            "range": [
+              1440.0,
+              1923.75
+            ],
+            "residual_bias": -155.79473667472598,
+            "rows": 22
+          },
+          {
+            "mae": 167.58234093406384,
+            "range": [
+              1923.75,
+              2385.0
+            ],
+            "residual_bias": -167.58234093406384,
+            "rows": 22
+          }
+        ],
+        "unique_values": 43
+      },
+      "initial_signal": {
+        "bins": [
+          {
+            "mae": 78.01270665892538,
+            "range": [
+              47.41,
+              114.2875
+            ],
+            "residual_bias": -78.01270665892538,
+            "rows": 43
+          },
+          {
+            "mae": 140.71975457721953,
+            "range": [
+              114.2875,
+              181.165
+            ],
+            "residual_bias": -140.71975457721953,
+            "rows": 43
+          }
+        ],
+        "unique_values": 2
+      },
+      "initial_slope": {
+        "bins": [
+          {
+            "mae": 78.01270665892538,
+            "range": [
+              0.14629999999999996,
+              0.35857222222222224
+            ],
+            "residual_bias": -78.01270665892538,
+            "rows": 43
+          },
+          {
+            "mae": 140.71975457721953,
+            "range": [
+              0.35857222222222224,
+              0.5708444444444445
+            ],
+            "residual_bias": -140.71975457721953,
+            "rows": 43
+          }
+        ],
+        "unique_values": 2
+      }
+    },
+    "intermediate_ranges": {
+      "elapsed_after_calibration": [
+        135.0,
+        2025.0
+      ],
+      "fluorescence": [
+        66.46824621169988,
+        888.947345881069
+      ],
+      "integrated_signal": [
+        19.058246211699885,
+        707.7823458810691
+      ],
+      "remaining_response": [
+        0.3406807971756953,
+        0.9307288520292875
+      ]
+    },
+    "residual_bias": -109.36623061807245,
+    "residual_rmse": 131.58309124912802
+  },
+  "equation_system": {
+    "assumptions": [
+      "Effective saturation kinetics, not identified catalytic reaction steps",
+      "Initial signal and slope use only 3, 4.5 and 6 minute observations",
+      "Whole biosensor-dose curves held out, with no biological replicate identities",
+      "Fluorescence is uncalibrated instrument response and cannot be interpreted as molar product"
+    ],
+    "constants": {
+      "anchor_time": {
+        "meaning": "Six-minute disclosed calibration endpoint",
+        "source": "Native assay sampling protocol",
+        "unit": "s",
+        "value": 360
+      }
+    },
+    "name": "Calibrated first-order assay response",
+    "nodes": [
+      {
+        "expression": "elapsed - anchor_time",
+        "id": "elapsed_after_calibration",
+        "meaning": "Time after the last disclosed fluorescence anchor",
+        "unit": "s"
+      },
+      {
+        "expression": "exp(-rate * elapsed_after_calibration)",
+        "id": "remaining_response",
+        "meaning": "Remaining fraction of an effective first-order response",
+        "unit": "1"
+      },
+      {
+        "expression": "initial_slope / rate * (1 - remaining_response)",
+        "id": "integrated_signal",
+        "meaning": "Integrated incremental fluorescence from the observed initial slope",
+        "unit": "a.u."
+      },
+      {
+        "expression": "initial_signal + integrated_signal",
+        "id": "fluorescence",
+        "meaning": "Later instrument fluorescence after calibration",
+        "unit": "a.u."
+      }
+    ],
+    "output": "fluorescence",
+    "parameters": {
+      "rate": {
+        "bounds": [
+          1e-06,
+          0.05
+        ],
+        "initial": 0.0005,
+        "meaning": "Effective signal-saturation rate",
+        "unit": "s^-1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "initial_signal + initial_slope / rate * (1 - exp(-rate * (elapsed - anchor_time)))",
+  "fit_recipe": {
+    "development_rows": 86,
+    "log_coordinate_parameters": [
+      "rate"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 215
+  },
+  "identifiability": {
+    "condition_number": 1.0,
+    "parameters": 1,
+    "rank": 1,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v2",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "rate": 0.0005317576882753114
+  },
+  "quantity_units": {
+    "concentration": "mol/m3",
+    "elapsed": "s",
+    "initial_signal": "a.u.",
+    "initial_slope": "a.u./s",
+    "target": "a.u."
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-v2-p100-074-equation-search-system-1",
+  "rule_sha256": "955cb8d32ee22d57029fb0dcd3f5319124ca26535d790acf5a42e7d15773491b",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 10,
+    "expanded_expression": "initial_signal + initial_slope / 0.0005317576882753114 * (1 - exp(-0.0005317576882753114 * (elapsed - anchor_time)))",
+    "expression_bytes": 82,
+    "fixed_constants": 1,
+    "free_parameters": 1,
+    "intermediate_quantities": 3,
+    "learned_state_bytes": 31,
+    "literal_state_bytes": 1,
+    "nodes": 31,
+    "numeric_literal_count": 1,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 1,
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 56.48412342363834
+}

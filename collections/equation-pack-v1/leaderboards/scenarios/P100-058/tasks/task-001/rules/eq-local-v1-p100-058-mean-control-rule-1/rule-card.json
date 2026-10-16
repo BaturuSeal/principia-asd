@@ -1,0 +1,54 @@
+{
+  "dev_error": 4.761570898603415,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "omega",
+    "temperature",
+    "response_kind"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 3732588.4071770827
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "omega": -0.5884278399716277,
+      "response_kind": -0.0830904609428355,
+      "temperature": 0.43828093735057105
+    },
+    "mean": 1795127.9438343658,
+    "p90_abs": 3778328.625276334,
+    "std": 3839740.934603545
+  },
+  "rule_id": "eq-local-v1-p100-058-mean-control-rule-1",
+  "rule_sha256": "b342bdf551274204d4e0f2547c8fa9aa9d77aa63b43fb2172883225ae105f563",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "3732588.4071770827",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-058.equations-v1",
+  "train_error": 6.0470774356370125,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

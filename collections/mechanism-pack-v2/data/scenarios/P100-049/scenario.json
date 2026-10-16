@@ -1,0 +1,33 @@
+{
+  "description": "Compare finite-pulse diffusion and effective exponential polarization relaxation using the same early voltage anchors. Complete later rest blocks remain held out.",
+  "domain": "battery diagnostics and laboratory data integration",
+  "edition": "mechanism-pack-v2",
+  "extends_scenario_sha256": "87bbe1ba83dccd3cac769383c18893fa367e5f493a541519cfa9917d11c4a9db",
+  "extends_task_sha256": "06b73386bec9f9568f7a08c3fcbe2b9ecb893c79de710493209e3e39baa0d713",
+  "independent_unit": "Last 20% of qualifying rest groups by acquisition chronology remain test. Whole development groups use historical compact-v2 canonical hash allocation; this is interleaved development, not forward-only validation.",
+  "limitations": [
+    "Known relaxation families conditional on 60/120-second observations",
+    "Single half-cell and chronological held-out rest blocks; no independent-cell validation",
+    "No diffusion coefficient or unique electrochemical mechanism is identified",
+    "Semi-infinite diffusion approximation; finite-particle and multiple-process deviations retained"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 304,
+    "test": 384,
+    "train": 1216
+  },
+  "scenario_id": "P100-049",
+  "size": {
+    "public_bytes": 174284
+  },
+  "source": {
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "registry_identity": "P100-049",
+    "url": "https://zenodo.org/records/17295469"
+  },
+  "status": "local_research_preview",
+  "title": "Diffusion and polarization during battery rest"
+}

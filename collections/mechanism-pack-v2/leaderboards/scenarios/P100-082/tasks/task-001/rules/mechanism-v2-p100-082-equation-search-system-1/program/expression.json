@@ -1,0 +1,331 @@
+{
+  "equation_system": {
+    "assumptions": [
+      "Q10 is a finite-range ecosystem response, not a universal activation law",
+      "Site-held-out transfer with unmodelled soil, management and instrument differences",
+      "Source flux is an author-derived chamber measurement; concentration-fit slope and intercept are prohibited predictors"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "10 Celsius reference soil temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 283.15
+      },
+      "temperature_step": {
+        "meaning": "Ten-kelvin increment for Q10",
+        "source": "Definition of Q10",
+        "unit": "K",
+        "value": 10
+      }
+    },
+    "name": "Temperature and root-associated respiration",
+    "nodes": [
+      {
+        "expression": "q10 ** ((temperature - T_ref) / temperature_step)",
+        "id": "thermal_activity",
+        "meaning": "Temperature-dependent biological activity multiplier",
+        "unit": "1"
+      },
+      {
+        "expression": "1 - root_fraction * root_exclusion",
+        "id": "root_factor",
+        "meaning": "Conditional root-exclusion multiplier",
+        "unit": "1"
+      },
+      {
+        "expression": "respiration_ref * thermal_activity * root_factor",
+        "id": "respiration",
+        "meaning": "Predicted CO2 mass flux without a moisture limitation",
+        "unit": "kg/m2/s"
+      }
+    ],
+    "output": "respiration",
+    "parameters": {
+      "q10": {
+        "bounds": [
+          1.001,
+          8
+        ],
+        "initial": 2,
+        "meaning": "Effective flux multiplier for ten kelvin warming",
+        "unit": "1"
+      },
+      "respiration_ref": {
+        "bounds": [
+          1e-11,
+          0.0001
+        ],
+        "initial": 1e-07,
+        "meaning": "Reference ecosystem CO2 mass flux",
+        "unit": "kg/m2/s"
+      },
+      "root_fraction": {
+        "bounds": [
+          0,
+          0.95
+        ],
+        "initial": 0.4,
+        "meaning": "Conditional reduction associated with root exclusion; not a causal attribution",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "respiration_ref * q10 ** ((temperature - T_ref) / temperature_step) * (1 - root_fraction * root_exclusion)",
+  "parameters": {
+    "q10": 1.8339842022860626,
+    "respiration_ref": 1.2930129569950873e-07,
+    "root_fraction": 0.20821034336157104
+  },
+  "representation": "equation-system-v1",
+  "runtime": "principia-asd 1.0.0rc5",
+  "task_contract": {
+    "description": "Compare thermal activation, water limitation and root-exclusion associations using soil measurements from complete held-out sites. The task retains site heterogeneity and does not identify causal effects of management.",
+    "display_title": "Forest-soil respiration across sites",
+    "equation_protocol": "multi-role-equations-v2",
+    "equation_templates": [
+      {
+        "assumptions": [
+          "Q10 is a finite-range ecosystem response, not a universal activation law",
+          "Site-held-out transfer with unmodelled soil, management and instrument differences",
+          "Source flux is an author-derived chamber measurement; concentration-fit slope and intercept are prohibited predictors"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "10 Celsius reference soil temperature",
+            "source": "Declared reference coordinate",
+            "unit": "K",
+            "value": 283.15
+          },
+          "temperature_step": {
+            "meaning": "Ten-kelvin increment for Q10",
+            "source": "Definition of Q10",
+            "unit": "K",
+            "value": 10
+          }
+        },
+        "name": "Temperature and root-associated respiration",
+        "nodes": [
+          {
+            "expression": "q10 ** ((temperature - T_ref) / temperature_step)",
+            "id": "thermal_activity",
+            "meaning": "Temperature-dependent biological activity multiplier",
+            "unit": "1"
+          },
+          {
+            "expression": "1 - root_fraction * root_exclusion",
+            "id": "root_factor",
+            "meaning": "Conditional root-exclusion multiplier",
+            "unit": "1"
+          },
+          {
+            "expression": "respiration_ref * thermal_activity * root_factor",
+            "id": "respiration",
+            "meaning": "Predicted CO2 mass flux without a moisture limitation",
+            "unit": "kg/m2/s"
+          }
+        ],
+        "output": "respiration",
+        "parameters": {
+          "q10": {
+            "bounds": [
+              1.001,
+              8
+            ],
+            "initial": 2,
+            "meaning": "Effective flux multiplier for ten kelvin warming",
+            "unit": "1"
+          },
+          "respiration_ref": {
+            "bounds": [
+              1e-11,
+              0.0001
+            ],
+            "initial": 1e-07,
+            "meaning": "Reference ecosystem CO2 mass flux",
+            "unit": "kg/m2/s"
+          },
+          "root_fraction": {
+            "bounds": [
+              0,
+              0.95
+            ],
+            "initial": 0.4,
+            "meaning": "Conditional reduction associated with root exclusion; not a causal attribution",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Q10 is a finite-range ecosystem response, not a universal activation law",
+          "Site-held-out transfer with unmodelled soil, management and instrument differences",
+          "Source flux is an author-derived chamber measurement; concentration-fit slope and intercept are prohibited predictors",
+          "Water content is not pore saturation; oxygen access is an unmeasured hypothesis"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "10 Celsius reference soil temperature",
+            "source": "Declared reference coordinate",
+            "unit": "K",
+            "value": 283.15
+          },
+          "temperature_step": {
+            "meaning": "Ten-kelvin increment for Q10",
+            "source": "Definition of Q10",
+            "unit": "K",
+            "value": 10
+          }
+        },
+        "name": "Moisture-limited soil respiration",
+        "nodes": [
+          {
+            "expression": "q10 ** ((temperature - T_ref) / temperature_step)",
+            "id": "thermal_activity",
+            "meaning": "Temperature-dependent biological activity multiplier",
+            "unit": "1"
+          },
+          {
+            "expression": "1 - root_fraction * root_exclusion",
+            "id": "root_factor",
+            "meaning": "Conditional root-exclusion multiplier",
+            "unit": "1"
+          },
+          {
+            "expression": "water_fraction / (water_half + water_fraction)",
+            "id": "water_availability",
+            "meaning": "Saturating water-availability factor",
+            "unit": "1"
+          },
+          {
+            "expression": "exp(-wet_inhibition * water_fraction ** 2)",
+            "id": "oxygen_access",
+            "meaning": "Phenomenological suppression under high water content",
+            "unit": "1"
+          },
+          {
+            "expression": "respiration_ref * thermal_activity * root_factor * water_availability * oxygen_access",
+            "id": "respiration",
+            "meaning": "Combined thermal, water and oxygen-access response",
+            "unit": "kg/m2/s"
+          }
+        ],
+        "output": "respiration",
+        "parameters": {
+          "q10": {
+            "bounds": [
+              1.001,
+              8
+            ],
+            "initial": 2,
+            "meaning": "Effective flux multiplier for ten kelvin warming",
+            "unit": "1"
+          },
+          "respiration_ref": {
+            "bounds": [
+              1e-11,
+              0.0001
+            ],
+            "initial": 1e-07,
+            "meaning": "Reference ecosystem CO2 mass flux",
+            "unit": "kg/m2/s"
+          },
+          "root_fraction": {
+            "bounds": [
+              0,
+              0.95
+            ],
+            "initial": 0.4,
+            "meaning": "Conditional reduction associated with root exclusion; not a causal attribution",
+            "unit": "1"
+          },
+          "water_half": {
+            "bounds": [
+              0.001,
+              1
+            ],
+            "initial": 0.1,
+            "meaning": "Half-saturation volumetric water fraction",
+            "unit": "1"
+          },
+          "wet_inhibition": {
+            "bounds": [
+              0.001,
+              30
+            ],
+            "initial": 2,
+            "meaning": "High-moisture inhibition strength",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      }
+    ],
+    "inputs": [
+      "temperature",
+      "water_fraction",
+      "root_exclusion"
+    ],
+    "metric": {
+      "aggregation": "equal_group_mean",
+      "primary": "mae"
+    },
+    "output": "target",
+    "preprocessing": {
+      "learned_transformations": [],
+      "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+    },
+    "quantity_units": {
+      "root_exclusion": "1",
+      "target": "kg/m2/s",
+      "temperature": "K",
+      "water_fraction": "1"
+    },
+    "research_objective": "",
+    "revision": 2,
+    "scenario_id": "P100-082",
+    "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+    "split": {
+      "dev": "public/dev.csv.gz",
+      "test": "public/test_inputs.csv.gz",
+      "train": "public/train.csv.gz"
+    },
+    "split_policy": "Whole site families. Dev Llobera/Secanella/St Christol; test Gamiz/Kacergine/Kranzberg-Freising/Saint Mitre/RincondelBatovi; remaining eligible sites train. Adjacent Karstula and Dumbravita families never cross partitions.",
+    "stability": {
+      "categorical_inputs": [
+        "root_exclusion"
+      ],
+      "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+      "input_ranges": {
+        "root_exclusion": [
+          0.0,
+          1.0
+        ],
+        "temperature": [
+          272.75,
+          301.775
+        ],
+        "water_fraction": [
+          0.001,
+          0.8560625000000001
+        ]
+      },
+      "output_scale": 8.983468469384187e-08,
+      "ranking": false,
+      "relative_noise": 0.01,
+      "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+    },
+    "task_id": "P100-082.mechanisms-v2",
+    "test_exposure": "retrospective-open-test",
+    "title": "Forest-soil respiration across sites",
+    "variable_descriptions": {
+      "root_exclusion": "Source trenching indicator: 1 for root exclusion, 0 otherwise",
+      "target": "Author-derived chamber CO2 mass flux, converted from g CO2/m2/hour to kg CO2/m2/second",
+      "temperature": "Measured soil temperature at 5 cm, converted to kelvin",
+      "water_fraction": "Volumetric water content, converted from percent to fraction"
+    }
+  },
+  "tree": null
+}

@@ -1,38 +1,64 @@
 <p align="center"><img src="docs/assets/overview.svg" alt="Principia ASD: from measurements to inspectable rules" width="100%"></p>
 
+<p align="center"><strong>Scientific rule discovery, with the reasoning made inspectable.</strong></p>
 <p align="center">
   <a href="https://atlas.chipflow.net/web/asd-test/">Explore the live library</a> ·
-  <a href="#start-your-own-investigation">Start locally</a> ·
+  <a href="#start-locally">Start locally</a> ·
   <a href="docs/METHODS.md">Methods</a> ·
-  <a href="docs/EVALUATION.md">Evaluation</a>
+  <a href="docs/EVALUATION.md">Evaluation</a> ·
+  <a href="REPRODUCIBILITY.md">Reproducibility</a>
 </p>
+<p align="center"><b>1.0.0rc6</b> · 47 scientific scenarios · 51 task leaderboards · 11 connected-equation examples</p>
 
-**Principia ASD is a workspace for scientific rule discovery.** It brings compact scientific scenarios, interchangeable discovery methods, and inspectable mathematical rules into one reproducible workflow.
+Principia ASD is an open framework for **Autonomous Scientific Discovery**: choose a scientific question, investigate it with interchangeable methods, and examine the resulting rules against a declared evidence contract.
 
-A useful result should be more than a low test loss. You should be able to see the expression, understand its variables, inspect its fitted state, and trace how it was obtained. Principia ASD makes these questions part of the artifact—not an afterthought in a model-written report.
+A low prediction error is useful. A scientific explanation also needs quantities with meaning, explicit assumptions, and a test that could expose its failure. Principia ASD brings these elements into the same workflow: compact datasets, executable mathematics, traceable experiments, and task-specific comparisons.
 
-### One task. Multiple explanations. Visible evidence.
+## From a fitted expression to an inspectable scientific model
 
-- **A common experimental contract.** Each task declares its inputs, output, partitions and evaluation policy. Different methods investigate the same question.
-- **Rules you can inspect.** Rule Cards combine rendered mathematics, parameter tables, measurements, development history and deterministic assessments. Accuracy, complexity and stability remain distinct.
-- **A method workbench.** Numerical controls, LLM proposal and refinement, adapted research agents, and Adaptive Primitive Search (APS) share one interface. Availability and adaptation boundaries are explicit.
-- **Public evidence, private experimentation.** The website serves the shared library. Your folders, API key and newly generated results stay in your local companion. Selected development context goes directly to SiliconFlow only when you run an LLM method.
+Rules can be **connected systems of equations**. Intermediate quantities have units and interpretations; parameters are shared explicitly; every equation executes. A gas-transport model can separate molecule-wall and viscous flux. A thermal model can connect frictional power, heat loss, thermal storage, and temperature change.
 
-### Explore what is already here
+![Seven connected equations for Knudsen and viscous membrane transport](docs/assets/screenshots/membrane-equations.jpg)
+*An actual Rule Card: pressure and temperature determine separate transport contributions, then combine into predicted molar flux. Symbols, fitted values, assumptions, and held-out performance are inspectable below the equations.*
 
-| Current research preview | Retained evidence |
-|---|---:|
-| Compact retrospective scenarios / task leaderboards | 40 / 40 |
-| Primary method–task attempts | 520 |
-| Completed / failed attempts | 483 / 37 |
-| Submitted rules | 693 |
-| Valid / invalid deterministic assessments | 684 / 9 |
+![Nine connected equations for a friction-heated thermal network](docs/assets/screenshots/thermal-equations.jpg)
+*An actual thermal-network candidate: mechanical power and competing heat pathways feed a finite-horizon temperature response. Both screenshots show sourced constitutive hypotheses fitted by Scientific equation search, not newly discovered physical laws.*
 
-These are coverage counts, not counts of independent discoveries. Every task preserves its failures and original denominator. Scientific review is separate from the numerical ranking.
+The interface groups repeated mathematical structures while preserving every method, fitted state, and outcome. It does not turn a polynomial into a mechanism by giving its terms new names.
 
-### Start your own investigation
+## One platform, several ways to investigate
 
-Python **3.11+**, on macOS or Linux. Download the companion from the website, extract it, and open a terminal in the **`public-release`** folder:
+| Capability | What it makes possible |
+|---|---|
+| **Scenario library** | Understand the measurements, source, units, partitions, and task before running an experiment. Add your own input–output combination or local numeric CSV. |
+| **Method workbench** | Compare numerical controls, direct proposals, feedback refinement, program search, and adapted research agents under explicit budgets. Unsupported capabilities fail visibly. |
+| **Equation discovery** | Compose, fit, and revise typed equations with reusable primitives, meaningful intermediate quantities, and shared parameters. |
+| **Rule Cards** | Read typeset mathematics; inspect parameter values, physical assumptions, complexity, test coverage, perturbation diagnostics, and the ASD recipe. |
+| **Task leaderboards** | Compare accuracy, simplicity, and stability within the same task. Preserve failures and distinguish independent structures from repeated fits. |
+| **Reproducible records** | Follow immutable contracts, source hashes, frozen submissions, execution receipts, and deterministic evaluations. |
+
+**Adaptive Primitive Search (APS)** explores reusable primitives and formula patterns. **Adaptive Equation Discovery (AED)** extends this approach to equation graphs: a planner and proposal model suggest hypotheses; local code fits and validates them; a critic examines development diagnostics; an interpreter records the evidence. Model roles and exact identifiers are configurable. These are hosted methods, not synonyms for Principia ASD.
+
+**Scientific equation search** provides a complementary, non-LLM route: compare explicitly sourced constitutive families with train-only fitting and development selection. Keeping the origin of a hypothesis visible is as important as displaying its formula. [Method definitions and adaptation boundaries →](docs/METHODS.md)
+
+## Explore the evidence
+
+The release includes **799 frozen rule submissions across 51 tasks in 47 scenarios**. Eleven scenarios provide connected-equation tasks, spanning atmospheric radiation, resin rheology, polymer relaxation, cure kinetics, vapor transport, learning dynamics, battery relaxation, porous membranes, gearbox heating, biosensors, and soil respiration.
+
+| Evidence collection | Tasks | Retained attempts | Rule submissions |
+|---|---:|---:|---:|
+| Frozen primary comparison | 40 | 520 | 693 |
+| First connected-equation collection | 3 | 15 | 19 |
+| Expanded mechanism studies | 8 | 96 | 87 |
+| **Combined public inventory** | **51** | **631** | **799** |
+
+The supplemental studies are engineering cohorts, kept separate from the primary comparison. Some scenarios contain both a historical task and a newer equation-system task; their contracts and leaderboards remain distinct. Counts describe retained artifacts, not independent discoveries or universally successful models.
+
+In the eight expanded studies, development-selected scientific equation models have lower observed held-out loss than every tested numerical control on five tasks. Simpler controls remain stronger on others. An agent-proposed gearbox revision improves development fit but worsens transfer; that failure is retained. [Comparison report](docs/mechanism-review/index.html) · [Machine-readable results](docs/mechanism-review/comparison.json) · [Scientific interpretation and limitations](docs/LOCAL_ITERATION_2026-10-16.md)
+
+## Start locally
+
+Browse the [public library](https://atlas.chipflow.net/web/asd-test/) without installing anything. To run discovery on your own computer, download its companion bundle, extract it, and enter `public-release`. Alternatively, clone this repository. Python **3.11+** is required.
 
 ```bash
 python3 -m venv ~/.principia-asd-venv
@@ -40,41 +66,48 @@ python3 -m venv ~/.principia-asd-venv
 ~/.principia-asd-venv/bin/principia-asd companion --bundle-root .
 ```
 
-Open **http://127.0.0.1:8150/**. Keep the terminal running.
+Open **http://127.0.0.1:8150/** and keep the terminal running.
 
-1. Browse **Scenario library → Try it yourself**, or import your own grouped numeric CSV.
-2. Inspect the task card, choose inputs and output, then select a method. Numerical controls work without a key.
-3. For LLM methods, open **API settings**. Save your SiliconFlow key, add or edit exact model IDs, record current prices, and explicitly check model access. Checks are billed; saving settings and browsing the provider catalog do not generate model responses.
-4. Run discovery, inspect the frozen Rule Cards, and export the evidence. New runs never overwrite the shared leaderboards.
+1. Choose **Scenario library → Try it yourself**, or import a local grouped numeric CSV.
+2. Inspect the task card and select a method. Numerical controls need no API key.
+3. For LLM methods, open **API settings**. Add your SiliconFlow key, select or edit exact model identifiers and dated prices, then explicitly check capabilities. Saving profiles and browsing the catalog do not generate model responses; capability probes are billed.
+4. Run discovery, inspect the Rule Cards, and export your results. Personal runs do not overwrite the shared library.
 
-Use `--port 8152` if the default port is occupied. Private state defaults to `~/.local/share/principia-asd`; `--workspace /another/private/folder` creates a separate workspace. Never expose the local companion to the internet. [Installation and privacy details →](docs/DEPLOYMENT.md)
+Use `--port 8152` if the default port is occupied. Use `--workspace /your/private/folder` for a separate workspace. Standard numerical methods run on macOS and Linux; generated-code workers require the tested macOS sandbox and refuse unsupported platforms. [Installation, privacy, and hosting →](docs/DEPLOYMENT.md)
 
-### Adaptive Primitive Search
+## Public evidence. Local experimentation.
 
-APS treats the search space itself as something to investigate. Agents propose primitives, reusable kernels and formula patterns; local code composes and fits candidates; development diagnostics guide subsequent revisions. Every retained kernel expands into operations and parameter bindings that can be inspected.
+The hosted website is a **static, read-only publication**. It has no data-upload endpoint, user discovery service, or shared API key. Your local companion holds your folders, credentials, jobs, and newly generated results. When you choose an LLM method, selected development context travels directly from your companion to your configured provider.
 
-APS is **one hosted method**, not a synonym for the platform. The historical identifier `principia_engine` is retained for reproducibility. The explicitly marked development protocols expose additional learned-state accounting and do not replace the frozen primary comparison.
-
-### Small public surface. Explicit private boundary.
+Each workspace has its own execution and cost records. Visitors cannot overwrite one another's results or the published leaderboard. Protected example-test targets are never in the public download: new example runs can inspect development results, but final private-test scoring requires an authorized evaluator. Local imports create their own local partitions.
 
 ```text
-public-release/                 # GitHub repository and local companion
-  src/principia_asd/            # Package, CLI, methods, evaluator, local UI
-  data/                        # Public train/dev, test inputs, task contracts
-  leaderboards/                # Frozen per-task rules, receipts, exports
-  docs/  tests/  configs/       # Explanations, verification and policies
+public-release/                         # This repository and downloadable companion
+  src/principia_asd/                    # Package, CLI, methods, evaluation, local UI
+  data/  leaderboards/                  # Frozen primary collection
+  collections/                         # Additional data and results, independently versioned
+  COLLECTIONS.json                      # Relative paths and immutable edition bindings
+  docs/  tests/  configs/               # Documentation, verification, and policies
 
-private-evaluator/             # Separate operator-only delivery; never publish
-  targets/                     # Protected targets for registered scenarios
-  README.md                    # Administrative evaluation and custody
+private-evaluator/                     # Separate operator delivery; never public or in Git
+  targets/                             # Primary protected outcomes
+  collections/<id>/targets/            # Matching extension outcomes
 ```
 
-The server hosts a separately generated **static website**. It has no user-upload endpoint or discovery API. Visiting the public library requires no installation; running private discovery requires the local companion. Existing test results are viewable, but a new example-scenario run cannot recompute protected test loss without an authorized evaluator. Local imports use a private, local split.
+## How results are judged
 
-### What this release establishes—and what remains open
+A task freezes permitted inputs, output, partition policy, coverage, and evaluation rules. Discovery uses training and development evidence; submissions freeze before final assessment. **Final numerical evaluation makes no LLM calls.**
 
-This **1.0 release candidate** delivers a working rule-discovery product and a retrospective evidence collection. It does not establish novel scientific laws, causality, independent discovery or method superiority. Six historical preparation defects, three unfinished source reviews and incomplete learned-state accounting for at least 65 rules remain attached to the affected evidence. A few dozen strong scenarios are preferable to an arbitrary count of 100.
+- **Accuracy:** the task's loss, coverage, and justified subgroup or uncertainty analysis.
+- **Simplicity:** expanded operators, free parameters, preprocessing, and learned state. Naming a complex component a “kernel” does not erase its complexity.
+- **Stability:** perturbations within a declared domain. When the physical perturbation model is uncertain, sensitivity is diagnostic rather than a ranking criterion.
 
-The October 15 public research preview is deployed at the project owner's request. That deployment does **not** certify third-party data rights or scientific admission: the frozen edition's unresolved rights flags remain unchanged. Code is MIT; datasets and upstream adaptations retain their own terms. Review [provenance](PROVENANCE.md), [data licenses](data/LICENSES.md) and [known limitations](docs/RELEASE_SCOPE.md) before redistributing data or making scientific claims.
+There is no default universal scientific score. Numerical rankings and any strong-model scientific review are separate. Review cannot certify originality, causality, or practical impact. [Evaluation contract →](docs/EVALUATION.md)
 
-**Build on the evidence.** Add a carefully specified task, contribute a reproducible method adapter, or improve a scenario's source and split audit. The next useful step is a better question with a stronger test—not a larger unqualified score.
+## Research status and contribution
+
+This release candidate establishes a working discovery framework and a retrospective evidence collection. **Independent discovery, prospective validation, mechanism identification, and external scientific review remain unestablished.** Six historical preparation defects, three unfinished source reviews, and incomplete learned-state accounting for at least 65 historical rules remain visible in the associated records. Frozen publication flags are preserved; owner-authorized preview deployment is not a certification of third-party redistribution rights.
+
+Code is **MIT**. Data and upstream adaptations retain their own terms. See [provenance](PROVENANCE.md), [data licenses](data/LICENSES.md), [release scope](docs/RELEASE_SCOPE.md), and the source records in each collection before redistributing data or making scientific claims.
+
+Contributions are most valuable when they make an explanation easier to challenge: a better-defined task, a stronger matched control, a faithful method adapter, or a reproducible counterexample. A few dozen well-supported scenarios are more useful than a nominal benchmark size. [Contribution guide →](CONTRIBUTING.md)

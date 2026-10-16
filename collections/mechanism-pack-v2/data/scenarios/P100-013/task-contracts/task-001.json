@@ -1,0 +1,232 @@
+{
+  "description": "Compare depletion and autocatalytic pathways across complete heating scans. The response is a measured calorimetric conversion rate, conditional on the source-derived conversion coordinate. Author-fitted curves are excluded.",
+  "display_title": "Thermally activated encapsulant cure",
+  "equation_protocol": "multi-role-equations-v2",
+  "equation_templates": [
+    {
+      "assumptions": [
+        "Arrhenius effective kinetics over the measured thermal scans",
+        "Conversion and rate are related calorimetric reductions, not independent response channels",
+        "Known kinetic families; microscopic reaction mechanism is not identified"
+      ],
+      "constants": {
+        "T_ref": {
+          "meaning": "150 Celsius reference temperature",
+          "source": "Declared reference coordinate",
+          "unit": "K",
+          "value": 423.15
+        }
+      },
+      "name": "Arrhenius depletion kinetics",
+      "nodes": [
+        {
+          "expression": "k1 * exp(E1 * (1 / T_ref - 1 / temperature))",
+          "id": "thermal_rate",
+          "meaning": "Thermally activated baseline rate",
+          "unit": "s^-1"
+        },
+        {
+          "expression": "maximum(0, 1 - conversion)",
+          "id": "remaining_fraction",
+          "meaning": "Unconverted fraction in the measured calorimetric coordinate",
+          "unit": "1"
+        },
+        {
+          "expression": "remaining_fraction ** order",
+          "id": "depletion",
+          "meaning": "Reaction slowdown as unconverted material is depleted",
+          "unit": "1"
+        },
+        {
+          "expression": "thermal_rate * depletion",
+          "id": "conversion_rate",
+          "meaning": "Predicted conversion rate",
+          "unit": "s^-1"
+        }
+      ],
+      "output": "conversion_rate",
+      "parameters": {
+        "E1": {
+          "bounds": [
+            100,
+            30000
+          ],
+          "initial": 8000,
+          "meaning": "Activation energy divided by gas constant",
+          "unit": "K"
+        },
+        "k1": {
+          "bounds": [
+            1e-08,
+            0.1
+          ],
+          "initial": 0.0002,
+          "meaning": "Non-autocatalytic reference rate",
+          "unit": "s^-1"
+        },
+        "order": {
+          "bounds": [
+            0.1,
+            5
+          ],
+          "initial": 1.5,
+          "meaning": "Effective depletion order",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    },
+    {
+      "assumptions": [
+        "Arrhenius effective kinetics over the measured thermal scans",
+        "Conversion and rate are related calorimetric reductions, not independent response channels",
+        "Known kinetic families; microscopic reaction mechanism is not identified",
+        "Kamal-Sourour family with shared coefficients across heating rates"
+      ],
+      "constants": {
+        "T_ref": {
+          "meaning": "150 Celsius reference temperature",
+          "source": "Declared reference coordinate",
+          "unit": "K",
+          "value": 423.15
+        }
+      },
+      "name": "Parallel autocatalytic cure pathways",
+      "nodes": [
+        {
+          "expression": "k1 * exp(E1 * (1 / T_ref - 1 / temperature))",
+          "id": "thermal_rate",
+          "meaning": "Thermally activated baseline rate",
+          "unit": "s^-1"
+        },
+        {
+          "expression": "maximum(0, 1 - conversion)",
+          "id": "remaining_fraction",
+          "meaning": "Unconverted fraction in the measured calorimetric coordinate",
+          "unit": "1"
+        },
+        {
+          "expression": "remaining_fraction ** order",
+          "id": "depletion",
+          "meaning": "Reaction slowdown as unconverted material is depleted",
+          "unit": "1"
+        },
+        {
+          "expression": "k2 * exp(E2 * (1 / T_ref - 1 / temperature)) * maximum(0, conversion) ** autocat_order",
+          "id": "autocatalytic_rate",
+          "meaning": "Conversion-assisted reaction pathway",
+          "unit": "s^-1"
+        },
+        {
+          "expression": "(thermal_rate + autocatalytic_rate) * depletion",
+          "id": "conversion_rate",
+          "meaning": "Combined baseline and autocatalytic pathways",
+          "unit": "s^-1"
+        }
+      ],
+      "output": "conversion_rate",
+      "parameters": {
+        "E1": {
+          "bounds": [
+            100,
+            30000
+          ],
+          "initial": 8000,
+          "meaning": "Activation energy divided by gas constant",
+          "unit": "K"
+        },
+        "E2": {
+          "bounds": [
+            100,
+            30000
+          ],
+          "initial": 9000,
+          "meaning": "Autocatalytic activation temperature",
+          "unit": "K"
+        },
+        "autocat_order": {
+          "bounds": [
+            0.1,
+            4
+          ],
+          "initial": 1,
+          "meaning": "Effective autocatalytic order",
+          "unit": "1"
+        },
+        "k1": {
+          "bounds": [
+            1e-08,
+            0.1
+          ],
+          "initial": 0.0002,
+          "meaning": "Non-autocatalytic reference rate",
+          "unit": "s^-1"
+        },
+        "k2": {
+          "bounds": [
+            1e-08,
+            1
+          ],
+          "initial": 0.002,
+          "meaning": "Autocatalytic reference rate",
+          "unit": "s^-1"
+        },
+        "order": {
+          "bounds": [
+            0.1,
+            5
+          ],
+          "initial": 1.5,
+          "meaning": "Effective depletion order",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    }
+  ],
+  "inputs": [
+    "temperature",
+    "conversion",
+    "heating_rate"
+  ],
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "primary": "mae"
+  },
+  "output": "target",
+  "preprocessing": {
+    "learned_transformations": [],
+    "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+  },
+  "quantity_units": {
+    "conversion": "1",
+    "heating_rate": "K/s",
+    "target": "s^-1",
+    "temperature": "K"
+  },
+  "revision": 2,
+  "scenario_id": "P100-013",
+  "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "split_policy": "Whole heating scans: train 1/5/10 Celsius per minute; dev 3; test 20. One encapsulant system; heating-rate transfer, not independent-batch replication.",
+  "stability": {
+    "categorical_inputs": [],
+    "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "task_id": "P100-013.mechanisms-v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Thermally activated encapsulant cure",
+  "variable_descriptions": {
+    "conversion": "Author-derived calorimetric conversion fraction; coupled to the same measured heat signal",
+    "heating_rate": "Programmed heating rate, converted from Celsius/minute to kelvin/second",
+    "target": "Calorimetric conversion rate, converted from percent/minute to fraction/second",
+    "temperature": "Measured scan temperature in kelvin"
+  }
+}

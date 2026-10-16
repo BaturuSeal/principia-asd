@@ -1,0 +1,41 @@
+{
+  "admission": "local_research_preview",
+  "excluded": 3,
+  "exclusion_reasons": {
+    "invalid_frequency_or_modulus": 3
+  },
+  "groups": {
+    "dev": [
+      "temperature-45",
+      "temperature-65"
+    ],
+    "test": [
+      "temperature-55",
+      "temperature-75"
+    ],
+    "train": [
+      "temperature-40",
+      "temperature-50",
+      "temperature-60",
+      "temperature-70",
+      "temperature-80"
+    ]
+  },
+  "included": 396,
+  "partition_hashes": {
+    "dev": "316015986809d73d4ef6edb84c16dd1b34f88c2245ea3fce10d32758c6b872e3",
+    "test": "3d733cc65164259f1962e2f3242385afd28c0bdfa054e99622f86a7601ee63b8",
+    "train": "c5db054f013f70c5a6c596d728996563515e8d47f54e2093ab4d8466208eec72"
+  },
+  "review_scope": "Native format, source units, known invalid readings, identity/group separation and reproducible preparation checked; external scientific review not assessed",
+  "scenario_id": "P100-058",
+  "sources": [
+    {
+      "path": "raw/PDLLA15k_DSC_GPC_rheo.zip",
+      "sha256": "a556a226ac4759039ec860a9a113a4036017755ecef3caac78a7e22854837c4b"
+    }
+  ],
+  "split_policy": "Train temperatures 40/50/60/70/80 C; development 45/65 C; test 55/75 C. Each temperature's full frequency sweep and both response channels stay together.",
+  "test_targets_public": false,
+  "units_checked": true
+}

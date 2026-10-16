@@ -1,0 +1,33 @@
+{
+  "description": "Compare effective first-order and dose-modulated assay responses after a short disclosed fluorescence calibration. Signal amplitudes remain instrument units, not inferred molecular concentrations.",
+  "domain": "Biochemical sensing",
+  "edition": "mechanism-pack-v2",
+  "extends_scenario_sha256": "30473ad3fd0bdabda666359bb37fcdb93115a574cf1c75e4eab5833ed682ffab",
+  "extends_task_sha256": "d75d24bb007a74ac09fc8d388b8d99bdd96ae874634cf5a38fd7cb940d94d2ac",
+  "independent_unit": "Whole dose curves; original confirmation and compact-v2 development assignments retained",
+  "limitations": [
+    "Effective saturation kinetics, not identified catalytic reaction steps",
+    "Initial signal and slope use only 3, 4.5 and 6 minute observations",
+    "Whole biosensor-dose curves held out, with no biological replicate identities",
+    "Fluorescence is uncalibrated instrument response and cannot be interpreted as molar product"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 86,
+    "test": 86,
+    "train": 215
+  },
+  "scenario_id": "P100-074",
+  "size": {
+    "public_bytes": 30959
+  },
+  "source": {
+    "license": "cc-by-4.0",
+    "registry_identity": "P100-074",
+    "url": "https://zenodo.org/records/18911385"
+  },
+  "status": "local_research_preview",
+  "title": "Saturation dynamics of a kinase biosensor"
+}

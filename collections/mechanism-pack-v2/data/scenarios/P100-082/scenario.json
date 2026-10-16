@@ -1,0 +1,31 @@
+{
+  "description": "Compare thermal activation, water limitation and root-exclusion associations using soil measurements from complete held-out sites. The task retains site heterogeneity and does not identify causal effects of management.",
+  "domain": "Forest ecology",
+  "edition": "mechanism-pack-v2",
+  "independent_unit": "Whole site families. Dev Llobera/Secanella/St Christol; test Gamiz/Kacergine/Kranzberg-Freising/Saint Mitre/RincondelBatovi; remaining eligible sites train. Adjacent Karstula and Dumbravita families never cross partitions.",
+  "limitations": [
+    "Q10 is a finite-range ecosystem response, not a universal activation law",
+    "Site-held-out transfer with unmodelled soil, management and instrument differences",
+    "Source flux is an author-derived chamber measurement; concentration-fit slope and intercept are prohibited predictors",
+    "Water content is not pore saturation; oxygen access is an unmeasured hypothesis"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 6061,
+    "test": 11359,
+    "train": 15531
+  },
+  "scenario_id": "P100-082",
+  "size": {
+    "public_bytes": 620323
+  },
+  "source": {
+    "license": "cc-by-4.0",
+    "registry_identity": "P100-082",
+    "url": "https://zenodo.org/records/17519671"
+  },
+  "status": "local_research_preview",
+  "title": "Forest-soil respiration across sites"
+}

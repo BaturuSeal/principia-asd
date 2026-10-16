@@ -1,0 +1,189 @@
+{
+  "dev_error": 0.31554920745975573,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "replicate-3",
+        "loss": 0.31554920745975573
+      }
+    ],
+    "intermediate_ranges": {
+      "reduced_shear": [
+        8.370509762533338,
+        4999.999998352285
+      ],
+      "shear_reduction": [
+        0.35263084676658457,
+        0.46218564067969664
+      ],
+      "thermal_shift": [
+        0.07090424180801373,
+        1.0
+      ],
+      "viscous_response": [
+        0.020994032461010753,
+        0.3123651099547917
+      ],
+      "zero_shear_viscosity": [
+        0.05290580542619413,
+        0.7461585382923397
+      ]
+    },
+    "residual_bias": -0.015597315146463429,
+    "residual_rmse": 0.05641790633975715
+  },
+  "equation_system": {
+    "assumptions": [
+      "Cross constitutive family with negligible infinite-shear plateau",
+      "Thermorheological simplicity is a testable assumption",
+      "Instrument-derived viscosity; one resin formulation, no universality claim"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 35 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 308.15
+      }
+    },
+    "name": "Thermally shifted Cross flow",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Arrhenius temperature shift relative to the reference temperature",
+        "unit": "1"
+      },
+      {
+        "expression": "eta_ref * thermal_shift",
+        "id": "zero_shear_viscosity",
+        "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+        "unit": "Pa*s"
+      },
+      {
+        "expression": "shear_rate * relaxation * thermal_shift",
+        "id": "reduced_shear",
+        "meaning": "Dimensionless shear rate relative to a temperature-shifted relaxation time",
+        "unit": "1"
+      },
+      {
+        "expression": "1 / (1 + reduced_shear ** exponent)",
+        "id": "shear_reduction",
+        "meaning": "Cross-law shear-thinning factor",
+        "unit": "1"
+      },
+      {
+        "expression": "zero_shear_viscosity * shear_reduction",
+        "id": "viscous_response",
+        "meaning": "Predicted viscosity after thermal and shear-rate contributions",
+        "unit": "Pa*s"
+      }
+    ],
+    "output": "viscous_response",
+    "parameters": {
+      "activation": {
+        "bounds": [
+          10,
+          30000
+        ],
+        "initial": 3000,
+        "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+        "unit": "K"
+      },
+      "eta_ref": {
+        "bounds": [
+          0.0001,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Low-shear viscosity at the reference temperature",
+        "unit": "Pa*s"
+      },
+      "exponent": {
+        "bounds": [
+          0.05,
+          2
+        ],
+        "initial": 0.8,
+        "meaning": "Phenomenological shear-thinning exponent",
+        "unit": "1"
+      },
+      "relaxation": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.02,
+        "meaning": "Effective relaxation time at the reference temperature",
+        "unit": "s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent))",
+  "fit_recipe": {
+    "development_rows": 242,
+    "log_coordinate_parameters": [
+      "activation",
+      "eta_ref",
+      "exponent",
+      "relaxation"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared log residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 728
+  },
+  "identifiability": {
+    "condition_number": 20664.57881064673,
+    "parameters": 4,
+    "rank": 4,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "shear_rate"
+  ],
+  "method_id": "equation_agent",
+  "method_version": "equation-search-v1",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "activation": 3607.663116744136,
+    "eta_ref": 0.7461585382923397,
+    "exponent": 0.07132572077421569,
+    "relaxation": 99.9999999670457
+  },
+  "quantity_units": {
+    "shear_rate": "s^-1",
+    "target": "Pa*s",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-057-equation-agent-system-2",
+  "rule_sha256": "c904d92be1d78000182917a9dff5c20430b59b383320e51cff47ff9383ec1fd1",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 14,
+    "expanded_expression": "0.7461585382923397 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 99.9999999670457 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref))) ** 0.07132572077421569))",
+    "expression_bytes": 159,
+    "fixed_constants": 1,
+    "free_parameters": 4,
+    "intermediate_quantities": 4,
+    "learned_state_bytes": 129,
+    "literal_state_bytes": 6,
+    "nodes": 63,
+    "numeric_literal_count": 6,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 4,
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-057.equations-v1",
+  "train_error": 0.32248047204040614
+}

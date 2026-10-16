@@ -1,0 +1,278 @@
+{
+  "dev_error": 0.008618365395733308,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "group-48702b96649e921d14a6c0a2",
+        "loss": 0.0013630385659095196
+      },
+      {
+        "group": "group-c5ed3c1a76691e8176917083",
+        "loss": 0.020000747627880663
+      },
+      {
+        "group": "group-f43dcfbafe4233ae09eeae89",
+        "loss": 0.004491309993409742
+      }
+    ],
+    "input_strata": {
+      "anchor_loss": {
+        "bins": [
+          {
+            "mae": 0.0013630385659095196,
+            "range": [
+              2.9937572479,
+              3.3488888741
+            ],
+            "residual_bias": -0.0009894287113024253,
+            "rows": 44
+          },
+          {
+            "mae": 0.012341766079993788,
+            "range": [
+              3.3488888741,
+              3.4608542919
+            ],
+            "residual_bias": -0.008192110936232202,
+            "rows": 81
+          }
+        ],
+        "unique_values": 3
+      },
+      "anchor_tokens": {
+        "bins": [],
+        "unique_values": 1
+      },
+      "early_loss": {
+        "bins": [
+          {
+            "mae": 0.0013630385659095196,
+            "range": [
+              3.1800925732,
+              3.4772815704
+            ],
+            "residual_bias": -0.0009894287113024253,
+            "rows": 44
+          },
+          {
+            "mae": 0.012341766079993788,
+            "range": [
+              3.4772815704,
+              3.5870056152
+            ],
+            "residual_bias": -0.008192110936232202,
+            "rows": 81
+          }
+        ],
+        "unique_values": 3
+      },
+      "early_tokens": {
+        "bins": [],
+        "unique_values": 1
+      },
+      "model_size": {
+        "bins": [
+          {
+            "mae": 0.004491309993409742,
+            "range": [
+              0.094776832,
+              0.1038144
+            ],
+            "residual_bias": 0.003909924399919507,
+            "rows": 40
+          },
+          {
+            "mae": 0.01035299234874266,
+            "range": [
+              0.1038144,
+              0.49745792
+            ],
+            "residual_bias": -0.010158739119163474,
+            "rows": 85
+          }
+        ],
+        "unique_values": 3
+      },
+      "tokens": {
+        "bins": [
+          {
+            "mae": 0.004675725487443261,
+            "range": [
+              20.00683008,
+              40.01366016
+            ],
+            "residual_bias": -0.0024277567355646124,
+            "rows": 30
+          },
+          {
+            "mae": 0.007743488591588247,
+            "range": [
+              40.01366016,
+              60.02049024
+            ],
+            "residual_bias": -0.005614760321867968,
+            "rows": 31
+          },
+          {
+            "mae": 0.009934950418781112,
+            "range": [
+              60.02049024,
+              80.02732032
+            ],
+            "residual_bias": -0.006768704171142091,
+            "rows": 31
+          },
+          {
+            "mae": 0.011253132588932357,
+            "range": [
+              80.02732032,
+              99.99220736
+            ],
+            "residual_bias": -0.0075871438721777235,
+            "rows": 33
+          }
+        ],
+        "unique_values": 44
+      }
+    },
+    "intermediate_ranges": {
+      "anchor_ratio": [
+        0.6014928093622667,
+        0.6014928093622667
+      ],
+      "loss_floor": [
+        2.7125092279614704,
+        3.2704458986786515
+      ],
+      "predicted_loss": [
+        2.808529485226852,
+        3.4486847982557594
+      ],
+      "remaining_excess": [
+        0.06500690353872665,
+        0.2632727304400338
+      ]
+    },
+    "residual_bias": -0.005656766793056921,
+    "residual_rmse": 0.01276460607684318
+  },
+  "equation_system": {
+    "assumptions": [
+      "Known power-law scaling family with observed early calibration",
+      "An algebraically inferred floor is not a measured entropy or an independent learned parameter",
+      "Whole architectures held out; common training corpus, no external-model replication"
+    ],
+    "constants": {},
+    "name": "Calibrated asymptotic learning dynamics",
+    "nodes": [
+      {
+        "expression": "(early_tokens / anchor_tokens) ** decay",
+        "id": "anchor_ratio",
+        "meaning": "Power-law decay between disclosed early checkpoints",
+        "unit": "1"
+      },
+      {
+        "expression": "(anchor_loss - early_loss * anchor_ratio) / (1 - anchor_ratio)",
+        "id": "loss_floor",
+        "meaning": "Conditional asymptotic loss inferred algebraically from the two disclosed anchors",
+        "unit": "1"
+      },
+      {
+        "expression": "(anchor_loss - loss_floor) * (anchor_tokens / tokens) ** decay",
+        "id": "remaining_excess",
+        "meaning": "Unlearned loss above the conditional floor at later token counts",
+        "unit": "1"
+      },
+      {
+        "expression": "loss_floor + remaining_excess",
+        "id": "predicted_loss",
+        "meaning": "Later validation loss under the shared scaling exponent",
+        "unit": "1"
+      }
+    ],
+    "output": "predicted_loss",
+    "parameters": {
+      "decay": {
+        "bounds": [
+          0.01,
+          3
+        ],
+        "initial": 0.4,
+        "meaning": "Shared asymptotic training-loss decay exponent",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "(anchor_loss - early_loss * (early_tokens / anchor_tokens) ** decay) / (1 - (early_tokens / anchor_tokens) ** decay) + (anchor_loss - (anchor_loss - early_loss * (early_tokens / anchor_tokens) ** decay) / (1 - (early_tokens / anchor_tokens) ** decay)) * (anchor_tokens / tokens) ** decay",
+  "fit_recipe": {
+    "development_rows": 125,
+    "log_coordinate_parameters": [
+      "decay"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 616
+  },
+  "identifiability": {
+    "condition_number": 1.0,
+    "parameters": 1,
+    "rank": 1,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "tokens",
+    "anchor_tokens",
+    "early_tokens",
+    "anchor_loss",
+    "early_loss",
+    "model_size"
+  ],
+  "method_id": "equation_agent",
+  "method_version": "equation-search-v2",
+  "model_ids": [
+    "Pro/moonshotai/Kimi-K2.6",
+    "Qwen/Qwen3.8-27B",
+    "deepseek-ai/DeepSeek-V4-Flash",
+    "zai-org/GLM-5.3"
+  ],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "decay": 0.626861211955627
+  },
+  "quantity_units": {
+    "anchor_loss": "1",
+    "anchor_tokens": "1",
+    "early_loss": "1",
+    "early_tokens": "1",
+    "model_size": "1",
+    "target": "1",
+    "tokens": "1"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-systems-local-v3-p100-043-equation-agent-system-1",
+  "rule_sha256": "0193c8f1efbfd78029a065ef3f4a14d10ecc58363a1670a4ef54a9dc33179900",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 11,
+    "expanded_expression": "(anchor_loss - early_loss * (early_tokens / anchor_tokens) ** 0.626861211955627) / (1 - (early_tokens / anchor_tokens) ** 0.626861211955627) + (anchor_loss - (anchor_loss - early_loss * (early_tokens / anchor_tokens) ** 0.626861211955627) / (1 - (early_tokens / anchor_tokens) ** 0.626861211955627)) * (anchor_tokens / tokens) ** 0.626861211955627",
+    "expression_bytes": 287,
+    "fixed_constants": 0,
+    "free_parameters": 1,
+    "intermediate_quantities": 3,
+    "learned_state_bytes": 28,
+    "literal_state_bytes": 2,
+    "nodes": 85,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 1,
+    "weighted_operator_count": 21
+  },
+  "task_id": "P100-043.mechanisms-v2",
+  "train_error": 0.007571087732345668
+}

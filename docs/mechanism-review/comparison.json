@@ -1,0 +1,597 @@
+{
+  "control_correction": "All eight linear/polynomial controls were refitted uniformly after a synthetic constant-coordinate conditioning defect was confirmed. Earlier solver outputs remain in the canonical exports and attempt denominator. Current comparison uses centered-least-squares-v3 only for these two methods.",
+  "costs": {
+    "accounted_cny": 78.249922,
+    "cap_cny": 3000.0,
+    "remaining_cny": 2921.750078,
+    "requests": 1821,
+    "states": {
+      "completed": 1809,
+      "unknown": 12
+    },
+    "unknown_usage_reserved": 40.0
+  },
+  "coverage": {
+    "assigned_attempt_denominator": 96,
+    "attempts": 96,
+    "rules": 87,
+    "scenarios": 8,
+    "separate_engineering_attempts": 0,
+    "status_counts": {
+      "complete": 79,
+      "failed": 12,
+      "incomplete_method_execution": 1,
+      "unsupported": 4
+    },
+    "superseded_engineering_attempts": 0,
+    "track": "engineering"
+  },
+  "independent_mechanism_validation": "not_assessed",
+  "model_failures": "The first eight multi-role attempts failed. A separate output-bounded revision retained those attempts and produced three complete, one incomplete and four provider-failed attempts. No ambiguous billed request was replayed.",
+  "novelty": "not_assessed",
+  "run_to_run_stability": "not_assessed",
+  "scenarios": [
+    {
+      "attempt_outcomes": {
+        "complete": 10,
+        "failed": 1,
+        "unsupported": 1
+      },
+      "development_selected_agent_rule": {
+        "coverage": 1.0,
+        "dev_loss": 0.00010779083502391556,
+        "equations": 5,
+        "identifiability": {
+          "condition_number": 75.53021686674347,
+          "parameters": 6,
+          "rank": 6,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_agent",
+        "method_revision": "equation-search-v2",
+        "name": "Parallel autocatalytic cure pathways",
+        "operators": 24,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 6,
+        "rule_id": "mechanism-systems-local-v3-p100-013-equation-agent-system-2",
+        "status": "complete",
+        "test_loss": 0.0009186917522183377
+      },
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 0.0001569111492022768,
+        "equations": 0,
+        "identifiability": null,
+        "method": "polynomial_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "polynomial_control",
+        "operators": 24,
+        "origin": "degree-2",
+        "parameters": 10,
+        "rule_id": "mechanism-controls-local-v5-p100-013-polynomial-control-rule-1",
+        "status": "complete",
+        "test_loss": 0.002049346843468424
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 0.00010779083502391556,
+        "equations": 5,
+        "identifiability": {
+          "condition_number": 75.53021686674347,
+          "parameters": 6,
+          "rank": 6,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Parallel autocatalytic cure pathways",
+        "operators": 24,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 6,
+        "rule_id": "mechanism-v2-p100-013-equation-search-system-2",
+        "status": "complete",
+        "test_loss": 0.0009186917522183377
+      },
+      "limits": [
+        "Arrhenius effective kinetics over the measured thermal scans",
+        "Conversion and rate are related calorimetric reductions, not independent response channels",
+        "Known kinetic families; microscopic reaction mechanism is not identified",
+        "Kamal-Sourour family with shared coefficients across heating rates"
+      ],
+      "partitions": {
+        "dev": 416,
+        "test": 501,
+        "train": 1609
+      },
+      "scenario_id": "P100-013",
+      "scientific_model_below_every_control_test_loss": false,
+      "scientific_model_test_loss_reduction_percent": 55.17148523948758,
+      "strongest_observed_control_test_loss": 0.0008729424199164734,
+      "task_id": "P100-013.mechanisms-v2",
+      "title": "Thermally activated encapsulant cure",
+      "units": "s^-1"
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 9,
+        "failed": 2,
+        "unsupported": 1
+      },
+      "development_selected_agent_rule": null,
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 0.07402936029945086,
+        "equations": 0,
+        "identifiability": null,
+        "method": "linear_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "linear_control",
+        "operators": 10,
+        "origin": "linear",
+        "parameters": 6,
+        "rule_id": "mechanism-controls-local-v5-p100-027-linear-control-rule-1",
+        "status": "complete",
+        "test_loss": 0.605784273344575
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 0.12459411261620904,
+        "equations": 6,
+        "identifiability": {
+          "condition_number": 7.620733639205141,
+          "parameters": 3,
+          "rank": 3,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Vapor drift with radial redistribution",
+        "operators": 50,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 3,
+        "rule_id": "mechanism-v2-p100-027-equation-search-system-1",
+        "status": "complete",
+        "test_loss": 0.0980173905980118
+      },
+      "limits": [
+        "Drift-flux family; local radial profile is a separate phenomenological correction",
+        "Source radial coordinate is normalized by the maximum sampled coordinate, not a certified tube radius",
+        "Densities are fixed pressure-derived IAPWS approximations; no target-fitted fluid property",
+        "Whole source runs held out; same apparatus and some shared acquisition days",
+        "No phase slip; a deliberately simpler competing explanation"
+      ],
+      "partitions": {
+        "dev": 24,
+        "test": 36,
+        "train": 84
+      },
+      "scenario_id": "P100-027",
+      "scientific_model_below_every_control_test_loss": true,
+      "scientific_model_test_loss_reduction_percent": 83.8197531842728,
+      "strongest_observed_control_test_loss": 0.20344615253411305,
+      "task_id": "P100-027.mechanisms-v2",
+      "title": "Vapor transport and radial phase distribution",
+      "units": "1"
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 11,
+        "failed": 1
+      },
+      "development_selected_agent_rule": {
+        "coverage": 1.0,
+        "dev_loss": 0.008618365395733308,
+        "equations": 4,
+        "identifiability": {
+          "condition_number": 1.0,
+          "parameters": 1,
+          "rank": 1,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_agent",
+        "method_revision": "equation-search-v2",
+        "name": "Calibrated asymptotic learning dynamics",
+        "operators": 21,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 1,
+        "rule_id": "mechanism-systems-local-v3-p100-043-equation-agent-system-1",
+        "status": "complete",
+        "test_loss": 0.0075627158265761125
+      },
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 0.015130485061927225,
+        "equations": 0,
+        "identifiability": null,
+        "method": "linear_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "linear_control",
+        "operators": 12,
+        "origin": "linear",
+        "parameters": 7,
+        "rule_id": "mechanism-controls-local-v5-p100-043-linear-control-rule-1",
+        "status": "complete",
+        "test_loss": 0.052946804313889095
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 0.008618365395733308,
+        "equations": 4,
+        "identifiability": {
+          "condition_number": 1.0,
+          "parameters": 1,
+          "rank": 1,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Calibrated asymptotic learning dynamics",
+        "operators": 21,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 1,
+        "rule_id": "mechanism-v2-p100-043-equation-search-system-1",
+        "status": "complete",
+        "test_loss": 0.0075627158265761125
+      },
+      "limits": [
+        "Known power-law scaling family with observed early calibration",
+        "An algebraically inferred floor is not a measured entropy or an independent learned parameter",
+        "Whole architectures held out; common training corpus, no external-model replication"
+      ],
+      "partitions": {
+        "dev": 125,
+        "test": 221,
+        "train": 616
+      },
+      "scenario_id": "P100-043",
+      "scientific_model_below_every_control_test_loss": true,
+      "scientific_model_test_loss_reduction_percent": 85.71638850620442,
+      "strongest_observed_control_test_loss": 0.025124482265672453,
+      "task_id": "P100-043.mechanisms-v2",
+      "title": "Learning dynamics beyond early checkpoints",
+      "units": "1"
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 10,
+        "failed": 1,
+        "incomplete_method_execution": 1
+      },
+      "development_selected_agent_rule": null,
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 0.000523052542208427,
+        "equations": 0,
+        "identifiability": null,
+        "method": "linear_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "linear_control",
+        "operators": 12,
+        "origin": "linear",
+        "parameters": 7,
+        "rule_id": "mechanism-controls-local-v5-p100-049-linear-control-rule-1",
+        "status": "complete",
+        "test_loss": 0.021482435415035934
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 0.00043856308459398497,
+        "equations": 5,
+        "identifiability": {
+          "condition_number": 1.0,
+          "parameters": 1,
+          "rank": 1,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Finite-pulse diffusion relaxation",
+        "operators": 31,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 1,
+        "rule_id": "mechanism-v2-p100-049-equation-search-system-2",
+        "status": "complete",
+        "test_loss": 0.0006675279463359359
+      },
+      "limits": [
+        "Known relaxation families conditional on 60/120-second observations",
+        "Single half-cell and chronological held-out rest blocks; no independent-cell validation",
+        "No diffusion coefficient or unique electrochemical mechanism is identified",
+        "Semi-infinite diffusion approximation; finite-particle and multiple-process deviations retained"
+      ],
+      "partitions": {
+        "dev": 304,
+        "test": 384,
+        "train": 1216
+      },
+      "scenario_id": "P100-049",
+      "scientific_model_below_every_control_test_loss": true,
+      "scientific_model_test_loss_reduction_percent": 96.89268030630865,
+      "strongest_observed_control_test_loss": 0.003444328746987547,
+      "task_id": "P100-049.mechanisms-v2",
+      "title": "Diffusion and polarization during battery rest",
+      "units": "V"
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 9,
+        "failed": 2,
+        "unsupported": 1
+      },
+      "development_selected_agent_rule": null,
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 0.0900642312254859,
+        "equations": 0,
+        "identifiability": null,
+        "method": "polynomial_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "polynomial_control",
+        "operators": 24,
+        "origin": "degree-2",
+        "parameters": 10,
+        "rule_id": "mechanism-controls-local-v5-p100-061-polynomial-control-rule-1",
+        "status": "complete",
+        "test_loss": 0.09373299324568168
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 0.043202308931416744,
+        "equations": 7,
+        "identifiability": {
+          "condition_number": 17.555245324636193,
+          "parameters": 3,
+          "rank": 3,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Knudsen and viscous pore transport",
+        "operators": 18,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 3,
+        "rule_id": "mechanism-v2-p100-061-equation-search-system-2",
+        "status": "complete",
+        "test_loss": 0.043637825388943764
+      },
+      "limits": [
+        "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+        "Known transport families, not direct pore-size identification",
+        "Additive effective Knudsen and viscous contributions",
+        "A viscosity power law approximates the finite measured temperature range"
+      ],
+      "partitions": {
+        "dev": 8,
+        "test": 24,
+        "train": 22
+      },
+      "scenario_id": "P100-061",
+      "scientific_model_below_every_control_test_loss": true,
+      "scientific_model_test_loss_reduction_percent": 53.444540841061674,
+      "strongest_observed_control_test_loss": 0.09373299324568168,
+      "task_id": "P100-061.mechanisms-v2",
+      "title": "Gas transport through a porous membrane",
+      "units": "mol/m2/s"
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 11,
+        "failed": 1
+      },
+      "development_selected_agent_rule": {
+        "coverage": 1.0,
+        "dev_loss": 0.1556953217363695,
+        "equations": 9,
+        "identifiability": {
+          "condition_number": 604019.7536865374,
+          "parameters": 5,
+          "rank": 5,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_agent",
+        "method_revision": "equation-search-v2",
+        "name": "Thermal network with speed-dependent mixing and cold-start bias",
+        "operators": 35,
+        "origin": "Model-proposed equation system, development round 1",
+        "parameters": 5,
+        "rule_id": "mechanism-systems-local-v3-p100-069-equation-agent-system-3",
+        "status": "complete",
+        "test_loss": 1.364123989987451
+      },
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 0.19797521287384925,
+        "equations": 0,
+        "identifiability": null,
+        "method": "linear_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "linear_control",
+        "operators": 12,
+        "origin": "linear",
+        "parameters": 7,
+        "rule_id": "mechanism-controls-local-v5-p100-069-linear-control-rule-1",
+        "status": "complete",
+        "test_loss": 1.3424479849365456
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 0.2572888270313141,
+        "equations": 9,
+        "identifiability": {
+          "condition_number": 203522.4832797745,
+          "parameters": 4,
+          "rank": 4,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Thermal network with speed-dependent mixing",
+        "operators": 34,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 4,
+        "rule_id": "mechanism-v2-p100-069-equation-search-system-2",
+        "status": "complete",
+        "test_loss": 0.6602592067508597
+      },
+      "limits": [
+        "Lumped thermal balance with measured instantaneous torque and speed",
+        "Housing, environment and friction power are held locally constant over 60 seconds; later controls are never supplied",
+        "Capacity and conductances are effective quantities; one joint, no independent-machine validation",
+        "Convection proxy, not direct measurement of lubricant circulation"
+      ],
+      "partitions": {
+        "dev": 22,
+        "test": 1372,
+        "train": 125
+      },
+      "scenario_id": "P100-069",
+      "scientific_model_below_every_control_test_loss": true,
+      "scientific_model_test_loss_reduction_percent": 50.81677546098231,
+      "strongest_observed_control_test_loss": 0.7631452952355459,
+      "task_id": "P100-069.mechanisms-v2",
+      "title": "Frictional heating in a robot gearbox",
+      "units": "K"
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 10,
+        "failed": 2
+      },
+      "development_selected_agent_rule": null,
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 158.29231266050022,
+        "equations": 0,
+        "identifiability": null,
+        "method": "polynomial_control",
+        "method_revision": "centered-least-squares-v3",
+        "name": "polynomial_control",
+        "operators": 38,
+        "origin": "degree-2",
+        "parameters": 15,
+        "rule_id": "mechanism-controls-local-v5-p100-074-polynomial-control-rule-1",
+        "status": "complete",
+        "test_loss": 109.46912087734164
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 109.36623061807245,
+        "equations": 4,
+        "identifiability": {
+          "condition_number": 1.0,
+          "parameters": 1,
+          "rank": 1,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Calibrated first-order assay response",
+        "operators": 10,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 1,
+        "rule_id": "mechanism-v2-p100-074-equation-search-system-1",
+        "status": "complete",
+        "test_loss": 173.26695210054515
+      },
+      "limits": [
+        "Effective saturation kinetics, not identified catalytic reaction steps",
+        "Initial signal and slope use only 3, 4.5 and 6 minute observations",
+        "Whole biosensor-dose curves held out, with no biological replicate identities",
+        "Fluorescence is uncalibrated instrument response and cannot be interpreted as molar product"
+      ],
+      "partitions": {
+        "dev": 86,
+        "test": 86,
+        "train": 215
+      },
+      "scenario_id": "P100-074",
+      "scientific_model_below_every_control_test_loss": false,
+      "scientific_model_test_loss_reduction_percent": -58.27929439087023,
+      "strongest_observed_control_test_loss": 109.46912087734164,
+      "task_id": "P100-074.mechanisms-v2",
+      "title": "Saturation dynamics of a kinase biosensor",
+      "units": "a.u."
+    },
+    {
+      "attempt_outcomes": {
+        "complete": 9,
+        "failed": 2,
+        "unsupported": 1
+      },
+      "development_selected_agent_rule": null,
+      "development_selected_control": {
+        "coverage": 1.0,
+        "dev_loss": 4.9805462691440165e-08,
+        "equations": 0,
+        "identifiability": null,
+        "method": "tree_control",
+        "method_revision": "1.0.0rc2",
+        "name": "tree_control",
+        "operators": 79,
+        "origin": "tree_reference",
+        "parameters": 118,
+        "rule_id": "mechanism-v2-p100-082-tree-control-rule-1",
+        "status": "complete",
+        "test_loss": 6.664481634689579e-08
+      },
+      "development_selected_scientific_model": {
+        "coverage": 1.0,
+        "dev_loss": 9.50791050692569e-08,
+        "equations": 5,
+        "identifiability": {
+          "condition_number": 28.999162901318073,
+          "parameters": 5,
+          "rank": 5,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "method": "equation_search",
+        "method_revision": "equation-search-v2",
+        "name": "Moisture-limited soil respiration",
+        "operators": 17,
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "parameters": 5,
+        "rule_id": "mechanism-v2-p100-082-equation-search-system-2",
+        "status": "complete",
+        "test_loss": 7.289014325563601e-08
+      },
+      "limits": [
+        "Q10 is a finite-range ecosystem response, not a universal activation law",
+        "Site-held-out transfer with unmodelled soil, management and instrument differences",
+        "Source flux is an author-derived chamber measurement; concentration-fit slope and intercept are prohibited predictors",
+        "Water content is not pore saturation; oxygen access is an unmeasured hypothesis"
+      ],
+      "partitions": {
+        "dev": 6061,
+        "test": 11359,
+        "train": 15531
+      },
+      "scenario_id": "P100-082",
+      "scientific_model_below_every_control_test_loss": false,
+      "scientific_model_test_loss_reduction_percent": -9.37106177355551,
+      "strongest_observed_control_test_loss": 6.508432012107141e-08,
+      "task_id": "P100-082.mechanisms-v2",
+      "title": "Forest-soil respiration across sites",
+      "units": "kg/m2/s"
+    }
+  ],
+  "scientific_review": "not_assessed",
+  "scope": "Retrospective local engineering comparison, not a new primary benchmark or independent mechanism validation",
+  "selection": "Minimum development loss within each workflow; comparator chosen on development from mean, corrected linear/polynomial, tree and eligible persistence. Every outcome retained. Strongest observed test control is an additional descriptive comparison, not a selection criterion.",
+  "small_group_uncertainty": "No confidence interval claimed for these small, heterogeneous grouped holdouts",
+  "source_binding": {
+    "all_attempts_sha256": "5123d1c6f9fb847fb60c67aa05f2f78be293f1e642f8293ae52380464fbadc84",
+    "all_rules_sha256": "816d851295b32069e964b47abab65607644467ca22d7667b206f7724c926a4d6",
+    "data_edition_sha256": "1c2c9162797f92f8ea24470d2cfc87e7ae89c9b06895db0a1287e242a3a5c1a1"
+  }
+}

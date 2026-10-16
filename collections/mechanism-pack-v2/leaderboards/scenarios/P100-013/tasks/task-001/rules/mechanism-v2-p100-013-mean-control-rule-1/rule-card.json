@@ -1,0 +1,53 @@
+{
+  "dev_error": 0.0003837498981589935,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "temperature",
+    "conversion",
+    "heating_rate"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.0005596268904081211
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "conversion": 0.007677526693691395,
+      "temperature": 0.009095481648779985
+    },
+    "mean": 0.00020129796412606977,
+    "p90_abs": 0.0005624602237414544,
+    "std": 0.00037875349148530456
+  },
+  "rule_id": "mechanism-v2-p100-013-mean-control-rule-1",
+  "rule_sha256": "b0992a9b22e35625d76fa600e0112ffc205358f58a1f75b7c8a99204c3103fa3",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.0005596268904081211",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 29,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-013.mechanisms-v2",
+  "train_error": 0.0006086191252329606,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

@@ -11,10 +11,12 @@ import json
 import re
 import shutil
 import zipfile
+from datetime import date
 from pathlib import Path
 
 from principia_asd import __version__
 from principia_asd.io import file_sha, read_json, write_json
+from principia_asd.web.collections import scenario_ids
 from principia_asd.web.public_site import build_site
 
 EXCLUDED = {
@@ -49,7 +51,9 @@ PROJECT_FILES = {
     "LICENSE",
     "PROVENANCE.md",
     ".gitignore",
+    ".gitattributes",
     "REPRODUCIBILITY.md",
+    "CONTRIBUTING.md",
 }
 VERIFY = '''"""Verify this unpacked public release without installing dependencies."""
 import hashlib
@@ -97,7 +101,9 @@ def entries(root):
     ]
 
 
-def build(project, data, boards, vault, output, wheel):
+def build(project, data, boards, vault, output, wheel, packs=None):
+    packs = read_json(packs).get("packs", []) if packs else []
+    today = date.today().isoformat()
     if output.exists():
         raise FileExistsError("Choose a new immutable delivery directory")
     public = output / "public-release"
@@ -112,6 +118,22 @@ def build(project, data, boards, vault, output, wheel):
         (public / "scripts" / name).unlink(missing_ok=True)
     copy_clean(data, public / "data")
     copy_clean(boards, public / "leaderboards")
+    collection_entries = []
+    for pack in packs:
+        ident = pack["id"]
+        if not re.fullmatch(r"[A-Za-z0-9_-]+", ident):
+            raise ValueError("Unsafe collection identity")
+        item = {"id": ident}
+        for field, name in (("data_root", "data"), ("leaderboard_root", "leaderboards")):
+            rel = "collections/" + ident + "/" + name
+            copy_clean(Path(pack[field]), public / rel)
+            item[field] = rel
+            item[field + "_sha256"] = file_sha(public / rel / "EDITION.json")
+        collection_entries.append(item)
+    write_json(
+        public / "COLLECTIONS.json",
+        {"schema": "principia-asd.public-collections/1", "collections": collection_entries},
+    )
     (public / "dist").mkdir()
     shutil.copyfile(wheel, public / "dist" / wheel.name)
     (public / "VERIFY.py").write_text(VERIFY)
@@ -122,23 +144,32 @@ def build(project, data, boards, vault, output, wheel):
     # Fix documentation navigation in the portable projection only. Canonical data/results are byte-preserved.
     for f in [*public.glob("*.md"), *(public / "docs").rglob("*.md")]:
         text = f.read_text()
+        depth = len(f.parent.relative_to(public).parts)
+        for pack in packs:
+            for field, folder in (("data_root", "data"), ("leaderboard_root", "leaderboards")):
+                source = Path(pack[field])
+                # Operator docs contain both root- and docs-relative references.
+                for prefix in ("../../../", "../../"):
+                    old = prefix + source.parent.name + "/" + source.name + "/"
+                    text = text.replace(
+                        old, "../" * depth + "collections/" + pack["id"] + "/" + folder + "/"
+                    )
         if f.parent == public:
             text = text.replace(
                 "../../leaderboards/Scenarios-rules-26Oct10/", "leaderboards/"
             ).replace("../../datas/ASD-Scenarios-26Oct10/", "data/")
         else:
-            depth = len(f.parent.relative_to(public).parts)
             text = text.replace(
                 "../../../leaderboards/Scenarios-rules-26Oct10/", "../" * depth + "leaderboards/"
             ).replace("../../../datas/ASD-Scenarios-26Oct10/", "../" * depth + "data/")
         f.write_text(text)
     authorization = {
         "schema_version": "principia-asd.deployment-authorization/1",
-        "date": "2026-10-15",
+        "date": today,
         "software_version": __version__,
         "destination": "https://atlas.chipflow.net/web/asd-test/",
         "scope": "owner-requested public research preview and private operator evaluator",
-        "source": "Explicit user request in this chat on 2026-10-15",
+        "source": "Explicit owner request in this chat on " + today,
         "third_party_rights_certified": False,
         "scientific_admission_certified": False,
         "frozen_publication_flags_modified": False,
@@ -167,7 +198,7 @@ def build(project, data, boards, vault, output, wheel):
             if f.is_file():
                 info = zipfile.ZipInfo(
                     "public-release/" + str(f.relative_to(public)),
-                    date_time=(2026, 10, 15, 0, 0, 0),
+                    date_time=(*map(int, today.split("-")), 0, 0, 0),
                 )
                 info.compress_type = zipfile.ZIP_DEFLATED
                 info.external_attr = 0o100644 << 16
@@ -175,21 +206,40 @@ def build(project, data, boards, vault, output, wheel):
     archive.with_suffix(".zip.sha256").write_text(file_sha(archive) + "  " + archive.name + "\n")
     private = output / "private-evaluator"
     private.mkdir(mode=0o700)
-    for item in read_json(data / "EDITION.json")["active_scenarios"]:
-        sid = item["scenario_id"] if isinstance(item, dict) else item
-        if not re.fullmatch(r"P100-\d{3}", sid):
-            raise ValueError("Unsafe registry entry")
-        for name in ("test_targets.csv.gz", "evaluator-manifest.json"):
-            source = vault / sid / name
-            dest = private / "targets" / sid / name
-            dest.parent.mkdir(parents=True, mode=0o700, exist_ok=True)
-            shutil.copyfile(source, dest)
-            dest.chmod(0o600)
+    sources = [("primary", data, vault)] + [
+        (pack["id"], Path(pack["data_root"]), Path(pack["vault"])) for pack in packs
+    ]
+    private_bindings = []
+    for ident, source_data, source_vault in sources:
+        for sid in scenario_ids(source_data):
+            destination = (
+                private / "targets"
+                if ident == "primary"
+                else private / "collections" / ident / "targets"
+            )
+            for name in ("test_targets.csv.gz", "evaluator-manifest.json", "excluded-records.json"):
+                source = source_vault / sid / name
+                if name == "excluded-records.json" and not source.exists():
+                    continue
+                if source.is_symlink():
+                    raise ValueError("Symlink in evaluator custody")
+                dest = destination / sid / name
+                dest.parent.mkdir(parents=True, mode=0o700, exist_ok=True)
+                shutil.copyfile(source, dest)
+                dest.chmod(0o600)
+            private_bindings.append(
+                {
+                    "collection_id": ident,
+                    "scenario_id": sid,
+                    "data_edition_sha256": file_sha(source_data / "EDITION.json"),
+                    "vault_path": str((destination / sid).relative_to(private)),
+                }
+            )
     (private / "README.md").write_text("""# Operator-only evaluator custody
 
-This directory contains the protected targets for the 40 registered examples. It is a sibling of public-release and public-site, never a descendant of either. Do not upload it to GitHub, attach it to the companion ZIP, or serve it over HTTP. No user imports, API keys, logs, paid-request receipts or mutable jobs are included.
+This directory contains protected targets for the registered primary and equation collections. It is a sibling of public-release and public-site, never a descendant of either. Do not upload it to GitHub, attach it to the companion ZIP, or serve it over HTTP. No user imports, API keys, logs, paid-request receipts or mutable jobs are included.
 
-The evaluator implementation is the same versioned `principia_asd.evaluate` package in public-release. Install its wheel in a separate server environment. Administrative CLI evaluation uses private settings with `vault` pointing to this directory's `targets/`; set `workspace` to a separate private output directory and `data_root` to public-release/data. Run `principia-asd evaluate --help` for the frozen-run interface. No HTTP evaluator endpoint is provided. A missing or mismatched freeze/contract must fail, never be repaired by changing canonical files.
+The evaluator implementation is the same versioned `principia_asd.evaluate` package in public-release. Install its wheel in a separate server environment. Administrative CLI evaluation uses private settings with `vault` pointing to this directory's `targets/` for the primary edition or the matching `collections/<collection-id>/targets/` for an extension; set `workspace` to a separate private output directory and `data_root` to public-release/data. Run `principia-asd evaluate --help` for the frozen-run interface. No HTTP evaluator endpoint is provided. A missing or mismatched freeze/contract must fail, never be repaired by changing canonical files.
 
 New visitor runs remain on their computers; the server does not collect them for evaluation. Existing historical receipts remain unchanged. Exact historical replay additionally requires the original frozen runtime and private run artifacts, which are deliberately not copied into this lean deployment. These protected retrospective outcomes do not become independent evidence by being hosted privately.
 
@@ -200,7 +250,9 @@ On the server, the directory is owned by ubuntu with directory mode 0700 and fil
         {
             "software_version": __version__,
             "data_edition_sha256": file_sha(data / "EDITION.json"),
-            "scenario_count": 40,
+            "scenario_count": len({x["scenario_id"] for x in private_bindings}),
+            "task_packages": len(private_bindings),
+            "collections": private_bindings,
             "files": entries(private),
         },
         immutable=True,
@@ -208,12 +260,13 @@ On the server, the directory is owned by ubuntu with directory mode 0700 and fil
     for f in private.rglob("*"):
         f.chmod(0o700 if f.is_dir() else 0o600)
     receipt = build_site(
-        data,
-        boards,
+        public / "data",
+        public / "leaderboards",
         output / "public-site",
         preview=True,
         companion_bundle=archive,
         base_path="/web/asd-test/",
+        collections_manifest=public / "COLLECTIONS.json",
     )
     write_json(
         output / "ASSEMBLY.json",
@@ -221,7 +274,8 @@ On the server, the directory is owned by ubuntu with directory mode 0700 and fil
             "software_version": __version__,
             "public_archive_sha256": file_sha(archive),
             "public_files": len(payload),
-            "private_scenarios": 40,
+            "private_scenarios": len({x["scenario_id"] for x in private_bindings}),
+            "private_task_packages": len(private_bindings),
             "static_site": receipt,
         },
         immutable=True,
@@ -239,5 +293,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ("project", "data", "boards", "vault", "output", "wheel"):
         parser.add_argument("--" + name, type=Path, required=True)
+    parser.add_argument(
+        "--packs",
+        type=Path,
+        help="Operator manifest of explicitly selected data/result/vault collections",
+    )
     a = parser.parse_args()
     print(json.dumps(build(**vars(a)), indent=2))

@@ -1,0 +1,2605 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0034424479817971587
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-048-mean-control",
+      "scenario_id": "P100-048",
+      "status": "complete",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.004589415970258415
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "linear_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-048-linear-control",
+      "scenario_id": "P100-048",
+      "status": "complete",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.009529041009955108
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-048-polynomial-control",
+      "scenario_id": "P100-048",
+      "status": "complete",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "accounting": {
+        "cpu_seconds": 0.07855699999999999,
+        "failed_fits": 0,
+        "fitting_attempts": 4,
+        "model_requests": 0,
+        "optimizer_evaluations": 25,
+        "residual_evaluations": 65,
+        "restarts": 2,
+        "structures": 2,
+        "wall_seconds": 0.07912316999863833
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "equation_search",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-048-equation-search",
+      "scenario_id": "P100-048",
+      "status": "complete",
+      "task_id": "P100-048.equations-v1"
+    },
+    {
+      "accounting": {
+        "cpu_seconds": 1.3119,
+        "failed_fits": 0,
+        "fitting_attempts": 12,
+        "model_requests": 2,
+        "optimizer_evaluations": 264,
+        "residual_evaluations": 1037,
+        "restarts": 6,
+        "structures": 6,
+        "wall_seconds": 22.296686121961102
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "equation_agent",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-048-equation-agent",
+      "scenario_id": "P100-048",
+      "status": "complete",
+      "task_id": "P100-048.equations-v1"
+    }
+  ],
+  "campaign_id": "equation-systems-local-v1",
+  "campaign_ids": [
+    "equation-systems-local-v1"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "eq-local-v1-p100-048-equation-search-system-1",
+    "eq-local-v1-p100-048-equation-agent-system-1",
+    "eq-local-v1-p100-048-mean-control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 46.91744509425451,
+        "primary": "mae",
+        "primary_error": 46.91744509425451,
+        "rmse": 53.41856152518616
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 74.40880937133676,
+      "by_group": [
+        {
+          "error": 40.941868656320786,
+          "group": "psu26001",
+          "rows": 24
+        },
+        {
+          "error": 50.68622604259401,
+          "group": "psu26002",
+          "rows": 24
+        },
+        {
+          "error": 37.99306944425109,
+          "group": "psu26003",
+          "rows": 24
+        },
+        {
+          "error": 58.14905034006322,
+          "group": "psu26004",
+          "rows": 24
+        },
+        {
+          "error": 54.05336218945214,
+          "group": "psu26005",
+          "rows": 24
+        },
+        {
+          "error": 56.63838781261314,
+          "group": "psu26006",
+          "rows": 24
+        },
+        {
+          "error": 76.75348496528318,
+          "group": "psu26007",
+          "rows": 24
+        },
+        {
+          "error": 38.39556820721685,
+          "group": "psu26008",
+          "rows": 24
+        },
+        {
+          "error": 40.895032274027585,
+          "group": "psu26009",
+          "rows": 24
+        },
+        {
+          "error": 47.63348426021819,
+          "group": "psu26010",
+          "rows": 24
+        },
+        {
+          "error": 49.462323476126016,
+          "group": "psu26011",
+          "rows": 24
+        },
+        {
+          "error": 31.745628039057646,
+          "group": "psu26012",
+          "rows": 24
+        },
+        {
+          "error": 20.338470373907338,
+          "group": "psu26013",
+          "rows": 24
+        },
+        {
+          "error": 44.56415269878469,
+          "group": "psu26014",
+          "rows": 24
+        },
+        {
+          "error": 50.66486159331507,
+          "group": "psu26015",
+          "rows": 24
+        },
+        {
+          "error": 38.268397968636336,
+          "group": "psu26016",
+          "rows": 24
+        },
+        {
+          "error": 51.95608026046609,
+          "group": "psu26017",
+          "rows": 24
+        },
+        {
+          "error": 42.26572567168186,
+          "group": "psu26018",
+          "rows": 24
+        },
+        {
+          "error": 33.4852991628543,
+          "group": "psu26019",
+          "rows": 24
+        },
+        {
+          "error": 26.693490008792054,
+          "group": "psu26020",
+          "rows": 24
+        },
+        {
+          "error": 28.576374667579028,
+          "group": "psu26021",
+          "rows": 24
+        },
+        {
+          "error": 50.23805490410819,
+          "group": "psu26022",
+          "rows": 24
+        },
+        {
+          "error": 22.180765630307405,
+          "group": "psu26023",
+          "rows": 24
+        },
+        {
+          "error": 19.239859208630463,
+          "group": "psu26024",
+          "rows": 24
+        },
+        {
+          "error": 58.75322162435899,
+          "group": "psu26025",
+          "rows": 24
+        },
+        {
+          "error": 48.855611893411435,
+          "group": "psu26026",
+          "rows": 24
+        },
+        {
+          "error": 28.27763833226304,
+          "group": "psu26027",
+          "rows": 24
+        },
+        {
+          "error": 20.585333120766126,
+          "group": "psu26028",
+          "rows": 24
+        },
+        {
+          "error": 19.382576879015314,
+          "group": "psu26029",
+          "rows": 24
+        },
+        {
+          "error": 20.93335862577453,
+          "group": "psu26030",
+          "rows": 24
+        },
+        {
+          "error": 29.0015498623511,
+          "group": "psu26031",
+          "rows": 24
+        },
+        {
+          "error": 57.92701818006333,
+          "group": "psu26182",
+          "rows": 24
+        },
+        {
+          "error": 52.84383972723091,
+          "group": "psu26183",
+          "rows": 24
+        },
+        {
+          "error": 56.50417130071418,
+          "group": "psu26184",
+          "rows": 24
+        },
+        {
+          "error": 50.348711204162505,
+          "group": "psu26185",
+          "rows": 24
+        },
+        {
+          "error": 71.00665926543003,
+          "group": "psu26186",
+          "rows": 24
+        },
+        {
+          "error": 88.75324718259075,
+          "group": "psu26187",
+          "rows": 24
+        },
+        {
+          "error": 93.96805590476943,
+          "group": "psu26188",
+          "rows": 24
+        },
+        {
+          "error": 75.38981349681781,
+          "group": "psu26189",
+          "rows": 24
+        },
+        {
+          "error": 61.36901835457442,
+          "group": "psu26190",
+          "rows": 24
+        },
+        {
+          "error": 70.920333667965,
+          "group": "psu26191",
+          "rows": 24
+        },
+        {
+          "error": 70.58100451536646,
+          "group": "psu26192",
+          "rows": 24
+        },
+        {
+          "error": 45.018369596833956,
+          "group": "psu26193",
+          "rows": 24
+        },
+        {
+          "error": 30.20134232821302,
+          "group": "psu26194",
+          "rows": 24
+        },
+        {
+          "error": 37.86327901102943,
+          "group": "psu26195",
+          "rows": 24
+        },
+        {
+          "error": 37.62740630855428,
+          "group": "psu26196",
+          "rows": 24
+        },
+        {
+          "error": 64.23292454935064,
+          "group": "psu26197",
+          "rows": 24
+        },
+        {
+          "error": 26.120952974141147,
+          "group": "psu26198",
+          "rows": 24
+        },
+        {
+          "error": 68.8313273555072,
+          "group": "psu26199",
+          "rows": 24
+        },
+        {
+          "error": 49.09181247371483,
+          "group": "psu26200",
+          "rows": 24
+        },
+        {
+          "error": 20.2830774596788,
+          "group": "psu26201",
+          "rows": 24
+        },
+        {
+          "error": 62.55948646606754,
+          "group": "psu26202",
+          "rows": 24
+        },
+        {
+          "error": 52.899327155805246,
+          "group": "psu26203",
+          "rows": 24
+        },
+        {
+          "error": 13.552577931467988,
+          "group": "psu26204",
+          "rows": 24
+        },
+        {
+          "error": 15.42711017579193,
+          "group": "psu26205",
+          "rows": 24
+        },
+        {
+          "error": 48.40459538147158,
+          "group": "psu26206",
+          "rows": 24
+        },
+        {
+          "error": 51.15855861829431,
+          "group": "psu26207",
+          "rows": 24
+        },
+        {
+          "error": 52.85497513591125,
+          "group": "psu26208",
+          "rows": 24
+        },
+        {
+          "error": 79.47950263630258,
+          "group": "psu26209",
+          "rows": 24
+        },
+        {
+          "error": 71.13990631758436,
+          "group": "psu26210",
+          "rows": 24
+        },
+        {
+          "error": 58.342539857626434,
+          "group": "psu26211",
+          "rows": 24
+        },
+        {
+          "error": 36.572343116520564,
+          "group": "psu26212",
+          "rows": 24
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 24.080588841524374,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "dra26182",
+              "loss": 9.933539966769196
+            },
+            {
+              "group": "dra26183",
+              "loss": 20.938081953561884
+            },
+            {
+              "group": "dra26184",
+              "loss": 28.38574951163319
+            },
+            {
+              "group": "dra26185",
+              "loss": 31.325120032376446
+            },
+            {
+              "group": "dra26186",
+              "loss": 26.89521515167853
+            },
+            {
+              "group": "dra26187",
+              "loss": 8.992916471170188
+            },
+            {
+              "group": "dra26188",
+              "loss": 12.34990871590985
+            },
+            {
+              "group": "dra26189",
+              "loss": 19.729856983923685
+            },
+            {
+              "group": "dra26190",
+              "loss": 30.40458449798486
+            },
+            {
+              "group": "dra26191",
+              "loss": 30.739403510738132
+            },
+            {
+              "group": "dra26192",
+              "loss": 23.63747765378351
+            },
+            {
+              "group": "dra26193",
+              "loss": 13.608776790960059
+            },
+            {
+              "group": "dra26194",
+              "loss": 37.76061393053296
+            },
+            {
+              "group": "dra26195",
+              "loss": 41.8128072677648
+            },
+            {
+              "group": "dra26196",
+              "loss": 26.244423868143837
+            },
+            {
+              "group": "dra26197",
+              "loss": 15.910821441628757
+            },
+            {
+              "group": "dra26198",
+              "loss": 23.194247525203938
+            },
+            {
+              "group": "dra26199",
+              "loss": 29.03045600141665
+            },
+            {
+              "group": "dra26200",
+              "loss": 30.808627304516282
+            },
+            {
+              "group": "dra26201",
+              "loss": 48.94455140785729
+            },
+            {
+              "group": "dra26202",
+              "loss": 34.128139175812116
+            },
+            {
+              "group": "dra26203",
+              "loss": 26.27958879602623
+            },
+            {
+              "group": "dra26204",
+              "loss": 16.276434805828096
+            },
+            {
+              "group": "dra26205",
+              "loss": 24.28805381040569
+            },
+            {
+              "group": "dra26206",
+              "loss": 11.126460755932257
+            },
+            {
+              "group": "dra26207",
+              "loss": 6.2233327891227574
+            },
+            {
+              "group": "dra26208",
+              "loss": 32.910605906428366
+            },
+            {
+              "group": "dra26209",
+              "loss": 9.058353723468109
+            },
+            {
+              "group": "dra26210",
+              "loss": 11.918049667644512
+            },
+            {
+              "group": "dra26211",
+              "loss": 34.6414281956213
+            },
+            {
+              "group": "dra26212",
+              "loss": 29.000626473412108
+            }
+          ],
+          "intermediate_ranges": {
+            "blackbody_irradiance": [
+              413.64694002576175,
+              550.174260742805
+            ],
+            "longwave_response": [
+              308.14088469482255,
+              409.8451288701654
+            ]
+          },
+          "residual_bias": -4.3791603676696464,
+          "residual_rmse": 28.92192529238433
+        },
+        "equation_system": {
+          "assumptions": [
+            "Near-surface temperature proxies the radiating atmosphere",
+            "Effective emissivity is constant across all retained conditions; clouds are unresolved"
+          ],
+          "constants": {
+            "sigma": {
+              "meaning": "Stefan-Boltzmann constant",
+              "source": "CODATA SI radiation constant",
+              "unit": "W/m2/K4",
+              "value": 5.670374419e-08
+            }
+          },
+          "name": "Gray-atmosphere emission",
+          "nodes": [
+            {
+              "expression": "sigma * temperature ** 4",
+              "id": "blackbody_irradiance",
+              "meaning": "Blackbody longwave irradiance at the measured near-surface temperature",
+              "unit": "W/m2"
+            },
+            {
+              "expression": "emissivity * blackbody_irradiance",
+              "id": "longwave_response",
+              "meaning": "Atmospheric longwave irradiance under an effective gray emissivity",
+              "unit": "W/m2"
+            }
+          ],
+          "output": "longwave_response",
+          "parameters": {
+            "emissivity": {
+              "bounds": [
+                0.05,
+                1
+              ],
+              "initial": 0.8,
+              "meaning": "Effective sky emissivity, conditional on sampled conditions",
+              "unit": "1"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "emissivity * (sigma * temperature ** 4)",
+        "fit_recipe": {
+          "development_rows": 744,
+          "log_coordinate_parameters": [
+            "emissivity"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared standardized residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 743
+        },
+        "identifiability": {
+          "condition_number": 1.0,
+          "parameters": 1,
+          "rank": 1,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "vapor_pressure"
+        ],
+        "method_id": "equation_search",
+        "method_version": "equation-search-v1",
+        "model_ids": [],
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "output": "target",
+        "parameters": {
+          "emissivity": 0.7449369374656359
+        },
+        "quantity_units": {
+          "target": "W/m2",
+          "temperature": "K",
+          "vapor_pressure": "Pa"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-048-equation-search-system-1",
+        "rule_sha256": "fa704a280cdbe5db8e894b4be1dc0bae126f957d21afe865c39e76a6efe3d46b",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 3,
+          "expanded_expression": "0.7449369374656359 * (sigma * temperature ** 4)",
+          "expression_bytes": 39,
+          "fixed_constants": 1,
+          "free_parameters": 1,
+          "intermediate_quantities": 1,
+          "learned_state_bytes": 34,
+          "literal_state_bytes": 1,
+          "nodes": 14,
+          "numeric_literal_count": 1,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 1,
+          "weighted_operator_count": 3
+        },
+        "task_id": "P100-048.equations-v1",
+        "train_error": 24.59808587390491
+      },
+      "coverage": {
+        "eligible": 1488,
+        "fraction": 1.0,
+        "predicted": 1488
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "emissivity * (sigma * temperature ** 4)",
+      "method_id": "equation_search",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-048-equation-search-system-1",
+      "rule_sha256": "fa704a280cdbe5db8e894b4be1dc0bae126f957d21afe865c39e76a6efe3d46b",
+      "run_id": "eq-local-v1-p100-048-equation-search",
+      "scenario_id": "P100-048",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 3,
+        "expanded_expression": "0.7449369374656359 * (sigma * temperature ** 4)",
+        "expression_bytes": 39,
+        "fixed_constants": 1,
+        "free_parameters": 1,
+        "intermediate_quantities": 1,
+        "learned_state_bytes": 34,
+        "literal_state_bytes": 1,
+        "nodes": 14,
+        "numeric_literal_count": 1,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 1,
+        "weighted_operator_count": 3
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.4355027377617162,
+        "perturbation_labels_available": false,
+        "population_rows": 1488,
+        "ranking": false,
+        "samples": 512,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-048.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 46.91744509425451,
+        "primary": "mae",
+        "primary_error": 46.91744509425451,
+        "rmse": 53.41856152518616
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 74.40880937133676,
+      "by_group": [
+        {
+          "error": 40.941868656320786,
+          "group": "psu26001",
+          "rows": 24
+        },
+        {
+          "error": 50.68622604259401,
+          "group": "psu26002",
+          "rows": 24
+        },
+        {
+          "error": 37.99306944425109,
+          "group": "psu26003",
+          "rows": 24
+        },
+        {
+          "error": 58.14905034006322,
+          "group": "psu26004",
+          "rows": 24
+        },
+        {
+          "error": 54.05336218945214,
+          "group": "psu26005",
+          "rows": 24
+        },
+        {
+          "error": 56.63838781261314,
+          "group": "psu26006",
+          "rows": 24
+        },
+        {
+          "error": 76.75348496528318,
+          "group": "psu26007",
+          "rows": 24
+        },
+        {
+          "error": 38.39556820721685,
+          "group": "psu26008",
+          "rows": 24
+        },
+        {
+          "error": 40.895032274027585,
+          "group": "psu26009",
+          "rows": 24
+        },
+        {
+          "error": 47.63348426021819,
+          "group": "psu26010",
+          "rows": 24
+        },
+        {
+          "error": 49.462323476126016,
+          "group": "psu26011",
+          "rows": 24
+        },
+        {
+          "error": 31.745628039057646,
+          "group": "psu26012",
+          "rows": 24
+        },
+        {
+          "error": 20.338470373907338,
+          "group": "psu26013",
+          "rows": 24
+        },
+        {
+          "error": 44.56415269878469,
+          "group": "psu26014",
+          "rows": 24
+        },
+        {
+          "error": 50.66486159331507,
+          "group": "psu26015",
+          "rows": 24
+        },
+        {
+          "error": 38.268397968636336,
+          "group": "psu26016",
+          "rows": 24
+        },
+        {
+          "error": 51.95608026046609,
+          "group": "psu26017",
+          "rows": 24
+        },
+        {
+          "error": 42.26572567168186,
+          "group": "psu26018",
+          "rows": 24
+        },
+        {
+          "error": 33.4852991628543,
+          "group": "psu26019",
+          "rows": 24
+        },
+        {
+          "error": 26.693490008792054,
+          "group": "psu26020",
+          "rows": 24
+        },
+        {
+          "error": 28.576374667579028,
+          "group": "psu26021",
+          "rows": 24
+        },
+        {
+          "error": 50.23805490410819,
+          "group": "psu26022",
+          "rows": 24
+        },
+        {
+          "error": 22.180765630307405,
+          "group": "psu26023",
+          "rows": 24
+        },
+        {
+          "error": 19.239859208630463,
+          "group": "psu26024",
+          "rows": 24
+        },
+        {
+          "error": 58.75322162435899,
+          "group": "psu26025",
+          "rows": 24
+        },
+        {
+          "error": 48.855611893411435,
+          "group": "psu26026",
+          "rows": 24
+        },
+        {
+          "error": 28.27763833226304,
+          "group": "psu26027",
+          "rows": 24
+        },
+        {
+          "error": 20.585333120766126,
+          "group": "psu26028",
+          "rows": 24
+        },
+        {
+          "error": 19.382576879015314,
+          "group": "psu26029",
+          "rows": 24
+        },
+        {
+          "error": 20.93335862577453,
+          "group": "psu26030",
+          "rows": 24
+        },
+        {
+          "error": 29.0015498623511,
+          "group": "psu26031",
+          "rows": 24
+        },
+        {
+          "error": 57.92701818006333,
+          "group": "psu26182",
+          "rows": 24
+        },
+        {
+          "error": 52.84383972723091,
+          "group": "psu26183",
+          "rows": 24
+        },
+        {
+          "error": 56.50417130071418,
+          "group": "psu26184",
+          "rows": 24
+        },
+        {
+          "error": 50.348711204162505,
+          "group": "psu26185",
+          "rows": 24
+        },
+        {
+          "error": 71.00665926543003,
+          "group": "psu26186",
+          "rows": 24
+        },
+        {
+          "error": 88.75324718259075,
+          "group": "psu26187",
+          "rows": 24
+        },
+        {
+          "error": 93.96805590476943,
+          "group": "psu26188",
+          "rows": 24
+        },
+        {
+          "error": 75.38981349681781,
+          "group": "psu26189",
+          "rows": 24
+        },
+        {
+          "error": 61.36901835457442,
+          "group": "psu26190",
+          "rows": 24
+        },
+        {
+          "error": 70.920333667965,
+          "group": "psu26191",
+          "rows": 24
+        },
+        {
+          "error": 70.58100451536646,
+          "group": "psu26192",
+          "rows": 24
+        },
+        {
+          "error": 45.018369596833956,
+          "group": "psu26193",
+          "rows": 24
+        },
+        {
+          "error": 30.20134232821302,
+          "group": "psu26194",
+          "rows": 24
+        },
+        {
+          "error": 37.86327901102943,
+          "group": "psu26195",
+          "rows": 24
+        },
+        {
+          "error": 37.62740630855428,
+          "group": "psu26196",
+          "rows": 24
+        },
+        {
+          "error": 64.23292454935064,
+          "group": "psu26197",
+          "rows": 24
+        },
+        {
+          "error": 26.120952974141147,
+          "group": "psu26198",
+          "rows": 24
+        },
+        {
+          "error": 68.8313273555072,
+          "group": "psu26199",
+          "rows": 24
+        },
+        {
+          "error": 49.09181247371483,
+          "group": "psu26200",
+          "rows": 24
+        },
+        {
+          "error": 20.2830774596788,
+          "group": "psu26201",
+          "rows": 24
+        },
+        {
+          "error": 62.55948646606754,
+          "group": "psu26202",
+          "rows": 24
+        },
+        {
+          "error": 52.899327155805246,
+          "group": "psu26203",
+          "rows": 24
+        },
+        {
+          "error": 13.552577931467988,
+          "group": "psu26204",
+          "rows": 24
+        },
+        {
+          "error": 15.42711017579193,
+          "group": "psu26205",
+          "rows": 24
+        },
+        {
+          "error": 48.40459538147158,
+          "group": "psu26206",
+          "rows": 24
+        },
+        {
+          "error": 51.15855861829431,
+          "group": "psu26207",
+          "rows": 24
+        },
+        {
+          "error": 52.85497513591125,
+          "group": "psu26208",
+          "rows": 24
+        },
+        {
+          "error": 79.47950263630258,
+          "group": "psu26209",
+          "rows": 24
+        },
+        {
+          "error": 71.13990631758436,
+          "group": "psu26210",
+          "rows": 24
+        },
+        {
+          "error": 58.342539857626434,
+          "group": "psu26211",
+          "rows": 24
+        },
+        {
+          "error": 36.572343116520564,
+          "group": "psu26212",
+          "rows": 24
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 24.080588841524374,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "dra26182",
+              "loss": 9.933539966769196
+            },
+            {
+              "group": "dra26183",
+              "loss": 20.938081953561884
+            },
+            {
+              "group": "dra26184",
+              "loss": 28.38574951163319
+            },
+            {
+              "group": "dra26185",
+              "loss": 31.325120032376446
+            },
+            {
+              "group": "dra26186",
+              "loss": 26.89521515167853
+            },
+            {
+              "group": "dra26187",
+              "loss": 8.992916471170188
+            },
+            {
+              "group": "dra26188",
+              "loss": 12.34990871590985
+            },
+            {
+              "group": "dra26189",
+              "loss": 19.729856983923685
+            },
+            {
+              "group": "dra26190",
+              "loss": 30.40458449798486
+            },
+            {
+              "group": "dra26191",
+              "loss": 30.739403510738132
+            },
+            {
+              "group": "dra26192",
+              "loss": 23.63747765378351
+            },
+            {
+              "group": "dra26193",
+              "loss": 13.608776790960059
+            },
+            {
+              "group": "dra26194",
+              "loss": 37.76061393053296
+            },
+            {
+              "group": "dra26195",
+              "loss": 41.8128072677648
+            },
+            {
+              "group": "dra26196",
+              "loss": 26.244423868143837
+            },
+            {
+              "group": "dra26197",
+              "loss": 15.910821441628757
+            },
+            {
+              "group": "dra26198",
+              "loss": 23.194247525203938
+            },
+            {
+              "group": "dra26199",
+              "loss": 29.03045600141665
+            },
+            {
+              "group": "dra26200",
+              "loss": 30.808627304516282
+            },
+            {
+              "group": "dra26201",
+              "loss": 48.94455140785729
+            },
+            {
+              "group": "dra26202",
+              "loss": 34.128139175812116
+            },
+            {
+              "group": "dra26203",
+              "loss": 26.27958879602623
+            },
+            {
+              "group": "dra26204",
+              "loss": 16.276434805828096
+            },
+            {
+              "group": "dra26205",
+              "loss": 24.28805381040569
+            },
+            {
+              "group": "dra26206",
+              "loss": 11.126460755932257
+            },
+            {
+              "group": "dra26207",
+              "loss": 6.2233327891227574
+            },
+            {
+              "group": "dra26208",
+              "loss": 32.910605906428366
+            },
+            {
+              "group": "dra26209",
+              "loss": 9.058353723468109
+            },
+            {
+              "group": "dra26210",
+              "loss": 11.918049667644512
+            },
+            {
+              "group": "dra26211",
+              "loss": 34.6414281956213
+            },
+            {
+              "group": "dra26212",
+              "loss": 29.000626473412108
+            }
+          ],
+          "intermediate_ranges": {
+            "blackbody_irradiance": [
+              413.64694002576175,
+              550.174260742805
+            ],
+            "longwave_response": [
+              308.14088469482255,
+              409.8451288701654
+            ]
+          },
+          "residual_bias": -4.3791603676696464,
+          "residual_rmse": 28.92192529238433
+        },
+        "equation_system": {
+          "assumptions": [
+            "Near-surface temperature proxies the radiating atmosphere",
+            "Effective emissivity is constant across all retained conditions; clouds are unresolved"
+          ],
+          "constants": {
+            "sigma": {
+              "meaning": "Stefan-Boltzmann constant",
+              "source": "CODATA SI radiation constant",
+              "unit": "W/m2/K4",
+              "value": 5.670374419e-08
+            }
+          },
+          "name": "Gray-atmosphere emission",
+          "nodes": [
+            {
+              "expression": "sigma * temperature ** 4",
+              "id": "blackbody_irradiance",
+              "meaning": "Blackbody longwave irradiance at the measured near-surface temperature",
+              "unit": "W/m2"
+            },
+            {
+              "expression": "emissivity * blackbody_irradiance",
+              "id": "longwave_response",
+              "meaning": "Atmospheric longwave irradiance under an effective gray emissivity",
+              "unit": "W/m2"
+            }
+          ],
+          "output": "longwave_response",
+          "parameters": {
+            "emissivity": {
+              "bounds": [
+                0.05,
+                1
+              ],
+              "initial": 0.8,
+              "meaning": "Effective sky emissivity, conditional on sampled conditions",
+              "unit": "1"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "emissivity * (sigma * temperature ** 4)",
+        "fit_recipe": {
+          "development_rows": 744,
+          "log_coordinate_parameters": [
+            "emissivity"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared standardized residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 743
+        },
+        "identifiability": {
+          "condition_number": 1.0,
+          "parameters": 1,
+          "rank": 1,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "vapor_pressure"
+        ],
+        "method_id": "equation_agent",
+        "method_version": "equation-search-v1",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "output": "target",
+        "parameters": {
+          "emissivity": 0.7449369374656359
+        },
+        "quantity_units": {
+          "target": "W/m2",
+          "temperature": "K",
+          "vapor_pressure": "Pa"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-048-equation-agent-system-1",
+        "rule_sha256": "21b412abdc835fd717e92d89f2e8804f0edf9a963613e0bea9c0861eb1ac2c45",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 3,
+          "expanded_expression": "0.7449369374656359 * (sigma * temperature ** 4)",
+          "expression_bytes": 39,
+          "fixed_constants": 1,
+          "free_parameters": 1,
+          "intermediate_quantities": 1,
+          "learned_state_bytes": 34,
+          "literal_state_bytes": 1,
+          "nodes": 14,
+          "numeric_literal_count": 1,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 1,
+          "weighted_operator_count": 3
+        },
+        "task_id": "P100-048.equations-v1",
+        "train_error": 24.59808587390491
+      },
+      "coverage": {
+        "eligible": 1488,
+        "fraction": 1.0,
+        "predicted": 1488
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "emissivity * (sigma * temperature ** 4)",
+      "method_id": "equation_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "eq-local-v1-p100-048-equation-agent-system-1",
+      "rule_sha256": "21b412abdc835fd717e92d89f2e8804f0edf9a963613e0bea9c0861eb1ac2c45",
+      "run_id": "eq-local-v1-p100-048-equation-agent",
+      "scenario_id": "P100-048",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 3,
+        "expanded_expression": "0.7449369374656359 * (sigma * temperature ** 4)",
+        "expression_bytes": 39,
+        "fixed_constants": 1,
+        "free_parameters": 1,
+        "intermediate_quantities": 1,
+        "learned_state_bytes": 34,
+        "literal_state_bytes": 1,
+        "nodes": 14,
+        "numeric_literal_count": 1,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 1,
+        "weighted_operator_count": 3
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.4355027377617162,
+        "perturbation_labels_available": false,
+        "population_rows": 1488,
+        "ranking": false,
+        "samples": 512,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-048.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 62.377740509709184,
+        "primary": "mae",
+        "primary_error": 62.377740509709184,
+        "rmse": 72.50007435311807
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 74.40880937133676,
+      "by_group": [
+        {
+          "error": 39.43068703240736,
+          "group": "psu26001",
+          "rows": 24
+        },
+        {
+          "error": 58.96570214220646,
+          "group": "psu26002",
+          "rows": 24
+        },
+        {
+          "error": 46.31234218623189,
+          "group": "psu26003",
+          "rows": 24
+        },
+        {
+          "error": 60.73679845053973,
+          "group": "psu26004",
+          "rows": 24
+        },
+        {
+          "error": 52.54365049520002,
+          "group": "psu26005",
+          "rows": 24
+        },
+        {
+          "error": 45.4419787337182,
+          "group": "psu26006",
+          "rows": 24
+        },
+        {
+          "error": 44.713890269348134,
+          "group": "psu26007",
+          "rows": 24
+        },
+        {
+          "error": 32.31127388728827,
+          "group": "psu26008",
+          "rows": 24
+        },
+        {
+          "error": 23.83740409288649,
+          "group": "psu26009",
+          "rows": 24
+        },
+        {
+          "error": 34.87023434537662,
+          "group": "psu26010",
+          "rows": 24
+        },
+        {
+          "error": 35.5824143352611,
+          "group": "psu26011",
+          "rows": 24
+        },
+        {
+          "error": 31.99056997007141,
+          "group": "psu26012",
+          "rows": 24
+        },
+        {
+          "error": 20.725283344183975,
+          "group": "psu26013",
+          "rows": 24
+        },
+        {
+          "error": 29.064120187698688,
+          "group": "psu26014",
+          "rows": 24
+        },
+        {
+          "error": 46.29473388560873,
+          "group": "psu26015",
+          "rows": 24
+        },
+        {
+          "error": 46.842501901319956,
+          "group": "psu26016",
+          "rows": 24
+        },
+        {
+          "error": 53.260187096927986,
+          "group": "psu26017",
+          "rows": 24
+        },
+        {
+          "error": 39.959626487999515,
+          "group": "psu26018",
+          "rows": 24
+        },
+        {
+          "error": 37.85854957082973,
+          "group": "psu26019",
+          "rows": 24
+        },
+        {
+          "error": 11.114462577395367,
+          "group": "psu26020",
+          "rows": 24
+        },
+        {
+          "error": 27.23852957967519,
+          "group": "psu26021",
+          "rows": 24
+        },
+        {
+          "error": 40.26811307096136,
+          "group": "psu26022",
+          "rows": 24
+        },
+        {
+          "error": 6.902015281604631,
+          "group": "psu26023",
+          "rows": 24
+        },
+        {
+          "error": 19.625212554427605,
+          "group": "psu26024",
+          "rows": 24
+        },
+        {
+          "error": 71.39984634727524,
+          "group": "psu26025",
+          "rows": 24
+        },
+        {
+          "error": 56.574289980795726,
+          "group": "psu26026",
+          "rows": 24
+        },
+        {
+          "error": 33.84416420066777,
+          "group": "psu26027",
+          "rows": 24
+        },
+        {
+          "error": 24.446927382129157,
+          "group": "psu26028",
+          "rows": 24
+        },
+        {
+          "error": 31.09302203019863,
+          "group": "psu26029",
+          "rows": 24
+        },
+        {
+          "error": 6.29829862402844,
+          "group": "psu26030",
+          "rows": 24
+        },
+        {
+          "error": 36.456679490012036,
+          "group": "psu26031",
+          "rows": 24
+        },
+        {
+          "error": 138.1516895534983,
+          "group": "psu26182",
+          "rows": 24
+        },
+        {
+          "error": 137.5480082045809,
+          "group": "psu26183",
+          "rows": 24
+        },
+        {
+          "error": 131.1215663256279,
+          "group": "psu26184",
+          "rows": 24
+        },
+        {
+          "error": 100.61102416748997,
+          "group": "psu26185",
+          "rows": 24
+        },
+        {
+          "error": 97.22775984081676,
+          "group": "psu26186",
+          "rows": 24
+        },
+        {
+          "error": 88.16462089295965,
+          "group": "psu26187",
+          "rows": 24
+        },
+        {
+          "error": 71.73842504447477,
+          "group": "psu26188",
+          "rows": 24
+        },
+        {
+          "error": 90.24630858546685,
+          "group": "psu26189",
+          "rows": 24
+        },
+        {
+          "error": 106.72153871108758,
+          "group": "psu26190",
+          "rows": 24
+        },
+        {
+          "error": 98.55787144890458,
+          "group": "psu26191",
+          "rows": 24
+        },
+        {
+          "error": 90.23909416203553,
+          "group": "psu26192",
+          "rows": 24
+        },
+        {
+          "error": 97.47760519881518,
+          "group": "psu26193",
+          "rows": 24
+        },
+        {
+          "error": 86.7113514766272,
+          "group": "psu26194",
+          "rows": 24
+        },
+        {
+          "error": 99.09201040653672,
+          "group": "psu26195",
+          "rows": 24
+        },
+        {
+          "error": 123.09596337171475,
+          "group": "psu26196",
+          "rows": 24
+        },
+        {
+          "error": 112.4537636332909,
+          "group": "psu26197",
+          "rows": 24
+        },
+        {
+          "error": 88.65226506556856,
+          "group": "psu26198",
+          "rows": 24
+        },
+        {
+          "error": 86.05151852551215,
+          "group": "psu26199",
+          "rows": 24
+        },
+        {
+          "error": 69.37205592470723,
+          "group": "psu26200",
+          "rows": 24
+        },
+        {
+          "error": 77.66008408373268,
+          "group": "psu26201",
+          "rows": 24
+        },
+        {
+          "error": 84.90744237953811,
+          "group": "psu26202",
+          "rows": 24
+        },
+        {
+          "error": 66.3241358929295,
+          "group": "psu26203",
+          "rows": 24
+        },
+        {
+          "error": 55.63959206954517,
+          "group": "psu26204",
+          "rows": 24
+        },
+        {
+          "error": 59.75293172646798,
+          "group": "psu26205",
+          "rows": 24
+        },
+        {
+          "error": 51.64392831905127,
+          "group": "psu26206",
+          "rows": 24
+        },
+        {
+          "error": 63.02010681834111,
+          "group": "psu26207",
+          "rows": 24
+        },
+        {
+          "error": 80.69271234587696,
+          "group": "psu26208",
+          "rows": 24
+        },
+        {
+          "error": 82.88495883821226,
+          "group": "psu26209",
+          "rows": 24
+        },
+        {
+          "error": 63.55880522743127,
+          "group": "psu26210",
+          "rows": 24
+        },
+        {
+          "error": 43.71763482909461,
+          "group": "psu26211",
+          "rows": 24
+        },
+        {
+          "error": 78.3796289977583,
+          "group": "psu26212",
+          "rows": 24
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 17.98905523271239,
+        "execution_status": "complete",
+        "expression": "p0+p1*(temperature)+p2*(vapor_pressure)",
+        "inputs": [
+          "temperature",
+          "vapor_pressure"
+        ],
+        "method_id": "linear_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "linear",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -519.5678901391205,
+          "p1": 2.6249088681422243,
+          "p2": 0.10353414882251001
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "temperature": -0.22971363242885592,
+            "vapor_pressure": 0.6293547579209772
+          },
+          "mean": -9.938428944226336,
+          "p90_abs": 34.20129714581605,
+          "std": 19.795217646477
+        },
+        "rule_id": "eq-local-v1-p100-048-linear-control-rule-1",
+        "rule_sha256": "b6e02af14ee1a918e83c2bdcc046ec888e48ae51aaf3e8522cb359bb79814a19",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-519.5678901391205 + 2.6249088681422243 * temperature + 0.10353414882251001 * vapor_pressure",
+          "expression_bytes": 39,
+          "free_parameters": 3,
+          "learned_state_bytes": 79,
+          "literal_state_bytes": 0,
+          "nodes": 19,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-048.equations-v1",
+        "train_error": 13.35923903999532,
+        "units": {
+          "inputs": {},
+          "output": null,
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1488,
+        "fraction": 1.0,
+        "predicted": 1488
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(temperature)+p2*(vapor_pressure)",
+      "method_id": "linear_control",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-048-linear-control-rule-1",
+      "rule_sha256": "b6e02af14ee1a918e83c2bdcc046ec888e48ae51aaf3e8522cb359bb79814a19",
+      "run_id": "eq-local-v1-p100-048-linear-control",
+      "scenario_id": "P100-048",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-519.5678901391205 + 2.6249088681422243 * temperature + 0.10353414882251001 * vapor_pressure",
+        "expression_bytes": 39,
+        "free_parameters": 3,
+        "learned_state_bytes": 79,
+        "literal_state_bytes": 0,
+        "nodes": 19,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 1.6941657999211288,
+        "perturbation_labels_available": false,
+        "population_rows": 1488,
+        "ranking": false,
+        "samples": 512,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-048.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 62.377740509709184,
+        "primary": "mae",
+        "primary_error": 62.377740509709184,
+        "rmse": 72.50007435311807
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 74.40880937133676,
+      "by_group": [
+        {
+          "error": 39.43068703240736,
+          "group": "psu26001",
+          "rows": 24
+        },
+        {
+          "error": 58.96570214220646,
+          "group": "psu26002",
+          "rows": 24
+        },
+        {
+          "error": 46.31234218623189,
+          "group": "psu26003",
+          "rows": 24
+        },
+        {
+          "error": 60.73679845053973,
+          "group": "psu26004",
+          "rows": 24
+        },
+        {
+          "error": 52.54365049520002,
+          "group": "psu26005",
+          "rows": 24
+        },
+        {
+          "error": 45.4419787337182,
+          "group": "psu26006",
+          "rows": 24
+        },
+        {
+          "error": 44.713890269348134,
+          "group": "psu26007",
+          "rows": 24
+        },
+        {
+          "error": 32.31127388728827,
+          "group": "psu26008",
+          "rows": 24
+        },
+        {
+          "error": 23.83740409288649,
+          "group": "psu26009",
+          "rows": 24
+        },
+        {
+          "error": 34.87023434537662,
+          "group": "psu26010",
+          "rows": 24
+        },
+        {
+          "error": 35.5824143352611,
+          "group": "psu26011",
+          "rows": 24
+        },
+        {
+          "error": 31.99056997007141,
+          "group": "psu26012",
+          "rows": 24
+        },
+        {
+          "error": 20.725283344183975,
+          "group": "psu26013",
+          "rows": 24
+        },
+        {
+          "error": 29.064120187698688,
+          "group": "psu26014",
+          "rows": 24
+        },
+        {
+          "error": 46.29473388560873,
+          "group": "psu26015",
+          "rows": 24
+        },
+        {
+          "error": 46.842501901319956,
+          "group": "psu26016",
+          "rows": 24
+        },
+        {
+          "error": 53.260187096927986,
+          "group": "psu26017",
+          "rows": 24
+        },
+        {
+          "error": 39.959626487999515,
+          "group": "psu26018",
+          "rows": 24
+        },
+        {
+          "error": 37.85854957082973,
+          "group": "psu26019",
+          "rows": 24
+        },
+        {
+          "error": 11.114462577395367,
+          "group": "psu26020",
+          "rows": 24
+        },
+        {
+          "error": 27.23852957967519,
+          "group": "psu26021",
+          "rows": 24
+        },
+        {
+          "error": 40.26811307096136,
+          "group": "psu26022",
+          "rows": 24
+        },
+        {
+          "error": 6.902015281604631,
+          "group": "psu26023",
+          "rows": 24
+        },
+        {
+          "error": 19.625212554427605,
+          "group": "psu26024",
+          "rows": 24
+        },
+        {
+          "error": 71.39984634727524,
+          "group": "psu26025",
+          "rows": 24
+        },
+        {
+          "error": 56.574289980795726,
+          "group": "psu26026",
+          "rows": 24
+        },
+        {
+          "error": 33.84416420066777,
+          "group": "psu26027",
+          "rows": 24
+        },
+        {
+          "error": 24.446927382129157,
+          "group": "psu26028",
+          "rows": 24
+        },
+        {
+          "error": 31.09302203019863,
+          "group": "psu26029",
+          "rows": 24
+        },
+        {
+          "error": 6.29829862402844,
+          "group": "psu26030",
+          "rows": 24
+        },
+        {
+          "error": 36.456679490012036,
+          "group": "psu26031",
+          "rows": 24
+        },
+        {
+          "error": 138.1516895534983,
+          "group": "psu26182",
+          "rows": 24
+        },
+        {
+          "error": 137.5480082045809,
+          "group": "psu26183",
+          "rows": 24
+        },
+        {
+          "error": 131.1215663256279,
+          "group": "psu26184",
+          "rows": 24
+        },
+        {
+          "error": 100.61102416748997,
+          "group": "psu26185",
+          "rows": 24
+        },
+        {
+          "error": 97.22775984081676,
+          "group": "psu26186",
+          "rows": 24
+        },
+        {
+          "error": 88.16462089295965,
+          "group": "psu26187",
+          "rows": 24
+        },
+        {
+          "error": 71.73842504447477,
+          "group": "psu26188",
+          "rows": 24
+        },
+        {
+          "error": 90.24630858546685,
+          "group": "psu26189",
+          "rows": 24
+        },
+        {
+          "error": 106.72153871108758,
+          "group": "psu26190",
+          "rows": 24
+        },
+        {
+          "error": 98.55787144890458,
+          "group": "psu26191",
+          "rows": 24
+        },
+        {
+          "error": 90.23909416203553,
+          "group": "psu26192",
+          "rows": 24
+        },
+        {
+          "error": 97.47760519881518,
+          "group": "psu26193",
+          "rows": 24
+        },
+        {
+          "error": 86.7113514766272,
+          "group": "psu26194",
+          "rows": 24
+        },
+        {
+          "error": 99.09201040653672,
+          "group": "psu26195",
+          "rows": 24
+        },
+        {
+          "error": 123.09596337171475,
+          "group": "psu26196",
+          "rows": 24
+        },
+        {
+          "error": 112.4537636332909,
+          "group": "psu26197",
+          "rows": 24
+        },
+        {
+          "error": 88.65226506556856,
+          "group": "psu26198",
+          "rows": 24
+        },
+        {
+          "error": 86.05151852551215,
+          "group": "psu26199",
+          "rows": 24
+        },
+        {
+          "error": 69.37205592470723,
+          "group": "psu26200",
+          "rows": 24
+        },
+        {
+          "error": 77.66008408373268,
+          "group": "psu26201",
+          "rows": 24
+        },
+        {
+          "error": 84.90744237953811,
+          "group": "psu26202",
+          "rows": 24
+        },
+        {
+          "error": 66.3241358929295,
+          "group": "psu26203",
+          "rows": 24
+        },
+        {
+          "error": 55.63959206954517,
+          "group": "psu26204",
+          "rows": 24
+        },
+        {
+          "error": 59.75293172646798,
+          "group": "psu26205",
+          "rows": 24
+        },
+        {
+          "error": 51.64392831905127,
+          "group": "psu26206",
+          "rows": 24
+        },
+        {
+          "error": 63.02010681834111,
+          "group": "psu26207",
+          "rows": 24
+        },
+        {
+          "error": 80.69271234587696,
+          "group": "psu26208",
+          "rows": 24
+        },
+        {
+          "error": 82.88495883821226,
+          "group": "psu26209",
+          "rows": 24
+        },
+        {
+          "error": 63.55880522743127,
+          "group": "psu26210",
+          "rows": 24
+        },
+        {
+          "error": 43.71763482909461,
+          "group": "psu26211",
+          "rows": 24
+        },
+        {
+          "error": 78.3796289977583,
+          "group": "psu26212",
+          "rows": 24
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 17.98905523271239,
+        "execution_status": "complete",
+        "expression": "p0+p1*(temperature)+p2*(vapor_pressure)",
+        "inputs": [
+          "temperature",
+          "vapor_pressure"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-1",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": -519.5678901391205,
+          "p1": 2.6249088681422243,
+          "p2": 0.10353414882251001
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "temperature": -0.22971363242885592,
+            "vapor_pressure": 0.6293547579209772
+          },
+          "mean": -9.938428944226336,
+          "p90_abs": 34.20129714581605,
+          "std": 19.795217646477
+        },
+        "rule_id": "eq-local-v1-p100-048-polynomial-control-rule-1",
+        "rule_sha256": "14c1e6a89001b7d72a956d8ce04ab52ff69285045b2feace41564601c4d53f81",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "-519.5678901391205 + 2.6249088681422243 * temperature + 0.10353414882251001 * vapor_pressure",
+          "expression_bytes": 39,
+          "free_parameters": 3,
+          "learned_state_bytes": 79,
+          "literal_state_bytes": 0,
+          "nodes": 19,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 4
+        },
+        "task_id": "P100-048.equations-v1",
+        "train_error": 13.35923903999532,
+        "units": {
+          "inputs": {},
+          "output": null,
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1488,
+        "fraction": 1.0,
+        "predicted": 1488
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(temperature)+p2*(vapor_pressure)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-048-polynomial-control-rule-1",
+      "rule_sha256": "14c1e6a89001b7d72a956d8ce04ab52ff69285045b2feace41564601c4d53f81",
+      "run_id": "eq-local-v1-p100-048-polynomial-control",
+      "scenario_id": "P100-048",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "-519.5678901391205 + 2.6249088681422243 * temperature + 0.10353414882251001 * vapor_pressure",
+        "expression_bytes": 39,
+        "free_parameters": 3,
+        "learned_state_bytes": 79,
+        "literal_state_bytes": 0,
+        "nodes": 19,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 4
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 1.6941657999211288,
+        "perturbation_labels_available": false,
+        "population_rows": 1488,
+        "ranking": false,
+        "samples": 512,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-048.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 74.40880937133676,
+        "primary": "mae",
+        "primary_error": 74.40880937133676,
+        "rmse": 87.55176055818193
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 74.40880937133676,
+      "by_group": [
+        {
+          "error": 39.624624270973534,
+          "group": "psu26001",
+          "rows": 24
+        },
+        {
+          "error": 8.68372588604756,
+          "group": "psu26002",
+          "rows": 24
+        },
+        {
+          "error": 18.875392552714228,
+          "group": "psu26003",
+          "rows": 24
+        },
+        {
+          "error": 10.441274113952444,
+          "group": "psu26004",
+          "rows": 24
+        },
+        {
+          "error": 14.713627187079405,
+          "group": "psu26005",
+          "rows": 24
+        },
+        {
+          "error": 26.869689322566177,
+          "group": "psu26006",
+          "rows": 24
+        },
+        {
+          "error": 60.46058770749215,
+          "group": "psu26007",
+          "rows": 24
+        },
+        {
+          "error": 31.373480260206367,
+          "group": "psu26008",
+          "rows": 24
+        },
+        {
+          "error": 36.01400291610587,
+          "group": "psu26009",
+          "rows": 24
+        },
+        {
+          "error": 34.961355989232835,
+          "group": "psu26010",
+          "rows": 24
+        },
+        {
+          "error": 33.05681359353971,
+          "group": "psu26011",
+          "rows": 24
+        },
+        {
+          "error": 19.82424854194706,
+          "group": "psu26012",
+          "rows": 24
+        },
+        {
+          "error": 35.1719773441005,
+          "group": "psu26013",
+          "rows": 24
+        },
+        {
+          "error": 37.542793853746076,
+          "group": "psu26014",
+          "rows": 24
+        },
+        {
+          "error": 29.831062135486764,
+          "group": "psu26015",
+          "rows": 24
+        },
+        {
+          "error": 27.36364401076716,
+          "group": "psu26016",
+          "rows": 24
+        },
+        {
+          "error": 21.63029385374608,
+          "group": "psu26017",
+          "rows": 24
+        },
+        {
+          "error": 21.275,
+          "group": "psu26018",
+          "rows": 24
+        },
+        {
+          "error": 29.83145468820098,
+          "group": "psu26019",
+          "rows": 24
+        },
+        {
+          "error": 97.70191229250786,
+          "group": "psu26020",
+          "rows": 24
+        },
+        {
+          "error": 66.25303947958726,
+          "group": "psu26021",
+          "rows": 24
+        },
+        {
+          "error": 37.83598026020637,
+          "group": "psu26022",
+          "rows": 24
+        },
+        {
+          "error": 70.5727456258412,
+          "group": "psu26023",
+          "rows": 24
+        },
+        {
+          "error": 88.15607895917452,
+          "group": "psu26024",
+          "rows": 24
+        },
+        {
+          "error": 17.810245625841187,
+          "group": "psu26025",
+          "rows": 24
+        },
+        {
+          "error": 23.150016823687753,
+          "group": "psu26026",
+          "rows": 24
+        },
+        {
+          "error": 54.46857895917452,
+          "group": "psu26027",
+          "rows": 24
+        },
+        {
+          "error": 67.93107895917451,
+          "group": "psu26028",
+          "rows": 24
+        },
+        {
+          "error": 63.443578959174516,
+          "group": "psu26029",
+          "rows": 24
+        },
+        {
+          "error": 104.48524562584119,
+          "group": "psu26030",
+          "rows": 24
+        },
+        {
+          "error": 59.88524562584118,
+          "group": "psu26031",
+          "rows": 24
+        },
+        {
+          "error": 136.26058770749214,
+          "group": "psu26182",
+          "rows": 24
+        },
+        {
+          "error": 130.50225437415884,
+          "group": "psu26183",
+          "rows": 24
+        },
+        {
+          "error": 137.1397543741588,
+          "group": "psu26184",
+          "rows": 24
+        },
+        {
+          "error": 118.27308770749214,
+          "group": "psu26185",
+          "rows": 24
+        },
+        {
+          "error": 124.07308770749215,
+          "group": "psu26186",
+          "rows": 24
+        },
+        {
+          "error": 139.5772543741588,
+          "group": "psu26187",
+          "rows": 24
+        },
+        {
+          "error": 141.8939210408255,
+          "group": "psu26188",
+          "rows": 24
+        },
+        {
+          "error": 127.63975437415881,
+          "group": "psu26189",
+          "rows": 24
+        },
+        {
+          "error": 123.78558770749214,
+          "group": "psu26190",
+          "rows": 24
+        },
+        {
+          "error": 123.0647543741588,
+          "group": "psu26191",
+          "rows": 24
+        },
+        {
+          "error": 125.11058770749214,
+          "group": "psu26192",
+          "rows": 24
+        },
+        {
+          "error": 99.72308770749214,
+          "group": "psu26193",
+          "rows": 24
+        },
+        {
+          "error": 86.26892104082549,
+          "group": "psu26194",
+          "rows": 24
+        },
+        {
+          "error": 99.96892104082548,
+          "group": "psu26195",
+          "rows": 24
+        },
+        {
+          "error": 110.20225437415881,
+          "group": "psu26196",
+          "rows": 24
+        },
+        {
+          "error": 134.1064210408255,
+          "group": "psu26197",
+          "rows": 24
+        },
+        {
+          "error": 76.39808770749215,
+          "group": "psu26198",
+          "rows": 24
+        },
+        {
+          "error": 114.13558770749215,
+          "group": "psu26199",
+          "rows": 24
+        },
+        {
+          "error": 94.77308770749214,
+          "group": "psu26200",
+          "rows": 24
+        },
+        {
+          "error": 57.918921040825474,
+          "group": "psu26201",
+          "rows": 24
+        },
+        {
+          "error": 115.60225437415882,
+          "group": "psu26202",
+          "rows": 24
+        },
+        {
+          "error": 98.18142104082547,
+          "group": "psu26203",
+          "rows": 24
+        },
+        {
+          "error": 35.56058770749215,
+          "group": "psu26204",
+          "rows": 24
+        },
+        {
+          "error": 44.802254374158814,
+          "group": "psu26205",
+          "rows": 24
+        },
+        {
+          "error": 90.50642104082549,
+          "group": "psu26206",
+          "rows": 24
+        },
+        {
+          "error": 104.26475437415881,
+          "group": "psu26207",
+          "rows": 24
+        },
+        {
+          "error": 103.80642104082547,
+          "group": "psu26208",
+          "rows": 24
+        },
+        {
+          "error": 129.88142104082547,
+          "group": "psu26209",
+          "rows": 24
+        },
+        {
+          "error": 113.47308770749214,
+          "group": "psu26210",
+          "rows": 24
+        },
+        {
+          "error": 102.37308770749216,
+          "group": "psu26211",
+          "rows": 24
+        },
+        {
+          "error": 84.83975437415882,
+          "group": "psu26212",
+          "rows": 24
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 101.4949963096427,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "temperature",
+          "vapor_pressure"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 271.7227456258412
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "temperature": -0.5255477719381971,
+            "vapor_pressure": -0.7529124036085872
+          },
+          "mean": -101.4949963096427,
+          "p90_abs": 142.14725437415882,
+          "std": 33.278881986914676
+        },
+        "rule_id": "eq-local-v1-p100-048-mean-control-rule-1",
+        "rule_sha256": "05a5e663dcc46ed29934d52ed0c4db8918aeb750d9845af9ae24bb4241982b46",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "271.7227456258412",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 25,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-048.equations-v1",
+        "train_error": 24.680568939524075,
+        "units": {
+          "inputs": {},
+          "output": null,
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 1488,
+        "fraction": 1.0,
+        "predicted": 1488
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-048-mean-control-rule-1",
+      "rule_sha256": "05a5e663dcc46ed29934d52ed0c4db8918aeb750d9845af9ae24bb4241982b46",
+      "run_id": "eq-local-v1-p100-048-mean-control",
+      "scenario_id": "P100-048",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "271.7227456258412",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 25,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 1488,
+        "ranking": false,
+        "samples": 512,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-048.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-048",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-048.equations-v1",
+  "track": "engineering",
+  "version": "1.0.0rc5"
+}

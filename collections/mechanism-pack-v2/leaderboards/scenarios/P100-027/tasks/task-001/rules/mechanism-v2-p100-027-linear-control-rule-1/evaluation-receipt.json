@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.6057842734756541,
+    "primary": "mae",
+    "primary_error": 0.6057842734756541,
+    "rmse": 0.8238495425984003
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.3762859391534392,
+  "by_group": [
+    {
+      "error": 0.13865868508126564,
+      "group": "group-0522f825b2b8c4c1c09ebb9e",
+      "rows": 12
+    },
+    {
+      "error": 0.3076819203978723,
+      "group": "group-534596b69994f4b087b4a96f",
+      "rows": 12
+    },
+    {
+      "error": 1.3710122149478243,
+      "group": "group-af575c48ba5f2d19941cad9a",
+      "rows": 12
+    }
+  ],
+  "coverage": {
+    "eligible": 36,
+    "fraction": 1.0,
+    "predicted": 36
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-v2-p100-027-linear-control-rule-1",
+  "rule_sha256": "500dc08e2f76fe31de01006bfdf77e3db9a5be056eee67437abacf5c7199b9b0",
+  "run_id": "mechanism-v2-p100-027-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-91.58594430503014 + 0.0003625701746591902 * mass_flux + 1.3090570832314732 * quality + 0.24339827770626526 * vapor_density + 0.11256059425721215 * liquid_density + -0.4143803412063903 * radial_fraction",
+    "expression_bytes": 90,
+    "free_parameters": 6,
+    "learned_state_bytes": 162,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 1.9539896966607726,
+    "perturbation_labels_available": false,
+    "population_rows": 36,
+    "ranking": false,
+    "samples": 36,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

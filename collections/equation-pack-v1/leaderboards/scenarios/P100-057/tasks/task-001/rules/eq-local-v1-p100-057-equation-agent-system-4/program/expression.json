@@ -1,0 +1,325 @@
+{
+  "equation_system": {
+    "assumptions": [
+      "Viscosity follows a Cross-type shear-thinning model with a yield stress term",
+      "Temperature dependence follows an Arrhenius shift (effective activation energy)",
+      "Yield stress is temperature-dependent via the same shift factor",
+      "No infinite-shear plateau; high-shear viscosity negligible compared to low-shear"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 35 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 308.15
+      }
+    },
+    "name": "Thermally shifted Cross with yield stress",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Arrhenius temperature shift factor relative to reference",
+        "unit": "1"
+      },
+      {
+        "expression": "eta_ref * thermal_shift",
+        "id": "zero_shear_viscosity",
+        "meaning": "Low-shear viscosity at the observed temperature",
+        "unit": "Pa*s"
+      },
+      {
+        "expression": "shear_rate * relaxation * thermal_shift",
+        "id": "reduced_shear",
+        "meaning": "Dimensionless shear rate scaled by temperature-shifted relaxation time",
+        "unit": "1"
+      },
+      {
+        "expression": "1 / (1 + reduced_shear ** exponent)",
+        "id": "cross_factor",
+        "meaning": "Cross shear-thinning factor",
+        "unit": "1"
+      },
+      {
+        "expression": "yield_stress_ref * thermal_shift / shear_rate",
+        "id": "yield_contribution",
+        "meaning": "Apparent viscosity contribution from yield stress (Bingham-like)",
+        "unit": "Pa*s"
+      },
+      {
+        "expression": "zero_shear_viscosity * cross_factor + yield_contribution",
+        "id": "viscous_response",
+        "meaning": "Predicted viscosity combining shear-thinning and yield stress",
+        "unit": "Pa*s"
+      }
+    ],
+    "output": "viscous_response",
+    "parameters": {
+      "activation": {
+        "bounds": [
+          10,
+          30000
+        ],
+        "initial": 3000,
+        "meaning": "Activation energy divided by gas constant; effective parameter",
+        "unit": "K"
+      },
+      "eta_ref": {
+        "bounds": [
+          0.0001,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Low-shear viscosity at reference temperature",
+        "unit": "Pa*s"
+      },
+      "exponent": {
+        "bounds": [
+          0.05,
+          2
+        ],
+        "initial": 0.8,
+        "meaning": "Power-law exponent in Cross model",
+        "unit": "1"
+      },
+      "relaxation": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.02,
+        "meaning": "Effective relaxation time at reference temperature",
+        "unit": "s"
+      },
+      "yield_stress_ref": {
+        "bounds": [
+          0,
+          10
+        ],
+        "initial": 0.1,
+        "meaning": "Yield stress at reference temperature",
+        "unit": "Pa"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent)) + yield_stress_ref * exp(activation * (1 / temperature - 1 / T_ref)) / shear_rate",
+  "parameters": {
+    "activation": 3450.920410116068,
+    "eta_ref": 0.26725818910302723,
+    "exponent": 1.9999999906548493,
+    "relaxation": 1.0000000141669845e-06,
+    "yield_stress_ref": 0.08017052343577041
+  },
+  "representation": "equation-system-v1",
+  "runtime": "principia-asd 1.0.0rc5",
+  "task_contract": {
+    "description": "Five rheometer test runs on neat resin span temperature and shear rate. Compare a temperature-activated viscosity with a shear-thinning constitutive system. Complete instrument runs are held out, and nonpositive instrument readings are retained in the private exclusion ledger.",
+    "display_title": "Resin flow across temperature and shear",
+    "equation_templates": [
+      {
+        "assumptions": [
+          "Effective activation regime over the retained temperatures",
+          "No claim of a single microscopic activation barrier",
+          "Newtonian reference: ignores shear-rate dependence"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "Reference temperature, 35 degrees Celsius",
+            "source": "Declared coordinate reference; not fitted",
+            "unit": "K",
+            "value": 308.15
+          }
+        },
+        "name": "Arrhenius viscosity",
+        "nodes": [
+          {
+            "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+            "id": "thermal_shift",
+            "meaning": "Arrhenius temperature shift relative to the reference temperature",
+            "unit": "1"
+          },
+          {
+            "expression": "eta_ref * thermal_shift",
+            "id": "zero_shear_viscosity",
+            "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+            "unit": "Pa*s"
+          }
+        ],
+        "output": "zero_shear_viscosity",
+        "parameters": {
+          "activation": {
+            "bounds": [
+              10,
+              30000
+            ],
+            "initial": 3000,
+            "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+            "unit": "K"
+          },
+          "eta_ref": {
+            "bounds": [
+              0.0001,
+              100
+            ],
+            "initial": 0.5,
+            "meaning": "Low-shear viscosity at the reference temperature",
+            "unit": "Pa*s"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Cross constitutive family with negligible infinite-shear plateau",
+          "Thermorheological simplicity is a testable assumption",
+          "Instrument-derived viscosity; one resin formulation, no universality claim"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "Reference temperature, 35 degrees Celsius",
+            "source": "Declared coordinate reference; not fitted",
+            "unit": "K",
+            "value": 308.15
+          }
+        },
+        "name": "Thermally shifted Cross flow",
+        "nodes": [
+          {
+            "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+            "id": "thermal_shift",
+            "meaning": "Arrhenius temperature shift relative to the reference temperature",
+            "unit": "1"
+          },
+          {
+            "expression": "eta_ref * thermal_shift",
+            "id": "zero_shear_viscosity",
+            "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+            "unit": "Pa*s"
+          },
+          {
+            "expression": "shear_rate * relaxation * thermal_shift",
+            "id": "reduced_shear",
+            "meaning": "Dimensionless shear rate relative to a temperature-shifted relaxation time",
+            "unit": "1"
+          },
+          {
+            "expression": "1 / (1 + reduced_shear ** exponent)",
+            "id": "shear_reduction",
+            "meaning": "Cross-law shear-thinning factor",
+            "unit": "1"
+          },
+          {
+            "expression": "zero_shear_viscosity * shear_reduction",
+            "id": "viscous_response",
+            "meaning": "Predicted viscosity after thermal and shear-rate contributions",
+            "unit": "Pa*s"
+          }
+        ],
+        "output": "viscous_response",
+        "parameters": {
+          "activation": {
+            "bounds": [
+              10,
+              30000
+            ],
+            "initial": 3000,
+            "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+            "unit": "K"
+          },
+          "eta_ref": {
+            "bounds": [
+              0.0001,
+              100
+            ],
+            "initial": 0.5,
+            "meaning": "Low-shear viscosity at the reference temperature",
+            "unit": "Pa*s"
+          },
+          "exponent": {
+            "bounds": [
+              0.05,
+              2
+            ],
+            "initial": 0.8,
+            "meaning": "Phenomenological shear-thinning exponent",
+            "unit": "1"
+          },
+          "relaxation": {
+            "bounds": [
+              1e-06,
+              100
+            ],
+            "initial": 0.02,
+            "meaning": "Effective relaxation time at the reference temperature",
+            "unit": "s"
+          }
+        },
+        "version": "equation-system-v1"
+      }
+    ],
+    "inputs": [
+      "temperature",
+      "shear_rate"
+    ],
+    "metric": {
+      "aggregation": "equal_group_mean",
+      "primary": "log_mae"
+    },
+    "output": "target",
+    "positive_prediction": true,
+    "preprocessing": [
+      "UTF-16 tab-delimited native instrument blocks",
+      "Celsius to Kelvin; cP / 1000 to Pa*s",
+      "Exclude nonpositive/nonfinite viscosity or shear rate; preserve all other noise",
+      "No fitted preprocessing"
+    ],
+    "quantity_units": {
+      "shear_rate": "s^-1",
+      "target": "Pa*s",
+      "temperature": "K"
+    },
+    "research_objective": "",
+    "revision": 1,
+    "scenario_id": "P100-057",
+    "scientific_scope": "Local scientific-method development; no independent-discovery claim",
+    "split": {
+      "dev": "public/dev.csv.gz",
+      "test": "public/test_inputs.csv.gz",
+      "train": "public/train.csv.gz"
+    },
+    "split_policy": "Whole native test runs: unsuffixed and runs 1/2 train, run 3 development, run 4 test. All temperature/shear sweeps in a run remain together.",
+    "stability": {
+      "categorical_inputs": [],
+      "domain": "Observed training ranges; positive physical quantities",
+      "input_ranges": {
+        "shear_rate": [
+          0.999,
+          50.0
+        ],
+        "temperature": [
+          308.14,
+          398.15
+        ]
+      },
+      "output_scale": 0.12452262149994732,
+      "ranking": false,
+      "relative_noise": 0.01,
+      "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+    },
+    "task_id": "P100-057.equations-v1",
+    "test_exposure": "retrospective-open-test",
+    "title": "Resin flow across temperature and shear",
+    "units": {
+      "shear_rate": "s^-1",
+      "target": "Pa*s",
+      "temperature": "K"
+    },
+    "variable_descriptions": {
+      "shear_rate": "Instrument-reported applied shear rate",
+      "target": "Instrument-derived dynamic viscosity, converted from centipoise to Pascal seconds",
+      "temperature": "Measured plate temperature converted from degrees Celsius to Kelvin"
+    }
+  },
+  "tree": null
+}

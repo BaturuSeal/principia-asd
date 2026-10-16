@@ -1,0 +1,40 @@
+{
+  "description": "Five rheometer test runs on neat resin span temperature and shear rate. Compare a temperature-activated viscosity with a shear-thinning constitutive system. Complete instrument runs are held out, and nonpositive instrument readings are retained in the private exclusion ledger.",
+  "domain": "Suspension rheology",
+  "edition": "equation-pack-v1",
+  "independent_unit": "formulations and replicate tests",
+  "limitations": [
+    "Neat-resin subset of the source collection; no claim about all syntactic-foam formulations",
+    "Replicate test runs, not independently synthesized batches",
+    "38 nonpositive native readings are excluded by a predeclared physical-validity rule; noisy positive readings remain",
+    "No source torque-resolution uncertainty model; high-temperature low-viscosity measurements may be unreliable",
+    "Retrospective engineering evidence; external scientific review remains unassessed"
+  ],
+  "local_extension": true,
+  "rights_status": "source_terms_documented",
+  "rows": {
+    "dev": 242,
+    "test": 242,
+    "train": 728
+  },
+  "scenario_id": "P100-057",
+  "size": {
+    "public_bytes": 25319
+  },
+  "source": {
+    "evidence": [
+      {
+        "license": "cc-by-4.0",
+        "record": "https://zenodo.org/records/19699588",
+        "scope": "Registered source terms, verified against source record; no external review claim"
+      }
+    ],
+    "license": "cc-by-4.0",
+    "local_folder": "57_materials_syntactic_foam",
+    "registry_entry_sha256": "ec101a4fad6b594cfc777dc510c38b4c3d31daae92a0c52fbb26cb7624303dc4",
+    "registry_identity": "P100-057",
+    "url": "https://zenodo.org/records/19699588"
+  },
+  "status": "local_research_preview",
+  "title": "Resin flow across temperature and shear"
+}

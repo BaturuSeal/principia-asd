@@ -44,6 +44,7 @@ def main():
     )
     site.add_argument("--companion-bundle", type=Path)
     site.add_argument("--base-path", default="/")
+    site.add_argument("--collections", type=Path, help="Hash-bound public COLLECTIONS.json")
     sub.add_parser("methods")
     for name in ["catalog", "audit"]:
         x = sub.add_parser(name)
@@ -113,6 +114,10 @@ def main():
             p.error(
                 "--bundle-root must be the extracted public-release folder (or the legacy three-folder bundle)"
             )
+        if (base / "COLLECTIONS.json").is_file():
+            from .web.collections import bundle_packs
+
+            settings["bundled_packs"] = bundle_packs(base / "COLLECTIONS.json", workspace)
         serve(settings, a.port)
         return
     if a.command == "build-site":
@@ -124,6 +129,7 @@ def main():
             a.output,
             preview=a.preview,
             companion_bundle=a.companion_bundle,
+            collections_manifest=a.collections,
             base_path=a.base_path,
         )
         print(

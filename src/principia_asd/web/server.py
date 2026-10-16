@@ -16,6 +16,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from .. import __version__, bound_jobs, laboratory_jobs, paper_v2_jobs
+from ..catalog.audit import expanded_size
 from ..catalog.presentation import describe_scenario, describe_task
 from ..catalog.reviews import known_advisories, task_advisories
 from ..io import file_sha, read_csv, read_json, sha, write_csv, write_json
@@ -60,12 +61,32 @@ class App:
         credentials.load_settings(self)
         write_json(self.workspace / "settings.json", self.settings)
 
+    def local_packs(self):
+        """Owner-registered local extensions; never overwrite the published edition."""
+        path = self.workspace / "scenario-packs.json"
+        local = read_json(path).get("packs", []) if path.exists() else []
+        return [*self.settings.get("bundled_packs", []), *local]
+
     def scenario_paths(self):
         paths = {
             p.name: p
             for p in (Path(self.settings["data_root"]) / "scenarios").iterdir()
             if (p / "scenario.json").is_file()
         }
+        for pack in self.local_packs():
+            for p in (Path(pack["data_root"]) / "scenarios").glob("*"):
+                if (p / "scenario.json").is_file():
+                    if p.name in paths:
+                        info = read_json(p / "scenario.json")
+                        base = paths[p.name]
+                        if info.get("extends_scenario_sha256") != file_sha(base / "scenario.json"):
+                            raise ValueError(
+                                "Local scenario pack collides with an existing scenario: " + p.name
+                            )
+                        # task_entries checks the base contract and unique task IDs.
+                        task_entries(base, self.workspace, packs=self.local_packs())
+                        continue
+                    paths[p.name] = p
         for p in (self.workspace / "imports").glob("*"):
             if (p / "scenario.json").exists():
                 info = read_json(p / "scenario.json")
@@ -77,19 +98,29 @@ class App:
         result = []
         for sid, p in sorted(self.scenario_paths().items()):
             info = read_json(p / "scenario.json")
-            tasks = [describe_task(read_json(f)) for _, f in task_entries(p, self.workspace)]
+            entries = task_entries(p, self.workspace, packs=self.local_packs())
+            tasks = [
+                describe_task(read_json(f)) | {"local_path": str(path.resolve())}
+                for path, f in entries
+            ]
             if not tasks:
                 continue
             task = tasks[0]
+            size = dict(info.get("size", {}))
+            if info.get("local_extension"):
+                size["expanded_public_bytes"] = sum(
+                    expanded_size(f) for f in p.rglob("*") if f.is_file() and not f.is_symlink()
+                )
             result.append(
                 {
                     "scenario_id": sid,
                     **describe_scenario(info, task),
                     "local_path": str(p.resolve()),
+                    "task_paths": sorted({str(path.resolve()) for path, _ in entries}),
                     "tasks": tasks,
                     "domain": info.get("domain", "Local"),
                     "rows": info.get("rows", {}),
-                    "size": info.get("size", {}),
+                    "size": size,
                     "task": task,
                     "limitations": info.get("limitations", []),
                     "source": info.get("source", {}),
@@ -105,7 +136,7 @@ class App:
         if sid not in paths:
             raise ValueError("Select a registered or imported scenario")
         with self.lock:
-            return create_task(paths[sid], self.workspace, payload)
+            return create_task(paths[sid], self.workspace, payload, packs=self.local_packs())
 
     def presentations(self, cards, task):
         values = {}
@@ -272,6 +303,7 @@ class App:
                 "data_to_paper_explicit",
                 "asta_autodiscovery",
                 "agentrxiv",
+                "equation_agent",
             }:
                 used = set(roles.values())
             if mid.startswith("direct_"):
@@ -298,7 +330,9 @@ class App:
         budget = float(req.get("budget_cny", 12))
         if not 0 < budget <= 30:
             raise ValueError("Attempt API budget must be between 0 and 30 CNY")
-        scenario, selected_task = resolve_task(paths[sid], self.workspace, req.get("task_id"))
+        scenario, selected_task = resolve_task(
+            paths[sid], self.workspace, req.get("task_id"), packs=self.local_packs()
+        )
         if mid in {laboratory_jobs.METHOD_ID, paper_v2_jobs.METHOD_ID}:
             jobs = laboratory_jobs if mid == laboratory_jobs.METHOD_ID else paper_v2_jobs
             if not self.settings.get("project_root"):
@@ -348,6 +382,12 @@ class App:
         # Bind this job to its own local settings. Import evaluation never writes to
         # or relies on the shared benchmark evaluator directory.
         run_settings = dict(self.settings)
+        for pack in self.local_packs():
+            contracts = (Path(pack["data_root"]) / "scenarios" / sid / "task-contracts").glob(
+                "*.json"
+            )
+            if any(read_json(f)["task_id"] == selected_task["task_id"] for f in contracts):
+                run_settings["vault"] = pack["vault"]
         if sid.startswith("LOCAL-"):
             run_settings["vault"] = str(self.workspace / "private-evaluator")
         write_json(folder / "local-settings.json", run_settings, immutable=True)
@@ -522,7 +562,12 @@ class App:
         root = Path(self.settings["leaderboard_root"])
         tasks = {(s["scenario_id"], t["task_id"]): t for s in self.catalog() for t in s["tasks"]}
         rows = []
-        for p in sorted((root / "scenarios").glob("*/tasks/*/leaderboard.json")):
+        roots = [root] + [
+            Path(p["leaderboard_root"]) for p in self.local_packs() if p.get("leaderboard_root")
+        ]
+        for p in sorted(
+            f for r in roots for f in (r / "scenarios").glob("*/tasks/*/leaderboard.json")
+        ):
             value = read_json(p)
             task = tasks.get((value["scenario_id"], value["task_id"]), {})
             value["rule_presentations"] = self.presentations(

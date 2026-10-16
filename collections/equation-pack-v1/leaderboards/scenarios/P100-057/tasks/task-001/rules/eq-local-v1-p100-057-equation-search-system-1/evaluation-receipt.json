@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.034194455440031954,
+    "primary": "log_mae",
+    "primary_error": 0.3289862432911833,
+    "rmse": 0.056125407521884246
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.8878578887816473,
+  "by_group": [
+    {
+      "error": 0.3289862432911833,
+      "group": "replicate-4",
+      "rows": 242
+    }
+  ],
+  "coverage": {
+    "eligible": 242,
+    "fraction": 1.0,
+    "predicted": 242
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "eq-local-v1-p100-057-equation-search-system-1",
+  "rule_sha256": "7a4c3dbcd78f96f9e280d33507a7a69a6be3d376755afeb5ab266031b07e08d4",
+  "run_id": "eq-local-v1-p100-057-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 8,
+    "expanded_expression": "0.28739889101969784 * exp(3461.8156765032422 * (1 / temperature - 1 / T_ref))",
+    "expression_bytes": 57,
+    "fixed_constants": 1,
+    "free_parameters": 2,
+    "intermediate_quantities": 1,
+    "learned_state_bytes": 66,
+    "literal_state_bytes": 2,
+    "nodes": 24,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 2,
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.01618136800299632,
+    "perturbation_labels_available": false,
+    "population_rows": 242,
+    "ranking": false,
+    "samples": 242,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}
