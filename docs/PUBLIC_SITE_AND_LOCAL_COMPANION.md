@@ -1,32 +1,40 @@
 # Public website and private local companion
 
-Delivery revision: 15 October 2026. No cloud deployment is performed by this delivery.
+Local iteration: 16 October 2026, rc7. This Explorer revision is awaiting local acceptance; the rc6 deployment is unchanged.
 
 ## Two surfaces, one collection
 
-The **public website** is static HTML, CSS, JavaScript and versioned JSON. It displays the 40 packaged example scenarios, their tasks, 693 primary rules and all 520 primary attempt outcomes, including 37 failed attempts. The primary ranking is preserved. Separate historical engineering cohorts remain in the companion's portable reports, not merged into the primary leaderboard.
+The **public website** is static HTML, CSS, JavaScript and versioned JSON. It displays the 47 curated scenarios, 51 task leaderboards and 799 retained rules across 631 attempts. The original 520-attempt primary comparison retains its 37 failed attempts. The primary ranking is preserved. Separate historical engineering cohorts remain in the companion's portable reports, not merged into the primary leaderboard.
 
 The **local companion** runs discovery on the visitor's own computer. Visitors choose a shared example or a local CSV folder, select a task, method and model roles, and inspect their own rules. It reads the public edition and never writes to the shared data or leaderboard directories. Private imports, custom tasks, API settings, provider receipts, test partitions and run results live in a separate workspace.
 
 “Try it yourself” on the website opens instructions and a link to the local companion. This is a deliberate two-step flow: a public web page cannot run the Python scientific stack against a visitor's local folder. Installation is required for private discovery; browsing the shared results requires no installation or API key.
 
-The public page does **not** fetch localhost APIs, use CORS to reach private services, select files, accept keys, create accounts, store personal results or proxy LLM traffic. The handoff is a normal link opening a separate local-origin tab. Only public scenario/task IDs are included. If a public identifier is absent from the installed edition, the local app keeps its own catalog; it never downloads or executes a remote recipe.
+The public page does **not** fetch localhost APIs, use CORS to reach private services, select files, accept keys, create accounts, store personal results or proxy LLM traffic. The handoff is a normal same-tab navigation to a separate local origin (no popup is required). Only public scenario/task IDs are included. If a public identifier is absent from the installed edition, the local app keeps its own catalog; it never downloads or executes a remote recipe.
 
-## Visitor setup
+## Explorer and visitor setup
 
-Extract the companion bundle. From the extracted directory containing `projects/`, `datas/` and `leaderboards/`:
+Explorer combines discovery setup with two collections: **Public examples** and **My scenarios**. Shared results can be browsed on any device, without an API key or installation. New investigations are configured in a focused dialog; task definitions and variable descriptions remain available without expanding the entire page.
+
+The public site's **Set up local discovery** opens a guided installation dialog. A link to `127.0.0.1` refers to the visitor's own computer: it cannot install or start Python. The dialog presents installation steps first and enables the handoff only after the visitor confirms that their companion is running. It does not probe localhost or send information to it.
+
+Extract the companion bundle and open a terminal in its `public-release` folder:
 
 ```bash
 python3 -m venv ~/.principia-asd-venv
-~/.principia-asd-venv/bin/pip install projects/PrincipiaASD-dev-26Oct10/dist/principia_asd-1.0.0rc3-py3-none-any.whl
-~/.principia-asd-venv/bin/principia-asd companion --bundle-root .
+~/.principia-asd-venv/bin/pip install .
+~/.principia-asd-venv/bin/principia-asd companion --bundle-root . --open-browser
 ```
 
-Open http://127.0.0.1:8150/. Python 3.11+ is required. The restricted numerical interpreter supports macOS/Linux. Separately marked generated-code development workers require the tested macOS sandbox and refuse unsupported platforms. Windows support is not claimed.
+Python **3.11+** on macOS or Linux is required. Keep the terminal open while working. The command opens Explorer after binding the local port; if a browser cannot be opened, use the printed URL. Browsing works on phones, tablets and Windows, but private discovery on those platforms is not currently supported. Generated-code methods still require the supported macOS sandbox.
 
-The default private workspace is `~/.local/share/principia-asd`. Use `--workspace /my/private/workspace --port 8152` for another independent local installation. The standard web handoff uses port 8150; when choosing another port, open the printed URL and select the scenario there. Different people sharing a computer should use separate OS accounts, not the same companion daemon or workspace.
+Already running? Choose **Already running**, enter the printed local address and confirm that the companion is running. The default is `http://127.0.0.1:8150/`. A custom port such as `--port 8152` is supported by the handoff. Only HTTP loopback addresses are accepted; credentials, remote hosts, extra paths and query parameters are refused. The local page receives only the selected public scenario/task identifiers, or an instruction to open the local import dialog.
 
-The companion binds only to `127.0.0.1`. Host, Origin and CSRF checks protect mutation endpoints. No `--host 0.0.0.0` option is provided. **Do not reverse-proxy the companion, share its port or deploy it as a cloud multi-user backend.** The public site has no dependency on an always-running companion.
+`#scenarios` and `#discover/<scenario>/<task>` links remain compatible. Explorer also supports direct task selection through `#explorer/<scenario>/<task>`. Unknown examples produce an explicit notice; no remote recipe or missing data is downloaded automatically.
+
+The default private workspace is `~/.local/share/principia-asd`. Use `--workspace /my/private/workspace --port 8152` for another independent installation. Different people sharing a computer should use separate OS accounts. The companion binds only to `127.0.0.1`; Host, Origin and CSRF checks protect mutation endpoints. **Do not reverse-proxy the companion or share it as a cloud multi-user backend.**
+
+The public **My scenarios** tab explains the private collection and offers setup. It does not pretend to enumerate local folders. In the companion it lists imported scenarios separately from the public examples. Original files are read locally, and personal results never overwrite shared leaderboards.
 
 ## SiliconFlow API settings
 

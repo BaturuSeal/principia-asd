@@ -222,7 +222,7 @@ def build_site(
     archive = verify_companion(companion_bundle, preview=preview) if companion_bundle else None
     output.mkdir(parents=True)
     assets = Path(__file__).parent
-    for name in ("app.js", "style.css", "vendor/katex.min.js", "vendor/KATEX-LICENSE.txt"):
+    for name in ("app.js", "explorer.js", "style.css", "explorer.css", "vendor/katex.min.js", "vendor/KATEX-LICENSE.txt"):
         (output / name).parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(assets / name, output / name)
     html = (
@@ -232,7 +232,7 @@ def build_site(
             '<html lang="en">',
             f'<html lang="en" data-deployment="public" data-base-path="{base_path}">',
         )
-        .replace("Discovery workspace</title>", "Scenario library</title>")
+
     )
     html = html.replace('src="/', f'src="{base_path}').replace('href="/', f'href="{base_path}')
     (output / "index.html").write_text(html)

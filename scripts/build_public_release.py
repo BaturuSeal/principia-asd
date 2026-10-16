@@ -52,6 +52,7 @@ PROJECT_FILES = {
     "PROVENANCE.md",
     ".gitignore",
     ".gitattributes",
+    ".mailmap",
     "REPRODUCIBILITY.md",
     "CONTRIBUTING.md",
 }
@@ -101,7 +102,7 @@ def entries(root):
     ]
 
 
-def build(project, data, boards, vault, output, wheel, packs=None):
+def build(project, data, boards, vault, output, wheel, packs=None, deployment_authorized=False):
     packs = read_json(packs).get("packs", []) if packs else []
     today = date.today().isoformat()
     if output.exists():
@@ -167,9 +168,14 @@ def build(project, data, boards, vault, output, wheel, packs=None):
         "schema_version": "principia-asd.deployment-authorization/1",
         "date": today,
         "software_version": __version__,
-        "destination": "https://atlas.chipflow.net/web/asd-test/",
-        "scope": "owner-requested public research preview and private operator evaluator",
-        "source": "Explicit owner request in this chat on " + today,
+        "authorized": deployment_authorized,
+        "destination": "https://atlas.chipflow.net/web/asd-test/" if deployment_authorized else None,
+        "scope": (
+            "operator-declared authorized deployment; source-rights review remains separate"
+            if deployment_authorized
+            else "local acceptance preview only; not approved for deployment"
+        ),
+        "source": "Explicit --deployment-authorized builder option" if deployment_authorized else "Local preview default",
         "third_party_rights_certified": False,
         "scientific_admission_certified": False,
         "frozen_publication_flags_modified": False,
@@ -183,8 +189,8 @@ def build(project, data, boards, vault, output, wheel, packs=None):
         "version": __version__,
         "private_targets_included": False,
         "runtime_or_credentials_included": False,
-        "public_release_allowed": True,
-        "release_scope": "owner-authorized research preview; source-rights and scientific review pending",
+        "public_release_allowed": deployment_authorized,
+        "release_scope": authorization["scope"],
         "expanded_bytes": sum(f["bytes"] for f in payload),
         "files": payload,
     }
@@ -297,6 +303,11 @@ if __name__ == "__main__":
         "--packs",
         type=Path,
         help="Operator manifest of explicitly selected data/result/vault collections",
+    )
+    parser.add_argument(
+        "--deployment-authorized",
+        action="store_true",
+        help="Record an explicit deployment authorization; omit for local acceptance previews",
     )
     a = parser.parse_args()
     print(json.dumps(build(**vars(a)), indent=2))

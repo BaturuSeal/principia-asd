@@ -34,6 +34,9 @@ def main():
         "--workspace", type=Path, default=Path.home() / ".local/share/principia-asd"
     )
     companion.add_argument("--port", type=int, default=8150)
+    companion.add_argument(
+        "--open-browser", action="store_true", help="Open Explorer after the local server starts"
+    )
     site = sub.add_parser("build-site", help="Export a read-only public catalog and explored rules")
     for key in ("data-root", "leaderboard-root", "output"):
         site.add_argument("--" + key, type=Path, required=True)
@@ -118,7 +121,7 @@ def main():
             from .web.collections import bundle_packs
 
             settings["bundled_packs"] = bundle_packs(base / "COLLECTIONS.json", workspace)
-        serve(settings, a.port)
+        serve(settings, a.port, open_browser=a.open_browser)
         return
     if a.command == "build-site":
         from .web.public_site import build_site
