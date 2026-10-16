@@ -51,6 +51,7 @@ PROJECT_FILES = {
     "LICENSE",
     "PROVENANCE.md",
     ".gitignore",
+    ".gitattributes",
     "REPRODUCIBILITY.md",
     "CONTRIBUTING.md",
 }
