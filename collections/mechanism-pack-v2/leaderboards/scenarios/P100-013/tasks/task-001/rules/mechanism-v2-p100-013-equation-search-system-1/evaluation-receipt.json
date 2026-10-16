@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.0028432223187988214,
+    "primary": "mae",
+    "primary_error": 0.0028432223187988214,
+    "rmse": 0.003949557157731463
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.0016362680673457312,
+  "by_group": [
+    {
+      "error": 0.0028432223187988214,
+      "group": "heating-20C-min",
+      "rows": 501
+    }
+  ],
+  "coverage": {
+    "eligible": 501,
+    "fraction": 1.0,
+    "predicted": 501
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-013-equation-search-system-1",
+  "rule_sha256": "18c17fadce678ee4f0dbf9ab52be18f2439071a117d2a38df65134da303b93f7",
+  "run_id": "mechanism-v2-p100-013-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 12,
+    "expanded_expression": "0.0007773216412314298 * exp(14625.058726062422 * (1 / T_ref - 1 / temperature)) * maximum(0, 1 - conversion) ** 3.1506492879648476",
+    "expression_bytes": 82,
+    "fixed_constants": 1,
+    "free_parameters": 3,
+    "intermediate_quantities": 3,
+    "learned_state_bytes": 84,
+    "literal_state_bytes": 4,
+    "nodes": 39,
+    "numeric_literal_count": 4,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 1.1837740668537924,
+    "perturbation_labels_available": false,
+    "population_rows": 501,
+    "ranking": false,
+    "samples": 501,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

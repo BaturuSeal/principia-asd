@@ -1,0 +1,240 @@
+{
+  "dev_error": 0.6250630194931567,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "temperature-45",
+        "loss": 0.6313554321685901
+      },
+      {
+        "group": "temperature-65",
+        "loss": 0.6187706068177232
+      }
+    ],
+    "intermediate_ranges": {
+      "loss_modulus": [
+        596.2759457152439,
+        30259035.267252594
+      ],
+      "modulus_response": [
+        40.44457570262425,
+        52522229.31402524
+      ],
+      "phase_cosine": [
+        0.06766401419617732,
+        0.06766401419617732
+      ],
+      "phase_sine": [
+        0.9977081643360746,
+        0.9977081643360746
+      ],
+      "reduced_frequency": [
+        5.428868581210064e-06,
+        2.2119986628245627
+      ],
+      "spectral_denominator": [
+        1.0000012391071615,
+        5.858502935809089
+      ],
+      "spectral_power": [
+        9.15570373171631e-06,
+        2.1375755089908686
+      ],
+      "storage_modulus": [
+        40.44457570262425,
+        52522229.31402524
+      ],
+      "thermal_shift": [
+        0.00021011956751077366,
+        0.16529389984057355
+      ]
+    },
+    "residual_bias": 2909860.9342815666,
+    "residual_rmse": 7736845.695468355
+  },
+  "equation_system": {
+    "assumptions": [
+      "Fractional Maxwell family with a distributed relaxation spectrum",
+      "Same parameters bind storage and loss; neither channel is an input proxy for the other",
+      "Fractional order is phenomenological, not a directly measured molecular quantity",
+      "One batch and no compliance correction; independent mechanism validation remains absent"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 40 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 313.15
+      },
+      "pi": {
+        "meaning": "Circle constant",
+        "source": "Mathematical constant",
+        "unit": "1",
+        "value": 3.141592653589793
+      }
+    },
+    "name": "Fractional thermal relaxation",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Temperature shift of the relaxation timescale",
+        "unit": "1"
+      },
+      {
+        "expression": "omega * tau * thermal_shift",
+        "id": "reduced_frequency",
+        "meaning": "Dimensionless frequency at the shifted relaxation timescale",
+        "unit": "1"
+      },
+      {
+        "expression": "reduced_frequency ** alpha",
+        "id": "spectral_power",
+        "meaning": "Fractional relaxation spectrum amplitude",
+        "unit": "1"
+      },
+      {
+        "expression": "cos(alpha * pi / 2)",
+        "id": "phase_cosine",
+        "meaning": "Cosine of the fractional constitutive phase",
+        "unit": "1"
+      },
+      {
+        "expression": "sin(alpha * pi / 2)",
+        "id": "phase_sine",
+        "meaning": "Sine of the fractional constitutive phase",
+        "unit": "1"
+      },
+      {
+        "expression": "1 + 2 * spectral_power * phase_cosine + spectral_power ** 2",
+        "id": "spectral_denominator",
+        "meaning": "Squared complex denominator of the fractional Maxwell response",
+        "unit": "1"
+      },
+      {
+        "expression": "G * spectral_power * (phase_cosine + spectral_power) / spectral_denominator",
+        "id": "storage_modulus",
+        "meaning": "Elastic storage response of the fractional spectrum",
+        "unit": "Pa"
+      },
+      {
+        "expression": "G * spectral_power * phase_sine / spectral_denominator",
+        "id": "loss_modulus",
+        "meaning": "Dissipative response of the same fractional spectrum",
+        "unit": "Pa"
+      },
+      {
+        "expression": "where(response_kind == 0, storage_modulus, loss_modulus)",
+        "id": "modulus_response",
+        "meaning": "Jointly predicted storage or loss channel",
+        "unit": "Pa"
+      }
+    ],
+    "output": "modulus_response",
+    "parameters": {
+      "G": {
+        "bounds": [
+          100,
+          10000000000.0
+        ],
+        "initial": 100000000.0,
+        "meaning": "High-frequency elastic strength",
+        "unit": "Pa"
+      },
+      "activation": {
+        "bounds": [
+          100,
+          60000
+        ],
+        "initial": 10000,
+        "meaning": "Effective activation temperature for time-temperature shifting",
+        "unit": "K"
+      },
+      "alpha": {
+        "bounds": [
+          0.05,
+          1
+        ],
+        "initial": 0.65,
+        "meaning": "Fractional spectral exponent; one recovers a single Maxwell mode at unity",
+        "unit": "1"
+      },
+      "tau": {
+        "bounds": [
+          1e-08,
+          10000.0
+        ],
+        "initial": 0.1,
+        "meaning": "Reference relaxation timescale",
+        "unit": "s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "where(response_kind == 0, G * (omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha * (cos(alpha * pi / 2) + (omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha) / (1 + 2 * (omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha * cos(alpha * pi / 2) + ((omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha) ** 2), G * (omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha * sin(alpha * pi / 2) / (1 + 2 * (omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha * cos(alpha * pi / 2) + ((omega * tau * exp(activation * (1 / temperature - 1 / T_ref))) ** alpha) ** 2))",
+  "fit_recipe": {
+    "development_rows": 92,
+    "log_coordinate_parameters": [
+      "G",
+      "activation",
+      "alpha",
+      "tau"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared log residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 216
+  },
+  "identifiability": {
+    "condition_number": 81.94095668237017,
+    "parameters": 4,
+    "rank": 4,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "omega",
+    "temperature",
+    "response_kind"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v1",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "G": 65275855.29117298,
+    "activation": 35866.92342682415,
+    "alpha": 0.9568908125926805,
+    "tau": 0.13382215949639048
+  },
+  "quantity_units": {
+    "omega": "rad/s",
+    "response_kind": "1",
+    "target": "Pa",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-058-equation-search-system-3",
+  "rule_sha256": "0b57912dceafbe5ece815d607eb75c4818c49439ffee1153e4636ddb9f560bc0",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 34,
+    "expanded_expression": "where(response_kind == 0, 65275855.29117298 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * (cos(0.9568908125926805 * pi / 2) + (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805) / (1 + 2 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * cos(0.9568908125926805 * pi / 2) + ((omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805) ** 2), 65275855.29117298 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * sin(0.9568908125926805 * pi / 2) / (1 + 2 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * cos(0.9568908125926805 * pi / 2) + ((omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805) ** 2))",
+    "expression_bytes": 680,
+    "fixed_constants": 2,
+    "free_parameters": 4,
+    "intermediate_quantities": 8,
+    "learned_state_bytes": 114,
+    "literal_state_bytes": 25,
+    "nodes": 318,
+    "numeric_literal_count": 25,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 4,
+    "weighted_operator_count": 109
+  },
+  "task_id": "P100-058.equations-v1",
+  "train_error": 0.8292798152502658
+}

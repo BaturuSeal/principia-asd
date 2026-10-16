@@ -1,0 +1,72 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 6.664481634689579e-08,
+    "primary": "mae",
+    "primary_error": 6.664481634689579e-08,
+    "rmse": 9.36736643103956e-08
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 6.772136137360195e-08,
+  "by_group": [
+    {
+      "error": 6.717522044509645e-08,
+      "group": "Gamiz",
+      "rows": 2288
+    },
+    {
+      "error": 4.8806110318584e-08,
+      "group": "Kacergine",
+      "rows": 1559
+    },
+    {
+      "error": 7.201307159730761e-08,
+      "group": "Kranzberg-Freising",
+      "rows": 2762
+    },
+    {
+      "error": 8.904482830175832e-08,
+      "group": "RincondelBatovi",
+      "rows": 2540
+    },
+    {
+      "error": 5.6184851071732565e-08,
+      "group": "Saint Mitre",
+      "rows": 2210
+    }
+  ],
+  "coverage": {
+    "eligible": 11359,
+    "fraction": 1.0,
+    "predicted": 11359
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tree_control",
+  "rule_id": "mechanism-v2-p100-082-tree-control-rule-1",
+  "rule_sha256": "7a3a8620e8c26d1e6f9257dc1b3a811e4f447160e73e74806be2917f297bf3fd",
+  "run_id": "mechanism-v2-p100-082-tree-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "complete tree in Rule Card",
+    "free_parameters": 118,
+    "learned_state_bytes": 3821,
+    "scope": "predictive reference, not a compact scientific formula",
+    "weighted_operator_count": 79
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.031282579563468374,
+    "perturbation_labels_available": false,
+    "population_rows": 11359,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

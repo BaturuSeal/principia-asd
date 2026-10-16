@@ -1,0 +1,135 @@
+{
+  "dev_error": 0.3217997169119005,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "replicate-3",
+        "loss": 0.3217997169119005
+      }
+    ],
+    "intermediate_ranges": {
+      "thermal_shift": [
+        0.07891076123108288,
+        1.0
+      ],
+      "zero_shear_viscosity": [
+        0.022678865267333388,
+        0.28739889101969784
+      ]
+    },
+    "residual_bias": -0.015700252023574314,
+    "residual_rmse": 0.05614048629703818
+  },
+  "equation_system": {
+    "assumptions": [
+      "Effective activation regime over the retained temperatures",
+      "No claim of a single microscopic activation barrier",
+      "Newtonian reference: ignores shear-rate dependence"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 35 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 308.15
+      }
+    },
+    "name": "Arrhenius viscosity",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Arrhenius temperature shift relative to the reference temperature",
+        "unit": "1"
+      },
+      {
+        "expression": "eta_ref * thermal_shift",
+        "id": "zero_shear_viscosity",
+        "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+        "unit": "Pa*s"
+      }
+    ],
+    "output": "zero_shear_viscosity",
+    "parameters": {
+      "activation": {
+        "bounds": [
+          10,
+          30000
+        ],
+        "initial": 3000,
+        "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+        "unit": "K"
+      },
+      "eta_ref": {
+        "bounds": [
+          0.0001,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Low-shear viscosity at the reference temperature",
+        "unit": "Pa*s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref))",
+  "fit_recipe": {
+    "development_rows": 242,
+    "log_coordinate_parameters": [
+      "activation",
+      "eta_ref"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared log residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 728
+  },
+  "identifiability": {
+    "condition_number": 4.0506553310368805,
+    "parameters": 2,
+    "rank": 2,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "shear_rate"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v1",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "activation": 3461.8156765032422,
+    "eta_ref": 0.28739889101969784
+  },
+  "quantity_units": {
+    "shear_rate": "s^-1",
+    "target": "Pa*s",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-057-equation-search-system-1",
+  "rule_sha256": "7a4c3dbcd78f96f9e280d33507a7a69a6be3d376755afeb5ab266031b07e08d4",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 8,
+    "expanded_expression": "0.28739889101969784 * exp(3461.8156765032422 * (1 / temperature - 1 / T_ref))",
+    "expression_bytes": 57,
+    "fixed_constants": 1,
+    "free_parameters": 2,
+    "intermediate_quantities": 1,
+    "learned_state_bytes": 66,
+    "literal_state_bytes": 2,
+    "nodes": 24,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 2,
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-057.equations-v1",
+  "train_error": 0.3308935123112788
+}

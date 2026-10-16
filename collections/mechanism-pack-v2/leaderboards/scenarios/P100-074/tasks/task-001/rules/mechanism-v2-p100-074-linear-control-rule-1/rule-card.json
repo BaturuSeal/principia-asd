@@ -1,0 +1,60 @@
+{
+  "dev_error": 177.61985255001957,
+  "execution_status": "complete",
+  "expression": "p0+p1*(concentration)+p2*(elapsed)+p3*(initial_signal)+p4*(initial_slope)",
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -154.7476143358186,
+    "p1": -28723.7617682048,
+    "p2": 0.1239637513876305,
+    "p3": 2.420368203560762,
+    "p4": 933.5377235959023
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "concentration": 0.4202468148271735,
+      "elapsed": -0.7116522738533853,
+      "initial_signal": 0.4202468148271737,
+      "initial_slope": 0.4202468148271735
+    },
+    "mean": -117.51221229482174,
+    "p90_abs": 235.0163458885115,
+    "std": 146.42138982177704
+  },
+  "rule_id": "mechanism-v2-p100-074-linear-control-rule-1",
+  "rule_sha256": "9fbc4096115ac8c122ab58ef3d77867b1d30b9a2dbb2833267c3ca9e085408f2",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-154.7476143358186 + -28723.7617682048 * concentration + 0.1239637513876305 * elapsed + 2.420368203560762 * initial_signal + 933.5377235959023 * initial_slope",
+    "expression_bytes": 73,
+    "free_parameters": 5,
+    "learned_state_bytes": 127,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 68.35557891042716,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

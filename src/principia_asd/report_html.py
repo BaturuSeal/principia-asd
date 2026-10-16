@@ -133,7 +133,11 @@ def render_rule(root, board, row, task_dir, title, attempt, advisories=(), task=
     if any(row.get(key) != value for key, value in receipt.items()):
         raise ValueError("Leaderboard metrics differ from the frozen evaluation receipt")
     output = directory / "index.html"
-    unit = card.get("units", {}).get("output", "not supplied")
+    unit = (
+        card.get("units", {}).get("output")
+        or (task or {}).get("quantity_units", {}).get(card.get("output", "target"))
+        or "not supplied"
+    )
     formula = card.get("simplicity", {}).get("expanded_expression") or card["expression"]
     presentation = rule_view(card, task or {})
     metric = row["accuracy"]["primary"]
@@ -181,6 +185,17 @@ def render_rule(root, board, row, task_dir, title, attempt, advisories=(), task=
         + esc(presentation["interpretation_scope"])
         + "</p>"
     )
+    if presentation.get("equations"):
+        body += '<details><summary>Connected quantities and assumptions</summary><div class="table"><table><thead><tr><th>Quantity</th><th>Meaning</th><th>Units</th></tr></thead><tbody>'
+        body += "".join(
+            f'<tr><td data-latex="{esc(q["symbol"])}"></td><td>{esc(q["meaning"])}</td><td>{esc(q["unit"])}</td></tr>'
+            for q in presentation["equations"]
+        )
+        body += (
+            "</tbody></table></div><ul>"
+            + "".join("<li>" + esc(a) + "</li>" for a in presentation["assumptions"])
+            + "</ul></details>"
+        )
     body += '<h3>Variables</h3><div class="table"><table><thead><tr><th>Symbol</th><th>Meaning</th><th>Units</th></tr></thead><tbody>'
     body += "".join(
         f'<tr><td data-latex="{esc(v["symbol"])}"></td><td class="wrap">{esc(v["description"])}</td><td>{esc(v["units"])}</td></tr>'

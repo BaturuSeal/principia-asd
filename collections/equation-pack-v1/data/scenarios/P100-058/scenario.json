@@ -1,0 +1,40 @@
+{
+  "description": "Oscillatory shear measurements of poly(D,L-lactide) probe elastic storage and viscous loss across frequency and temperature. A single system must explain both response channels with the same relaxation times, elastic strengths and thermal shift. Entire temperature sweeps are held out.",
+  "domain": "Polymer physics",
+  "edition": "equation-pack-v1",
+  "independent_unit": "temperature/frequency sweeps within one polymer batch",
+  "limitations": [
+    "One polymer batch; temperature sweeps are condition blocks, not independent specimens",
+    "Source rheology was not compliance-corrected",
+    "Both response channels are fitted jointly; this is not a held-out cross-response confirmation",
+    "No target-derived tan-delta, complex viscosity or other measured modulus is a permitted input",
+    "Retrospective temperature interpolation, not proof of molecular mechanism or new constitutive laws"
+  ],
+  "local_extension": true,
+  "rights_status": "source_terms_documented",
+  "rows": {
+    "dev": 92,
+    "test": 88,
+    "train": 216
+  },
+  "scenario_id": "P100-058",
+  "size": {
+    "public_bytes": 20024
+  },
+  "source": {
+    "evidence": [
+      {
+        "license": "cc-by-4.0",
+        "record": "https://zenodo.org/records/17294879",
+        "scope": "Registered source terms, verified against source record; no external review claim"
+      }
+    ],
+    "license": "cc-by-4.0",
+    "local_folder": "58_polymer_pdlla_rheology",
+    "registry_entry_sha256": "e00351445383983d0785c4d1eb2daf1ae5d1237f9f96f91330e2d12261492645",
+    "registry_identity": "P100-058",
+    "url": "https://zenodo.org/records/17294879"
+  },
+  "status": "local_research_preview",
+  "title": "Polymer relaxation: coupled storage and loss"
+}

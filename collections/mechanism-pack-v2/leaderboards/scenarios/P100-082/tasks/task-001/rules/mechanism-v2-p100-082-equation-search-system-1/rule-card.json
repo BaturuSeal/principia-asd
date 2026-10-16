@@ -1,0 +1,269 @@
+{
+  "dev_error": 1.582264994180329e-07,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "Llobera",
+        "loss": 2.0491529925858482e-07
+      },
+      {
+        "group": "Secanella",
+        "loss": 2.0017451286307602e-07
+      },
+      {
+        "group": "St Christol",
+        "loss": 6.958968613243785e-08
+      }
+    ],
+    "input_strata": {
+      "root_exclusion": {
+        "bins": [
+          {
+            "mae": 1.7777895270343808e-07,
+            "range": [
+              0.0,
+              1.0
+            ],
+            "residual_bias": 1.7563049497216018e-07,
+            "rows": 6061
+          }
+        ],
+        "unique_values": 2
+      },
+      "temperature": {
+        "bins": [
+          {
+            "mae": 5.666833940071747e-08,
+            "range": [
+              274.025,
+              288.15
+            ],
+            "residual_bias": 5.108022607448584e-08,
+            "rows": 1514
+          },
+          {
+            "mae": 1.0667451546845056e-07,
+            "range": [
+              288.15,
+              293.84999999999997
+            ],
+            "residual_bias": 1.0440503235670619e-07,
+            "rows": 1500
+          },
+          {
+            "mae": 1.755244719294881e-07,
+            "range": [
+              293.84999999999997,
+              300.04999999999995
+            ],
+            "residual_bias": 1.7475456237144166e-07,
+            "rows": 1503
+          },
+          {
+            "mae": 3.6780913987704355e-07,
+            "range": [
+              300.04999999999995,
+              314.75
+            ],
+            "residual_bias": 3.6780913987704355e-07,
+            "rows": 1544
+          }
+        ],
+        "unique_values": 395
+      },
+      "water_fraction": {
+        "bins": [
+          {
+            "mae": 3.035663903207015e-07,
+            "range": [
+              0.001,
+              0.065
+            ],
+            "residual_bias": 3.035663903207015e-07,
+            "rows": 1458
+          },
+          {
+            "mae": 2.1801924412152805e-07,
+            "range": [
+              0.065,
+              0.115
+            ],
+            "residual_bias": 2.1786395063815542e-07,
+            "rows": 1570
+          },
+          {
+            "mae": 1.2931955119065752e-07,
+            "range": [
+              0.115,
+              0.221
+            ],
+            "residual_bias": 1.2875124757640495e-07,
+            "rows": 1516
+          },
+          {
+            "mae": 6.366498508379659e-08,
+            "range": [
+              0.221,
+              0.493
+            ],
+            "residual_bias": 5.580971595975365e-08,
+            "rows": 1517
+          }
+        ],
+        "unique_values": 456
+      }
+    },
+    "intermediate_ranges": {
+      "respiration": [
+        7.43454510496004e-08,
+        8.788868013218751e-07
+      ],
+      "root_factor": [
+        0.7917896566384289,
+        1.0
+      ],
+      "thermal_activity": [
+        0.5749783917276157,
+        6.7972002644457215
+      ]
+    },
+    "residual_bias": 1.7563049497216018e-07,
+    "residual_rmse": 2.2653817106877344e-07
+  },
+  "equation_system": {
+    "assumptions": [
+      "Q10 is a finite-range ecosystem response, not a universal activation law",
+      "Site-held-out transfer with unmodelled soil, management and instrument differences",
+      "Source flux is an author-derived chamber measurement; concentration-fit slope and intercept are prohibited predictors"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "10 Celsius reference soil temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 283.15
+      },
+      "temperature_step": {
+        "meaning": "Ten-kelvin increment for Q10",
+        "source": "Definition of Q10",
+        "unit": "K",
+        "value": 10
+      }
+    },
+    "name": "Temperature and root-associated respiration",
+    "nodes": [
+      {
+        "expression": "q10 ** ((temperature - T_ref) / temperature_step)",
+        "id": "thermal_activity",
+        "meaning": "Temperature-dependent biological activity multiplier",
+        "unit": "1"
+      },
+      {
+        "expression": "1 - root_fraction * root_exclusion",
+        "id": "root_factor",
+        "meaning": "Conditional root-exclusion multiplier",
+        "unit": "1"
+      },
+      {
+        "expression": "respiration_ref * thermal_activity * root_factor",
+        "id": "respiration",
+        "meaning": "Predicted CO2 mass flux without a moisture limitation",
+        "unit": "kg/m2/s"
+      }
+    ],
+    "output": "respiration",
+    "parameters": {
+      "q10": {
+        "bounds": [
+          1.001,
+          8
+        ],
+        "initial": 2,
+        "meaning": "Effective flux multiplier for ten kelvin warming",
+        "unit": "1"
+      },
+      "respiration_ref": {
+        "bounds": [
+          1e-11,
+          0.0001
+        ],
+        "initial": 1e-07,
+        "meaning": "Reference ecosystem CO2 mass flux",
+        "unit": "kg/m2/s"
+      },
+      "root_fraction": {
+        "bounds": [
+          0,
+          0.95
+        ],
+        "initial": 0.4,
+        "meaning": "Conditional reduction associated with root exclusion; not a causal attribution",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "respiration_ref * q10 ** ((temperature - T_ref) / temperature_step) * (1 - root_fraction * root_exclusion)",
+  "fit_recipe": {
+    "development_rows": 6061,
+    "log_coordinate_parameters": [
+      "q10",
+      "respiration_ref"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 15531
+  },
+  "identifiability": {
+    "condition_number": 2.945455742012562,
+    "parameters": 3,
+    "rank": 3,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "water_fraction",
+    "root_exclusion"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v2",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "q10": 1.8339842022860626,
+    "respiration_ref": 1.2930129569950873e-07,
+    "root_fraction": 0.20821034336157104
+  },
+  "quantity_units": {
+    "root_exclusion": "1",
+    "target": "kg/m2/s",
+    "temperature": "K",
+    "water_fraction": "1"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-v2-p100-082-equation-search-system-1",
+  "rule_sha256": "ee7a6cbef60c3885d76ecb6fe601efca487a7d601bb723e2942d845ffc5e24bd",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 7,
+    "expanded_expression": "1.2930129569950873e-07 * 1.8339842022860626 ** ((temperature - T_ref) / temperature_step) * (1 - 0.20821034336157104 * root_exclusion)",
+    "expression_bytes": 106,
+    "fixed_constants": 2,
+    "free_parameters": 3,
+    "intermediate_quantities": 2,
+    "learned_state_bytes": 108,
+    "literal_state_bytes": 1,
+    "nodes": 30,
+    "numeric_literal_count": 1,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 7
+  },
+  "task_id": "P100-082.mechanisms-v2",
+  "train_error": 5.440404135657797e-08
+}

@@ -1,0 +1,76 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 9587480212524.904,
+    "primary": "mae",
+    "primary_error": 9587480212524.904,
+    "rmse": 21438257488139.742
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 0.2860829921486803,
+  "by_group": [
+    {
+      "error": 0.01543057676092296,
+      "group": "group-2202a086cb33273ce2d378c3",
+      "rows": 42
+    },
+    {
+      "error": 0.11220545895335111,
+      "group": "group-71145ec09dd8be2729e0100a",
+      "rows": 43
+    },
+    {
+      "error": 47937401062624.36,
+      "group": "group-ab62ca3054292a2e9049d31e",
+      "rows": 49
+    },
+    {
+      "error": 0.016170071242130192,
+      "group": "group-aec67ad855dba6b880f2abfa",
+      "rows": 41
+    },
+    {
+      "error": 0.017254469765361217,
+      "group": "group-e90b4881bf0e2712c670ec14",
+      "rows": 46
+    }
+  ],
+  "coverage": {
+    "eligible": 221,
+    "fraction": 1.0,
+    "predicted": 221
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-controls-local-v4-p100-043-linear-control-rule-1",
+  "rule_sha256": "80ce8b27b57bf56d65df0ad5dd22eea8b95f6c4c14a175c22dc3337779eb7ea1",
+  "run_id": "mechanism-controls-local-v4-p100-043-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-273845991699062.75 + -0.0017527123544356271 * tokens + -0.1026559239603979 * anchor_tokens + 34219063015487.023 * early_tokens + 1.505307263506929 * anchor_loss + -0.46692832712465915 * early_loss + -0.010899986587796284 * model_size",
+    "expression_bytes": 100,
+    "free_parameters": 7,
+    "learned_state_bytes": 192,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 39972373783110.98,
+    "perturbation_labels_available": false,
+    "population_rows": 221,
+    "ranking": false,
+    "samples": 221,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

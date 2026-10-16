@@ -1,0 +1,52 @@
+{
+  "dev_error": 101.4949963096427,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "temperature",
+    "vapor_pressure"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 271.7227456258412
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "temperature": -0.5255477719381971,
+      "vapor_pressure": -0.7529124036085872
+    },
+    "mean": -101.4949963096427,
+    "p90_abs": 142.14725437415882,
+    "std": 33.278881986914676
+  },
+  "rule_id": "eq-local-v1-p100-048-mean-control-rule-1",
+  "rule_sha256": "05a5e663dcc46ed29934d52ed0c4db8918aeb750d9845af9ae24bb4241982b46",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "271.7227456258412",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-048.equations-v1",
+  "train_error": 24.680568939524075,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

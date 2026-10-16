@@ -1,0 +1,265 @@
+{
+  "equation_system": {
+    "assumptions": [
+      "Known power-law scaling family with observed early calibration",
+      "An algebraically inferred floor is not a measured entropy or an independent learned parameter",
+      "Whole architectures held out; common training corpus, no external-model replication"
+    ],
+    "constants": {},
+    "name": "Calibrated asymptotic learning dynamics",
+    "nodes": [
+      {
+        "expression": "(early_tokens / anchor_tokens) ** decay",
+        "id": "anchor_ratio",
+        "meaning": "Power-law decay between disclosed early checkpoints",
+        "unit": "1"
+      },
+      {
+        "expression": "(anchor_loss - early_loss * anchor_ratio) / (1 - anchor_ratio)",
+        "id": "loss_floor",
+        "meaning": "Conditional asymptotic loss inferred algebraically from the two disclosed anchors",
+        "unit": "1"
+      },
+      {
+        "expression": "(anchor_loss - loss_floor) * (anchor_tokens / tokens) ** decay",
+        "id": "remaining_excess",
+        "meaning": "Unlearned loss above the conditional floor at later token counts",
+        "unit": "1"
+      },
+      {
+        "expression": "loss_floor + remaining_excess",
+        "id": "predicted_loss",
+        "meaning": "Later validation loss under the shared scaling exponent",
+        "unit": "1"
+      }
+    ],
+    "output": "predicted_loss",
+    "parameters": {
+      "decay": {
+        "bounds": [
+          0.01,
+          3
+        ],
+        "initial": 0.4,
+        "meaning": "Shared asymptotic training-loss decay exponent",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "(anchor_loss - early_loss * (early_tokens / anchor_tokens) ** decay) / (1 - (early_tokens / anchor_tokens) ** decay) + (anchor_loss - (anchor_loss - early_loss * (early_tokens / anchor_tokens) ** decay) / (1 - (early_tokens / anchor_tokens) ** decay)) * (anchor_tokens / tokens) ** decay",
+  "parameters": {
+    "decay": 0.626861211955627
+  },
+  "representation": "equation-system-v1",
+  "runtime": "principia-asd 1.0.0rc5",
+  "task_contract": {
+    "description": "Use two disclosed early checkpoints to compare asymptotic loss decay and a capacity-dependent decay law on held-out architectures. The inferred loss floor is a conditional quantity, not measured data entropy.",
+    "display_title": "Learning dynamics beyond early checkpoints",
+    "equation_protocol": "multi-role-equations-v2",
+    "equation_templates": [
+      {
+        "assumptions": [
+          "Known power-law scaling family with observed early calibration",
+          "An algebraically inferred floor is not a measured entropy or an independent learned parameter",
+          "Whole architectures held out; common training corpus, no external-model replication"
+        ],
+        "constants": {},
+        "name": "Calibrated asymptotic learning dynamics",
+        "nodes": [
+          {
+            "expression": "(early_tokens / anchor_tokens) ** decay",
+            "id": "anchor_ratio",
+            "meaning": "Power-law decay between disclosed early checkpoints",
+            "unit": "1"
+          },
+          {
+            "expression": "(anchor_loss - early_loss * anchor_ratio) / (1 - anchor_ratio)",
+            "id": "loss_floor",
+            "meaning": "Conditional asymptotic loss inferred algebraically from the two disclosed anchors",
+            "unit": "1"
+          },
+          {
+            "expression": "(anchor_loss - loss_floor) * (anchor_tokens / tokens) ** decay",
+            "id": "remaining_excess",
+            "meaning": "Unlearned loss above the conditional floor at later token counts",
+            "unit": "1"
+          },
+          {
+            "expression": "loss_floor + remaining_excess",
+            "id": "predicted_loss",
+            "meaning": "Later validation loss under the shared scaling exponent",
+            "unit": "1"
+          }
+        ],
+        "output": "predicted_loss",
+        "parameters": {
+          "decay": {
+            "bounds": [
+              0.01,
+              3
+            ],
+            "initial": 0.4,
+            "meaning": "Shared asymptotic training-loss decay exponent",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Known power-law scaling family with observed early calibration",
+          "An algebraically inferred floor is not a measured entropy or an independent learned parameter",
+          "Whole architectures held out; common training corpus, no external-model replication"
+        ],
+        "constants": {
+          "size_ref": {
+            "meaning": "One billion parameters in the documented model-size coordinate",
+            "source": "Declared coordinate scale",
+            "unit": "1",
+            "value": 1
+          }
+        },
+        "name": "Capacity-modulated learning dynamics",
+        "nodes": [
+          {
+            "expression": "decay * (model_size / size_ref) ** capacity_exponent",
+            "id": "architecture_decay",
+            "meaning": "Hypothesized architecture-size modulation of the learning rate exponent",
+            "unit": "1"
+          },
+          {
+            "expression": "(early_tokens / anchor_tokens) ** architecture_decay",
+            "id": "anchor_ratio",
+            "meaning": "Power-law decay between disclosed early checkpoints",
+            "unit": "1"
+          },
+          {
+            "expression": "(anchor_loss - early_loss * anchor_ratio) / (1 - anchor_ratio)",
+            "id": "loss_floor",
+            "meaning": "Conditional asymptotic loss inferred algebraically from the two disclosed anchors",
+            "unit": "1"
+          },
+          {
+            "expression": "(anchor_loss - loss_floor) * (anchor_tokens / tokens) ** architecture_decay",
+            "id": "remaining_excess",
+            "meaning": "Unlearned loss above the conditional floor at later token counts",
+            "unit": "1"
+          },
+          {
+            "expression": "loss_floor + remaining_excess",
+            "id": "predicted_loss",
+            "meaning": "Later validation loss under the shared scaling exponent",
+            "unit": "1"
+          }
+        ],
+        "output": "predicted_loss",
+        "parameters": {
+          "capacity_exponent": {
+            "bounds": [
+              -0.3,
+              0.3
+            ],
+            "initial": 0,
+            "meaning": "Weak size dependence of the loss decay exponent",
+            "unit": "1"
+          },
+          "decay": {
+            "bounds": [
+              0.01,
+              3
+            ],
+            "initial": 0.4,
+            "meaning": "Shared asymptotic training-loss decay exponent",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      }
+    ],
+    "inputs": [
+      "tokens",
+      "anchor_tokens",
+      "early_tokens",
+      "anchor_loss",
+      "early_loss",
+      "model_size"
+    ],
+    "metric": {
+      "aggregation": "equal_group_mean",
+      "primary": "mae"
+    },
+    "output": "target",
+    "preprocessing": {
+      "learned_transformations": [],
+      "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+    },
+    "quantity_units": {
+      "anchor_loss": "1",
+      "anchor_tokens": "1",
+      "early_loss": "1",
+      "early_tokens": "1",
+      "model_size": "1",
+      "target": "1",
+      "tokens": "1"
+    },
+    "reference_expression": "anchor_loss",
+    "research_objective": "",
+    "revision": 2,
+    "scenario_id": "P100-043",
+    "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+    "split": {
+      "dev": "public/dev.csv.gz",
+      "test": "public/test_inputs.csv.gz",
+      "train": "public/train.csv.gz"
+    },
+    "split_policy": "Frozen complete-architecture assignments, identical to historical compact-v2 partitions",
+    "stability": {
+      "categorical_inputs": [],
+      "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+      "input_ranges": {
+        "anchor_loss": [
+          2.8473021984,
+          3.5315368176
+        ],
+        "anchor_tokens": [
+          18.006147072,
+          18.043895808
+        ],
+        "early_loss": [
+          3.0930116177,
+          3.663725853
+        ],
+        "early_tokens": [
+          8.002732032,
+          8.002732032
+        ],
+        "model_size": [
+          0.0483776,
+          2.007837696
+        ],
+        "tokens": [
+          20.00683008,
+          99.996401664
+        ]
+      },
+      "output_scale": 0.26590000863891256,
+      "ranking": false,
+      "relative_noise": 0.01,
+      "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+    },
+    "task_id": "P100-043.mechanisms-v2",
+    "test_exposure": "retrospective-open-test",
+    "title": "Learning dynamics beyond early checkpoints",
+    "variable_descriptions": {
+      "anchor_loss": "Later disclosed calibration validation loss",
+      "anchor_tokens": "Later disclosed calibration checkpoint in billion tokens",
+      "early_loss": "Earlier disclosed calibration validation loss",
+      "early_tokens": "Earlier disclosed calibration checkpoint in billion tokens",
+      "model_size": "Model parameter count in billions",
+      "target": "hot-run validation log-perplexity at20–100B tokens",
+      "tokens": "Training tokens in the fixed billion-token coordinate"
+    }
+  },
+  "tree": null
+}

@@ -1,0 +1,31 @@
+{
+  "description": "Compare depletion and autocatalytic pathways across complete heating scans. The response is a measured calorimetric conversion rate, conditional on the source-derived conversion coordinate. Author-fitted curves are excluded.",
+  "domain": "materials science",
+  "edition": "mechanism-pack-v2",
+  "independent_unit": "Whole heating scans: train 1/5/10 Celsius per minute; dev 3; test 20. One encapsulant system; heating-rate transfer, not independent-batch replication.",
+  "limitations": [
+    "Arrhenius effective kinetics over the measured thermal scans",
+    "Conversion and rate are related calorimetric reductions, not independent response channels",
+    "Known kinetic families; microscopic reaction mechanism is not identified",
+    "Kamal-Sourour family with shared coefficients across heating rates"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 416,
+    "test": 501,
+    "train": 1609
+  },
+  "scenario_id": "P100-013",
+  "size": {
+    "public_bytes": 63119
+  },
+  "source": {
+    "license": "NIST public data license",
+    "registry_identity": "P100-013",
+    "url": "https://data.nist.gov/od/id/mds2-3702"
+  },
+  "status": "local_research_preview",
+  "title": "Thermally activated encapsulant cure"
+}

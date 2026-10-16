@@ -1,0 +1,85 @@
+{
+  "dev_error": 177.6198525500182,
+  "execution_status": "complete",
+  "expression": "p0+p1*(concentration)+p2*(elapsed)+p3*(initial_signal)+p4*(initial_slope)",
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -154.7476143358186,
+    "p1": -28723.76176820409,
+    "p2": 0.12396375138763029,
+    "p3": 2.420368203560679,
+    "p4": 933.537723595916
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "concentration": 0.42024681482716314,
+      "elapsed": -0.7116522738533894,
+      "initial_signal": 0.42024681482716314,
+      "initial_slope": 0.42024681482716314
+    },
+    "mean": -117.51221229482047,
+    "p90_abs": 235.0163458885086,
+    "std": 146.42138982177636
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-074-linear-control-rule-1",
+  "rule_sha256": "4dfb8c1c81153eb9a83ec9fb43557dd9fdddda3123c86ac622043024d5a6b3de",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-154.7476143358186 + -28723.76176820409 * concentration + 0.12396375138763029 * elapsed + 2.420368203560679 * initial_signal + 933.537723595916 * initial_slope",
+    "expression_bytes": 73,
+    "free_parameters": 5,
+    "learned_state_bytes": 128,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "concentration",
+      "elapsed",
+      "initial_signal",
+      "initial_slope"
+    ],
+    "training_centers": [
+      0.0,
+      0.004800000000000003,
+      1440.0,
+      72.09042800000009,
+      0.19536637777777763
+    ],
+    "training_scales": [
+      1.0,
+      0.007641007786934915,
+      558.4353140695886,
+      100.80320964876432,
+      0.2268972766222756
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 68.35557891042708,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

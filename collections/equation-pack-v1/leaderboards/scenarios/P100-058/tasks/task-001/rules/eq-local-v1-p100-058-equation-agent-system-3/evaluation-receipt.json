@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 150895.07433435478,
+    "primary": "log_mae",
+    "primary_error": 0.7392055752054865,
+    "rmse": 586240.1741787285
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 7.524405530403783,
+  "by_group": [
+    {
+      "error": 0.712632741490803,
+      "group": "temperature-55",
+      "rows": 50
+    },
+    {
+      "error": 0.7657784089201699,
+      "group": "temperature-75",
+      "rows": 38
+    }
+  ],
+  "coverage": {
+    "eligible": 88,
+    "fraction": 1.0,
+    "predicted": 88
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_agent",
+  "rule_id": "eq-local-v1-p100-058-equation-agent-system-3",
+  "rule_sha256": "db65f60f0a1d0d02224c84b4f76ca8736da859d8d6256ff85c48a46198982c52",
+  "run_id": "eq-local-v1-p100-058-equation-agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 34,
+    "expanded_expression": "where(response_kind == 0, 65275855.29117298 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * (cos(0.9568908125926805 * pi / 2) + (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805) / (1 + 2 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * cos(0.9568908125926805 * pi / 2) + ((omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805) ** 2), 65275855.29117298 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * sin(0.9568908125926805 * pi / 2) / (1 + 2 * (omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805 * cos(0.9568908125926805 * pi / 2) + ((omega * 0.13382215949639048 * exp(35866.92342682415 * (1 / temperature - 1 / T_ref))) ** 0.9568908125926805) ** 2))",
+    "expression_bytes": 680,
+    "fixed_constants": 2,
+    "free_parameters": 4,
+    "intermediate_quantities": 8,
+    "learned_state_bytes": 114,
+    "literal_state_bytes": 25,
+    "nodes": 318,
+    "numeric_literal_count": 25,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 4,
+    "weighted_operator_count": 109
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0036137191504529223,
+    "perturbation_labels_available": false,
+    "population_rows": 88,
+    "ranking": false,
+    "samples": 88,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

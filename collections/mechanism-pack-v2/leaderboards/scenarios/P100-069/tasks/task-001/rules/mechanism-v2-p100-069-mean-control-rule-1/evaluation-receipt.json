@@ -1,0 +1,91 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 1.0677310030169085,
+    "primary": "mae",
+    "primary_error": 1.0677310030169085,
+    "rmse": 1.322617311604389
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.0677310030169085,
+  "by_group": [
+    {
+      "error": 0.9931987760778861,
+      "group": "validation/cool-down/cool-down.csv",
+      "rows": 719
+    },
+    {
+      "error": 0.8576800000000001,
+      "group": "validation/heat-up/theta_dot=0p3142.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.9546285714285714,
+      "group": "validation/heat-up/theta_dot=0p6283.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.8781119999999998,
+      "group": "validation/heat-up/theta_dot=0p9425.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.3404525714285715,
+      "group": "validation/heat-up/theta_dot=1p2566.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.3417051428571427,
+      "group": "validation/heat-up/theta_dot=1p5708.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.0366453556485358,
+      "group": "validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv",
+      "rows": 239
+    },
+    {
+      "error": 1.1394256066945607,
+      "group": "validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv",
+      "rows": 239
+    }
+  ],
+  "coverage": {
+    "eligible": 1372,
+    "fraction": 1.0,
+    "predicted": 1372
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "mean_control",
+  "rule_id": "mechanism-v2-p100-069-mean-control-rule-1",
+  "rule_sha256": "28837448b5f341e01b4e778c43f5f5cc24fa23a0d58c9232fa6c9090c721216a",
+  "run_id": "mechanism-v2-p100-069-mean-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.9496800000000001",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.0,
+    "perturbation_labels_available": false,
+    "population_rows": 1372,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.644281573777312,
+    "primary": "mae",
+    "primary_error": 0.644281573777312,
+    "rmse": 1.0983105999781204
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.0677310030169085,
+  "by_group": [
+    {
+      "error": 0.03792765680222067,
+      "group": "validation/cool-down/cool-down.csv",
+      "rows": 719
+    },
+    {
+      "error": 0.261641375717952,
+      "group": "validation/heat-up/theta_dot=0p3142.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.5507197218655874,
+      "group": "validation/heat-up/theta_dot=0p6283.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.8124553452133302,
+      "group": "validation/heat-up/theta_dot=0p9425.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.1765541522261707,
+      "group": "validation/heat-up/theta_dot=1p2566.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.439897150521342,
+      "group": "validation/heat-up/theta_dot=1p5708.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.3989346071142841,
+      "group": "validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv",
+      "rows": 239
+    },
+    {
+      "error": 0.47612258075760916,
+      "group": "validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv",
+      "rows": 239
+    }
+  ],
+  "coverage": {
+    "eligible": 1372,
+    "fraction": 1.0,
+    "predicted": 1372
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-069-equation-search-system-1",
+  "rule_sha256": "0c33d36f3710731f176044539c13d2653eb0d4323bf46838d58bad67d57214b7",
+  "run_id": "mechanism-v2-p100-069-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 18,
+    "expanded_expression": "(abs(torque * speed) - 0.15277449729158088 * (lubricant_temperature - housing_temperature) - 1.0000000003460945e-05 * (lubricant_temperature - environment_temperature)) / (0.15277449729158088 + 1.0000000003460945e-05) * (1 - exp(-(0.15277449729158088 + 1.0000000003460945e-05) * horizon / 198.4538429568792))",
+    "expression_bytes": 302,
+    "fixed_constants": 0,
+    "free_parameters": 3,
+    "intermediate_quantities": 6,
+    "learned_state_bytes": 126,
+    "literal_state_bytes": 1,
+    "nodes": 66,
+    "numeric_literal_count": 1,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 19
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.053630129883236184,
+    "perturbation_labels_available": false,
+    "population_rows": 1372,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

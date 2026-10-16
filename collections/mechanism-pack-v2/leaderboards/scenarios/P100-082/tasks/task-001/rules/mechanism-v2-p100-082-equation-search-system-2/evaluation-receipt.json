@@ -1,0 +1,81 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 7.289014325563601e-08,
+    "primary": "mae",
+    "primary_error": 7.289014325563601e-08,
+    "rmse": 1.033144228757656e-07
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 6.772136137360195e-08,
+  "by_group": [
+    {
+      "error": 7.759735972737776e-08,
+      "group": "Gamiz",
+      "rows": 2288
+    },
+    {
+      "error": 5.64777861467163e-08,
+      "group": "Kacergine",
+      "rows": 1559
+    },
+    {
+      "error": 8.884023301219185e-08,
+      "group": "Kranzberg-Freising",
+      "rows": 2762
+    },
+    {
+      "error": 8.774103267596427e-08,
+      "group": "RincondelBatovi",
+      "rows": 2540
+    },
+    {
+      "error": 5.379430471592986e-08,
+      "group": "Saint Mitre",
+      "rows": 2210
+    }
+  ],
+  "coverage": {
+    "eligible": 11359,
+    "fraction": 1.0,
+    "predicted": 11359
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-082-equation-search-system-2",
+  "rule_sha256": "431474ca04e964d8d773aedd8379b152d1d19e04b63e079f5e80d53ebb6036dd",
+  "run_id": "mechanism-v2-p100-082-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 17,
+    "expanded_expression": "2.6555325190432915e-07 * 1.8998787484969795 ** ((temperature - T_ref) / temperature_step) * (1 - 0.23811703013070964 * root_exclusion) * (water_fraction / (0.18469745932080825 + water_fraction)) * exp(-1.5611927031022668 * water_fraction ** 2)",
+    "expression_bytes": 202,
+    "fixed_constants": 2,
+    "free_parameters": 5,
+    "intermediate_quantities": 4,
+    "learned_state_bytes": 181,
+    "literal_state_bytes": 2,
+    "nodes": 58,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 5,
+    "weighted_operator_count": 17
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.05734872005834728,
+    "perturbation_labels_available": false,
+    "population_rows": 11359,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

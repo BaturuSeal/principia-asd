@@ -1,0 +1,324 @@
+{
+  "dev_error": 0.12459411261620904,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "group-558b5df222403194f4e470d1",
+        "loss": 0.16042490491348316
+      },
+      {
+        "group": "group-ce3c694bbcccd59ade607dae",
+        "loss": 0.0887633203189349
+      }
+    ],
+    "input_strata": {
+      "liquid_density": {
+        "bins": [
+          {
+            "mae": 0.0887633203189349,
+            "range": [
+              729.7486041198657,
+              730.447057026041
+            ],
+            "residual_bias": 0.0887633203189349,
+            "rows": 12
+          },
+          {
+            "mae": 0.16042490491348316,
+            "range": [
+              730.447057026041,
+              731.1455099322161
+            ],
+            "residual_bias": 0.16006804545773423,
+            "rows": 12
+          }
+        ],
+        "unique_values": 2
+      },
+      "mass_flux": {
+        "bins": [
+          {
+            "mae": 0.16042490491348316,
+            "range": [
+              221.4895,
+              436.33660000000003
+            ],
+            "residual_bias": 0.16006804545773423,
+            "rows": 12
+          },
+          {
+            "mae": 0.0887633203189349,
+            "range": [
+              436.33660000000003,
+              651.1837
+            ],
+            "residual_bias": 0.0887633203189349,
+            "rows": 12
+          }
+        ],
+        "unique_values": 2
+      },
+      "quality": {
+        "bins": [
+          {
+            "mae": 0.0887633203189349,
+            "range": [
+              0.046564,
+              0.0687385
+            ],
+            "residual_bias": 0.0887633203189349,
+            "rows": 12
+          },
+          {
+            "mae": 0.16042490491348316,
+            "range": [
+              0.0687385,
+              0.090913
+            ],
+            "residual_bias": 0.16006804545773423,
+            "rows": 12
+          }
+        ],
+        "unique_values": 2
+      },
+      "radial_fraction": {
+        "bins": [
+          {
+            "mae": 0.2234982898834222,
+            "range": [
+              0.043492529245975055,
+              0.35635142265175596
+            ],
+            "residual_bias": 0.2234982898834222,
+            "rows": 6
+          },
+          {
+            "mae": 0.16487391864928022,
+            "range": [
+              0.35635142265175596,
+              0.664581805078311
+            ],
+            "residual_bias": 0.16487391864928022,
+            "rows": 6
+          },
+          {
+            "mae": 0.07417681672787384,
+            "range": [
+              0.664581805078311,
+              0.888329648187918
+            ],
+            "residual_bias": 0.07417681672787384,
+            "rows": 6
+          },
+          {
+            "mae": 0.035827425204259813,
+            "range": [
+              0.888329648187918,
+              1.0
+            ],
+            "residual_bias": 0.035113706292761934,
+            "rows": 6
+          }
+        ],
+        "unique_values": 23
+      },
+      "vapor_density": {
+        "bins": [
+          {
+            "mae": 0.16042490491348316,
+            "range": [
+              39.45318728518982,
+              39.69259018472343
+            ],
+            "residual_bias": 0.16006804545773423,
+            "rows": 12
+          },
+          {
+            "mae": 0.0887633203189349,
+            "range": [
+              39.69259018472343,
+              39.931993084257044
+            ],
+            "residual_bias": 0.0887633203189349,
+            "rows": 12
+          }
+        ],
+        "unique_values": 2
+      }
+    },
+    "intermediate_ranges": {
+      "bulk_void": [
+        0.15480884326550637,
+        0.18425022291407825
+      ],
+      "gas_flux": [
+        0.5103839841365333,
+        0.7593339441590298
+      ],
+      "liquid_flux": [
+        0.27539418946191335,
+        0.8507888589139659
+      ],
+      "mixture_flux": [
+        0.7857781735984466,
+        1.6101228030729957
+      ],
+      "radial_odds": [
+        1.0,
+        14.423234646460296
+      ],
+      "void_fraction": [
+        0.15480884326550637,
+        0.7651325010751586
+      ]
+    },
+    "residual_bias": 0.12441568288833456,
+    "residual_rmse": 0.15960035435516245
+  },
+  "equation_system": {
+    "assumptions": [
+      "Drift-flux family; local radial profile is a separate phenomenological correction",
+      "Source radial coordinate is normalized by the maximum sampled coordinate, not a certified tube radius",
+      "Densities are fixed pressure-derived IAPWS approximations; no target-fitted fluid property",
+      "Whole source runs held out; same apparatus and some shared acquisition days"
+    ],
+    "constants": {},
+    "name": "Vapor drift with radial redistribution",
+    "nodes": [
+      {
+        "expression": "quality * mass_flux / vapor_density",
+        "id": "gas_flux",
+        "meaning": "Superficial vapor volumetric velocity from mass quality",
+        "unit": "m/s"
+      },
+      {
+        "expression": "(1 - quality) * mass_flux / liquid_density",
+        "id": "liquid_flux",
+        "meaning": "Superficial liquid volumetric velocity",
+        "unit": "m/s"
+      },
+      {
+        "expression": "gas_flux + liquid_flux",
+        "id": "mixture_flux",
+        "meaning": "Total superficial mixture velocity",
+        "unit": "m/s"
+      },
+      {
+        "expression": "gas_flux / (distribution * mixture_flux + drift_velocity)",
+        "id": "bulk_void",
+        "meaning": "Drift-flux effective vapor fraction before radial redistribution",
+        "unit": "1"
+      },
+      {
+        "expression": "exp(radial_shape * (1 - radial_fraction ** 2))",
+        "id": "radial_odds",
+        "meaning": "Relative radial redistribution of vapor odds",
+        "unit": "1"
+      },
+      {
+        "expression": "bulk_void * radial_odds / (1 - bulk_void + bulk_void * radial_odds)",
+        "id": "void_fraction",
+        "meaning": "Bounded local vapor void fraction",
+        "unit": "1"
+      }
+    ],
+    "output": "void_fraction",
+    "parameters": {
+      "distribution": {
+        "bounds": [
+          1,
+          3
+        ],
+        "initial": 1.2,
+        "meaning": "Effective phase-distribution coefficient",
+        "unit": "1"
+      },
+      "drift_velocity": {
+        "bounds": [
+          1e-06,
+          10
+        ],
+        "initial": 0.2,
+        "meaning": "Effective relative vapor drift velocity",
+        "unit": "m/s"
+      },
+      "radial_shape": {
+        "bounds": [
+          -4,
+          4
+        ],
+        "initial": 0.2,
+        "meaning": "Signed radial redistribution strength",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "quality * mass_flux / vapor_density / (distribution * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + drift_velocity) * exp(radial_shape * (1 - radial_fraction ** 2)) / (1 - quality * mass_flux / vapor_density / (distribution * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + drift_velocity) + quality * mass_flux / vapor_density / (distribution * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + drift_velocity) * exp(radial_shape * (1 - radial_fraction ** 2)))",
+  "fit_recipe": {
+    "development_rows": 24,
+    "log_coordinate_parameters": [
+      "distribution",
+      "drift_velocity"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 84
+  },
+  "identifiability": {
+    "condition_number": 7.620733639205141,
+    "parameters": 3,
+    "rank": 3,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "mass_flux",
+    "quality",
+    "vapor_density",
+    "liquid_density",
+    "radial_fraction"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v2",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "distribution": 1.0,
+    "drift_velocity": 2.511087647310727,
+    "radial_shape": 2.6738983698013232
+  },
+  "quantity_units": {
+    "liquid_density": "kg/m3",
+    "mass_flux": "kg/m2/s",
+    "quality": "1",
+    "radial_fraction": "1",
+    "target": "1",
+    "vapor_density": "kg/m3"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-v2-p100-027-equation-search-system-1",
+  "rule_sha256": "65a8be464b3e78595c07abfd40b1f34f3423332d894fb821bfd02251060fbd8f",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 20,
+    "expanded_expression": "quality * mass_flux / vapor_density / (1.0 * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + 2.511087647310727) * exp(2.6738983698013232 * (1 - radial_fraction ** 2)) / (1 - quality * mass_flux / vapor_density / (1.0 * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + 2.511087647310727) + quality * mass_flux / vapor_density / (1.0 * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + 2.511087647310727) * exp(2.6738983698013232 * (1 - radial_fraction ** 2)))",
+    "expression_bytes": 572,
+    "fixed_constants": 0,
+    "free_parameters": 3,
+    "intermediate_quantities": 5,
+    "learned_state_bytes": 94,
+    "literal_state_bytes": 8,
+    "nodes": 177,
+    "numeric_literal_count": 8,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 50
+  },
+  "task_id": "P100-027.mechanisms-v2",
+  "train_error": 0.06760493042791633
+}

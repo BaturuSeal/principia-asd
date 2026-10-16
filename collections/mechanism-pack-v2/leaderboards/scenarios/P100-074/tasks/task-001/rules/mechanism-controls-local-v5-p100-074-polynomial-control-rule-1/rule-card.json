@@ -1,0 +1,125 @@
+{
+  "dev_error": 158.29231266050022,
+  "execution_status": "complete",
+  "expression": "p0+p1*(concentration)+p2*(elapsed)+p3*(initial_signal)+p4*(initial_slope)+p5*(concentration*concentration)+p6*(concentration*elapsed)+p7*(concentration*initial_signal)+p8*(concentration*initial_slope)+p9*(elapsed*elapsed)+p10*(elapsed*initial_signal)+p11*(elapsed*initial_slope)+p12*(initial_signal*initial_signal)+p13*(initial_signal*initial_slope)+p14*(initial_slope*initial_slope)",
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -106.9637600047549,
+    "p1": 57760.23790937171,
+    "p10": 0.003802168008471709,
+    "p11": -0.0820431499375143,
+    "p12": -0.004018756685465018,
+    "p13": -2.3809362893628476,
+    "p14": -1520.0122466765558,
+    "p2": 0.11442250207982556,
+    "p3": 1.2112335655965407,
+    "p4": 899.022123275435,
+    "p5": -444247.16640608193,
+    "p6": -34.771103302145285,
+    "p7": -43.545611865859804,
+    "p8": -21858.157313001913,
+    "p9": -2.8343368359638734e-05
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "concentration": -0.771557112029627,
+      "elapsed": -0.5461353341031822,
+      "initial_signal": -0.7715571120296271,
+      "initial_slope": -0.7715571120296271
+    },
+    "mean": -21.686283760601643,
+    "p90_abs": 261.84310734062456,
+    "std": 180.87409841347787
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-074-polynomial-control-rule-1",
+  "rule_sha256": "85c37a43cb1e18881aca4935da38b0b1a1d28fc1fe2c21439ac9a440fb8721fd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-106.9637600047549 + 57760.23790937171 * concentration + 0.11442250207982556 * elapsed + 1.2112335655965407 * initial_signal + 899.022123275435 * initial_slope + -444247.16640608193 * (concentration * concentration) + -34.771103302145285 * (concentration * elapsed) + -43.545611865859804 * (concentration * initial_signal) + -21858.157313001913 * (concentration * initial_slope) + -2.8343368359638734e-05 * (elapsed * elapsed) + 0.003802168008471709 * (elapsed * initial_signal) + -0.0820431499375143 * (elapsed * initial_slope) + -0.004018756685465018 * (initial_signal * initial_signal) + -2.3809362893628476 * (initial_signal * initial_slope) + -1520.0122466765558 * (initial_slope * initial_slope)",
+    "expression_bytes": 383,
+    "free_parameters": 15,
+    "learned_state_bytes": 410,
+    "literal_state_bytes": 0,
+    "nodes": 155,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 38
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "concentration",
+      "elapsed",
+      "initial_signal",
+      "initial_slope",
+      "concentration*concentration",
+      "concentration*elapsed",
+      "concentration*initial_signal",
+      "concentration*initial_slope",
+      "elapsed*elapsed",
+      "elapsed*initial_signal",
+      "elapsed*initial_slope",
+      "initial_signal*initial_signal",
+      "initial_signal*initial_slope",
+      "initial_slope*initial_slope"
+    ],
+    "training_centers": [
+      0.0,
+      0.004800000000000003,
+      1440.0,
+      72.09042800000009,
+      0.19536637777777763,
+      8.142499999999997e-05,
+      6.912,
+      1.1002408120000011,
+      0.002399296927777779,
+      2385450.0,
+      103810.21632,
+      281.32758400000006,
+      15358.316884715907,
+      35.45329136985953,
+      0.08965039570461479
+    ],
+    "training_scales": [
+      1.0,
+      0.007641007786934915,
+      558.4353140695886,
+      100.80320964876432,
+      0.2268972766222756,
+      0.0001593042951006029,
+      12.102046200952962,
+      2.095226554974651,
+      0.004327859215953668,
+      1632263.0543971765,
+      160810.24843037958,
+      367.03041687889635,
+      27396.667833543204,
+      56.4440223315226,
+      0.12058368748897338
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 38.71609285220241,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

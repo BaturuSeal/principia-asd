@@ -1,0 +1,61 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 156.98000335838407,
+    "primary": "mae",
+    "primary_error": 156.98000335838407,
+    "rmse": 199.42366212890678
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 158.41744805624666,
+  "by_group": [
+    {
+      "error": 229.43293195868716,
+      "group": "group-32f65e8bcf958b45c6c92eb1",
+      "rows": 43
+    },
+    {
+      "error": 84.52707475808099,
+      "group": "group-9325ce927d38c901d5f70925",
+      "rows": 43
+    }
+  ],
+  "coverage": {
+    "eligible": 86,
+    "fraction": 1.0,
+    "predicted": 86
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-controls-local-v5-p100-074-linear-control-rule-1",
+  "rule_sha256": "4dfb8c1c81153eb9a83ec9fb43557dd9fdddda3123c86ac622043024d5a6b3de",
+  "run_id": "mechanism-controls-local-v5-p100-074-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-154.7476143358186 + -28723.76176820409 * concentration + 0.12396375138763029 * elapsed + 2.420368203560679 * initial_signal + 933.537723595916 * initial_slope",
+    "expression_bytes": 73,
+    "free_parameters": 5,
+    "learned_state_bytes": 128,
+    "literal_state_bytes": 0,
+    "nodes": 35,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 8
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.03282068195546162,
+    "perturbation_labels_available": false,
+    "population_rows": 86,
+    "ranking": false,
+    "samples": 86,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

@@ -14,7 +14,9 @@ from ..catalog.presentation import describe_scenario, describe_task
 from ..catalog.reviews import known_advisories, task_advisories
 from ..io import file_sha, read_json, sha, write_json
 from ..methods.registry import METHODS
+from .collections import bundle_packs, scenario_ids
 from .rule_view import rule_view
+from .tasks import task_entries
 
 
 def safe_public(value):
@@ -101,7 +103,14 @@ def verify_companion(path, *, preview):
 
 
 def build_site(
-    data_root, leaderboard_root, output, *, preview=False, companion_bundle=None, base_path="/"
+    data_root,
+    leaderboard_root,
+    output,
+    *,
+    preview=False,
+    companion_bundle=None,
+    base_path="/",
+    collections_manifest=None,
 ):
     if not re.fullmatch(r"/(?:[A-Za-z0-9_-]+/)*", base_path):
         raise ValueError("Base path must contain safe path segments and end in a slash")
@@ -110,12 +119,15 @@ def build_site(
     )
     if output.exists():
         raise ValueError("Use a new empty output path; existing site builds are immutable")
-    for root in (data_root, leaderboard_root):
+    packs = bundle_packs(collections_manifest) if collections_manifest else []
+    roots = [("primary", data_root, leaderboard_root)] + [
+        (pack["id"], Path(pack["data_root"]), Path(pack["leaderboard_root"])) for pack in packs
+    ]
+    for root in [r for _, data, boards in roots for r in (data, boards)]:
         if output.is_relative_to(root) or root.is_relative_to(output):
             raise ValueError("Site output must be separate from source editions")
         if any(p.is_symlink() for p in root.rglob("*")):
             raise ValueError("Public input editions must not contain symbolic links")
-    edition = read_json(data_root / "EDITION.json")
     scenarios = []
     tasks = {}
     bindings = {
@@ -123,21 +135,38 @@ def build_site(
         "leaderboard_edition_sha256": file_sha(leaderboard_root / "EDITION.json"),
         "contracts": {},
         "boards": {},
+        "collections": {
+            ident: {
+                "data_edition_sha256": file_sha(data / "EDITION.json"),
+                "leaderboard_edition_sha256": file_sha(boards / "EDITION.json"),
+            }
+            for ident, data, boards in roots
+        },
     }
-    for entry in edition["active_scenarios"]:
-        sid = entry["scenario_id"] if isinstance(entry, dict) else entry
-        if not re.fullmatch(r"[A-Za-z0-9_-]+", sid):
-            raise ValueError("Unsafe scenario identity")
-        path = data_root / "scenarios" / sid
+    paths = {}
+    for _ident, data, _ in roots:
+        for sid in scenario_ids(data):
+            path = data / "scenarios" / sid
+            info = read_json(path / "scenario.json")
+            if sid in paths:
+                if info.get("extends_scenario_sha256") != file_sha(paths[sid] / "scenario.json"):
+                    raise ValueError("Scenario collection identity collision: " + sid)
+            else:
+                paths[sid] = path
+    for sid, path in sorted(paths.items()):
         info = read_json(path / "scenario.json")
         if info["scenario_id"] != sid:
             raise ValueError("Scenario registry identity mismatch")
         entries = []
-        for f in sorted((path / "task-contracts").glob("*.json")):
+        for task_path, f in task_entries(path, None, packs=packs):
             task = describe_task(read_json(f))
+            if collections_manifest:
+                task["package_path"] = str(
+                    task_path.relative_to(Path(collections_manifest).resolve().parent)
+                )
             tasks[sid, task["task_id"]] = task
             entries.append(task)
-            bindings["contracts"][sid + "/" + f.name] = file_sha(f)
+            bindings["contracts"][sid + "/" + task["task_id"]] = file_sha(f)
         if not entries:
             raise ValueError("Scenario has no task contracts: " + sid)
         scenarios.append(
@@ -154,28 +183,42 @@ def build_site(
                     "source": info.get("source", {}),
                     "publication_authorized": info.get("publication_authorized", False),
                     "review_advisories": task_advisories(entries[0]),
-                    "package_path": "scenarios/" + sid,
+                    "package_path": str(
+                        path.relative_to(Path(collections_manifest).resolve().parent)
+                    )
+                    if collections_manifest
+                    else "data/scenarios/" + sid,
                 }
             )
         )
-    authorized = edition.get("publication_authorized") is True and all(
-        s["publication_authorized"] is True for s in scenarios
-    )
+    authorized = all(
+        read_json(data / "EDITION.json").get("publication_authorized") is True
+        for _, data, _ in roots
+    ) and all(s["publication_authorized"] is True for s in scenarios)
     if not preview and not authorized:
         raise ValueError(
             "Data redistribution is not authorized in this edition. Use --preview for local acceptance; clear source rights before public hosting."
         )
     boards = []
-    for p in sorted((leaderboard_root / "scenarios").glob("*/tasks/*/leaderboard.json")):
+    board_paths = [
+        (ident, root, p)
+        for ident, _, root in roots
+        for p in sorted((root / "scenarios").glob("*/tasks/*/leaderboard.json"))
+    ]
+    seen_boards = set()
+    for ident, board_root, p in board_paths:
         board = read_json(p)
         key = board["scenario_id"], board["task_id"]
         if key not in tasks:
             raise ValueError("Leaderboard has no registered public task")
+        if key in seen_boards:
+            raise ValueError("Duplicate task leaderboard across collections")
+        seen_boards.add(key)
         board["rule_presentations"] = {
             r["rule_id"]: rule_view(r.get("card", r), tasks[key]) for r in board["rules"]
         }
         boards.append(safe_public(board))
-        bindings["boards"][str(p.relative_to(leaderboard_root))] = file_sha(p)
+        bindings["boards"][ident + "/" + str(p.relative_to(board_root))] = file_sha(p)
     archive = verify_companion(companion_bundle, preview=preview) if companion_bundle else None
     output.mkdir(parents=True)
     assets = Path(__file__).parent

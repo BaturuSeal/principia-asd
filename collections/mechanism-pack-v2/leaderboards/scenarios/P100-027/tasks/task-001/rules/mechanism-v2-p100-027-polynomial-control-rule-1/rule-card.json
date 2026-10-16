@@ -1,0 +1,63 @@
+{
+  "dev_error": 0.07402936029637433,
+  "execution_status": "complete",
+  "expression": "p0+p1*(mass_flux)+p2*(quality)+p3*(vapor_density)+p4*(liquid_density)+p5*(radial_fraction)",
+  "inputs": [
+    "mass_flux",
+    "quality",
+    "vapor_density",
+    "liquid_density",
+    "radial_fraction"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -91.58594430503014,
+    "p1": 0.0003625701746591902,
+    "p2": 1.3090570832314732,
+    "p3": 0.24339827770626526,
+    "p4": 0.11256059425721215,
+    "p5": -0.4143803412063903
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "liquid_density": 0.39475051915506787,
+      "mass_flux": -0.3947505191550679,
+      "quality": 0.39475051915506787,
+      "radial_fraction": 0.00625107543342662,
+      "vapor_density": -0.3947505191550679
+    },
+    "mean": -0.05035509686567722,
+    "p90_abs": 0.15021026132558885,
+    "std": 0.07207115063057902
+  },
+  "rule_id": "mechanism-v2-p100-027-polynomial-control-rule-1",
+  "rule_sha256": "f8ade6c3190e697a5abb436b92faa434c09f4db24ac6a526bb079b901629c024",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-91.58594430503014 + 0.0003625701746591902 * mass_flux + 1.3090570832314732 * quality + 0.24339827770626526 * vapor_density + 0.11256059425721215 * liquid_density + -0.4143803412063903 * radial_fraction",
+    "expression_bytes": 90,
+    "free_parameters": 6,
+    "learned_state_bytes": 162,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "task_id": "P100-027.mechanisms-v2",
+  "train_error": 0.10220428821396399,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

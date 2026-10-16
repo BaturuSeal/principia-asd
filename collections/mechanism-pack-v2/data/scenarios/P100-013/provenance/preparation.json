@@ -1,0 +1,44 @@
+{
+  "admission": "local_research_preview",
+  "excluded_count": 1,
+  "exclusion_reasons": {
+    "native_blank_or_separator": 1
+  },
+  "groups": {
+    "dev": [
+      "heating-3C-min"
+    ],
+    "test": [
+      "heating-20C-min"
+    ],
+    "train": [
+      "heating-10C-min",
+      "heating-1C-min",
+      "heating-5C-min"
+    ]
+  },
+  "registry_entry_sha256": "1d25330a231e3e1b1b07cf8e52815723f73cb1016d6f58d62b47b7a1192e7a97",
+  "rows": {
+    "dev": 416,
+    "test": 501,
+    "train": 1609
+  },
+  "scenario_id": "P100-013",
+  "scientific_review": "not_assessed",
+  "source_terms": "NIST public data license",
+  "source_url": "https://data.nist.gov/od/id/mds2-3702",
+  "sources": [
+    {
+      "bytes": 78181,
+      "path": "raw/Figure 1-Conversion rate.xlsx",
+      "sha256": "7441a4e0eaa847fed632465d7f258eb3692936d9fa42612ed80328b7ddac91c2"
+    },
+    {
+      "bytes": 70606,
+      "path": "raw/Figure 2-Conversion.xlsx",
+      "sha256": "1525b4c90c7e640bf1bd340491051869a4a1c6de189bd64a457a0a619974de1c"
+    }
+  ],
+  "split_policy": "Whole heating scans: train 1/5/10 Celsius per minute; dev 3; test 20. One encapsulant system; heating-rate transfer, not independent-batch replication.",
+  "test_targets_public": false
+}

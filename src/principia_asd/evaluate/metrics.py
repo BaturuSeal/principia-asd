@@ -56,6 +56,11 @@ def validity(pred, contract):
 
 
 def predict(rule, rows, contract):
+    if rule.get("representation") == "equation-system-v1":
+        from ..engine.equations import execute_system
+
+        return execute_system(rule["equation_system"], columns(rows, contract["inputs"]),
+                              rule["parameters"], contract)
     if rule.get("representation") == "bound_expression_v1":
         raise ValueError("Explicit-state rules require the bound evaluator and trusted freeze")
     if rule.get("representation") == "tree":
@@ -90,6 +95,8 @@ def stability_profile(rule, rows, contract):
     for row in subset:
         r = dict(row)
         for k in contract["inputs"]:
+            if k in cfg.get("categorical_inputs", []):
+                continue
             bounds = cfg.get("input_ranges", {}).get(k)
             if bounds and isinstance(row[k], (int, float)):
                 sigma = (bounds[1] - bounds[0]) * cfg.get("relative_noise", 0.01)
@@ -150,7 +157,11 @@ def evaluate_rule(rule, rows, targets, contract):
                     "error": loss(pred[ids], np.asarray(targets)[ids], metric),
                 }
             )
-    if rule.get("representation") == "tree":
+    if rule.get("representation") == "equation-system-v1":
+        from ..engine.equations import system_complexity
+
+        simp = system_complexity(rule["equation_system"], rule["parameters"])
+    elif rule.get("representation") == "tree":
         simp = {
             "weighted_operator_count": len(rule["tree"]["value"]),
             "free_parameters": len(rule["tree"]["value"])

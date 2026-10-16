@@ -159,15 +159,31 @@ class Search:
             A = np.column_stack([np.ones(len(self.train)), *values])
             if not np.isfinite(A).all():
                 raise ValueError("Invalid transform domain")
-            # Train-only scaling improves conditioning; coefficients are expanded back to raw terms.
-            scale = np.maximum(np.std(A, axis=0), 1e-12)
+            # Center on train before scaling: constant physical coordinates must
+            # not become enormous columns that erase the design's numerical rank.
+            center = np.mean(A, axis=0)
+            constant = np.ptp(A, axis=0) == 0
+            center[constant] = A[0, constant]
+            center[0] = 0
+            scale = np.std(A, axis=0)
+            scale[constant | (scale == 0)] = 1
             scale[0] = 1
-            coef = np.linalg.lstsq(A / scale, self.y, rcond=1e-10)[0] / scale
+            coef = np.linalg.lstsq((A - center) / scale, self.y, rcond=1e-10)[0] / scale
+            coef[0] -= float(np.dot(coef[1:], center[1:]))
             params = {f"p{i}": float(v) for i, v in enumerate(coef)}
             exp = "p0" + "".join(f"+p{i + 1}*({t})" for i, t in enumerate(terms))
             if self.metric == "brier":
                 exp = f"minimum(1,maximum(0,{exp}))"
-            return self.add(exp, params, origin=origin)
+            card = self.add(exp, params, origin=origin)
+            if card is not None:
+                card["solver"] = {
+                    "version": "centered-least-squares-v3",
+                    "training_centers": center.tolist(),
+                    "training_scales": scale.tolist(),
+                    "terms": ["1", *terms],
+                    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+                }
+            return card
         except (ValueError, np.linalg.LinAlgError) as e:
             self.failures.append({"terms": terms, "reason": str(e)})
 
@@ -334,6 +350,14 @@ def execute_method(
         raise ValueError("This method requires a configured SiliconFlow gateway")
     limits = limits or {}
     roles = roles or DEFAULT_ROLES
+    if method_id == "persistence_control" and not task.get("reference_expression"):
+        return {"status": "unsupported", "reason": "This task does not declare a temporal no-change reference",
+                "rules": [], "trace": []}
+    if method_id in {"equation_search", "equation_agent"}:
+        from .equation_search import run_equations
+
+        return run_equations(method_id, task, train, dev, gateway=gateway, roles=roles,
+                             event=event, stopped=stopped, run_id=run_id, limits=limits)
     s = Search(
         task,
         train,
@@ -456,6 +480,8 @@ def execute_method(
 
     if method_id == "mean_control":
         s.add("p0", {"p0": s.mean}, origin="training mean")
+    elif method_id == "persistence_control":
+        s.add(task["reference_expression"], origin="Frozen task-specific persistence reference; no fitted coefficients")
     elif method_id == "linear_control":
         s.linear(task["inputs"])
     elif method_id == "polynomial_control":

@@ -1,0 +1,54 @@
+{
+  "dev_error": 5.662639176341915e-08,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "temperature",
+    "water_fraction",
+    "root_exclusion"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 1.2876934047930764e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "root_exclusion": 0.03734550929363303,
+      "temperature": -0.17732479573962434,
+      "water_fraction": -0.08145904510758306
+    },
+    "mean": 4.593946577795684e-08,
+    "p90_abs": 9.027646571786765e-08,
+    "std": 4.276562346566747e-08
+  },
+  "rule_id": "mechanism-v2-p100-082-mean-control-rule-1",
+  "rule_sha256": "900b350738979c70a21a6c2c1ed5b5d268cb4b3e5ae2a54e699aa4809456ecfa",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "1.2876934047930764e-07",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 30,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-082.mechanisms-v2",
+  "train_error": 6.597063031478608e-08,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

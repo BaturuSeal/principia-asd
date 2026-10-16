@@ -1,0 +1,31 @@
+{
+  "description": "Separate molecule-wall and viscous transport contributions to nitrogen flux through a hydrotalcite-coated support. Entire temperature regimes are held out, with calibrated absolute pressures and source flux units.",
+  "domain": "Membrane engineering",
+  "edition": "mechanism-pack-v2",
+  "independent_unit": "Single S-HT membrane and nitrogen only. Whole nominal temperatures: train 25/200/500 Celsius; dev 350; test 300/400/450. Actual temperatures remain inputs. Source validation sheet and other gases/materials are outside this contract.",
+  "limitations": [
+    "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+    "Known transport families, not direct pore-size identification",
+    "Additive effective Knudsen and viscous contributions",
+    "A viscosity power law approximates the finite measured temperature range"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 8,
+    "test": 24,
+    "train": 22
+  },
+  "scenario_id": "P100-061",
+  "size": {
+    "public_bytes": 10107
+  },
+  "source": {
+    "license": "cc-by-4.0",
+    "registry_identity": "P100-061",
+    "url": "https://zenodo.org/records/10691625"
+  },
+  "status": "local_research_preview",
+  "title": "Gas transport through a porous membrane"
+}

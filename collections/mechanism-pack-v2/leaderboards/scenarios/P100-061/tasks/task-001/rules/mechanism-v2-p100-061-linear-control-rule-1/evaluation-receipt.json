@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.5835274553839652,
+    "primary": "mae",
+    "primary_error": 0.5835274553839652,
+    "rmse": 0.5970179795017908
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.1194666433828158,
+  "by_group": [
+    {
+      "error": 0.46902126423763074,
+      "group": "S-HT-N2-300C",
+      "rows": 8
+    },
+    {
+      "error": 0.6090161176553845,
+      "group": "S-HT-N2-400C",
+      "rows": 8
+    },
+    {
+      "error": 0.6725449842588803,
+      "group": "S-HT-N2-450C",
+      "rows": 8
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-v2-p100-061-linear-control-rule-1",
+  "rule_sha256": "2c5e3cb125f6061bc37fefc6c1e49f84b5aea94cd1f7bc0c0277efd5f17cb89c",
+  "run_id": "mechanism-v2-p100-061-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-69.85845144897648 + -0.0006848311602141294 * temperature + 5.125767198134913e-06 * pressure_feed + 0.000690486870310562 * pressure_permeate",
+    "expression_bytes": 61,
+    "free_parameters": 4,
+    "learned_state_bytes": 113,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.12507351557032925,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

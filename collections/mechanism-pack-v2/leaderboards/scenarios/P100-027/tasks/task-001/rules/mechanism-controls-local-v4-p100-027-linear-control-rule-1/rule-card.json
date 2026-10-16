@@ -1,0 +1,91 @@
+{
+  "dev_error": 0.07402936029945086,
+  "execution_status": "complete",
+  "expression": "p0+p1*(mass_flux)+p2*(quality)+p3*(vapor_density)+p4*(liquid_density)+p5*(radial_fraction)",
+  "inputs": [
+    "mass_flux",
+    "quality",
+    "vapor_density",
+    "liquid_density",
+    "radial_fraction"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -91.58594419948646,
+    "p1": 0.0003625701746747442,
+    "p2": 1.3090570832460917,
+    "p3": 0.24339827733780453,
+    "p4": 0.1125605941327234,
+    "p5": -0.41438034120641176
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "liquid_density": 0.39475051913459447,
+      "mass_flux": -0.39475051913459447,
+      "quality": 0.39475051913459447,
+      "radial_fraction": 0.006251075433394468,
+      "vapor_density": -0.3947505191345945
+    },
+    "mean": -0.050355096871829284,
+    "p90_abs": 0.1502102613299885,
+    "std": 0.07207115062988897
+  },
+  "rule_id": "mechanism-controls-local-v4-p100-027-linear-control-rule-1",
+  "rule_sha256": "008af3e21e6fe0b55134e7b6b44ce4970f9dd1f1113a4701677ec77a81a108cd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-91.58594419948646 + 0.0003625701746747442 * mass_flux + 1.3090570832460917 * quality + 0.24339827733780453 * vapor_density + 0.1125605941327234 * liquid_density + -0.41438034120641176 * radial_fraction",
+    "expression_bytes": 90,
+    "free_parameters": 6,
+    "learned_state_bytes": 162,
+    "literal_state_bytes": 0,
+    "nodes": 43,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 10
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "mass_flux",
+      "quality",
+      "vapor_density",
+      "liquid_density",
+      "radial_fraction"
+    ],
+    "training_centers": [
+      0.0,
+      627.5455714285717,
+      0.2797751428571429,
+      38.26752386871202,
+      734.6641573529548,
+      0.6041221875449997
+    ],
+    "training_scales": [
+      1.0,
+      165.80786764078744,
+      0.17081476267367915,
+      0.9447198678890182,
+      2.788784003077586,
+      0.31997560037010114
+    ],
+    "version": "centered-least-squares-v2"
+  },
+  "task_id": "P100-027.mechanisms-v2",
+  "train_error": 0.1022042882139798,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

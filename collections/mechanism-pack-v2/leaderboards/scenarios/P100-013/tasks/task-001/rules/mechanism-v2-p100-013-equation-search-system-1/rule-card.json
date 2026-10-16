@@ -1,0 +1,256 @@
+{
+  "dev_error": 0.00020132746397077787,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "heating-3C-min",
+        "loss": 0.00020132746397077787
+      }
+    ],
+    "input_strata": {
+      "conversion": {
+        "bins": [
+          {
+            "mae": 5.273805238742193e-05,
+            "range": [
+              0.0,
+              0.03275
+            ],
+            "residual_bias": 5.273805238742193e-05,
+            "rows": 104
+          },
+          {
+            "mae": 0.0002728516512194084,
+            "range": [
+              0.03275,
+              0.5245
+            ],
+            "residual_bias": -0.0001436322324049437,
+            "rows": 104
+          },
+          {
+            "mae": 0.0004180467543659757,
+            "range": [
+              0.5245,
+              0.9165000000000001
+            ],
+            "residual_bias": -0.0004180467543659757,
+            "rows": 104
+          },
+          {
+            "mae": 6.167339791030543e-05,
+            "range": [
+              0.9165000000000001,
+              0.955
+            ],
+            "residual_bias": -4.5849106264550986e-05,
+            "rows": 104
+          }
+        ],
+        "unique_values": 269
+      },
+      "heating_rate": {
+        "bins": [],
+        "unique_values": 1
+      },
+      "temperature": {
+        "bins": [
+          {
+            "mae": 5.273805238742193e-05,
+            "range": [
+              379.746,
+              412.99275
+            ],
+            "residual_bias": 5.273805238742193e-05,
+            "rows": 104
+          },
+          {
+            "mae": 0.0002728516512194084,
+            "range": [
+              412.99275,
+              446.3635
+            ],
+            "residual_bias": -0.0001436322324049437,
+            "rows": 104
+          },
+          {
+            "mae": 0.0004180467543659757,
+            "range": [
+              446.3635,
+              479.41874999999993
+            ],
+            "residual_bias": -0.0004180467543659757,
+            "rows": 104
+          },
+          {
+            "mae": 6.167339791030543e-05,
+            "range": [
+              479.41874999999993,
+              512.5609999999999
+            ],
+            "residual_bias": -4.5849106264550986e-05,
+            "rows": 104
+          }
+        ],
+        "unique_values": 416
+      }
+    },
+    "intermediate_ranges": {
+      "conversion_rate": [
+        5.47127934225538e-06,
+        0.0007743403967405197
+      ],
+      "depletion": [
+        5.7114314083538483e-05,
+        1.0
+      ],
+      "remaining_fraction": [
+        0.04500000000000004,
+        1.0
+      ],
+      "thermal_rate": [
+        1.4961281172002225e-05,
+        0.3228364695696877
+      ]
+    },
+    "residual_bias": -0.0001386975101620121,
+    "residual_rmse": 0.00027675746085917486
+  },
+  "equation_system": {
+    "assumptions": [
+      "Arrhenius effective kinetics over the measured thermal scans",
+      "Conversion and rate are related calorimetric reductions, not independent response channels",
+      "Known kinetic families; microscopic reaction mechanism is not identified"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "150 Celsius reference temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 423.15
+      }
+    },
+    "name": "Arrhenius depletion kinetics",
+    "nodes": [
+      {
+        "expression": "k1 * exp(E1 * (1 / T_ref - 1 / temperature))",
+        "id": "thermal_rate",
+        "meaning": "Thermally activated baseline rate",
+        "unit": "s^-1"
+      },
+      {
+        "expression": "maximum(0, 1 - conversion)",
+        "id": "remaining_fraction",
+        "meaning": "Unconverted fraction in the measured calorimetric coordinate",
+        "unit": "1"
+      },
+      {
+        "expression": "remaining_fraction ** order",
+        "id": "depletion",
+        "meaning": "Reaction slowdown as unconverted material is depleted",
+        "unit": "1"
+      },
+      {
+        "expression": "thermal_rate * depletion",
+        "id": "conversion_rate",
+        "meaning": "Predicted conversion rate",
+        "unit": "s^-1"
+      }
+    ],
+    "output": "conversion_rate",
+    "parameters": {
+      "E1": {
+        "bounds": [
+          100,
+          30000
+        ],
+        "initial": 8000,
+        "meaning": "Activation energy divided by gas constant",
+        "unit": "K"
+      },
+      "k1": {
+        "bounds": [
+          1e-08,
+          0.1
+        ],
+        "initial": 0.0002,
+        "meaning": "Non-autocatalytic reference rate",
+        "unit": "s^-1"
+      },
+      "order": {
+        "bounds": [
+          0.1,
+          5
+        ],
+        "initial": 1.5,
+        "meaning": "Effective depletion order",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "k1 * exp(E1 * (1 / T_ref - 1 / temperature)) * maximum(0, 1 - conversion) ** order",
+  "fit_recipe": {
+    "development_rows": 416,
+    "log_coordinate_parameters": [
+      "E1",
+      "k1",
+      "order"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 1609
+  },
+  "identifiability": {
+    "condition_number": 14.503935166256039,
+    "parameters": 3,
+    "rank": 3,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "conversion",
+    "heating_rate"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v2",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "E1": 14625.058726062422,
+    "k1": 0.0007773216412314298,
+    "order": 3.1506492879648476
+  },
+  "quantity_units": {
+    "conversion": "1",
+    "heating_rate": "K/s",
+    "target": "s^-1",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-v2-p100-013-equation-search-system-1",
+  "rule_sha256": "18c17fadce678ee4f0dbf9ab52be18f2439071a117d2a38df65134da303b93f7",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 12,
+    "expanded_expression": "0.0007773216412314298 * exp(14625.058726062422 * (1 / T_ref - 1 / temperature)) * maximum(0, 1 - conversion) ** 3.1506492879648476",
+    "expression_bytes": 82,
+    "fixed_constants": 1,
+    "free_parameters": 3,
+    "intermediate_quantities": 3,
+    "learned_state_bytes": 84,
+    "literal_state_bytes": 4,
+    "nodes": 39,
+    "numeric_literal_count": 4,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-013.mechanisms-v2",
+  "train_error": 0.00023325761513042824
+}

@@ -1,0 +1,103 @@
+{
+  "dev_error": 0.0900642312254859,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(pressure_feed)+p3*(pressure_permeate)+p4*(temperature*temperature)+p5*(temperature*pressure_feed)+p6*(temperature*pressure_permeate)+p7*(pressure_feed*pressure_feed)+p8*(pressure_feed*pressure_permeate)+p9*(pressure_permeate*pressure_permeate)",
+  "inputs": [
+    "temperature",
+    "pressure_feed",
+    "pressure_permeate"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "centered-least-squares-v3",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -422.08412271386175,
+    "p1": 0.18210392686139537,
+    "p2": 5.404294393723273e-05,
+    "p3": 0.0068247263842008766,
+    "p4": -5.267921382928069e-06,
+    "p5": -3.210770962076836e-10,
+    "p6": -1.7392013576837512e-06,
+    "p7": 1.1083789008715233e-11,
+    "p8": -5.029614408426123e-10,
+    "p9": -2.641317132278611e-08
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "pressure_feed": 0.9944338733873491,
+      "pressure_permeate": 0.9734132055296532,
+      "temperature": 0.9413147155359217
+    },
+    "mean": -0.010939202003518611,
+    "p90_abs": 0.1362703199436129,
+    "std": 0.10129977907455559
+  },
+  "rule_id": "mechanism-controls-local-v5-p100-061-polynomial-control-rule-1",
+  "rule_sha256": "b7fe39a67dca54514d62d9363128cd63b518c5e8c6109260ef747df16ecefcf8",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-422.08412271386175 + 0.18210392686139537 * temperature + 5.404294393723273e-05 * pressure_feed + 0.0068247263842008766 * pressure_permeate + -5.267921382928069e-06 * (temperature * temperature) + -3.210770962076836e-10 * (temperature * pressure_feed) + -1.7392013576837512e-06 * (temperature * pressure_permeate) + 1.1083789008715233e-11 * (pressure_feed * pressure_feed) + -5.029614408426123e-10 * (pressure_feed * pressure_permeate) + -2.641317132278611e-08 * (pressure_permeate * pressure_permeate)",
+    "expression_bytes": 267,
+    "free_parameters": 10,
+    "learned_state_bytes": 293,
+    "literal_state_bytes": 0,
+    "nodes": 99,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "temperature",
+      "pressure_feed",
+      "pressure_permeate",
+      "temperature*temperature",
+      "temperature*pressure_feed",
+      "temperature*pressure_permeate",
+      "pressure_feed*pressure_feed",
+      "pressure_feed*pressure_permeate",
+      "pressure_permeate*pressure_permeate"
+    ],
+    "training_centers": [
+      0.0,
+      533.3772727272725,
+      311000.0,
+      103100.0,
+      322714.3997727273,
+      169139895.45454547,
+      54824087.72727273,
+      108603022727.27272,
+      32182886818.18182,
+      10632405454.545454
+    ],
+    "training_scales": [
+      1.0,
+      195.50724976517827,
+      109004.69130855208,
+      1671.9612870681412,
+      216679.13308994248,
+      93537627.64875276,
+      19707078.044174872,
+      70204730955.91806,
+      11588856748.691582,
+      347640378.0911236
+    ],
+    "version": "centered-least-squares-v3"
+  },
+  "task_id": "P100-061.mechanisms-v2",
+  "train_error": 0.014544323958025329,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

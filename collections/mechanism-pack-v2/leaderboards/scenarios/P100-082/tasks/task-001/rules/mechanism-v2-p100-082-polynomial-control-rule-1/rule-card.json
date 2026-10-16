@@ -1,0 +1,63 @@
+{
+  "dev_error": 5.744837640266876e-08,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(water_fraction)+p3*(root_exclusion)+p4*(temperature*temperature)+p5*(temperature*water_fraction)+p6*(temperature*root_exclusion)+p7*(water_fraction*water_fraction)+p8*(water_fraction*root_exclusion)+p9*(root_exclusion*root_exclusion)",
+  "inputs": [
+    "temperature",
+    "water_fraction",
+    "root_exclusion"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -3.879814549178815e-05,
+    "p1": 2.6686773017074006e-07,
+    "p2": -2.3439536712324467e-06,
+    "p3": 1.6116465978325587e-07,
+    "p4": -4.5767977134591785e-10,
+    "p5": 9.65662039391373e-09,
+    "p6": -1.098755216440214e-09,
+    "p7": -4.832641767014375e-07,
+    "p8": -1.0953265654005472e-07,
+    "p9": 1.6116465978667386e-07
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "root_exclusion": -0.09082799009265292,
+      "temperature": -0.5931663556541908,
+      "water_fraction": 0.2927054868247177
+    },
+    "mean": 2.751074863573346e-08,
+    "p90_abs": 1.0251776980448061e-07,
+    "std": 6.22879160891341e-08
+  },
+  "rule_id": "mechanism-v2-p100-082-polynomial-control-rule-1",
+  "rule_sha256": "991fd7fe791386d493d1b5d6275026aaa9cf10b31951214a120986d67138f006",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-3.879814549178815e-05 + 2.6686773017074006e-07 * temperature + -2.3439536712324467e-06 * water_fraction + 1.6116465978325587e-07 * root_exclusion + -4.5767977134591785e-10 * (temperature * temperature) + 9.65662039391373e-09 * (temperature * water_fraction) + -1.098755216440214e-09 * (temperature * root_exclusion) + -4.832641767014375e-07 * (water_fraction * water_fraction) + -1.0953265654005472e-07 * (water_fraction * root_exclusion) + 1.6116465978667386e-07 * (root_exclusion * root_exclusion)",
+    "expression_bytes": 257,
+    "free_parameters": 10,
+    "learned_state_bytes": 301,
+    "literal_state_bytes": 0,
+    "nodes": 99,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "task_id": "P100-082.mechanisms-v2",
+  "train_error": 4.9401479527991904e-08,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

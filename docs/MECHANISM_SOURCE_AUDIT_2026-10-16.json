@@ -1,0 +1,453 @@
+{
+  "data_edition_sha256": "1c2c9162797f92f8ea24470d2cfc87e7ae89c9b06895db0a1287e242a3a5c1a1",
+  "legacy_audit": {
+    "scenario_count": 8,
+    "scenarios": [
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 387318,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 416,
+          "test": 501,
+          "train": 1609
+        },
+        "scenario_id": "P100-013",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 60541,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 24,
+          "test": 36,
+          "train": 84
+        },
+        "scenario_id": "P100-027",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 269039,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 125,
+          "test": 221,
+          "train": 616
+        },
+        "scenario_id": "P100-043",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 623852,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 304,
+          "test": 384,
+          "train": 1216
+        },
+        "scenario_id": "P100-049",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 21484,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 8,
+          "test": 24,
+          "train": 22
+        },
+        "scenario_id": "P100-061",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 564669,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 22,
+          "test": 1372,
+          "train": 125
+        },
+        "scenario_id": "P100-069",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 102404,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 86,
+          "test": 86,
+          "train": 215
+        },
+        "scenario_id": "P100-074",
+        "valid": false
+      },
+      {
+        "errors": [
+          "Missing source rights evidence"
+        ],
+        "expanded_public_bytes": 6723736,
+        "publication_authorized": false,
+        "rows": {
+          "dev": 6061,
+          "test": 11359,
+          "train": 15531
+        },
+        "scenario_id": "P100-082",
+        "valid": false
+      }
+    ],
+    "scope": "Packaging, hashes and separation only; source rights and scientific semantics require separate review",
+    "valid": false
+  },
+  "metadata_limitation": "The frozen scenario source objects omit the legacy evidence array. This separate receipt binds checked source records to every scenario hash; it does not rewrite experimental inputs or grant publication permission.",
+  "publication_authorized": false,
+  "registry_sha256": "13c0f43bc63fb0202dc5245e5cbafb127f6bb19da332e80c62f110ad47b4532f",
+  "scenarios": [
+    {
+      "claimed_license": "NIST public data license",
+      "contract_sha256": "66585b6044d6639e51edf39319433d88c6c60d0fa1a9f338b12b7cabb0092335",
+      "native_sources": [
+        {
+          "sha256": "7441a4e0eaa847fed632465d7f258eb3692936d9fa42612ed80328b7ddac91c2",
+          "source": "13_materials_nist_encapsulant_cure/raw/Figure 1-Conversion rate.xlsx"
+        },
+        {
+          "sha256": "1525b4c90c7e640bf1bd340491051869a4a1c6de189bd64a457a0a619974de1c",
+          "source": "13_materials_nist_encapsulant_cure/raw/Figure 2-Conversion.xlsx"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "a7aa7028eb2b26e383015e5f2edce33531dd03e1bef0741ad16a0089fa6e8ccc",
+          "source": "13_materials_nist_encapsulant_cure/context/mds2-3702_nerdm.json",
+          "terms": "https://www.nist.gov/open/license"
+        }
+      ],
+      "scenario_id": "P100-013",
+      "scenario_sha256": "e8da97b0d5dd85a9884ca4e534cd435b9a38db65e99ced1549704bc13b1c1742",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://data.nist.gov/od/id/mds2-3702"
+    },
+    {
+      "claimed_license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "contract_sha256": "b9005433d579c16777f82d885972f05df09513a8995e5de1fbd3f660cf93379c",
+      "native_sources": [
+        {
+          "sha256": "93293c772264c741d13304f609f1ca2777936a57b0ddbe9bd14d72ec3a32ef49",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/context/zenodo_record.json"
+        },
+        {
+          "sha256": "11da9acf56b29d3ebb663cf61ba4a160eb0edbe8b0bf9437db6e670c37053029",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230630_Run_31.xml"
+        },
+        {
+          "sha256": "a0208939e43d75a145423b58344d6081e6758cccd94bb0376d9dc64b33ec46aa",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230630_Run_32.xml"
+        },
+        {
+          "sha256": "8f3fd25212b5155b68408f7c81da6a5732d33330ce0db4e8792b37f82cc18253",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230808_Run_02.xml"
+        },
+        {
+          "sha256": "4dd6080296b4871392f9d1ffb9ab7c298ae2c5f7981c944434872f6a17ad4fa0",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230808_Run_07.xml"
+        },
+        {
+          "sha256": "5afa379168fefdfc879b09e1bd74c0f3563e94ce24826b6d2e53a33db1d6546b",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_09.xml"
+        },
+        {
+          "sha256": "be3ef7afa5038564c85f426e77def6f7b9698a63b1e7d156500659d1b08829a8",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_10.xml"
+        },
+        {
+          "sha256": "3973af33c647a7572c8d896680c1e569ceb09a1bc58b543bf4a8c12281e2a708",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_13.xml"
+        },
+        {
+          "sha256": "2efa4c2ba02ea9801929eb047c55d9dd6bf0fad4c3cb4d5dc5c514e480feb66a",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_16.xml"
+        },
+        {
+          "sha256": "07d0b80bcd2b90fb9084511a14a178e531108930eb1748852a3fc5a999a554d5",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_18.xml"
+        },
+        {
+          "sha256": "93c4bf580cf5a8639e2754d84a38cf1908eedc7908f7a8700f906189f9ef3c32",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230809_Run_20.xml"
+        },
+        {
+          "sha256": "e0966e37be931742ec6fb57b8f5ec2a3e4dd155fec31dc6745686e42834e6cb4",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230810_Run_04.xml"
+        },
+        {
+          "sha256": "a818e3c3b9ba36224f127dcd0c3e40e2e9602950c6938cf8f95449e32d0e45e4",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/ID_20230810_Run_07.xml"
+        },
+        {
+          "sha256": "fe9e98bad2e91697ed5ad8ea7114e82735f3720ef056e29a6e7d8152883e4e70",
+          "source": "_benchmark_100/release_candidate/scenarios/27_fluid_dynamics_kth_boiling/raw/readme.txt"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "93293c772264c741d13304f609f1ca2777936a57b0ddbe9bd14d72ec3a32ef49",
+          "source": "27_fluid_dynamics_kth_boiling/context/zenodo_record.json",
+          "terms": {
+            "id": "cc-by-4.0"
+          }
+        }
+      ],
+      "scenario_id": "P100-027",
+      "scenario_sha256": "a315f6d36d871b62be37a0dd780187c0780ef5d2013586edabc2b45cb4e5cb40",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://zenodo.org/records/14627088"
+    },
+    {
+      "claimed_license": "MIT",
+      "contract_sha256": "36fcafd437819a51c808e2254f7fb2b71fa7e0e7057a3baead96191cdae54b06",
+      "native_sources": [
+        {
+          "sha256": "f16385e497f4ae54ab342e26d2540c3f17378907074301ad10793a3d1fb398eb",
+          "source": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/LICENSE"
+        },
+        {
+          "sha256": "298bc36844a44118157fe1b051fd7079ed88c94877c6d94b80f32cc3bc96110a",
+          "source": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/README.md"
+        },
+        {
+          "sha256": "91c2f175b3081351ca3cd864e4642c209614c150f91ec320b6b09796f27260ab",
+          "source": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/wandb_data_extraction.py"
+        },
+        {
+          "sha256": "9e883d4105ace4f739b4d440a9ad51257f775b7fd71e8243c0c0ee9d0130a18c",
+          "source": "_benchmark_100/release_candidate/scenarios/43_ai_gemstones_training/raw/wandb_dfs/wandb_df_raw.jsonl"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "notice": "MIT License\n\nCopyright (c) 2025 Sean McLeish, John Kirchenbauer, David Yu Miller, Siddharth Singh, Abhinav Bhatele, Micah Goldblum, Ashwinee Panda, Tom Goldstein\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+          "sha256": "f16385e497f4ae54ab342e26d2540c3f17378907074301ad10793a3d1fb398eb",
+          "source": "43_ai_gemstones_training/raw/LICENSE",
+          "terms": "MIT"
+        }
+      ],
+      "scenario_id": "P100-043",
+      "scenario_sha256": "135cf27d32277655b078dd8eff8d93607b55cb0f250e7875759daa593bf2c9d7",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://github.com/mcleish7/gemstone-scaling-laws"
+    },
+    {
+      "claimed_license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "contract_sha256": "eff497d6f7a8141fcfc92fe830f43722172dc70e488e5616a165629150c325c3",
+      "native_sources": [
+        {
+          "sha256": "c13ee009c904937d3ba678f9ebba4d3b1fcd08a82c3bced3e787548d3725ea98",
+          "source": "_benchmark_100/release_candidate/scenarios/49_battery_dlr_native_exports/context/zenodo_record.json"
+        },
+        {
+          "sha256": "9e9c27472a4b28e1ec78ca16acde4a8d8734b730035ed8f64b3c98d912c10017",
+          "source": "_benchmark_100/release_candidate/scenarios/49_battery_dlr_native_exports/raw/DLR__LiGrHydra0b__20221114__GITT__25degC__Basytec.txt"
+        },
+        {
+          "sha256": "f4d41fc0daa3f80f5c7cd46d31b4fe0c69074aa5f2ef0f07d2d247a7ce4526b9",
+          "source": "_benchmark_100/release_candidate/scenarios/49_battery_dlr_native_exports/raw/DLR__LiGrHydra0b__20230131__POCV__25degC__Basytec.txt"
+        },
+        {
+          "sha256": "ebaa6644d4a79599776f56ea21e0f47cb56cb7f96660877e1da7e6bd26513228",
+          "source": "_benchmark_100/release_candidate/scenarios/49_battery_dlr_native_exports/raw/metadata.json"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "c13ee009c904937d3ba678f9ebba4d3b1fcd08a82c3bced3e787548d3725ea98",
+          "source": "49_battery_dlr_native_exports/context/zenodo_record.json",
+          "terms": {
+            "id": "cc-by-4.0"
+          }
+        }
+      ],
+      "scenario_id": "P100-049",
+      "scenario_sha256": "4c0030203c9b14790fc0c7db0c3b79093185acb0a1ed0869df6319c34f345778",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://zenodo.org/records/17295469"
+    },
+    {
+      "claimed_license": "cc-by-4.0",
+      "contract_sha256": "92cfa84d10183d548d837499acb76c7f6fff0a9ef22e241278fecc6444452c5b",
+      "native_sources": [
+        {
+          "sha256": "64e3a835815493c739fec72acb2593e1ca67ee34bb04d0e1021dab1e5e095a58",
+          "source": "61_chemistry_membrane_permeation/raw/DataPorousMembranes.xlsx"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "d2d2fd1910a69e7b9de9838f69430bd4607764b57ec94bbfb38420ce56ac566e",
+          "source": "61_chemistry_membrane_permeation/context/source_record.json",
+          "terms": {
+            "id": "cc-by-4.0"
+          }
+        }
+      ],
+      "scenario_id": "P100-061",
+      "scenario_sha256": "767903c7c34101af9bf3773a119d05ad2a210085d13caab27f87932f925d6683",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://zenodo.org/records/10691625"
+    },
+    {
+      "claimed_license": "CC BY 4.0",
+      "contract_sha256": "cf1da1bf5d177e0ad23f112a50687caaeb3b93008d5caf932b0c440ad6543d9f",
+      "native_sources": [
+        {
+          "sha256": "9020ae9bb340ed5d04d5b2647678bfd04b5356de08b4b8477767a05fa8369a6b",
+          "source": "69_robotics_gearbox_thermal/raw/identification/theta_dot=0p9425.csv"
+        },
+        {
+          "sha256": "632ffc0280b5ce6f955edd7c21402e20e3508096c6df8481d3faed7ae9eb9ee6",
+          "source": "69_robotics_gearbox_thermal/raw/identification/theta_dot=1p0996.csv"
+        },
+        {
+          "sha256": "13073cd82822c5a40ff84dcd7670d6da0e1d2783d8cbb2185cbe15f47ab2822a",
+          "source": "69_robotics_gearbox_thermal/raw/identification/theta_dot=1p2566.csv"
+        },
+        {
+          "sha256": "9208ddef27fa1912ad36ab2112ac5b1e1374a50d02f2cb2ac7f7b5186c2fbd89",
+          "source": "69_robotics_gearbox_thermal/raw/identification/theta_dot=1p4137.csv"
+        },
+        {
+          "sha256": "d8627372598e7002f15703e1befe1f08f53cc1a697d25e2ea3899fadbff6eb7a",
+          "source": "69_robotics_gearbox_thermal/raw/identification/theta_dot=1p5708.csv"
+        },
+        {
+          "sha256": "15e528f36e97640645fed9c4071360b8e03ec145674b97d3383881a152cab1c3",
+          "source": "69_robotics_gearbox_thermal/raw/validation/cool-down/cool-down.csv"
+        },
+        {
+          "sha256": "0f23964a51604f8df3759e0047581bfe9747285dd68e52fd8d7c6243592c850e",
+          "source": "69_robotics_gearbox_thermal/raw/validation/heat-up/theta_dot=0p3142.csv"
+        },
+        {
+          "sha256": "99b2e1b1d1f74eef3afa19c7c87fe2a6cd28a94dc1774628cad45c4f5c1d3f46",
+          "source": "69_robotics_gearbox_thermal/raw/validation/heat-up/theta_dot=0p6283.csv"
+        },
+        {
+          "sha256": "6c96d52aef7859e475c69547c1f0e206c219618cb353ad2628fd5b9129d6fcf9",
+          "source": "69_robotics_gearbox_thermal/raw/validation/heat-up/theta_dot=0p9425.csv"
+        },
+        {
+          "sha256": "2189fc93bbdfabcd97b47050d0695bd21de07e87ad48d0380fbfdd061911d35e",
+          "source": "69_robotics_gearbox_thermal/raw/validation/heat-up/theta_dot=1p2566.csv"
+        },
+        {
+          "sha256": "a867f21befd4e4852be3182291075211399917a0047e6ce309fbfe097b9eba1c",
+          "source": "69_robotics_gearbox_thermal/raw/validation/heat-up/theta_dot=1p5708.csv"
+        },
+        {
+          "sha256": "8e62c6b9aed68c589f6fb16fb2c4b18158ff325dec5870606f651bd02831ae88",
+          "source": "69_robotics_gearbox_thermal/raw/validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv"
+        },
+        {
+          "sha256": "1e17f06bfc59f3b526dceca385f9a19c3d3518cafd84cc32d776c6c9140c8e18",
+          "source": "69_robotics_gearbox_thermal/raw/validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "93b8133ddbb8bc37ca5b50f8c92be8a1f7ce23d1b2b475eb4597823209dfbc5f",
+          "source": "69_robotics_gearbox_thermal/context/darus.json",
+          "terms": {
+            "iconUri": "https://licensebuttons.net/l/by/4.0/88x31.png",
+            "name": "CC BY 4.0",
+            "uri": "http://creativecommons.org/licenses/by/4.0"
+          }
+        }
+      ],
+      "scenario_id": "P100-069",
+      "scenario_sha256": "99f504352b5e7fc93b7174f64626cbd85dd756260d5ddf971064066dbbfe5f2b",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://doi.org/10.18419/DARUS-5015"
+    },
+    {
+      "claimed_license": "cc-by-4.0",
+      "contract_sha256": "476e2b9caca47881e680a25ff54e3d68af44e82981235aca02a08615be1a2006",
+      "native_sources": [
+        {
+          "sha256": "9f7f8cdaaee4e7b1bdd1a29a2dfa14e982ce996d0b8693dd21ed163007a816ed",
+          "source": "_benchmark_100/release_candidate/scenarios/74_biochemistry_kinase_biosensors/raw/Fig_S3A.csv"
+        },
+        {
+          "sha256": "dd4d22a6ef93c7e054cf999b6847fbd81b6d5c404b1f095c8f8149c872e5aa39",
+          "source": "_benchmark_100/release_candidate/scenarios/74_biochemistry_kinase_biosensors/context/source_record.json"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "dd4d22a6ef93c7e054cf999b6847fbd81b6d5c404b1f095c8f8149c872e5aa39",
+          "source": "74_biochemistry_kinase_biosensors/context/source_record.json",
+          "terms": {
+            "id": "cc-by-4.0"
+          }
+        }
+      ],
+      "scenario_id": "P100-074",
+      "scenario_sha256": "38cd9ca4b7ff85e04a4cb57a9566426069ab243098b341700c5a752be80cd191",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://zenodo.org/records/18911385"
+    },
+    {
+      "claimed_license": "cc-by-4.0",
+      "contract_sha256": "b81e8b45a81c5643b7af0a267d490a8b20632bcaca8c85660dc256ecc7751a4e",
+      "native_sources": [
+        {
+          "sha256": "bcbf7e1a87b056ee8deb75f8b3fd10c1bfba9a725030da8dede1bf3bf9b57438",
+          "source": "82_ecology_soil_respiration/raw/holisoils_soil_respiration_dataset.csv"
+        }
+      ],
+      "redistribution_approval": "pending",
+      "rights_evidence": [
+        {
+          "sha256": "061acf808ceb29447be67af8166eb97277c909c25630fb1cb88f38bc160389f2",
+          "source": "82_ecology_soil_respiration/context/source_record.json",
+          "terms": {
+            "id": "cc-by-4.0"
+          }
+        }
+      ],
+      "scenario_id": "P100-082",
+      "scenario_sha256": "29bfc1a18d5fa85dc7b80eb2991ccf0d6e6259e5d078b30b1c46604531739365",
+      "scientific_admission": "local_research_preview",
+      "source_url": "https://zenodo.org/records/17519671"
+    }
+  ],
+  "scope": "Exact local source identity, license metadata, sample and group separation, size and hashes. Not an independent scientific or legal certification.",
+  "source_bytes_and_rights_records_verified": true,
+  "technical_packaging_checks_pass": true
+}

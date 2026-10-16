@@ -1,0 +1,71 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.043637825388943764,
+    "primary": "mae",
+    "primary_error": 0.043637825388943764,
+    "rmse": 0.04840050702486777
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.1194666433828158,
+  "by_group": [
+    {
+      "error": 0.03861473458116084,
+      "group": "S-HT-N2-300C",
+      "rows": 8
+    },
+    {
+      "error": 0.045051371988287375,
+      "group": "S-HT-N2-400C",
+      "rows": 8
+    },
+    {
+      "error": 0.047247369597383064,
+      "group": "S-HT-N2-450C",
+      "rows": 8
+    }
+  ],
+  "coverage": {
+    "eligible": 24,
+    "fraction": 1.0,
+    "predicted": 24
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-061-equation-search-system-2",
+  "rule_sha256": "c01f8c7a35cbd1a0dd09fb3fe2be54ab212ecff0b5ebbe1c2e75a68d9a7205de",
+  "run_id": "mechanism-v2-p100-061-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 16,
+    "expanded_expression": "0.987787202693006 * sqrt(T_ref / temperature) * ((pressure_feed - pressure_permeate) / p_ref) + 0.44118250458773056 * ((pressure_feed + pressure_permeate) / (2 * p_ref)) * ((pressure_feed - pressure_permeate) / p_ref) * (T_ref / temperature) ** (1 + 0.8059209331623688)",
+    "expression_bytes": 243,
+    "fixed_constants": 2,
+    "free_parameters": 3,
+    "intermediate_quantities": 6,
+    "learned_state_bytes": 100,
+    "literal_state_bytes": 2,
+    "nodes": 72,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 18
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.029090972315702717,
+    "perturbation_labels_available": false,
+    "population_rows": 24,
+    "ranking": false,
+    "samples": 24,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

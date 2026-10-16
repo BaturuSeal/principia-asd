@@ -1,0 +1,40 @@
+{
+  "description": "Surface observations from Desert Rock and Penn State test whether air temperature and humidity explain downward thermal radiation. Competing equations separate blackbody emission from effective sky emissivity; clouds and vertical structure remain unresolved.",
+  "domain": "atmospheric science",
+  "edition": "equation-pack-v1",
+  "independent_unit": "Site and full day/weather blocks.",
+  "limitations": [
+    "Retrospective observations; no unseen-data claim",
+    "Two sites only: the test set is site transfer to Penn State, not independent replication across many climates",
+    "All retained weather conditions are included; the clear-sky-inspired prior may fail under clouds",
+    "Hourly point selection and QC exclusions are completely recorded; no target-based outlier filtering",
+    "Tetens saturation pressure is a disclosed deterministic preprocessing prior"
+  ],
+  "local_extension": true,
+  "rights_status": "source_terms_documented",
+  "rows": {
+    "dev": 744,
+    "test": 1488,
+    "train": 743
+  },
+  "scenario_id": "P100-048",
+  "size": {
+    "public_bytes": 96109
+  },
+  "source": {
+    "evidence": [
+      {
+        "license": "U.S. government public-domain observations; NOAA acknowledgment",
+        "record": "https://gml.noaa.gov/grad/surfrad/",
+        "scope": "Registered source terms, verified against source record; no external review claim"
+      }
+    ],
+    "license": "U.S. government public-domain observations; NOAA acknowledgment",
+    "local_folder": "48_atmosphere_noaa_surfrad_2026",
+    "registry_entry_sha256": "239459f999cd133276889a57fbe411c51fc11870a7a98f7336cf4795540caffb",
+    "registry_identity": "P100-048",
+    "url": "https://gml.noaa.gov/grad/surfrad/"
+  },
+  "status": "local_research_preview",
+  "title": "Atmospheric longwave radiation across climates"
+}

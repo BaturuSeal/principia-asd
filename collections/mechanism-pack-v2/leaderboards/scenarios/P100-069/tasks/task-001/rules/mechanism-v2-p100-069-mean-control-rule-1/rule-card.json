@@ -1,0 +1,59 @@
+{
+  "dev_error": 0.4664800000000005,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "lubricant_temperature",
+    "housing_temperature",
+    "environment_temperature",
+    "speed",
+    "torque",
+    "horizon"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.9496800000000001
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "environment_temperature": 0.6519661005753161,
+      "housing_temperature": 0.8143504919514263,
+      "lubricant_temperature": 0.9129860806503984,
+      "speed": 0.7167900997442237,
+      "torque": -0.23983541069116093
+    },
+    "mean": -0.4130472727272723,
+    "p90_abs": 1.22132,
+    "std": 0.6776022688205402
+  },
+  "rule_id": "mechanism-v2-p100-069-mean-control-rule-1",
+  "rule_sha256": "28837448b5f341e01b4e778c43f5f5cc24fa23a0d58c9232fa6c9090c721216a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.9496800000000001",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-069.mechanisms-v2",
+  "train_error": 0.4569783225490196,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

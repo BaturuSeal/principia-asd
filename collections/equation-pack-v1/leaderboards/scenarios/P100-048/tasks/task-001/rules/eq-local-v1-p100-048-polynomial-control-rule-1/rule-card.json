@@ -1,0 +1,54 @@
+{
+  "dev_error": 17.98905523271239,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(vapor_pressure)",
+  "inputs": [
+    "temperature",
+    "vapor_pressure"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "degree-1",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -519.5678901391205,
+    "p1": 2.6249088681422243,
+    "p2": 0.10353414882251001
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "temperature": -0.22971363242885592,
+      "vapor_pressure": 0.6293547579209772
+    },
+    "mean": -9.938428944226336,
+    "p90_abs": 34.20129714581605,
+    "std": 19.795217646477
+  },
+  "rule_id": "eq-local-v1-p100-048-polynomial-control-rule-1",
+  "rule_sha256": "14c1e6a89001b7d72a956d8ce04ab52ff69285045b2feace41564601c4d53f81",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-519.5678901391205 + 2.6249088681422243 * temperature + 0.10353414882251001 * vapor_pressure",
+    "expression_bytes": 39,
+    "free_parameters": 3,
+    "learned_state_bytes": 79,
+    "literal_state_bytes": 0,
+    "nodes": 19,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 4
+  },
+  "task_id": "P100-048.equations-v1",
+  "train_error": 13.35923903999532,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

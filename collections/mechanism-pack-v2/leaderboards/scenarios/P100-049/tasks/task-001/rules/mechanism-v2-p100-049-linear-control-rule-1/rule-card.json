@@ -1,0 +1,66 @@
+{
+  "dev_error": 0.0005230525422415117,
+  "execution_status": "complete",
+  "expression": "p0+p1*(elapsed)+p2*(anchor_time_early)+p3*(anchor_time_late)+p4*(voltage_early)+p5*(voltage_late)+p6*(pulse_duration)",
+  "inputs": [
+    "elapsed",
+    "anchor_time_early",
+    "anchor_time_late",
+    "voltage_early",
+    "voltage_late",
+    "pulse_duration"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 21.533019006402174,
+    "p1": 3.448700142190371e-08,
+    "p2": -0.08786734750739587,
+    "p3": 0.014788853271028142,
+    "p4": -1.933286750652001,
+    "p5": 2.9347406293702436,
+    "p6": -0.12510110967486054
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "anchor_time_early": -0.017146663054400015,
+      "anchor_time_late": 0.0467756633854445,
+      "elapsed": -0.01861071889004121,
+      "pulse_duration": 0.14880631061326954,
+      "voltage_early": 0.11366733237292106,
+      "voltage_late": 0.11296386384104595
+    },
+    "mean": 8.717161951795147e-05,
+    "p90_abs": 0.0010469997920732664,
+    "std": 0.0006923028316623154
+  },
+  "rule_id": "mechanism-v2-p100-049-linear-control-rule-1",
+  "rule_sha256": "e85e1485b92c0c0163e11e128ded30f27236acc1dd4e65b40b6acc62a011e5aa",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "21.533019006402174 + 3.448700142190371e-08 * elapsed + -0.08786734750739587 * anchor_time_early + 0.014788853271028142 * anchor_time_late + -1.933286750652001 * voltage_early + 2.9347406293702436 * voltage_late + -0.12510110967486054 * pulse_duration",
+    "expression_bytes": 117,
+    "free_parameters": 7,
+    "learned_state_bytes": 191,
+    "literal_state_bytes": 0,
+    "nodes": 51,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 12
+  },
+  "task_id": "P100-049.mechanisms-v2",
+  "train_error": 0.0006385200853234073,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

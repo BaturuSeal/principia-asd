@@ -1,0 +1,164 @@
+{
+  "schema": "principia-asd-local-acceptance-v1",
+  "created_at": "2026-10-15T15:57:22.053054+00:00",
+  "version": "1.0.0rc5",
+  "status": "ready_for_local_user_review",
+  "cloud_deployment_performed": false,
+  "public_upload_performed": false,
+  "entry_point": "http://127.0.0.1:8150/",
+  "scope": {
+    "curated_scenarios": 43,
+    "new_scenarios": [
+      "P100-048",
+      "P100-057",
+      "P100-058"
+    ],
+    "new_methods": [
+      "equation_search",
+      "equation_agent"
+    ],
+    "historical_primary_attempts": 520,
+    "historical_primary_rules": 693,
+    "new_engineering_attempts": 15,
+    "complete": 12,
+    "failed": 3,
+    "new_rules": 19
+  },
+  "checks": {
+    "python_tests": {
+      "passed": 1754,
+      "duration_seconds": 385.52,
+      "receipt_sha256": "72e93fe1fcd9e9678a1c2223107979172fff05b7e849695bbd6a1602770c3768"
+    },
+    "ruff": "passed",
+    "javascript_syntax": "passed",
+    "frontend_render_regressions": {
+      "status": "passed",
+      "receipt_sha256": "370e9d08e7fbd3b24be7ae00018ca69fa0e785c2e5a6830bf3ac20eba932fc3f"
+    },
+    "fresh_install": {
+      "status": "passed",
+      "dependency_consistency": "passed",
+      "cli_interfaces": 12,
+      "package_files_verified": 118
+    },
+    "source_data_and_freeze_integrity": {
+      "source_files": 111,
+      "data_files": 31,
+      "frozen_submissions": 15,
+      "frozen_evaluations": 15,
+      "data_audit": {
+        "scenario_count": 3,
+        "valid": true,
+        "scenarios": [
+          {
+            "scenario_id": "P100-048",
+            "valid": true,
+            "errors": [],
+            "expanded_public_bytes": 581737,
+            "rows": {
+              "train": 743,
+              "dev": 744,
+              "test": 1488
+            },
+            "publication_authorized": false
+          },
+          {
+            "scenario_id": "P100-057",
+            "valid": true,
+            "errors": [],
+            "expanded_public_bytes": 299036,
+            "rows": {
+              "train": 728,
+              "dev": 242,
+              "test": 242
+            },
+            "publication_authorized": false
+          },
+          {
+            "scenario_id": "P100-058",
+            "valid": true,
+            "errors": [],
+            "expanded_public_bytes": 98249,
+            "rows": {
+              "train": 216,
+              "dev": 92,
+              "test": 88
+            },
+            "publication_authorized": false
+          }
+        ],
+        "scope": "Packaging, hashes and separation only; source rights and scientific semantics require separate review"
+      },
+      "status": "passed"
+    },
+    "historical_preservation": [
+      {
+        "root": "/Users/zhengqipei/Desktop/ChipFlow/Principia/Principia-ASD/datas/ASD-Scenarios-26Oct10",
+        "files": 405,
+        "differences": []
+      },
+      {
+        "root": "/Users/zhengqipei/Desktop/ChipFlow/Principia/Principia-ASD/leaderboards/Scenarios-rules-26Oct10",
+        "files": 5321,
+        "differences": []
+      }
+    ],
+    "offline_evaluation_replay": {
+      "attempts": 15,
+      "exact": true,
+      "model_calls": 0,
+      "ledger_unchanged": true,
+      "receipt_sha256": "5a787355f88a9bbd4af49cb8a5a0c83501217d4ed086d5c94b432d98a8095283"
+    }
+  },
+  "browser": {
+    "status": "verified",
+    "journeys": [
+      "43 example scenarios plus separate private import",
+      "Connected equations filter returns three scenarios",
+      "Grouped stellar-flux fits expand with each original method and loss",
+      "Connected-equation LaTeX and parameter meanings",
+      "Try it yourself defaults to no-API scientific equation search",
+      "Actual start, complete, frozen portfolio and candidate diagnostics",
+      "Model-library controls without revealing credentials"
+    ],
+    "interactive_run_id": "run-eae873bfc7364f36",
+    "interactive_run_status": "complete",
+    "interactive_rules": 3,
+    "interactive_fits": 6,
+    "model_calls": 0,
+    "shared_results_modified": false,
+    "screenshot": "../../../private-workspace/PrincipiaASD-dev-26Oct10/verification/rc5-equation-preview.jpg"
+  },
+  "costs": {
+    "new_pilot_cny": 0.193098,
+    "cap_cny": 3000.0,
+    "requests": 1789,
+    "accounted_cny": 61.1560825,
+    "remaining_cny": 2938.8439175,
+    "states": {
+      "unknown": 4,
+      "completed": 1785
+    },
+    "unknown_usage_reserved": 24.0
+  },
+  "artifacts": {
+    "wheel": "../dist/principia_asd-1.0.0rc5-py3-none-any.whl",
+    "wheel_sha256": "8329619496f8da078784c70a8c0deb2cfd70ecc8d8bb850c83ddeed08176e720",
+    "data_edition": "../../../datas/ASD-Scenarios-equations-26Oct15",
+    "leaderboards": "../../../leaderboards/Scenarios-equations-26Oct15",
+    "protected_evaluator": "../../../private-evaluator/ASD-Scenarios-equations-26Oct15",
+    "pilot_manifest_sha256": "c3869a6dd5a122b1f4787bee01807264351f41ce9b9f1f3b3e78e89b2cb8605c",
+    "submission_freeze_sha256": "1a94d691aa6d09922dcb6450d02f78ca4a70195eb25b465322d1002b8ae46fa5",
+    "evaluation_freeze_sha256": "daadf1c27a9c97326b0e45d5bb8751c840efbc1b4a8f3658d02ffe5f1b8969a1"
+  },
+  "limitations": [
+    "Retrospective engineering pilot; not an independent discovery or performance study",
+    "Scientific meanings are hypotheses; no causal, novelty, practical-value or external-review claim",
+    "Atmosphere has one held-out site; resin one formulation; polymer one batch and no compliance correction",
+    "Rich equation methods require explicit quantity units; historical scalar task contracts are preserved",
+    "Three failed regression controls and all candidate failures are retained",
+    "Scientific review and publication of this new local pack await subsequent acceptance"
+  ]
+}

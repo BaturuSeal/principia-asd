@@ -1,0 +1,183 @@
+{
+  "description": "Compare effective first-order and dose-modulated assay responses after a short disclosed fluorescence calibration. Signal amplitudes remain instrument units, not inferred molecular concentrations.",
+  "display_title": "Saturation dynamics of a kinase biosensor",
+  "equation_protocol": "multi-role-equations-v2",
+  "equation_templates": [
+    {
+      "assumptions": [
+        "Effective saturation kinetics, not identified catalytic reaction steps",
+        "Initial signal and slope use only 3, 4.5 and 6 minute observations",
+        "Whole biosensor-dose curves held out, with no biological replicate identities",
+        "Fluorescence is uncalibrated instrument response and cannot be interpreted as molar product"
+      ],
+      "constants": {
+        "anchor_time": {
+          "meaning": "Six-minute disclosed calibration endpoint",
+          "source": "Native assay sampling protocol",
+          "unit": "s",
+          "value": 360
+        }
+      },
+      "name": "Calibrated first-order assay response",
+      "nodes": [
+        {
+          "expression": "elapsed - anchor_time",
+          "id": "elapsed_after_calibration",
+          "meaning": "Time after the last disclosed fluorescence anchor",
+          "unit": "s"
+        },
+        {
+          "expression": "exp(-rate * elapsed_after_calibration)",
+          "id": "remaining_response",
+          "meaning": "Remaining fraction of an effective first-order response",
+          "unit": "1"
+        },
+        {
+          "expression": "initial_slope / rate * (1 - remaining_response)",
+          "id": "integrated_signal",
+          "meaning": "Integrated incremental fluorescence from the observed initial slope",
+          "unit": "a.u."
+        },
+        {
+          "expression": "initial_signal + integrated_signal",
+          "id": "fluorescence",
+          "meaning": "Later instrument fluorescence after calibration",
+          "unit": "a.u."
+        }
+      ],
+      "output": "fluorescence",
+      "parameters": {
+        "rate": {
+          "bounds": [
+            1e-06,
+            0.05
+          ],
+          "initial": 0.0005,
+          "meaning": "Effective signal-saturation rate",
+          "unit": "s^-1"
+        }
+      },
+      "version": "equation-system-v1"
+    },
+    {
+      "assumptions": [
+        "Effective saturation kinetics, not identified catalytic reaction steps",
+        "Initial signal and slope use only 3, 4.5 and 6 minute observations",
+        "Whole biosensor-dose curves held out, with no biological replicate identities",
+        "Fluorescence is uncalibrated instrument response and cannot be interpreted as molar product"
+      ],
+      "constants": {
+        "anchor_time": {
+          "meaning": "Six-minute disclosed calibration endpoint",
+          "source": "Native assay sampling protocol",
+          "unit": "s",
+          "value": 360
+        }
+      },
+      "name": "Dose-modulated assay saturation",
+      "nodes": [
+        {
+          "expression": "rate / (1 + concentration / half_concentration)",
+          "id": "dose_rate",
+          "meaning": "Hypothesized substrate-dose modulation of the effective saturation rate",
+          "unit": "s^-1"
+        },
+        {
+          "expression": "elapsed - anchor_time",
+          "id": "elapsed_after_calibration",
+          "meaning": "Time after the last disclosed fluorescence anchor",
+          "unit": "s"
+        },
+        {
+          "expression": "exp(-dose_rate * elapsed_after_calibration)",
+          "id": "remaining_response",
+          "meaning": "Remaining fraction of an effective first-order response",
+          "unit": "1"
+        },
+        {
+          "expression": "initial_slope / dose_rate * (1 - remaining_response)",
+          "id": "integrated_signal",
+          "meaning": "Integrated incremental fluorescence from the observed initial slope",
+          "unit": "a.u."
+        },
+        {
+          "expression": "initial_signal + integrated_signal",
+          "id": "fluorescence",
+          "meaning": "Later instrument fluorescence after calibration",
+          "unit": "a.u."
+        }
+      ],
+      "output": "fluorescence",
+      "parameters": {
+        "half_concentration": {
+          "bounds": [
+            1e-06,
+            1
+          ],
+          "initial": 0.005,
+          "meaning": "Effective concentration scale, not a validated Michaelis constant",
+          "unit": "mol/m3"
+        },
+        "rate": {
+          "bounds": [
+            1e-06,
+            0.05
+          ],
+          "initial": 0.0005,
+          "meaning": "Effective signal-saturation rate",
+          "unit": "s^-1"
+        }
+      },
+      "version": "equation-system-v1"
+    }
+  ],
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "primary": "mae"
+  },
+  "output": "target",
+  "preprocessing": {
+    "learned_transformations": [],
+    "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+  },
+  "quantity_units": {
+    "concentration": "mol/m3",
+    "elapsed": "s",
+    "initial_signal": "a.u.",
+    "initial_slope": "a.u./s",
+    "target": "a.u."
+  },
+  "reference_expression": "initial_signal",
+  "revision": 2,
+  "scenario_id": "P100-074",
+  "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "split_policy": "Whole dose curves; original confirmation and compact-v2 development assignments retained",
+  "stability": {
+    "categorical_inputs": [],
+    "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Saturation dynamics of a kinase biosensor",
+  "variable_descriptions": {
+    "concentration": "Source biosensor dose converted from micromolar",
+    "elapsed": "Assay observation time from the protocol start",
+    "initial_signal": "Disclosed six-minute fluorescence observation",
+    "initial_slope": "Disclosed early finite-difference fluorescence slope",
+    "target": "Src kinetic fluorescence in source instrument units"
+  }
+}

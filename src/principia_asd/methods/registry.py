@@ -42,17 +42,22 @@ def add(id, name, tier, mechanism, **kw):
 
 
 add("mean_control", "Mean predictor", "reference", "One training-set mean, frozen before test")
+add("persistence_control", "Persistence reference", "reference",
+    "The task's frozen no-change expression; no fitting or model calls. Unsupported without an explicit temporal reference.",
+    version="persistence-reference-v1")
 add(
     "linear_control",
     "Linear regression",
     "reference",
     "Multivariable least-squares on train; all coefficients reported",
+    version="centered-least-squares-v3",
 )
 add(
     "polynomial_control",
     "Polynomial regression",
     "reference",
     "Degree-two interactions; train fitting with dev selection",
+    version="centered-least-squares-v3",
 )
 add(
     "tree_control",
@@ -102,6 +107,16 @@ add(
     "llm",
     "Model-selected inspect, fit and search actions executed on permitted train/dev data",
     needs_llm=True,
+)
+add(
+    "equation_search", "Scientific equation search", "classical",
+    "Fit sourced competing constitutive systems with unit-checked intermediate quantities and shared parameters; train-only fitting and development Pareto selection. Requires a reviewed equation template library.",
+    version="equation-search-v1",
+)
+add(
+    "equation_agent", "Adaptive Equation Discovery (AED)", "llm",
+    "Connected, unit-checked equation systems with shared train-fitted parameters. The v2 task protocol adds planning, two code proposals, methodological critique and interpretation through four explicit model roles. Development evidence guides revisions; mechanisms remain hypotheses.",
+    needs_llm=True, version="equation-search-v2",
 )
 add(
     "principia_engine",

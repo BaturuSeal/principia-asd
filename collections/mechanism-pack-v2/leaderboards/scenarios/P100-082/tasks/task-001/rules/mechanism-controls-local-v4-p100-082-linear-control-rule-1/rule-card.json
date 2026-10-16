@@ -1,0 +1,79 @@
+{
+  "dev_error": 1.1514434215918753e-07,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(water_fraction)+p3*(root_exclusion)",
+  "inputs": [
+    "temperature",
+    "water_fraction",
+    "root_exclusion"
+  ],
+  "method_id": "linear_control",
+  "method_version": "centered-least-squares-v2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.398837217674795e-06,
+    "p1": 8.88153899431166e-09,
+    "p2": 2.6931951403641772e-08,
+    "p3": -1.844573020908316e-08
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "root_exclusion": 0.10030566924293376,
+      "temperature": 0.84746730388189,
+      "water_fraction": -0.6917782738414153
+    },
+    "mean": 1.2517484136181186e-07,
+    "p90_abs": 2.322428733144683e-07,
+    "std": 7.872305053823482e-08
+  },
+  "rule_id": "mechanism-controls-local-v4-p100-082-linear-control-rule-1",
+  "rule_sha256": "e560e126660fa62b97fe161b8c25f7e5f2d027ca7c16c749be2b592280786f56",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.398837217674795e-06 + 8.88153899431166e-09 * temperature + 2.6931951403641772e-08 * water_fraction + -1.844573020908316e-08 * root_exclusion",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 118,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "temperature",
+      "water_fraction",
+      "root_exclusion"
+    ],
+    "training_centers": [
+      0.0,
+      284.35782499514323,
+      0.29921710377206884,
+      0.32457665314532225
+    ],
+    "training_scales": [
+      1.0,
+      4.994797107576972,
+      0.12356936127568012,
+      0.46821645568936077
+    ],
+    "version": "centered-least-squares-v2"
+  },
+  "task_id": "P100-082.mechanisms-v2",
+  "train_error": 5.2375954438059874e-08,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

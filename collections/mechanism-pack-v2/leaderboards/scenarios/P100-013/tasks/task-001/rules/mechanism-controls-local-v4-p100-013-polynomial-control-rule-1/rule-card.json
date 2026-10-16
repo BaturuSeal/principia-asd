@@ -1,0 +1,102 @@
+{
+  "dev_error": 0.0001569111492022768,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(conversion)+p3*(heating_rate)+p4*(temperature*temperature)+p5*(temperature*conversion)+p6*(temperature*heating_rate)+p7*(conversion*conversion)+p8*(conversion*heating_rate)+p9*(heating_rate*heating_rate)",
+  "inputs": [
+    "temperature",
+    "conversion",
+    "heating_rate"
+  ],
+  "method_id": "polynomial_control",
+  "method_version": "centered-least-squares-v2",
+  "model_ids": [],
+  "origin": "degree-2",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -0.04234378666545385,
+    "p1": 0.00022398999383953892,
+    "p2": -0.009510322660253904,
+    "p3": -0.10529284643954434,
+    "p4": -2.985188202931603e-07,
+    "p5": 4.022961091147277e-05,
+    "p6": 0.0003018047399499459,
+    "p7": -0.006830575214493704,
+    "p8": -0.02806853138979414,
+    "p9": -0.06868631887066644
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "conversion": -0.3459508940000525,
+      "temperature": -0.4902681746530328
+    },
+    "mean": -1.565555093538658e-05,
+    "p90_abs": 0.00036812031701028396,
+    "std": 0.00021294310328789036
+  },
+  "rule_id": "mechanism-controls-local-v4-p100-013-polynomial-control-rule-1",
+  "rule_sha256": "8e80c062aed2986580fbfacff701cf6b264ad3f613ca14e7dc5271de65fbfdfd",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.04234378666545385 + 0.00022398999383953892 * temperature + -0.009510322660253904 * conversion + -0.10529284643954434 * heating_rate + -2.985188202931603e-07 * (temperature * temperature) + 4.022961091147277e-05 * (temperature * conversion) + 0.0003018047399499459 * (temperature * heating_rate) + -0.006830575214493704 * (conversion * conversion) + -0.02806853138979414 * (conversion * heating_rate) + -0.06868631887066644 * (heating_rate * heating_rate)",
+    "expression_bytes": 227,
+    "free_parameters": 10,
+    "learned_state_bytes": 288,
+    "literal_state_bytes": 0,
+    "nodes": 99,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 24
+  },
+  "solver": {
+    "scope": "Training-only conditioning, expanded exactly into the displayed raw-coordinate coefficients; no hidden prediction state",
+    "terms": [
+      "1",
+      "temperature",
+      "conversion",
+      "heating_rate",
+      "temperature*temperature",
+      "temperature*conversion",
+      "temperature*heating_rate",
+      "conversion*conversion",
+      "conversion*heating_rate",
+      "heating_rate*heating_rate"
+    ],
+    "training_centers": [
+      0.0,
+      439.2646090739594,
+      0.40689869484151764,
+      0.08340584213797506,
+      194625.757772803,
+      192.5507391870726,
+      37.47425616324839,
+      0.31331649844623977,
+      0.03274725502382432,
+      0.01067295076306903
+    ],
+    "training_scales": [
+      1.0,
+      40.89451048618846,
+      0.38438255759400725,
+      0.06096241678546067,
+      35988.656921825524,
+      186.08812986858825,
+      28.246133032530253,
+      0.3602362239336474,
+      0.04249857861143046,
+      0.011480377727097181
+    ],
+    "version": "centered-least-squares-v2"
+  },
+  "task_id": "P100-013.mechanisms-v2",
+  "train_error": 0.00030763604851737856,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

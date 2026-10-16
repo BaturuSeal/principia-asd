@@ -1,0 +1,105 @@
+{
+  "admission": "local_research_preview",
+  "excluded_count": 0,
+  "exclusion_reasons": {},
+  "groups": {
+    "dev": [
+      "identification/theta_dot=1p4137.csv"
+    ],
+    "test": [
+      "validation/cool-down/cool-down.csv",
+      "validation/heat-up/theta_dot=0p3142.csv",
+      "validation/heat-up/theta_dot=0p6283.csv",
+      "validation/heat-up/theta_dot=0p9425.csv",
+      "validation/heat-up/theta_dot=1p2566.csv",
+      "validation/heat-up/theta_dot=1p5708.csv",
+      "validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv",
+      "validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv"
+    ],
+    "train": [
+      "identification/theta_dot=0p9425.csv",
+      "identification/theta_dot=1p0996.csv",
+      "identification/theta_dot=1p2566.csv",
+      "identification/theta_dot=1p5708.csv"
+    ]
+  },
+  "registry_entry_sha256": "ecc69f59aa2110f3a2b7d95a7380e95c4a23981f9011de7205c06eb9bddef4d8",
+  "rows": {
+    "dev": 22,
+    "test": 1372,
+    "train": 125
+  },
+  "scenario_id": "P100-069",
+  "scientific_review": "not_assessed",
+  "source_terms": "CC BY 4.0",
+  "source_url": "https://doi.org/10.18419/DARUS-5015",
+  "sources": [
+    {
+      "bytes": 74510524,
+      "path": "raw/identification/theta_dot=0p9425.csv",
+      "sha256": "9020ae9bb340ed5d04d5b2647678bfd04b5356de08b4b8477767a05fa8369a6b"
+    },
+    {
+      "bytes": 50572267,
+      "path": "raw/identification/theta_dot=1p0996.csv",
+      "sha256": "632ffc0280b5ce6f955edd7c21402e20e3508096c6df8481d3faed7ae9eb9ee6"
+    },
+    {
+      "bytes": 36863869,
+      "path": "raw/identification/theta_dot=1p2566.csv",
+      "sha256": "13073cd82822c5a40ff84dcd7670d6da0e1d2783d8cbb2185cbe15f47ab2822a"
+    },
+    {
+      "bytes": 33316512,
+      "path": "raw/identification/theta_dot=1p4137.csv",
+      "sha256": "9208ddef27fa1912ad36ab2112ac5b1e1374a50d02f2cb2ac7f7b5186c2fbd89"
+    },
+    {
+      "bytes": 26914578,
+      "path": "raw/identification/theta_dot=1p5708.csv",
+      "sha256": "d8627372598e7002f15703e1befe1f08f53cc1a697d25e2ea3899fadbff6eb7a"
+    },
+    {
+      "bytes": 26352157,
+      "path": "raw/validation/cool-down/cool-down.csv",
+      "sha256": "15e528f36e97640645fed9c4071360b8e03ec145674b97d3383881a152cab1c3"
+    },
+    {
+      "bytes": 55194653,
+      "path": "raw/validation/heat-up/theta_dot=0p3142.csv",
+      "sha256": "0f23964a51604f8df3759e0047581bfe9747285dd68e52fd8d7c6243592c850e"
+    },
+    {
+      "bytes": 5413972,
+      "path": "raw/validation/heat-up/theta_dot=0p6283.csv",
+      "sha256": "99b2e1b1d1f74eef3afa19c7c87fe2a6cd28a94dc1774628cad45c4f5c1d3f46"
+    },
+    {
+      "bytes": 54967809,
+      "path": "raw/validation/heat-up/theta_dot=0p9425.csv",
+      "sha256": "6c96d52aef7859e475c69547c1f0e206c219618cb353ad2628fd5b9129d6fcf9"
+    },
+    {
+      "bytes": 5338470,
+      "path": "raw/validation/heat-up/theta_dot=1p2566.csv",
+      "sha256": "2189fc93bbdfabcd97b47050d0695bd21de07e87ad48d0380fbfdd061911d35e"
+    },
+    {
+      "bytes": 54565302,
+      "path": "raw/validation/heat-up/theta_dot=1p5708.csv",
+      "sha256": "a867f21befd4e4852be3182291075211399917a0047e6ce309fbfe097b9eba1c"
+    },
+    {
+      "bytes": 36596654,
+      "path": "raw/validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv",
+      "sha256": "8e62c6b9aed68c589f6fb16fb2c4b18158ff325dec5870606f651bd02831ae88"
+    },
+    {
+      "bytes": 36144164,
+      "path": "raw/validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv",
+      "sha256": "1e17f06bfc59f3b526dceca385f9a19c3d3518cafd84cc32d776c6c9140c8e18"
+    }
+  ],
+  "split_policy": "Source identification runs train except 1.4137 rad/s dev; every source validation run is test. Nonoverlapping 60-second windows; instantaneous start-state inputs only. Single robot joint.",
+  "test_targets_public": false
+}

@@ -1,0 +1,41 @@
+{
+  "admission": "local_research_preview",
+  "excluded_count": 165,
+  "exclusion_reasons": {
+    "not_pure_nitrogen_task": 165
+  },
+  "groups": {
+    "dev": [
+      "S-HT-N2-350C"
+    ],
+    "test": [
+      "S-HT-N2-300C",
+      "S-HT-N2-400C",
+      "S-HT-N2-450C"
+    ],
+    "train": [
+      "S-HT-N2-200C",
+      "S-HT-N2-25C",
+      "S-HT-N2-500C"
+    ]
+  },
+  "registry_entry_sha256": "95bb6374b9a3b3abfe9d41cc4838b17060a9903e5f51cf8c89c1634e33b87652",
+  "rows": {
+    "dev": 8,
+    "test": 24,
+    "train": 22
+  },
+  "scenario_id": "P100-061",
+  "scientific_review": "not_assessed",
+  "source_terms": "cc-by-4.0",
+  "source_url": "https://zenodo.org/records/10691625",
+  "sources": [
+    {
+      "bytes": 50313,
+      "path": "raw/DataPorousMembranes.xlsx",
+      "sha256": "64e3a835815493c739fec72acb2593e1ca67ee34bb04d0e1021dab1e5e095a58"
+    }
+  ],
+  "split_policy": "Single S-HT membrane and nitrogen only. Whole nominal temperatures: train 25/200/500 Celsius; dev 350; test 300/400/450. Actual temperatures remain inputs. Source validation sheet and other gases/materials are outside this contract.",
+  "test_targets_public": false
+}

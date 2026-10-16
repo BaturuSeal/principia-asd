@@ -12,18 +12,41 @@ from ..contracts.schema import validate_contract
 from ..io import contained, file_sha, read_csv, read_json, sha, write_csv, write_json
 
 
-def task_entries(scenario, workspace):
+def task_entries(scenario, workspace, *, packs=None):
     scenario = Path(scenario)
     entries = [(scenario, p) for p in sorted((scenario / "task-contracts").glob("*.json"))]
-    for path in sorted((Path(workspace) / "imports").glob("*/scenario.json")):
+    if packs is None:
+        pack_file = Path(workspace) / "scenario-packs.json" if workspace else None
+        packs = read_json(pack_file).get("packs", []) if pack_file and pack_file.exists() else []
+    for pack in packs:
+        extension = Path(pack["data_root"]) / "scenarios" / scenario.name
+        if extension.resolve() == scenario.resolve() or not (extension / "scenario.json").exists():
+            continue
+        info = read_json(extension / "scenario.json")
+        if info.get("extends_scenario_sha256") != file_sha(scenario / "scenario.json"):
+            raise ValueError("Scenario task extension does not match the preserved base identity")
+        if info.get("extends_task_sha256") != file_sha(scenario / "task-contracts/task-001.json"):
+            raise ValueError("Scenario task extension does not match the preserved base contract")
+        entries.extend(
+            (extension, p) for p in sorted((extension / "task-contracts").glob("*.json"))
+        )
+    ids = [read_json(p).get("task_id") for _, p in entries]
+    # Legacy single-contract callers may omit task_id. Multiple contracts must
+    # have explicit, distinct identities to avoid silently selecting a vault.
+    if len(entries) > 1 and (None in ids or len(ids) != len(set(ids))):
+        raise ValueError("Duplicate task identity across scenario editions")
+    # Reviewed connected-equation tasks are the default preview; historical tasks
+    # remain individually selectable with their original contracts and results.
+    entries.sort(key=lambda pair: not bool(read_json(pair[1]).get("equation_templates")))
+    for path in sorted((Path(workspace) / "imports").glob("*/scenario.json")) if workspace else []:
         info = read_json(path)
         if info.get("parent_scenario_id") == scenario.name and info.get("custom_task"):
             entries.append((path.parent, path.parent / "task-contracts/task-001.json"))
     return entries
 
 
-def resolve_task(scenario, workspace, task_id=None):
-    entries = task_entries(scenario, workspace)
+def resolve_task(scenario, workspace, task_id=None, *, packs=None):
+    entries = task_entries(scenario, workspace, packs=packs)
     matches = [(p, f) for p, f in entries if not task_id or read_json(f)["task_id"] == task_id]
     if not matches:
         raise ValueError("Select a task belonging to this scenario")
@@ -51,8 +74,8 @@ def resolve_task(scenario, workspace, task_id=None):
     return staged, task
 
 
-def create_task(scenario, workspace, payload):
-    source, base = resolve_task(scenario, workspace, payload.get("base_task_id"))
+def create_task(scenario, workspace, payload, *, packs=None):
+    source, base = resolve_task(scenario, workspace, payload.get("base_task_id"), packs=packs)
     if base.get("assessment_policy") == "development_only":
         raise ValueError("Create a task from a preset task, not from another custom variant")
     allowed = set(base["inputs"]) | {base["output"]}
@@ -70,6 +93,8 @@ def create_task(scenario, workspace, payload):
     if not 3 <= len(title) <= 120:
         raise ValueError("Give the task a descriptive name of 3–120 characters")
     task = copy.deepcopy(base)
+    # A changed prediction direction does not inherit the original constitutive prior.
+    task.pop("equation_templates", None)
     ident = "TASK-" + uuid.uuid4().hex[:16]
     task.update(
         scenario_id=ident,

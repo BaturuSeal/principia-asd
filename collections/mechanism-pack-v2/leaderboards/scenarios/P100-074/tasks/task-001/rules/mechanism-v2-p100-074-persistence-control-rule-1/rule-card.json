@@ -1,0 +1,54 @@
+{
+  "dev_error": 387.01051162790696,
+  "execution_status": "complete",
+  "expression": "initial_signal",
+  "inputs": [
+    "concentration",
+    "elapsed",
+    "initial_signal",
+    "initial_slope"
+  ],
+  "method_id": "persistence_control",
+  "method_version": "persistence-reference-v1",
+  "model_ids": [],
+  "origin": "Frozen task-specific persistence reference; no fitted coefficients",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {},
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "concentration": -0.7138153880360976,
+      "elapsed": -0.6325192495856372,
+      "initial_signal": -0.7138153880360976,
+      "initial_slope": -0.7138153880360976
+    },
+    "mean": -387.010511627907,
+    "p90_abs": 819.884,
+    "std": 274.1843059487094
+  },
+  "rule_id": "mechanism-v2-p100-074-persistence-control-rule-1",
+  "rule_sha256": "d1ef209ed262f2fcdeac012f3bf77f5b08eda5cf047272de8a9774246bb0de00",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "initial_signal",
+    "expression_bytes": 14,
+    "free_parameters": 0,
+    "learned_state_bytes": 2,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-074.mechanisms-v2",
+  "train_error": 170.672766,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

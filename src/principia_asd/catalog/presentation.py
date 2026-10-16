@@ -499,6 +499,7 @@ def variable(task, name):
         if name == task.get("output")
         else task.get("input_units", {}).get(name, "")
     )
+    units = units or task.get("quantity_units", {}).get(name, "")
     supplied = task.get("variable_descriptions", {}).get(name)
     description = supplied or FIELDS.get(case, {}).get(name)
     if name == task.get("output"):
@@ -518,7 +519,7 @@ def variable(task, name):
         if units:
             description += ". Recorded definition: " + units
     label = description.split(";")[0].split(". Recorded definition:")[0]
-    if name == task.get("output") and case in OUTPUTS and (not supplied or name == "target"):
+    if name == task.get("output") and case in OUTPUTS and not supplied:
         label = OUTPUTS[case]
     return {
         "key": name,
@@ -559,6 +560,8 @@ def describe_scenario(info, task):
         key,
         (info["title"], info.get("description", task.get("title", "User-provided measurements"))),
     )
+    if info.get("local_extension"):
+        title, summary = info["title"], info.get("description", summary)
     return {
         "title": title,
         "description": summary,
@@ -568,6 +571,9 @@ def describe_scenario(info, task):
             task.get("split", {}).get("independent_unit", "User-specified groups"),
         ),
         "representation": info.get(
-            "measurement_representation", "Numeric measurements from a local import"
+            "measurement_representation",
+            "Native numerical measurements with explicit units and source lineage"
+            if task.get("equation_templates")
+            else "Numeric measurements from a local import",
         ),
     }

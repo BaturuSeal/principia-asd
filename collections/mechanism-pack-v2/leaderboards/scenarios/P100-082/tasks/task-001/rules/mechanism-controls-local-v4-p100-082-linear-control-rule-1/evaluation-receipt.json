@@ -1,0 +1,76 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 7.514238960569564e-08,
+    "primary": "mae",
+    "primary_error": 7.514238960569564e-08,
+    "rmse": 1.003414870793103e-07
+  },
+  "accuracy_gate": false,
+  "baseline_loss": 6.772136137360195e-08,
+  "by_group": [
+    {
+      "error": 6.773848523800226e-08,
+      "group": "Gamiz",
+      "rows": 2288
+    },
+    {
+      "error": 5.1649148390766285e-08,
+      "group": "Kacergine",
+      "rows": 1559
+    },
+    {
+      "error": 6.358078733394656e-08,
+      "group": "Kranzberg-Freising",
+      "rows": 2762
+    },
+    {
+      "error": 8.25425833496829e-08,
+      "group": "RincondelBatovi",
+      "rows": 2540
+    },
+    {
+      "error": 1.1020094371608018e-07,
+      "group": "Saint Mitre",
+      "rows": 2210
+    }
+  ],
+  "coverage": {
+    "eligible": 11359,
+    "fraction": 1.0,
+    "predicted": 11359
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-controls-local-v4-p100-082-linear-control-rule-1",
+  "rule_sha256": "e560e126660fa62b97fe161b8c25f7e5f2d027ca7c16c749be2b592280786f56",
+  "run_id": "mechanism-controls-local-v4-p100-082-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.398837217674795e-06 + 8.88153899431166e-09 * temperature + 2.6931951403641772e-08 * water_fraction + -1.844573020908316e-08 * root_exclusion",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 118,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.028666729190832917,
+    "perturbation_labels_available": false,
+    "population_rows": 11359,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

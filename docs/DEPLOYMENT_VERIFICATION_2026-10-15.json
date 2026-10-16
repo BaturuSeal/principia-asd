@@ -1,0 +1,214 @@
+{
+  "status": "deployed_verified_with_browser_automation_limitation",
+  "created_at": "2026-10-15T06:49:49.688735+00:00",
+  "software_version": "1.0.0rc4",
+  "scientific_edition_version": "1.0.0rc2",
+  "public_url": "https://atlas.chipflow.net/web/asd-test/",
+  "server_current": "/data/pzq/Principia-ASD/current",
+  "server_release": "/data/pzq/Principia-ASD/releases/1.0.0rc4-20261015-r2",
+  "authorization": "Explicit owner request to deploy the public research preview, including separate operator-only evaluator custody.",
+  "framework_acceptance": {
+    "version": "1.0.0rc4",
+    "date": "2026-10-15T06:20:07.417518+00:00",
+    "status": "passed",
+    "tests": {
+      "passed": 1733,
+      "failed": 0,
+      "duration_seconds": 368.7,
+      "additional_focused_checks": 83
+    },
+    "ruff": "passed",
+    "javascript_syntax": "passed",
+    "fresh_install": {
+      "version": "1.0.0rc4",
+      "status": "passed",
+      "source_is_installed_distribution": true,
+      "cli_help_commands": 14,
+      "numerical_fixture": "passed",
+      "packaged_ui_assets": "passed",
+      "localhost_server": "passed",
+      "host_origin_csrf_denials": "passed",
+      "api_calls": 0
+    },
+    "canonical_data_files_unchanged": 405,
+    "canonical_leaderboard_files_unchanged": 5321,
+    "model_settings_browser": [
+      "add exact model",
+      "edit price",
+      "remove profile",
+      "settings persist across tabs",
+      "no API key required to manage profiles",
+      "deleted default roles require explicit selection; no replacement"
+    ],
+    "provider_generation_calls": 0,
+    "known_limits": "docs/RELEASE_SCOPE.md",
+    "scientific_clearance": false,
+    "source_rights_certified": false
+  },
+  "local_package_integrity": {
+    "status": "passed",
+    "wheel_source_files": 113,
+    "canonical_byte_parity": {
+      "data": 405,
+      "leaderboards": 5321
+    },
+    "private_scenarios": 40,
+    "archive_sha256": "40513255419c90a6cdb156054364cab6579397aae8ada21fa93f498474d84df1"
+  },
+  "server_verification": {
+    "status": "passed",
+    "version": "1.0.0rc4",
+    "public_manifest": "passed",
+    "static_manifest": "passed",
+    "private_manifest": "passed",
+    "protected_contract_input_target_bindings": 40,
+    "admin_evaluator_smoke": "existing linear rule reproduced within 1e-10 relative tolerance",
+    "provider_calls": 0,
+    "targets_or_predictions_exported": false
+  },
+  "public_https_verification": {
+    "status": "passed",
+    "public_files_verified": 49,
+    "file_hash_evidence": "The first public-http-check.py pass verified every file before failing its subsequent outside-prefix traversal status assertion. See retained script and error trace.",
+    "route_checks": [
+      {
+        "path": "api/config",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "api/runs",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "private-evaluator/targets/P100-054/test_targets.csv.gz",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": ".env",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": ".git/config",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "path": "index.html",
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "path": "index.html",
+        "method": "PUT",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "PUT",
+        "status": 405
+      },
+      {
+        "path": "index.html",
+        "method": "PATCH",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "PATCH",
+        "status": 405
+      },
+      {
+        "path": "index.html",
+        "method": "DELETE",
+        "status": 405
+      },
+      {
+        "path": "api/runs",
+        "method": "DELETE",
+        "status": 405
+      }
+    ],
+    "outside_prefix_traversal": "Normalized outside ASD; returns the existing main application HTML byte-for-byte, not an evaluator file.",
+    "existing_services_healthy": true,
+    "csp": "passed",
+    "public_archive_sha256": "40513255419c90a6cdb156054364cab6579397aae8ada21fa93f498474d84df1",
+    "scenario_count": 40,
+    "task_count": 40,
+    "rule_count": 693,
+    "attempt_count": 520,
+    "initial_route_expectation_corrected": true
+  },
+  "local_upgrade": {
+    "version": "1.0.0rc4",
+    "retained_runs": 1090,
+    "active_jobs_at_restart": 0,
+    "api_calls": 0,
+    "key_configuration_preserved": true,
+    "new_pid": 65433
+  },
+  "browser_verification": {
+    "local_model_add_edit_remove": "passed",
+    "public_library_render": "visually verified by saved screenshot at the deployed URL",
+    "public_click_journey": "not_completed_by_automation: browser DOM/accessibility operations repeatedly timed out; screenshot succeeded. Local UI journeys and all public file hashes verified separately.",
+    "screenshots": [
+      "verification/public-site.png",
+      "verification/model-settings.png"
+    ]
+  },
+  "privacy": {
+    "cloud_mode": "static GET/HEAD only; no user upload or discovery endpoint",
+    "visitor_execution": "local companion; independent OS-local workspaces and loopback service",
+    "new_user_results": "local only; no shared leaderboard mutation",
+    "provider_calls": "only from local companion directly to SiliconFlow with the visitor key and selected development context",
+    "server_provider_key_installed": false,
+    "private_targets": "40 scenario target pairs; directory 0700, files 0600; www-data read denied",
+    "protected_test_loss_for_new_example_runs": "requires an authorized evaluator; unavailable to public companions"
+  },
+  "retained_primary_evidence": {
+    "scenarios": 40,
+    "tasks": 40,
+    "assigned_attempts": 520,
+    "complete": 483,
+    "failed": 37,
+    "rules": 693,
+    "valid_assessments": 684,
+    "invalid_assessments": 9
+  },
+  "scientific_claims": {
+    "independent_discovery": "not_assessed",
+    "scientific_novelty": "not_assessed",
+    "source_rights_certified": false,
+    "historical_preparation_defects": 6,
+    "unfinished_source_reviews": 3,
+    "minimum_incomplete_learned_state_profiles": 65
+  },
+  "operational_notes": [
+    "The first immediate request after nginx reload reached an old worker and returned the previous main-app HTML. Subsequent HTTPS checks served the correct rc4 content.",
+    "The initial security test incorrectly expected a 404 after traversal normalized outside the ASD prefix. The response was verified as the unchanged existing main-app HTML, with no private file exposure; in-prefix private paths are 404.",
+    "Existing legacy and demo service health checks passed after deployment.",
+    "No discovery campaign or paid model generation was started during this upgrade. The development monitor remains paused."
+  ],
+  "rollback": {
+    "nginx_backup": "/data/pzq/Principia-ASD/backups/20261015-before-asd.conf",
+    "procedure": "Remove only the ASD include/snippet using the saved original configuration, run nginx -t, then reload. For later releases, atomically repoint current to a verified previous release."
+  },
+  "evidence_hashes": {
+    "verification/finish-http-check.py": "5295fc0efaadef819bebd5382f426f9002299202645dac6b6ba9ba75f4850e8f",
+    "verification/server-verification.json": "939386564310921ad5f2a7956911194baf01114195e3eea85d5dfcdc938f7169",
+    "verification/local-final-verification.json": "2d556186a61f9d5d84ebf4b1836dc5d9c77e2a037ff0a226760b64f20a07f374",
+    "verification/model-settings.png": "72d7beccefb7550a0ecbd048948de49bb0a37bfd54813b08ba184d7c11312163",
+    "verification/public-site.png": "03a464a607f2a036f9c1e30490689094b4696a39ad26f8721824f0746bc56e46",
+    "verification/public-http-errors.txt": "116239522e73ab64175249c26080a9b527fe44ac77df2cda8432af2810ff82a7",
+    "verification/public-http-check.py": "02d26efd96c7a98d8c07a35dc3671162f4f77b1790d1f3e7e49412da7d3e6c29",
+    "verification/public-http-verification.json": "81a417a0688b015247f9988bb6ce0fafb277c7278564fa5ddb0d83448760720a"
+  }
+}

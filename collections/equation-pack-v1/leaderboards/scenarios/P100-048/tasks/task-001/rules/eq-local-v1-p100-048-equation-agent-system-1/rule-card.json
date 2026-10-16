@@ -1,0 +1,245 @@
+{
+  "dev_error": 24.080588841524374,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "dra26182",
+        "loss": 9.933539966769196
+      },
+      {
+        "group": "dra26183",
+        "loss": 20.938081953561884
+      },
+      {
+        "group": "dra26184",
+        "loss": 28.38574951163319
+      },
+      {
+        "group": "dra26185",
+        "loss": 31.325120032376446
+      },
+      {
+        "group": "dra26186",
+        "loss": 26.89521515167853
+      },
+      {
+        "group": "dra26187",
+        "loss": 8.992916471170188
+      },
+      {
+        "group": "dra26188",
+        "loss": 12.34990871590985
+      },
+      {
+        "group": "dra26189",
+        "loss": 19.729856983923685
+      },
+      {
+        "group": "dra26190",
+        "loss": 30.40458449798486
+      },
+      {
+        "group": "dra26191",
+        "loss": 30.739403510738132
+      },
+      {
+        "group": "dra26192",
+        "loss": 23.63747765378351
+      },
+      {
+        "group": "dra26193",
+        "loss": 13.608776790960059
+      },
+      {
+        "group": "dra26194",
+        "loss": 37.76061393053296
+      },
+      {
+        "group": "dra26195",
+        "loss": 41.8128072677648
+      },
+      {
+        "group": "dra26196",
+        "loss": 26.244423868143837
+      },
+      {
+        "group": "dra26197",
+        "loss": 15.910821441628757
+      },
+      {
+        "group": "dra26198",
+        "loss": 23.194247525203938
+      },
+      {
+        "group": "dra26199",
+        "loss": 29.03045600141665
+      },
+      {
+        "group": "dra26200",
+        "loss": 30.808627304516282
+      },
+      {
+        "group": "dra26201",
+        "loss": 48.94455140785729
+      },
+      {
+        "group": "dra26202",
+        "loss": 34.128139175812116
+      },
+      {
+        "group": "dra26203",
+        "loss": 26.27958879602623
+      },
+      {
+        "group": "dra26204",
+        "loss": 16.276434805828096
+      },
+      {
+        "group": "dra26205",
+        "loss": 24.28805381040569
+      },
+      {
+        "group": "dra26206",
+        "loss": 11.126460755932257
+      },
+      {
+        "group": "dra26207",
+        "loss": 6.2233327891227574
+      },
+      {
+        "group": "dra26208",
+        "loss": 32.910605906428366
+      },
+      {
+        "group": "dra26209",
+        "loss": 9.058353723468109
+      },
+      {
+        "group": "dra26210",
+        "loss": 11.918049667644512
+      },
+      {
+        "group": "dra26211",
+        "loss": 34.6414281956213
+      },
+      {
+        "group": "dra26212",
+        "loss": 29.000626473412108
+      }
+    ],
+    "intermediate_ranges": {
+      "blackbody_irradiance": [
+        413.64694002576175,
+        550.174260742805
+      ],
+      "longwave_response": [
+        308.14088469482255,
+        409.8451288701654
+      ]
+    },
+    "residual_bias": -4.3791603676696464,
+    "residual_rmse": 28.92192529238433
+  },
+  "equation_system": {
+    "assumptions": [
+      "Near-surface temperature proxies the radiating atmosphere",
+      "Effective emissivity is constant across all retained conditions; clouds are unresolved"
+    ],
+    "constants": {
+      "sigma": {
+        "meaning": "Stefan-Boltzmann constant",
+        "source": "CODATA SI radiation constant",
+        "unit": "W/m2/K4",
+        "value": 5.670374419e-08
+      }
+    },
+    "name": "Gray-atmosphere emission",
+    "nodes": [
+      {
+        "expression": "sigma * temperature ** 4",
+        "id": "blackbody_irradiance",
+        "meaning": "Blackbody longwave irradiance at the measured near-surface temperature",
+        "unit": "W/m2"
+      },
+      {
+        "expression": "emissivity * blackbody_irradiance",
+        "id": "longwave_response",
+        "meaning": "Atmospheric longwave irradiance under an effective gray emissivity",
+        "unit": "W/m2"
+      }
+    ],
+    "output": "longwave_response",
+    "parameters": {
+      "emissivity": {
+        "bounds": [
+          0.05,
+          1
+        ],
+        "initial": 0.8,
+        "meaning": "Effective sky emissivity, conditional on sampled conditions",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "emissivity * (sigma * temperature ** 4)",
+  "fit_recipe": {
+    "development_rows": 744,
+    "log_coordinate_parameters": [
+      "emissivity"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 743
+  },
+  "identifiability": {
+    "condition_number": 1.0,
+    "parameters": 1,
+    "rank": 1,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "vapor_pressure"
+  ],
+  "method_id": "equation_agent",
+  "method_version": "equation-search-v1",
+  "model_ids": [
+    "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "emissivity": 0.7449369374656359
+  },
+  "quantity_units": {
+    "target": "W/m2",
+    "temperature": "K",
+    "vapor_pressure": "Pa"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-048-equation-agent-system-1",
+  "rule_sha256": "21b412abdc835fd717e92d89f2e8804f0edf9a963613e0bea9c0861eb1ac2c45",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 3,
+    "expanded_expression": "0.7449369374656359 * (sigma * temperature ** 4)",
+    "expression_bytes": 39,
+    "fixed_constants": 1,
+    "free_parameters": 1,
+    "intermediate_quantities": 1,
+    "learned_state_bytes": 34,
+    "literal_state_bytes": 1,
+    "nodes": 14,
+    "numeric_literal_count": 1,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 1,
+    "weighted_operator_count": 3
+  },
+  "task_id": "P100-048.equations-v1",
+  "train_error": 24.59808587390491
+}

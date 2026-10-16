@@ -1,0 +1,1616 @@
+{
+  "attempts": [
+    {
+      "accounting": {
+        "fitting_attempts": 0,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.002763879019767046
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "mean_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-057-mean-control",
+      "scenario_id": "P100-057",
+      "status": "complete",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 1,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 1,
+        "wall_seconds": 0.0015445019816979766
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "linear_control",
+      "reason": "No valid candidate survived train/dev checks",
+      "rule_count": 0,
+      "run_id": "eq-local-v1-p100-057-linear-control",
+      "scenario_id": "P100-057",
+      "status": "failed",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "accounting": {
+        "fitting_attempts": 2,
+        "model_calls": 0,
+        "optimizer_evaluations": 0,
+        "structures": 2,
+        "wall_seconds": 0.006700634025037289
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "polynomial_control",
+      "reason": null,
+      "rule_count": 1,
+      "run_id": "eq-local-v1-p100-057-polynomial-control",
+      "scenario_id": "P100-057",
+      "status": "complete",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "accounting": {
+        "cpu_seconds": 0.20772100000000004,
+        "failed_fits": 0,
+        "fitting_attempts": 4,
+        "model_requests": 0,
+        "optimizer_evaluations": 53,
+        "residual_evaluations": 231,
+        "restarts": 2,
+        "structures": 2,
+        "wall_seconds": 0.2096395370317623
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "equation_search",
+      "reason": null,
+      "rule_count": 2,
+      "run_id": "eq-local-v1-p100-057-equation-search",
+      "scenario_id": "P100-057",
+      "status": "complete",
+      "task_id": "P100-057.equations-v1"
+    },
+    {
+      "accounting": {
+        "cpu_seconds": 0.640882,
+        "failed_fits": 0,
+        "fitting_attempts": 8,
+        "model_requests": 2,
+        "optimizer_evaluations": 91,
+        "residual_evaluations": 453,
+        "restarts": 4,
+        "structures": 5,
+        "wall_seconds": 50.142016439000145
+      },
+      "campaign_id": "equation-systems-local-v1",
+      "method_id": "equation_agent",
+      "reason": null,
+      "rule_count": 3,
+      "run_id": "eq-local-v1-p100-057-equation-agent",
+      "scenario_id": "P100-057",
+      "status": "complete",
+      "task_id": "P100-057.equations-v1"
+    }
+  ],
+  "campaign_id": "equation-systems-local-v1",
+  "campaign_ids": [
+    "equation-systems-local-v1"
+  ],
+  "exposure": "retrospective-open-test",
+  "pareto_front_rule_ids": [
+    "eq-local-v1-p100-057-equation-agent-system-3",
+    "eq-local-v1-p100-057-equation-agent-system-4",
+    "eq-local-v1-p100-057-equation-search-system-2",
+    "eq-local-v1-p100-057-equation-agent-system-2",
+    "eq-local-v1-p100-057-equation-search-system-1",
+    "eq-local-v1-p100-057-mean-control-rule-1"
+  ],
+  "ranking": "Within-task accuracy gate then accuracy/expanded-complexity Pareto; sensitivity diagnostic only",
+  "rules": [
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.033414678767048255,
+        "primary": "log_mae",
+        "primary_error": 0.31335579233548394,
+        "rmse": 0.05611421392056783
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.31335579233548394,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.31065069472839546,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "replicate-3",
+              "loss": 0.31065069472839546
+            }
+          ],
+          "intermediate_ranges": {
+            "carreau_factor": [
+              0.9999999999261744,
+              0.9999999999999998
+            ],
+            "reduced_shear": [
+              9.511805188740081e-08,
+              5.064710274534995e-05
+            ],
+            "thermal_shift": [
+              0.07954396646269986,
+              1.0
+            ],
+            "viscous_response": [
+              0.021386317058909265,
+              0.3475090089368731
+            ],
+            "yield_contribution": [
+              0.00012754172293521942,
+              0.08025083359868301
+            ],
+            "zero_shear_viscosity": [
+              0.021258775335983977,
+              0.26725817533819796
+            ]
+          },
+          "residual_bias": -0.015415301846914836,
+          "residual_rmse": 0.05626827881437796
+        },
+        "equation_system": {
+          "assumptions": [
+            "Viscosity follows a Carreau-type shear-thinning model with a yield stress term",
+            "Temperature dependence follows an Arrhenius shift (effective activation energy)",
+            "Yield stress is temperature-dependent via the same shift factor",
+            "No infinite-shear plateau; high-shear viscosity negligible compared to low-shear"
+          ],
+          "constants": {
+            "T_ref": {
+              "meaning": "Reference temperature, 35 degrees Celsius",
+              "source": "Declared coordinate reference; not fitted",
+              "unit": "K",
+              "value": 308.15
+            }
+          },
+          "name": "Thermally shifted Carreau with yield stress",
+          "nodes": [
+            {
+              "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+              "id": "thermal_shift",
+              "meaning": "Arrhenius temperature shift factor relative to reference",
+              "unit": "1"
+            },
+            {
+              "expression": "eta_ref * thermal_shift",
+              "id": "zero_shear_viscosity",
+              "meaning": "Low-shear viscosity at the observed temperature",
+              "unit": "Pa*s"
+            },
+            {
+              "expression": "shear_rate * relaxation * thermal_shift",
+              "id": "reduced_shear",
+              "meaning": "Dimensionless shear rate scaled by temperature-shifted relaxation time",
+              "unit": "1"
+            },
+            {
+              "expression": "1 / (1 + reduced_shear ** 2) ** (exponent / 2)",
+              "id": "carreau_factor",
+              "meaning": "Carreau shear-thinning factor",
+              "unit": "1"
+            },
+            {
+              "expression": "yield_stress_ref * thermal_shift / shear_rate",
+              "id": "yield_contribution",
+              "meaning": "Apparent viscosity contribution from yield stress (Bingham-like)",
+              "unit": "Pa*s"
+            },
+            {
+              "expression": "zero_shear_viscosity * carreau_factor + yield_contribution",
+              "id": "viscous_response",
+              "meaning": "Predicted viscosity combining shear-thinning and yield stress",
+              "unit": "Pa*s"
+            }
+          ],
+          "output": "viscous_response",
+          "parameters": {
+            "activation": {
+              "bounds": [
+                10,
+                30000
+              ],
+              "initial": 3000,
+              "meaning": "Activation energy divided by gas constant; effective parameter",
+              "unit": "K"
+            },
+            "eta_ref": {
+              "bounds": [
+                0.0001,
+                100
+              ],
+              "initial": 0.5,
+              "meaning": "Low-shear viscosity at reference temperature",
+              "unit": "Pa*s"
+            },
+            "exponent": {
+              "bounds": [
+                0.05,
+                2
+              ],
+              "initial": 0.8,
+              "meaning": "Power-law exponent in Carreau model",
+              "unit": "1"
+            },
+            "relaxation": {
+              "bounds": [
+                1e-06,
+                100
+              ],
+              "initial": 0.02,
+              "meaning": "Effective relaxation time at reference temperature",
+              "unit": "s"
+            },
+            "yield_stress_ref": {
+              "bounds": [
+                0,
+                10
+              ],
+              "initial": 0.1,
+              "meaning": "Yield stress at reference temperature",
+              "unit": "Pa"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** 2) ** (exponent / 2)) + yield_stress_ref * exp(activation * (1 / temperature - 1 / T_ref)) / shear_rate",
+        "fit_recipe": {
+          "development_rows": 242,
+          "log_coordinate_parameters": [
+            "activation",
+            "eta_ref",
+            "exponent",
+            "relaxation"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared log residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 728
+        },
+        "identifiability": {
+          "condition_number": 28926578536.26428,
+          "parameters": 5,
+          "rank": 5,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "equation_agent",
+        "method_version": "equation-search-v1",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "Model-proposed equation system, development round 1",
+        "output": "target",
+        "parameters": {
+          "activation": 3450.9204068557924,
+          "eta_ref": 0.26725817533819796,
+          "exponent": 0.05756087450435006,
+          "relaxation": 1.012942054906999e-06,
+          "yield_stress_ref": 0.08017058276508433
+        },
+        "quantity_units": {
+          "shear_rate": "s^-1",
+          "target": "Pa*s",
+          "temperature": "K"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-057-equation-agent-system-3",
+        "rule_sha256": "bb74520bc41c982e69e755c29dbc9c2f16780dc43eadcc66a64c982ef7cf0ea2",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 19,
+          "expanded_expression": "0.26725817533819796 * exp(3450.9204068557924 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 1.012942054906999e-06 * exp(3450.9204068557924 * (1 / temperature - 1 / T_ref))) ** 2) ** (0.05756087450435006 / 2)) + 0.08017058276508433 * exp(3450.9204068557924 * (1 / temperature - 1 / T_ref)) / shear_rate",
+          "expression_bytes": 252,
+          "fixed_constants": 1,
+          "free_parameters": 5,
+          "intermediate_quantities": 5,
+          "learned_state_bytes": 177,
+          "literal_state_bytes": 10,
+          "nodes": 98,
+          "numeric_literal_count": 10,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 5,
+          "weighted_operator_count": 33
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.3173871836210686
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** 2) ** (exponent / 2)) + yield_stress_ref * exp(activation * (1 / temperature - 1 / T_ref)) / shear_rate",
+      "method_id": "equation_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "eq-local-v1-p100-057-equation-agent-system-3",
+      "rule_sha256": "bb74520bc41c982e69e755c29dbc9c2f16780dc43eadcc66a64c982ef7cf0ea2",
+      "run_id": "eq-local-v1-p100-057-equation-agent",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 19,
+        "expanded_expression": "0.26725817533819796 * exp(3450.9204068557924 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 1.012942054906999e-06 * exp(3450.9204068557924 * (1 / temperature - 1 / T_ref))) ** 2) ** (0.05756087450435006 / 2)) + 0.08017058276508433 * exp(3450.9204068557924 * (1 / temperature - 1 / T_ref)) / shear_rate",
+        "expression_bytes": 252,
+        "fixed_constants": 1,
+        "free_parameters": 5,
+        "intermediate_quantities": 5,
+        "learned_state_bytes": 177,
+        "literal_state_bytes": 10,
+        "nodes": 98,
+        "numeric_literal_count": 10,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 5,
+        "weighted_operator_count": 33
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.020110584478650037,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.03341467927621685,
+        "primary": "log_mae",
+        "primary_error": 0.3133558012769355,
+        "rmse": 0.05611421360866641
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.3133558012769355,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.31065069968255477,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "replicate-3",
+              "loss": 0.31065069968255477
+            }
+          ],
+          "intermediate_ranges": {
+            "cross_factor": [
+              0.9999999974999998,
+              0.9999999999999911
+            ],
+            "reduced_shear": [
+              9.390275835296908e-08,
+              5.000000070834923e-05
+            ],
+            "thermal_shift": [
+              0.07954396627246277,
+              1.0
+            ],
+            "viscous_response": [
+              0.021386318007958816,
+              0.3475089633127409
+            ],
+            "yield_contribution": [
+              0.00012754162824441217,
+              0.08025077420998039
+            ],
+            "zero_shear_viscosity": [
+              0.021258776380050675,
+              0.26725818910302723
+            ]
+          },
+          "residual_bias": -0.015415302377368647,
+          "residual_rmse": 0.05626827840262659
+        },
+        "equation_system": {
+          "assumptions": [
+            "Viscosity follows a Cross-type shear-thinning model with a yield stress term",
+            "Temperature dependence follows an Arrhenius shift (effective activation energy)",
+            "Yield stress is temperature-dependent via the same shift factor",
+            "No infinite-shear plateau; high-shear viscosity negligible compared to low-shear"
+          ],
+          "constants": {
+            "T_ref": {
+              "meaning": "Reference temperature, 35 degrees Celsius",
+              "source": "Declared coordinate reference; not fitted",
+              "unit": "K",
+              "value": 308.15
+            }
+          },
+          "name": "Thermally shifted Cross with yield stress",
+          "nodes": [
+            {
+              "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+              "id": "thermal_shift",
+              "meaning": "Arrhenius temperature shift factor relative to reference",
+              "unit": "1"
+            },
+            {
+              "expression": "eta_ref * thermal_shift",
+              "id": "zero_shear_viscosity",
+              "meaning": "Low-shear viscosity at the observed temperature",
+              "unit": "Pa*s"
+            },
+            {
+              "expression": "shear_rate * relaxation * thermal_shift",
+              "id": "reduced_shear",
+              "meaning": "Dimensionless shear rate scaled by temperature-shifted relaxation time",
+              "unit": "1"
+            },
+            {
+              "expression": "1 / (1 + reduced_shear ** exponent)",
+              "id": "cross_factor",
+              "meaning": "Cross shear-thinning factor",
+              "unit": "1"
+            },
+            {
+              "expression": "yield_stress_ref * thermal_shift / shear_rate",
+              "id": "yield_contribution",
+              "meaning": "Apparent viscosity contribution from yield stress (Bingham-like)",
+              "unit": "Pa*s"
+            },
+            {
+              "expression": "zero_shear_viscosity * cross_factor + yield_contribution",
+              "id": "viscous_response",
+              "meaning": "Predicted viscosity combining shear-thinning and yield stress",
+              "unit": "Pa*s"
+            }
+          ],
+          "output": "viscous_response",
+          "parameters": {
+            "activation": {
+              "bounds": [
+                10,
+                30000
+              ],
+              "initial": 3000,
+              "meaning": "Activation energy divided by gas constant; effective parameter",
+              "unit": "K"
+            },
+            "eta_ref": {
+              "bounds": [
+                0.0001,
+                100
+              ],
+              "initial": 0.5,
+              "meaning": "Low-shear viscosity at reference temperature",
+              "unit": "Pa*s"
+            },
+            "exponent": {
+              "bounds": [
+                0.05,
+                2
+              ],
+              "initial": 0.8,
+              "meaning": "Power-law exponent in Cross model",
+              "unit": "1"
+            },
+            "relaxation": {
+              "bounds": [
+                1e-06,
+                100
+              ],
+              "initial": 0.02,
+              "meaning": "Effective relaxation time at reference temperature",
+              "unit": "s"
+            },
+            "yield_stress_ref": {
+              "bounds": [
+                0,
+                10
+              ],
+              "initial": 0.1,
+              "meaning": "Yield stress at reference temperature",
+              "unit": "Pa"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent)) + yield_stress_ref * exp(activation * (1 / temperature - 1 / T_ref)) / shear_rate",
+        "fit_recipe": {
+          "development_rows": 242,
+          "log_coordinate_parameters": [
+            "activation",
+            "eta_ref",
+            "exponent",
+            "relaxation"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared log residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 728
+        },
+        "identifiability": {
+          "condition_number": 16727655852.411125,
+          "parameters": 5,
+          "rank": 5,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "equation_agent",
+        "method_version": "equation-search-v1",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "Model-proposed equation system, development round 2",
+        "output": "target",
+        "parameters": {
+          "activation": 3450.920410116068,
+          "eta_ref": 0.26725818910302723,
+          "exponent": 1.9999999906548493,
+          "relaxation": 1.0000000141669845e-06,
+          "yield_stress_ref": 0.08017052343577041
+        },
+        "quantity_units": {
+          "shear_rate": "s^-1",
+          "target": "Pa*s",
+          "temperature": "K"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-057-equation-agent-system-4",
+        "rule_sha256": "fb0b9436fe00974e91d92d85282c73b9910adc578f4f3af5b6d5f4733913584a",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 17,
+          "expanded_expression": "0.26725818910302723 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 1.0000000141669845e-06 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref))) ** 1.9999999906548493)) + 0.08017052343577041 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) / shear_rate",
+          "expression_bytes": 241,
+          "fixed_constants": 1,
+          "free_parameters": 5,
+          "intermediate_quantities": 5,
+          "learned_state_bytes": 176,
+          "literal_state_bytes": 8,
+          "nodes": 92,
+          "numeric_literal_count": 8,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 5,
+          "weighted_operator_count": 31
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.31738719123485964
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent)) + yield_stress_ref * exp(activation * (1 / temperature - 1 / T_ref)) / shear_rate",
+      "method_id": "equation_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "eq-local-v1-p100-057-equation-agent-system-4",
+      "rule_sha256": "fb0b9436fe00974e91d92d85282c73b9910adc578f4f3af5b6d5f4733913584a",
+      "run_id": "eq-local-v1-p100-057-equation-agent",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 17,
+        "expanded_expression": "0.26725818910302723 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 1.0000000141669845e-06 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref))) ** 1.9999999906548493)) + 0.08017052343577041 * exp(3450.920410116068 * (1 / temperature - 1 / T_ref)) / shear_rate",
+        "expression_bytes": 241,
+        "fixed_constants": 1,
+        "free_parameters": 5,
+        "intermediate_quantities": 5,
+        "learned_state_bytes": 176,
+        "literal_state_bytes": 8,
+        "nodes": 92,
+        "numeric_literal_count": 8,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 5,
+        "weighted_operator_count": 31
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.020110579925276855,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.033821530168491196,
+        "primary": "log_mae",
+        "primary_error": 0.31954158456403653,
+        "rmse": 0.056308921657097624
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.31954158456403653,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.31554920745975573,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "replicate-3",
+              "loss": 0.31554920745975573
+            }
+          ],
+          "intermediate_ranges": {
+            "reduced_shear": [
+              8.370509762533338,
+              4999.999998352285
+            ],
+            "shear_reduction": [
+              0.35263084676658457,
+              0.46218564067969664
+            ],
+            "thermal_shift": [
+              0.07090424180801373,
+              1.0
+            ],
+            "viscous_response": [
+              0.020994032461010753,
+              0.3123651099547917
+            ],
+            "zero_shear_viscosity": [
+              0.05290580542619413,
+              0.7461585382923397
+            ]
+          },
+          "residual_bias": -0.015597315146463429,
+          "residual_rmse": 0.05641790633975715
+        },
+        "equation_system": {
+          "assumptions": [
+            "Cross constitutive family with negligible infinite-shear plateau",
+            "Thermorheological simplicity is a testable assumption",
+            "Instrument-derived viscosity; one resin formulation, no universality claim"
+          ],
+          "constants": {
+            "T_ref": {
+              "meaning": "Reference temperature, 35 degrees Celsius",
+              "source": "Declared coordinate reference; not fitted",
+              "unit": "K",
+              "value": 308.15
+            }
+          },
+          "name": "Thermally shifted Cross flow",
+          "nodes": [
+            {
+              "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+              "id": "thermal_shift",
+              "meaning": "Arrhenius temperature shift relative to the reference temperature",
+              "unit": "1"
+            },
+            {
+              "expression": "eta_ref * thermal_shift",
+              "id": "zero_shear_viscosity",
+              "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+              "unit": "Pa*s"
+            },
+            {
+              "expression": "shear_rate * relaxation * thermal_shift",
+              "id": "reduced_shear",
+              "meaning": "Dimensionless shear rate relative to a temperature-shifted relaxation time",
+              "unit": "1"
+            },
+            {
+              "expression": "1 / (1 + reduced_shear ** exponent)",
+              "id": "shear_reduction",
+              "meaning": "Cross-law shear-thinning factor",
+              "unit": "1"
+            },
+            {
+              "expression": "zero_shear_viscosity * shear_reduction",
+              "id": "viscous_response",
+              "meaning": "Predicted viscosity after thermal and shear-rate contributions",
+              "unit": "Pa*s"
+            }
+          ],
+          "output": "viscous_response",
+          "parameters": {
+            "activation": {
+              "bounds": [
+                10,
+                30000
+              ],
+              "initial": 3000,
+              "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+              "unit": "K"
+            },
+            "eta_ref": {
+              "bounds": [
+                0.0001,
+                100
+              ],
+              "initial": 0.5,
+              "meaning": "Low-shear viscosity at the reference temperature",
+              "unit": "Pa*s"
+            },
+            "exponent": {
+              "bounds": [
+                0.05,
+                2
+              ],
+              "initial": 0.8,
+              "meaning": "Phenomenological shear-thinning exponent",
+              "unit": "1"
+            },
+            "relaxation": {
+              "bounds": [
+                1e-06,
+                100
+              ],
+              "initial": 0.02,
+              "meaning": "Effective relaxation time at the reference temperature",
+              "unit": "s"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent))",
+        "fit_recipe": {
+          "development_rows": 242,
+          "log_coordinate_parameters": [
+            "activation",
+            "eta_ref",
+            "exponent",
+            "relaxation"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared log residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 728
+        },
+        "identifiability": {
+          "condition_number": 20664.57881064673,
+          "parameters": 4,
+          "rank": 4,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "equation_search",
+        "method_version": "equation-search-v1",
+        "model_ids": [],
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "output": "target",
+        "parameters": {
+          "activation": 3607.663116744136,
+          "eta_ref": 0.7461585382923397,
+          "exponent": 0.07132572077421569,
+          "relaxation": 99.9999999670457
+        },
+        "quantity_units": {
+          "shear_rate": "s^-1",
+          "target": "Pa*s",
+          "temperature": "K"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-057-equation-search-system-2",
+        "rule_sha256": "4601e2950728a1809c313769f3fff9222915b13b837f56739c315e575cc3b6cd",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 14,
+          "expanded_expression": "0.7461585382923397 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 99.9999999670457 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref))) ** 0.07132572077421569))",
+          "expression_bytes": 159,
+          "fixed_constants": 1,
+          "free_parameters": 4,
+          "intermediate_quantities": 4,
+          "learned_state_bytes": 129,
+          "literal_state_bytes": 6,
+          "nodes": 63,
+          "numeric_literal_count": 6,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 4,
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.32248047204040614
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent))",
+      "method_id": "equation_search",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-057-equation-search-system-2",
+      "rule_sha256": "4601e2950728a1809c313769f3fff9222915b13b837f56739c315e575cc3b6cd",
+      "run_id": "eq-local-v1-p100-057-equation-search",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 14,
+        "expanded_expression": "0.7461585382923397 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 99.9999999670457 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref))) ** 0.07132572077421569))",
+        "expression_bytes": 159,
+        "fixed_constants": 1,
+        "free_parameters": 4,
+        "intermediate_quantities": 4,
+        "learned_state_bytes": 129,
+        "literal_state_bytes": 6,
+        "nodes": 63,
+        "numeric_literal_count": 6,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 4,
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.016668619314979295,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.033821530168491196,
+        "primary": "log_mae",
+        "primary_error": 0.31954158456403653,
+        "rmse": 0.056308921657097624
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.31954158456403653,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.31554920745975573,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "replicate-3",
+              "loss": 0.31554920745975573
+            }
+          ],
+          "intermediate_ranges": {
+            "reduced_shear": [
+              8.370509762533338,
+              4999.999998352285
+            ],
+            "shear_reduction": [
+              0.35263084676658457,
+              0.46218564067969664
+            ],
+            "thermal_shift": [
+              0.07090424180801373,
+              1.0
+            ],
+            "viscous_response": [
+              0.020994032461010753,
+              0.3123651099547917
+            ],
+            "zero_shear_viscosity": [
+              0.05290580542619413,
+              0.7461585382923397
+            ]
+          },
+          "residual_bias": -0.015597315146463429,
+          "residual_rmse": 0.05641790633975715
+        },
+        "equation_system": {
+          "assumptions": [
+            "Cross constitutive family with negligible infinite-shear plateau",
+            "Thermorheological simplicity is a testable assumption",
+            "Instrument-derived viscosity; one resin formulation, no universality claim"
+          ],
+          "constants": {
+            "T_ref": {
+              "meaning": "Reference temperature, 35 degrees Celsius",
+              "source": "Declared coordinate reference; not fitted",
+              "unit": "K",
+              "value": 308.15
+            }
+          },
+          "name": "Thermally shifted Cross flow",
+          "nodes": [
+            {
+              "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+              "id": "thermal_shift",
+              "meaning": "Arrhenius temperature shift relative to the reference temperature",
+              "unit": "1"
+            },
+            {
+              "expression": "eta_ref * thermal_shift",
+              "id": "zero_shear_viscosity",
+              "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+              "unit": "Pa*s"
+            },
+            {
+              "expression": "shear_rate * relaxation * thermal_shift",
+              "id": "reduced_shear",
+              "meaning": "Dimensionless shear rate relative to a temperature-shifted relaxation time",
+              "unit": "1"
+            },
+            {
+              "expression": "1 / (1 + reduced_shear ** exponent)",
+              "id": "shear_reduction",
+              "meaning": "Cross-law shear-thinning factor",
+              "unit": "1"
+            },
+            {
+              "expression": "zero_shear_viscosity * shear_reduction",
+              "id": "viscous_response",
+              "meaning": "Predicted viscosity after thermal and shear-rate contributions",
+              "unit": "Pa*s"
+            }
+          ],
+          "output": "viscous_response",
+          "parameters": {
+            "activation": {
+              "bounds": [
+                10,
+                30000
+              ],
+              "initial": 3000,
+              "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+              "unit": "K"
+            },
+            "eta_ref": {
+              "bounds": [
+                0.0001,
+                100
+              ],
+              "initial": 0.5,
+              "meaning": "Low-shear viscosity at the reference temperature",
+              "unit": "Pa*s"
+            },
+            "exponent": {
+              "bounds": [
+                0.05,
+                2
+              ],
+              "initial": 0.8,
+              "meaning": "Phenomenological shear-thinning exponent",
+              "unit": "1"
+            },
+            "relaxation": {
+              "bounds": [
+                1e-06,
+                100
+              ],
+              "initial": 0.02,
+              "meaning": "Effective relaxation time at the reference temperature",
+              "unit": "s"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent))",
+        "fit_recipe": {
+          "development_rows": 242,
+          "log_coordinate_parameters": [
+            "activation",
+            "eta_ref",
+            "exponent",
+            "relaxation"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared log residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 728
+        },
+        "identifiability": {
+          "condition_number": 20664.57881064673,
+          "parameters": 4,
+          "rank": 4,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "equation_agent",
+        "method_version": "equation-search-v1",
+        "model_ids": [
+          "deepseek-ai/DeepSeek-V4-Flash"
+        ],
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "output": "target",
+        "parameters": {
+          "activation": 3607.663116744136,
+          "eta_ref": 0.7461585382923397,
+          "exponent": 0.07132572077421569,
+          "relaxation": 99.9999999670457
+        },
+        "quantity_units": {
+          "shear_rate": "s^-1",
+          "target": "Pa*s",
+          "temperature": "K"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-057-equation-agent-system-2",
+        "rule_sha256": "c904d92be1d78000182917a9dff5c20430b59b383320e51cff47ff9383ec1fd1",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 14,
+          "expanded_expression": "0.7461585382923397 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 99.9999999670457 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref))) ** 0.07132572077421569))",
+          "expression_bytes": 159,
+          "fixed_constants": 1,
+          "free_parameters": 4,
+          "intermediate_quantities": 4,
+          "learned_state_bytes": 129,
+          "literal_state_bytes": 6,
+          "nodes": 63,
+          "numeric_literal_count": 6,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 4,
+          "weighted_operator_count": 21
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.32248047204040614
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * relaxation * exp(activation * (1 / temperature - 1 / T_ref))) ** exponent))",
+      "method_id": "equation_agent",
+      "model_ids": [
+        "deepseek-ai/DeepSeek-V4-Flash"
+      ],
+      "rule_id": "eq-local-v1-p100-057-equation-agent-system-2",
+      "rule_sha256": "c904d92be1d78000182917a9dff5c20430b59b383320e51cff47ff9383ec1fd1",
+      "run_id": "eq-local-v1-p100-057-equation-agent",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 14,
+        "expanded_expression": "0.7461585382923397 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref)) * (1 / (1 + (shear_rate * 99.9999999670457 * exp(3607.663116744136 * (1 / temperature - 1 / T_ref))) ** 0.07132572077421569))",
+        "expression_bytes": 159,
+        "fixed_constants": 1,
+        "free_parameters": 4,
+        "intermediate_quantities": 4,
+        "learned_state_bytes": 129,
+        "literal_state_bytes": 6,
+        "nodes": 63,
+        "numeric_literal_count": 6,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 4,
+        "weighted_operator_count": 21
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.016668619314979295,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.034194455440031954,
+        "primary": "log_mae",
+        "primary_error": 0.3289862432911833,
+        "rmse": 0.056125407521884246
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.3289862432911833,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.3217997169119005,
+        "development_diagnostics": {
+          "groups": [
+            {
+              "group": "replicate-3",
+              "loss": 0.3217997169119005
+            }
+          ],
+          "intermediate_ranges": {
+            "thermal_shift": [
+              0.07891076123108288,
+              1.0
+            ],
+            "zero_shear_viscosity": [
+              0.022678865267333388,
+              0.28739889101969784
+            ]
+          },
+          "residual_bias": -0.015700252023574314,
+          "residual_rmse": 0.05614048629703818
+        },
+        "equation_system": {
+          "assumptions": [
+            "Effective activation regime over the retained temperatures",
+            "No claim of a single microscopic activation barrier",
+            "Newtonian reference: ignores shear-rate dependence"
+          ],
+          "constants": {
+            "T_ref": {
+              "meaning": "Reference temperature, 35 degrees Celsius",
+              "source": "Declared coordinate reference; not fitted",
+              "unit": "K",
+              "value": 308.15
+            }
+          },
+          "name": "Arrhenius viscosity",
+          "nodes": [
+            {
+              "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+              "id": "thermal_shift",
+              "meaning": "Arrhenius temperature shift relative to the reference temperature",
+              "unit": "1"
+            },
+            {
+              "expression": "eta_ref * thermal_shift",
+              "id": "zero_shear_viscosity",
+              "meaning": "Hypothesized low-shear viscosity at the observed temperature",
+              "unit": "Pa*s"
+            }
+          ],
+          "output": "zero_shear_viscosity",
+          "parameters": {
+            "activation": {
+              "bounds": [
+                10,
+                30000
+              ],
+              "initial": 3000,
+              "meaning": "Activation energy divided by the gas constant; conditional effective parameter",
+              "unit": "K"
+            },
+            "eta_ref": {
+              "bounds": [
+                0.0001,
+                100
+              ],
+              "initial": 0.5,
+              "meaning": "Low-shear viscosity at the reference temperature",
+              "unit": "Pa*s"
+            }
+          },
+          "version": "equation-system-v1"
+        },
+        "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref))",
+        "fit_recipe": {
+          "development_rows": 242,
+          "log_coordinate_parameters": [
+            "activation",
+            "eta_ref"
+          ],
+          "max_nfev_per_restart": 200,
+          "objective": "equal-group squared log residual",
+          "optimizer": "scipy least_squares",
+          "selection": "development only",
+          "training_rows": 728
+        },
+        "identifiability": {
+          "condition_number": 4.0506553310368805,
+          "parameters": 2,
+          "rank": 2,
+          "rank_deficient": false,
+          "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+        },
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "equation_search",
+        "method_version": "equation-search-v1",
+        "model_ids": [],
+        "origin": "Sourced scientific template; host-fitted shared parameters",
+        "output": "target",
+        "parameters": {
+          "activation": 3461.8156765032422,
+          "eta_ref": 0.28739889101969784
+        },
+        "quantity_units": {
+          "shear_rate": "s^-1",
+          "target": "Pa*s",
+          "temperature": "K"
+        },
+        "representation": "equation-system-v1",
+        "rule_id": "eq-local-v1-p100-057-equation-search-system-1",
+        "rule_sha256": "7a4c3dbcd78f96f9e280d33507a7a69a6be3d376755afeb5ab266031b07e08d4",
+        "scientific_status": "mechanism_hypothesis; not independently validated",
+        "simplicity": {
+          "dag_weighted_operator_count": 8,
+          "expanded_expression": "0.28739889101969784 * exp(3461.8156765032422 * (1 / temperature - 1 / T_ref))",
+          "expression_bytes": 57,
+          "fixed_constants": 1,
+          "free_parameters": 2,
+          "intermediate_quantities": 1,
+          "learned_state_bytes": 66,
+          "literal_state_bytes": 2,
+          "nodes": 24,
+          "numeric_literal_count": 2,
+          "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+          "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+          "shared_parameter_count": 2,
+          "weighted_operator_count": 8
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.3308935123112788
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-equations-v1",
+      "expression": "eta_ref * exp(activation * (1 / temperature - 1 / T_ref))",
+      "method_id": "equation_search",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-057-equation-search-system-1",
+      "rule_sha256": "7a4c3dbcd78f96f9e280d33507a7a69a6be3d376755afeb5ab266031b07e08d4",
+      "run_id": "eq-local-v1-p100-057-equation-search",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "dag_weighted_operator_count": 8,
+        "expanded_expression": "0.28739889101969784 * exp(3461.8156765032422 * (1 / temperature - 1 / T_ref))",
+        "expression_bytes": 57,
+        "fixed_constants": 1,
+        "free_parameters": 2,
+        "intermediate_quantities": 1,
+        "learned_state_bytes": 66,
+        "literal_state_bytes": 2,
+        "nodes": 24,
+        "numeric_literal_count": 2,
+        "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+        "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+        "shared_parameter_count": 2,
+        "weighted_operator_count": 8
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.01618136800299632,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.035326076307004274,
+        "primary": "log_mae",
+        "primary_error": 0.5826623420361335,
+        "rmse": 0.04363840406476482
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.5826623420361335,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.5849881042901635,
+        "execution_status": "complete",
+        "expression": "p0+p1*(temperature)+p2*(shear_rate)+p3*(temperature*temperature)+p4*(temperature*shear_rate)+p5*(shear_rate*shear_rate)",
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "polynomial_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "degree-2",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 12.360994276769167,
+          "p1": -0.0665370161422687,
+          "p2": 0.002451835513177335,
+          "p3": 8.969041305540588e-05,
+          "p4": -9.9345190156383e-06,
+          "p5": 1.8040179121411378e-05
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "shear_rate": -0.0118756739707432,
+            "temperature": -0.016791286947154826
+          },
+          "mean": -0.0009119474243726588,
+          "p90_abs": 0.06601113725009569,
+          "std": 0.04340416970577382
+        },
+        "rule_id": "eq-local-v1-p100-057-polynomial-control-rule-1",
+        "rule_sha256": "ef2233d1f240728cff0f4e7e9804a2cd8315dc2d7a1094128239ed4ac2af32a2",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "12.360994276769167 + -0.0665370161422687 * temperature + 0.002451835513177335 * shear_rate + 8.969041305540588e-05 * (temperature * temperature) + -9.9345190156383e-06 * (temperature * shear_rate) + 1.8040179121411378e-05 * (shear_rate * shear_rate)",
+          "expression_bytes": 119,
+          "free_parameters": 6,
+          "learned_state_bytes": 168,
+          "literal_state_bytes": 0,
+          "nodes": 55,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 13
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.5876627074358267,
+        "units": {
+          "inputs": {},
+          "output": null,
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0+p1*(temperature)+p2*(shear_rate)+p3*(temperature*temperature)+p4*(temperature*shear_rate)+p5*(shear_rate*shear_rate)",
+      "method_id": "polynomial_control",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-057-polynomial-control-rule-1",
+      "rule_sha256": "ef2233d1f240728cff0f4e7e9804a2cd8315dc2d7a1094128239ed4ac2af32a2",
+      "run_id": "eq-local-v1-p100-057-polynomial-control",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "12.360994276769167 + -0.0665370161422687 * temperature + 0.002451835513177335 * shear_rate + 8.969041305540588e-05 * (temperature * temperature) + -9.9345190156383e-06 * (temperature * shear_rate) + 1.8040179121411378e-05 * (shear_rate * shear_rate)",
+        "expression_bytes": 119,
+        "free_parameters": 6,
+        "learned_state_bytes": 168,
+        "literal_state_bytes": 0,
+        "nodes": 55,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 13
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.026770823068918672,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    },
+    {
+      "accuracy": {
+        "aggregation": "equal_group_mean",
+        "invalid_output_rate": 0.0,
+        "mae": 0.09307687224139498,
+        "primary": "log_mae",
+        "primary_error": 0.8878578887816473,
+        "rmse": 0.12449657958465214
+      },
+      "accuracy_gate": true,
+      "baseline_loss": 0.8878578887816473,
+      "by_group": [
+        {
+          "error": 0.8878578887816473,
+          "group": "replicate-4",
+          "rows": 242
+        }
+      ],
+      "campaign_id": "equation-systems-local-v1",
+      "card": {
+        "dev_error": 0.8780609168566622,
+        "execution_status": "complete",
+        "expression": "p0",
+        "inputs": [
+          "temperature",
+          "shear_rate"
+        ],
+        "method_id": "mean_control",
+        "method_version": "1.0.0rc2",
+        "model_ids": [],
+        "origin": "training mean",
+        "output": "target",
+        "parameter_uncertainty": {
+          "reason": "No independently justified parameter uncertainty model",
+          "status": "not_assessed"
+        },
+        "parameters": {
+          "p0": 0.11759958241758242
+        },
+        "representation": "expression",
+        "residuals": {
+          "input_correlations": {
+            "shear_rate": 0.03955310989880684,
+            "temperature": 0.7747450274829375
+          },
+          "mean": -0.0010189518799382524,
+          "p90_abs": 0.22432041758241783,
+          "std": 0.12438815042994184
+        },
+        "rule_id": "eq-local-v1-p100-057-mean-control-rule-1",
+        "rule_sha256": "eed2563b9f6b348713d34220741945a64109c367e3aef73fd5ff5456f881166c",
+        "scientific_review": "not_assessed",
+        "simplicity": {
+          "expanded_expression": "0.11759958241758242",
+          "expression_bytes": 2,
+          "free_parameters": 1,
+          "learned_state_bytes": 27,
+          "literal_state_bytes": 0,
+          "nodes": 3,
+          "numeric_literal_count": 0,
+          "preprocessing": "none unless explicitly expanded in the expression",
+          "weighted_operator_count": 0
+        },
+        "task_id": "P100-057.equations-v1",
+        "train_error": 0.8990467688163853,
+        "units": {
+          "inputs": {},
+          "output": null,
+          "status": "parameter units require scientific review; no dimensionless equivalence claim"
+        }
+      },
+      "coverage": {
+        "eligible": 242,
+        "fraction": 1.0,
+        "predicted": 242
+      },
+      "evaluator_version": "deterministic-v2",
+      "expression": "p0",
+      "method_id": "mean_control",
+      "model_ids": [],
+      "rule_id": "eq-local-v1-p100-057-mean-control-rule-1",
+      "rule_sha256": "eed2563b9f6b348713d34220741945a64109c367e3aef73fd5ff5456f881166c",
+      "run_id": "eq-local-v1-p100-057-mean-control",
+      "scenario_id": "P100-057",
+      "scientific_review": "not_assessed",
+      "simplicity": {
+        "expanded_expression": "0.11759958241758242",
+        "expression_bytes": 2,
+        "free_parameters": 1,
+        "learned_state_bytes": 27,
+        "literal_state_bytes": 0,
+        "nodes": 3,
+        "numeric_literal_count": 0,
+        "preprocessing": "none unless explicitly expanded in the expression",
+        "weighted_operator_count": 0
+      },
+      "stability": {
+        "invalid_output_rate": 0.0,
+        "mean_relative_sensitivity": 0.0,
+        "perturbation_labels_available": false,
+        "population_rows": 242,
+        "ranking": false,
+        "samples": 242,
+        "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+      },
+      "status": "complete",
+      "task_id": "P100-057.equations-v1",
+      "test_exposure": "retrospective-open-test",
+      "uncertainty": {
+        "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+        "status": "not_assessed"
+      }
+    }
+  ],
+  "scenario_id": "P100-057",
+  "scientific_review": "not_assessed",
+  "task_id": "P100-057.equations-v1",
+  "track": "engineering",
+  "version": "1.0.0rc5"
+}

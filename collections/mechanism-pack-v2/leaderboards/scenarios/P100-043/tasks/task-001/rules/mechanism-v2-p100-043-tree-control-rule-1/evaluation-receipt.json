@@ -1,0 +1,72 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.025124482265672453,
+    "primary": "mae",
+    "primary_error": 0.025124482265672453,
+    "rmse": 0.030326679084994316
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.2860829921486803,
+  "by_group": [
+    {
+      "error": 0.04931920482910067,
+      "group": "group-2202a086cb33273ce2d378c3",
+      "rows": 42
+    },
+    {
+      "error": 0.03210194263482533,
+      "group": "group-71145ec09dd8be2729e0100a",
+      "rows": 43
+    },
+    {
+      "error": 0.018200520350935508,
+      "group": "group-ab62ca3054292a2e9049d31e",
+      "rows": 49
+    },
+    {
+      "error": 0.013993152859152895,
+      "group": "group-aec67ad855dba6b880f2abfa",
+      "rows": 41
+    },
+    {
+      "error": 0.012007590654347861,
+      "group": "group-e90b4881bf0e2712c670ec14",
+      "rows": 46
+    }
+  ],
+  "coverage": {
+    "eligible": 221,
+    "fraction": 1.0,
+    "predicted": 221
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tree_control",
+  "rule_id": "mechanism-v2-p100-043-tree-control-rule-1",
+  "rule_sha256": "a62c327f8c769e7db779253ef5086e99ddc26e783bff24b0e96cd796a42827ac",
+  "run_id": "mechanism-v2-p100-043-tree-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "complete tree in Rule Card",
+    "free_parameters": 160,
+    "learned_state_bytes": 4781,
+    "scope": "predictive reference, not a compact scientific formula",
+    "weighted_operator_count": 107
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.011420163648680537,
+    "perturbation_labels_available": false,
+    "population_rows": 221,
+    "ranking": false,
+    "samples": 221,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

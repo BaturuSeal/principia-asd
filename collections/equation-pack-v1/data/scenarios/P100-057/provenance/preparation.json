@@ -1,0 +1,37 @@
+{
+  "admission": "local_research_preview",
+  "excluded": 38,
+  "exclusion_reasons": {
+    "nonpositive_or_nonfinite_instrument_reading": 38
+  },
+  "groups": {
+    "dev": [
+      "replicate-3"
+    ],
+    "test": [
+      "replicate-4"
+    ],
+    "train": [
+      "replicate-0",
+      "replicate-1",
+      "replicate-2"
+    ]
+  },
+  "included": 1212,
+  "partition_hashes": {
+    "dev": "8331b5889c9c5d2f06d2ab47e5127f46d9f2eed2a763fa05b322c7ac1f9c171e",
+    "test": "7bbb9064c12e60a5f1559babc99e00bdf459eaeac363a3b3280460eadd14ac6f",
+    "train": "1f3103e23469967bc9b9daad0353e2b5036f34a47e3333990bec70d43f3bbcf6"
+  },
+  "review_scope": "Native format, source units, known invalid readings, identity/group separation and reproducible preparation checked; external scientific review not assessed",
+  "scenario_id": "P100-057",
+  "sources": [
+    {
+      "path": "raw/Rheological_Data_For_Syntactic_Foam.zip",
+      "sha256": "a2a7a84d92bf84a69e6f6c49e0ae976d916cc63fa46ff28bccd08a7ebdd4e218"
+    }
+  ],
+  "split_policy": "Whole native test runs: unsuffixed and runs 1/2 train, run 3 development, run 4 test. All temperature/shear sweeps in a run remain together.",
+  "test_targets_public": false,
+  "units_checked": true
+}

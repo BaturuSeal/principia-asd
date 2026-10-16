@@ -1,0 +1,235 @@
+{
+  "dev_error": 0.7476114262502755,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "temperature-45",
+        "loss": 0.4842726422552569
+      },
+      {
+        "group": "temperature-65",
+        "loss": 1.0109502102452943
+      }
+    ],
+    "intermediate_ranges": {
+      "loss1": [
+        542.7302744898349,
+        19162129.73115424
+      ],
+      "loss2": [
+        133.16836955417688,
+        51445.45838179065
+      ],
+      "modulus_response": [
+        3.731099956602588,
+        29613236.9442909
+      ],
+      "storage1": [
+        0.007673314848363946,
+        29510066.54866804
+      ],
+      "storage2": [
+        3.7234266417542243,
+        103170.39562285804
+      ],
+      "thermal_shift": [
+        0.0009056633051753555,
+        0.2254936173459001
+      ],
+      "z1": [
+        1.4138357871369609e-05,
+        1.8232728104131535
+      ],
+      "z2": [
+        0.006007604420565419,
+        774.7364931196009
+      ]
+    },
+    "residual_bias": 644527.0220061856,
+    "residual_rmse": 2609316.8973727217
+  },
+  "equation_system": {
+    "assumptions": [
+      "Linear generalized Maxwell response",
+      "Shared relaxation times and strengths across both measured response channels",
+      "Arrhenius shift is approximate across this temperature range",
+      "One polymer batch; source data are not compliance-corrected"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 40 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 313.15
+      }
+    },
+    "name": "Two-mode thermal relaxation",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Temperature shift of the relaxation timescale",
+        "unit": "1"
+      },
+      {
+        "expression": "omega * tau1 * thermal_shift",
+        "id": "z1",
+        "meaning": "Angular frequency relative to relaxation mode 1",
+        "unit": "1"
+      },
+      {
+        "expression": "G1 * z1 ** 2 / (1 + z1 ** 2)",
+        "id": "storage1",
+        "meaning": "Energy-storing contribution of mode 1",
+        "unit": "Pa"
+      },
+      {
+        "expression": "G1 * z1 / (1 + z1 ** 2)",
+        "id": "loss1",
+        "meaning": "Dissipative contribution of mode 1",
+        "unit": "Pa"
+      },
+      {
+        "expression": "omega * tau2 * thermal_shift",
+        "id": "z2",
+        "meaning": "Angular frequency relative to relaxation mode 2",
+        "unit": "1"
+      },
+      {
+        "expression": "G2 * z2 ** 2 / (1 + z2 ** 2)",
+        "id": "storage2",
+        "meaning": "Energy-storing contribution of mode 2",
+        "unit": "Pa"
+      },
+      {
+        "expression": "G2 * z2 / (1 + z2 ** 2)",
+        "id": "loss2",
+        "meaning": "Dissipative contribution of mode 2",
+        "unit": "Pa"
+      },
+      {
+        "expression": "where(response_kind == 0, storage1 + storage2, loss1 + loss2)",
+        "id": "modulus_response",
+        "meaning": "Storage (channel 0) or loss (channel 1) modulus from the same fitted relaxation spectrum",
+        "unit": "Pa"
+      }
+    ],
+    "output": "modulus_response",
+    "parameters": {
+      "G1": {
+        "bounds": [
+          100,
+          10000000000.0
+        ],
+        "initial": 25000000.0,
+        "meaning": "Elastic strength of relaxation mode 1; labels are exchangeable",
+        "unit": "Pa"
+      },
+      "G2": {
+        "bounds": [
+          100,
+          10000000000.0
+        ],
+        "initial": 25000000.0,
+        "meaning": "Elastic strength of relaxation mode 2; labels are exchangeable",
+        "unit": "Pa"
+      },
+      "activation": {
+        "bounds": [
+          100,
+          60000
+        ],
+        "initial": 10000,
+        "meaning": "Effective activation temperature for time-temperature shifting",
+        "unit": "K"
+      },
+      "tau1": {
+        "bounds": [
+          1e-08,
+          10000.0
+        ],
+        "initial": 0.03,
+        "meaning": "Reference relaxation time of mode 1",
+        "unit": "s"
+      },
+      "tau2": {
+        "bounds": [
+          1e-08,
+          10000.0
+        ],
+        "initial": 0.8999999999999999,
+        "meaning": "Reference relaxation time of mode 2",
+        "unit": "s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "where(response_kind == 0, G1 * (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2) + G2 * (omega * tau2 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * tau2 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2), G1 * (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) / (1 + (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2) + G2 * (omega * tau2 * exp(activation * (1 / temperature - 1 / T_ref))) / (1 + (omega * tau2 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2))",
+  "fit_recipe": {
+    "development_rows": 92,
+    "log_coordinate_parameters": [
+      "G1",
+      "G2",
+      "activation",
+      "tau1",
+      "tau2"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared log residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 216
+  },
+  "identifiability": {
+    "condition_number": 43.48456609536909,
+    "parameters": 5,
+    "rank": 5,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "omega",
+    "temperature",
+    "response_kind"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v1",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "G1": 38387079.99444264,
+    "G2": 103170.56751145594,
+    "activation": 29678.65275187375,
+    "tau1": 0.08085695869680917,
+    "tau2": 34.35735797041118
+  },
+  "quantity_units": {
+    "omega": "rad/s",
+    "response_kind": "1",
+    "target": "Pa",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "eq-local-v1-p100-058-equation-search-system-2",
+  "rule_sha256": "00456a9cd7c4838c446b813d6b8540fef42d41b4d75a197dad42104aec05aad2",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 33,
+    "expanded_expression": "where(response_kind == 0, 38387079.99444264 * (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2) + 103170.56751145594 * (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2), 38387079.99444264 * (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 0.08085695869680917 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2) + 103170.56751145594 * (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 34.35735797041118 * exp(29678.65275187375 * (1 / temperature - 1 / T_ref))) ** 2))",
+    "expression_bytes": 633,
+    "fixed_constants": 1,
+    "free_parameters": 5,
+    "intermediate_quantities": 7,
+    "learned_state_bytes": 140,
+    "literal_state_bytes": 27,
+    "nodes": 283,
+    "numeric_literal_count": 27,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 5,
+    "weighted_operator_count": 94
+  },
+  "task_id": "P100-058.equations-v1",
+  "train_error": 0.9476612304618282
+}

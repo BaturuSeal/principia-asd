@@ -1,0 +1,313 @@
+{
+  "equation_system": {
+    "assumptions": [
+      "Drift-flux family; local radial profile is a separate phenomenological correction",
+      "Source radial coordinate is normalized by the maximum sampled coordinate, not a certified tube radius",
+      "Densities are fixed pressure-derived IAPWS approximations; no target-fitted fluid property",
+      "Whole source runs held out; same apparatus and some shared acquisition days"
+    ],
+    "constants": {},
+    "name": "Vapor drift with radial redistribution",
+    "nodes": [
+      {
+        "expression": "quality * mass_flux / vapor_density",
+        "id": "gas_flux",
+        "meaning": "Superficial vapor volumetric velocity from mass quality",
+        "unit": "m/s"
+      },
+      {
+        "expression": "(1 - quality) * mass_flux / liquid_density",
+        "id": "liquid_flux",
+        "meaning": "Superficial liquid volumetric velocity",
+        "unit": "m/s"
+      },
+      {
+        "expression": "gas_flux + liquid_flux",
+        "id": "mixture_flux",
+        "meaning": "Total superficial mixture velocity",
+        "unit": "m/s"
+      },
+      {
+        "expression": "gas_flux / (distribution * mixture_flux + drift_velocity)",
+        "id": "bulk_void",
+        "meaning": "Drift-flux effective vapor fraction before radial redistribution",
+        "unit": "1"
+      },
+      {
+        "expression": "exp(radial_shape * (1 - radial_fraction ** 2))",
+        "id": "radial_odds",
+        "meaning": "Relative radial redistribution of vapor odds",
+        "unit": "1"
+      },
+      {
+        "expression": "bulk_void * radial_odds / (1 - bulk_void + bulk_void * radial_odds)",
+        "id": "void_fraction",
+        "meaning": "Bounded local vapor void fraction",
+        "unit": "1"
+      }
+    ],
+    "output": "void_fraction",
+    "parameters": {
+      "distribution": {
+        "bounds": [
+          1,
+          3
+        ],
+        "initial": 1.2,
+        "meaning": "Effective phase-distribution coefficient",
+        "unit": "1"
+      },
+      "drift_velocity": {
+        "bounds": [
+          1e-06,
+          10
+        ],
+        "initial": 0.2,
+        "meaning": "Effective relative vapor drift velocity",
+        "unit": "m/s"
+      },
+      "radial_shape": {
+        "bounds": [
+          -4,
+          4
+        ],
+        "initial": 0.2,
+        "meaning": "Signed radial redistribution strength",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "quality * mass_flux / vapor_density / (distribution * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + drift_velocity) * exp(radial_shape * (1 - radial_fraction ** 2)) / (1 - quality * mass_flux / vapor_density / (distribution * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + drift_velocity) + quality * mass_flux / vapor_density / (distribution * (quality * mass_flux / vapor_density + (1 - quality) * mass_flux / liquid_density) + drift_velocity) * exp(radial_shape * (1 - radial_fraction ** 2)))",
+  "parameters": {
+    "distribution": 1.0,
+    "drift_velocity": 2.511087647310727,
+    "radial_shape": 2.6738983698013232
+  },
+  "representation": "equation-system-v1",
+  "runtime": "principia-asd 1.0.0rc5",
+  "task_contract": {
+    "description": "Connect vapor and liquid superficial velocities, phase drift and radial redistribution to measured local void fraction. Density calculations are disclosed fixed physical preprocessing.",
+    "display_title": "Vapor transport and radial phase distribution",
+    "equation_protocol": "multi-role-equations-v2",
+    "equation_templates": [
+      {
+        "assumptions": [
+          "Drift-flux family; local radial profile is a separate phenomenological correction",
+          "Source radial coordinate is normalized by the maximum sampled coordinate, not a certified tube radius",
+          "Densities are fixed pressure-derived IAPWS approximations; no target-fitted fluid property",
+          "Whole source runs held out; same apparatus and some shared acquisition days"
+        ],
+        "constants": {},
+        "name": "Vapor drift with radial redistribution",
+        "nodes": [
+          {
+            "expression": "quality * mass_flux / vapor_density",
+            "id": "gas_flux",
+            "meaning": "Superficial vapor volumetric velocity from mass quality",
+            "unit": "m/s"
+          },
+          {
+            "expression": "(1 - quality) * mass_flux / liquid_density",
+            "id": "liquid_flux",
+            "meaning": "Superficial liquid volumetric velocity",
+            "unit": "m/s"
+          },
+          {
+            "expression": "gas_flux + liquid_flux",
+            "id": "mixture_flux",
+            "meaning": "Total superficial mixture velocity",
+            "unit": "m/s"
+          },
+          {
+            "expression": "gas_flux / (distribution * mixture_flux + drift_velocity)",
+            "id": "bulk_void",
+            "meaning": "Drift-flux effective vapor fraction before radial redistribution",
+            "unit": "1"
+          },
+          {
+            "expression": "exp(radial_shape * (1 - radial_fraction ** 2))",
+            "id": "radial_odds",
+            "meaning": "Relative radial redistribution of vapor odds",
+            "unit": "1"
+          },
+          {
+            "expression": "bulk_void * radial_odds / (1 - bulk_void + bulk_void * radial_odds)",
+            "id": "void_fraction",
+            "meaning": "Bounded local vapor void fraction",
+            "unit": "1"
+          }
+        ],
+        "output": "void_fraction",
+        "parameters": {
+          "distribution": {
+            "bounds": [
+              1,
+              3
+            ],
+            "initial": 1.2,
+            "meaning": "Effective phase-distribution coefficient",
+            "unit": "1"
+          },
+          "drift_velocity": {
+            "bounds": [
+              1e-06,
+              10
+            ],
+            "initial": 0.2,
+            "meaning": "Effective relative vapor drift velocity",
+            "unit": "m/s"
+          },
+          "radial_shape": {
+            "bounds": [
+              -4,
+              4
+            ],
+            "initial": 0.2,
+            "meaning": "Signed radial redistribution strength",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Drift-flux family; local radial profile is a separate phenomenological correction",
+          "Source radial coordinate is normalized by the maximum sampled coordinate, not a certified tube radius",
+          "Densities are fixed pressure-derived IAPWS approximations; no target-fitted fluid property",
+          "Whole source runs held out; same apparatus and some shared acquisition days",
+          "No phase slip; a deliberately simpler competing explanation"
+        ],
+        "constants": {},
+        "name": "Homogeneous mixture with radial redistribution",
+        "nodes": [
+          {
+            "expression": "quality * mass_flux / vapor_density",
+            "id": "gas_flux",
+            "meaning": "Superficial vapor volumetric velocity from mass quality",
+            "unit": "m/s"
+          },
+          {
+            "expression": "(1 - quality) * mass_flux / liquid_density",
+            "id": "liquid_flux",
+            "meaning": "Superficial liquid volumetric velocity",
+            "unit": "m/s"
+          },
+          {
+            "expression": "gas_flux + liquid_flux",
+            "id": "mixture_flux",
+            "meaning": "Total superficial mixture velocity",
+            "unit": "m/s"
+          },
+          {
+            "expression": "gas_flux / mixture_flux",
+            "id": "bulk_void",
+            "meaning": "Homogeneous no-slip vapor fraction",
+            "unit": "1"
+          },
+          {
+            "expression": "exp(radial_shape * (1 - radial_fraction ** 2))",
+            "id": "radial_odds",
+            "meaning": "Relative radial redistribution of vapor odds",
+            "unit": "1"
+          },
+          {
+            "expression": "bulk_void * radial_odds / (1 - bulk_void + bulk_void * radial_odds)",
+            "id": "void_fraction",
+            "meaning": "Bounded local vapor void fraction",
+            "unit": "1"
+          }
+        ],
+        "output": "void_fraction",
+        "parameters": {
+          "radial_shape": {
+            "bounds": [
+              -4,
+              4
+            ],
+            "initial": 0.2,
+            "meaning": "Signed radial redistribution strength",
+            "unit": "1"
+          }
+        },
+        "version": "equation-system-v1"
+      }
+    ],
+    "inputs": [
+      "mass_flux",
+      "quality",
+      "vapor_density",
+      "liquid_density",
+      "radial_fraction"
+    ],
+    "metric": {
+      "aggregation": "equal_group_mean",
+      "primary": "mae"
+    },
+    "output": "target",
+    "preprocessing": {
+      "learned_transformations": [],
+      "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+    },
+    "quantity_units": {
+      "liquid_density": "kg/m3",
+      "mass_flux": "kg/m2/s",
+      "quality": "1",
+      "radial_fraction": "1",
+      "target": "1",
+      "vapor_density": "kg/m3"
+    },
+    "research_objective": "",
+    "revision": 2,
+    "scenario_id": "P100-027",
+    "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+    "split": {
+      "dev": "public/dev.csv.gz",
+      "test": "public/test_inputs.csv.gz",
+      "train": "public/train.csv.gz"
+    },
+    "split_policy": "Original complete-group splits preserved",
+    "stability": {
+      "categorical_inputs": [],
+      "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+      "input_ranges": {
+        "liquid_density": [
+          728.5970748909473,
+          737.3786427625394
+        ],
+        "mass_flux": [
+          221.8658,
+          706.1656
+        ],
+        "quality": [
+          0.042816,
+          0.52278
+        ],
+        "radial_fraction": [
+          0.04343310856025119,
+          1.0
+        ],
+        "vapor_density": [
+          37.35538152079104,
+          40.32908407433448
+        ]
+      },
+      "output_scale": 0.23917601142307196,
+      "ranking": false,
+      "relative_noise": 0.01,
+      "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+    },
+    "task_id": "P100-027.mechanisms-v2",
+    "test_exposure": "retrospective-open-test",
+    "title": "Vapor transport and radial phase distribution",
+    "variable_descriptions": {
+      "liquid_density": "Fixed pressure-derived IAPWS liquid density",
+      "mass_flux": "Measured mixture mass flux",
+      "quality": "Source outlet mass quality",
+      "radial_fraction": "Native radial coordinate divided by its sampled maximum; not a verified tube-radius fraction",
+      "target": "Measured local vapor void fraction",
+      "vapor_density": "Fixed pressure-derived IAPWS vapor density"
+    }
+  },
+  "tree": null
+}

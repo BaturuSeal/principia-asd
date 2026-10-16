@@ -1,0 +1,484 @@
+{
+  "equation_system": {
+    "assumptions": [
+      "Linear generalized Maxwell response",
+      "Shared relaxation times and strengths across both measured response channels",
+      "Arrhenius shift is approximate across this temperature range",
+      "One polymer batch; source data are not compliance-corrected"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "Reference temperature, 40 degrees Celsius",
+        "source": "Declared coordinate reference; not fitted",
+        "unit": "K",
+        "value": 313.15
+      }
+    },
+    "name": "Single-mode thermal relaxation",
+    "nodes": [
+      {
+        "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+        "id": "thermal_shift",
+        "meaning": "Temperature shift of the relaxation timescale",
+        "unit": "1"
+      },
+      {
+        "expression": "omega * tau1 * thermal_shift",
+        "id": "z1",
+        "meaning": "Angular frequency relative to relaxation mode 1",
+        "unit": "1"
+      },
+      {
+        "expression": "G1 * z1 ** 2 / (1 + z1 ** 2)",
+        "id": "storage1",
+        "meaning": "Energy-storing contribution of mode 1",
+        "unit": "Pa"
+      },
+      {
+        "expression": "G1 * z1 / (1 + z1 ** 2)",
+        "id": "loss1",
+        "meaning": "Dissipative contribution of mode 1",
+        "unit": "Pa"
+      },
+      {
+        "expression": "where(response_kind == 0, storage1, loss1)",
+        "id": "modulus_response",
+        "meaning": "Storage (channel 0) or loss (channel 1) modulus from the same fitted relaxation spectrum",
+        "unit": "Pa"
+      }
+    ],
+    "output": "modulus_response",
+    "parameters": {
+      "G1": {
+        "bounds": [
+          100,
+          10000000000.0
+        ],
+        "initial": 50000000.0,
+        "meaning": "Elastic strength of relaxation mode 1; labels are exchangeable",
+        "unit": "Pa"
+      },
+      "activation": {
+        "bounds": [
+          100,
+          60000
+        ],
+        "initial": 10000,
+        "meaning": "Effective activation temperature for time-temperature shifting",
+        "unit": "K"
+      },
+      "tau1": {
+        "bounds": [
+          1e-08,
+          10000.0
+        ],
+        "initial": 0.03,
+        "meaning": "Reference relaxation time of mode 1",
+        "unit": "s"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "where(response_kind == 0, G1 * (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2), G1 * (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) / (1 + (omega * tau1 * exp(activation * (1 / temperature - 1 / T_ref))) ** 2))",
+  "parameters": {
+    "G1": 7361411.160521323,
+    "activation": 25878.925931700396,
+    "tau1": 0.8693072292931201
+  },
+  "representation": "equation-system-v1",
+  "runtime": "principia-asd 1.0.0rc5",
+  "task_contract": {
+    "description": "Oscillatory shear measurements of poly(D,L-lactide) probe elastic storage and viscous loss across frequency and temperature. A single system must explain both response channels with the same relaxation times, elastic strengths and thermal shift. Entire temperature sweeps are held out.",
+    "display_title": "Polymer relaxation: coupled storage and loss",
+    "equation_templates": [
+      {
+        "assumptions": [
+          "Linear generalized Maxwell response",
+          "Shared relaxation times and strengths across both measured response channels",
+          "Arrhenius shift is approximate across this temperature range",
+          "One polymer batch; source data are not compliance-corrected"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "Reference temperature, 40 degrees Celsius",
+            "source": "Declared coordinate reference; not fitted",
+            "unit": "K",
+            "value": 313.15
+          }
+        },
+        "name": "Single-mode thermal relaxation",
+        "nodes": [
+          {
+            "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+            "id": "thermal_shift",
+            "meaning": "Temperature shift of the relaxation timescale",
+            "unit": "1"
+          },
+          {
+            "expression": "omega * tau1 * thermal_shift",
+            "id": "z1",
+            "meaning": "Angular frequency relative to relaxation mode 1",
+            "unit": "1"
+          },
+          {
+            "expression": "G1 * z1 ** 2 / (1 + z1 ** 2)",
+            "id": "storage1",
+            "meaning": "Energy-storing contribution of mode 1",
+            "unit": "Pa"
+          },
+          {
+            "expression": "G1 * z1 / (1 + z1 ** 2)",
+            "id": "loss1",
+            "meaning": "Dissipative contribution of mode 1",
+            "unit": "Pa"
+          },
+          {
+            "expression": "where(response_kind == 0, storage1, loss1)",
+            "id": "modulus_response",
+            "meaning": "Storage (channel 0) or loss (channel 1) modulus from the same fitted relaxation spectrum",
+            "unit": "Pa"
+          }
+        ],
+        "output": "modulus_response",
+        "parameters": {
+          "G1": {
+            "bounds": [
+              100,
+              10000000000.0
+            ],
+            "initial": 50000000.0,
+            "meaning": "Elastic strength of relaxation mode 1; labels are exchangeable",
+            "unit": "Pa"
+          },
+          "activation": {
+            "bounds": [
+              100,
+              60000
+            ],
+            "initial": 10000,
+            "meaning": "Effective activation temperature for time-temperature shifting",
+            "unit": "K"
+          },
+          "tau1": {
+            "bounds": [
+              1e-08,
+              10000.0
+            ],
+            "initial": 0.03,
+            "meaning": "Reference relaxation time of mode 1",
+            "unit": "s"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Linear generalized Maxwell response",
+          "Shared relaxation times and strengths across both measured response channels",
+          "Arrhenius shift is approximate across this temperature range",
+          "One polymer batch; source data are not compliance-corrected"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "Reference temperature, 40 degrees Celsius",
+            "source": "Declared coordinate reference; not fitted",
+            "unit": "K",
+            "value": 313.15
+          }
+        },
+        "name": "Two-mode thermal relaxation",
+        "nodes": [
+          {
+            "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+            "id": "thermal_shift",
+            "meaning": "Temperature shift of the relaxation timescale",
+            "unit": "1"
+          },
+          {
+            "expression": "omega * tau1 * thermal_shift",
+            "id": "z1",
+            "meaning": "Angular frequency relative to relaxation mode 1",
+            "unit": "1"
+          },
+          {
+            "expression": "G1 * z1 ** 2 / (1 + z1 ** 2)",
+            "id": "storage1",
+            "meaning": "Energy-storing contribution of mode 1",
+            "unit": "Pa"
+          },
+          {
+            "expression": "G1 * z1 / (1 + z1 ** 2)",
+            "id": "loss1",
+            "meaning": "Dissipative contribution of mode 1",
+            "unit": "Pa"
+          },
+          {
+            "expression": "omega * tau2 * thermal_shift",
+            "id": "z2",
+            "meaning": "Angular frequency relative to relaxation mode 2",
+            "unit": "1"
+          },
+          {
+            "expression": "G2 * z2 ** 2 / (1 + z2 ** 2)",
+            "id": "storage2",
+            "meaning": "Energy-storing contribution of mode 2",
+            "unit": "Pa"
+          },
+          {
+            "expression": "G2 * z2 / (1 + z2 ** 2)",
+            "id": "loss2",
+            "meaning": "Dissipative contribution of mode 2",
+            "unit": "Pa"
+          },
+          {
+            "expression": "where(response_kind == 0, storage1 + storage2, loss1 + loss2)",
+            "id": "modulus_response",
+            "meaning": "Storage (channel 0) or loss (channel 1) modulus from the same fitted relaxation spectrum",
+            "unit": "Pa"
+          }
+        ],
+        "output": "modulus_response",
+        "parameters": {
+          "G1": {
+            "bounds": [
+              100,
+              10000000000.0
+            ],
+            "initial": 25000000.0,
+            "meaning": "Elastic strength of relaxation mode 1; labels are exchangeable",
+            "unit": "Pa"
+          },
+          "G2": {
+            "bounds": [
+              100,
+              10000000000.0
+            ],
+            "initial": 25000000.0,
+            "meaning": "Elastic strength of relaxation mode 2; labels are exchangeable",
+            "unit": "Pa"
+          },
+          "activation": {
+            "bounds": [
+              100,
+              60000
+            ],
+            "initial": 10000,
+            "meaning": "Effective activation temperature for time-temperature shifting",
+            "unit": "K"
+          },
+          "tau1": {
+            "bounds": [
+              1e-08,
+              10000.0
+            ],
+            "initial": 0.03,
+            "meaning": "Reference relaxation time of mode 1",
+            "unit": "s"
+          },
+          "tau2": {
+            "bounds": [
+              1e-08,
+              10000.0
+            ],
+            "initial": 0.8999999999999999,
+            "meaning": "Reference relaxation time of mode 2",
+            "unit": "s"
+          }
+        },
+        "version": "equation-system-v1"
+      },
+      {
+        "assumptions": [
+          "Fractional Maxwell family with a distributed relaxation spectrum",
+          "Same parameters bind storage and loss; neither channel is an input proxy for the other",
+          "Fractional order is phenomenological, not a directly measured molecular quantity",
+          "One batch and no compliance correction; independent mechanism validation remains absent"
+        ],
+        "constants": {
+          "T_ref": {
+            "meaning": "Reference temperature, 40 degrees Celsius",
+            "source": "Declared coordinate reference; not fitted",
+            "unit": "K",
+            "value": 313.15
+          },
+          "pi": {
+            "meaning": "Circle constant",
+            "source": "Mathematical constant",
+            "unit": "1",
+            "value": 3.141592653589793
+          }
+        },
+        "name": "Fractional thermal relaxation",
+        "nodes": [
+          {
+            "expression": "exp(activation * (1 / temperature - 1 / T_ref))",
+            "id": "thermal_shift",
+            "meaning": "Temperature shift of the relaxation timescale",
+            "unit": "1"
+          },
+          {
+            "expression": "omega * tau * thermal_shift",
+            "id": "reduced_frequency",
+            "meaning": "Dimensionless frequency at the shifted relaxation timescale",
+            "unit": "1"
+          },
+          {
+            "expression": "reduced_frequency ** alpha",
+            "id": "spectral_power",
+            "meaning": "Fractional relaxation spectrum amplitude",
+            "unit": "1"
+          },
+          {
+            "expression": "cos(alpha * pi / 2)",
+            "id": "phase_cosine",
+            "meaning": "Cosine of the fractional constitutive phase",
+            "unit": "1"
+          },
+          {
+            "expression": "sin(alpha * pi / 2)",
+            "id": "phase_sine",
+            "meaning": "Sine of the fractional constitutive phase",
+            "unit": "1"
+          },
+          {
+            "expression": "1 + 2 * spectral_power * phase_cosine + spectral_power ** 2",
+            "id": "spectral_denominator",
+            "meaning": "Squared complex denominator of the fractional Maxwell response",
+            "unit": "1"
+          },
+          {
+            "expression": "G * spectral_power * (phase_cosine + spectral_power) / spectral_denominator",
+            "id": "storage_modulus",
+            "meaning": "Elastic storage response of the fractional spectrum",
+            "unit": "Pa"
+          },
+          {
+            "expression": "G * spectral_power * phase_sine / spectral_denominator",
+            "id": "loss_modulus",
+            "meaning": "Dissipative response of the same fractional spectrum",
+            "unit": "Pa"
+          },
+          {
+            "expression": "where(response_kind == 0, storage_modulus, loss_modulus)",
+            "id": "modulus_response",
+            "meaning": "Jointly predicted storage or loss channel",
+            "unit": "Pa"
+          }
+        ],
+        "output": "modulus_response",
+        "parameters": {
+          "G": {
+            "bounds": [
+              100,
+              10000000000.0
+            ],
+            "initial": 100000000.0,
+            "meaning": "High-frequency elastic strength",
+            "unit": "Pa"
+          },
+          "activation": {
+            "bounds": [
+              100,
+              60000
+            ],
+            "initial": 10000,
+            "meaning": "Effective activation temperature for time-temperature shifting",
+            "unit": "K"
+          },
+          "alpha": {
+            "bounds": [
+              0.05,
+              1
+            ],
+            "initial": 0.65,
+            "meaning": "Fractional spectral exponent; one recovers a single Maxwell mode at unity",
+            "unit": "1"
+          },
+          "tau": {
+            "bounds": [
+              1e-08,
+              10000.0
+            ],
+            "initial": 0.1,
+            "meaning": "Reference relaxation timescale",
+            "unit": "s"
+          }
+        },
+        "version": "equation-system-v1"
+      }
+    ],
+    "inputs": [
+      "omega",
+      "temperature",
+      "response_kind"
+    ],
+    "metric": {
+      "aggregation": "equal_group_mean",
+      "primary": "log_mae"
+    },
+    "output": "target",
+    "positive_prediction": true,
+    "preprocessing": [
+      "Native plain-text rheometer output; exclude duplicate proprietary files",
+      "Long-form paired responses with one channel selector; no derived response features",
+      "Filename Celsius set point to Kelvin; all other selected source units retained",
+      "No fitted preprocessing"
+    ],
+    "quantity_units": {
+      "omega": "rad/s",
+      "response_kind": "1",
+      "target": "Pa",
+      "temperature": "K"
+    },
+    "research_objective": "",
+    "revision": 1,
+    "scenario_id": "P100-058",
+    "scientific_scope": "Local scientific-method development; no independent-discovery claim",
+    "split": {
+      "dev": "public/dev.csv.gz",
+      "test": "public/test_inputs.csv.gz",
+      "train": "public/train.csv.gz"
+    },
+    "split_policy": "Train temperatures 40/50/60/70/80 C; development 45/65 C; test 55/75 C. Each temperature's full frequency sweep and both response channels stay together.",
+    "stability": {
+      "categorical_inputs": [
+        "response_kind"
+      ],
+      "domain": "Observed training ranges; positive physical quantities",
+      "input_ranges": {
+        "omega": [
+          0.01931,
+          100.0
+        ],
+        "response_kind": [
+          0.0,
+          1.0
+        ],
+        "temperature": [
+          313.15,
+          353.15
+        ]
+      },
+      "output_scale": 9678736.515470332,
+      "ranking": false,
+      "relative_noise": 0.01,
+      "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+    },
+    "task_id": "P100-058.equations-v1",
+    "test_exposure": "retrospective-open-test",
+    "title": "Polymer relaxation: coupled storage and loss",
+    "units": {
+      "omega": "rad/s",
+      "response_kind": "1",
+      "target": "Pa",
+      "temperature": "K"
+    },
+    "variable_descriptions": {
+      "omega": "Applied angular oscillation frequency, in radians per second",
+      "response_kind": "Requested response channel: 0 = storage modulus G prime; 1 = loss modulus G double prime. This selects an output; it contains no measured response value.",
+      "target": "Instrument-reported storage or loss modulus for the selected channel",
+      "temperature": "Sweep set-point temperature encoded in the native filename; converted to Kelvin"
+    }
+  },
+  "tree": null
+}

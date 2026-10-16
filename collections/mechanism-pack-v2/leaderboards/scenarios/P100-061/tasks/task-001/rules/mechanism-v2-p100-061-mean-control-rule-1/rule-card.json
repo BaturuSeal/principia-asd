@@ -1,0 +1,54 @@
+{
+  "dev_error": 1.1331500185682788,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "temperature",
+    "pressure_feed",
+    "pressure_permeate"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 2.559585102148741
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "pressure_feed": -0.9977502569389759,
+      "pressure_permeate": -0.9963224723833661,
+      "temperature": -0.9406137638826624
+    },
+    "mean": 0.44935590696298994,
+    "p90_abs": 1.8882987873472556,
+    "std": 1.2218984197172162
+  },
+  "rule_id": "mechanism-v2-p100-061-mean-control-rule-1",
+  "rule_sha256": "fb4038d48b596fb1ad01957fe36c405fe76c515edfa5c25703d6d3275ae9f196",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "2.559585102148741",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 25,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-061.mechanisms-v2",
+  "train_error": 1.3843302504271415,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

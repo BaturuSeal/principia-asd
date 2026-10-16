@@ -1,0 +1,57 @@
+{
+  "dev_error": 1.1514434215918748e-07,
+  "execution_status": "complete",
+  "expression": "p0+p1*(temperature)+p2*(water_fraction)+p3*(root_exclusion)",
+  "inputs": [
+    "temperature",
+    "water_fraction",
+    "root_exclusion"
+  ],
+  "method_id": "linear_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "linear",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": -2.398837217674802e-06,
+    "p1": 8.881538994311682e-09,
+    "p2": 2.6931951403642467e-08,
+    "p3": -1.844573020908366e-08
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "root_exclusion": 0.10030566924293083,
+      "temperature": 0.8474673038818902,
+      "water_fraction": -0.6917782738414147
+    },
+    "mean": 1.2517484136181183e-07,
+    "p90_abs": 2.3224287331446878e-07,
+    "std": 7.872305053823492e-08
+  },
+  "rule_id": "mechanism-v2-p100-082-linear-control-rule-1",
+  "rule_sha256": "88ee0acdd9b51f8197360d097ad9964cc9bfeee9bb8118b6a34a1521c836ac99",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-2.398837217674802e-06 + 8.881538994311682e-09 * temperature + 2.6931951403642467e-08 * water_fraction + -1.844573020908366e-08 * root_exclusion",
+    "expression_bytes": 59,
+    "free_parameters": 4,
+    "learned_state_bytes": 119,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "task_id": "P100-082.mechanisms-v2",
+  "train_error": 5.2375954438059835e-08,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

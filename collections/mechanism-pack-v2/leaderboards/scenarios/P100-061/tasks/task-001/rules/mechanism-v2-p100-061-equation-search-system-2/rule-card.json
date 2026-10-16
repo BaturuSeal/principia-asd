@@ -1,0 +1,321 @@
+{
+  "dev_error": 0.043202308931416744,
+  "development_diagnostics": {
+    "groups": [
+      {
+        "group": "S-HT-N2-350C",
+        "loss": 0.043202308931416744
+      }
+    ],
+    "input_strata": {
+      "pressure_feed": {
+        "bins": [
+          {
+            "mae": 0.05202491295459066,
+            "range": [
+              151200.0,
+              237625.0
+            ],
+            "residual_bias": 0.05202491295459066,
+            "rows": 2
+          },
+          {
+            "mae": 0.06415730303847678,
+            "range": [
+              237625.0,
+              324550.0
+            ],
+            "residual_bias": 0.06415730303847678,
+            "rows": 2
+          },
+          {
+            "mae": 0.03671308925108807,
+            "range": [
+              324550.0,
+              411525.0
+            ],
+            "residual_bias": 0.03671308925108807,
+            "rows": 2
+          },
+          {
+            "mae": 0.019913930481511466,
+            "range": [
+              411525.0,
+              498600.0
+            ],
+            "residual_bias": -0.01622364854079783,
+            "rows": 2
+          }
+        ],
+        "unique_values": 8
+      },
+      "pressure_permeate": {
+        "bins": [
+          {
+            "mae": 0.05202491295459066,
+            "range": [
+              100299.99999999999,
+              100824.99999999999
+            ],
+            "residual_bias": 0.05202491295459066,
+            "rows": 2
+          },
+          {
+            "mae": 0.06415730303847678,
+            "range": [
+              100824.99999999999,
+              101499.99999999999
+            ],
+            "residual_bias": 0.06415730303847678,
+            "rows": 2
+          },
+          {
+            "mae": 0.03671308925108807,
+            "range": [
+              101499.99999999999,
+              102350.0
+            ],
+            "residual_bias": 0.03671308925108807,
+            "rows": 2
+          },
+          {
+            "mae": 0.019913930481511466,
+            "range": [
+              102350.0,
+              103499.99999999999
+            ],
+            "residual_bias": -0.01622364854079783,
+            "rows": 2
+          }
+        ],
+        "unique_values": 8
+      },
+      "temperature": {
+        "bins": [
+          {
+            "mae": 0.05202491295459066,
+            "range": [
+              623.15,
+              624.9
+            ],
+            "residual_bias": 0.05202491295459066,
+            "rows": 2
+          },
+          {
+            "mae": 0.06415730303847678,
+            "range": [
+              624.9,
+              625.65
+            ],
+            "residual_bias": 0.06415730303847678,
+            "rows": 2
+          },
+          {
+            "mae": 0.02831350986629977,
+            "range": [
+              626.15,
+              627.15
+            ],
+            "residual_bias": 0.01024472035514512,
+            "rows": 4
+          }
+        ],
+        "unique_values": 5
+      }
+    },
+    "intermediate_ranges": {
+      "knudsen_factor": [
+        0.6894959087246065,
+        0.6917053060676264
+      ],
+      "knudsen_flux": [
+        0.34777814352854125,
+        2.690928253276985
+      ],
+      "mean_pressure": [
+        1.2575,
+        3.0105
+      ],
+      "pressure_drive": [
+        0.5090000000000001,
+        3.951
+      ],
+      "total_flux": [
+        0.4223653618675126,
+        4.061071434519086
+      ],
+      "viscosity_factor": [
+        0.2610970774462465,
+        0.2641315943952935
+      ],
+      "viscous_flux": [
+        0.07458721833897139,
+        1.3701431812421003
+      ]
+    },
+    "residual_bias": 0.03416791417583942,
+    "residual_rmse": 0.04743916768759813
+  },
+  "equation_system": {
+    "assumptions": [
+      "Single S-HT membrane, pure nitrogen; no independent membrane replication",
+      "Known transport families, not direct pore-size identification",
+      "Additive effective Knudsen and viscous contributions",
+      "A viscosity power law approximates the finite measured temperature range"
+    ],
+    "constants": {
+      "T_ref": {
+        "meaning": "25 Celsius reference temperature",
+        "source": "Declared reference coordinate",
+        "unit": "K",
+        "value": 298.15
+      },
+      "p_ref": {
+        "meaning": "One bar pressure scale",
+        "source": "Exact SI conversion of one bar",
+        "unit": "Pa",
+        "value": 100000
+      }
+    },
+    "name": "Knudsen and viscous pore transport",
+    "nodes": [
+      {
+        "expression": "(pressure_feed - pressure_permeate) / p_ref",
+        "id": "pressure_drive",
+        "meaning": "Dimensionless pressure difference across the membrane",
+        "unit": "1"
+      },
+      {
+        "expression": "sqrt(T_ref / temperature)",
+        "id": "knudsen_factor",
+        "meaning": "Knudsen molar-flux temperature scaling",
+        "unit": "1"
+      },
+      {
+        "expression": "K_ref * knudsen_factor * pressure_drive",
+        "id": "knudsen_flux",
+        "meaning": "Molecule-wall transport contribution",
+        "unit": "mol/m2/s"
+      },
+      {
+        "expression": "(pressure_feed + pressure_permeate) / (2 * p_ref)",
+        "id": "mean_pressure",
+        "meaning": "Mean pressure relative to one bar",
+        "unit": "1"
+      },
+      {
+        "expression": "(T_ref / temperature) ** (1 + viscosity_exponent)",
+        "id": "viscosity_factor",
+        "meaning": "Inverse viscosity and ideal-gas density correction",
+        "unit": "1"
+      },
+      {
+        "expression": "V_ref * mean_pressure * pressure_drive * viscosity_factor",
+        "id": "viscous_flux",
+        "meaning": "Pressure-driven viscous transport contribution",
+        "unit": "mol/m2/s"
+      },
+      {
+        "expression": "knudsen_flux + viscous_flux",
+        "id": "total_flux",
+        "meaning": "Parallel transport through the effective porous structure",
+        "unit": "mol/m2/s"
+      }
+    ],
+    "output": "total_flux",
+    "parameters": {
+      "K_ref": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.5,
+        "meaning": "Reference Knudsen flux scale per one-bar driving difference",
+        "unit": "mol/m2/s"
+      },
+      "V_ref": {
+        "bounds": [
+          1e-06,
+          100
+        ],
+        "initial": 0.2,
+        "meaning": "Reference viscous flux scale",
+        "unit": "mol/m2/s"
+      },
+      "viscosity_exponent": {
+        "bounds": [
+          0.1,
+          1.5
+        ],
+        "initial": 0.7,
+        "meaning": "Approximate nitrogen viscosity temperature exponent",
+        "unit": "1"
+      }
+    },
+    "version": "equation-system-v1"
+  },
+  "expression": "K_ref * sqrt(T_ref / temperature) * ((pressure_feed - pressure_permeate) / p_ref) + V_ref * ((pressure_feed + pressure_permeate) / (2 * p_ref)) * ((pressure_feed - pressure_permeate) / p_ref) * (T_ref / temperature) ** (1 + viscosity_exponent)",
+  "fit_recipe": {
+    "development_rows": 8,
+    "log_coordinate_parameters": [
+      "K_ref",
+      "V_ref",
+      "viscosity_exponent"
+    ],
+    "max_nfev_per_restart": 200,
+    "objective": "equal-group squared standardized residual",
+    "optimizer": "scipy least_squares",
+    "selection": "development only",
+    "training_rows": 22
+  },
+  "identifiability": {
+    "condition_number": 17.555245324636193,
+    "parameters": 3,
+    "rank": 3,
+    "rank_deficient": false,
+    "scope": "Local training Jacobian in optimization coordinates; no confidence interval or global identifiability claim"
+  },
+  "inputs": [
+    "temperature",
+    "pressure_feed",
+    "pressure_permeate"
+  ],
+  "method_id": "equation_search",
+  "method_version": "equation-search-v2",
+  "model_ids": [],
+  "origin": "Sourced scientific template; host-fitted shared parameters",
+  "output": "target",
+  "parameters": {
+    "K_ref": 0.987787202693006,
+    "V_ref": 0.44118250458773056,
+    "viscosity_exponent": 0.8059209331623688
+  },
+  "quantity_units": {
+    "pressure_feed": "Pa",
+    "pressure_permeate": "Pa",
+    "target": "mol/m2/s",
+    "temperature": "K"
+  },
+  "representation": "equation-system-v1",
+  "rule_id": "mechanism-v2-p100-061-equation-search-system-2",
+  "rule_sha256": "c01f8c7a35cbd1a0dd09fb3fe2be54ab212ecff0b5ebbe1c2e75a68d9a7205de",
+  "scientific_status": "mechanism_hypothesis; not independently validated",
+  "simplicity": {
+    "dag_weighted_operator_count": 16,
+    "expanded_expression": "0.987787202693006 * sqrt(T_ref / temperature) * ((pressure_feed - pressure_permeate) / p_ref) + 0.44118250458773056 * ((pressure_feed + pressure_permeate) / (2 * p_ref)) * ((pressure_feed - pressure_permeate) / p_ref) * (T_ref / temperature) ** (1 + 0.8059209331623688)",
+    "expression_bytes": 243,
+    "fixed_constants": 2,
+    "free_parameters": 3,
+    "intermediate_quantities": 6,
+    "learned_state_bytes": 100,
+    "literal_state_bytes": 2,
+    "nodes": 72,
+    "numeric_literal_count": 2,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 3,
+    "weighted_operator_count": 18
+  },
+  "task_id": "P100-061.mechanisms-v2",
+  "train_error": 0.03341640518784362
+}

@@ -1,0 +1,56 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.0014513090768057367,
+    "primary": "mae",
+    "primary_error": 0.0014513090768057367,
+    "rmse": 0.0016493294966253987
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.0016362680673457312,
+  "by_group": [
+    {
+      "error": 0.0014513090768057367,
+      "group": "heating-20C-min",
+      "rows": 501
+    }
+  ],
+  "coverage": {
+    "eligible": 501,
+    "fraction": 1.0,
+    "predicted": 501
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "linear_control",
+  "rule_id": "mechanism-v2-p100-013-linear-control-rule-1",
+  "rule_sha256": "6132e356f453ef6581abd7deafbdb7fc753bbeeaac5a00019d7981e8d87c8171",
+  "run_id": "mechanism-v2-p100-013-linear-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "-0.004464238869311369 + 1.1612321047889359e-05 * temperature + -0.0009117370744998194 * conversion + 0.0035245579001932513 * heating_rate",
+    "expression_bytes": 53,
+    "free_parameters": 4,
+    "learned_state_bytes": 118,
+    "literal_state_bytes": 0,
+    "nodes": 27,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 6
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.8002010586479451,
+    "perturbation_labels_available": false,
+    "population_rows": 501,
+    "ranking": false,
+    "samples": 501,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

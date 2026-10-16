@@ -1,0 +1,58 @@
+{
+  "dev_error": 0.4229767261904762,
+  "execution_status": "complete",
+  "expression": "p0",
+  "inputs": [
+    "mass_flux",
+    "quality",
+    "vapor_density",
+    "liquid_density",
+    "radial_fraction"
+  ],
+  "method_id": "mean_control",
+  "method_version": "1.0.0rc2",
+  "model_ids": [],
+  "origin": "training mean",
+  "output": "target",
+  "parameter_uncertainty": {
+    "reason": "No independently justified parameter uncertainty model",
+    "status": "not_assessed"
+  },
+  "parameters": {
+    "p0": 0.7659738095238096
+  },
+  "representation": "expression",
+  "residuals": {
+    "input_correlations": {
+      "liquid_density": 0.35779615774582324,
+      "mass_flux": -0.3577961577458232,
+      "quality": 0.35779615774582324,
+      "radial_fraction": 0.8359655873312789,
+      "vapor_density": -0.35779615774582324
+    },
+    "mean": 0.4229767261904762,
+    "p90_abs": 0.6068878095238095,
+    "std": 0.15917466440148817
+  },
+  "rule_id": "mechanism-v2-p100-027-mean-control-rule-1",
+  "rule_sha256": "9e991f800962b26e8b4971eb809fd07ac2e75d796e9791138b58a85e303ff40a",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "0.7659738095238096",
+    "expression_bytes": 2,
+    "free_parameters": 1,
+    "learned_state_bytes": 26,
+    "literal_state_bytes": 0,
+    "nodes": 3,
+    "numeric_literal_count": 0,
+    "preprocessing": "none unless explicitly expanded in the expression",
+    "weighted_operator_count": 0
+  },
+  "task_id": "P100-027.mechanisms-v2",
+  "train_error": 0.20077185941043083,
+  "units": {
+    "inputs": {},
+    "output": null,
+    "status": "parameter units require scientific review; no dimensionless equivalence claim"
+  }
+}

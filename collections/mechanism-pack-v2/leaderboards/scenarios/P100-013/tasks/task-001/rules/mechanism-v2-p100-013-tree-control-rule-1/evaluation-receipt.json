@@ -1,0 +1,52 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.0008729424199164734,
+    "primary": "mae",
+    "primary_error": 0.0008729424199164734,
+    "rmse": 0.0010848716771822268
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 0.0016362680673457312,
+  "by_group": [
+    {
+      "error": 0.0008729424199164734,
+      "group": "heating-20C-min",
+      "rows": 501
+    }
+  ],
+  "coverage": {
+    "eligible": 501,
+    "fraction": 1.0,
+    "predicted": 501
+  },
+  "evaluator_version": "deterministic-v2",
+  "method_id": "tree_control",
+  "rule_id": "mechanism-v2-p100-013-tree-control-rule-1",
+  "rule_sha256": "f94889153215fc79991722e2d2ec8ef10e9172296564d4bc40229ff4b381a804",
+  "run_id": "mechanism-v2-p100-013-tree-control",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "expanded_expression": "complete tree in Rule Card",
+    "free_parameters": 136,
+    "learned_state_bytes": 4411,
+    "scope": "predictive reference, not a compact scientific formula",
+    "weighted_operator_count": 91
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.09237594916117346,
+    "perturbation_labels_available": false,
+    "population_rows": 501,
+    "ranking": false,
+    "samples": 501,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

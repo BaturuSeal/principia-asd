@@ -1,0 +1,66 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 100910.88913098411,
+    "primary": "log_mae",
+    "primary_error": 0.6791198367147177,
+    "rmse": 305213.6897326774
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 7.524405530403783,
+  "by_group": [
+    {
+      "error": 0.8265063996956563,
+      "group": "temperature-55",
+      "rows": 50
+    },
+    {
+      "error": 0.531733273733779,
+      "group": "temperature-75",
+      "rows": 38
+    }
+  ],
+  "coverage": {
+    "eligible": 88,
+    "fraction": 1.0,
+    "predicted": 88
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_agent",
+  "rule_id": "eq-local-v1-p100-058-equation-agent-system-4",
+  "rule_sha256": "644bb66cf0f2f7581eeba6ce641cc5fecddbbc1995aed24acb942cbf1b4563a2",
+  "run_id": "eq-local-v1-p100-058-equation-agent",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 46,
+    "expanded_expression": "where(response_kind == 0, 54366408.065046094 * (omega * 0.06998726478147979 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 0.06998726478147979 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2) + 396556.6110878354 * (omega * 15.482760750123171 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 15.482760750123171 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2) + 100.00000000000013 * (omega * 9591.294704347934 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2 / (1 + (omega * 9591.294704347934 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2), 54366408.065046094 * (omega * 0.06998726478147979 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 0.06998726478147979 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2) + 396556.6110878354 * (omega * 15.482760750123171 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 15.482760750123171 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2) + 100.00000000000013 * (omega * 9591.294704347934 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) / (1 + (omega * 9591.294704347934 * exp(32941.98962872088 * (1 / temperature - 1 / T_ref))) ** 2))",
+    "expression_bytes": 938,
+    "fixed_constants": 1,
+    "free_parameters": 7,
+    "intermediate_quantities": 12,
+    "learned_state_bytes": 194,
+    "literal_state_bytes": 40,
+    "nodes": 422,
+    "numeric_literal_count": 40,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 7,
+    "weighted_operator_count": 141
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.002648672954428441,
+    "perturbation_labels_available": false,
+    "population_rows": 88,
+    "ranking": false,
+    "samples": 88,
+    "scope": "Diagnostic input sensitivity; no calibrated measurement-error model"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

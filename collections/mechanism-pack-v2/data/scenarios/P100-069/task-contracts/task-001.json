@@ -1,0 +1,259 @@
+{
+  "description": "Predict the next minute of lubricant-temperature change from measured friction power and thermal boundaries. A thermal resistance network competes with a speed-dependent mixing hypothesis; no future control measurements are inputs.",
+  "display_title": "Frictional heating in a robot gearbox",
+  "equation_protocol": "multi-role-equations-v2",
+  "equation_templates": [
+    {
+      "assumptions": [
+        "Lumped thermal balance with measured instantaneous torque and speed",
+        "Housing, environment and friction power are held locally constant over 60 seconds; later controls are never supplied",
+        "Capacity and conductances are effective quantities; one joint, no independent-machine validation"
+      ],
+      "constants": {},
+      "name": "Friction-heated thermal resistance network",
+      "nodes": [
+        {
+          "expression": "abs(torque * speed)",
+          "id": "friction_power",
+          "meaning": "Instantaneous frictional mechanical power available as heat",
+          "unit": "W"
+        },
+        {
+          "expression": "conductance_housing * (lubricant_temperature - housing_temperature)",
+          "id": "housing_loss",
+          "meaning": "Heat flow to the measured housing",
+          "unit": "W"
+        },
+        {
+          "expression": "conductance_environment * (lubricant_temperature - environment_temperature)",
+          "id": "environment_loss",
+          "meaning": "Direct effective heat flow to the measured environment",
+          "unit": "W"
+        },
+        {
+          "expression": "friction_power - housing_loss - environment_loss",
+          "id": "net_power",
+          "meaning": "Net instantaneous power into the lubricant thermal store",
+          "unit": "W"
+        },
+        {
+          "expression": "conductance_housing + conductance_environment",
+          "id": "total_conductance",
+          "meaning": "Combined effective heat-loss conductance",
+          "unit": "W/K"
+        },
+        {
+          "expression": "1 - exp(-total_conductance * horizon / capacity)",
+          "id": "relaxation_fraction",
+          "meaning": "Exact relaxation fraction for a locally constant thermal boundary",
+          "unit": "1"
+        },
+        {
+          "expression": "net_power / total_conductance * relaxation_fraction",
+          "id": "temperature_increment",
+          "meaning": "Predicted lubricant temperature change over the next minute",
+          "unit": "K"
+        }
+      ],
+      "output": "temperature_increment",
+      "parameters": {
+        "capacity": {
+          "bounds": [
+            10,
+            1000000.0
+          ],
+          "initial": 3000,
+          "meaning": "Effective lubricant thermal capacity under the measured torque-power convention",
+          "unit": "J/K"
+        },
+        "conductance_environment": {
+          "bounds": [
+            1e-05,
+            1000
+          ],
+          "initial": 0.1,
+          "meaning": "Effective direct environmental heat-loss conductance",
+          "unit": "W/K"
+        },
+        "conductance_housing": {
+          "bounds": [
+            1e-05,
+            1000
+          ],
+          "initial": 1,
+          "meaning": "Effective lubricant-to-housing thermal conductance",
+          "unit": "W/K"
+        }
+      },
+      "version": "equation-system-v1"
+    },
+    {
+      "assumptions": [
+        "Lumped thermal balance with measured instantaneous torque and speed",
+        "Housing, environment and friction power are held locally constant over 60 seconds; later controls are never supplied",
+        "Capacity and conductances are effective quantities; one joint, no independent-machine validation",
+        "Convection proxy, not direct measurement of lubricant circulation"
+      ],
+      "constants": {
+        "speed_ref": {
+          "meaning": "One radian per second speed reference",
+          "source": "Declared coordinate scale",
+          "unit": "rad/s",
+          "value": 1
+        }
+      },
+      "name": "Thermal network with speed-dependent mixing",
+      "nodes": [
+        {
+          "expression": "1 + mixing * abs(speed) / speed_ref",
+          "id": "mixing_multiplier",
+          "meaning": "Hypothesized speed-dependent convective mixing enhancement",
+          "unit": "1"
+        },
+        {
+          "expression": "conductance_housing * mixing_multiplier",
+          "id": "housing_conductance",
+          "meaning": "Speed-dependent lubricant-to-housing conductance",
+          "unit": "W/K"
+        },
+        {
+          "expression": "abs(torque * speed)",
+          "id": "friction_power",
+          "meaning": "Instantaneous frictional mechanical power available as heat",
+          "unit": "W"
+        },
+        {
+          "expression": "housing_conductance * (lubricant_temperature - housing_temperature)",
+          "id": "housing_loss",
+          "meaning": "Heat flow to the measured housing",
+          "unit": "W"
+        },
+        {
+          "expression": "conductance_environment * (lubricant_temperature - environment_temperature)",
+          "id": "environment_loss",
+          "meaning": "Direct effective heat flow to the measured environment",
+          "unit": "W"
+        },
+        {
+          "expression": "friction_power - housing_loss - environment_loss",
+          "id": "net_power",
+          "meaning": "Net instantaneous power into the lubricant thermal store",
+          "unit": "W"
+        },
+        {
+          "expression": "housing_conductance + conductance_environment",
+          "id": "total_conductance",
+          "meaning": "Combined effective heat-loss conductance",
+          "unit": "W/K"
+        },
+        {
+          "expression": "1 - exp(-total_conductance * horizon / capacity)",
+          "id": "relaxation_fraction",
+          "meaning": "Exact relaxation fraction for a locally constant thermal boundary",
+          "unit": "1"
+        },
+        {
+          "expression": "net_power / total_conductance * relaxation_fraction",
+          "id": "temperature_increment",
+          "meaning": "Predicted lubricant temperature change over the next minute",
+          "unit": "K"
+        }
+      ],
+      "output": "temperature_increment",
+      "parameters": {
+        "capacity": {
+          "bounds": [
+            10,
+            1000000.0
+          ],
+          "initial": 3000,
+          "meaning": "Effective lubricant thermal capacity under the measured torque-power convention",
+          "unit": "J/K"
+        },
+        "conductance_environment": {
+          "bounds": [
+            1e-05,
+            1000
+          ],
+          "initial": 0.1,
+          "meaning": "Effective direct environmental heat-loss conductance",
+          "unit": "W/K"
+        },
+        "conductance_housing": {
+          "bounds": [
+            1e-05,
+            1000
+          ],
+          "initial": 1,
+          "meaning": "Effective lubricant-to-housing thermal conductance",
+          "unit": "W/K"
+        },
+        "mixing": {
+          "bounds": [
+            0.001,
+            20
+          ],
+          "initial": 0.3,
+          "meaning": "Speed-related conductance enhancement",
+          "unit": "1"
+        }
+      },
+      "version": "equation-system-v1"
+    }
+  ],
+  "inputs": [
+    "lubricant_temperature",
+    "housing_temperature",
+    "environment_temperature",
+    "speed",
+    "torque",
+    "horizon"
+  ],
+  "metric": {
+    "aggregation": "equal_group_mean",
+    "primary": "mae"
+  },
+  "output": "target",
+  "preprocessing": {
+    "learned_transformations": [],
+    "native_reading": "Deterministic coordinate and SI conversions; source-derived responses explicitly identified"
+  },
+  "quantity_units": {
+    "environment_temperature": "K",
+    "horizon": "s",
+    "housing_temperature": "K",
+    "lubricant_temperature": "K",
+    "speed": "rad/s",
+    "target": "K",
+    "torque": "N*m"
+  },
+  "reference_expression": "0",
+  "revision": 2,
+  "scenario_id": "P100-069",
+  "scientific_scope": "Constitutive hypotheses and matched predictive tests; no novelty, causality or independent discovery claim",
+  "split": {
+    "dev": "public/dev.csv.gz",
+    "test": "public/test_inputs.csv.gz",
+    "train": "public/train.csv.gz"
+  },
+  "split_policy": "Source identification runs train except 1.4137 rad/s dev; every source validation run is test. Nonoverlapping 60-second windows; instantaneous start-state inputs only. Single robot joint.",
+  "stability": {
+    "categorical_inputs": [],
+    "domain": "Native measured domain; bounded perturbations of continuous inputs only",
+    "ranking": false,
+    "relative_noise": 0.01,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "task_id": "P100-069.mechanisms-v2",
+  "test_exposure": "retrospective-open-test",
+  "title": "Frictional heating in a robot gearbox",
+  "variable_descriptions": {
+    "environment_temperature": "Environment temperature at the forecast start",
+    "horizon": "Elapsed time to the 60-second future observation",
+    "housing_temperature": "Housing temperature at the forecast start",
+    "lubricant_temperature": "Lubricant temperature at the forecast start",
+    "speed": "Measured motor angular velocity at the forecast start",
+    "target": "Observed lubricant temperature change over the forecast horizon",
+    "torque": "Measured friction torque at the forecast start"
+  }
+}

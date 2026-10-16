@@ -1,0 +1,32 @@
+{
+  "description": "Use two disclosed early checkpoints to compare asymptotic loss decay and a capacity-dependent decay law on held-out architectures. The inferred loss floor is a conditional quantity, not measured data entropy.",
+  "domain": "AI training dynamics",
+  "edition": "mechanism-pack-v2",
+  "extends_scenario_sha256": "cddbc1c08577643a3a949a8ec68d5814e670d9cd7523053d4f59c162874b3220",
+  "extends_task_sha256": "d2059f7340928444372321d93af0617cdbb491d1d8b10f6460efa01588f26dab",
+  "independent_unit": "Frozen complete-architecture assignments, identical to historical compact-v2 partitions",
+  "limitations": [
+    "Known power-law scaling family with observed early calibration",
+    "An algebraically inferred floor is not a measured entropy or an independent learned parameter",
+    "Whole architectures held out; common training corpus, no external-model replication"
+  ],
+  "local_extension": true,
+  "publication_authorized": false,
+  "rights_status": "source_terms_recorded; final_publication_review_pending",
+  "rows": {
+    "dev": 125,
+    "test": 221,
+    "train": 616
+  },
+  "scenario_id": "P100-043",
+  "size": {
+    "public_bytes": 62625
+  },
+  "source": {
+    "license": "MIT",
+    "registry_identity": "P100-043",
+    "url": "https://github.com/mcleish7/gemstone-scaling-laws"
+  },
+  "status": "local_research_preview",
+  "title": "Learning dynamics beyond early checkpoints"
+}

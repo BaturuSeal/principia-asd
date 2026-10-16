@@ -1,0 +1,96 @@
+{
+  "accuracy": {
+    "aggregation": "equal_group_mean",
+    "invalid_output_rate": 0.0,
+    "mae": 0.6602592067508597,
+    "primary": "mae",
+    "primary_error": 0.6602592067508597,
+    "rmse": 1.1009102533824766
+  },
+  "accuracy_gate": true,
+  "baseline_loss": 1.0677310030169085,
+  "by_group": [
+    {
+      "error": 0.04558909293064905,
+      "group": "validation/cool-down/cool-down.csv",
+      "rows": 719
+    },
+    {
+      "error": 0.2721621131143032,
+      "group": "validation/heat-up/theta_dot=0p3142.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.5856155607490433,
+      "group": "validation/heat-up/theta_dot=0p6283.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.7951198015639471,
+      "group": "validation/heat-up/theta_dot=0p9425.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.2347359186023033,
+      "group": "validation/heat-up/theta_dot=1p2566.csv",
+      "rows": 35
+    },
+    {
+      "error": 1.4186000966000092,
+      "group": "validation/heat-up/theta_dot=1p5708.csv",
+      "rows": 35
+    },
+    {
+      "error": 0.4177156456855453,
+      "group": "validation/long-term/theta_dot_1=0p6283_theta_dot_2=0p9425.csv",
+      "rows": 239
+    },
+    {
+      "error": 0.5125354247610769,
+      "group": "validation/long-term/theta_dot_1=1p2566_theta_dot_2=0p3142.csv",
+      "rows": 239
+    }
+  ],
+  "coverage": {
+    "eligible": 1372,
+    "fraction": 1.0,
+    "predicted": 1372
+  },
+  "evaluator_version": "deterministic-equations-v1",
+  "method_id": "equation_search",
+  "rule_id": "mechanism-v2-p100-069-equation-search-system-2",
+  "rule_sha256": "86ca6225fc1ddfcc593e4fd44d840f1a3c5e7f829ba2eeeb87bb9435ca3e1f38",
+  "run_id": "mechanism-v2-p100-069-equation-search",
+  "scientific_review": "not_assessed",
+  "simplicity": {
+    "dag_weighted_operator_count": 23,
+    "expanded_expression": "(abs(torque * speed) - 0.04416889047253718 * (1 + 2.307469627889723 * abs(speed) / speed_ref) * (lubricant_temperature - housing_temperature) - 1.000000000051404e-05 * (lubricant_temperature - environment_temperature)) / (0.04416889047253718 * (1 + 2.307469627889723 * abs(speed) / speed_ref) + 1.000000000051404e-05) * (1 - exp(-(0.04416889047253718 * (1 + 2.307469627889723 * abs(speed) / speed_ref) + 1.000000000051404e-05) * horizon / 187.21250036902964))",
+    "expression_bytes": 422,
+    "fixed_constants": 1,
+    "free_parameters": 4,
+    "intermediate_quantities": 8,
+    "learned_state_bytes": 155,
+    "literal_state_bytes": 4,
+    "nodes": 120,
+    "numeric_literal_count": 4,
+    "preprocessing": "Source preparation is recorded in the task; all fitted state is the shared parameter vector",
+    "scope": "Expanded operation count; DAG operations also reported, shared parameters counted once",
+    "shared_parameter_count": 4,
+    "weighted_operator_count": 34
+  },
+  "stability": {
+    "invalid_output_rate": 0.0,
+    "mean_relative_sensitivity": 0.038713417653763016,
+    "perturbation_labels_available": false,
+    "population_rows": 1372,
+    "ranking": false,
+    "samples": 512,
+    "scope": "Diagnostic sensitivity; source-calibrated measurement-error distributions unavailable"
+  },
+  "status": "complete",
+  "test_exposure": "retrospective-open-test",
+  "uncertainty": {
+    "reason": "No independent replicate uncertainty model admitted; group errors are descriptive",
+    "status": "not_assessed"
+  }
+}

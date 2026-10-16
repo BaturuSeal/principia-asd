@@ -1,0 +1,9 @@
+scenario_id,title,units,control,control_test_loss,scientific_model,scientific_model_test_loss,scientific_model_test_loss_reduction_percent,agent_test_loss,equations
+P100-013,Thermally activated encapsulant cure,s^-1,polynomial_control,0.002049346843468424,Parallel autocatalytic cure pathways,0.0009186917522183377,55.17148523948758,0.0009186917522183377,5
+P100-027,Vapor transport and radial phase distribution,1,linear_control,0.605784273344575,Vapor drift with radial redistribution,0.0980173905980118,83.8197531842728,,6
+P100-043,Learning dynamics beyond early checkpoints,1,linear_control,0.052946804313889095,Calibrated asymptotic learning dynamics,0.0075627158265761125,85.71638850620442,0.0075627158265761125,4
+P100-049,Diffusion and polarization during battery rest,V,linear_control,0.021482435415035934,Finite-pulse diffusion relaxation,0.0006675279463359359,96.89268030630865,,5
+P100-061,Gas transport through a porous membrane,mol/m2/s,polynomial_control,0.09373299324568168,Knudsen and viscous pore transport,0.043637825388943764,53.444540841061674,,7
+P100-069,Frictional heating in a robot gearbox,K,linear_control,1.3424479849365456,Thermal network with speed-dependent mixing,0.6602592067508597,50.81677546098231,1.364123989987451,9
+P100-074,Saturation dynamics of a kinase biosensor,a.u.,polynomial_control,109.46912087734164,Calibrated first-order assay response,173.26695210054515,-58.27929439087023,,4
+P100-082,Forest-soil respiration across sites,kg/m2/s,tree_control,6.664481634689579e-08,Moisture-limited soil respiration,7.289014325563601e-08,-9.37106177355551,,5

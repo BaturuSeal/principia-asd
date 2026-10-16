@@ -127,6 +127,46 @@ def test_offline_rule_navigation_preserves_records_and_failed_denominator(tmp_pa
     )
 
 
+def test_equation_system_export_includes_intermediate_meanings_and_handles_unknown_legacy_unit(
+    tmp_path,
+):
+    from principia_asd.engine.equations import expanded_expression, system_complexity
+    from principia_asd.engine.scientific_templates import atmosphere_templates
+    from principia_asd.report_html import render_rule
+
+    root = fixture_board(tmp_path)
+    directory = root / "scenarios/TEST/tasks/task-001"
+    board = read_json(directory / "leaderboard.json")
+    row = board["rules"][0]
+    system = atmosphere_templates()[0]
+    params = {k: v["initial"] for k, v in system["parameters"].items()}
+    row["card"].update(
+        representation="equation-system-v1",
+        equation_system=system,
+        parameters=params,
+        expression=expanded_expression(system),
+        inputs=["temperature"],
+        output="target",
+        units={"output": None},
+        simplicity=system_complexity(system, params),
+    )
+    row["simplicity"] = row["card"]["simplicity"]
+    write_json(directory / "rules/rule-1/rule-card.json", row["card"])
+    write_json(directory / "rules/rule-1/evaluation-receipt.json", row)
+    task = {
+        "inputs": ["temperature"],
+        "output": "target",
+        "task_id": "TEST.task",
+        "quantity_units": {"temperature": "K", "target": "W/m2"},
+        "equation_templates": [system],
+    }
+    render_rule(root, board, row, directory, "Radiation", board["attempts"][0], task=task)
+    page = (directory / "rules/rule-1/index.html").read_text()
+    assert "Connected quantities and assumptions" in page
+    assert "Blackbody longwave irradiance" in page
+    assert "W/m2" in page and "effective gray emissivity" in page
+
+
 def test_renderer_rejects_missing_artifacts_and_unsafe_identities(tmp_path):
     root = fixture_board(tmp_path)
     task = root / "scenarios/TEST/tasks/task-001"
